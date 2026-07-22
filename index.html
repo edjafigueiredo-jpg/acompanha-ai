@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acompanha.ai | A assistente de IA que acompanha seus pacientes no WhatsApp</title>
+<meta name="description" content="A IA de conversação que responde os pacientes do seu consultório de nutrição entre as consultas: check-ins, dúvidas, foto de refeição e alerta de risco de abandono. A IA tria, você decide.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2315803D'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23FAF9F6'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+  :root{
+    --bg:#FAF9F6; --surface:#FFFFFF; --surface2:#F1EFE7;
+    --ink:#1E2A26; --ink-soft:#49584F; --ink-faint:#5A695F;
+    --brand:#14532D; --brand-mid:#166534;
+    --accent:#15803D; --accent-hover:#166534; --accent-ink:#FFFFFF;
+    --amber:#B45309; --line:#E3E0D6; --line-input:#5A695F;
+    --chat-bg:#EDE9DD; --bubble-out:#D8F0CE; --bubble-in:#FFFFFF;
+    --danger:#B3261E;
+    --shadow:0 10px 30px rgba(30,42,38,.08);
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#101613; --surface:#17201B; --surface2:#1C2721;
+      --ink:#E9F0EB; --ink-soft:#B4C2B9; --ink-faint:#93A399;
+      --brand:#7FD8A2; --brand-mid:#5ABF84;
+      --accent:#22C55E; --accent-hover:#4ADE80; --accent-ink:#052E16;
+      --amber:#F5B04C; --line:#2A362F; --line-input:#93A399;
+      --chat-bg:#0C120F; --bubble-out:#1E3B2B; --bubble-in:#212D26;
+      --danger:#F2B8B5;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.6; font-size:1.0625rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  section{padding:64px 0}
+  h1,h2,h3{line-height:1.2;color:var(--ink);text-wrap:balance}
+  h2{font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:.75rem}
+  p{color:var(--ink-soft)}
+  a{color:var(--brand-mid)}
+  strong{color:var(--ink)}
+  .eyebrow{
+    display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--brand-mid);margin-bottom:.75rem;
+  }
+  .src{font-size:.72rem;color:var(--ink-faint);line-height:1.45}
+  .btn{
+    display:inline-block;background:var(--accent);color:var(--accent-ink);
+    font-weight:700;font-size:1rem;text-decoration:none;text-align:center;
+    padding:14px 28px;border-radius:999px;border:none;cursor:pointer;
+    min-height:44px;transition:background .15s ease, transform .15s ease;
+  }
+  .btn:hover{background:var(--accent-hover);transform:translateY(-1px)}
+  .btn-ghost{
+    display:inline-block;color:var(--ink);font-weight:600;text-decoration:none;
+    padding:14px 20px;min-height:44px;border-radius:999px;border:1px solid var(--line);
+  }
+  .btn-ghost:hover{border-color:var(--brand-mid)}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:var(--bg);
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1080px;margin:0 auto}
+  .logo{font-size:1.15rem;font-weight:800;color:var(--ink);text-decoration:none;letter-spacing:-.02em}
+  .logo span{color:var(--brand-mid)}
+  .nav .btn{padding:10px 20px;font-size:.9rem}
+
+  /* Hero */
+  .hero{padding:72px 0 56px}
+  .hero .wrap{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+  .hero h1{font-size:clamp(1.85rem,4.5vw,2.9rem);font-weight:800;letter-spacing:-.02em;margin-bottom:1.1rem}
+  .hero h1 em{font-style:normal;color:var(--brand-mid)}
+  .hero .sub{font-size:1.15rem;margin-bottom:1.6rem;max-width:34em}
+  .hero .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:.6rem}
+  .hero .micro{font-size:.85rem;color:var(--ink-faint)}
+  .mantra{font-weight:700;color:var(--ink)}
+  @media(min-width:880px){
+    .hero .wrap{grid-template-columns:1.15fr .85fr}
+  }
+
+  /* Phone mockup */
+  .phone-slot{display:flex;flex-direction:column;align-items:center;gap:10px}
+  .phone{
+    width:min(330px,100%);background:var(--surface);border:1px solid var(--line);
+    border-radius:38px;padding:10px;box-shadow:var(--shadow);
+  }
+  .screen{border-radius:29px;overflow:hidden;background:var(--chat-bg);display:flex;flex-direction:column;min-height:430px}
+  .chat-head{
+    display:flex;align-items:center;gap:10px;padding:12px 14px;
+    background:var(--brand);color:#F2FBF5;
+  }
+  @media (prefers-color-scheme: dark){ .chat-head,.step .n,.never .no,.demo{background:#14532D} }
+  .avatar{
+    width:34px;height:34px;border-radius:50%;flex:none;
+    background:#F2FBF5;color:#14532D;font-weight:800;font-size:.85rem;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .chat-head .who{line-height:1.25}
+  .chat-head .who b{display:block;font-size:.9rem}
+  .chat-head .who small{font-size:.72rem;opacity:.85}
+  .chat-body{list-style:none;padding:14px 12px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .msg{max-width:86%;padding:9px 12px;border-radius:14px;font-size:.86rem;line-height:1.45;color:var(--ink);position:relative}
+  .msg .t{display:block;font-size:.64rem;color:var(--ink-faint);text-align:right;margin-top:3px}
+  .msg.in{background:var(--bubble-in);border-bottom-left-radius:4px;align-self:flex-start;box-shadow:0 1px 1px rgba(0,0,0,.06)}
+  .msg.out{background:var(--bubble-out);border-bottom-right-radius:4px;align-self:flex-end}
+  .chat-note{font-size:.75rem;color:var(--ink-faint)}
+  .js .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+  .js .reveal.vis{opacity:1;transform:none}
+
+  /* Stats strip */
+  .stats{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 0}
+  .stats .wrap{display:grid;gap:24px;grid-template-columns:1fr}
+  @media(min-width:720px){ .stats .wrap{grid-template-columns:repeat(3,1fr)} }
+  .stat b{
+    display:block;font-size:2.3rem;font-weight:800;color:var(--brand);
+    font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1;
+  }
+  .stat p{margin:.35rem 0 .4rem;font-size:.95rem}
+
+  /* Cards */
+  .cards{display:grid;gap:20px;grid-template-columns:1fr;margin-top:2rem}
+  @media(min-width:760px){ .cards.c3{grid-template-columns:repeat(3,1fr)} .cards.c2{grid-template-columns:repeat(2,1fr)} }
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;box-shadow:var(--shadow);
+  }
+  .card h3{font-size:1.05rem;margin-bottom:.5rem}
+  .card p{font-size:.95rem}
+  .card .src{display:block;margin-top:.6rem}
+
+  /* Science section */
+  .science{background:var(--surface2)}
+  .rvs{
+    display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px 20px;margin:2rem 0 1rem;box-shadow:var(--shadow);text-align:center;
+  }
+  .rvs .num{font-size:clamp(1.3rem,3.5vw,2rem);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .rvs .win .num{color:var(--brand-mid)}
+  .rvs .lose .num{color:var(--ink-faint)}
+  .rvs .lbl{font-size:.9rem;color:var(--ink-soft);margin-top:.3rem}
+  .rvs .x{font-size:1rem;font-weight:700;color:var(--ink-faint)}
+  .rvs .bar{height:8px;border-radius:4px;background:var(--surface2);margin-top:12px;overflow:hidden}
+  .rvs .bar i{display:block;height:100%;border-radius:4px}
+  .rvs .win .bar i{width:60%;background:var(--brand-mid)}
+  .rvs .lose .bar i{width:7%;background:var(--ink-faint)}
+  @media(max-width:379px){ .rvs{grid-template-columns:1fr;gap:8px} }
+  .timing{
+    border-left:4px solid var(--amber);background:var(--surface);
+    border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin-top:2rem;
+  }
+  .timing p{font-size:1rem}
+  .timing .big{font-size:1.2rem;font-weight:700;color:var(--ink);margin-bottom:.4rem}
+
+  /* How it works */
+  .how .grid{display:grid;gap:40px;grid-template-columns:1fr;align-items:start;margin-top:2rem}
+  @media(min-width:880px){ .how .grid{grid-template-columns:1fr .8fr} }
+  .steps{display:grid;gap:16px;counter-reset:step}
+  .step{display:flex;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .step .n{
+    counter-increment:step;flex:none;width:34px;height:34px;border-radius:50%;
+    background:var(--brand);color:#F2FBF5;font-weight:800;font-size:.95rem;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .step .n::before{content:counter(step)}
+  .step h3{font-size:1rem;margin-bottom:.3rem}
+  .step p{font-size:.92rem}
+  .panel{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;box-shadow:var(--shadow);
+  }
+  .panel h3{font-size:.95rem;margin-bottom:12px;color:var(--ink-soft);font-weight:600}
+  .alert{
+    border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;
+    font-size:.88rem;background:var(--surface2);
+  }
+  .alert b{display:block;font-size:.9rem}
+  .alert.hot{border-left:4px solid var(--danger)}
+  .alert .tag{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--danger)}
+  .alert .tag.ok{color:var(--brand-mid)}
+  .mantra-big{
+    text-align:center;font-size:clamp(1.3rem,3vw,1.7rem);font-weight:800;color:var(--ink);
+    margin-top:2.5rem;
+  }
+  .mantra-big span{color:var(--brand-mid)}
+
+  /* Never */
+  .never{background:var(--surface2)}
+  .never .cards{margin-top:2rem}
+  .never .card{display:flex;gap:14px}
+  .never .no{
+    flex:none;width:28px;height:28px;border-radius:50%;margin-top:2px;
+    background:var(--brand);color:#F2FBF5;display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:.85rem;
+  }
+  .strip{
+    margin-top:2rem;background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:20px 24px;
+  }
+  .strip p{font-size:.95rem}
+  .strip p + p{margin-top:.6rem}
+
+  /* Proof */
+  .proof .honesty{
+    margin-top:1.5rem;font-size:.95rem;color:var(--ink-soft);
+    border-left:4px solid var(--brand-mid);padding:4px 0 4px 16px;
+  }
+
+  /* Calculator */
+  .calc{background:var(--surface2)}
+  .calc-box{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px;box-shadow:var(--shadow);margin-top:2rem;
+    display:grid;gap:28px;grid-template-columns:1fr;
+  }
+  @media(min-width:760px){ .calc-box{grid-template-columns:1.1fr .9fr;align-items:center} }
+  .calc-box label{display:block;font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:.35rem}
+  .calc-box .field{margin-bottom:18px}
+  .calc-box input[type=number]{
+    width:100%;max-width:220px;padding:10px 12px;font-size:1rem;color:var(--ink);
+    background:var(--bg);border:1px solid var(--line-input);border-radius:8px;min-height:44px;
+  }
+  .calc-box input[type=range]{width:100%;max-width:320px;accent-color:var(--accent)}
+  .calc-box .hint{font-size:.78rem;color:var(--ink-faint);margin-top:.25rem}
+  .calc-out{text-align:center}
+  .calc-out .val{
+    font-size:clamp(2rem,5vw,2.9rem);font-weight:800;color:var(--amber);
+    font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1;
+  }
+  .calc-out p{font-size:.95rem;margin-top:.4rem}
+  .calc-out .src{display:block;margin-top:.8rem}
+
+  /* FAQ */
+  .faq details{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:0;margin-top:12px;overflow:hidden;
+  }
+  .faq summary{
+    cursor:pointer;font-weight:700;font-size:1rem;padding:18px 22px;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-size:1.3rem;font-weight:400;color:var(--brand-mid);flex:none}
+  .faq details[open] summary::after{content:"−"}
+  .faq details p{padding:0 22px 18px;font-size:.95rem}
+  .faq details p + p{margin-top:.6rem}
+
+  /* Form */
+  .demo{background:var(--brand)}
+  .demo h2,.demo p{color:#F2FBF5}
+  .demo .sub{opacity:.9;max-width:36em}
+  .demo form{
+    margin-top:2rem;background:var(--surface);border-radius:var(--radius);
+    padding:28px;max-width:520px;box-shadow:var(--shadow);
+  }
+  .demo form label{display:block;font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:.3rem}
+  .demo form .field{margin-bottom:16px}
+  .demo form input,.demo form select{
+    width:100%;padding:12px 14px;font-size:1rem;color:var(--ink);
+    background:var(--bg);border:1px solid var(--line-input);border-radius:8px;min-height:44px;
+  }
+  .demo form input:focus-visible,.demo form select:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+  .demo form .btn{width:100%;margin-top:4px}
+  .demo form .micro{font-size:.8rem;color:var(--ink-faint);margin-top:.8rem;text-align:center}
+  .demo .ok-msg{
+    display:none;margin-top:2rem;background:var(--surface);border-radius:var(--radius);
+    padding:28px;max-width:520px;box-shadow:var(--shadow);
+  }
+  .demo .ok-msg h3{color:var(--ink);margin-bottom:.5rem}
+  .demo .ok-msg p{color:var(--ink-soft)}
+  .demo .err{display:none;color:var(--danger);font-size:.88rem;margin-top:.6rem;font-weight:600}
+  .hp{position:absolute;left:-5000px;width:1px;height:1px;overflow:hidden}
+
+  /* Footer */
+  footer{border-top:1px solid var(--line);padding:48px 0 64px;font-size:.85rem}
+  footer .cols{display:grid;gap:32px;grid-template-columns:1fr}
+  @media(min-width:760px){ footer .cols{grid-template-columns:1fr 1.4fr} }
+  footer h3{font-size:.9rem;margin-bottom:.6rem}
+  footer p{font-size:.85rem}
+  footer ol{padding-left:1.2rem;color:var(--ink-faint);font-size:.75rem;line-height:1.7}
+  footer .fine{margin-top:2rem;color:var(--ink-faint);font-size:.78rem}
+
+  /* CTA intermediário */
+  .cta-inline{text-align:center;margin-top:2.2rem}
+  .cta-inline .micro{display:block;font-size:.85rem;color:var(--ink-faint);margin-top:.6rem}
+
+  /* Sticky mobile CTA */
+  .sticky-cta{
+    position:fixed;bottom:0;left:0;right:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    background:var(--bg);
+    background:color-mix(in srgb, var(--bg) 92%, transparent);backdrop-filter:blur(8px);
+    border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s ease;
+  }
+  .sticky-cta.show{transform:none}
+  .sticky-cta .btn{display:block;width:100%}
+  @media(min-width:880px){ .sticky-cta{display:none} }
+  @media(max-width:879px){ footer{padding-bottom:calc(64px + 84px + env(safe-area-inset-bottom))} }
+
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top">acompanha<span>.ai</span></a>
+    <a class="btn" href="#demo">Quero uma demonstração</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- S1 · HERO -->
+  <section class="hero" aria-label="Apresentação">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Assistente de IA no WhatsApp para nutricionistas de consultório</span>
+        <h1>O plano alimentar não quebra no seu consultório. Quebra <em>na sexta à noite, no rodízio, no churrasco</em>, quando você não está lá.</h1>
+        <p class="sub">O Acompanha.ai é a assistente de IA que conversa com seus pacientes pelo WhatsApp entre as consultas: responde dúvidas na hora, faz check-ins, recebe foto de refeição e te avisa quando alguém está prestes a desistir. <span class="mantra">A IA tria. Você decide.</span></p>
+        <div class="cta-row">
+          <a class="btn" href="#demo">Quero uma demonstração</a>
+          <a class="btn-ghost" href="#como-funciona">Ver como funciona</a>
+        </div>
+        <p class="micro">Deixe seus dados no formulário e a gente entra em contato em até 1 dia útil.</p>
+      </div>
+      <div class="phone-slot">
+        <div class="phone" role="img" aria-label="Simulação de conversa: paciente pede ajuda num rodízio de japonês no sábado à noite e a assistente orienta dentro do plano prescrito pela nutricionista.">
+          <div class="screen">
+            <div class="chat-head">
+              <span class="avatar" aria-hidden="true">A</span>
+              <span class="who"><b>Ana · assistente virtual da Dra. Camila</b><small>responde em segundos</small></span>
+            </div>
+            <ul class="chat-body">
+              <li class="msg out reveal">Ana, socorro 😅 tô num rodízio de japonês com a minha família. E agora?<span class="t">21:47</span></li>
+              <li class="msg in reveal">Boa notícia: seu plano com a Dra. Camila já prevê refeições fora 🙂 A base no rodízio: sashimi, atum e salmão. Uns 2 uramakis cabem tranquilo. Hot roll e teriyaki ficam de fora hoje, combinado?<span class="t">21:47</span></li>
+              <li class="msg out reveal">sério que eu posso comer isso tudo?<span class="t">21:48</span></li>
+              <li class="msg in reveal">Pode 🙂 Um jantar não desfaz a sua semana. Amanhã seguimos normal, sem compensar. A Dra. Camila recebe o resumo. 💚<span class="t">21:48</span></li>
+            </ul>
+          </div>
+        </div>
+        <span class="chat-note">Conversa ilustrativa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2 · NÚMEROS -->
+  <section class="stats" aria-label="O problema em números">
+    <div class="wrap">
+      <div class="stat">
+        <b>&gt;50%</b>
+        <p>dos pacientes abandonam o tratamento nutricional <strong>nos primeiros 3 meses</strong>.</p>
+        <span class="src">Estudo do Hospital Universitário de Brasília</span>
+      </div>
+      <div class="stat">
+        <b>17,7%</b>
+        <p>chegam à <strong>2ª consulta de retorno</strong> no único dado brasileiro publicado (um ambulatório; serve de referência, não de regra).</p>
+        <span class="src">Levantamento num ambulatório universitário brasileiro</span>
+      </div>
+      <div class="stat">
+        <b>46,7%</b>
+        <p>apontam <strong>comer fora de casa</strong> como a maior barreira ao plano. Eventos sociais vêm logo atrás, com 33,3%.</p>
+        <span class="src">Mesmo estudo do HU de Brasília</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 · A DOR -->
+  <section aria-label="A rotina de quem acompanha sozinha">
+    <div class="wrap">
+      <span class="eyebrow">A parte do trabalho que ninguém vê</span>
+      <h2>Você conhece essa semana.</h2>
+      <p style="max-width:40em">A consulta termina, o paciente sai motivado, e o tratamento passa a acontecer num lugar onde você não enxerga nada: o dia a dia dele. O que sobra para você é o plantão informal no seu WhatsApp pessoal.</p>
+      <div class="cards c3">
+        <div class="card">
+          <h3>O plantão invisível</h3>
+          <p>Terça, 22h07: <em>“posso trocar o jantar por pão de queijo?”</em>. Você responde de graça, no seu número pessoal, entre as mensagens da família. Sem registro, sem hora para acabar e sem virar prontuário.</p>
+        </div>
+        <div class="card">
+          <h3>O sumiço sem aviso</h3>
+          <p>No churrasco, ela saiu do plano. Veio a culpa do <em>“já estraguei tudo”</em> e a vergonha de te contar. Ela some. Você só descobre quando o retorno não é marcado. A decisão de desistir amadureceu exatamente no período em que você não via nada.</p>
+        </div>
+        <div class="card">
+          <h3>A agenda imprevisível</h3>
+          <p>Cada paciente que evapora vira um buraco na agenda do mês seguinte. E mais dependência de captar paciente novo, num mercado que nunca foi tão disputado: são <strong>194 mil nutricionistas</strong> no Brasil, 22% a mais que há três anos.</p>
+          <span class="src">Dados do CFN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 · A CIÊNCIA -->
+  <section class="science" aria-label="O que a ciência diz">
+    <div class="wrap">
+      <span class="eyebrow">O que a evidência mostra</span>
+      <h2>O tratamento não é ganho na prescrição. É ganho na adesão.</h2>
+      <p style="max-width:40em">Num estudo clássico que comparou quatro dietas famosas durante um ano, quem emagreceu não foi quem recebeu a “melhor” dieta. Foi quem conseguiu <strong>seguir</strong> a sua. Veja o peso de cada fator no resultado:</p>
+      <div class="rvs">
+        <div class="win">
+          <div class="num">Decisivo</div>
+          <div class="lbl">o quanto <strong>seguir o plano</strong> pesa no resultado</div>
+          <div class="bar" aria-hidden="true"><i></i></div>
+        </div>
+        <div class="x" aria-hidden="true">vs</div>
+        <div class="lose">
+          <div class="num">Quase nada</div>
+          <div class="lbl">o quanto o <strong>tipo de dieta</strong> pesa</div>
+          <div class="bar" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+      <p class="src">As barras mostram a proporção medida pelo estudo. Os números exatos estão no fim da página.</p>
+      <div class="cards c2">
+        <div class="card">
+          <h3>O que mais segura o paciente no plano é ter alguém acompanhando</h3>
+          <p>Pacientes com alguém acompanhando de perto seguiram o plano <strong>65% mais</strong> do que os que ficaram por conta própria. É o que mostra a maior revisão de pesquisas já feita sobre o assunto, somando mais de 6 mil pacientes. Mais efeito do que qualquer ajuste no cardápio.</p>
+          <span class="src">Revisão de 27 pesquisas sobre adesão, 2016</span>
+        </div>
+        <div class="card">
+          <h3>Acompanhar de perto muda o jogo</h3>
+          <p>No começo do estudo, só <strong>2 em cada 10</strong> pacientes diziam não ter mais dificuldade para seguir o plano. Depois de três consultas com acompanhamento de perto, eram <strong>mais de 9 em cada 10</strong> (de 20% para 93%).</p>
+          <span class="src">Estudo com pacientes em tratamento para colesterol alto</span>
+        </div>
+      </div>
+      <div class="timing">
+        <p class="big">O lapso que vira abandono acontece em dias. O ciclo de consultas se mede em semanas.</p>
+        <p>Os lapsos são previsíveis: casa, noite, fim de semana, eventos sociais. É o que mostram as pesquisas que acompanham pacientes no dia a dia. Quando o retorno chega, a espiral do desvio que vira culpa e termina em abandono já rodou inteira.</p>
+      </div>
+      <p style="margin-top:2rem;max-width:40em"><strong>Você sempre soube que acompanhar de perto funciona.</strong> O que nunca existiu foi um jeito de fazer isso com 40, 60, 80 pacientes ao mesmo tempo sem virar plantão de 24 horas. É exatamente isso que muda agora.</p>
+    </div>
+  </section>
+
+  <!-- S5 · COMO FUNCIONA -->
+  <section class="how" id="como-funciona" aria-label="Como funciona">
+    <div class="wrap">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Sua assistente no WhatsApp do paciente. Seu critério no comando.</h2>
+      <p style="max-width:40em">O Acompanha.ai conversa com seus pacientes pelo WhatsApp que eles já usam, sempre dentro do plano e das regras que você definiu.</p>
+      <div class="grid">
+        <div class="steps">
+          <div class="step">
+            <span class="n" aria-hidden="true"></span>
+            <div>
+              <h3>Check-ins que não dependem de força de vontade</h3>
+              <p>A assistente puxa conversa nos momentos que você definir: <em>“como foi o fim de semana?”</em>, <em>“conseguiu fazer o lanche da tarde?”</em>. Responder leva um toque ou uma foto.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="n" aria-hidden="true"></span>
+            <div>
+              <h3>Dúvidas respondidas na hora</h3>
+              <p><em>“Acabou o iogurte, posso trocar pelo quê?”</em> A resposta vem em segundos, direto das substituições que <strong>você</strong> aprovou, não de uma tabela genérica da internet.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="n" aria-hidden="true"></span>
+            <div>
+              <h3>Foto no lugar de diário</h3>
+              <p>Sem pesar comida, sem digitar caloria. O paciente manda a foto da refeição; a assistente registra e devolve uma orientação gentil. O registro que hoje morre em poucas semanas passa a acontecer sozinho.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="n" aria-hidden="true"></span>
+            <div>
+              <h3>Socorro no momento em que o plano quebra</h3>
+              <p>Rodízio, festa, viagem. A assistente orienta na hora, dentro do seu plano, e desarma o <em>“já estraguei tudo”</em> antes que ele vire abandono.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="panel" role="img" aria-label="Simulação do painel da nutricionista: alerta de risco de abandono para uma paciente, um pedido de ajuste em triagem e o resumo semanal de check-ins.">
+            <h3>Do seu lado, silêncio organizado (ilustrativo)</h3>
+            <div class="alert hot">
+              <span class="tag">Risco de abandono · alto</span>
+              <b>Juliana M.</b>
+              3 check-ins sem resposta · lapso relatado no sábado
+            </div>
+            <div class="alert">
+              <span class="tag ok">Triagem para você</span>
+              <b>Carlos P.</b>
+              Pediu ajuste no plano (treino mudou de horário)
+            </div>
+            <div class="alert">
+              <span class="tag ok">Resumo da semana</span>
+              <b>84% dos pacientes fizeram check-in</b>
+              12 dúvidas respondidas · 2 encaminhadas a você
+            </div>
+          </div>
+          <p style="font-size:.92rem;margin-top:14px">Você não recebe cada conversa em tempo real. Recebe <strong>resumo por paciente</strong>, <strong>alerta quando alguém mostra padrão de risco</strong> e uma <strong>fila de triagem</strong> com tudo que a IA não responde: sintoma, medicamento, pedido de mudança. Tudo organizado para a sua decisão.</p>
+        </div>
+      </div>
+      <p class="mantra-big">A IA tria. <span>Você decide.</span></p>
+      <div class="cta-inline">
+        <a class="btn" href="#demo">Quero uma demonstração</a>
+        <span class="micro">Conversa de 15 minutos, sem compromisso.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 · O QUE A IA NUNCA FAZ -->
+  <section class="never" aria-label="Limites da assistente">
+    <div class="wrap">
+      <span class="eyebrow">Confiança e responsabilidade</span>
+      <h2>O que a assistente nunca faz</h2>
+      <div class="cards c2">
+        <div class="card">
+          <span class="no" aria-hidden="true">✕</span>
+          <div>
+            <h3>Nunca prescreve</h3>
+            <p>Prescrição dietética é ato privativo do nutricionista (Lei 8.234/91). A assistente executa o plano que <strong>você</strong> prescreveu. Nunca cria um.</p>
+          </div>
+        </div>
+        <div class="card">
+          <span class="no" aria-hidden="true">✕</span>
+          <div>
+            <h3>Nunca decide conduta clínica</h3>
+            <p>Sintoma, medicamento, pedido de mudança no plano, sinal de relação difícil com a comida: escala para você. Sempre.</p>
+          </div>
+        </div>
+        <div class="card">
+          <span class="no" aria-hidden="true">✕</span>
+          <div>
+            <h3>Nunca improvisa fora das suas regras</h3>
+            <p>O que não está no plano ou nas substituições que você aprovou não recebe resposta “criativa”: vira item de triagem para você.</p>
+          </div>
+        </div>
+        <div class="card">
+          <span class="no" aria-hidden="true">✕</span>
+          <div>
+            <h3>Nunca esconde uma conversa</h3>
+            <p>Tudo fica registrado e auditável por você. O acompanhamento sai do seu número pessoal e vira histórico do tratamento.</p>
+          </div>
+        </div>
+      </div>
+      <div class="strip">
+        <p><strong>O que diz o seu conselho:</strong> a Resolução CFN 760/2023 regulamenta o telemonitoramento em nutrição, e o Manual de Telenutrição do CFN aponta a redução do abandono do tratamento entre os benefícios esperados da modalidade.</p>
+        <p><strong>E sobre a LGPD:</strong> hoje, dado sensível de paciente circula no mesmo aparelho das suas conversas pessoais. Um canal estruturado, com consentimento do paciente e registro, foi desenhado para reduzir esse risco.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 · PROVA DE CATEGORIA -->
+  <section class="proof" aria-label="Referências internacionais">
+    <div class="wrap">
+      <span class="eyebrow">Isso já funciona em escala</span>
+      <h2>O modelo “IA acompanha, profissional decide” já se provou lá fora</h2>
+      <div class="cards c2">
+        <div class="card">
+          <h3>Clivi · México</h3>
+          <p>Acompanhamento contínuo de pacientes crônicos <strong>pelo WhatsApp</strong>, com IA triando alertas para a equipe clínica: <strong>retenção de 71% em 12 meses</strong>, num setor em que a permanência média é de ~90 dias.</p>
+          <span class="src">Número divulgado pela própria empresa</span>
+        </div>
+        <div class="card">
+          <h3>Simple · global</h3>
+          <p>A coach de IA “Avo” sustenta <strong>mais de 100 mil conversas de acompanhamento por dia</strong>, uma escala que nenhuma equipe humana daria conta de manter.</p>
+          <span class="src">Divulgado pela imprensa de tecnologia em 2024</span>
+        </div>
+      </div>
+      <p class="honesty"><strong>Transparência:</strong> esses números são dessas empresas, não nossos. Eles provam que o modelo funciona. O Acompanha.ai traz esse mesmo modelo para a realidade do consultório brasileiro: PF, marmita, pão de queijo, rodízio e o WhatsApp onde seu paciente já vive. Estamos começando no Brasil, e as primeiras nutricionistas implantam com acompanhamento direto do fundador.</p>
+    </div>
+  </section>
+
+  <!-- S8 · CALCULADORA -->
+  <section class="calc" aria-label="Calculadora do custo da evasão">
+    <div class="wrap">
+      <span class="eyebrow">Faça a conta</span>
+      <h2>Quanto a evasão custa para o seu consultório?</h2>
+      <div class="calc-box">
+        <div>
+          <div class="field">
+            <label for="c-valor">Valor da sua consulta de retorno (R$)</label>
+            <input type="number" id="c-valor" value="150" min="0" step="10" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="c-novos">Pacientes novos por mês</label>
+            <input type="number" id="c-novos" value="6" min="0" step="1" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="c-ret">De cada 10 pacientes novos, quantos completam os retornos? <output id="c-ret-out">2</output>/10</label>
+            <input type="range" id="c-ret" value="2" min="0" max="10" step="1">
+            <p class="hint">No único dado brasileiro publicado, menos de 2 em cada 10 chegam à 2ª consulta de retorno. Cada consultório tem sua realidade.</p>
+          </div>
+        </div>
+        <div class="calc-out">
+          <div class="val" id="c-total" aria-live="polite">R$ 25.920</div>
+          <p>por ano em consultas de retorno que a evasão leva embora</p>
+          <p class="src" id="c-math">72 pacientes novos por ano × 8 de cada 10 que somem × 3 retornos × R$ 150</p>
+          <span class="src">Estimativa com 3 consultas de retorno previstas por tratamento. A calculadora dimensiona o problema. Não é uma promessa de recuperação.</span>
+        </div>
+      </div>
+      <div class="cta-inline">
+        <a class="btn" href="#demo">Quero uma demonstração</a>
+        <span class="micro">Conversa de 15 minutos, sem compromisso.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- S9 · FAQ -->
+  <section class="faq" aria-label="Perguntas frequentes">
+    <div class="wrap">
+      <span class="eyebrow">Perguntas diretas, respostas diretas</span>
+      <h2>O que toda nutricionista pergunta antes de contratar</h2>
+      <details>
+        <summary>E se a IA errar? A responsabilidade é minha.</summary>
+        <p>Pode errar? Pode. Nenhum sistema é infalível, e quem diz o contrário está mentindo. Por isso o desenho é de risco mínimo: a assistente só responde dentro do plano e das substituições que você aprovou. O que sai disso (sintoma, medicamento, pedido de mudança) vira triagem para você. Toda conversa fica registrada e auditável, e uma resposta que você marcar como incorreta vira correção das regras.</p>
+        <p>Na comparação honesta: hoje, a orientação de improviso acontece no seu WhatsApp pessoal, às 23h, sem registro nenhum.</p>
+      </details>
+      <details>
+        <summary>Meu paciente não vai querer falar com robô.</summary>
+        <p>O paciente sabe desde a primeira mensagem que está falando com a assistente <strong>da sua equipe</strong>, com o seu nome junto, não um chatbot anônimo. E tem um detalhe prático: às 21h de um sábado, no rodízio, nenhum humano responde em segundos. É nessa hora que o plano quebra. E é nessa hora que a assistente está lá.</p>
+      </details>
+      <details>
+        <summary>Quanto custa?</summary>
+        <p>O valor depende do número de pacientes acompanhados. Na demonstração você sai com o preço exato para o seu consultório, sem surpresa depois. A régua é simples: se a mensalidade não se pagar com os retornos que voltarem a acontecer, não faz sentido para você.</p>
+      </details>
+      <details>
+        <summary>E a LGPD? E o sigilo dos meus pacientes?</summary>
+        <p>Primeiro, uma absolvição: todo mundo atende no número pessoal, porque nunca existiu alternativa de verdade. A culpa não é sua. O que o Acompanha.ai faz é estruturar o que falta nesse cenário: o paciente consente com o acompanhamento no início, os dados são usados exclusivamente para o tratamento e todas as conversas ficam registradas num ambiente acessível a você.</p>
+      </details>
+      <details>
+        <summary>Isso não vai me substituir?</summary>
+        <p>Não pode, nem legalmente, nem na prática. Prescrição dietética é ato privativo seu (Lei 8.234/91), e a assistente é incapaz de prescrever ou decidir conduta. O incentivo do produto é o oposto de te substituir: ele existe para o paciente chegar ao retorno. Mais consultas na sua agenda, não menos.</p>
+      </details>
+      <details>
+        <summary>Não aguento mais ferramenta nova para gerenciar.</summary>
+        <p>Essa mora no WhatsApp que você e seus pacientes já usam. Não tem app novo para o paciente baixar, nem painel que você precise vigiar o dia inteiro: você recebe resumo e alertas. <strong>Menos</strong> mensagens no seu celular, não mais.</p>
+      </details>
+      <details>
+        <summary>Quanto trabalho dá para colocar meus pacientes?</summary>
+        <p>Você manda o plano do jeito que ele já existe (o PDF do seu software de prescrição ou até uma foto) e a configuração inicial é feita junto com você na implantação. Não é você quem digita plano em sistema novo.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- S10 · FORMULÁRIO -->
+  <section class="demo" id="demo" aria-label="Pedir demonstração">
+    <div class="wrap">
+      <span class="eyebrow" style="color:#A7E3BE">Demonstração</span>
+      <h2>Veja a assistente funcionando com os seus planos</h2>
+      <p class="sub">Deixe seus dados e a gente entra em contato em até 1 dia útil. É uma conversa de 15 minutos, sem compromisso, para mostrar a assistente rodando e entender como é o seu consultório.</p>
+      <form id="lead-form" action="https://formsubmit.co/franwwe2k16@hotmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Novo pedido de demonstração | Acompanha.ai">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="hp" aria-hidden="true">
+          <label>Não preencha este campo<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <div class="field">
+          <label for="f-nome">Seu nome</label>
+          <input type="text" id="f-nome" name="nome" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-zap">Seu WhatsApp (com DDD)</label>
+          <input type="tel" id="f-zap" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(11) 91234-5678" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Seu e-mail (opcional)</label>
+          <input type="email" id="f-email" name="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-pac">Quantos pacientes ativos você acompanha? (opcional)</label>
+          <select id="f-pac" name="pacientes_ativos">
+            <option value="">Prefiro não dizer</option>
+            <option>Até 10</option>
+            <option>10 a 30</option>
+            <option>30 a 60</option>
+            <option>Mais de 60</option>
+          </select>
+        </div>
+        <button class="btn" type="submit" id="f-btn">Quero uma demonstração</button>
+        <p class="err" id="f-err" role="alert">Não foi possível enviar agora. Fale direto com a gente: <a href="mailto:franwwe2k16@hotmail.com?subject=Demonstra%C3%A7%C3%A3o%20Acompanha.ai">franwwe2k16@hotmail.com</a></p>
+        <p class="micro">Seus dados são usados apenas para esse contato. Nada de spam, nada de lista.</p>
+      </form>
+      <div class="ok-msg" id="ok-msg" role="status">
+        <h3>Recebido! 💚</h3>
+        <p>Vamos te chamar no WhatsApp em até 1 dia útil para combinar a demonstração.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- S11 · FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#top">acompanha<span>.ai</span></a>
+        <p style="margin-top:.8rem">A assistente de IA que acompanha seus pacientes no WhatsApp entre as consultas. A IA tria, você decide.</p>
+        <p style="margin-top:.8rem">Contato: <a href="mailto:franwwe2k16@hotmail.com">franwwe2k16@hotmail.com</a></p>
+        <p class="fine">As conversas e telas exibidas nesta página são ilustrativas. Seus dados de contato são tratados conforme a LGPD e usados apenas para responder à sua solicitação.</p>
+      </div>
+      <div>
+        <h3>De onde vêm os números desta página</h3>
+        <ol>
+          <li>O peso de seguir o plano no resultado: estudo americano de 2005, publicado na revista médica JAMA, que comparou quatro dietas famosas por um ano. A força medida foi de 0,60 para adesão e 0,07 para o tipo de dieta (numa escala que vai de 0 a 1).</li>
+          <li>Os 65% a mais de adesão com supervisão: a maior revisão de pesquisas sobre o tema, de 2016, somando 27 estudos e mais de 6.800 pacientes.</li>
+          <li>O abandono acima de 50% em 3 meses, e as barreiras de comer fora (46,7%) e eventos sociais (33,3%): estudo do Hospital Universitário de Brasília, publicado na Revista de Nutrição.</li>
+          <li>66,7% de abandono antes dos 6 meses: pesquisa da USP de Ribeirão Preto.</li>
+          <li>Menos de 2 em cada 10 chegando à 2ª consulta de retorno: levantamento num ambulatório universitário brasileiro com 872 pacientes. É o dado de um único serviço, por isso tratamos como referência, não como regra.</li>
+          <li>De 2 para mais de 9 em cada 10 pacientes sem dificuldade de seguir o plano: estudo com pacientes em tratamento para colesterol alto, após três consultas com acompanhamento estruturado.</li>
+          <li>Lapsos previsíveis (casa, noite, fim de semana, eventos sociais): pesquisa americana de 2017 que acompanhou 189 adultos no seu dia a dia real.</li>
+          <li>194 mil nutricionistas no Brasil e crescimento de 22% em três anos: dados do CFN. Telemonitoramento: Resolução CFN 760/2023 e Manual de Telenutrição do CFN (2024; a leitura dos benefícios esperados é nossa). Prescrição como ato privativo: Lei 8.234/91.</li>
+          <li>Retenção de 71% em 12 meses: número divulgado pela própria Clivi. As 100 mil conversas por dia da Simple: divulgado pela imprensa de tecnologia em 2024.</li>
+        </ol>
+      </div>
+    </div>
+    <p class="fine">© 2026 Acompanha.ai. Feito para nutricionistas no Brasil.</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="sticky-cta">
+  <a class="btn" href="#demo">Quero uma demonstração</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* Reveal das mensagens do chat e blocos */
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var toReveal = document.querySelectorAll(".reveal");
+  if (reduced || !("IntersectionObserver" in window)) {
+    toReveal.forEach(function(el){ el.classList.add("vis"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          var el = e.target;
+          var siblings = Array.prototype.slice.call(el.parentNode.querySelectorAll(".reveal"));
+          var idx = siblings.indexOf(el);
+          setTimeout(function(){ el.classList.add("vis"); }, idx * 350);
+          io.unobserve(el);
+        }
+      });
+    }, {threshold:.4});
+    toReveal.forEach(function(el){ io.observe(el); });
+  }
+
+  /* Calculadora da evasão */
+  var vValor = document.getElementById("c-valor"),
+      vNovos = document.getElementById("c-novos"),
+      vRet = document.getElementById("c-ret"),
+      vRetOut = document.getElementById("c-ret-out"),
+      vTotal = document.getElementById("c-total");
+  var vMath = document.getElementById("c-math");
+  var RETORNOS_ANO = 3;
+  function calc(){
+    var valor = Math.max(0, parseFloat(vValor.value) || 0);
+    var novos = Math.max(0, parseFloat(vNovos.value) || 0);
+    var ret = parseInt(vRet.value, 10);
+    vRetOut.textContent = ret;
+    var perdido = novos * 12 * ((10 - ret) / 10) * RETORNOS_ANO * valor;
+    vTotal.textContent = perdido.toLocaleString("pt-BR", {style:"currency", currency:"BRL", maximumFractionDigits:0});
+    vMath.textContent = (novos * 12) + " pacientes novos por ano × " + (10 - ret) + " de cada 10 que somem × " +
+      RETORNOS_ANO + " retornos × " + valor.toLocaleString("pt-BR", {style:"currency", currency:"BRL", maximumFractionDigits:0});
+  }
+  [vValor, vNovos, vRet].forEach(function(el){ el.addEventListener("input", calc); });
+  calc();
+
+  /* Formulário: envio via fetch para o FormSubmit, com fallback */
+  var form = document.getElementById("lead-form"),
+      okMsg = document.getElementById("ok-msg"),
+      err = document.getElementById("f-err"),
+      btn = document.getElementById("f-btn");
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    err.style.display = "none";
+    if (!form.reportValidity()) return;
+    if (form._honey.value) return; /* honeypot */
+    btn.disabled = true;
+    btn.textContent = "Enviando…";
+    var data = new FormData(form);
+    fetch("https://formsubmit.co/ajax/franwwe2k16@hotmail.com", {
+      method: "POST",
+      headers: {"Accept": "application/json"},
+      body: data
+    }).then(function(r){
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    }).then(function(d){
+      if (String(d.success) !== "true") throw new Error("FormSubmit: " + (d.message || "falha"));
+      form.style.display = "none";
+      okMsg.style.display = "block";
+      okMsg.setAttribute("tabindex", "-1");
+      okMsg.focus();
+      okMsg.scrollIntoView({block:"nearest"});
+    }).catch(function(){
+      err.style.display = "block";
+      btn.disabled = false;
+      btn.textContent = "Quero uma demonstração";
+    });
+  });
+
+  /* Barra de CTA fixa no mobile: aparece após 50% de scroll, some sobre o formulário */
+  var bar = document.getElementById("sticky-cta"),
+      demo = document.getElementById("demo"),
+      demoVisible = false;
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function(entries){
+      demoVisible = entries[0].isIntersecting;
+      update();
+    }, {threshold:.1}).observe(demo);
+  }
+  function update(){
+    var half = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight > .5;
+    bar.classList.toggle("show", half && !demoVisible);
+  }
+  window.addEventListener("scroll", update, {passive:true});
+  update();
+})();
+</script>
+</body>
+</html>
