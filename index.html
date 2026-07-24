@@ -7,6 +7,23 @@
 <meta name="description" content="A IA de conversação que responde os pacientes do seu consultório de nutrição entre as consultas: check-ins, dúvidas, foto de refeição e alerta de risco de abandono. A IA tria, você decide.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2315803D'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23FAF9F6'/%3E%3C/svg%3E">
 <script>document.documentElement.classList.add("js")</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2533751823709687');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2533751823709687&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <style>
   :root{
     --bg:#FAF9F6; --surface:#FFFFFF; --surface2:#F1EFE7;
@@ -32,6 +49,7 @@
     }
   }
   *{margin:0;padding:0;box-sizing:border-box}
+  [hidden]{display:none!important}
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto}
@@ -200,7 +218,7 @@
   .mantra-big span{color:var(--brand-mid)}
 
   /* Never */
-  .never{background:var(--surface2)}
+  .never{background:var(--surface2);border-top:1px solid var(--line)}
   .never .cards{margin-top:2rem}
   .never .card{display:flex;gap:14px}
   .never .no{
@@ -308,6 +326,11 @@
   }
   .sticky-cta.show{transform:none}
   .sticky-cta .btn{display:block;width:100%}
+  .sticky-row{display:flex;gap:10px}
+  .sticky-row .btn{flex:1;padding-left:12px;padding-right:12px}
+  .wa-btn{background:#25D366;color:#0B3D2E}
+  .wa-btn:hover{background:#1FBE5A}
+  .wa-alt{font-size:.9rem;margin-bottom:12px;text-align:center}
   @media(min-width:880px){ .sticky-cta{display:none} }
   @media(max-width:879px){ footer{padding-bottom:calc(64px + 84px + env(safe-area-inset-bottom))} }
 
@@ -333,8 +356,8 @@
         <h1>O plano alimentar não quebra no seu consultório. Quebra <em>na sexta à noite, no rodízio, no churrasco</em>, quando você não está lá.</h1>
         <p class="sub">O Acompanha.ai é a assistente de IA que conversa com seus pacientes pelo WhatsApp entre as consultas: responde dúvidas na hora, faz check-ins, recebe foto de refeição e te avisa quando alguém está prestes a desistir. <span class="mantra">A IA tria. Você decide.</span></p>
         <div class="cta-row">
-          <a class="btn" href="#demo">Quero uma demonstração</a>
-          <a class="btn-ghost" href="#como-funciona">Ver como funciona</a>
+          <a class="btn wa-btn" data-wa hidden>Chamar no WhatsApp</a>
+          <a class="btn" id="hero-form-btn" href="#demo">Quero uma demonstração</a>
         </div>
         <p class="micro">Deixe seus dados no formulário e a gente entra em contato em até 1 dia útil.</p>
       </div>
@@ -376,70 +399,6 @@
         <p>apontam <strong>comer fora de casa</strong> como a maior barreira ao plano. Eventos sociais vêm logo atrás, com 33,3%.</p>
         <span class="src">Mesmo estudo do HU de Brasília</span>
       </div>
-    </div>
-  </section>
-
-  <!-- S3 · A DOR -->
-  <section aria-label="A rotina de quem acompanha sozinha">
-    <div class="wrap">
-      <span class="eyebrow">A parte do trabalho que ninguém vê</span>
-      <h2>Você conhece essa semana.</h2>
-      <p style="max-width:40em">A consulta termina, o paciente sai motivado, e o tratamento passa a acontecer num lugar onde você não enxerga nada: o dia a dia dele. O que sobra para você é o plantão informal no seu WhatsApp pessoal.</p>
-      <div class="cards c3">
-        <div class="card">
-          <h3>O plantão invisível</h3>
-          <p>Terça, 22h07: <em>“posso trocar o jantar por pão de queijo?”</em>. Você responde de graça, no seu número pessoal, entre as mensagens da família. Sem registro, sem hora para acabar e sem virar prontuário.</p>
-        </div>
-        <div class="card">
-          <h3>O sumiço sem aviso</h3>
-          <p>No churrasco, ela saiu do plano. Veio a culpa do <em>“já estraguei tudo”</em> e a vergonha de te contar. Ela some. Você só descobre quando o retorno não é marcado. A decisão de desistir amadureceu exatamente no período em que você não via nada.</p>
-        </div>
-        <div class="card">
-          <h3>A agenda imprevisível</h3>
-          <p>Cada paciente que evapora vira um buraco na agenda do mês seguinte. E mais dependência de captar paciente novo, num mercado que nunca foi tão disputado: são <strong>194 mil nutricionistas</strong> no Brasil, 22% a mais que há três anos.</p>
-          <span class="src">Dados do CFN</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- S4 · A CIÊNCIA -->
-  <section class="science" aria-label="O que a ciência diz">
-    <div class="wrap">
-      <span class="eyebrow">O que a evidência mostra</span>
-      <h2>O tratamento não é ganho na prescrição. É ganho na adesão.</h2>
-      <p style="max-width:40em">Num estudo clássico que comparou quatro dietas famosas durante um ano, quem emagreceu não foi quem recebeu a “melhor” dieta. Foi quem conseguiu <strong>seguir</strong> a sua. Veja o peso de cada fator no resultado:</p>
-      <div class="rvs">
-        <div class="win">
-          <div class="num">Decisivo</div>
-          <div class="lbl">o quanto <strong>seguir o plano</strong> pesa no resultado</div>
-          <div class="bar" aria-hidden="true"><i></i></div>
-        </div>
-        <div class="x" aria-hidden="true">vs</div>
-        <div class="lose">
-          <div class="num">Quase nada</div>
-          <div class="lbl">o quanto o <strong>tipo de dieta</strong> pesa</div>
-          <div class="bar" aria-hidden="true"><i></i></div>
-        </div>
-      </div>
-      <p class="src">As barras mostram a proporção medida pelo estudo. Os números exatos estão no fim da página.</p>
-      <div class="cards c2">
-        <div class="card">
-          <h3>O que mais segura o paciente no plano é ter alguém acompanhando</h3>
-          <p>Pacientes com alguém acompanhando de perto seguiram o plano <strong>65% mais</strong> do que os que ficaram por conta própria. É o que mostra a maior revisão de pesquisas já feita sobre o assunto, somando mais de 6 mil pacientes. Mais efeito do que qualquer ajuste no cardápio.</p>
-          <span class="src">Revisão de 27 pesquisas sobre adesão, 2016</span>
-        </div>
-        <div class="card">
-          <h3>Acompanhar de perto muda o jogo</h3>
-          <p>No começo do estudo, só <strong>2 em cada 10</strong> pacientes diziam não ter mais dificuldade para seguir o plano. Depois de três consultas com acompanhamento de perto, eram <strong>mais de 9 em cada 10</strong> (de 20% para 93%).</p>
-          <span class="src">Estudo com pacientes em tratamento para colesterol alto</span>
-        </div>
-      </div>
-      <div class="timing">
-        <p class="big">O lapso que vira abandono acontece em dias. O ciclo de consultas se mede em semanas.</p>
-        <p>Os lapsos são previsíveis: casa, noite, fim de semana, eventos sociais. É o que mostram as pesquisas que acompanham pacientes no dia a dia. Quando o retorno chega, a espiral do desvio que vira culpa e termina em abandono já rodou inteira.</p>
-      </div>
-      <p style="margin-top:2rem;max-width:40em"><strong>Você sempre soube que acompanhar de perto funciona.</strong> O que nunca existiu foi um jeito de fazer isso com 40, 60, 80 pacientes ao mesmo tempo sem virar plantão de 24 horas. É exatamente isso que muda agora.</p>
     </div>
   </section>
 
@@ -503,10 +462,116 @@
         </div>
       </div>
       <p class="mantra-big">A IA tria. <span>Você decide.</span></p>
-      <div class="cta-inline">
-        <a class="btn" href="#demo">Quero uma demonstração</a>
-        <span class="micro">Conversa de 15 minutos, sem compromisso.</span>
+    </div>
+  </section>
+
+  <!-- S10 · FORMULÁRIO -->
+  <section class="demo" id="demo" aria-label="Pedir demonstração">
+    <div class="wrap">
+      <span class="eyebrow" style="color:#A7E3BE">Demonstração</span>
+      <h2>Veja a assistente funcionando com os seus planos</h2>
+      <p class="sub">Deixe seus dados e a gente entra em contato em até 1 dia útil. É uma conversa de 15 minutos, sem compromisso, para mostrar a assistente rodando e entender como é o seu consultório.</p>
+      <form id="lead-form" action="https://formsubmit.co/franwwe2k16@hotmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Novo pedido de demonstração | Acompanha.ai">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="hp" aria-hidden="true">
+          <label>Não preencha este campo<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <div class="field">
+          <label for="f-nome">Seu nome</label>
+          <input type="text" id="f-nome" name="nome" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-zap">Seu WhatsApp (com DDD)</label>
+          <input type="tel" id="f-zap" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(11) 91234-5678" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Seu e-mail (opcional)</label>
+          <input type="email" id="f-email" name="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-pac">Quantos pacientes ativos você acompanha? (opcional)</label>
+          <select id="f-pac" name="pacientes_ativos">
+            <option value="">Prefiro não dizer</option>
+            <option>Até 10</option>
+            <option>10 a 30</option>
+            <option>30 a 60</option>
+            <option>Mais de 60</option>
+          </select>
+        </div>
+        <p class="wa-alt" data-wa-wrap hidden>Prefere conversar direto? <a data-wa hidden>Chama no WhatsApp</a></p>
+        <button class="btn" type="submit" id="f-btn">Quero uma demonstração</button>
+        <p class="err" id="f-err" role="alert">Não foi possível enviar agora. Fale direto com a gente: <a href="mailto:franwwe2k16@hotmail.com?subject=Demonstra%C3%A7%C3%A3o%20Acompanha.ai">franwwe2k16@hotmail.com</a></p>
+        <p class="micro">Seus dados são usados apenas para esse contato. Nada de spam, nada de lista.</p>
+      </form>
+      <div class="ok-msg" id="ok-msg" role="status">
+        <h3>Recebido! 💚</h3>
+        <p>Vamos te chamar no WhatsApp em até 1 dia útil para combinar a demonstração.</p>
       </div>
+    </div>
+  </section>
+<!-- S3 · A DOR -->
+  <section aria-label="A rotina de quem acompanha sozinha">
+    <div class="wrap">
+      <span class="eyebrow">A parte do trabalho que ninguém vê</span>
+      <h2>Você conhece essa semana.</h2>
+      <p style="max-width:40em">A consulta termina, o paciente sai motivado, e o tratamento passa a acontecer num lugar onde você não enxerga nada: o dia a dia dele. O que sobra para você é o plantão informal no seu WhatsApp pessoal.</p>
+      <div class="cards c3">
+        <div class="card">
+          <h3>O plantão invisível</h3>
+          <p>Terça, 22h07: <em>“posso trocar o jantar por pão de queijo?”</em>. Você responde de graça, no seu número pessoal, entre as mensagens da família. Sem registro, sem hora para acabar e sem virar prontuário.</p>
+        </div>
+        <div class="card">
+          <h3>O sumiço sem aviso</h3>
+          <p>Ela sai do plano num fim de semana, sente vergonha de te contar e some. Você só descobre quando o retorno não é marcado. A decisão de desistir amadureceu exatamente no período em que você não via nada.</p>
+        </div>
+        <div class="card">
+          <h3>A agenda imprevisível</h3>
+          <p>Cada paciente que evapora vira um buraco na agenda do mês seguinte. E mais dependência de captar paciente novo, num mercado que nunca foi tão disputado: são <strong>194 mil nutricionistas</strong> no Brasil, 22% a mais que há três anos.</p>
+          <span class="src">Dados do CFN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 · A CIÊNCIA -->
+  <section class="science" aria-label="O que a ciência diz">
+    <div class="wrap">
+      <span class="eyebrow">O que a evidência mostra</span>
+      <h2>O tratamento não é ganho na prescrição. É ganho na adesão.</h2>
+      <p style="max-width:40em">Num estudo clássico que comparou quatro dietas famosas durante um ano, quem emagreceu não foi quem recebeu a “melhor” dieta. Foi quem conseguiu <strong>seguir</strong> a sua. Veja o peso de cada fator no resultado:</p>
+      <div class="rvs">
+        <div class="win">
+          <div class="num">Decisivo</div>
+          <div class="lbl">o quanto <strong>seguir o plano</strong> pesa no resultado</div>
+          <div class="bar" aria-hidden="true"><i></i></div>
+        </div>
+        <div class="x" aria-hidden="true">vs</div>
+        <div class="lose">
+          <div class="num">Quase nada</div>
+          <div class="lbl">o quanto o <strong>tipo de dieta</strong> pesa</div>
+          <div class="bar" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+      <p class="src">As barras mostram a proporção medida pelo estudo. Os números exatos estão no fim da página.</p>
+      <div class="cards c2">
+        <div class="card">
+          <h3>O que mais segura o paciente no plano é ter alguém acompanhando</h3>
+          <p>Pacientes com alguém acompanhando de perto seguiram o plano <strong>65% mais</strong> do que os que ficaram por conta própria. É o que mostra a maior revisão de pesquisas já feita sobre o assunto, somando mais de 6 mil pacientes. Mais efeito do que qualquer ajuste no cardápio.</p>
+          <span class="src">Revisão de 27 pesquisas sobre adesão, 2016</span>
+        </div>
+        <div class="card">
+          <h3>Acompanhar de perto muda o jogo</h3>
+          <p>No começo do estudo, só <strong>2 em cada 10</strong> pacientes diziam não ter mais dificuldade para seguir o plano. Depois de três consultas com acompanhamento de perto, eram <strong>mais de 9 em cada 10</strong> (de 20% para 93%).</p>
+          <span class="src">Estudo com pacientes em tratamento para colesterol alto</span>
+        </div>
+      </div>
+      <div class="timing">
+        <p class="big">O lapso que vira abandono acontece em dias. O ciclo de consultas se mede em semanas.</p>
+        <p>Os lapsos são previsíveis: casa, noite, fim de semana, eventos sociais. É o que mostram as pesquisas que acompanham pacientes no dia a dia. Quando o retorno chega, a espiral do desvio que vira culpa e termina em abandono já rodou inteira.</p>
+      </div>
+      <p style="margin-top:2rem;max-width:40em"><strong>Você sempre soube que acompanhar de perto funciona.</strong> O que nunca existiu foi um jeito de fazer isso com 40, 60, 80 pacientes ao mesmo tempo sem virar plantão de 24 horas. É exatamente o que você viu lá em cima. E para isso funcionar com paciente de verdade, precisa de limites claros. É o que vem a seguir.</p>
     </div>
   </section>
 
@@ -581,24 +646,28 @@
       <div class="calc-box">
         <div>
           <div class="field">
-            <label for="c-valor">Valor da sua consulta de retorno (R$)</label>
+            <label for="c-valor">Quanto você cobra por uma consulta de retorno? (R$)</label>
             <input type="number" id="c-valor" value="150" min="0" step="10" inputmode="numeric">
           </div>
           <div class="field">
-            <label for="c-novos">Pacientes novos por mês</label>
+            <label for="c-novos">Quantos pacientes novos chegam por mês?</label>
             <input type="number" id="c-novos" value="6" min="0" step="1" inputmode="numeric">
           </div>
           <div class="field">
-            <label for="c-ret">De cada 10 pacientes novos, quantos completam os retornos? <output id="c-ret-out">2</output>/10</label>
+            <label for="c-retornos">Quantos retornos um tratamento completo tem no seu consultório?</label>
+            <input type="number" id="c-retornos" value="3" min="1" max="12" step="1" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="c-ret">De cada 10 pacientes que começam, quantos vão até o fim? <output id="c-ret-out">2</output>/10</label>
             <input type="range" id="c-ret" value="2" min="0" max="10" step="1">
             <p class="hint">No único dado brasileiro publicado, menos de 2 em cada 10 chegam à 2ª consulta de retorno. Cada consultório tem sua realidade.</p>
           </div>
         </div>
         <div class="calc-out">
           <div class="val" id="c-total" aria-live="polite">R$ 25.920</div>
-          <p>por ano em consultas de retorno que a evasão leva embora</p>
-          <p class="src" id="c-math">72 pacientes novos por ano × 8 de cada 10 que somem × 3 retornos × R$ 150</p>
-          <span class="src">Estimativa com 3 consultas de retorno previstas por tratamento. A calculadora dimensiona o problema. Não é uma promessa de recuperação.</span>
+          <p>é o que a evasão leva do seu consultório por ano, só em consultas de retorno que não acontecem</p>
+          <p class="src" id="c-math">A conta: 72 pacientes novos no ano × 8 em cada 10 que somem antes do fim × 3 retornos de R$ 150</p>
+          <span class="src">A calculadora dimensiona o problema. Não é uma promessa de recuperação.</span>
         </div>
       </div>
       <div class="cta-inline">
@@ -645,52 +714,7 @@
     </div>
   </section>
 
-  <!-- S10 · FORMULÁRIO -->
-  <section class="demo" id="demo" aria-label="Pedir demonstração">
-    <div class="wrap">
-      <span class="eyebrow" style="color:#A7E3BE">Demonstração</span>
-      <h2>Veja a assistente funcionando com os seus planos</h2>
-      <p class="sub">Deixe seus dados e a gente entra em contato em até 1 dia útil. É uma conversa de 15 minutos, sem compromisso, para mostrar a assistente rodando e entender como é o seu consultório.</p>
-      <form id="lead-form" action="https://formsubmit.co/franwwe2k16@hotmail.com" method="POST" novalidate>
-        <input type="hidden" name="_subject" value="Novo pedido de demonstração | Acompanha.ai">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <div class="hp" aria-hidden="true">
-          <label>Não preencha este campo<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
-        </div>
-        <div class="field">
-          <label for="f-nome">Seu nome</label>
-          <input type="text" id="f-nome" name="nome" autocomplete="name" required>
-        </div>
-        <div class="field">
-          <label for="f-zap">Seu WhatsApp (com DDD)</label>
-          <input type="tel" id="f-zap" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(11) 91234-5678" required>
-        </div>
-        <div class="field">
-          <label for="f-email">Seu e-mail (opcional)</label>
-          <input type="email" id="f-email" name="email" autocomplete="email">
-        </div>
-        <div class="field">
-          <label for="f-pac">Quantos pacientes ativos você acompanha? (opcional)</label>
-          <select id="f-pac" name="pacientes_ativos">
-            <option value="">Prefiro não dizer</option>
-            <option>Até 10</option>
-            <option>10 a 30</option>
-            <option>30 a 60</option>
-            <option>Mais de 60</option>
-          </select>
-        </div>
-        <button class="btn" type="submit" id="f-btn">Quero uma demonstração</button>
-        <p class="err" id="f-err" role="alert">Não foi possível enviar agora. Fale direto com a gente: <a href="mailto:franwwe2k16@hotmail.com?subject=Demonstra%C3%A7%C3%A3o%20Acompanha.ai">franwwe2k16@hotmail.com</a></p>
-        <p class="micro">Seus dados são usados apenas para esse contato. Nada de spam, nada de lista.</p>
-      </form>
-      <div class="ok-msg" id="ok-msg" role="status">
-        <h3>Recebido! 💚</h3>
-        <p>Vamos te chamar no WhatsApp em até 1 dia útil para combinar a demonstração.</p>
-      </div>
-    </div>
-  </section>
-</main>
+  </main>
 
 <!-- S11 · FOOTER -->
 <footer>
@@ -722,12 +746,35 @@
 </footer>
 
 <div class="sticky-cta" id="sticky-cta">
-  <a class="btn" href="#demo">Quero uma demonstração</a>
+  <div class="sticky-row">
+    <a class="btn wa-btn" data-wa hidden>WhatsApp</a>
+    <a class="btn" id="sticky-form-btn" href="#demo">Quero uma demonstração</a>
+  </div>
 </div>
 
 <script>
 (function(){
   "use strict";
+
+  /* WhatsApp: preencha com DDI+DDD+numero, so digitos (ex.: "5511912345678").
+     Vazio ou placeholder = botoes de WhatsApp ficam ocultos e nada quebra. */
+  var WHATSAPP = "SEUNUMERO";
+  var waLink = /^[0-9]{12,13}$/.test(WHATSAPP)
+    ? "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Oi! Vi o site do Acompanha.ai e quero uma demonstração.")
+    : null;
+  document.querySelectorAll("[data-wa]").forEach(function(el){
+    if (waLink) {
+      el.href = waLink; el.hidden = false; el.target = "_blank"; el.rel = "noopener";
+      var wrap = el.closest("[data-wa-wrap]"); if (wrap) wrap.hidden = false;
+      el.addEventListener("click", function(){ if (window.fbq) fbq("track", "Contact"); });
+    }
+  });
+  if (waLink) {
+    var hb = document.getElementById("hero-form-btn");
+    if (hb) { hb.className = "btn-ghost"; hb.textContent = "Deixar meus dados"; }
+    var sb = document.getElementById("sticky-form-btn");
+    if (sb) sb.textContent = "Deixar dados";
+  }
 
   /* Reveal das mensagens do chat e blocos */
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -752,22 +799,24 @@
   /* Calculadora da evasão */
   var vValor = document.getElementById("c-valor"),
       vNovos = document.getElementById("c-novos"),
+      vRetornos = document.getElementById("c-retornos"),
       vRet = document.getElementById("c-ret"),
       vRetOut = document.getElementById("c-ret-out"),
       vTotal = document.getElementById("c-total");
   var vMath = document.getElementById("c-math");
-  var RETORNOS_ANO = 3;
   function calc(){
     var valor = Math.max(0, parseFloat(vValor.value) || 0);
     var novos = Math.max(0, parseFloat(vNovos.value) || 0);
+    var retornos = Math.min(12, Math.max(1, parseInt(vRetornos.value, 10) || 3));
     var ret = parseInt(vRet.value, 10);
     vRetOut.textContent = ret;
-    var perdido = novos * 12 * ((10 - ret) / 10) * RETORNOS_ANO * valor;
+    var perdido = novos * 12 * ((10 - ret) / 10) * retornos * valor;
     vTotal.textContent = perdido.toLocaleString("pt-BR", {style:"currency", currency:"BRL", maximumFractionDigits:0});
-    vMath.textContent = (novos * 12) + " pacientes novos por ano × " + (10 - ret) + " de cada 10 que somem × " +
-      RETORNOS_ANO + " retornos × " + valor.toLocaleString("pt-BR", {style:"currency", currency:"BRL", maximumFractionDigits:0});
+    vMath.textContent = "A conta: " + (novos * 12) + " pacientes novos no ano × " + (10 - ret) +
+      " em cada 10 que somem antes do fim × " + retornos + (retornos === 1 ? " retorno" : " retornos") + " de " +
+      valor.toLocaleString("pt-BR", {style:"currency", currency:"BRL", maximumFractionDigits:0});
   }
-  [vValor, vNovos, vRet].forEach(function(el){ el.addEventListener("input", calc); });
+  [vValor, vNovos, vRetornos, vRet].forEach(function(el){ el.addEventListener("input", calc); });
   calc();
 
   /* Formulário: envio via fetch para o FormSubmit, com fallback */
@@ -794,6 +843,7 @@
       if (String(d.success) !== "true") throw new Error("FormSubmit: " + (d.message || "falha"));
       form.style.display = "none";
       okMsg.style.display = "block";
+      if (window.fbq) fbq("track", "Lead");
       okMsg.setAttribute("tabindex", "-1");
       okMsg.focus();
       okMsg.scrollIntoView({block:"nearest"});
@@ -814,9 +864,14 @@
       update();
     }, {threshold:.1}).observe(demo);
   }
+  var meioDisparado = false;
   function update(){
-    var half = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight > .5;
-    bar.classList.toggle("show", half && !demoVisible);
+    var fundo = window.scrollY > window.innerHeight * 1.5;
+    bar.classList.toggle("show", fundo && !demoVisible);
+    if (!meioDisparado && (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight > .5) {
+      meioDisparado = true;
+      if (window.fbq) fbq("trackCustom", "ScrollMeio");
+    }
   }
   window.addEventListener("scroll", update, {passive:true});
   update();
