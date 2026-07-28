@@ -106,6 +106,10 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
   .hero .sub{font-size:1.15rem;margin-bottom:1.6rem;max-width:34em}
   .hero .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:.6rem}
   .hero .micro{font-size:.85rem;color:var(--ink-faint)}
+  .trust-strip{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:4px;padding:0}
+  .trust-strip li{font-size:.85rem;color:var(--ink-soft);position:relative;padding-left:20px}
+  .trust-strip li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .demo .transparencia{font-size:.92rem;opacity:.9;max-width:36em;margin-top:-8px;margin-bottom:4px}
   .mantra{font-weight:700;color:var(--ink)}
   @media(min-width:880px){
     .hero .wrap{grid-template-columns:1.15fr .85fr}
@@ -359,7 +363,11 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
           <a class="btn wa-btn" data-wa hidden>Chamar no WhatsApp</a>
           <a class="btn" id="hero-form-btn" href="#demo">Quero uma demonstração</a>
         </div>
-        <p class="micro">Deixe seus dados no formulário e a gente entra em contato em até 1 dia útil.</p>
+        <ul class="trust-strip">
+          <li>Sempre se apresenta como assistente da sua equipe</li>
+          <li>Nunca prescreve (Lei 8.234/91)</li>
+          <li>Você aprova cada resposta</li>
+        </ul>
       </div>
       <div class="phone-slot">
         <div class="phone" role="img" aria-label="Simulação de conversa: paciente pede ajuda num rodízio de japonês no sábado à noite e a assistente orienta dentro do plano prescrito pela nutricionista.">
@@ -471,6 +479,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       <span class="eyebrow" style="color:#A7E3BE">Demonstração</span>
       <h2>Veja a assistente funcionando com os seus planos</h2>
       <p class="sub">Deixe seus dados e a gente entra em contato em até 1 dia útil. É uma conversa de 15 minutos, sem compromisso, para mostrar a assistente rodando e entender como é o seu consultório.</p>
+      <p class="transparencia">✓ Transparência total: sua paciente sempre sabe que fala com a assistente da sua equipe. E quem decide tudo é você.</p>
       <form id="lead-form" action="https://formsubmit.co/franwwe2k16@hotmail.com" method="POST" novalidate>
         <input type="hidden" name="_subject" value="Novo pedido de demonstração | Acompanha.ai">
         <input type="hidden" name="_template" value="table">
@@ -824,6 +833,9 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       okMsg = document.getElementById("ok-msg"),
       err = document.getElementById("f-err"),
       btn = document.getElementById("f-btn");
+  form.addEventListener("input", function(){
+    if (window.fbq) fbq("trackCustom", "ComecouPreencher");
+  }, {once:true});
   form.addEventListener("submit", function(ev){
     ev.preventDefault();
     err.style.display = "none";
@@ -857,18 +869,35 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
   /* Barra de CTA fixa no mobile: aparece após 50% de scroll, some sobre o formulário */
   var bar = document.getElementById("sticky-cta"),
       demo = document.getElementById("demo"),
-      demoVisible = false;
+      demoVisible = false,
+      viuFormDisparado = false;
   if ("IntersectionObserver" in window) {
     new IntersectionObserver(function(entries){
       demoVisible = entries[0].isIntersecting;
+      if (demoVisible && !viuFormDisparado) {
+        viuFormDisparado = true;
+        if (window.fbq) fbq("trackCustom", "ViuFormulario");
+      }
       update();
     }, {threshold:.1}).observe(demo);
   }
-  var meioDisparado = false;
+  var meioDisparado = false, quartoDisparado = false;
   function update(){
     var fundo = window.scrollY > window.innerHeight * 1.5;
     bar.classList.toggle("show", fundo && !demoVisible);
-    if (!meioDisparado && (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight > .5) {
+    var prof = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+    if (!viuFormDisparado) {
+      var dr = demo.getBoundingClientRect();
+      if (dr.top < window.innerHeight && dr.bottom > 0) {
+        viuFormDisparado = true;
+        if (window.fbq) fbq("trackCustom", "ViuFormulario");
+      }
+    }
+    if (!quartoDisparado && prof > .25) {
+      quartoDisparado = true;
+      if (window.fbq) fbq("trackCustom", "Scroll25");
+    }
+    if (!meioDisparado && prof > .5) {
       meioDisparado = true;
       if (window.fbq) fbq("trackCustom", "ScrollMeio");
     }
