@@ -7,8 +7,18 @@
 <meta name="description" content="A IA de conversação que responde os pacientes do seu consultório de nutrição entre as consultas: check-ins, dúvidas, foto de refeição e alerta de risco de abandono. A IA tria, você decide.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2315803D'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23FAF9F6'/%3E%3C/svg%3E">
 <script>document.documentElement.classList.add("js")</script>
+<script>
+/* Supressor de medição interna: visite uma vez com ?dev=1 em CADA navegador/webview de teste */
+(function(){
+  try{
+    if(/[?&]dev=1/.test(location.search)) localStorage.setItem("acompanha_dev","1");
+    window.__DEV = localStorage.getItem("acompanha_dev")==="1";
+  }catch(e){ window.__DEV=false; }
+})();
+</script>
 <!-- Meta Pixel Code -->
 <script>
+if(!window.__DEV){
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -19,6 +29,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1293122545693280');
 fbq('track', 'PageView');
+}
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
@@ -766,6 +777,9 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
 (function(){
   "use strict";
 
+  /* wv=1 nos eventos: visita veio do navegador interno do FB/IG */
+  var WV = /FBAN|FB_IAB|Instagram/.test(navigator.userAgent) ? "1" : "0";
+
   /* WhatsApp: preencha com DDI+DDD+numero, so digitos (ex.: "5511912345678").
      Vazio ou placeholder = botoes de WhatsApp ficam ocultos e nada quebra. */
   var WHATSAPP = "SEUNUMERO";
@@ -776,7 +790,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
     if (waLink) {
       el.href = waLink; el.hidden = false; el.target = "_blank"; el.rel = "noopener";
       var wrap = el.closest("[data-wa-wrap]"); if (wrap) wrap.hidden = false;
-      el.addEventListener("click", function(){ if (window.fbq) fbq("track", "Contact"); });
+      el.addEventListener("click", function(){ if (window.fbq) fbq("track", "Contact", {wv: WV}); });
     }
   });
   if (waLink) {
@@ -835,21 +849,21 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       err = document.getElementById("f-err"),
       btn = document.getElementById("f-btn");
   form.addEventListener("input", function(){
-    if (window.fbq) fbq("trackCustom", "ComecouPreencher");
+    if (window.fbq) fbq("trackCustom", "ComecouPreencher", {wv: WV});
   }, {once:true});
   if (/[?&]enviado=1/.test(location.search)) {
     /* volta do envio clássico (fallback quando o fetch é bloqueado no webview) */
     form.style.display = "none";
     okMsg.style.display = "block";
-    if (window.fbq) fbq("track", "Lead");
+    if (window.fbq) fbq("track", "Lead", {wv: WV});
     if (history.replaceState) history.replaceState(null, "", location.pathname);
   }
   form.addEventListener("submit", function(ev){
     ev.preventDefault();
     err.style.display = "none";
-    if (!form.reportValidity()) { if (window.fbq) fbq("trackCustom", "CamposInvalidos"); return; }
-    if (form._honey.value) { if (window.fbq) fbq("trackCustom", "HoneypotAtivou"); return; } /* honeypot */
-    if (window.fbq) fbq("trackCustom", "TentouEnviar");
+    if (!form.reportValidity()) { if (window.fbq) fbq("trackCustom", "CamposInvalidos", {wv: WV}); return; }
+    if (form._honey.value) { if (window.fbq) fbq("trackCustom", "HoneypotAtivou", {wv: WV}); return; } /* honeypot */
+    if (window.fbq) fbq("trackCustom", "TentouEnviar", {wv: WV});
     btn.disabled = true;
     btn.textContent = "Enviando…";
     var data = new FormData(form);
@@ -864,12 +878,12 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       if (String(d.success) !== "true") throw new Error("FormSubmit: " + (d.message || "falha"));
       form.style.display = "none";
       okMsg.style.display = "block";
-      if (window.fbq) fbq("track", "Lead");
+      if (window.fbq) fbq("track", "Lead", {wv: WV});
       okMsg.setAttribute("tabindex", "-1");
       okMsg.focus();
       okMsg.scrollIntoView({block:"nearest"});
     }).catch(function(e){
-      if (window.fbq) fbq("trackCustom", "LeadFalhou", {motivo: String(e && e.message).slice(0, 80)});
+      if (window.fbq) fbq("trackCustom", "LeadFalhou", {motivo: String(e && e.message).slice(0, 80), wv: WV});
       if (e instanceof TypeError) { form.submit(); return; } /* fetch bloqueado (webview do FB/IG): envio clássico, volta via ?enviado=1 */
       err.style.display = "block";
       btn.disabled = false;
@@ -887,7 +901,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       demoVisible = entries[0].isIntersecting;
       if (demoVisible && !viuFormDisparado) {
         viuFormDisparado = true;
-        if (window.fbq) fbq("trackCustom", "ViuFormulario");
+        if (window.fbq) fbq("trackCustom", "ViuFormulario", {wv: WV});
       }
       update();
     }, {threshold:.1}).observe(demo);
@@ -901,16 +915,16 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       var dr = demo.getBoundingClientRect();
       if (dr.top < window.innerHeight && dr.bottom > 0) {
         viuFormDisparado = true;
-        if (window.fbq) fbq("trackCustom", "ViuFormulario");
+        if (window.fbq) fbq("trackCustom", "ViuFormulario", {wv: WV});
       }
     }
     if (!quartoDisparado && prof > .25) {
       quartoDisparado = true;
-      if (window.fbq) fbq("trackCustom", "Scroll25");
+      if (window.fbq) fbq("trackCustom", "Scroll25", {wv: WV});
     }
     if (!meioDisparado && prof > .5) {
       meioDisparado = true;
-      if (window.fbq) fbq("trackCustom", "ScrollMeio");
+      if (window.fbq) fbq("trackCustom", "ScrollMeio", {wv: WV});
     }
   }
   window.addEventListener("scroll", update, {passive:true});
