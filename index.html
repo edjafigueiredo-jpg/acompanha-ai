@@ -12,6 +12,7 @@
 (function(){
   try{
     if(/[?&]dev=1/.test(location.search)) localStorage.setItem("acompanha_dev","1");
+    if(/[?&]dev=0/.test(location.search)) localStorage.removeItem("acompanha_dev");
     window.__DEV = localStorage.getItem("acompanha_dev")==="1";
   }catch(e){ window.__DEV=false; }
 })();
@@ -35,6 +36,18 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- Microsoft Clarity: analytics independente do pixel. Ativa ao preencher CLARITY_ID (clarity.microsoft.com → New project → copiar o ID) -->
+<script>
+(function(){
+  var CLARITY_ID = "";
+  if(!CLARITY_ID || window.__DEV) return;
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", CLARITY_ID);
+})();
+</script>
 <style>
   :root{
     --bg:#FAF9F6; --surface:#FFFFFF; --surface2:#F1EFE7;
@@ -495,7 +508,9 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
         <input type="hidden" name="_subject" value="Novo pedido de demonstração | Acompanha.ai">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_cc" value="edjafigueiredo@gmail.com">
         <input type="hidden" name="_next" value="https://www.acompanhanutri.com.br/?enviado=1">
+        <input type="hidden" name="origem" id="f-origem" value="">
         <div class="hp" aria-hidden="true">
           <label>Não preencha este campo<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
         </div>
@@ -523,7 +538,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
         </div>
         <p class="wa-alt" data-wa-wrap hidden>Prefere conversar direto? <a data-wa hidden>Chama no WhatsApp</a></p>
         <button class="btn" type="submit" id="f-btn">Quero uma demonstração</button>
-        <p class="err" id="f-err" role="alert">Não foi possível enviar agora. Fale direto com a gente: <a href="mailto:franwwe2k16@hotmail.com?subject=Demonstra%C3%A7%C3%A3o%20Acompanha.ai">franwwe2k16@hotmail.com</a></p>
+        <p class="err" id="f-err" role="alert">Não foi possível enviar agora. Fale direto com a gente: <a href="https://wa.me/5587991070716?text=Oi!%20Tentei%20pedir%20uma%20demonstra%C3%A7%C3%A3o%20pelo%20site." target="_blank" rel="noopener">chama no WhatsApp</a> ou <a href="mailto:franwwe2k16@hotmail.com?subject=Demonstra%C3%A7%C3%A3o%20Acompanha.ai">franwwe2k16@hotmail.com</a></p>
         <p class="micro">Seus dados são usados apenas para esse contato. Nada de spam, nada de lista.</p>
       </form>
       <div class="ok-msg" id="ok-msg" role="status">
@@ -851,6 +866,18 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
   form.addEventListener("input", function(){
     if (window.fbq) fbq("trackCustom", "ComecouPreencher", {wv: WV});
   }, {once:true});
+  /* Atribuição: guarda fbclid/utm_* no lead e preserva os parâmetros na volta do fallback */
+  try{
+    var atrib = [];
+    location.search.replace(/^\?/, "").split("&").forEach(function(p){
+      if (/^(fbclid|utm_[a-z]+)=./.test(p)) atrib.push(p.slice(0, 160));
+    });
+    if (atrib.length) {
+      var origem = document.getElementById("f-origem");
+      if (origem) origem.value = atrib.join(" ").slice(0, 480);
+      if (form._next) form._next.value += "&" + atrib.join("&");
+    }
+  }catch(e){}
   if (/[?&]enviado=1/.test(location.search)) {
     /* volta do envio clássico (fallback quando o fetch é bloqueado no webview) */
     form.style.display = "none";
@@ -862,7 +889,11 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
     ev.preventDefault();
     err.style.display = "none";
     if (!form.reportValidity()) { if (window.fbq) fbq("trackCustom", "CamposInvalidos", {wv: WV}); return; }
-    if (form._honey.value) { if (window.fbq) fbq("trackCustom", "HoneypotAtivou", {wv: WV}); return; } /* honeypot */
+    if (form._honey.value) {
+      /* autofill preencheu o honeypot: registra, limpa e segue — o FormSubmit continua barrando bots server-side */
+      if (window.fbq) fbq("trackCustom", "HoneypotAtivou", {wv: WV});
+      form._honey.value = "";
+    }
     if (window.fbq) fbq("trackCustom", "TentouEnviar", {wv: WV});
     btn.disabled = true;
     btn.textContent = "Enviando…";
@@ -884,10 +915,16 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       okMsg.scrollIntoView({block:"nearest"});
     }).catch(function(e){
       if (window.fbq) fbq("trackCustom", "LeadFalhou", {motivo: String(e && e.message).slice(0, 80), wv: WV});
-      if (e instanceof TypeError) { form.submit(); return; } /* fetch bloqueado (webview do FB/IG): envio clássico, volta via ?enviado=1 */
-      err.style.display = "block";
-      btn.disabled = false;
-      btn.textContent = "Quero uma demonstração";
+      /* fallback universal: qualquer falha do fetch vira envio clássico (volta via ?enviado=1);
+         o setTimeout dá folga para o beacon do LeadFalhou sair antes da navegação */
+      setTimeout(function(){
+        try { form.submit(); }
+        catch (e2) {
+          err.style.display = "block";
+          btn.disabled = false;
+          btn.textContent = "Quero uma demonstração";
+        }
+      }, 300);
     });
   });
 
