@@ -1,0 +1,12 @@
+status,data_convite,origem,cidade,perfil_ok,tipo_nota,data_aceite,data_m1,data_m2,data_m3,respondeu,data_entrevista,compareceu,indicou,virou_design_partner,proximo_passo
+# ESQUEMA APENAS - NAO PREENCHA COM DADOS REAIS AQUI (repositorio publico / LGPD).
+# Copie esta linha de cabecalho para uma planilha no Google Drive e trabalhe la.
+# Colunas de identificacao (nome / link do perfil / whatsapp) ficam SO na planilha do Drive.
+#
+# status: convite_enviado | aceito | respondeu | agendada | realizada | descartado
+# origem: busca_boolean | comentarista_post | indicacao | grupo | evento
+# perfil_ok: sim | nao (checagem de 15s do ICP antes de enviar)
+# tipo_nota: A1 | A2 | A3 | sem_nota (caminho B)
+# respondeu: sim | nao | negativa
+# indicou: numero de colegas indicadas na entrevista
+# proximo_passo: texto curto com data
