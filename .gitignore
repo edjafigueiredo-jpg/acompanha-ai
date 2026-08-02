@@ -1,3 +1,7 @@
 claims-ledger.md
 README.md
 ads/
+
+# Prospeccao: dado real de prospect nunca entra no repo (publico / LGPD)
+_prospeccao/*.local.csv
+_prospeccao/*.ics
