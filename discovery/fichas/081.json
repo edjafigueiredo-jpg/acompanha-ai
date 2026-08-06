@@ -1,0 +1,43 @@
+{
+  "id": "081",
+  "nome": "Larissa Noronha Prates",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Brasília",
+  "uf": "DF",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição vegetariana e vegana, com foco em transição alimentar sem deficiência nutricional",
+  "modelo_atendimento": "Vende consultoria trimestral de R$ 1.450 que inclui três consultas presenciais numa sala alugada por hora na Asa Norte, ajustes de plano e suporte por WhatsApp incluso no preço. Complementa a renda dando aulas de reforço de bioquímica para estudantes de nutrição. A renda é irregular: mês bom fecha três pacotes, mês ruim nenhum.",
+  "carteira_ativa": 8,
+  "ticket_consulta": 483,
+  "consultas_semana": 5,
+  "contexto": "Formada pela UnB em 2023, virou vegetariana aos 17 e fez da causa a carreira. Mora com uma amiga num apartamento alugado no Cruzeiro e ainda paga o Fies. Escolheu o modelo de pacote depois de ver colegas cobrando R$ 150 por consulta avulsa e vivendo de retorno que nunca acontecia. É desconfiada de promessa fácil — de guru de marketing, de mentoria de 10k por mês, de tudo que chega pelo Instagram. O que a cansa é a montanha-russa financeira e a sensação de que capta paciente a conta-gotas, quase só por indicação de outros vegetarianos.",
+  "rotina": "Atende terças e quintas à tarde, das 14h às 19h, na sala alugada. Segundas e quartas de manhã prepara planos e responde o WhatsApp dos pacotes ativos. Sextas dá aula de reforço online. Sábado de manhã grava conteúdo para o Instagram, tarefa que odeia e adia.",
+  "whatsapp_pacientes": "Número pessoal mesmo, sem WhatsApp Business. Como o suporte está incluso no pacote, ela responde tudo — mas com 8 pacientes ativos o volume é baixo, umas 5 a 8 mensagens por dia, geralmente foto de rótulo ('esse tofu serve?') entre 19h e 22h. Ela não se incomoda com o volume; incomoda-se quando o pacote acaba e a pessoa some sem renovar, e aí o silêncio no WhatsApp vira lembrete de renda que não entrou.",
+  "tecnologia": "Google Agenda gratuito, planos alimentares montados no Canva a partir de um template próprio, cálculo dietético numa planilha do Excel que herdou da faculdade. Paga só o Canva Pro, R$ 34,90 por mês. Confortável com tecnologia, mas cética: acha que a maioria dos apps do nicho é cara para o que entrega e nunca assinou nenhum.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Caio", "historia": "Estudante de biologia da UnB, fechou o trimestral para transição vegana, super engajado no primeiro mês.", "como_percebeu": "Parou de responder os check-ins do WhatsApp na semana 7; ela mandou dois lembretes e ele visualizou sem responder.", "o_que_fez": "Mandou uma última mensagem oferecendo remarcar a consulta 2, ele pediu desculpas dizendo que estava sem dinheiro, e ela deixou quieto. Ficou com o pacote pago pela metade e a sensação estranha de ter sido paga para ser ignorada."},
+      {"nome": "Marta", "historia": "Servidora pública de 54 anos, vegetariana há 20, veio por causa de anemia recorrente.", "como_percebeu": "Terminou o trimestral, disse que renovaria 'depois do recesso' em dezembro e nunca mais escreveu.", "o_que_fez": "Mandou feliz ano novo em janeiro com uma cutucada gentil sobre a renovação. Resposta educada, nada fechado. Anotou num caderno 'reabordar Marta em março' e esqueceu."},
+      {"nome": "Pedro Henrique", "historia": "Casal na verdade — ele fechou o pacote junto com a esposa, mas só ele aparecia nas consultas.", "como_percebeu": "No meio do segundo mês pediu para 'pausar o pacote' por causa de uma viagem de trabalho para Palmas.", "o_que_fez": "Aceitou a pausa sem definir prazo. Já faz quatro meses. Ela sabe que devia cobrar uma retomada mas acha constrangedor."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "domingo, 21h40", "texto": "Lari me salva, jantar de família amanhã na casa da minha sogra e vai ter churrasco, o que eu como sem passar vergonha?", "respondeu": "Respondeu na hora com três sugestões práticas. Suporte está no preço, então ela responde — mas naquele domingo pensou pela primeira vez se não estava barateando demais o próprio tempo."},
+    "gasto_ferramentas_mes": 35,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 1,
+    "estimativa_perda_anual_intuitiva": "Nunca calculei perda por sumiço, meu problema é fechar pacote novo. Mas se contar quem não renova quando devia... sei lá, uns R$ 8 mil por ano?"
+  },
+  "dores_reais": [
+    "Captação: depende quase só de indicação e o Instagram não converte; fechar 2-3 pacotes novos por mês é a diferença entre pagar o aluguel tranquila ou não",
+    "Renovação de pacote: o trimestral acaba e a pessoa evapora educadamente, e ela não tem um processo para reabordar sem parecer desesperada",
+    "Precificação do suporte: incluiu o WhatsApp no preço sem saber quanto vale, e desconfia que está se vendendo barato",
+    "Instabilidade de renda que a obriga a manter as aulas de reforço, roubando tempo do consultório"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp não a sufoca: são 8 pacientes, o volume é administrável e ela até gosta do contato próximo — é o diferencial que vende",
+    "No-show quase não existe: quem pagou R$ 1.450 adiantado aparece",
+    "Não sente falta de app de acompanhamento: com 8 pessoas ela acompanha de cabeça e acha que ferramenta seria matar mosca com canhão"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética e na defensiva no começo: responde curto, pergunta 'mas isso aí é pesquisa de verdade ou vocês estão vendendo alguma coisa?'. Vai abrindo quando percebe que ninguém quer empurrar nada. Tique de fala: 'tipo assim' e um 'né, véi' brasiliense que escapa quando relaxa."
+}

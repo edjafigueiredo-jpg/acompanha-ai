@@ -1,0 +1,66 @@
+{
+  "id": "045",
+  "nome": "Márcia Delboni Rangel",
+  "idade": 49,
+  "genero": "feminino",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "carreira_anos": 24,
+  "especialidade": "Nutrição materno-infantil: gestação, amamentação e introdução alimentar, referência na cidade",
+  "modelo_atendimento": "Consultório próprio na Praia do Canto, em Vitória, sala comprada e quitada, com secretária meio período. Só particular, sem convênio há mais de dez anos. Cobra consulta avulsa e um acompanhamento de gestação (pacote de 6 consultas pagas adiantado); a renda é toda do consultório e sustenta bem a casa.",
+  "carteira_ativa": 72,
+  "ticket_consulta": 320,
+  "consultas_semana": 30,
+  "contexto": "Capixaba da Ilha, formada pela Emescam, construiu em 24 anos uma reputação que faz pediatra e obstetra da cidade mandarem paciente de graça. Divorciada, dois filhos — um na faculdade em São Paulo, uma no terceirão. O consultório é o projeto da vida dela e ela toca como negócio, sem romantismo: sabe o custo da hora, sabe a taxa de ocupação da agenda. O que a move é ser 'a nutricionista das três gerações' — atende filha de ex-paciente. O que a cansa é perceber que, com agenda cheia, o crescimento agora só vem de reter melhor e cobrar melhor, e que o buraco do balde está exatamente nos que somem entre o pré-natal e a introdução alimentar.",
+  "rotina": "Atende de segunda a quinta, 8h às 12h e 14h às 18h30, consultas de 40 minutos; sexta de manhã fecha o financeiro com a secretária e resolve pendências. Caminha no calçadão de Camburi às 6h. Uma noite por semana janta com as amigas de faculdade — inegociável.",
+  "whatsapp_pacientes": "Número Business no celular do consultório: a secretária filtra agendamento de manhã, mas dúvida clínica vai para a Márcia, e gestante e mãe de bebê não têm horário — pico entre 21h e 23h e madrugada de recém-nascido. Ela responde uma leva às 13h e outra às 19h, disciplina que levou anos para construir. O que a irrita não é responder: é saber que essa disponibilidade é metade do valor que ela entrega e não está precificada em lugar nenhum — e que é justamente no silêncio do WhatsApp que ela descobre, tarde demais, que uma paciente sumiu.",
+  "tecnologia": "Sistema de agenda e prontuário de consultório (R$ 120/mês) que usa há seis anos e domina, máquina de cartão, planilha de fluxo de caixa. Não tem Instagram profissional ativo — posta três vezes por ano e não precisa de mais. Relação com tecnologia é utilitária: se resolver e não der trabalho, ela paga sem chorar; se der trabalho, ela corta sem dó.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Fernanda",
+        "historia": "Fez o pacote de gestação inteiro, encantada, prometeu voltar para a introdução alimentar do bebê. Nunca voltou — o puerpério engoliu, e quando a Márcia soube, a IA já tinha sido feita 'pelo Instagram e pela sogra'.",
+        "como_percebeu": "Seis meses depois do parto, ao ver a foto do bebê comendo no story pessoal da paciente.",
+        "o_que_fez": "Mandou parabéns e ofereceu uma consulta de revisão da IA. A Fernanda veio uma vez. A Márcia calcula que esse buraco entre parto e IA a faz perder um terço das gestantes — e não tem processo para tapá-lo além da memória da secretária."
+      },
+      {
+        "nome": "Roberta",
+        "historia": "Gestante de gêmeos, caso trabalhoso, parou de responder no sétimo mês depois que entrou em repouso absoluto e a vida virou hospital.",
+        "como_percebeu": "Faltou consulta paga do pacote e o WhatsApp silenciou — ela sabia que algo tinha acontecido.",
+        "o_que_fez": "Ligou para o obstetra, que era conhecido, soube do repouso e mandou orientações por escrito sem cobrar. A paciente voltou depois do parto, fiel para sempre. Para a Márcia, esse é o contraexemplo: quando ela percebe a tempo, recupera."
+      },
+      {
+        "nome": "Dona Regina levando a neta Alice",
+        "historia": "Avó que trazia a neta de 2 anos com seletividade alimentar. Sumiram depois que a mãe da criança, que pagava, achou que 'já deu pro gasto' com três consultas.",
+        "como_percebeu": "A secretária ligou para confirmar o retorno e ouviu o 'a mãe dela disse que por enquanto não'.",
+        "o_que_fez": "Pediu à secretária para reagendar dali a dois meses. A ligação de reativação nunca foi feita — caiu no esquecimento da agenda de papel da secretária. Isso a irritou mais do que a desistência em si."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "ontem, 23h05",
+      "texto": "Márcia me perdoa a hora!! A Manu mamou e vomitou TUDO em jato, é a segunda vez hoje. Amamento de novo agora ou espero? Tô apavorada",
+      "respondeu": "Respondeu em cinco minutos com orientação e o critério claro de quando ir ao pronto atendimento. Faz parte do pacote na cabeça dela — mas anotou mentalmente, pela enésima vez, que precisa cobrar por esse plantão de alguma forma."
+    },
+    "gasto_ferramentas_mes": 120,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "'Já calculei, sou chata com número: se de cada dez gestantes que terminam o pacote só seis voltam para a IA, e cada uma que some vale umas quatro ou cinco consultas de bebê... passa de R$ 40 mil por ano fácil. É o maior vazamento do meu consultório e eu sei disso há tempo.'"
+  },
+  "dores_reais": [
+    "O vazamento previsível e não tratado: gestante que termina o pacote, some no puerpério e perde a janela da introdução alimentar — ela sabe quando vai acontecer e não tem processo que segure",
+    "O plantão de WhatsApp de mãe com recém-nascido: essencial, valorizado pelas pacientes, e sem preço — ela carrega isso há vinte anos",
+    "Depender da memória da secretária para reativar paciente: ligação combinada que não acontece, follow-up que morre em agenda de papel",
+    "Descobrir o sumiço tarde: quando o silêncio vira evidência, a decisão da paciente já foi tomada",
+    "Teto de agenda: não cabe mais consulta na semana, então cada paciente que escapa é crescimento que não existe"
+  ],
+  "nao_dores": [
+    "Captação: 24 anos de indicação de pediatra e obstetra — tem fila de espera de três semanas e nunca gastou um real em anúncio",
+    "Precificação: cobra entre os tickets mais altos de Vitória e a demanda segura; reajusta todo janeiro sem drama",
+    "Presença digital: vendedor sempre acha que ela 'precisa bombar o Instagram'; ela não precisa e não quer"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "NutriConecta, um app genérico de acompanhamento com diário alimentar e chat",
+    "historia": "Pagou R$ 149/mês por oito meses em 2023, convencida pela promessa de 'engajar o paciente entre as consultas'. As gestantes baixavam, registravam refeição por umas duas semanas e abandonavam o app — e continuavam mandando tudo pelo WhatsApp mesmo, que era onde elas já viviam. Cancelou quando percebeu que estava pagando para manter um cemitério de cadastros e ainda respondendo o WhatsApp do mesmo jeito."
+  },
+  "postura_entrevista": "Pragmática: vai direto ao ponto, responde com números e casos, e devolve perguntas ('isso que vocês estão estudando resolve o quê, exatamente?'). Não enrola, não se emociona, mas é cordial e generosa com detalhe quando percebe que a conversa é séria. Tiques: 'pois é' capixaba abrindo frase, e o hábito de dizer 'no meu consultório funciona assim, ó' antes de descrever processo."
+}

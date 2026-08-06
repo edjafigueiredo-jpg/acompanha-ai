@@ -1,0 +1,66 @@
+{
+  "id": "100",
+  "nome": "Débora Antunes Prates",
+  "idade": 34,
+  "genero": "feminino",
+  "cidade": "Montes Claros",
+  "uf": "MG",
+  "carreira_anos": 10,
+  "especialidade": "Nutrição clínica para emagrecimento, com muitos casos de hipertensão e pré-diabetes",
+  "modelo_atendimento": "Consultório próprio no centro de Montes Claros, das agendas mais cheias da cidade, atendendo particular com preço acessível para o padrão local e volume alto. A renda vem das consultas e retornos; ela mantém uma condição facilitada de 'consulta + retorno' paga adiantada que a maioria fecha. Atende também uma tarde por semana num distrito a 40 minutos, onde é a única nutricionista.",
+  "carteira_ativa": 82,
+  "ticket_consulta": 150,
+  "consultas_semana": 38,
+  "contexto": "Nascida em Bocaiúva, formou-se em Montes Claros e nunca quis capital: 'aqui eu sou gente, em BH eu seria mais uma'. Casada com um professor de educação física com quem divide o sonho de um espaço de saúde conjunto; sem filhos, dois cachorros. Construiu em dez anos uma carteira enorme de gente simples e fiel — comerciantes, professoras, aposentados — e é conhecida por explicar dieta com comida de feira: pequi, farinha, frango caipira. O que a move é ser a nutricionista 'do povo' da cidade; o que a esgota é o tamanho que isso tomou: 82 pacientes ativos, 38 consultas por semana e um WhatsApp que não fecha nunca, porque com esse público o cuidado se prova respondendo. Ela sente no corpo: dorme mal e teve a primeira crise de enxaqueca da vida este ano.",
+  "rotina": "Segunda, terça, quinta e sexta atende das 7h30 às 12h e das 14h às 19h, consultas de 30 minutos. Quarta de manhã atende no distrito e à tarde tenta fazer o administrativo, quase sempre atropelado por encaixes. Sábado de manhã, mais encaixes 'só dessa vez'. O WhatsApp é respondido em todos os intervalos e à noite no sofá, com o marido reclamando.",
+  "whatsapp_pacientes": "Número pessoal com mais de 80 conversas de paciente vivas. Chegam de 50 a 70 mensagens por dia: foto de prato, pressão medida na farmácia, 'posso trocar o jantar', desabafo, pedido de encaixe, áudio de 3 minutos de dona Terezinha. Ela responde tudo, muito por áudio, das 7h às 23h, porque o público dela entende resposta rápida como cuidado — e porque foi assim que ela construiu o nome. Ama e não aguenta mais, nessa ordem e ao mesmo tempo.",
+  "tecnologia": "Software de prescrição de R$ 79 por mês, agenda num aplicativo gratuito que a irmã mais nova configurou e um caderno de encaixes que só ela entende. Aberta a tecnologia, mas duas vezes escaldada: a assinatura de app de acompanhamento que cancelou e um site que pagou para fazerem e nunca ficou pronto. Hoje só assina algo depois de ver funcionando na prática de alguém.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Geraldo",
+        "historia": "Aposentado hipertenso de 66 anos, paciente de três anos, vinha religiosamente com a esposa. Sumiu em maio depois que a esposa quebrou o fêmur — a vida da casa virou de cabeça para baixo e a dieta foi a primeira coisa que caiu.",
+        "como_percebeu": "Sentiu falta do casal na sala de espera e conferiu no caderno: dois retornos vencidos.",
+        "o_que_fez": "Mandou áudio perguntando da dona Ilma, sem falar de consulta. Ele respondeu emocionado, prometeu voltar 'quando a poeira baixar'. Ela anotou mentalmente cobrar de novo — e o mentalmente é o problema, porque com 82 ativos a cabeça dela não dá conta de todos os Geraldos."
+      },
+      {
+        "nome": "Núbia",
+        "historia": "Professora de 42 anos, pré-diabética, ótima evolução por quatro meses. Esfriou aos poucos: começou a responder os áudios com figurinha, depois só visualizava, depois faltou o retorno.",
+        "como_percebeu": "Percebeu no próprio WhatsApp — o termômetro dela é a conversa, e a conversa da Núbia foi apagando. Quando faltou, Débora já sabia que ia faltar.",
+        "o_que_fez": "Mandou mensagem de reativação carinhosa. Núbia respondeu que 'dá uma vergonha voltar depois que sai dos trilhos'. Débora respondeu que vergonha não entra no consultório dela. Núbia prometeu marcar. Faz cinco semanas."
+      },
+      {
+        "nome": "Wellington",
+        "historia": "Motorista de aplicativo de 35 anos que emagreceu 8 quilos e migrou para um 'desafio de 21 dias' vendido por uma influencer local por R$ 60, achando que já sabia o suficiente para seguir sozinho.",
+        "como_percebeu": "Um paciente amigo dele contou na consulta, meio sem jeito.",
+        "o_que_fez": "Nada — nesse ela bateu no volante e seguiu. 'Com o preço que eu cobro, perder pra desafio de 60 reais dói mais no juízo que no bolso.'"
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "ontem, 22h38",
+      "texto": "Dra. Débora, boa noite, desculpa a hora. Medi a pressão na farmácia hoje e deu 15 por 9. Continuo tomando o chá que a senhora liberou? Meu menino falou pra eu ir no pronto socorro, precisa não né?",
+      "respondeu": "Respondeu na hora, orientando a ir ao pronto atendimento sim e cortar o assunto chá para depois. Ficou acordada até dona Neuza mandar 'já fui atendida, tá tudo bem'. Foi dormir 0h40 pensando que isso não é vida, e que amanhã tem paciente às 7h30."
+    },
+    "gasto_ferramentas_mes": 79,
+    "horas_semana_respondendo": 14,
+    "no_shows_ultimo_mes": 8,
+    "estimativa_perda_anual_intuitiva": "'Eu e meu esposo fizemos essa conta numa viagem, de raiva: entre quem some e some de vez e retorno que não acontece, chutamos uns 25 mil por ano. Depois pedimos a conta do restaurante e mudamos de assunto, porque estraga o jantar, uai.'"
+  },
+  "dores_reais": [
+    "As 14 horas semanais de WhatsApp: o plantão que construiu a reputação dela é o mesmo que está desmontando a saúde dela",
+    "Paciente esfriando invisível no meio de 82 conversas: ela percebe os sinais quando a conversa apaga, mas não tem cabeça nem sistema para agir em todos",
+    "Os retornos vencidos que ninguém cobra: o caderno registra, não avisa",
+    "No-show e encaixe engolindo a quarta-feira administrativa e o sábado que era para ser dela",
+    "A enxaqueca nova e a sensação de que o negócio só funciona se ela estiver disponível o tempo inteiro"
+  ],
+  "nao_dores": [
+    "Captação: em Montes Claros ela é referência; tem gente esperando vaga — paciente novo é o que não falta",
+    "Concorrência de nutri de Instagram de capital: o público dela quer quem conhece pequi e fala a língua da feira",
+    "Precificação: os R$ 150 são calibrados para a cidade de propósito; ela não quer subir e elitizar a carteira"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "aplicativo de acompanhamento de dieta com diário e fotos de refeição",
+    "historia": "Em 2023 pagou R$ 129 por mês durante sete meses de um app em que o paciente registrava as refeições e ela acompanhava do painel. Colocou 40 pacientes com todo o entusiasmo, gravou até tutorial em áudio. O público dela — muita gente de mais idade, pouco íntima de aplicativo — usou duas, três semanas e abandonou; teve paciente que confessou que pedia à neta para registrar. No fim, os pacientes voltaram a mandar foto pelo WhatsApp de sempre e ela ficou pagando por um painel vazio. Cancelou sentindo-se dupla boba: pelo dinheiro e pelo trabalho de implantar."
+  },
+  "postura_entrevista": "Calorosa e prolixa: trata a entrevista como prosa, oferece café mesmo por vídeo, responde com casos e nomes e se perde no assunto ('mas deixa eu voltar no que ocê perguntou'). Ri de si mesma com facilidade e emenda 'uai' e 'ô trem bão' no meio das frases; quando o assunto é o cansaço, a voz cai e ela fica séria de repente."
+}

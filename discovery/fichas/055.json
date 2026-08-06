@@ -1,0 +1,63 @@
+{
+  "id": "055",
+  "nome": "Fátima Dantas de Medeiros",
+  "idade": 49,
+  "genero": "feminino",
+  "cidade": "Mossoró",
+  "uf": "RN",
+  "carreira_anos": 24,
+  "especialidade": "Nutrição clínica geral com perfil de família: atende a avó diabética, a filha gestante e o neto seletivo, muitas vezes na mesma semana",
+  "modelo_atendimento": "Consultório particular próprio há 17 anos numa casa adaptada no bairro Nova Betânia, em Mossoró, com secretária de meio período (a Socorro, com ela há 11 anos). Consulta particular avulsa e retornos; boa parte da carteira são famílias inteiras que a acompanham há mais de uma década. Renda 100% do consultório, complementada por uma manhã quinzenal de auditoria de cardápio para um buffet escolar.",
+  "carteira_ativa": 48,
+  "ticket_consulta": 220,
+  "consultas_semana": 24,
+  "contexto": "Nascida em Caicó, do Seridó, formada pela UFRN em 2001, escolheu Mossoró pelo marido, o Genildo, professor da UERN. Dois filhos criados, um em João Pessoa fazendo residência médica. Construiu a clientela no boca a boca das famílias tradicionais de Mossoró: atende três gerações dos Rosado de fundo de quintal, como brinca. O que a move é ser 'a nutricionista da família', a que sabe que o menino detesta cheiro de coentro e que a avó esconde o rapadura. O que a cansa: perceber que as filhas das pacientes antigas preferem nutris do Instagram, e a sensação crescente de que paciente que some entre consultas leva junto a família inteira.",
+  "rotina": "Atende terça a sexta, 8h às 12h e 14h30 às 18h — segunda é dia de prontuário, banco, buffet escolar e fisioterapia do ombro. Socorro confirma a agenda do dia seguinte por telefone e WhatsApp todo fim de tarde. Quinta à noite tem o jantar da célula da igreja. Caminha no calçadão da avenida às 5h30, antes do sol de Mossoró ficar impraticável.",
+  "whatsapp_pacientes": "Número comercial fica com a Socorro para agendamento; mas as pacientes antigas têm o pessoal dela e usam. Chegam mensagens da 7h da manhã ('Fátima, jejum é de quantas horas mesmo?') até 21h ('a menina não quer jantar de novo'). Ela responde quase tudo, entre pacientes e depois do jantar, porque acha que é isso que segura a relação — mas vem contando o custo: fez a conta uma vez e deu quase uma hora por dia. O que mais a aflige não é responder; é o silêncio de quem para de mandar mensagem, porque ela já aprendeu que silêncio é o primeiro sinal de abandono.",
+  "tecnologia": "Agenda num sistema simples de agendamento (R$ 49/mês) que a filha configurou, prontuário ainda em ficha de papel com plano digitado em Word, planilha de fluxo de caixa mensal que ela mesma alimenta domingo à noite. Não é avessa a tecnologia — é criteriosa: quer ver funcionando, quer saber quem responde quando der problema, e detesta pagar por módulo que não usa.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Vandinha, 55, hipertensa, paciente há 9 anos",
+        "historia": "Vinha de dois em dois meses como um relógio. Depois de uma consulta em que Fátima apertou na questão do sal, não marcou retorno. Fátima suspeita que ela ficou magoada ou envergonhada de voltar sem melhorar.",
+        "como_percebeu": "Sentiu falta no fluxo natural — quando deu quatro meses, pediu a Socorro para conferir a ficha. Também notou que ela parou de responder o 'bom dia' no WhatsApp.",
+        "o_que_fez": "Mandou mensagem pessoal com notícia da feira ('chegou aquele queijo de Caicó') para reabrir conversa sem cobrar. Vandinha respondeu com emoji e não marcou. Fátima ficou remoendo: 9 anos, e ela perdeu sem saber o porquê — e a filha da Vandinha, que ela também atendia, sumiu junto."
+      },
+      {
+        "nome": "Genilson, 38, motorista de aplicativo, emagrecimento",
+        "historia": "Perdeu 7 kg em quatro meses, empolgado, e sumiu na quinta consulta. Clássico dela: melhora, acha que aprendeu, some, volta dois anos depois com tudo de volta e mais um pouco.",
+        "como_percebeu": "Faltou sem avisar e não respondeu a confirmação da Socorro.",
+        "o_que_fez": "Socorro ligou duas vezes, ele disse 'semana que vem eu marco' e nunca marcou. Fátima anotou o nome numa listinha de papel que chama de 'os desaparecidos' e que já tem duas páginas."
+      },
+      {
+        "nome": "Dona Terezinha, 71, diabética, e a neta Ludmila, 16",
+        "historia": "A família decidiu 'dar um tempo' das consultas quando o filho que pagava perdeu o contrato na Petrobras de Guamaré. Duas pacientes de uma vez.",
+        "como_percebeu": "A própria Terezinha ligou para a Socorro, chorosa, desmarcando as duas.",
+        "o_que_fez": "Fátima ligou de volta, ofereceu espaçar para consulta semestral com preço reduzido. Aceitaram para a avó; a menina ficou sem acompanhamento, e isso incomoda Fátima até hoje porque a Ludmila estava começando a sair de um quadro de restrição."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "terça-feira, 21h20",
+      "texto": "Fátima me diga uma coisa, mainha pode tomar o remédio da pressão com o suco de acerola ou corta o efeito? Ela tá aqui aperreada",
+      "respondeu": "Respondeu na hora, em áudio, acalmando e orientando a perguntar também ao cardiologista. Depois ficou pensando que metade das noites dela tem uma dessas — e que ela nunca soube se isso é dedicação ou falta de limite."
+    },
+    "gasto_ferramentas_mes": 49,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Já rabisquei isso na planilha de domingo: se 15 pacientes somem no ano e cada um faria uns 4 retornos de R$ 220... passa de R$ 13 mil. E família puxa família — a conta de verdade deve ser o dobro. Essa lista de desaparecidos me dói mais que a de inadimplente."
+  },
+  "dores_reais": [
+    "Pacientes que somem entre consultas: ela vê o padrão (melhora, some, volta pior), mantém a lista de papel, e sente que perde dinheiro e história clínica ao mesmo tempo",
+    "O intervalo cego de 60 dias: entre um retorno e outro ela não sabe nada do paciente, e o silêncio no WhatsApp é o único termômetro que tem",
+    "A hora diária de WhatsApp espalhada pelo dia, que ela dá com amor mas ninguém paga, e que cresce a cada ano",
+    "Concorrência das nutris jovens de Instagram levando as filhas e netas das pacientes de sempre",
+    "Depender da memória dela e da Socorro para saber quem precisa ser chamado de volta — quando a Socorro tirou férias, ninguém confirmou ninguém"
+  ],
+  "nao_dores": [
+    "Captação de paciente novo: 24 anos de boca a boca em Mossoró ainda enchem a agenda; o problema dela é segurar, não atrair",
+    "Precificação: R$ 220 é aceito sem choro pela clientela dela; ela reajusta todo janeiro e ninguém reclama",
+    "Emitir plano alimentar bonito: as famílias dela querem papel simples e conversa boa, não PDF colorido"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica e ponderada: pede para o entrevistador definir os termos, responde com estrutura ('são três coisas, veja') e cita números da própria planilha. Não se emociona fácil, mas quando fala da lista dos desaparecidos a voz cai meio tom. Solta um 'oxente' seco quando a pergunta lhe parece óbvia e fecha raciocínios com 'pronto, é isso'."
+}

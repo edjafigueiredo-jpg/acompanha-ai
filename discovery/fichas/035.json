@@ -1,0 +1,65 @@
+{
+  "id": "035",
+  "nome": "Rosângela Drumond Vieira",
+  "idade": 51,
+  "genero": "feminino",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "carreira_anos": 27,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e doenças metabólicas — a nutricionista 'de senhoras', como ela mesma brinca",
+  "modelo_atendimento": "Funcionária de longa data (CLT) de uma clínica popular de especialidades no Barro Preto, em BH, onde atende há 14 anos. A clínica vende a consulta a R$ 130, agenda lotada pela recepção, e ela recebe salário de R$ 4.100 mais gratificação por meta de atendimentos. Os pacientes são da clínica: se ela sair amanhã, a sala recebe outra nutricionista e a fila continua a mesma.",
+  "carteira_ativa": 47,
+  "ticket_consulta": 130,
+  "consultas_semana": 32,
+  "contexto": "Mineira de Curvelo, veio para BH fazer Nutrição na UFMG nos anos 90 e nunca mais voltou. Passou por hospital, por prefeitura, e há 14 anos assentou na clínica popular — gosta do público, dona de casa, aposentado, trabalhador do comércio, gente que ela entende. Viúva desde 2019, dois filhos criados (um em Portugal), mora no Padre Eustáquio com a cachorra Nina. O que a move é a prosa da consulta: ela conhece o nome do neto de cada paciente. O que a cansa é o volume — 32 atendimentos por semana em blocos de 30 minutos — e a sensação de que a clínica quer cada vez mais gente em cada vez menos tempo.",
+  "rotina": "Segunda a sexta na clínica das 7h30 às 17h, com uma hora de almoço na padoca da esquina, sempre na mesma mesa. Atende de 30 em 30 minutos, com hora extra frequente quando a recepção encaixa 'só mais um'. Quarta à noite tem coral na igreja, sagrado. Sábado de manhã faz feira no Mercado Novo e cozinha para a semana; domingo almoça na casa da irmã em Contagem.",
+  "whatsapp_pacientes": "O oficial é o telefone da clínica, mas Rosângela é incapaz de negar o número pessoal para paciente antiga — deve ter umas sessenta 'comadres' no celular. Chega mensagem o dia todo: foto de sopa, corrente de bom dia, 'Rô, minha glicose deu 140, tô morrendo?'. Ela responde de noite, no sofá com a Nina, misturando orientação com conversa de amiga. Reclama rindo ('esse povo acha que eu sou plantão do Samu'), mas no fundo gosta; foi o WhatsApp que a acompanhou na viuvez.",
+  "tecnologia": "Usa o sistema de agenda e prontuário da clínica, que acha lento e xinga baixinho todo dia. Plano alimentar sai de um programa antigo de prescrição instalado no computador da sala, versão que ninguém atualiza. Do próprio bolso não paga nada hoje — já pagou, e aprendeu a lição. Com celular vai bem, com sistema novo tem preguiça declarada: 'eu decoro o caminho dos botões, não me mude os botões'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Dona Geralda, 63 anos",
+        "historia": "Paciente de anos, diabética, faltou dois retornos seguidos — coisa que nunca fazia.",
+        "como_percebeu": "Sentiu falta na hora, porque Dona Geralda era de agosto e agosto passou. A clínica não avisa nada; foi o faro dela.",
+        "o_que_fez": "Ligou do celular pessoal. Descobriu que a filha tinha perdido o emprego e os R$ 130 não cabiam mais. Rosângela brigou com a recepção para conseguir um desconto social que a clínica tem e quase não divulga. Dona Geralda voltou. Esse tipo de resgate é ela, não é o sistema."
+      },
+      {
+        "nome": "Wellington, 35 anos",
+        "historia": "Motorista de aplicativo, veio emagrecer por ordem do cardiologista. Três consultas boas, perdeu 5 kg, sumiu.",
+        "como_percebeu": "Nem percebeu na época. Foi se dar conta meses depois, quando o cardiologista da clínica comentou que o paciente tinha voltado a engordar.",
+        "o_que_fez": "Nada — e é isso que a incomoda quando pensa: na agenda dela o buraco do Wellington virou outra pessoa da fila no mesmo dia. 'A clínica não sente, quem sente sou eu, e ainda assim só quando fico sabendo.'"
+      },
+      {
+        "nome": "Marlucy, 44 anos",
+        "historia": "Começou animada em janeiro, era da turma do 'projeto de verão' que a clínica anuncia no Instagram. Veio duas vezes e evaporou, como quase toda a leva de janeiro.",
+        "como_percebeu": "Pelo padrão: ela sabe de cor que da turma de janeiro sobra um terço em abril. Nome por nome ela não acompanha, são muitos.",
+        "o_que_fez": "Nada individual. Sugeriu na reunião de equipe que a clínica ligasse para os sumidos de janeiro; o gerente disse que 'a fila repõe' e não fez. Ela deu de ombros — a decisão nunca é dela."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Ontem, 21h50",
+      "texto": "Rô do céu me acuda. Fiz o exame hoje e o colesterol veio 260. Posso tomar o chá de folha de louro que a Cida falou? Reza por mim",
+      "respondeu": "Respondeu com áudio de três minutos, entre a novela e o café: 'chá de louro não abaixa colesterol de ninguém, minha filha, vem cá quinta que a gente ajeita'. E rezou mesmo, que ela é de rezar."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 14,
+    "estimativa_perda_anual_intuitiva": "Uai, pra mim? Nada, meu salário cai igual. Pra clínica deve ser um dinheirão, os 14 buracos do mês... mas isso é conta do doutor Ricardo, não minha. Eu perco é a pessoa, e pessoa não tem preço, né, minha filha."
+  },
+  "dores_reais": [
+    "O volume desumano: 32 consultas de 30 minutos por semana, e a gerência empurrando encaixe — ela queria 45 minutos por paciente e sabe que nunca vai ter",
+    "Salário parado há dois anos enquanto a consulta da clínica subiu de R$ 100 para R$ 130",
+    "Ser invisível nas decisões: já sugeriu mutirão de retorno, desconto social mais divulgado, sala com balança nova — tudo morre na mesa do gerente",
+    "O corpo pedindo arrego: 27 anos de carreira, joelho reclamando da escada da clínica, e nenhum plano concreto de aposentadoria além do INSS"
+  ],
+  "nao_dores": [
+    "Evasão de pacientes: a fila da clínica popular é infinita — buraco de agenda se fecha sozinho no mesmo dia, e o financeiro disso é problema do dono",
+    "Captação: ela nunca precisou buscar um paciente na vida; a clínica anuncia e a recepção lota",
+    "Pagar ferramenta do próprio bolso: já fez isso uma vez, se arrependeu, e hoje a regra dela é 'quem lucra que pague' — qualquer compra é decisão do doutor Ricardo"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "DietaFácil (app de acompanhamento com versão para paciente)",
+    "historia": "Em 2022 pagou do próprio bolso R$ 69/mês durante oito meses, empolgada com a promessa de acompanhar as senhoras entre consultas pelo app. Cadastrou umas trinta pacientes com paciência de professora; em dois meses, sobraram quatro usando — 'esse povo não abre aplicativo, minha filha, esse povo manda áudio'. Pediu para a clínica assumir a assinatura, o gerente negou, e ela cancelou sentindo-se boba por ter bancado sozinha uma coisa que só dava lucro para a casa."
+  },
+  "postura_entrevista": "Calorosa e prolixa: cada resposta vira causo com nome, bairro e desfecho, e o entrevistador precisa trazê-la de volta com jeitinho. Oferece café mesmo por vídeo. Mineiríssima: 'uai', 'minha filha', 'cê tá doido' e diminutivo em tudo — 'rapidinho', 'docinho', 'probleminha'."
+}

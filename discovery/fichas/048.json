@@ -1,0 +1,64 @@
+{
+  "id": "048",
+  "nome": "Cláudia Bicalho Fonseca",
+  "idade": 53,
+  "genero": "feminino",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "carreira_anos": 27,
+  "especialidade": "Nutrição clínica e emagrecimento para adultos maduros, com jeitão de médica de família",
+  "modelo_atendimento": "Atende por convênio em duas clínicas populares de BH — uma no Barro Preto, outra em Venda Nova — recebendo por produção. A agenda é preenchida pela fila dos planos e por um convênio de sindicato; ela atende quem cai na agenda, majoritariamente mulheres de 40 a 70 anos querendo emagrecer ou controlar diabetes e pressão. Uns poucos pacientes antigos ela atende 'por fora', na sala de casa, cobrando um valor simbólico de amizade.",
+  "carteira_ativa": 24,
+  "ticket_consulta": 38,
+  "consultas_semana": 36,
+  "contexto": "Mineira de Santa Luzia, formada há 27 anos, criou dois filhos praticamente sozinha depois de enviuvar aos 39 — a nutrição pagou escola, faculdade e casamento de filha. Nunca teve consultório próprio: o convênio sempre foi o chão firme, e ela tem gratidão por ele, não desprezo. Avó de um menino de 3 anos que é a alegria da semana. O que a move é o vínculo — paciente que chega triste e sai rindo, receita de família adaptada, apelido carinhoso. O que a cansa é o corpo: são 27 anos de ônibus, duas clínicas, joelho reclamando, e a matemática cruel de precisar de 36 consultas por semana para fechar o mês.",
+  "rotina": "Segunda, quarta e sexta no Barro Preto, 8h às 14h; terça e quinta em Venda Nova, 12h às 18h, com uma hora e meia de deslocamento. Domingo cozinha para os filhos e o neto. Os 'por fora' ela encaixa sábado de manhã na sala de casa, com café coado e prosa longa.",
+  "whatsapp_pacientes": "Número pessoal mesmo, sem cerimônia — paciente antiga tem, manda figurinha de bom dia, foto do prato de domingo, pedido de oração. Ela responde tudo, no ritmo dela, entre um ônibus e outro. Não vê como trabalho: vê como relação. O que aperta o coração é outra coisa: paciente que ela sabe que precisava continuar e o plano cortou as sessões, e ela sem poder fazer nada.",
+  "tecnologia": "O sistema de cada clínica para prontuário (ela pega no jeito, mas reclama que trocam toda hora), agenda de papel na bolsa como backup fiel, e o WhatsApp. Em casa, um caderno com as fichas dos pacientes 'por fora', com letra caprichada. Não paga nada de ferramenta e acha graça quando perguntam: 'minha ferramenta é a balança e o ouvido, meu filho'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Dona Geralda",
+        "historia": "Paciente de convênio de sindicato, 66 anos, diabética, que vinha havia um ano. O sindicato mudou o credenciamento e a clínica do Barro Preto ficou fora — a Dona Geralda 'sumiu' por decisão de planilha alheia.",
+        "como_percebeu": "A recepção avisou que todos daquele convênio seriam remanejados. Foram uns 15 pacientes de uma vez.",
+        "o_que_fez": "Chorou no ônibus voltando pra casa. A agenda? A fila dos outros planos preencheu em duas semanas — financeiramente não mudou quase nada, e é isso que ela acha mais estranho de admitir."
+      },
+      {
+        "nome": "Marlene",
+        "historia": "Paciente de emagrecimento pelo plano, 51 anos, que faltou três vezes seguidas depois que o marido ficou desempregado e ela virou diarista em dobro.",
+        "como_percebeu": "Sentiu falta da figurinha de bom dia antes de notar a falta na agenda.",
+        "o_que_fez": "Mandou mensagem perguntando dela, de coração, sem falar de consulta. A Marlene desabafou meia hora por áudio. Consulta mesmo, nunca remarcou — e a Cláudia deixou quieto."
+      },
+      {
+        "nome": "Ivone, do sábado",
+        "historia": "Uma das 'por fora', amiga-paciente de anos, que parou de vir quando a filha a levou para morar junto em Contagem.",
+        "como_percebeu": "A própria Ivone ligou explicando, com pesar.",
+        "o_que_fez": "Fizeram uma última consulta por chamada de vídeo, que a neta da Ivone ajudou a montar. As duas choraram. Perda financeira? R$ 60 por mês. Perda de verdade? A prosa de sábado."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 21h30",
+      "texto": "Dona Cláudia benção 🙏 a senhora viu que a Fernanda casou? Tô te mandando a foto. Ah e segunda posso levar minha vizinha na consulta? Ela tá precisando",
+      "respondeu": "Respondeu com três áudios: um comentando o casamento, um sobre a vizinha ('leva sim, uai, a gente dá um jeito na agenda') e um mandando beijo. Dormiu contente."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 11,
+    "estimativa_perda_anual_intuitiva": "'Ah, meu filho, nunca fiz essa conta não. Paciente que some do convênio, entra outro no lugar, o valor é o mesmo. Perder, perder, eu perco é a pessoa. Se você me obrigar a falar um número... sei lá, mil reais? Dois? Não é por aí que meu aperto passa.'"
+  },
+  "dores_reais": [
+    "O corpo e a estrada: 36 consultas, duas clínicas, três ônibus por dia aos 53 anos — a conta de produção só fecha com volume que a esgota",
+    "Repasse parado no tempo: R$ 38 por consulta em 2026, e reajuste é assunto que as clínicas mudam de conversa",
+    "A aposentadoria que não se desenha: 27 anos de profissão e nada acumulado além do INSS",
+    "Plano que corta o acompanhamento no meio: paciente autorizada a 4 consultas quando precisava de 12, e ela enxugando gelo",
+    "Medo baixinho de ficar obsoleta: as clínicas falam em sistema novo, telemedicina, e ela sente que o mundo acelera sem perguntar por ela"
+  ],
+  "nao_dores": [
+    "Evasão de paciente: a fila do convênio repõe no mesmo dia e o repasse não muda — sumiço dói no coração, nunca no bolso",
+    "WhatsApp fora de hora: para ela é afeto recebido, não fardo; tirar isso dela seria castigo, não alívio",
+    "Captação e marketing: nunca precisou buscar paciente na vida — a fila é maior que a agenda",
+    "Ferramenta de gestão: não tem negócio próprio para gerir; qualquer software seria resolver um problema que é do dono da clínica, não dela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva e quente: cada resposta vira causo com nome, bairro e desfecho, marejou duas vezes (na Dona Geralda e na Ivone) e ofereceu pão de queijo hipotético ao entrevistador. Precisa ser gentilmente redirecionada para a pergunta. Tiques: 'uai' e 'ô, meu filho' constantes, e o diminutivo mineiro em tudo — 'consultinha', 'planinho', 'jeitinho'."
+}

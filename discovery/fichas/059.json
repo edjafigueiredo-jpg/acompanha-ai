@@ -1,0 +1,63 @@
+{
+  "id": "059",
+  "nome": "Thaís Fortes Macêdo",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Parnaíba",
+  "uf": "PI",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição esportiva para praticantes de musculação, beach tennis e kitesurf do litoral do Piauí",
+  "modelo_atendimento": "Vende plano de consultoria trimestral (R$ 690) e semestral (R$ 1.190): avaliação com adipômetro numa sala que subloca dentro de uma academia na avenida São Sebastião, ajustes mensais de plano e suporte por WhatsApp incluso — 'meu diferencial é você não ficar solto'. Uns 70% dos consultados são online, captados pelo Instagram e pelas parcerias com professores da academia e do circuito de beach tennis.",
+  "carteira_ativa": 65,
+  "ticket_consulta": 690,
+  "consultas_semana": 25,
+  "contexto": "Parnaibana da Piçarreira, formada pela UFDPar em 2023, montou a consultoria ainda no último período e cresceu rápido demais: em três anos saiu de 8 para 65 consultados, surfando a onda fitness de Parnaíba e do pessoal do kite da Pedra do Sal. Mora com a mãe e o irmão, é a maior renda da casa, o que a orgulha e a esmaga em partes iguais. Namora o Breno, professor de beach tennis, que é também seu maior canal de indicação. Move-a a prova social dos shapes que ela transforma; cansa-a acordar com 47 mensagens e a sensação de que virou refém do próprio diferencial.",
+  "rotina": "Segunda e quarta na academia das 6h30 às 11h fazendo avaliações. Tardes de segunda a sexta: check-ins online em bloco, das 14h às 18h, com o celular pegando fogo. Terça e quinta de manhã grava conteúdo na praia ou na academia. Ajuste de plano e montagem de dieta à noite, das 20h às 23h, quase toda noite. Sábado de manhã 'zera' o WhatsApp; domingo à tarde já começa a acumular de novo.",
+  "whatsapp_pacientes": "WhatsApp Business com etiquetas coloridas por plano (verde = trimestral, azul = semestral, vermelho = renovação vencendo). Só ela responde. O suporte prometido é 'resposta no mesmo dia útil', mas consultado de consultoria entende que pagou acesso: mandam foto de refeição, print da balança, dúvida de suplemento, meme, bom dia. São 80-120 mensagens por dia. Ela ama e odeia: sabe que o suporte é o que vende e o que segura renovação, e sabe que está a duas telas de um burnout — semana passada respondeu 'aceita sim' para uma pergunta que nem leu direito.",
+  "tecnologia": "Monta os planos num aplicativo gratuito de prescrição na versão limitada, controla os 65 consultados numa planilha do Google Sheets com abas por mês de renovação, agenda no próprio WhatsApp e recebe por Pix. Paga Canva Pro (R$ 40/mês) e um app de link de pagamento quando parcela. Nativa digital, aprende ferramenta sozinha em uma tarde — o problema nunca foi aprender, é caber no bolso e o consultado aderir.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Wesley, 27, personal da academia",
+        "historia": "Consultado desde o início, virou vitrine — e não renovou o semestral dizendo que 'já sabia montar a própria dieta', levando de tabela dois alunos que ele tinha indicado.",
+        "como_percebeu": "A etiqueta vermelha de renovação venceu e ele visualizou a mensagem sem responder por nove dias.",
+        "o_que_fez": "Insistiu duas vezes, ofereceu 15% de desconto, engoliu o orgulho porque ele indica gente. Ele não voltou. Ela criou por causa disso um 'plano manutenção' mais barato (R$ 390/tri) para quem 'já sabe' — dois já assinaram."
+      },
+      {
+        "nome": "Renata, 33, dentista, treino de musculação",
+        "historia": "No meio do trimestre parou de mandar check-in e de responder. Grávida de surpresa, achou que a consultoria 'não servia mais' e sumiu em vez de avisar.",
+        "como_percebeu": "Pela planilha: a célula de check-in dela ficou em branco duas semanas seguidas, e Thaís confere isso religiosamente aos sábados.",
+        "o_que_fez": "Mandou áudio carinhoso, descobriu a gravidez, adaptou o plano para gestante mesmo sem ser a especialidade dela (estudou um fim de semana inteiro para isso). Renata ficou, renovou e virou a maior propagandista dela no consultório odontológico."
+      },
+      {
+        "nome": "Ítalo, 22, kitesurfista, plano trimestral",
+        "historia": "Pagou o trimestre em 3x, mandou check-in na primeira semana e evaporou — nem o segundo boleto do cartão ele segurou, deu chargeback e tudo.",
+        "como_percebeu": "Na hora, pela planilha e pelo aviso da operadora do cartão.",
+        "o_que_fez": "Cobrou educadamente três vezes, perdeu R$ 460, bloqueou o contato e adotou pagamento à vista ou Pix parcelado antecipado para menores de 25. Conta essa história rindo, mas doeu."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 23h34",
+      "texto": "Thata me responde quando puder!! Sai da resenha agora, comi 6 espetinho e uns 3 copo de creme de cupuaçu, joguei o dia fora né kkkk compenso amanhã com jejum?",
+      "respondeu": "Viu na hora (estava acordada montando dieta), respondeu 'NADA de jejum, amanhã segue o plano normal, segunda a gente conversa' e ficou mais vinte minutos rolando outras 12 não lidas. Dormiu à 1h pensando que precisa botar regra de horário — pensa isso toda semana e nunca bota, com medo de perder o diferencial."
+    },
+    "gasto_ferramentas_mes": 60,
+    "horas_semana_respondendo": 15,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Renovação eu sei na ponta da língua: uns 30% não renovam, então se 20 pessoas de R$ 690 não voltam no ano dá quase R$ 14 mil. Sumiço no meio do pacote não me custa em dinheiro, já tá pago — me custa é o cansaço de correr atrás."
+  },
+  "dores_reais": [
+    "As 15 horas semanais de WhatsApp: o suporte incluso virou uma jaula — ela não consegue tirar um domingo sem culpa e sente o burnout chegando aos 26 anos",
+    "Renovação: perder 30% por trimestre a obriga a captar sem parar; a receita parece boa mas a esteira nunca desliga",
+    "Montar e ajustar 65 planos à noite, manualmente, num app gratuito limitado — as noites de 20h às 23h são o verdadeiro segundo turno",
+    "Precificar o próprio tempo: ela sabe que R$ 690 dividido pelas horas que cada consultado consome dá menos que hora de manicure, mas tem medo de aumentar e perder volume em Parnaíba",
+    "Ser a renda da casa: qualquer mês fraco de renovação vira aperto real no orçamento da família"
+  ],
+  "nao_dores": [
+    "Evasão no meio do pacote como perda financeira: o dinheiro entra adiantado; quem some no meio já pagou (exceto chargeback, que ela já blindou)",
+    "Captação bruta: entre Instagram, Breno e a academia, chega mais lead do que ela dá conta — o gargalo é ela, não o funil",
+    "No-show de avaliação presencial: remarca fácil porque ela já está na academia de qualquer jeito"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante, acelerada e cheia de energia, responde antes de a pergunta acabar e emenda três assuntos; de vez em quando se atrapalha nos números e corrige rindo. Fala 'é massa' e 'mah' pontuando tudo, e chama a entrevistadora de 'miga' no minuto quinze. Mostra a planilha na tela sem ninguém pedir, com orgulho de quem montou sozinha — mas quando o assunto é domingo sem celular, a fala desacelera e ela fica séria pela primeira vez."
+}

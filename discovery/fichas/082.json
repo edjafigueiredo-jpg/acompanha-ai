@@ -1,0 +1,44 @@
+{
+  "id": "082",
+  "nome": "Renata Fischer Weber",
+  "idade": 37,
+  "genero": "feminino",
+  "cidade": "Porto Alegre",
+  "uf": "RS",
+  "carreira_anos": 12,
+  "especialidade": "Nutrição comportamental não-prescritiva: comer intuitivo, imagem corporal, recuperação de relação com a comida",
+  "modelo_atendimento": "Consultório próprio no bairro Bom Fim, dividido com duas psicólogas. Atende particular, sessões de 50 minutos quase como psicoterapia nutricional, maioria dos pacientes em acompanhamento quinzenal ou mensal de longo prazo. Renda vem 100% das sessões, com agenda estável há anos.",
+  "carteira_ativa": 44,
+  "ticket_consulta": 280,
+  "consultas_semana": 22,
+  "contexto": "Formada pela UFRGS, passou os primeiros anos prescrevendo dieta de emagrecimento até ela mesma sair de um transtorno alimentar não diagnosticado — e virou a chave para a abordagem comportamental, hoje sua bandeira militante. Casada com a Paula, professora de história, sem filhos e com dois gatos. Faz supervisão mensal com uma psicóloga e formação continuada em comer intuitivo. O que a move é ver paciente parar de brigar com a comida; o que a cansa é a cruzada permanente contra a cultura de dieta, inclusive dentro da própria categoria. A agenda vive cheia, com lista de espera de mais de um mês.",
+  "rotina": "Atende de segunda a quinta, das 9h às 19h com pausa longa no almoço, sextas reserva para supervisão, estudo e o grupo terapêutico quinzenal que coordena. Terça à noite faz aula de dança de salão com a Paula. Não atende sábado por princípio inegociável.",
+  "whatsapp_pacientes": "WhatsApp Business com mensagem automática explicando que o canal é só para agendamento e que conteúdo clínico se trata em sessão. Isso é deliberado e terapêutico: ela acredita que paciente mandar foto de prato pedindo aval reproduz exatamente a vigilância alimentar que ela quer desmontar. Chegam poucas mensagens fora de hora e ela responde no dia seguinte sem culpa nenhuma. Sente orgulho do enquadre, não incômodo.",
+  "tecnologia": "Agenda no Google Calendar, prontuário em documentos criptografados no Notion (plano gratuito), pagamentos por Pix e uma contadora que resolve o resto. Paga só R$ 24,90 do agendamento online da Simples Agenda. Não usa nem nunca usaria software de registro alimentar: para ela, diário de comida com foto e nota é iatrogenia.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Betina", "historia": "Paciente de dois anos, chegou com compulsão severa e foi espaçando as sessões conforme melhorava, como o combinado previa.", "como_percebeu": "A última sessão mensal foi remarcada duas vezes e depois cancelada. Betina mandou áudio dizendo que se sentia pronta para caminhar sozinha.", "o_que_fez": "Fez uma sessão de fechamento por chamada de vídeo e deu alta com a porta aberta. Para Renata isso não é evasão, é o objetivo do tratamento — ela conta esse caso com orgulho."},
+      {"nome": "Sr. Élio", "historia": "Homem de 61 anos empurrado pela filha para o consultório, nunca comprou a abordagem, queria 'uma dieta pra seguir'.", "como_percebeu": "Depois da terceira sessão pediu à secretária virtual para não remarcar.", "o_que_fez": "Nada além de registrar em prontuário. Acha honesto: ele queria prescrição, ela não prescreve, o encaixe não existia. A vaga foi preenchida pela lista de espera em quatro dias."},
+      {"nome": "Manuela", "historia": "Universitária com anorexia em tratamento conjunto com psiquiatra, caso grave que a preocupava de verdade.", "como_percebeu": "Faltou sem avisar duas sessões seguidas, o que num caso desses acende alerta clínico, não financeiro.", "o_que_fez": "Acionou o combinado de rede: ligou para a psiquiatra e para a mãe, que era o protocolo assinado no contrato terapêutico. Manuela voltou três semanas depois. Esse é o único tipo de sumiço que tira o sono dela."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "quarta-feira, 22h15", "texto": "Renata, desculpa o horário, comi um pacote inteiro de bolacha e tô me sentindo um lixo, isso é recaída?", "respondeu": "Viu de manhã, respondeu acolhendo em duas linhas e trazendo o tema para a sessão da semana. Não se culpou pelo intervalo: enquadre é parte do tratamento."},
+    "gasto_ferramentas_mes": 25,
+    "horas_semana_respondendo": 1.5,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Nunca calculei porque não perco: quem sai por alta é sucesso, quem desiste libera vaga pra lista de espera. Se tu me obrigar a chutar um número de faltas não cobradas, uns R$ 4 mil, e olhe lá."
+  },
+  "dores_reais": [
+    "Exaustão emocional: 22 sessões densas por semana carregando histórias de transtorno alimentar pesam, e ela flerta com burnout",
+    "Concorrência desleal do nicho: influenciadores vendendo 'reeducação alimentar' com déficit calórico disfarçado desfazem em um reel o que ela constrói em meses",
+    "Dificuldade de achar profissionais alinhados para encaminhar quando a agenda lota — a lista de espera a angustia mais que qualquer cadeira vazia",
+    "Precificação do grupo terapêutico, que dá trabalho enorme e rende pouco"
+  ],
+  "nao_dores": [
+    "Retenção não dói: a agenda é cheia, tem fila, e paciente que vai embora bem é a métrica de sucesso do trabalho dela",
+    "Monitoramento entre consultas não é desejo reprimido, é anátema: qualquer ferramenta de vigiar o que o paciente come contradiz frontalmente a abordagem dela",
+    "Plantão de WhatsApp não existe: o enquadre resolve, e ela acha que colega que vive de plantão tem problema de contorno, não de ferramenta",
+    "Captação não preocupa: 12 anos de reputação e encaminhamento de psicólogos mantêm a fila sozinha"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante, calorosa e militante: qualquer pergunta vira aula de 15 minutos sobre cultura de dieta, com exemplos de pacientes anonimizados. Interrompe a si mesma ('bah, deixa eu voltar pra tua pergunta'). Tiques: 'bah', 'tri importante isso', e o 'tu' gaúcho o tempo todo."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "066",
+  "nome": "Larissa Schulz Loureiro",
+  "idade": 30,
+  "genero": "feminino",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "carreira_anos": 6,
+  "especialidade": "Emagrecimento clínico dentro de clínica de estética e saúde integrada",
+  "modelo_atendimento": "CLT numa clínica multiprofissional de emagrecimento e estética em Jardim da Penha, Vitória: salário de R$ 4.100 mais comissão de 5% sobre pacotes que os pacientes fecham. A recepção agenda, o comercial vende os pacotes (nutri + massagem + bioestimulador), e ela executa a parte de nutrição. Os pacientes são da clínica; se ela sair, ficam.",
+  "carteira_ativa": 42,
+  "ticket_consulta": 45,
+  "consultas_semana": 27,
+  "contexto": "Capixaba de Santa Teresa, região serrana de colonização italiana e pomerana, desceu para Vitória na faculdade. Seis anos formada, terceiro emprego em clínica — ainda não teve coragem (nem capital) de abrir consultório, e o plano de 'um dia ter o meu' vive sendo adiado. Recém-casada, financiando apartamento em Serra. É competente e se ressente de ser tratada como acessório do pacote de estética: o comercial vende promessa de 'secar 8 kg em 2 meses' e sobra para ela administrar a frustração do paciente. O que a move é a ideia do consultório próprio; o que a cansa é bater meta dos outros.",
+  "rotina": "Segunda a sexta na clínica das 10h às 19h, com atendimentos de 40 minutos e reunião comercial obrigatória às segundas de manhã, onde cobram dela 'taxa de renovação de pacote'. Sábado alternado, meio período. À noite faz pós em nutrição estética, paga do próprio bolso, torcendo para virar diferencial quando abrir o consultório.",
+  "whatsapp_pacientes": "Os pacientes falam com o WhatsApp da clínica, operado pela recepção e pelo comercial. Ela não tem contato direto — no começo achava frio, hoje acha ótimo, porque sai às 19h e desliga. De vez em quando uma paciente consegue o Instagram dela e manda dúvida por lá; ela responde educadamente e redireciona para a clínica, com medo de o dono achar que está desviando paciente.",
+  "tecnologia": "Usa o sistema de gestão que a clínica assina e um software de prescrição que a clínica também paga. Do bolso dela sai só o Spotify. Curiosa com tecnologia, é quem os colegas chamam quando o sistema trava, mas não decide nada: já sugeriu ao dono um app de acompanhamento e ouviu que 'não é prioridade'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Renata", "historia": "Paciente de pacote trimestral 'Projeto Verão' vendido pelo comercial, veio a duas consultas de nutrição das seis previstas.", "como_percebeu": "O painel de renovação da reunião de segunda apontou o pacote como 'em risco'. A clínica percebe antes dela.", "o_que_fez": "O comercial ligou oferecendo sessão de drenagem grátis para reativar. Larissa só soube do desfecho (não renovou) pelo relatório. Sente-se peça da engrenagem, não dona da relação."},
+      {"nome": "Gilberto", "historia": "Homem de 52 anos que a esposa matriculou no pacote. Vinha a contragosto, respondia por monossílabos.", "como_percebeu": "Parou de vir na quarta semana; ela notou porque o horário dele virou 'encaixe' na agenda dela.", "o_que_fez": "Nada — e com certo alívio, admite. A recepção repôs o horário com avaliação gratuita de lead novo. Para o salário dela, zero diferença; perdeu uns R$ 12 de comissão futura, talvez."},
+      {"nome": "Poliana", "historia": "Paciente que estava indo muito bem, menos 6 kg, mas brigou com a clínica por causa de cobrança duplicada no cartão.", "como_percebeu": "A própria Poliana mandou mensagem no Instagram da Larissa: 'você é ótima, mas não piso mais nessa clínica'.", "o_que_fez": "Ficou balançada — foi a primeira vez que pensou seriamente 'se eu tivesse meu consultório, essa paciente era minha'. Respondeu agradecendo e não pôde fazer mais nada."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "quinta-feira, 20h40", "texto": "Lari, me achou no insta! Me tira uma dúvida: no pacote tá liberado whey ou só o que a moça da recepção mandou no PDF?", "respondeu": "Respondeu curto e simpática ('no seu caso pode sim, uma dose pós-treino') e pediu que confirmasse tudo pelo WhatsApp da clínica. Depois ficou com receio de o dono ver."},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 11,
+    "estimativa_perda_anual_intuitiva": "'Eu? Nada. Meu salário cai igual. A clínica deve perder uma fortuna com pacote não renovado — na reunião falam em 30% de evasão — mas essa conta é do dono, não minha. Da minha comissão, se perco R$ 500 no ano é muito.'"
+  },
+  "dores_reais": [
+    "Trabalhar sob meta comercial dos outros: promessas que o vendedor faz e ela precisa sustentar clinicamente",
+    "Salário de R$ 4.100 com seis anos de formada e pós paga do próprio bolso — a conta do apartamento aperta",
+    "O sonho adiado do consultório próprio: falta capital, sobra medo, e cada ano de CLT parece um ano a mais de adiamento",
+    "Zero autonomia: não escolhe conduta comercial, ferramenta, nem o tempo de consulta",
+    "Onze no-shows por mês que bagunçam o dia dela com encaixes de última hora decididos pela recepção"
+  ],
+  "nao_dores": [
+    "Evasão de paciente não mexe no bolso dela: a carteira é da clínica e o salário é fixo",
+    "WhatsApp fora de hora quase não existe: a recepção blinda, e ela desliga às 19h",
+    "Captação não é problema dela: o tráfego pago da clínica traz avaliação gratuita todo dia",
+    "Comprar software não está no radar: qualquer ferramenta é decisão (e despesa) do dono"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética na medida: participa com boa vontade, mas desmonta suposição errada do entrevistador com um sorriso ('olha, na prática não é assim que funciona'). Fica visivelmente mais viva quando o assunto é o futuro consultório próprio. Tiques capixabas: 'pocar' para coisa que deu ruim ('a agenda pocou') e um 'é jura?' irônico quando desconfia de exagero."
+}

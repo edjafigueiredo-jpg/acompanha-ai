@@ -1,0 +1,62 @@
+{
+  "id": "043",
+  "nome": "Denise Mainardi Furlan",
+  "idade": 47,
+  "genero": "feminino",
+  "cidade": "Sinop",
+  "uf": "MT",
+  "carreira_anos": 21,
+  "especialidade": "Nutrição renal e doenças crônicas (DRC, diabetes, hipertensão) em atendimento online",
+  "modelo_atendimento": "Atende 100% online do escritório em casa, em Sinop, com pacientes espalhados pelo norte do Mato Grosso e alguns em outros estados. Capta principalmente pelo Instagram, onde publica conteúdo sério sobre rim, potássio e rótulo de alimento, e recebe encaminhamentos informais de dois nefrologistas que a conhecem de longa data. Cobra consulta avulsa e um acompanhamento trimestral para os pacientes renais crônicos.",
+  "carteira_ativa": 38,
+  "ticket_consulta": 220,
+  "consultas_semana": 16,
+  "contexto": "Gaúcha de origem, filha de família que migrou para o norte do Mato Grosso na colonização, formou-se em Cuiabá e passou 15 anos como nutricionista de hospital em Sinop, boa parte na hemodiálise. Saiu do hospital em 2021, cansada de plantão e de política interna, e montou o consultório online. Casada com um engenheiro agrônomo, dois filhos adolescentes. O que a move é tirar o paciente renal do ciclo de internação — ela viu gente demais piorar por causa de um churrasco com sal demais. O que a cansa é a solidão do online no interior: ninguém ali por perto discute caso com ela, tudo é por grupo de WhatsApp de colegas.",
+  "rotina": "Atende segunda, terça, quinta e sexta, das 8h às 11h30 e das 14h às 17h, consultas de 50 minutos porque caso crônico não anda rápido. Quarta é dia de estudar exames, ajustar condutas e gravar dois vídeos para o Instagram. Fim de tarde é dos filhos; à noite revisa exames laboratoriais que os pacientes mandam por foto.",
+  "whatsapp_pacientes": "WhatsApp Business, ela mesma responde. Com paciente renal a mensagem fora de hora não é frescura: é 'posso comer carambola?' (não pode), é dúvida de potássio antes do churrasco de domingo. Ela criou horários declarados de resposta (até 18h), mas abre exceção quando o assunto é segurança — e com crônico quase tudo parece segurança. Sente um misto de dever cumprido e cansaço: sabe que essa disponibilidade segura o paciente vivo e fiel, mas nunca foi paga por ela.",
+  "tecnologia": "Prontuário e evolução em pastas do Google Drive organizadas por paciente, uma planilha Excel robusta onde acompanha creatinina, potássio e fósforo de cada um ao longo do tempo — orgulho pessoal, com gráficos que ela mesma montou. Agenda no Google Agenda, recibo pelo app do banco. Paga R$ 39/mês de um serviço de prescrição de dieta que usa pela praticidade das tabelas de composição. É metódica: adota tecnologia quando enxerga o dado que sai dela, e só.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Waldir",
+        "historia": "Produtor rural de 62 anos, DRC estágio 3, acompanhou 8 meses direitinho e sumiu na época da colheita da soja — 'depois da safra eu volto, dona Denise'.",
+        "como_percebeu": "A planilha dela tem coluna de próxima consulta; o nome dele ficou vermelho por 60 dias.",
+        "o_que_fez": "Ligou — não mandou mensagem, ligou. A esposa atendeu e prometeu trazê-lo de volta em julho. Ela anotou para cobrar de novo."
+      },
+      {
+        "nome": "Marinês",
+        "historia": "Diabética de 55 anos de Alta Floresta, fechou o trimestral, foi bem dois meses e abandonou quando a filha, que operava o computador para a videochamada, mudou para Cuiabá.",
+        "como_percebeu": "Faltou à consulta online e não conseguiu remarcar sozinha; as mensagens passaram a ficar sem visualizar.",
+        "o_que_fez": "Tentou migrar o atendimento para chamada de voz simples. Funcionou uma vez, depois esfriou. Ficou com a sensação de que o online tem um teto para certos pacientes."
+      },
+      {
+        "nome": "Jonas",
+        "historia": "Hipertenso de 48 anos que a procurou por pressão do cardiologista, nunca quis de fato mudar nada. Sumiu depois da terceira consulta.",
+        "como_percebeu": "Não pagou o boleto do retorno. Simples assim.",
+        "o_que_fez": "Mandou uma única mensagem cordial. Sem resposta, arquivou. 'Paciente que vem por ordem do médico e não por decisão própria tem prazo de validade', diz ela."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 19h15",
+      "texto": "Dra Denise, boa noite, me desculpe incomodar. Meu pai tá na festa da comunidade e tem lá aquele suco de maracujá com leite condensado, ele pode um copinho? O fósforo dele deu 5,9",
+      "respondeu": "Respondeu em três minutos: 'Meio copo, sem repetir, e amanhã me manda como ele passou.' Para ela, isso é conduta, não plantão."
+    },
+    "gasto_ferramentas_mes": 39,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "'Olha, eu tenho a planilha, então não preciso chutar muito: uns 10 pacientes por ano abandonam antes da hora. Numa conta rápida, R$ 15 a 20 mil. O que eu não sei medir é quanto isso custa em internação para eles.'"
+  },
+  "dores_reais": [
+    "O trabalho invisível de vigiar exame e responder dúvida de segurança fora de hora, que segura o paciente mas não aparece em fatura nenhuma",
+    "Paciente crônico que abandona por logística (safra, distância, dificuldade com tecnologia) e não por escolha — e ela sabendo que ele vai piorar",
+    "A planilha dela dá trabalho: cada exame é digitado à mão, e ela tem medo de errar um número",
+    "Isolamento profissional em Sinop: sem pares para discutir caso renal, tudo depende de grupos e congressos caros com avião via Cuiabá"
+  ],
+  "nao_dores": [
+    "Captação: entre Instagram sério e os dois nefrologistas, chega mais paciente do que ela quer atender — crônico bem cuidado fica anos",
+    "Precificação: no interior cobram menos que ela e mesmo assim a agenda enche; paciente renal não troca de nutricionista por R$ 50",
+    "No-show: raro, o paciente crônico (ou a família) leva a consulta a sério"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica: responde com estrutura ('são três situações diferentes, vou te dar as três'), cita números da própria planilha de cabeça, corrige a pergunta quando ela vem mal formulada. Tiques: 'bah' ocasional herdado da família gaúcha, e o hábito de dizer 'na minha casuística...' antes de qualquer generalização."
+}

@@ -1,0 +1,64 @@
+{
+  "id": "076",
+  "nome": "Gabriela Zanella",
+  "idade": 27,
+  "genero": "feminino",
+  "cidade": "Chapecó",
+  "uf": "SC",
+  "carreira_anos": 4,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e comorbidades (hipertensão, diabetes tipo 2)",
+  "modelo_atendimento": "Atende por convênio numa clínica popular grande de Chapecó, por produção: a agenda é preenchida pela fila dos planos (Unimed local e planos de cooperativa agroindustrial) e ela recebe por consulta realizada. São turnos cheios, paciente novo o tempo todo, muitos encaminhados por cardiologista e endócrino da própria clínica. A renda é o repasse mensal, que varia com a produção.",
+  "carteira_ativa": 52,
+  "ticket_consulta": 38,
+  "consultas_semana": 42,
+  "contexto": "Gabriela é de Coronel Freitas, filha de pequenos produtores de leite, primeira da família a se formar (Unochapecó, 2021). Conseguiu a vaga na clínica seis meses depois de formada e se sente, sinceramente, sortuda: colegas de turma seguem sem conseguir viver de nutrição. Mora num apê alugado com uma amiga fisioterapeuta perto do centro, namora o Jonas, técnico agrícola que vê aos fins de semana. O que a move é o paciente de agroindústria que chega com hemoglobina glicada de 9 e sai, meses depois, com 6.5 — ela guarda esses exames como troféu. O que a cansa é a metralhadora de 42 consultas por semana e a sensação de estar sempre 15 minutos atrasada desde as 8h da manhã.",
+  "rotina": "Segunda a sexta na clínica, das 7h30 às 11h30 e das 13h30 às 18h, com agenda de 20 em 20 minutos montada pela recepção. Quarta à noite faz pós-graduação EAD em obesidade e emagrecimento. Sábado de manhã limpa o apê, faz rancho e almoça com os pais no interior quando dá; domingo é do Jonas e do chimarrão.",
+  "whatsapp_pacientes": "Os pacientes não têm o número dela — regra da clínica, tudo pela recepção e pelo telefone fixo. Uns poucos pacientes queridos descolaram o número pessoal dela e mandam mensagem ('deu certo a receita, profe!'), o que ela acha uma graça e responde no fim do dia. Não existe plantão: quando ela bate o ponto, acabou. Ela sabe que colegas de consultório particular vivem no WhatsApp e agradece baixinho por não ser com ela.",
+  "tecnologia": "Usa o sistema de prontuário da clínica (não paga nada, não escolheu, acha razoável) e, por conta própria, assinou um software de nutrição básico por R$ 39/mês para montar os planos alimentares em PDF mais caprichados que o padrão da clínica — seu único luxo profissional. Tecnologia pessoal: vive no Instagram como consumidora, morre de vontade de produzir conteúdo, nunca começou.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Ademir",
+        "historia": "Aposentado da Aurora, diabético, veio três vezes encaminhado pelo cardiologista e não voltou mais. Ela desconfia que ele só veio 'pra não desagradar o médico'.",
+        "como_percebeu": "Quase não percebeu — a agenda seguiu cheia. Notou semanas depois, quando o cardiologista perguntou dele no corredor e ela foi ver o prontuário.",
+        "o_que_fez": "Pediu pra recepção ligar oferecendo remarcação (protocolo da clínica). Ele não remarcou. Para o bolso dela, zero diferença: a vaga foi preenchida pela fila no mesmo dia. Para a consciência, um incômodo pequeno que passa."
+      },
+      {
+        "nome": "Marinês",
+        "historia": "Operária de frigorífico, turno da madrugada, queria muito emagrecer mas faltava por causa da escala — remarcou quatro vezes até o plano dela travar novas guias no semestre.",
+        "como_percebeu": "A recepção avisou que as guias dela tinham estourado o limite de faltas do convênio.",
+        "o_que_fez": "Ficou com pena de verdade — era um caso que ela queria acompanhar. Entregou por escrito umas orientações gerais na última consulta, torcendo pra que se virasse até liberar guia de novo. 'O sistema come gente que trabalha de madrugada.'"
+      },
+      {
+        "nome": "Tainara",
+        "historia": "Menina de 22 anos que veio pelo plano querendo 'dieta pra secar pro verão', ouviu que o processo era gradual, fez uma consulta e nunca mais apareceu.",
+        "como_percebeu": "Falta registrada no sistema, vaga reposta. Ela lembrou porque a menina tinha revirado os olhos na consulta.",
+        "o_que_fez": "Nada. 'Quem quer milagre acha o milagreiro.' Riu, seguiu para o próximo dos 42 da semana."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quinta passada, 20h10",
+      "texto": "Profe Gabi, sou eu, a Ilse! Fiz o pão de aveia que tu ensinou e o Erno comeu dois! Deus te abençoe, guria!",
+      "respondeu": "Respondeu com coração e 'que alegria, dona Ilse!'. É o tipo de mensagem que ela recebe fora do horário: gratidão, não demanda. Dormiu feliz."
+    },
+    "gasto_ferramentas_mes": 39,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 14,
+    "estimativa_perda_anual_intuitiva": "Pra mim? Nada, praticamente. Se o paciente some, entra outro da fila, eu produzo igual. Quem perde é a clínica, e olhe lá. Nunca calculei porque não tem o que calcular... perda minha mesmo, só a falta que não repõe em cima da hora: capaz de dar uns mil reais no ano?"
+  },
+  "dores_reais": [
+    "A esteira de 42 consultas semanais de 20 minutos: chega quinta-feira ela não lembra o nome de quem atendeu terça",
+    "Repasse de R$ 38 por consulta: ela faz a conta de quanto a clínica fatura em cima dela e engole seco",
+    "Vontade represada de ter os próprios pacientes particulares — mas sem capital pra sala, sem audiência e com medo de largar o certo pelo duvidoso",
+    "No-show em bloco nos dias de chuva e de colheita, que derruba a produção do mês sem ela poder fazer nada",
+    "Síndrome de iniciante: sente que virou 'entregadora de folhinha de dieta' e que a pós ainda não paga o que promete"
+  ],
+  "nao_dores": [
+    "Retenção — evasão não muda o repasse dela em um centavo; a fila do convênio é infinita",
+    "WhatsApp de paciente — a clínica blinda; a única mensagem fora de hora que recebe é bênção de senhora",
+    "Ferramentas de gestão — agenda, cobrança e prontuário são problema da clínica; os R$ 39 do PDF bonito são o máximo que faz sentido gastar",
+    "Concorrência — a fila do plano não acaba; concorrência é problema de quem vive de particular"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa, com sotaque do oeste catarinense carregado: mistura histórias da colônia com a rotina da clínica, oferece detalhes demais e pede desculpa por falar demais — e continua falando. Simpática, sem malícia, responde tudo. Tiques: 'capaz!' como espanto, 'guria/guri' pra se dirigir a qualquer pessoa, e 'mas bah' de contrabando gaúcho."
+}

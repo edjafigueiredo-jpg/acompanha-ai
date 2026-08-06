@@ -1,0 +1,64 @@
+{
+  "id": "071",
+  "nome": "Luiza Sampaio Bortoletto",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Piracicaba",
+  "uf": "SP",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição comportamental, abordagem não-prescritiva com foco em comer intuitivo e relação com a comida",
+  "modelo_atendimento": "Consultório próprio numa sala alugada num sobrado da Vila Rezende, dividida com uma psicóloga. Atende só particular, consultas de uma hora, sem plano alimentar fechado — trabalha com metas de comportamento. A renda vem 100% das consultas avulsas e de um grupo terapêutico quinzenal que ela conduz com a psicóloga.",
+  "carteira_ativa": 38,
+  "ticket_consulta": 220,
+  "consultas_semana": 16,
+  "contexto": "Luiza se formou na Unimep e passou os primeiros anos prescrevendo dieta de 1.200 kcal como todo mundo, até ela mesma desenvolver compulsão alimentar durante um relacionamento abusivo. A terapia mudou a vida e a prática dela: fez formação em nutrição comportamental em 2019 e nunca mais entregou um cardápio. É casada com o Rафael, professor de educação física que hoje respeita (mas no início zombava) a linha dela; não têm filhos, têm duas gatas. Ama Piracicaba, o rio, a pamonha da feira, e se emociona fácil falando de pacientes que 'fizeram as pazes com o arroz'. O que a cansa é remar contra a cultura de dieta da cidade inteira e ver paciente chegar destruída por uma década de nutricionistas que pesavam até a alface.",
+  "rotina": "Atende terça a sexta, das 9h às 12h e das 14h às 18h, no máximo quatro consultas por período porque cada uma dura uma hora cheia. Segunda-feira é dia de supervisão online com o grupo de estudos de nutrição comportamental e de escrever os textos do Instagram. Quinta à noite, quinzenalmente, roda o grupo terapêutico 'Comer sem Culpa' com oito participantes. Sábado de manhã é feira com o marido, inegociável.",
+  "whatsapp_pacientes": "Número business separado, mas quem responde é ela mesma, geralmente no fim da tarde. Ela deliberadamente NÃO pede que pacientes mandem foto de prato nem diário alimentar pelo WhatsApp — acha que isso alimenta vigilância. As mensagens que chegam são remarcações e, às vezes, desabafos ('comi o pacote inteiro e tô me odiando'), que ela acolhe com uma frase e redireciona para a sessão. Não sente o WhatsApp como fardo; sente como termômetro.",
+  "tecnologia": "Agenda no Google Calendar, prontuário em pastas no Google Drive com modelos próprios de anamnese comportamental, recibos pelo app do banco. Paga só o Canva Pro, R$ 45 por mês, para os posts. Já olhou softwares de nutrição e desistiu na primeira tela: 'era tudo calculadora de dieta, e eu não prescrevo dieta'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Patrícia",
+        "historia": "Executiva de usina, 44 anos, oito meses de acompanhamento, estava indo lindamente até o marido contratar por conta própria um 'coach de emagrecimento' para os dois.",
+        "como_percebeu": "Patrícia mesma mandou áudio de sete minutos chorando, explicando que ia 'dar uma pausa' para fazer o desafio de 21 dias com o marido.",
+        "o_que_fez": "Respondeu com carinho, disse que a porta ficava aberta e que ela não precisava chegar 'bem' para voltar. Ficou dois dias ruminando, chorou no jantar."
+      },
+      {
+        "nome": "Guilherme",
+        "historia": "Um dos raros homens da carteira, 29 anos, compulsão noturna. Veio por indicação da psicóloga da sala ao lado, fez quatro sessões e sumiu quando perdeu o emprego na Caterpillar.",
+        "como_percebeu": "Cancelou pela terceira vez seguida alegando dinheiro e depois parou de responder.",
+        "o_que_fez": "Ofereceu valor social por três meses. Ele agradeceu, disse que voltava 'quando se reerguer'. Nunca voltou. Ela ainda pergunta dele pra psicóloga."
+      },
+      {
+        "nome": "Dona Marlene",
+        "historia": "Senhora de 61 anos, diabética, mandada pela filha. Nunca quis de fato estar ali — queria uma dieta impressa, e Luiza não dá dieta impressa.",
+        "como_percebeu": "Depois da terceira sessão, a filha ligou dizendo que a mãe 'achou que não estava fazendo nutrição de verdade' e migrou pra uma nutricionista que entrega cardápio plastificado.",
+        "o_que_fez": "Fez uma devolutiva honesta pra filha sobre abordagens diferentes. Doeu no ego, não no caixa — a agenda repôs em uma semana."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 21h40",
+      "texto": "Lu, desculpa o horário. Ataquei a torta da festa do meu sobrinho e tô num nível de culpa que você não imagina. Só precisava contar pra alguém que não fosse me julgar.",
+      "respondeu": "Respondeu na hora, três linhas: validou, lembrou que festa é contexto de festa, e disse 'a gente destrincha isso quarta'. Foi dormir tranquila — pra ela isso É o trabalho."
+    },
+    "gasto_ferramentas_mes": 45,
+    "horas_semana_respondendo": 3,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Nunca calculei... e nem gosto dessa conta, sabe? Quem sai da abordagem não era pra estar nela. Mas se você me apertar: uns 8 mil por ano, chuto."
+  },
+  "dores_reais": [
+    "Explicar pela milésima vez que ela não entrega cardápio e ver paciente ir embora por isso — a dor é de tradução da abordagem, não de retenção",
+    "A cultura de dieta local: rasteiras constantes de coach, jejum da moda e canetas emagrecedoras desfazendo meses de trabalho",
+    "Teto de agenda: consulta de uma hora limita a 16-18 atendimentos por semana e ela não sabe como crescer sem virar linha de produção",
+    "Solidão profissional — em Piracicaba ela conhece só mais uma colega comportamental, o resto acha que ela 'passa a mão na cabeça de gordo'",
+    "Precificar o grupo terapêutico, que dá um trabalho enorme e rende pouco"
+  ],
+  "nao_dores": [
+    "Monitorar paciente entre consultas — ela é ATIVAMENTE contra: 'vigilância alimentar é parte do problema, não da solução'. Um app de registro de refeição pra ela é gatilho, não ferramenta.",
+    "Plantão de WhatsApp — as mensagens que chegam são poucas e ela as considera material clínico valioso, não invasão",
+    "No-show — cobra a sessão de quem falta sem avisar 24h antes, contrato assinado na primeira consulta, funciona há anos",
+    "Captação — a parceria com três psicólogas da cidade mantém fila de espera de três semanas"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva: os olhos marejam ao contar caso de paciente, faz pausas longas, põe a mão no peito. Responde perguntas sobre números com desconforto visível e devolve com histórias. Tiques: 'gente...' alongado antes de frases difíceis e o interiorano 'nossa senhora' paulista; chama as pacientes de 'minhas mulheres'."
+}

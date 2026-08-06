@@ -1,0 +1,44 @@
+{
+  "id": "062",
+  "nome": "Camila Yumi Nakamura",
+  "idade": 35,
+  "genero": "feminino",
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "carreira_anos": 11,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e síndrome metabólica em adultos",
+  "modelo_atendimento": "Consultório próprio na Saúde, zona sul de São Paulo, sala alugada em prédio comercial perto do metrô. Atende só particular, primeira consulta R$ 380 e retorno R$ 260; a renda é 100% da agenda dela, sem convênio e sem clínica por trás. Tem lista de espera de duas a três semanas para consulta nova.",
+  "carteira_ativa": 74,
+  "ticket_consulta": 320,
+  "consultas_semana": 34,
+  "contexto": "Neta de japoneses da Liberdade, formou-se na USP e construiu a carteira em onze anos à base de resultado e indicação de médicos endocrinologistas. Casada com um engenheiro, sem filhos por decisão que ainda revisita. A agenda cheia é orgulho e prisão: atende 34 consultas por semana e sabe o custo de cada buraco. O que a move é ver exame de paciente melhorar; o que a cansa é a sensação de esteira — paciente entra, empolga, some no terceiro mês, e ela nem tem tempo de correr atrás porque tem gente na fila. Só que a fila é de consulta nova, que dá mais trabalho e não cria vínculo, e ela sabe que está trocando pacientes fiéis por rotatividade.",
+  "rotina": "Segunda a sexta no consultório das 8h às 19h com consultas de 40 minutos coladas umas nas outras; almoça em 25 minutos na copa. Terça e quinta estende até 20h30 para quem só pode à noite. Sábado de manhã, quinzenal, para retornos. Domingo à noite separa uma hora para responder o WhatsApp acumulado e montar planos atrasados, quase sempre passa de duas.",
+  "whatsapp_pacientes": "Número business no celular pessoal, ela mesma responde — a secretária só marca e desmarca consulta. Chegam de 30 a 50 mensagens por dia: dúvida de substituição, foto de rótulo, 'posso no jantar de empresa?'. Ela responde nos intervalos entre consultas e à noite no sofá; o marido reclama. Sente que virou um plantão não pago que ela mesma criou, mas tem medo de cortar e o paciente esfriar.",
+  "tecnologia": "Agenda e prontuário num sistema de clínica simples que paga R$ 129/mês, prescrição de plano num software de nutrição de R$ 89/mês, e uma planilha própria para fluxo de caixa. Confortável com tecnologia, mas sem paciência para ferramenta que dá trabalho: 'se precisar de tutorial de uma hora, já era'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Rogério", "historia": "Executivo de 48 anos, pré-diabético, perdeu 9 kg em quatro meses e estava indo bem.", "como_percebeu": "Desmarcou o retorno de julho pela secretária 'por causa de viagem' e nunca remarcou. Ela só notou três semanas depois, revisando a agenda.", "o_que_fez": "Pediu para a secretária ligar; ele disse que retomaria 'depois das férias'. Não retomou. Ela sabe que ele deve estar recuperando o peso e isso a incomoda mais que a receita perdida."},
+      {"nome": "Patrícia", "historia": "Professora de 39 anos, terceira tentativa de emagrecimento com a Camila em cinco anos — sempre volta, perde 5 kg, some.", "como_percebeu": "Visualizou e não respondeu a mensagem de confirmação do retorno; deu no-show.", "o_que_fez": "Cobrou a taxa de no-show conforme o combinado, a paciente pagou e sumiu de vez. Camila ficou remoendo se a cobrança apressou a fuga."},
+      {"nome": "Felipe", "historia": "Rapaz de 27 anos encaminhado pelo endócrino, obesidade grau 2, muito engajado nas duas primeiras semanas — mandava foto de todas as refeições.", "como_percebeu": "As fotos pararam de chegar na terceira semana; no retorno do mês seguinte ele não apareceu.", "o_que_fez": "Mandou mensagem pessoal ('Felipe, sumiu! Tá tudo bem?'). Ele respondeu com vergonha, remarcou, faltou de novo. Ela desistiu de insistir para não parecer cobrança."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "terça-feira, 22h58", "texto": "Dra Camila desculpa o horário!! To no rodízio de japa com a firma, o que eu como que estraga menos? Socorro kkk", "respondeu": "Respondeu em dois minutos, do travesseiro: 'Prioriza sashimi e evita os fritos e o temaki de cream cheese'. Depois ficou irritada consigo mesma por ter respondido."},
+    "gasto_ferramentas_mes": 218,
+    "horas_semana_respondendo": 9,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Já fez a conta num domingo de raiva: se 3 pacientes somem por mês e cada um valeria uns 4 retornos, dá mais de R$ 35 mil por ano. Falou o número e se assustou."
+  },
+  "dores_reais": [
+    "Paciente que some no terceiro mês, bem quando o resultado ia consolidar — ela descobre tarde demais para agir",
+    "As 9 horas semanais de WhatsApp não são pagas, não aparecem na agenda e comem o casamento",
+    "No-show de última hora num dia de agenda cheia: o buraco de R$ 260 não se repõe no mesmo dia",
+    "Não tem nenhuma visão de quem está esfriando: o prontuário só mostra quem veio, não quem parou de vir",
+    "Sensação de esteira: repõe fiel com consulta nova, que cansa mais e converte menos"
+  ],
+  "nao_dores": [
+    "Captação não dói: tem lista de espera de três semanas e três endócrinos que encaminham direto",
+    "Precificação não dói: subiu o preço duas vezes em dois anos e a fila continuou",
+    "Concorrência de nutri de Instagram não a afeta: o público dela vem por encaminhamento médico"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada, avisa no início que tem 40 minutos e olha o celular quando vibra. Responde com precisão e números, sem histórias longas — mas quando fala dos pacientes que somem a voz muda e ela se alonga sem perceber. Tique: fecha raciocínio com 'enfim' e usa 'tipo assim' quando está cansada, coisa que ela odeia notar."
+}

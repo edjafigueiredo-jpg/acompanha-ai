@@ -1,0 +1,63 @@
+{
+  "id": "025",
+  "nome": "Aline Dantas Cavalcanti",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Mossoró",
+  "uf": "RN",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição vegetariana e vegana (transição alimentar e adequação de micronutrientes)",
+  "modelo_atendimento": "Atende 100% online do home office no quintal da casa em Mossoró, pacientes do Brasil inteiro captados pelo Instagram (@alinenutrivegg, 28 mil seguidores). Cobra consulta avulsa com um retorno em 45 dias incluído; sem pacote, sem mensalidade — já tentou e detestou 'virar cobradora'. A renda vem toda das consultas, com picos quando um reel viraliza e vales assustadores quando o algoritmo esfria.",
+  "carteira_ativa": 24,
+  "ticket_consulta": 190,
+  "consultas_semana": 12,
+  "contexto": "Mossoroense de nascença, formou-se na UERN e virou vegetariana na faculdade, o que na terra da carne de sol rendeu anos de piada em almoço de família. Mora com a companheira, Rebeca, professora, e três gatos que invadem as teleconsultas. Construiu o online na pandemia e nunca mais quis sala física. É cética por formação e por temperamento: pede fonte, desconfia de promessa, já comprou dois cursos de marketing que 'não entregaram nem o básico'. O que a move é tirar paciente da anemia sem esperar milagre de brotinho; o que a cansa é a sensação de enxugar gelo — paciente empolga na consulta, some no dia 20, e ela só descobre quando o retorno de 45 dias fica em aberto.",
+  "rotina": "Atende terça a sexta, das 8h às 12h e das 15h às 18h, consultas de 50 minutos pelo Meet. Segunda é dia de gravar conteúdo e montar planos. Fim de tarde vai à feira do bairro comprar a semana. Sábado responde direct 'de trabalho' por uma hora, cronometrada, e desliga.",
+  "whatsapp_pacientes": "WhatsApp Business separado do pessoal, com mensagem automática dizendo o horário de resposta (dias úteis, 8h-18h). Quem responde é ela, em dois blocos por dia. Paciente online cobra resposta rápida — 'se eu demoro seis horas, tem gente que pergunta se eu sumi'. Ela acha irônico: o paciente some 40 dias, mas se ela demora uma tarde, é drama. As mensagens fora de horário ela deixa para o dia seguinte por princípio, com culpa moderada.",
+  "tecnologia": "Agenda e pagamento por um link de agendamento que cobra R$ 49,90/mês, prescrição em um software de cardápios de R$ 64,90/mês, Notion gratuito para prontuário (montou os templates ela mesma). Confortável com tecnologia e justamente por isso exigente: testa tudo no trial, cancela sem dó, lê termo de uso. 'Ferramenta tem que provar valor no meu bolso, não no anúncio.'",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Thiago",
+        "historia": "De Curitiba, transição vegana motivada pela namorada. Primeira consulta ótima, cheio de dúvida boa. Não marcou o retorno incluído — que já estava pago.",
+        "como_percebeu": "O lembrete que ela mesma anota no Notion apitou nos 45 dias: retorno não agendado. Mandou o link, ele visualizou e nada.",
+        "o_que_fez": "Dois lembretes e parou — 'não vou implorar pra pessoa usar o que já pagou'. Suspeita que a relação acabou e a veganice foi junto. Anotou no Notion: 'motivação externa, risco alto' — padrão que ela já identificou e não sabe usar a favor."
+      },
+      {
+        "nome": "Marília",
+        "historia": "De Natal, vegetariana com ferritina em 8. Caso sério, pediu exames, montou plano com suplementação. Marília sumiu antes de mandar os exames de controle.",
+        "como_percebeu": "Ficou esperando o resultado do exame chegar no WhatsApp. Três semanas depois se deu conta de que a paciente tinha simplesmente evaporado com uma ferritina de 8.",
+        "o_que_fez": "Mandou mensagem séria, quase bronca: 'Marília, isso não é estética, é saúde'. A paciente respondeu 'oi Aline, tô devendo, essa semana resolvo' e nunca resolveu. Esse caso a assombra — cética com produto, não com gente."
+      },
+      {
+        "nome": "Vandinha",
+        "historia": "De Mossoró mesmo, conhecida da feira, fez uma consulta 'pra experimentar' meio desconfiada de consulta online. Não voltou.",
+        "como_percebeu": "Encontrou a paciente na feira do Alto de São Manoel, constrangimento mútuo entre o cheiro-verde e o coentro.",
+        "o_que_fez": "Riu, disse 'apareça, mulher' e deixou quieto. Diagnóstico dela: online não era pra Vandinha, e tudo bem."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quinta-feira, 21h15",
+      "texto": "Aline boa noite! desculpa o horário… fiz exame por conta própria e a b12 deu 190, é grave?? tô apavorada, me responde quando puder 🙏",
+      "respondeu": "Viu, avaliou que dava para esperar, e respondeu às 8h02 do dia seguinte com explicação calma e pedido do exame completo. Não perdeu o sono, mas passou o episódio da série pensando na paciente."
+    },
+    "gasto_ferramentas_mes": 115,
+    "horas_semana_respondendo": 5,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "'Já fiz uma conta de padeiro, sim: se metade dos meus primeira-consulta não vira retorno pago depois, e eu atendo uns 8 novos por mês... uns 15 a 18 mil por ano escorrendo pelo ralo. O problema é que eu sei o número e não sei o remédio.'"
+  },
+  "dores_reais": [
+    "O buraco negro entre a consulta e o retorno de 45 dias: ela não tem nenhuma visibilidade de quem desistiu no dia 10",
+    "Paciente com exame alterado que some — a responsabilidade clínica fica com ela e a paciente na dela",
+    "Dependência do algoritmo do Instagram para repor os que somem: mês que o alcance cai, a agenda sente",
+    "Retrabalho de mandar lembrete manual um a um pelo Notion, 'serviço de formiga'",
+    "A solidão do online: nenhuma colega de sala pra desabafar sobre paciente que evaporou"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp: o Business com horário definido funciona, ela segura a linha — responder fora do horário é exceção, não rotina",
+    "Prescrição e cardápio: o stack que ela montou resolve redondo, não quer mexer",
+    "Concorrência de nutri generalista: o nicho vegano a protege, quem chega nela já quer ela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética: responde com precisão, mas devolve pergunta com pergunta ('isso é pesquisa ou é pré-venda?'), pede exemplos concretos e desmonta generalização com dado da própria prática. Descongela quando percebe honestidade. Tiques: 'oxente' quando discorda, 'vixe' quando concorda de má vontade, e um 'aí é outra conversa' para marcar limite."
+}

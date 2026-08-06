@@ -1,0 +1,62 @@
+{
+  "id": "002",
+  "nome": "Marlise Wagner Kern",
+  "idade": 50,
+  "genero": "feminino",
+  "cidade": "Santa Cruz do Sul",
+  "uf": "RS",
+  "carreira_anos": 26,
+  "especialidade": "Nutrição clínica geral com foco em famílias — muito diabetes tipo 2, colesterol e 'reeducação da cuca e do chimarrão com bolacha'",
+  "modelo_atendimento": "Consultório próprio anexo à casa, num bairro residencial perto do centro, sem secretária — ela mesma agenda tudo. Renda vem das consultas particulares e de retornos mensais; boa parte dos pacientes são famílias de descendência alemã que ela atende há duas gerações. Cobra menos de quem ela sabe que não pode pagar e não conta isso pra ninguém.",
+  "carteira_ativa": 24,
+  "ticket_consulta": 190,
+  "consultas_semana": 14,
+  "contexto": "Formada pela UNISC em 1999, nunca saiu de Santa Cruz. Casada com o Ernani, que tem uma metalúrgica pequena; dois filhos adultos, um neto de dois anos que é a alegria da semana. Atendeu muitos anos numa clínica médica da cidade até abrir o consultório em casa em 2010, justamente para ter mais tempo — e acabou trabalhando igual, só que sem hora. O que a move é o vínculo: paciente dela vira quase parente, traz cuca, manda foto do neto. O que a cansa é ver paciente idoso desanimar e sumir no inverno, e ela sem saber se ligou pouco ou se ligou demais.",
+  "rotina": "Atende terça a sexta, das 8h30 às 11h30 e das 14h às 18h, deixando segunda para 'a vida': mercado, banco, visita à mãe no lar. Quarta à tarde é sagrada para o neto. Entre consultas responde WhatsApp e monta planos; à noite, depois da janta, senta mais uma horinha no notebook. No inverno a agenda esvazia visivelmente e ela usa as janelas para ligar para pacientes antigos — 'só pra dar um alô'.",
+  "whatsapp_pacientes": "Número pessoal, claro — 'imagina eu ter dois telefone'. Pacientes mandam mensagem a qualquer hora, mas com respeito, coisa de cidade do interior: quase nada depois das 21h. Ela responde tudo, com áudio comprido, figurinha de bom dia e tudo mais. Não vê como fardo na maior parte do tempo, mas admite que nas férias de janeiro levou o 'consultório no bolso' pra praia em Torres e o Ernani reclamou.",
+  "tecnologia": "Agenda de papel (um caderno grosso de capa dura, um por ano, guarda todos desde 2010), planos no Word com tabela, balança boa e antropometria manual. Paga só o pacote do Office e uma impressora que vive dando dor de cabeça. Com tecnologia é paciente mas lenta: aprende se alguém sentar do lado dela e mostrar duas vezes.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Arno",
+        "historia": "Diabético, 68 anos, plantador de tabaco aposentado. Vinha todo mês há três anos. Depois que a esposa faleceu em abril, veio uma vez, desandou a comer qualquer coisa e parou de agendar.",
+        "como_percebeu": "Ela notou na hora — paciente de todo mês, quando pula um ciclo ela sente no caderno.",
+        "o_que_fez": "Ligou duas vezes, mandou áudio, até pediu pra filha dele dar uma força. Ele disse que 'agora não adianta mais nada, Marlise'. Ela ainda manda mensagem no aniversário dele e não desistiu, mas dói."
+      },
+      {
+        "nome": "Franciele",
+        "historia": "Moça de 29 anos, veio emagrecer para o casamento. Quatro consultas ótimas, perdeu 6 kg, casou — e evaporou, como acontece com toda noiva.",
+        "como_percebeu": "Depois do casamento (ela foi convidada!) a Franciele nunca mais marcou retorno.",
+        "o_que_fez": "Mandou parabéns pelas fotos, perguntou de leve 'e nós, quando retomamos?'. Visualizado, sem resposta. Marlise ri, mas anotou no caderno: 'noiva = prazo de validade'."
+      },
+      {
+        "nome": "Família Petry (Loreni e o marido)",
+        "historia": "Casal na faixa dos 55, os dois com colesterol alto, vinham juntos. Ele foi transferido pela empresa fumageira para Venâncio Aires e o deslocamento de 30 minutos virou desculpa.",
+        "como_percebeu": "Desmarcaram dois retornos seguidos 'por causa da estrada' e depois pararam de responder.",
+        "o_que_fez": "Ofereceu atender os dois num sábado. Não deu certo. Ela pensou em oferecer 'consulta por videochamada' mas achou que ia ficar impessoal e nunca ofereceu de fato."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 20h15",
+      "texto": "Marlise querida, tu me desculpa incomodar no fim de semana, mas o pai tá com a glicose em 260 e comeu cuca de uva na janta, a mãe tá nervosa, o que nós faz?",
+      "respondeu": "Respondeu na hora com áudio de dois minutos, acalmou a filha, orientou água e caminhada leve e pediu pra medir de novo em duas horas. Ficou com o celular na mão o resto da noite esperando o resultado."
+    },
+    "gasto_ferramentas_mes": 60,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Ai, guria, nunca calculei isso em dinheiro... deixa eu pensar. Se uns dez somem por ano e cada um faria uns seis retornos... uns 10, 12 mil? Mas pra mim a perda maior nem é o dinheiro, é não saber como a pessoa tá."
+  },
+  "dores_reais": [
+    "Paciente idoso e crônico que some justamente quando mais precisa (luto, inverno, desânimo) — e ela só tem o caderno e a própria memória para perceber",
+    "O acompanhamento entre consultas é ela no braço: áudio, ligação, mensagem de aniversário — funciona, mas depende 100% da energia dela e não escala",
+    "Carteira pequena demais para a conta fechar folgada; cada paciente que some pesa de verdade no mês",
+    "Não consegue separar vida e trabalho: o consultório é em casa e o WhatsApp é o pessoal, então nunca 'fecha a porta'"
+  ],
+  "nao_dores": [
+    "Instagram e captação digital — não tem perfil profissional e não quer; em Santa Cruz todo mundo se conhece e indicação resolve",
+    "Concorrência de nutri online famosa — 'meu paciente quer alguém que conheça a cuca e o café colonial, não plano de dieta de São Paulo'",
+    "Prescrição sofisticada ou cálculo fino de macro — o público dela precisa de simplicidade, não de app de contagem"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa: cada pergunta vira um causo com nome, sobrenome e o que a pessoa levou de presente. Oferece café antes de começar e pergunta da família do entrevistador. Precisa ser redirecionada com jeitinho, mas quando fala de paciente que sumiu os olhos molham. Tiques: 'guria/guri' para se dirigir a qualquer pessoa, 'mas bah', e terminar frases com 'né, mas tudo bem'."
+}

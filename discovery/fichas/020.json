@@ -1,0 +1,63 @@
+{
+  "id": "020",
+  "nome": "Eliane Wosniak Prado",
+  "idade": 54,
+  "genero": "feminino",
+  "cidade": "Curitiba",
+  "uf": "PR",
+  "carreira_anos": 29,
+  "especialidade": "Nutrição do envelhecimento: idosos com sarcopenia, disfagia e doenças crônicas, muitos acompanhados junto com a família",
+  "modelo_atendimento": "Consultório próprio no Batel, em Curitiba, todo particular, com secretária em tempo integral. Atende o idoso quase sempre com filho ou cuidador junto, e faz uma tarde por semana de atendimento domiciliar para acamados, cobrado à parte (R$ 420 a visita). A renda vem das consultas e retornos, com boa parte da carteira em acompanhamento contínuo de anos — geriatra encaminhando é o motor da casa.",
+  "carteira_ativa": 67,
+  "ticket_consulta": 280,
+  "consultas_semana": 23,
+  "contexto": "Eliane é curitibana de família polonesa, formada pela UFPR em 1997, e construiu em três décadas a reputação de 'a nutricionista dos geriatras' da cidade. Casada, dois filhos adultos, um neto recém-chegado que a fez repensar a agenda. É metódica ao extremo: prontuários impecáveis, protocolos próprios para disfagia, tudo documentado. O que a move é dar anos de garfo e faca digno a quem está envelhecendo. O que a desgasta é a natureza da carteira dela: o paciente idoso não 'desiste' — ele interna, cai, entra em cuidado paliativo, ou a família que agenda se desorganiza — e o acompanhamento evapora justamente quando o risco nutricional dispara. Ela mantém no computador uma lista que chama de 'radar', com os pacientes que não voltaram no prazo que deveriam, e admite que o radar falha porque depende de ela lembrar de abri-lo.",
+  "rotina": "Atende segunda, terça, quinta e sexta das 8h30 às 12h30 e das 14h às 18h, consultas de 50 minutos. Quarta é o dia de domiciliares, três a quatro visitas com a Kombi de equipamentos, como ela brinca (balança portátil e adipômetro na mala do carro). Sexta no fim da tarde revisa o 'radar' de retornos vencidos com a secretária — quando a semana deixa. Sábado de manhã, feira do Passeio Público e o neto.",
+  "whatsapp_pacientes": "Número business operado a quatro mãos: a secretária filtra agendamento e ela assume o que é clínico. A particularidade do nicho: quem escreve raramente é o paciente — são filhas, noras e cuidadoras, às vezes três pessoas diferentes da mesma família, cada uma contando uma versão. Mensagens chegam bastante entre 19h e 22h, horário em que os filhos saem do trabalho e vão cuidar dos pais. Ela responde as clínicas até as 21h e o que mais a incomoda não é o volume: é a informação fragmentada — decisão nutricional séria sendo discutida em três conversas paralelas de WhatsApp.",
+  "tecnologia": "Prontuário eletrônico simples (R$ 119 por mês, com agenda e recibos) que ela usa com disciplina há oito anos, mais uma planilha de Excel — o 'radar' — com data prevista de retorno de cada paciente contínuo. Relação com tecnologia é de engenheira frustrada: gosta de sistema, exige lógica, detesta firula. Avalia qualquer novidade perguntando 'onde isso entra no meu fluxo?' e descarta o que não responde bem.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Dona Wanda",
+        "historia": "Paciente de 79 anos com sarcopenia, acompanhada havia quatro anos. A filha que agendava as consultas se mudou para Joinville e a irmã que assumiu 'não achava necessário nutricionista'. Dona Wanda sumiu do consultório sem sumir da cidade.",
+        "como_percebeu": "No radar de sexta-feira, com retorno vencido havia sete semanas — mais tempo do que ela gostaria de admitir.",
+        "o_que_fez": "Ligou para a filha de Joinville, que não sabia que as consultas tinham parado. A família se reorganizou e Wanda voltou, 2,3 kg mais magra. Eliane usa esse caso como prova interna de que o elo frágil não é o idoso, é a logística da família."
+      },
+      {
+        "nome": "Seu Bronislau",
+        "historia": "Paciente com Parkinson e disfagia, acompanhamento mensal rigoroso. Internou com pneumonia aspirativa e, na alta, a família contratou uma home care que trazia nutricionista no pacote. Ninguém avisou; ele simplesmente não voltou.",
+        "como_percebeu": "Soube pelo geriatra, num telefonema sobre outro paciente, um mês e meio depois.",
+        "o_que_fez": "Mandou o prontuário resumido para a nutricionista da home care por educação profissional e registrou a perda: paciente contínuo de anos, R$ 280 mensais, encerrado sem uma mensagem. Ela não se magoa, mas contabiliza."
+      },
+      {
+        "nome": "Dona Iracema",
+        "historia": "Acompanhada por seis anos, faleceu em julho. A família avisou com carinho e a filha veio pessoalmente agradecer semanas depois.",
+        "como_percebeu": "Mensagem do genro no dia seguinte ao falecimento.",
+        "o_que_fez": "Foi à missa de sétimo dia. Diz sem drama: 'na minha carteira, uma parte dos desfechos é essa, e está tudo certo — o que não pode é o paciente sumir vivo e em risco, esse é o sumiço que me tira o sono'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta-feira, 21h35",
+      "texto": "Dra Eliane, aqui é a Marcia nora do sr Estefano. Ele engasgou de novo no jantar com a sopa batida. A moça que cuida de dia falou que engrossou certinho mas eu não sei mais. Pode me ligar amanhã cedo?",
+      "respondeu": "Respondeu na hora com instrução objetiva sobre a consistência e o teste da colher, e pediu vídeo do preparo pela manhã. Anotou no prontuário na quinta às 8h. Engasgo de disfágico para ela é urgência, não incômodo."
+    },
+    "gasto_ferramentas_mes": 119,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Já estimei, do meu jeito: perco por desorganização de família — não por insatisfação — uns 10 a 12 pacientes contínuos por ano. Cada um valeria 8, 10 retornos. Passa de R$ 25 mil, e o meu radar de Excel recupera talvez um terço disso."
+  },
+  "dores_reais": [
+    "O radar manual que falha: retorno vencido só aparece se ela abrir a planilha na sexta, e uma semana cheia engole a sexta — Dona Wanda ficou sete semanas invisível",
+    "O acompanhamento que evapora por logística da família (filha muda, cuidadora troca, internação), exatamente quando o risco nutricional do idoso dispara",
+    "Informação clínica fragmentada em três conversas de WhatsApp por família, sem histórico unificado por paciente",
+    "No-show alto e estrutural (6 no mês): idoso depende de quem o leva, e a consulta cai por causa do motorista, não do paciente",
+    "A consciência de que aos 54, com neto novo, ela quer trabalhar menos horas sem deixar a carteira contínua desassistida — e não vê como"
+  ],
+  "nao_dores": [
+    "Captação: os geriatras de Curitiba mantêm a agenda dela cheia há vinte anos; ela nunca anunciou, não tem Instagram e não sente falta",
+    "Preço: R$ 280 no Batel para o público dela é aceito sem pestanejar; reajusta todo janeiro sem perder ninguém",
+    "Engajamento do paciente com o plano: as famílias dela são zelosas ao extremo — o problema nunca é 'paciente desmotivado', é a engrenagem familiar que desmonta"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica e professoral: pede a pergunta por escrito quando é longa, responde estruturado ('são três situações distintas, vou separar'), diferencia com precisão o que é dado do que é impressão. Cita os próprios números e os limites deles. Curitibana clássica: 'daí' e 'piá' escapam, chama qualquer lanche de 'lanche' mesmo, e encerra raciocínio com um 'é isso' seco."
+}

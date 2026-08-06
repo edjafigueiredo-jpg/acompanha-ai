@@ -1,0 +1,63 @@
+{
+  "id": "017",
+  "nome": "Débora Sousa Milhomem",
+  "idade": 30,
+  "genero": "feminino",
+  "cidade": "Araguaína",
+  "uf": "TO",
+  "carreira_anos": 6,
+  "especialidade": "Nutrição clínica geral e familiar: diabetes, hipertensão, emagrecimento e criança seletiva, tudo na mesma agenda",
+  "modelo_atendimento": "Consultório particular numa sala alugada em cima de uma farmácia na Avenida Cônego João Lima, em Araguaína. Vende consulta avulsa e um 'combo' informal de consulta mais um retorno em 45 dias. A renda vem toda do particular, complementada por palestras eventuais em escolas e no SESC, que pagam pouco mas trazem paciente.",
+  "carteira_ativa": 19,
+  "ticket_consulta": 140,
+  "consultas_semana": 11,
+  "contexto": "Débora nasceu em Araguaína, se formou no CEULP em Palmas e voltou porque a mãe adoeceu — e ficou. Casou com um técnico agrícola, tem uma filha de 3 anos e outra a caminho, de cinco meses de gestação. Atende a cidade como ela é: o fazendeiro diabético, a professora hipertensa, a mãe aflita com o filho que só come arroz. O que a move é ser 'a nutricionista da família' de verdade, num lugar onde muita gente nunca tinha pisado num consultório de nutrição. O que a cansa é a montanha-russa: mês bom de 15 consultas por semana, mês de chuva ou de entressafra em que a agenda míngua e ela chora escondida no banheiro do consultório fazendo conta de aluguel. Cada paciente que some ela sente no coração e no boleto ao mesmo tempo, e leva para o pessoal mesmo sabendo que não devia.",
+  "rotina": "Atende terça a sexta, das 8h às 12h e das 15h às 18h — o comércio de Araguaína para no almoço e ela também. Segunda fica com a filha e resolve a casa. Busca a menina na escolinha às 17h30 nas quintas, quando a sogra não pode. À noite monta planos na mesa da cozinha depois que a filha dorme, com novela de fundo.",
+  "whatsapp_pacientes": "Número pessoal, o mesmo da família e do grupo da igreja. Paciente manda mensagem a qualquer hora e ela responde quase sempre na hora, até de domingo, porque 'aqui se você demorar o povo acha que você se acha'. Quando um paciente some do WhatsApp ela sofre de verdade: relê a conversa procurando onde errou. O marido vive dizendo que ela precisa separar as coisas; ela concorda, chora, e não separa.",
+  "tecnologia": "Agenda num caderno de capa dura e no bloco de notas do celular, plano alimentar em Word com o logo que a prima designer fez, recibo em bloquinho de papel. Não paga ferramenta nenhuma — já achou o Canva pago caro. Com o celular se vira muito bem, mas computador é só o notebook velho da faculdade que trava com duas abas abertas.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Osmar",
+        "historia": "Fazendeiro diabético de 61 anos, veio três vezes por pressão da esposa, melhorou a glicada e decretou que 'já sabia o caminho'. Sumiu levando o plano no papel.",
+        "como_percebeu": "A esposa dele, que é paciente também, contou na consulta seguinte, morrendo de vergonha do marido.",
+        "o_que_fez": "Mandou mensagem simpática pro Seu Osmar oferecendo retorno com desconto. Ele respondeu com figurinha de joinha e não marcou. Ela riu para não chorar."
+      },
+      {
+        "nome": "Kelly",
+        "historia": "Mãe de um menino de 4 anos com seletividade alimentar severa. Fez duas consultas, o processo era lento como tinha que ser, e ela migrou para uma 'receita de suplemento milagroso' que uma balconista de farmácia indicou.",
+        "como_percebeu": "Encontrou a Kelly no supermercado Campelo com o suplemento no carrinho. A própria Kelly desconversou, sem graça.",
+        "o_que_fez": "Foi educada no supermercado e chorou no carro. Depois fez um post no Instagram sobre suplemento sem indicação para criança, que teve 40 curtidas e nenhuma consulta nova."
+      },
+      {
+        "nome": "Marinalva",
+        "historia": "Paciente hipertensa de 55 anos, diarista, que pagava a consulta parcelada em duas vezes no dinheiro. Quando perdeu duas casas em que trabalhava, sumiu sem dar satisfação.",
+        "como_percebeu": "Faltou ao retorno e não respondeu mais. Semanas depois mandou um áudio pedindo desculpa, dizendo que 'tava sem condição e com vergonha'.",
+        "o_que_fez": "Respondeu que consulta atrasada não existia entre elas e chamou para vir assim mesmo. Marinalva veio uma vez, trouxe um pequi de agradecimento, e sumiu de novo. Débora guarda esse áudio até hoje."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 13h25",
+      "texto": "Dra Debora, boa tarde, desculpa incomodar no domingo. A senhora atende criança de 2 anos? Minha menina não come NADA, to desesperada. Quanto é a consulta?",
+      "respondeu": "Respondeu às 13h40, no meio do almoço na casa da sogra, com tabela de preço e horários. Marcou a consulta ali mesmo. O marido balançou a cabeça; ela justificou: 'é paciente novo, amor, não posso perder'."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "Nunca calculei não... mas cada paciente que some era pra voltar pelo menos mais uma ou duas vezes, né? Vixe. Uns 5 mil por ano? Pra mim isso é muito dinheiro, é quase dois meses de aluguel da sala."
+  },
+  "dores_reais": [
+    "A agenda instável: a diferença entre mês bom e mês ruim é o aluguel da sala, e paciente novo depende de indicação que ela não controla",
+    "Paciente que some dói duas vezes: no boleto e no coração — ela releva, relê conversa, se culpa, e não tem método nenhum para trazer de volta além de mensagem tímida",
+    "Concorrência desleal do 'milagre': suplemento de balcão, dieta de zap e benzedeira de emagrecimento disputam o mesmo dinheiro do paciente dela em Araguaína",
+    "A gravidez avançando e nenhum plano para a licença: quando ela parar, a renda para junto, e só de pensar dá um aperto",
+    "Cobrar é um sofrimento: preço baixo, dó de reajustar e vergonha de cobrar falta"
+  ],
+  "nao_dores": [
+    "Excesso de mensagens fora de hora: um vendedor acharia que o WhatsApp de domingo a sufoca, mas ela vê cada mensagem como possível consulta nova — o problema dela é ter poucas, não muitas",
+    "Sofisticação de prescrição: os planos dela são simples de propósito, adaptados ao feijão, arroz e carne de sol da realidade local; ferramenta de dieta elaborada não resolve nada que ela sinta",
+    "Gestão de equipe: é só ela, e tão cedo será só ela; dores de clínica com secretária e sala cheia estão a anos de distância"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva: se emociona contando de paciente, ri alto, e num assunto puxa lágrima de verdade — pede desculpa e segue. Responde com histórias e sentimentos antes de números, e números ela estima com 'acho', 'deve ser', 'vixe, nunca contei'. Tiques: 'vixe Maria', 'pois é assim', e alonga o 'nãooo' quando discorda."
+}

@@ -1,0 +1,62 @@
+{
+  "id": "091",
+  "nome": "Letícia Starling Diniz",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição esportiva com foco em corredores amadores e atletas de crossfit",
+  "modelo_atendimento": "Consultório próprio alugado numa sala comercial no Santo Agostinho, perto de duas academias grandes. Atende presencial de segunda a quinta e reserva sexta de manhã para retornos rápidos. Toda a renda vem das consultas particulares e de alguns planos trimestrais que fecha com atletas em preparação de prova.",
+  "carteira_ativa": 24,
+  "ticket_consulta": 280,
+  "consultas_semana": 14,
+  "contexto": "Formada pela UFMG, fez pós em nutrição esportiva e começou atendendo dentro de um box de crossfit até juntar clientela para abrir a própria sala. Casada com um engenheiro, sem filhos por enquanto, corre meia-maratona e usa isso como cartão de visita com os pacientes. Gosta do lado técnico da profissão: bioimpedância, periodização de carboidrato, planilha de treino cruzada com dieta. O que a move é ver atleta bater meta de prova; o que a cansa é a parte administrativa, que ela faz sozinha à noite. Belo-horizontina de nascença, não se vê saindo da cidade.",
+  "rotina": "Segunda a quinta atende das 8h às 12h e das 14h às 18h, com blocos de 50 minutos. Sexta de manhã faz avaliações físicas e retornos de 30 minutos. Treina corrida terça e quinta às 6h antes do consultório. Domingo à noite separa duas horas para montar os planos da semana no computador.",
+  "whatsapp_pacientes": "Usa WhatsApp Business com o número do consultório, mas ela mesma responde tudo. As mensagens chegam mais no fim do dia, entre 19h e 22h, tipicamente foto de refeição ou dúvida sobre suplemento pré-prova. Ela estabeleceu regra de responder só em horário comercial, e cumpre em uns 80% dos casos — atleta em semana de prova ela responde a qualquer hora. Acha administrável, mas admite que rouba pedaços da noite.",
+  "tecnologia": "Usa um software de prescrição e cálculo de dieta que paga R$ 89 por mês, Google Agenda para marcações e uma planilha própria de Excel para acompanhar evolução de composição corporal. Confortável com tecnologia, mas seletiva: só adota o que economiza tempo de verdade.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Rafael",
+        "historia": "Corredor de 38 anos que fechou plano para a maratona de Porto Alegre. Correu a prova, mandou foto da medalha e nunca mais remarcou.",
+        "como_percebeu": "Só notou uns dois meses depois, quando abriu a planilha de evolução para arquivar e viu que o retorno pós-prova nunca aconteceu.",
+        "o_que_fez": "Mandou um parabéns atrasado e perguntou do retorno. Ele respondeu 'agora em off-season vou dar uma segurada, te procuro'. Ela deixou por isso mesmo — objetivo cumprido, faz parte."
+      },
+      {
+        "nome": "Camila",
+        "historia": "Crossfiteira que vinha bem havia quatro meses, mas machucou o ombro e parou de treinar. Sem treino, sumiu da dieta também.",
+        "como_percebeu": "A dona do box comentou da lesão num sábado. Letícia caiu em si que a Camila tinha faltado o último retorno sem remarcar.",
+        "o_que_fez": "Mandou mensagem se oferecendo para ajustar o plano para a fase de fisioterapia. Camila agradeceu, disse que voltaria 'quando voltasse a treinar'. Não voltou."
+      },
+      {
+        "nome": "Gustavo",
+        "historia": "Executivo que queria performance no ciclismo. Pagou duas consultas, seguiu metade do plano e começou a desmarcar em cima da hora alegando viagens de trabalho.",
+        "como_percebeu": "Terceira desmarcação seguida, ela percebeu o padrão na agenda.",
+        "o_que_fez": "Cobrou a taxa de desmarcação tardia conforme o contrato. Ele pagou e não remarcou mais. Ela considera que o filtro funcionou: paciente sem prioridade não rende resultado."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo passado, 21h40",
+      "texto": "Lê, desculpa o horário! A prova é sábado, posso trocar o arroz do jantar por batata doce essa semana toda ou estraga o carboidrato?",
+      "respondeu": "Respondeu em duas linhas porque era semana de prova. Em qualquer outro contexto deixaria para segunda de manhã."
+    },
+    "gasto_ferramentas_mes": 89,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Nunca sentou pra calcular, mas chuta rápido: se uns 8 pacientes por ano somem antes do ciclo completo, a R$ 280 o retorno, coisa de uns 9 ou 10 mil. 'Dói menos que parecer, porque a agenda repõe.'"
+    },
+  "dores_reais": [
+    "A parte administrativa noturna: montar plano, emitir recibo, organizar agenda, tudo depois das 20h",
+    "Paciente que abandona no meio do ciclo de periodização e joga fora o trabalho técnico dela — dói mais pelo resultado perdido do que pelo dinheiro",
+    "Sazonalidade: janeiro e agosto lotam, junho e dezembro esvaziam, e o aluguel da sala é fixo",
+    "Precificar plano trimestral sem se sentir cara demais para o público de academia"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp: ela impôs limites cedo e o público esportivo respeita regra de coach",
+    "Captação: o boca a boca dos boxes e do grupo de corrida mantém a agenda razoável sem esforço de Instagram",
+    "No-show: a taxa de desmarcação em contrato reduziu quase a zero"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Direta e objetiva, responde o que foi perguntado e olha o relógio; se a pergunta for vaga, pede exemplo concreto antes de responder. Usa 'uai' sem perceber e fecha raciocínios com 'no fim das contas, é isso'."
+}

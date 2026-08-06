@@ -1,0 +1,44 @@
+{
+  "id": "063",
+  "nome": "Fernanda Alvarenga Reis",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "carreira_anos": 9,
+  "especialidade": "Emagrecimento e reeducação alimentar de mulheres adultas, com pegada de manutenção de peso pós-dieta",
+  "modelo_atendimento": "Consultório particular no bairro Buritis, sala própria dividida com uma psicóloga para ratear custos. Só particular: consulta R$ 220, retorno R$ 180, com desconto informal para paciente antiga que ela nem sabe explicar direito por que dá. A renda vem toda dali, mais uma palestrinha ocasional em empresa que uma amiga de RH agencia.",
+  "carteira_ativa": 46,
+  "ticket_consulta": 200,
+  "consultas_semana": 22,
+  "contexto": "Mineira de Divinópolis, veio para BH fazer faculdade e ficou. Nove anos de carreira, os últimos cinco no consultório próprio, construído devagar e com muito medo de dívida. Mora com o namorado de longa data e uma vira-lata chamada Broa. É boa clinicamente e insegura comercialmente: acha caro tudo que vendem para ela e já caiu num curso de marketing para nutris que não entregou nada, o que a deixou com o pé atrás com qualquer promessa. O que a move é a paciente que chega chorando e sai confiante; o que a corrói é abrir a agenda do mês e ver que três sumiram sem dar satisfação — ela leva para o pessoal, fica ruminando o que fez de errado.",
+  "rotina": "Atende terça a sexta, das 9h às 12h30 e das 14h às 19h; segunda é dia de montar planos, fazer contabilidade no papel e gravar uns stories que ela posta sem constância. Quinta à noite faz pilates. Sábado de manhã, uma vez por mês, abre agenda para quem trabalha em horário comercial.",
+  "whatsapp_pacientes": "Número pessoal mesmo — nunca separou e hoje acha que já foi. Ela responde tudo sozinha, entre consultas e à noite vendo série. Chegam umas 20 mensagens por dia, pico no domingo à noite ('amanhã recomeço, me manda o plano de novo?'). Sente um misto de culpa quando demora e ressentimento por ninguém pagar por aquilo; já tentou colocar horário de resposta no status e ninguém respeitou.",
+  "tecnologia": "Agenda de papel mais Google Agenda de backup, plano alimentar montado num software de nutrição básico de R$ 65/mês, prontuário em pasta física. Já quase assinou duas ferramentas depois de webinar, travou na hora de pôr o cartão. Relação com tecnologia: usa bem o que conhece, mas assume que 'todo mundo quer vender milagre pra nutri'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Simone", "historia": "Paciente de dois anos, 44 anos, tinha perdido 12 kg e estava em manutenção vindo de dois em dois meses.", "como_percebeu": "Percebeu numa segunda-feira de planejamento que Simone não vinha desde março — quatro meses. Ninguém desmarcou nada; o retorno simplesmente nunca foi agendado.", "o_que_fez": "Mandou um 'oi sumida, saudade de você por aqui!'. Simone respondeu carinhosa, disse que estava 'se virando sozinha', prometeu marcar. Não marcou. Fernanda não insistiu para não parecer que estava atrás de dinheiro."},
+      {"nome": "Vanessa", "historia": "Noiva de 29 anos, projeto casamento, super engajada até o casamento em maio.", "como_percebeu": "Depois da lua de mel, silêncio total. Fernanda viu pelos stories que ela voltou de viagem e não remarcou.", "o_que_fez": "Nada. Racionalizou que 'projeto acabou, é normal', mas anotou mentalmente que perdeu a chance de convertê-la em paciente de manutenção."},
+      {"nome": "Dona Ilma", "historia": "Senhora de 61 anos, diabética, encaminhada pela filha. Veio três vezes, reclamava do preço em toda consulta.", "como_percebeu": "Faltou ao quarto retorno sem avisar e não respondeu à confirmação.", "o_que_fez": "Ligou, a filha atendeu e disse sem jeito que a mãe 'achou melhor seguir com o posto de saúde'. Fernanda agradeceu, desligou e passou o resto do dia se perguntando se deveria ter um preço social."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "domingo, 20h15", "texto": "Fê, me perdoa incomodar no domingo!! Exagerei MUITO no fds, pastel na feira, cerveja, tudo. Perdi tudo né? Começo o plano do zero amanhã ou continuo de onde parei?", "respondeu": "Respondeu meia hora depois com um áudio de dois minutos acalmando a paciente. Depois desabafou com o namorado que domingo já não é dela."},
+    "gasto_ferramentas_mes": 65,
+    "horas_semana_respondendo": 7,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "Nunca calculou de verdade porque tem medo do número. Pressionada, chuta: 'sei lá, se cada sumida valia uns R$ 700 por ano... uns R$ 20 mil? Nossa, falando assim dá até aflição.'"
+  },
+  "dores_reais": [
+    "Paciente antiga que some sem despedida — ela descobre meses depois e sente como rejeição pessoal, além do rombo",
+    "Não tem coragem nem sistema para reativar quem sumiu; o 'oi sumida' manual a constrange e raramente funciona",
+    "WhatsApp no número pessoal invadiu domingo e noite, e ela não sabe cobrar nem cortar",
+    "No-show sem aviso: 4 no mês passado e ela ainda não consegue cobrar taxa, acha deselegante em BH",
+    "Vive no escuro sobre a própria carteira: não sabe dizer quantas pacientes ativas tem sem folhear a agenda"
+  ],
+  "nao_dores": [
+    "Precificação alta não é a briga dela: sabe que R$ 220 está na média do Buritis e não quer ser premium",
+    "Não sofre com concorrência de nutris digitais famosas: o público dela vem de indicação de paciente e da psicóloga da sala",
+    "Emitir nota e burocracia não a incomodam: o contador da família resolve por R$ 250/mês"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada: começa com respostas curtas, pergunta duas vezes 'mas isso aqui é pra vender alguma coisa?', e só se abre quando sente que não há pegadinha — aí rende histórias boas. Tiques mineiros: 'uai', 'cê entende?', e diminutivos ('probleminha', 'valorzinho') justamente quando o assunto é dinheiro."
+}

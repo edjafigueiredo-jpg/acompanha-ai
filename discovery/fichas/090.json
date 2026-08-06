@@ -1,0 +1,47 @@
+{
+  "id": "090",
+  "nome": "Antônia Raquel Carvalho Sousa",
+  "idade": 36,
+  "genero": "feminino",
+  "cidade": "Imperatriz",
+  "uf": "MA",
+  "carreira_anos": 12,
+  "especialidade": "Nutrição renal e de doenças crônicas: pacientes em hemodiálise, pré-diálise, diabéticos e hipertensos",
+  "modelo_atendimento": "Consultório particular próprio numa galeria da rua Godofredo Viana, no centro de Imperatriz, onde atende crônicos encaminhados por dois nefrologistas e uma cardiologista da cidade. Cobra consulta avulsa com retornos mensais ou bimestrais que são a espinha dorsal da renda — crônico bem acompanhado é paciente para a vida toda. Faz ainda um turno semanal como nutricionista da clínica de hemodiálise local, seu único fixo.",
+  "carteira_ativa": 47,
+  "ticket_consulta": 170,
+  "consultas_semana": 21,
+  "contexto": "Nascida em Açailândia, formou-se em Teresina e escolheu Imperatriz para ficar perto da mãe hipertensa — que é, sem saber, a paciente-modelo de tudo o que ela faz. Casada com o Deusimar, professor de escola pública, dois meninos de 9 e 6 anos. É a referência regional em nutrição renal num raio de 200 km: recebe paciente de Balsas, de João Lisboa, de Grajaú. O que a move é saber que dieta bem feita literalmente adia diálise; o que a esgota é carregar sozinha o acompanhamento de 47 crônicos entre consultas — porque crônico que some não é cliente perdido, é criatinina subindo em silêncio, e ela sente isso no estômago.",
+  "rotina": "Consultório de segunda a sexta, das 8h às 12h e das 14h30 às 18h, com terça de manhã na clínica de hemodiálise. Busca os meninos na escola meio-dia e meio. À noite, das 20h30 às 22h, o 'segundo expediente': responde o WhatsApp acumulado do dia sentada no sofá enquanto o Deusimar corrige prova do lado. Sábado de manhã, quinzenal, encaixa os pacientes que vêm de longe.",
+  "whatsapp_pacientes": "Número pessoal, e ela sabe que foi um erro sem volta: 47 crônicos mais os familiares deles somam 40 a 60 mensagens por dia. Foto de rótulo, 'posso comer cupuaçu?', pressão medida, resultado de potássio, áudio de filha de paciente aflita. Ela responde tudo, porque no caso dela ignorar mensagem pode ser clinicamente perigoso — e é exatamente isso que a aprisiona. Ama os pacientes, mas confessa que às vezes o coração acelera só de ver o contador de mensagens ao acordar.",
+  "tecnologia": "Agenda no caderno mais Google Calendar de apoio, prescrição no Word com tabelas de potássio e fósforo que ela mesma montou ao longo dos anos, controle financeiro num caderno de capa dura. Depois da decepção com o app, gasto com ferramenta é zero. Não é avessa a tecnologia — é escaldada: 'eu quero é uma coisa que funcione pro meu povo daqui, não pra paulista de aplicativo'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Seu Raimundo Nonato", "historia": "Pré-dialítico de 63 anos, lavrador de João Lisboa, vinha de moto com o filho a cada dois meses. Segurava a função renal com a dieta havia três anos.", "como_percebeu": "Passou do retorno de maio sem marcar. Ela percebeu porque revisa mentalmente 'os graves' toda semana — não precisou de sistema, precisou de insônia.", "o_que_fez": "Ligou para o filho. A moto tinha quebrado e a colheita atrasou o dinheiro. Fez a consulta por telefone de graça e mandou o plano ajustado por WhatsApp. Ele voltou em julho, exame pior. Ela chorou no banheiro do consultório depois."},
+      {"nome": "Dona Francisca das Chagas", "historia": "Diabética de 58 anos, dona de uma banca no mercado municipal, paciente de cinco anos com apego de comadre.", "como_percebeu": "Sumiu depois de uma consulta em que Antônia apertou o cerco contra o refrigerante. Três meses de silêncio, coisa nunca vista.", "o_que_fez": "Foi na banca dela no mercado num sábado, comprar farinha e conversar. Dona Francisca confessou, morrendo de vergonha, que 'tava com medo da bronca'. Voltou na semana seguinte. Antônia repensou até o jeito de dar orientação — mas sabe que não pode ir ao mercado atrás de cada um."},
+      {"nome": "Jhonatan", "historia": "Rapaz de 28 anos, hipertenso grave descoberto no exame admissional da celulose, começou tratamento assustado e motivado.", "como_percebeu": "Veio duas vezes e evaporou quando a pressão normalizou com dieta e remédio. Ela só se deu conta na virada do trimestre, revisando o caderno.", "o_que_fez": "Mandou duas mensagens espaçadas. Ele respondeu 'tô ótimo dra, qualquer coisa te procuro'. Ela sabe como termina: ele volta em cinco anos com o rim comprometido. Anotou o nome numa lista que chama, com humor amargo, de 'os que vão voltar pior'."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "domingo, 21h47", "texto": "Doutora, boa noite, me perdoe. É a Cleonice filha do seu Edvaldo. O exame de potássio dele deu 6,2 e o médico só atende terça. A senhora pode olhar? Tô mandando a foto. Ele pode jantar o quê?", "respondeu": "Largou a novela e respondeu em três minutos: orientou cortar os alimentos ricos em potássio do jantar, hidratação, e mandou procurar o pronto-socorro se aparecesse fraqueza ou palpitação. Ficou acordada até a Cleonice confirmar que estava tudo bem. Segunda de manhã percebeu que não cobrou, nem saberia como."},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 9,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Nunca sentei pra calcular, mas sinto no bolso: se uns 10 crônicos por ano espaçam ou somem, e cada um faria 6 retornos de R$ 170... passa de R$ 10 mil, né? E isso é só o dinheiro — o exame que piora não tem preço que meça."
+  },
+  "dores_reais": [
+    "O medo clínico do sumiço: crônico que abandona acompanhamento adoece em silêncio, e ela carrega essa vigilância de cabeça, sem sistema nenhum",
+    "O segundo expediente de WhatsApp: 9 horas semanais respondendo de graça, à noite, um plantão de urgência não remunerado que ela não consegue recusar",
+    "Não ter como saber quem está 'esfriando' antes do retorno perdido — hoje o alarme dela é a própria memória e a insônia",
+    "A distância dos pacientes do interior, para quem cada consulta perdida vira três meses sem acompanhamento",
+    "Culpa dividida: toda noite escolhe entre responder o seu Edvaldo da vida ou deitar com os meninos, e perde das duas formas"
+  ],
+  "nao_dores": [
+    "Captação não é problema: os nefrologistas encaminham mais do que ela dá conta e não há outro nutricionista renal na região",
+    "Concorrência de nutri de Instagram não a atinge: ninguém disputa paciente renal, e o público dela mal segue influenciador",
+    "Precificação incomoda pouco: R$ 170 é ajustado à realidade local com consciência, e quem não pode ela mesma dá jeito"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "VidaLeve Pro, app genérico de acompanhamento nutricional com diário de refeições e gráficos",
+    "historia": "Em 2023 assinou o plano anual por R$ 89 mensais, animada com a ideia de os crônicos registrarem as refeições entre consultas. A realidade: público de 55+, celular com pouca memória e internet fraca no interior — dos 30 que ela cadastrou pacientemente um a um, 4 usaram por duas semanas e nenhum passou do primeiro mês. Cumpriu os 12 meses de fidelidade pagando por um cemitério de cadastros e cancelou jurando que nunca mais paga ferramenta que o paciente dela não consegue usar."
+  },
+  "postura_entrevista": "Calorosa e prolixa: trata a entrevistadora como visita, oferece café imaginário, responde qualquer pergunta com um caso completo — nome, cidade e exame do paciente (trocando os nomes, ela jura). Emociona-se falando do seu Raimundo. Tiques: 'vige', 'pois é assim mermo', e um 'minha querida' constante no cantado maranhense do sul do estado."
+}

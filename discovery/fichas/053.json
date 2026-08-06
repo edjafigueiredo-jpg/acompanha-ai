@@ -1,0 +1,62 @@
+{
+  "id": "053",
+  "nome": "Verônica Callou Bezerra",
+  "idade": 46,
+  "genero": "feminino",
+  "cidade": "Juazeiro do Norte",
+  "uf": "CE",
+  "carreira_anos": 21,
+  "especialidade": "Nutrição esportiva, forte em corredores amadores, crossfit e fisiculturismo amador do Cariri",
+  "modelo_atendimento": "Vende consultoria trimestral fechada: avaliação presencial na sala dela dentro de um box de crossfit em Juazeiro, dois retornos no trimestre e suporte por WhatsApp incluso no preço. Não faz consulta avulsa há seis anos — 'consulta solta é enxugar gelo'. A renda vem dos pacotes (à vista com desconto ou em 3x no cartão) e de umas palestras que dá em academias da região.",
+  "carteira_ativa": 44,
+  "ticket_consulta": 1400,
+  "consultas_semana": 14,
+  "contexto": "Cria de Barbalha, formada pela UFC em Fortaleza em 2004, voltou para o Cariri quando todo mundo dizia que nutricionista esportiva só vivia em capital. Provou o contrário: hoje atende atleta de Crato, Barbalha e até de Picos que vem de carro. Divorciada, dois filhos — o mais velho fazendo educação física em Fortaleza, a caçula no ensino médio. Já viu de tudo: coach sem CRN roubando cliente, aluno de box vendendo dieta por PDF, 'nutrição de resultados' brotando em cada esquina. O que a move é atleta amador subindo no pódio regional com o nome dela na equipe; o que a cansa é ter que se defender de gente que cobra um terço do preço prometendo o triplo.",
+  "rotina": "Segunda, quarta e sexta atende no box das 7h às 12h — avaliações com bioimpedância e retornos. Terça e quinta à tarde faz os check-ins remotos dos consultados de fora, por chamada de vídeo. Todo dia, das 17h às 18h30, treina — ela mesma compete master em corrida de rua. Domingo de manhã aparece nas provas da região, meio por marketing, meio por gostar.",
+  "whatsapp_pacientes": "WhatsApp Business, ela mesma responde tudo — já testou deixar com secretária e o consultado percebeu e reclamou, afinal 'suporte com a Verônica' é o que ele comprou. Horário de resposta prometido: 8h às 19h em dia útil, mas atleta manda foto de refeição, print de treino e dúvida de suplemento a qualquer hora, inclusive 6h da manhã pré-treino. Ela responde rápido e curto. Sente orgulho e cansaço em partes iguais: o suporte é o produto, mas há noites em que ela olha 60 conversas não lidas e quer jogar o celular no açude.",
+  "tecnologia": "Balança de bioimpedância própria (comprou por R$ 12 mil há quatro anos), planilha Excel montada por ela com macros para composição corporal, plano alimentar em Word com timbre, agenda de papel que a filha vive zoando. Não paga assinatura nenhuma de software — 'assinatura é aluguel, e eu não gosto de aluguel'. Desconfia de sistema que guarda os dados dela em servidor dos outros.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Jânio, 29, crossfiteiro de Crato",
+        "historia": "Fechou dois trimestres, evoluiu bem, e na renovação disse que ia 'tocar sozinho' com a planilha que ela montou. Três meses depois estava seguindo dieta de um influenciador de Fortaleza.",
+        "como_percebeu": "Na renovação mesmo — no modelo dela, evasão tem data marcada: é o fim do trimestre.",
+        "o_que_fez": "Mandou mensagem na renovação, ele não fechou, ela anotou o nome numa lista de 'renovar contato em 90 dias'. Voltou seis meses depois com o cortisol nas alturas, e ela cobrou o preço cheio sem desconto."
+      },
+      {
+        "nome": "Camilla, 35, corredora amadora de Barbalha",
+        "historia": "Meio do trimestre, começou a responder o check-in com atraso, depois parou de mandar as fotos de refeição. Tinha perdido o emprego na loja do marido e ficou com vergonha de dizer que o pacote seguinte não cabia.",
+        "como_percebeu": "Pelo silêncio no check-in de quinta — ela tem no caderno quem respondeu e quem não respondeu.",
+        "o_que_fez": "Ligou. Ligação mesmo, não mensagem. Soube da situação, esticou o suporte dela por um mês sem cobrar e disse que renovação se conversa quando a maré melhorar. É assim que se segura cliente no interior, diz ela."
+      },
+      {
+        "nome": "Fábio, 41, empresário de Juazeiro",
+        "historia": "Pagou o trimestre, veio na avaliação e desapareceu do próprio pacote: não mandava check-in, não marcava retorno. Pagou e não usou.",
+        "como_percebeu": "Percebeu na hora — check-in silencioso na segunda semana.",
+        "o_que_fez": "Cobrou presença duas vezes por WhatsApp, depois desistiu de correr atrás. Financeiramente não perdeu nada, o pacote estava pago; mas não renova, e ela sabe que cliente-fantasma não indica ninguém."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 5h52",
+      "texto": "Dra bom dia! Prova é 6h30, tô enjoada, como a batata doce assim mesmo ou só o gel?",
+      "respondeu": "Respondeu em dois minutos: 'Só o gel e água. Vai dar bom.' Dia de prova não tem horário, isso ela nem contabiliza como incômodo — faz parte do jogo."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 12,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Perder com quem some, quase nada — pacote é pago adiantado. O buraco é renovação: se 10 não renovam no ano, é R$ 14 mil na conta redonda. Isso eu sei de cabeça, pode apontar."
+  },
+  "dores_reais": [
+    "As 10-12 horas semanais de WhatsApp que ela mesma vendeu como diferencial e agora não consegue delegar nem escalar — o teto de 45 consultados é o teto do polegar dela",
+    "Renovação de trimestre: o consultado que evolui acha que aprendeu e vai sozinho; ela perde justamente os casos de sucesso",
+    "Concorrência desleal de 'consultoria fitness' sem CRN cobrando R$ 400 o trimestre com dieta copiada",
+    "Check-in manual na planilha e no caderno: ela sabe que perde informação, mas não confia em sistema de terceiro com dado de cliente"
+  ],
+  "nao_dores": [
+    "Evasão no meio do pacote: o dinheiro já entrou adiantado, então sumiço não vira buraco de caixa imediato — vira problema só na renovação",
+    "Captação: 21 anos de Cariri, fila de espera de três semanas; ela recusa cliente que 'não tem perfil'",
+    "No-show: quem falta avaliação paga remarcação de R$ 100, regra em contrato desde 2019, e as faltas quase zeraram"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada e de braço meio cruzado: primeiro quer saber quem financia a pesquisa e se 'isso aí vai virar produto pra me vender depois'. Responde curto no início e vai soltando conforme testa o entrevistador com perguntas de volta. Solta 'ói' e 'pois' pontuando as frases, e um 'vôte' quando discorda. Números ela dá com precisão — mas história de cliente, só sem nome, 'que aqui todo mundo se conhece'."
+}

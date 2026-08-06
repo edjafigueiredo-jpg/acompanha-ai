@@ -1,0 +1,64 @@
+{
+  "id": "040",
+  "nome": "Vanessa Prado Siqueira",
+  "idade": 37,
+  "genero": "feminino",
+  "cidade": "Rio Verde",
+  "uf": "GO",
+  "carreira_anos": 12,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e saúde metabólica — clientela forte de gente do agro: produtor, gerente de revenda, esposa de fazendeiro",
+  "modelo_atendimento": "Nutricionista contratada (PJ, fixo + produção) de uma clínica multiprofissional de médio porte em Rio Verde, que reúne dermato, endócrino, estética e nutrição sob a mesma marca. Recebe R$ 4.800 fixos mais R$ 40 por consulta acima de 60 no mês. A clínica é dona da marca, da agenda e da carteira; quem decide compra de equipamento e sistema é o casal de médicos proprietários, e Vanessa aprendeu a apresentar qualquer ideia em uma página com custo na primeira linha.",
+  "carteira_ativa": 54,
+  "ticket_consulta": 170,
+  "consultas_semana": 26,
+  "contexto": "Goiana de Jataí, formou-se na PUC de Goiânia e foi para Rio Verde em 2015 atrás do marido, o Fabrício, que trabalha com maquinário agrícola. A cidade explodiu com o agro e a clínica surfou junto: clientela que paga bem, sem convênio, e remarca conforme o calendário da soja — na colheita, some todo mundo; na entressafra, lota. Dois filhos, Isadora de 9 e Bento de 5, e uma rotina cronometrada entre clínica, balé e futsal. O que a move é o padrão de vida que o combinado com a clínica sustenta sem o risco de empreender. O que a cansa é entregar resultado, ver a clínica postar o antes-e-depois nas redes DELA, e saber que o paciente diz 'faço acompanhamento na Clínica Vitalle', não 'com a Vanessa'.",
+  "rotina": "Segunda a sexta das 7h30 às 12h30 na clínica; segunda e quarta volta das 15h às 19h. Terça à tarde leva os filhos nas atividades e responde pendência do carro, no estacionamento do balé. Consulta de 40 minutos com bioimpedância — briga vencida por ela contra os 30 minutos que os donos queriam. Na safra (fevereiro-março e setembro) a agenda esvazia 30% e ela adianta férias e cursos; na entressafra trabalha até mais tarde sem reclamar.",
+  "whatsapp_pacientes": "Número business da clínica respondido pela recepcionista Kelly, que resolve remarcação e repassa dúvida clínica num grupo interno; Vanessa responde a Kelly duas vezes por dia, 12h e 18h, e a resposta volta ao paciente em nome da clínica. Sistema que funciona razoavelmente — dúvida boba morre na Kelly, dúvida séria chega filtrada. O pessoal dela é blindado: só a esposa de um produtor amigo do Fabrício tem, custo social inevitável de cidade média.",
+  "tecnologia": "A clínica paga o sistema de agenda/prontuário e a balança de bioimpedância nova (que Vanessa levou oito meses para convencer os donos a comprar). Ela paga do próprio bolso apenas R$ 35/mês de um software de montagem de cardápio, porque o dia em que sair da clínica o cardápio-base vai com ela — sua pequena apólice de independência. Pragmática com tecnologia: nem deslumbrada, nem resistente; a pergunta dela é sempre 'quem paga e quem lucra?'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Ronaldo, 52 anos, produtor de soja",
+        "historia": "Emagreceu 8 kg de abril a agosto, sumiu em setembro — plantio. Todo ano é assim com metade da carteira masculina.",
+        "como_percebeu": "Nem chama de sumiço: o calendário agrícola está na cabeça dela. 'Em Rio Verde paciente não abandona, ele planta. Aí em dezembro volta 6 kg mais gordo do churrasco de colheita.'",
+        "o_que_fez": "Nada — a Kelly manda a mensagem padrão da clínica em novembro ('bora retomar antes das festas?') e uns 60% voltam sozinhos. O fluxo é da clínica; funciona razoável e não é ela quem mexe."
+      },
+      {
+        "nome": "Patrícia, 41 anos",
+        "historia": "Esposa de gerente de revenda, veio por indicação da dermato da casa. Três consultas, resultados lentos, migrou para uma concorrente nova que aplica caneta emagrecedora com 'acompanhamento nutricional incluso'.",
+        "como_percebeu": "Rio Verde é pequena para fofoca grande: uma paciente contou no meio da consulta.",
+        "o_que_fez": "Relatou aos donos como alerta de mercado — a concorrente da caneta está sugando o público de emagrecimento da cidade toda. Os donos reagiram estudando trazer um prescritor para a casa. A perda da Patrícia em si não mexeu com a renda dela; a ameaça estrutural, sim, e é disso que ela fala."
+      },
+      {
+        "nome": "Keila, 33 anos",
+        "historia": "Professora, pagava com aperto o particular. Depois da quarta consulta, desapareceu sem responder a Kelly.",
+        "como_percebeu": "Pelo relatório de retornos vencidos que a Kelly imprime toda sexta.",
+        "o_que_fez": "Autorizou a Kelly a oferecer o plano trimestral parcelado da clínica. Sem resposta. Vanessa lamentou genuinamente — gostava dela — mas na semana seguinte a agenda estava cheia de novo e o caso desceu para o fim da memória."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Sexta-feira, 20h15",
+      "texto": "Vanessa boa noite, é a Márcia esposa do Nelsinho. Amanhã tem o leilão beneficente e vai ter aquele churrasco né. Ele pode comer picanha ou só maminha? E a cervejinha, libera duas?",
+      "respondeu": "Respondeu às 20h40, curta e bem-humorada ('picanha magra tirando a capa, e a cerveja ele já sabe a resposta'), porque a Márcia é do círculo social do marido — o único vazamento tolerado do sistema. Qualquer outro paciente teria sido redirecionado à Kelly na segunda."
+    },
+    "gasto_ferramentas_mes": 35,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 8,
+    "estimativa_perda_anual_intuitiva": "Nunca parei pra calcular porque não é meu caixa que sangra. Se a safra me esvazia 30% da agenda dois meses por ano, a clínica deve deixar de faturar aí uns 40 mil comigo... eu, pessoalmente, perco uns 2 mil de produção. Assinado o contracheque, o resto é problema dos doutores."
+  },
+  "dores_reais": [
+    "Construir resultado com o nome da clínica na fachada: o antes-e-depois é dela, o Instagram e a carteira são da Vitalle — e o dia que ela sair, sai de mãos vazias",
+    "A concorrente da caneta emagrecedora tragando o público de emagrecimento de Rio Verde e derrubando o argumento do trabalho lento e bem-feito",
+    "A montanha-russa da safra: dois meses por ano de agenda 30% vazia, produção menor e a sensação de trabalho que não depende dela para existir",
+    "Negociar cada melhoria com os donos em 'uma página com custo na primeira linha' — a bioimpedância levou oito meses; imagine um sistema novo",
+    "O dilema dos 40: abrir o consultório próprio que ela adia desde os 32, agora com dois filhos e um padrão de vida que o fixo garante"
+  ],
+  "nao_dores": [
+    "Retenção no bolso próprio: o fixo cai igual, e a fila de indicação interna da dermato e da endócrino repõe paciente rápido — evasão é planilha dos donos",
+    "Plantão de WhatsApp: o funil da Kelly resolve há três anos; duas horas por semana e quase tudo em horário comercial",
+    "Comprar software de acompanhamento do próprio bolso: os R$ 35 do cardápio são o teto dela — acima disso, 'proposta se manda por e-mail para os doutores'",
+    "No-show: a Kelly confirma todo mundo na véspera e cobra taxa de falta do particular; os 8 do mês foram quase todos época de plantio"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Pragmática: respostas organizadas, sem rodeio e sem frieza, e devolve perguntas comerciais com 'isso aí quem decide são os donos, mas eu te digo como funciona na prática'. Interrompe educadamente pergunta mal formulada para reformulá-la melhor. Goiana: 'uai' ocasional, 'bão demais' quando aprova e mania de encerrar raciocínio com 'é isso'."
+}

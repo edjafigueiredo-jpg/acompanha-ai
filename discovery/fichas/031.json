@@ -1,0 +1,62 @@
+{
+  "id": "031",
+  "nome": "Priscila Manzano Ferreira",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Marília",
+  "uf": "SP",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição geral e familiar — atende do adolescente com colesterol alto à avó diabética, muitas vezes da mesma família",
+  "modelo_atendimento": "Contratada CLT de uma clínica multiprofissional no centro de Marília, ao lado de dois cardiologistas, uma endócrino e uma psicóloga. A agenda é montada pela recepção da clínica, os pacientes chegam encaminhados pelos médicos da casa, e ela recebe salário fixo de R$ 3.400 mais uma comissão pequena por consulta realizada. Não tem consultório próprio nem pretende abrir tão cedo.",
+  "carteira_ativa": 9,
+  "ticket_consulta": 190,
+  "consultas_semana": 14,
+  "contexto": "Formada pela Unimar em Marília mesmo, nunca saiu da cidade — o marido, Rodrigo, é técnico agrícola e a família toda mora num raio de dez quadras. Tem uma filha de 4 anos, a Alice, e é a filha que organiza a vida dela: entra na clínica às 8h30 depois de deixar a menina na escolinha e sai correndo às 17h30 para buscar. Ama o momento da consulta, chora junto com paciente que chora, guarda bilhetinho de agradecimento na gaveta. O que a cansa é a sensação de ser peça de engrenagem: o paciente é 'da clínica', o retorno quem marca é a recepção, e quando alguém não volta ela nem fica sabendo. Sonha vagamente em um dia atender por conta própria, mas a estabilidade do salário com filha pequena fala mais alto.",
+  "rotina": "Segunda a sexta na clínica das 8h30 às 17h30, com agenda montada pela recepção em blocos de 40 minutos. Terça de manhã é reservada para reunião de equipe com os médicos e discussão de casos encaminhados. Almoça em casa quase todo dia, que fica a oito minutos da clínica. Quinta à tarde costuma ter buraco na agenda e ela adianta evoluções no prontuário da clínica. Fim de semana é sagrado da Alice: pesque-pague com os avós, festa de aniversário, igreja no domingo.",
+  "whatsapp_pacientes": "Os pacientes falam com o número da CLÍNICA, que a recepcionista Dalva responde em horário comercial; remarcação, dúvida de convênio, tudo passa por lá. Uma meia dúzia de pacientes antigos tem o número pessoal dela e manda foto de rótulo ou pergunta 'posso trocar o arroz por macarrão?' — ela responde quando a Alice dorme, por carinho, não por obrigação. Sente até falta de mais contato direto: acha o filtro da recepção meio frio, mas admite que a protege.",
+  "tecnologia": "Usa o sistema de prontuário e agenda que a clínica assina (ela não sabe o nome direito, 'aquele sistema verde') e não paga nada do próprio bolso. Para plano alimentar monta no Word num modelo que criou na faculdade e imprime colorido. Tem planilha nenhuma. Com tecnologia é funcional e desinteressada: aprende o que precisa, não fuça além disso.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Antônio, 67 anos",
+        "historia": "Diabético encaminhado pela endócrino da casa, veio três vezes, estava animado com a glicada caindo.",
+        "como_percebeu": "Só percebeu porque encontrou a esposa dele na fila do açougue e ela disse que ele 'tinha dado uma parada'. Na clínica, o retorno não marcado simplesmente some da agenda dela.",
+        "o_que_fez": "Pediu para a Dalva ligar oferecendo horário. A esposa remarcou para o mês seguinte e ele voltou. Priscila ficou orgulhosa, mas sabe que foi acaso do açougue."
+      },
+      {
+        "nome": "Família Bertolucci (mãe e dois adolescentes)",
+        "historia": "Vinham juntos, caso bonito de reeducação da casa inteira. Depois da terceira consulta da mãe, nenhum dos três remarcou.",
+        "como_percebeu": "Não percebeu na hora. Foi dar falta uns dois meses depois, folheando prontuário para um caso parecido.",
+        "o_que_fez": "Nada. Comentou com a psicóloga no café que 'os Bertolucci sumiram' e a psicóloga disse que com ela também. Ficou por isso."
+      },
+      {
+        "nome": "Vanda, 41 anos",
+        "historia": "Paciente de convênio com hipotireoidismo, faltou ao retorno duas vezes seguidas.",
+        "como_percebeu": "A recepção avisou porque a política da clínica cobra falta não avisada de particular, e no caso dela caiu em glosa do convênio.",
+        "o_que_fez": "Sentiu uma pontinha de culpa, se perguntou se tinha sido dura demais com o pão francês. Mas o horário foi preenchido pela fila da clínica na mesma semana e a vida seguiu."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Domingo passado, 20h40",
+      "texto": "Pri, desculpa incomodar no domingo!! É que amanhã é aniversário na firma e vai ter bolo, eu como um pedacinho ou nem chego perto? Bjs, Marlene",
+      "respondeu": "Respondeu na hora, rindo: 'Come um pedaço FINO e me conta terça'. Achou fofo. O marido revirou os olhos."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1.5,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Nunca calculei, gente... perder, perder, quem perde é a clínica, né? Pra mim muda a comissão, deve dar uns dois mil no ano, sei lá."
+  },
+  "dores_reais": [
+    "Ganhar salário de CLT enquanto vê nutricionista de Instagram cobrando R$ 300 a consulta — a sensação de estar valendo menos do que entrega",
+    "Não ter voz nas decisões da clínica: o dono trocou o horário dela duas vezes este ano sem perguntar",
+    "A correria de buscar a Alice às 17h30 em ponto, que a faz recusar os encaixes de fim de tarde que renderiam comissão",
+    "Medo difuso de que, se sair da clínica, nenhum paciente vá atrás dela — porque o vínculo é com a casa, não com ela"
+  ],
+  "nao_dores": [
+    "Evasão de pacientes: a fila de encaminhamento dos médicos repõe qualquer buraco na agenda dela em dias, e o prejuízo financeiro é do dono",
+    "Plantão de WhatsApp: a recepção filtra quase tudo; as poucas mensagens que chegam no pessoal dela são afeto, não fardo",
+    "Captação e marketing: ela nunca postou nada profissional na vida e não precisa — os médicos da casa mandam paciente"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva: se ilumina falando de paciente, marejou de verdade ao contar do Seu Antônio, e pede desculpa por chorar ('ai, que vergonha, sou assim mesmo'). Fala 'nossa senhora' e 'do interior mesmo, viu' com frequência, e termina frases pedindo confirmação: 'né?'."
+}

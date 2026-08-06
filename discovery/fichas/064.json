@@ -1,0 +1,44 @@
+{
+  "id": "064",
+  "nome": "Jéssica Fontoura Maciel",
+  "idade": 31,
+  "genero": "feminino",
+  "cidade": "Dourados",
+  "uf": "MS",
+  "carreira_anos": 7,
+  "especialidade": "Nutrição geral de famílias — atende a mãe, o marido hipertenso e o filho seletivo no mesmo pacote informal",
+  "modelo_atendimento": "Atendimento 100% online por videochamada, de casa, em Dourados. Capta pelo Instagram (11 mil seguidores conquistados a muito reels) e cobra R$ 180 a consulta avulsa com um retorno em 30 dias incluído. A renda vem das consultas e de um e-book de marmitas de R$ 37 que vende nos stories.",
+  "carteira_ativa": 19,
+  "ticket_consulta": 180,
+  "consultas_semana": 8,
+  "contexto": "Nascida e criada em Dourados, formou-se na UFGD e atendeu quatro anos numa clínica local antes de migrar para o online na pandemia — e não voltou, porque o online deixou ela cuidar da filha de 3 anos sem pagar sala. Casada com um representante comercial que vive na estrada. O problema dela não é segurar paciente: é fazer paciente novo aparecer. O algoritmo do Instagram despencou este ano, o reels que antes dava 40 mil visualizações hoje dá 3 mil, e a agenda de 8 consultas por semana já foi de 15. O que a move é a liberdade de trabalhar de casa; o que a cansa é ter virado social media de si mesma, produzindo conteúdo todo dia para uma máquina que não retribui.",
+  "rotina": "Atende online terça a sexta das 8h30 às 11h30, enquanto a filha está na escolinha; à tarde grava conteúdo, edita reels e responde directs de curiosos que raramente viram pacientes. Segunda é dia de planejar o conteúdo da semana. À noite, depois que a filha dorme, agenda posts e responde comentários até umas 22h30.",
+  "whatsapp_pacientes": "Número business com etiquetas organizadinhas. Como a carteira é pequena, as mensagens de paciente são poucas e tranquilas — meia dúzia por dia, ela responde entre uma consulta e outra sem sofrimento. O que lota mesmo é o direct do Instagram, com gente pedindo 'dieta gratuita' e orçamento que some quando ela fala o preço. Isso sim a desgasta.",
+  "tecnologia": "Google Meet para consultas, software de prescrição online de R$ 79/mês, Canva Pro de R$ 40/mês para os posts, planilha de leads que ela mesma mantém. Tecnologicamente esperta — se resolve sozinha — mas cética por experiência: já comprou mentoria de tráfego de R$ 1.200 que não trouxe um paciente sequer.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Família do Anderson", "historia": "Casal com dois filhos, pacote informal de acompanhamento familiar, o marido perdeu o emprego na revenda de máquinas agrícolas.", "como_percebeu": "A esposa avisou por mensagem, com pesar, que iam 'dar uma pausa por causa da situação'.", "o_que_fez": "Respondeu com carinho, deixou a porta aberta e mandou o e-book de marmitas de cortesia. Para ela foi motivo econômico legítimo, não abandono — e doeu menos que um direct ignorado."},
+      {"nome": "Tatiane", "historia": "Paciente online de Campo Grande, 35 anos, fez consulta e retorno incluído e não comprou a segunda consulta.", "como_percebeu": "O ciclo simplesmente acabou; no modelo avulso dela, isso nem conta como sumiço — conta como venda não refeita.", "o_que_fez": "Colocou a Tatiane na listinha de 'reaquecer com story de depoimento'. Já aceitou que avulso é assim: o esforço dela vai para captar o próximo, não para segurar o anterior."},
+      {"nome": "Seu Valdir", "historia": "Senhor de 58 anos, hipertenso, que a filha pagou a consulta. Ele odiou videochamada, não conseguia abrir o PDF do plano.", "como_percebeu": "Faltou ao retorno online; a filha explicou que 'o pai não se adaptou com esse negócio de vídeo'.", "o_que_fez": "Indicou uma colega presencial de Dourados. Anotou que público 55+ não é o dela no online e ajustou o conteúdo do Instagram para falar com mulheres de 28 a 45."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "sábado, 14h20", "texto": "Oi Jéssica! Vi teu reels da air fryer. Quanto tá a consulta? É por vídeo mesmo? Aceita parcelar?", "respondeu": "Respondeu na hora — lead de sábado não pode esfriar. Mandou o valor e o link da agenda. A pessoa visualizou e nunca mais falou. Padrão que ela já conhece de cor."},
+    "gasto_ferramentas_mes": 119,
+    "horas_semana_respondendo": 3,
+    "no_shows_ultimo_mes": 1,
+    "estimativa_perda_anual_intuitiva": "'Com paciente que some? Quase nada, meu modelo é avulso. Agora, com direct que pergunta preço e some... aí sim, se 1 em cada 10 fechasse eu dobrava a agenda. Nunca calculei, mas fácil uns R$ 30 mil que escorrem no direct.'"
+  },
+  "dores_reais": [
+    "Captação: o alcance do Instagram caiu 80% e a agenda encolheu de 15 para 8 consultas semanais",
+    "Direct cheio de curioso que pede preço e some — conversão baixíssima e ela não sabe o que está errando",
+    "Esteira de conteúdo: produzir reels todo dia é um segundo emprego não remunerado",
+    "Renda instável mês a mês, difícil de planejar com o marido viajando e a escolinha para pagar",
+    "Sensação de teto: sozinha e avulsa, não vê como crescer sem virar escrava do algoritmo"
+  ],
+  "nao_dores": [
+    "Retenção não dói: o modelo é avulso por desenho, ela nem espera que o paciente fique meses",
+    "Plantão de WhatsApp não existe: carteira de 19 pessoas gera meia dúzia de mensagens tranquilas por dia",
+    "No-show quase não acontece: cobra antecipado via Pix, quem pagou aparece"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética e articulada: já participou de pesquisa de mentoria que virou pitch de venda, então testa o entrevistador com perguntas de volta ('e quem tá pagando esse estudo?'). Responde bem, mas com ironia fina. Tiques sul-mato-grossenses: 'guri/guria' e um 'de repente' usado como talvez ('de repente funciona, mas duvido')."
+}

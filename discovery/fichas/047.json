@@ -1,0 +1,63 @@
+{
+  "id": "047",
+  "nome": "Renato Sartori Bezerra",
+  "idade": 37,
+  "genero": "masculino",
+  "cidade": "Piracicaba",
+  "uf": "SP",
+  "carreira_anos": 11,
+  "especialidade": "Nutrição oncológica ambulatorial — pacientes em quimioterapia e radioterapia",
+  "modelo_atendimento": "Atende por convênio no ambulatório de oncologia de um hospital conveniado de Piracicaba e numa clínica de oncologia privada que fatura pelos planos; recebe por produção nas duas. Os pacientes chegam encaminhados pelos oncologistas, em protocolo — ele não capta ninguém, a doença capta por ele. Mantém meia dúzia de pacientes particulares (egressos de tratamento, em remissão) que atende no fim do dia numa sala emprestada da clínica.",
+  "carteira_ativa": 8,
+  "ticket_consulta": 55,
+  "consultas_semana": 32,
+  "contexto": "Piracicabano, filho de professora e de bancário, escolheu oncologia depois de acompanhar o tratamento do pai, que faleceu quando ele estava no terceiro ano da faculdade. Casado com uma enfermeira do mesmo hospital, sem filhos, dois cachorros. É respeitado pelos médicos, coisa rara para nutricionista, e se orgulha disso com discrição. O que o move é segurar o peso e a força do paciente para que o tratamento não seja interrompido — para ele, nutrição ali é parte do protocolo, não coadjuvante. O que o cansa é o sistema: repasse baixo, produção contada, e a certeza de que se sair do circuito hospital-convênio o telefone dele não toca, porque paciente oncológico não escolhe nutricionista no Instagram.",
+  "rotina": "Segunda a sexta no ambulatório do hospital das 7h às 13h, atendendo em sequência os pacientes do dia de quimio; três tardes por semana na clínica privada até as 18h. Os particulares em remissão, ele encaixa terça e quinta no fim do dia. Toca baixo numa banda de amigos aos sábados — o programa que o mantém são.",
+  "whatsapp_pacientes": "Fora os seis particulares, ninguém tem o número dele: a comunicação corre pela equipe do ambulatório e pelas recepções. Familiares de pacientes graves às vezes conseguem o contato e mandam perguntas difíceis ('ele não quer comer nada, e agora?'); ele responde com cuidado, sem hora marcada, porque sabe o que é estar do outro lado. Não vê isso como plantão — vê como parte do juramento. Volume é baixo; o peso emocional é que é alto.",
+  "tecnologia": "Prontuário eletrônico do hospital (Tasy) e o sistema da clínica, os dois travados e lentos — ele digita evolução com um olho no relógio. De pessoal, mantém uma planilha própria de triagem nutricional dos pacientes em quimio, adaptada de um protocolo que aprendeu na residência. Não paga ferramenta nenhuma. Com tecnologia é funcional e desconfiado: já viu o hospital trocar de sistema duas vezes 'para melhorar' e piorar as duas.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Edmilson",
+        "historia": "Paciente de câncer de esôfago que ele acompanhou por oito meses no ambulatório. 'Sumiu' da agenda dele porque terminou o tratamento e recebeu alta do protocolo — o desfecho bom que esvazia a agenda.",
+        "como_percebeu": "Pelo próprio fluxo do ambulatório: alta oncológica, alta da nutrição.",
+        "o_que_fez": "Sugeriu acompanhamento particular na remissão para recuperar peso. O Edmilson agradeceu e disse que agora era 'com a mulher e com Deus'. Renato entende: depois de um ano de hospital, ninguém quer mais uma consulta na vida."
+      },
+      {
+        "nome": "Dona Cida",
+        "historia": "Paciente em cuidado paliativo cuja família suspendeu as vindas ao ambulatório quando ela ficou acamada. Não foi abandono — foi a doença mudando de fase.",
+        "como_percebeu": "A ausência na lista do dia de quimio, e depois a notícia pela equipe de enfermagem.",
+        "o_que_fez": "Mandou orientação de dieta caseira por meio da filha, sem cobrar. Ela faleceu semanas depois. No mundo dele, 'paciente que some' significa outra coisa, e ele faz questão de dizer isso."
+      },
+      {
+        "nome": "Marcos",
+        "historia": "Particular em remissão de linfoma, 41 anos, que fechou acompanhamento para recompor massa muscular. Veio quatro vezes, se sentiu bem e sumiu — 'estou ótimo, doutor, depois te procuro'.",
+        "como_percebeu": "Esse ele sentiu: terça à noite com horário vazio e o dinheiro do particular, que é o que complementa a renda, não entrou.",
+        "o_que_fez": "Mandou uma mensagem única, sem insistir. Concluiu, meio amargo, que paciente saudável é infiel por natureza — o dele só é fiel enquanto tem medo."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 20h10",
+      "texto": "Boa noite Dr Renato, desculpa incomodar. É a Sueli, filha do sr. Osvaldo. Ele não aceitou nem a sopa hoje, só quer água de coco. Amanhã tem sessão. O que eu faço?",
+      "respondeu": "Respondeu em vinte minutos, orientou fracionar, indicou o suplemento que a família já tinha em casa e avisou a enfermagem do ambulatório para recebê-lo com atenção no dia seguinte."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "'Perder dinheiro com paciente que some? No convênio o encaminhamento repõe na semana. Se você falar dos meus particulares... são tão poucos que dá pra contar no dedo: uns 4, 5 mil por ano, talvez. O que eu perco mesmo não é paciente, é valor por consulta.'"
+  },
+  "dores_reais": [
+    "Repasse de convênio: R$ 55 por consulta de alta complexidade, o mesmo que pagam por uma consulta de rotina — a especialização dele não vira preço",
+    "Produção como métrica: o hospital conta consultas por turno, não desnutrição evitada nem tratamento não interrompido",
+    "A dependência estrutural do circuito médico: sem o encaminhamento do oncologista ele não existe como negócio próprio",
+    "Sistemas hospitalares lentos que roubam minutos de cada atendimento de 20",
+    "O desgaste emocional acumulado dos paliativos, que ninguém mede e ninguém paga"
+  ],
+  "nao_dores": [
+    "Evasão entre consultas: o paciente dele vem porque o protocolo manda e a doença obriga; quem sai do fluxo saiu por alta, piora ou óbito — retenção não é conceito que se aplique",
+    "Plantão de WhatsApp: volume mínimo e ele considera parte do cuidado, não um fardo a resolver",
+    "Marketing e Instagram: paciente oncológico não chega por rede social; investir nisso seria jogar dinheiro fora, e ele sabe"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cético de hospital: educado, mas testa a premissa da pesquisa logo de cara ('vocês estão assumindo que paciente que some é receita perdida — no meu mundo isso não descreve nada'). Respostas precisas, vocabulário clínico, ironia fina ocasional. Tiques: o 'ó' piracicabano no meio da frase ('é assim, ó') e um leve tique de conferir o crachá/celular como quem está sempre entre dois compromissos."
+}

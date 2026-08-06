@@ -1,0 +1,48 @@
+{
+  "id": "086",
+  "nome": "Thayná Picanço Monteiro",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Santana",
+  "uf": "AP",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição materno-infantil: gestantes, lactantes e introdução alimentar",
+  "modelo_atendimento": "Contratada PJ de uma clínica multiprofissional em Santana que reúne obstetra, pediatra, psicóloga e ela. Recebe fixo de R$ 3.200 mais R$ 30 por consulta realizada; a agenda é lotada pela recepção da clínica com as gestantes encaminhadas pelos médicos da casa. A carteira é da clínica: se a paciente some, a recepção preenche o horário com outra.",
+  "carteira_ativa": 74,
+  "ticket_consulta": 30,
+  "consultas_semana": 35,
+  "contexto": "Nascida e criada em Santana, formou-se em Macapá pela Unifap indo e voltando de van três anos. Mãe solo do Théo, de 3 anos, mora com a mãe, que segura o neto enquanto ela trabalha. Conseguiu a vaga na clínica seis meses depois de formada e se agarrou a ela: é o único emprego estável de nutricionista da cidade que ela conhece. É prática por necessidade: atende bem, no tempo da agenda, e vai embora buscar o filho. O que a move é a carteira assinada da vida real — plano de saúde do Théo, previsibilidade; o que a cansa é o volume de 35 consultas por semana a R$ 30 e a sensação de ser peça trocável na engrenagem do dono.",
+  "rotina": "Segunda a sexta na clínica das 8h às 17h, consultas de 30 minutos marcadas coladas pela recepção. Busca o Théo na creche às 17h30. À noite, de vez em quando, monta um plano de introdução alimentar particular para alguma conhecida, por R$ 100 no dinheiro — o começo tímido de um sonho de consultório próprio.",
+  "whatsapp_pacientes": "As pacientes falam com o WhatsApp da clínica, que a recepcionista responde; dúvida clínica a recepção repassa num grupo interno e Thayná responde quando dá, dentro do expediente. O número pessoal ela não passa — aprendeu a lição (a cicatriz do aplicativo ajudou). Sente alívio, não culpa: 'quem é da clínica resolve com a clínica'.",
+  "tecnologia": "Usa o sistema de prontuário que a clínica assina (ela nem sabe o nome direito, 'o sistema aí que o doutor Aldo paga'). De seu, só o celular e um caderno de anotações de introdução alimentar. Gasto próprio com ferramenta: zero, depois da experiência que a queimou. Com tecnologia se dá bem, é da geração do celular, mas decisão de comprar qualquer coisa na clínica é do dono, e ela não é nem consultada.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Rayane", "historia": "Gestante de segunda viagem, veio três vezes no pré-natal, engajada, cheia de dúvida boa.", "como_percebeu": "Sinceramente? Não percebeu. Só notou quando a recepção remarcou o horário dela com outra gestante e comentou 'a Rayane cancelou tudo'.", "o_que_fez": "Nada — não é atribuição dela correr atrás, e o horário já estava preenchido. Ficou uma curiosidade leve de saber se o bebê nasceu bem, só isso."},
+      {"nome": "Dona Zilda e a neta", "historia": "Avó que trazia a neta de 8 meses para introdução alimentar porque a mãe trabalhava embarcada.", "como_percebeu": "Faltaram duas vezes seguidas. A recepção avisou que o plano de saúde da família tinha sido cortado.", "o_que_fez": "Pediu à recepcionista para mandar por escrito as orientações da fase seguinte, de graça, porque ficou com pena da bebê. Foi o máximo que o processo da clínica permitia."},
+      {"nome": "Priscila", "historia": "Lactante com dificuldade de amamentação, caso que precisava de acompanhamento semanal.", "como_percebeu": "A própria paciente mandou mensagem para a clínica dizendo que ia parar porque cada consulta custava a passagem de barco mais o dia perdido.", "o_que_fez": "Sugeriu ao coordenador fazer retorno por telefone para casos assim; ele disse que 'teleconsulta não está no modelo'. Ela deu de ombros e seguiu — a agenda continuou cheia igual."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "quarta-feira, 20h10", "texto": "Oi Thayná, é a Camila prima da Jéssica! Me passaram teu contato, minha bebê faz 6 meses semana que vem, tu faz aquele plano de papinha particular? Quanto tá?", "respondeu": "Respondeu no dia seguinte de manhã com o preço de R$ 100. Fora de hora ela só responde o que é renda extra dela — paciente da clínica, jamais."},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 12,
+    "estimativa_perda_anual_intuitiva": "Perder pra quem? A paciente é da clínica, se ela some entra outra na fila do doutor Aldo. Pra mim mesma, que ganho por consulta feita... os no-show me custam uns R$ 30 cada, vai dar uns R$ 4 mil no ano? Nunca parei pra somar."
+  },
+  "dores_reais": [
+    "O valor por consulta: R$ 30 num atendimento de 30 minutos que exige o mesmo dela que uma consulta de R$ 250",
+    "Zero autonomia: horário, agenda, sistema e até o tempo de consulta são decisões do dono, e opinião dela não entra na conta",
+    "Os no-shows, que na prática cortam a parte variável do salário dela sem culpa nenhuma sua",
+    "O sonho engavetado do consultório próprio, que não anda porque falta capital e sobra medo de largar o fixo",
+    "Cansaço de fábrica: 35 consultas por semana emendadas, sem tempo de fazer o acompanhamento fino que a especialidade dela pede"
+  ],
+  "nao_dores": [
+    "Evasão de paciente não a atinge: a fila da clínica repõe no mesmo dia e o salário fixo não muda",
+    "Plantão de WhatsApp não existe na vida dela: a recepção filtra tudo e ela sai às 17h com o celular em paz",
+    "Captação não é problema dela: os médicos da casa geram a demanda; ela nunca precisou trazer um paciente sequer",
+    "Ferramenta de acompanhamento não a tenta: mesmo que quisesse, quem compra é o doutor Aldo — e ela já se queimou pagando uma do próprio bolso"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "NutriConecta, um app genérico de acompanhamento com diário alimentar e chat",
+    "historia": "No primeiro ano de clínica, empolgada, assinou por conta própria a R$ 49 por mês achando que ia 'se diferenciar' acompanhando as gestantes pelo app. Convenceu umas 15 pacientes a baixar; em dois meses, três usavam, e no terceiro mês nenhuma abria o diário. Pagou oito meses no cartão por preguiça de cancelar e cancelou com raiva de si mesma — R$ 400 jogados fora que eram a mensalidade da creche do Théo."
+  },
+  "postura_entrevista": "Pragmática e econômica: responde o que foi perguntado, em frases curtas, olhando a hora porque tem que buscar o filho. Não enfeita e não reclama de graça — quando critica a clínica, é factual, sem drama. Tiques: 'égua' de espanto ocasional, 'tu' nortista e um 'é assim, pronto' que encerra assunto."
+}

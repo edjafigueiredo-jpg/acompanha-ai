@@ -1,0 +1,63 @@
+{
+  "id": "018",
+  "nome": "Sônia Zanotti Falqueto",
+  "idade": 52,
+  "genero": "feminino",
+  "cidade": "Colatina",
+  "uf": "ES",
+  "carreira_anos": 28,
+  "especialidade": "Materno-infantil: pré-natal nutricional, gestação de risco e puericultura",
+  "modelo_atendimento": "De manhã atende por convênio numa clínica de especialidades conveniada à Unimed de Colatina, em regime de produção: agenda lotada pela fila do plano, consultas de 25 minutos, repasse de R$ 47 por atendimento. À tarde, três vezes por semana, atende gestantes particulares num consultório próprio e enxuto no Centro, a R$ 230 a consulta. A conta é clara para ela: o convênio paga o previsível, as particulares pagam o resto — e são as particulares que doem quando somem.",
+  "carteira_ativa": 74,
+  "ticket_consulta": 47,
+  "consultas_semana": 32,
+  "contexto": "Sônia é de família de descendentes de italianos do interior capixaba, formada em Vitória em 1998, e atende em Colatina desde sempre. Casada com um representante comercial, dois filhos criados. No convênio ela é uma engrenagem respeitada: a fila da Unimed repõe qualquer paciente que suma, e ela nem fica sabendo quem abandonou — a recepção só encaixa o próximo. Já no particular da tarde é outra história: cada gestante que fecha o pré-natal com ela é conquistada a muito custo, e quando uma some no meio da gestação ela sente o baque no faturamento e no brio. O que a move é a gestação bem acompanhada do início ao fim; o que a cansa é a esteira do convênio, 16 atendimentos numa manhã, e a sensação de que seu melhor trabalho, o da tarde, é o mais frágil financeiramente.",
+  "rotina": "Segunda a sexta na clínica do convênio das 7h30 às 12h30, na esteira de 25 em 25 minutos. Terça, quarta e quinta à tarde, das 14h30 às 18h30, consultório particular com consultas de uma hora. Sexta à tarde é da papelada: guias, glosas e produção do convênio para faturar. Domingo é almoço de família com polenta e o celular longe — em tese.",
+  "whatsapp_pacientes": "Dois mundos: paciente de convênio não tem o número dela — resolve tudo pela recepção da clínica, e ela faz questão que seja assim. As gestantes particulares têm o número business e usam bastante: enjoo, resultado de exame, 'posso tomar isso?'. Ela responde entre a manhã e a tarde e no início da noite, sem madrugada. Não acha ruim responder as particulares — acha ruim não saber se esse cuidado todo está de fato segurando as que somem, porque algumas somem do mesmo jeito.",
+  "tecnologia": "Na clínica do convênio usa o sistema que a clínica impõe, só para agenda e guia. No particular, ficha de papel, plano em Word, agenda no caderno e no WhatsApp. Do bolso dela não sai um real de ferramenta. Com tecnologia é arredia por experiência: o sistema do convênio já mudou três vezes em cinco anos e cada mudança foi um transtorno, então novidade para ela cheira a retrabalho.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Aline",
+        "historia": "Gestante particular de primeira viagem, começou o pré-natal nutricional com ela na semana 12, veio três vezes, e na semana 24 sumiu. Descobriu depois, pela recepcionista do obstetra, que a Aline passou a tirar dúvida num grupo de gestantes do Facebook 'porque era de graça'.",
+        "como_percebeu": "O retorno da semana 26 ficou vazio e a mensagem de confirmação não foi respondida.",
+        "o_que_fez": "Mandou duas mensagens espaçadas, a segunda oferecendo encaixe. Nada. Cada gestante particular vale umas seis consultas até o parto; ela fez essa conta de cabeça na hora e ficou azeda o dia inteiro."
+      },
+      {
+        "nome": "Uma paciente do convênio cujo nome ela não sabe dizer",
+        "historia": "É honesta sobre isso: no convênio ela não percebe quem some. A fila repõe. Só lembra de uma gestante com diabetes gestacional que faltou duas vezes seguidas e a recepção simplesmente encaixou outras pessoas nas vagas.",
+        "como_percebeu": "Não percebeu por conta própria — viu a falta no sistema semanas depois, por acaso, procurando outra coisa.",
+        "o_que_fez": "Pediu à recepção que ligasse, pela preocupação clínica com a glicemia, não pela vaga, que já estava preenchida. Nunca soube o desfecho. 'No convênio o paciente some e a agenda nem sente. Quem devia sentir sou eu, e às vezes nem fico sabendo.'"
+      },
+      {
+        "nome": "Larissa Helena",
+        "historia": "Particular, veio para acompanhamento de introdução alimentar do bebê depois de um pré-natal completo com ela. Fez uma consulta de IA e sumiu — a sogra 'que criou sete filhos' assumiu o comando da comida do neto.",
+        "como_percebeu": "A própria paciente contou meses depois, rindo sem graça, quando cruzaram na farmácia.",
+        "o_que_fez": "Riu junto, engoliu, e depois comentou com o marido que perde mais pacientes para 'sogra e grupo de zap' do que para qualquer colega nutricionista de Colatina."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 19h50",
+      "texto": "Boa noite Dra Sonia! Saiu o resultado da curva glicêmica, deu 153 na segunda hora. É muito ruim isso?? To nervosa, o bebê corre risco?",
+      "respondeu": "Respondeu às 20h30, depois do jantar: acalmou, explicou o valor e adiantou o retorno da paciente para terça. Gestante nervosa com exame na mão ela não deixa sem resposta, fim de semana ou não."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "No convênio, nada — a fila cobre tudo, quem perde é o paciente. Nas minhas particulares... cada gestante que some no meio leva embora umas quatro, cinco consultas. Se somem umas oito por ano, passa de 8 mil. Nunca botei no papel, mas é por aí, e no papel ia me irritar mais."
+  },
+  "dores_reais": [
+    "A gestante particular que some no meio do pré-natal: leva embora o resto do acompanhamento (4-6 consultas já 'contratadas' na cabeça dela) e a deixa sem saber o que fez de errado",
+    "Depender só de mensagem manual e memória para segurar as particulares: ela sabe que confirma retorno 'quando lembra', e que as que esfriam escapam justamente por isso",
+    "A esteira do convênio: 16 atendimentos por manhã a R$ 47, consultas de 25 minutos em que não dá para fazer o trabalho que ela sabe fazer",
+    "Glosa e burocracia de produção da Unimed comendo a tarde de sexta inteira",
+    "O contraste que ela mesma verbaliza: o trabalho que a orgulha (tarde) é o que menos segurança financeira dá; o que a esgota (manhã) é o que paga o previsível"
+  ],
+  "nao_dores": [
+    "Evasão no convênio: a fila do plano repõe qualquer falta no mesmo dia; retenção ali não muda um centavo da produção dela",
+    "Captação para o convênio: a agenda da manhã se lota sozinha há dez anos, ela nunca precisou buscar esse paciente",
+    "Marketing e Instagram: em Colatina a reputação de 28 anos e os obstetras que a indicam valem mais que qualquer rede social, e ela não sente falta nenhuma de postar"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada e econômica no começo: braços cruzados, respostas curtas, 'depende', e uma pergunta de volta — 'quem tá pagando essa pesquisa?'. Destrava quando fala das gestantes da tarde, aí aparece o orgulho. Fala capixaba do interior com herança italiana: um 'pôxa vida' frequente, 'né vero?' de brincadeira com as íntimas, e 'aqui em Colatina é assim, ó'."
+}

@@ -1,0 +1,63 @@
+{
+  "id": "092",
+  "nome": "Thaís Muniz Cardoso",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição esportiva para público de musculação e estética corporal",
+  "modelo_atendimento": "Atende num consultório compartilhado na Tijuca, onde paga diária de sala, e cresceu rápido pegando o público de três academias da região com quem fez parceria. Cobra consulta avulsa mais retorno em 45 dias e vive de volume: agenda cheia de segunda a sábado. A renda é 100% particular e ela ainda faz avaliação física avulsa como renda extra.",
+  "carteira_ativa": 68,
+  "ticket_consulta": 170,
+  "consultas_semana": 32,
+  "contexto": "Formada pela UERJ há três anos, cria da Tijuca, filha de professora e de motorista de app. Construiu a carteira em tempo recorde distribuindo cartão e fazendo palestrinha grátis em academia, e agora vive o outro lado: mais paciente do que consegue acompanhar direito. Mora sozinha num quitinete perto do consultório, treina às 6h e trabalha até as 21h. O que a move é provar que dá pra viver bem de nutrição sem ser subcelebridade de Instagram; o que a cansa é a sensação de estar sempre devendo resposta a alguém. Anda desconfiada de promessa fácil — já viu muita colega quebrar seguindo guru de marketing.",
+  "rotina": "Segunda a sexta atende das 7h às 12h e das 15h às 21h, com consultas de 30 a 40 minutos. Sábado de manhã faz retornos e avaliações. Almoço é o único buraco do dia, e é quando ela despacha o grosso do WhatsApp. Domingo tenta não abrir o aplicativo, raramente consegue.",
+  "whatsapp_pacientes": "Número pessoal mesmo — quando começou não separou e agora acha tarde para migrar. Chegam de 40 a 60 mensagens por dia de paciente, com picos às 22h e domingo à noite ('posso comer isso amanhã?', foto de marmita, pedido de encaixe). Ela responde em três blocos: almoço, fim da tarde e antes de dormir. Sente que virou refém: se demora, o paciente esfria e some; se responde tudo, não vive.",
+  "tecnologia": "Software de prescrição de R$ 75 por mês, agenda no próprio WhatsApp Business que ela abandonou, marcações anotadas no Google Agenda e caderno físico como backup. Nativa digital, mas cética com ferramenta paga: acha que a maioria promete muito e resolve pouco, e prefere ver funcionando na mão de alguém antes de gastar.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Douglas",
+        "historia": "Rapaz de 29 anos em cutting para o verão. Fez a primeira consulta em setembro, seguiu firme seis semanas, depois começou a responder cada vez mais seco até parar de responder.",
+        "como_percebeu": "Ela mandou o lembrete do retorno e viu só um visto. Duas semanas depois, ele postou nos stories que tinha contratado um 'coach fitness' que manda treino e dieta pelo Telegram.",
+        "o_que_fez": "Não mandou mais nada, mas ficou remoendo. Perdeu o retorno e a renovação, uns R$ 500 no ciclo, e ainda viu o paciente pagar mais caro num serviço pior."
+      },
+      {
+        "nome": "Vanessa",
+        "historia": "Paciente de 41 anos, emagrecimento com treino de força. Ótima adesão no primeiro mês, aí a mãe dela adoeceu e ela passou a cuidar da mãe em Campo Grande (bairro), a duas horas de ônibus do consultório.",
+        "como_percebeu": "Desmarcou dois retornos seguidos 'por causa da mãe' e depois parou de desmarcar — simplesmente não marcava mais.",
+        "o_que_fez": "Ofereceu atender por vídeo. Vanessa disse 'ah, pode ser', mas nunca escolheu data. Thaís anotou num post-it 'chamar Vanessa' que ainda está colado no espelho."
+      },
+      {
+        "nome": "Igor",
+        "historia": "Universitário que veio pelo desconto de parceria com a academia. Queria hipertrofia gastando pouco. Sumiu depois da segunda consulta, na virada do semestre.",
+        "como_percebeu": "O dono da academia comentou que ele tinha trancado a matrícula por grana.",
+        "o_que_fez": "Nada. Ela sabe que perde uns três ou quatro Igors por semestre e não tem sistema nenhum para saber quem esfriou antes de sumir — 'eu só descubro quando já era'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "terça, 23h12",
+      "texto": "Thaís me salva, amanhã é aniversário na firma e vai ter bolo e coxinha, como eu faço, furo o plano ou levo marmita? Me responde ainda hoje pfv",
+      "respondeu": "Respondeu 23h30, já deitada, com uma regra rápida de substituição. Depois ficou irritada consigo mesma por ter respondido."
+    },
+    "gasto_ferramentas_mes": 75,
+    "horas_semana_respondendo": 11,
+    "no_shows_ultimo_mes": 7,
+    "estimativa_perda_anual_intuitiva": "Fez a conta de cabeça uma vez, num domingo de raiva: uns 3 pacientes sumindo por mês, cada um valendo pelo menos um retorno e uma renovação, 'fácil uns 15 a 20 mil por ano, e olha que eu tô chutando por baixo'."
+  },
+  "dores_reais": [
+    "O paciente esfria em silêncio entre a consulta e o retorno de 45 dias, e ela só descobre quando ele já sumiu ou já foi pro coach da internet",
+    "As 10-11 horas semanais de WhatsApp fora de consulta, sem cobrar nada por isso, comendo o almoço e a noite",
+    "No-show e desmarcação de última hora numa agenda de volume: 7 buracos no mês passado que ela não conseguiu preencher",
+    "Sensação de esteira: 32 consultas por semana sem tempo para acompanhar direito quem mais precisa",
+    "Medo de que o volume atual seja sorte de iniciante e desabe se ela não segurar melhor quem já entrou"
+  ],
+  "nao_dores": [
+    "Captação: as parcerias com as academias trazem mais gente do que ela dá conta — o funil de entrada não é o problema",
+    "Precificação: ela sabe que cobra barato de propósito, é estratégia de volume assumida, não insegurança",
+    "Concorrência de nutricionista famosa de Instagram: o público dela é de bairro e indicação, não de seguidor"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética e defensiva no começo: quer saber quem está pagando a pesquisa e emenda 'isso aí vai virar propaganda de quê?'. Quando percebe que a conversa é honesta, destrava e fala com números. Carioca de 'caraca' e 'tendeu?' no fim das frases."
+}

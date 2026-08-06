@@ -1,0 +1,67 @@
+{
+  "id": "039",
+  "nome": "Michele Bezerra do Amaral",
+  "idade": 34,
+  "genero": "feminino",
+  "cidade": "Recife",
+  "uf": "PE",
+  "carreira_anos": 11,
+  "especialidade": "Nutrição clínica para emagrecimento — protocolo da clínica, com bioimpedância e retorno mensal padronizado",
+  "modelo_atendimento": "Contratada PJ de uma rede de clínicas de emagrecimento com três unidades em Recife; ela roda entre Boa Viagem e Casa Amarela. Recebe por produção — R$ 65 por consulta realizada — com agenda montada pelo call center da rede, que vende pacotes fechados de acompanhamento ao paciente. A carteira é da rede: paciente é cadastrado no sistema central e pode até cair com outra nutricionista no retorno, o que ela detesta mas não decide.",
+  "carteira_ativa": 81,
+  "ticket_consulta": 65,
+  "consultas_semana": 40,
+  "contexto": "Recifense de Água Fria, formada pela UNICAP, começou em academia de bairro e há seis anos entrou na rede de clínicas — estabilidade de volume que a deixou casar as contas, mas com a sensação crescente de linha de produção. Mãe solo do Enzo, de 7 anos; a mãe dela busca o menino na escola. Faz as consultas em 30 minutos cravados porque o sistema não deixa passar disso. O que a move é o Enzo e a meta de juntar dinheiro para sair da rede e montar algo seu antes dos 40. O que a cansa é tudo o mais: 40 consultas por semana, protocolo engessado, meta de venda de suplemento da casa que ela finge que não vê.",
+  "rotina": "Segunda, terça e quinta em Boa Viagem das 8h às 17h; quarta e sexta em Casa Amarela das 8h às 14h. Trinta minutos por paciente, dez minutos de almoço em pé quando o call center superlota. Busca o Enzo na casa da mãe às 18h30, janta, estuda para uma pós de nutrição esportiva EAD das 21h às 22h30 — o plano de fuga dela. Domingo de manhã, praia de Boa Viagem com o filho, celular no fundo da bolsa.",
+  "whatsapp_pacientes": "O paciente fala com o call center da rede, que responde com script e empurra venda de pacote. Michele não dá o número pessoal por regra própria — deu no passado, virou plantão sem pagamento, cortou. Uns cinco pacientes antigos ainda têm e ela responde seco e só em horário comercial. Sobre o assunto, é taxativa: 'a rede cobra pacote com acompanhamento, então quem tem que acompanhar é a estrutura da rede, não o meu chip'.",
+  "tecnologia": "Usa o sistema central da rede (agenda, prontuário, protocolo de dieta pré-montado que ela ajusta nos 30 minutos) — pago pela rede, óbvio. Do bolso: nada atualmente, e que ninguém a peça para pagar. Mexe bem em tudo, acha o sistema da rede até decente, e guarda um rancor específico de app de acompanhamento desde a experiência que pagou do próprio bolso na época de academia.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Val, 39 anos",
+        "historia": "Paciente de pacote semestral, sumiu no terceiro mês. Clássico da casa: compra em janeiro empolgada, some em março.",
+        "como_percebeu": "Só percebeu porque o call center a acionou para 'ligação de reativação', que é obrigação contratual dela na rede — 15 minutos por semana ligando para sumido, papel que ela odeia porque o script parece telemarketing.",
+        "o_que_fez": "Fez a ligação de script, a paciente disse 'volto mês que vem', não voltou. Michele registrou no sistema e pronto. 'O pacote tá pago, a rede não perde nada; eu perco os R$ 65 do retorno que ela não veio, e ganho de volta com o encaixe que o call center enfia no buraco.'"
+      },
+      {
+        "nome": "Robson, 45 anos",
+        "historia": "Perdeu 14 kg com ela em cinco meses, o melhor caso do ano. No retorno seguinte, o sistema o agendou com outra nutricionista da unidade porque a agenda dela estava cheia.",
+        "como_percebeu": "Viu no sistema que o retorno dele caiu com a colega. Ele reclamou, não conseguiu trocar, e abandonou a clínica.",
+        "o_que_fez": "Levou o caso ao gerente como exemplo do que o rodízio faz com o vínculo. O gerente anotou. Nada mudou. Esse é o tipo de evasão que a revolta — não pelo dinheiro, mas porque o resultado era dela e a rede desperdiçou."
+      },
+      {
+        "nome": "Dona Lourdes, 62 anos",
+        "historia": "Fez o pacote trimestral, terminou, o call center ligou vendendo renovação com desconto, ela não renovou.",
+        "como_percebeu": "Nem percebeu na hora; são 81 ativos girando, ela sabe dos fins de pacote pelo relatório mensal de produção.",
+        "o_que_fez": "Nada — renovação é papel do call center, não dela. 'Se eu fosse sentir cada não-renovação eu não dormia. Eu atendo quem tá na minha frente às 8h e às 8h30 e às 9h.'"
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Sábado, 14h20",
+      "texto": "Michele tudo bom? Sou eu Genilda. A menina do call center não sabe me dizer se posso tomar o shake da clínica no lugar do jantar. Tu me diz?",
+      "respondeu": "Viu às 18h, respondeu segunda de manhã: 'Genilda, shake não substitui jantar não, viu. Qualquer dúvida marca retorno comigo pelo 3xxx'. Sem culpa nenhuma do delay: 'sábado é do Enzo'."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1.5,
+    "no_shows_ultimo_mes": 16,
+    "estimativa_perda_anual_intuitiva": "Pra mim, direto? Os retornos que furam... uns R$ 65 vezes sei lá, 150 furos no ano que o encaixe não cobre... uns quatro, cinco mil. Pra rede é outra ordem de grandeza, mas rede tem call center pra isso, problema deles."
+  },
+  "dores_reais": [
+    "A esteira: 40 consultas semanais de 30 minutos, protocolo engessado, e a sensação de que qualquer nutricionista no sistema faria 'igualzinho' — a pós EAD é a rota de fuga e o tempo dela é o recurso mais escasso",
+    "Receber R$ 65 num atendimento que a rede vende dentro de pacote a preço cheio — a matemática da mais-valia ela faz de cabeça e em voz alta",
+    "O rodízio de nutricionista que destrói o vínculo que ela constrói (caso Robson) sem que ela tenha poder de mudar a regra",
+    "A meta disfarçada de empurrar suplemento da casa, que ela driblа e que um dia vai dar atrito com o gerente",
+    "Ser mãe solo com agenda de 40 consultas: uma virose do Enzo derruba a produção — e a renda — da semana inteira"
+  ],
+  "nao_dores": [
+    "Evasão e retenção: paciente é da rede, pacote é pré-pago, call center liga para sumido e a fila de venda repõe cadastro — nada disso muda a vida dela",
+    "Plantão de WhatsApp: cortou há anos, o call center absorve, e ela dorme em paz",
+    "Captação: o marketing da rede (outdoor, tráfego pago, promoção de janeiro) lota as três unidades sem ela postar um story",
+    "Ferramenta de acompanhamento: além de já ter se queimado uma vez, hoje qualquer software é decisão e despesa da matriz — oferecer para ela é errar de porta"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "FitCliente (app de acompanhamento de alunos/pacientes)",
+    "historia": "Na época da academia, em 2019, pagou R$ 59/mês por mais de um ano para acompanhar os alunos de consultoria: diário alimentar, foto de refeição, mensagens no app. Dos trinta e poucos que cadastrou, no terceiro mês só três abriam o aplicativo — 'o povo largava o app e me mandava a foto era no zap mesmo'. Cancelou fazendo a conta de quanto tinha rasgado em assinatura e jurou que nunca mais paga ferramenta que depende do paciente ter disciplina de usar."
+  },
+  "postura_entrevista": "Seca e apressada: avisa que tem 20 minutos, responde no osso e emenda 'próxima'. Ironia recifense afiada quando o assunto é a rede ('a gente é McDonald's de dieta, tu quer que eu diga o quê?'). Usa 'tu' direto, 'visse' no fim e olha o relógio do celular sem disfarçar."
+}

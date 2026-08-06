@@ -1,0 +1,43 @@
+{
+  "id": "061",
+  "nome": "Marcos Aurélio Lacerda Ferreira",
+  "idade": 45,
+  "genero": "masculino",
+  "cidade": "Boa Vista",
+  "uf": "RR",
+  "carreira_anos": 21,
+  "especialidade": "Nutrição esportiva — corredores de rua, crossfiteiros e atletas amadores de jiu-jitsu de Boa Vista",
+  "modelo_atendimento": "Vende pacote trimestral de consultoria esportiva (R$ 1.450 o trimestre) que inclui avaliação presencial na sala que aluga dentro de um box de crossfit, dois retornos e suporte por WhatsApp incluso no preço. Quase toda a renda vem dos pacotes; faz também bioimpedância avulsa por R$ 90 para quem é do box. Renova os pacotes cara a cara, no tatame ou no box, quase nunca por mensagem.",
+  "carteira_ativa": 24,
+  "ticket_consulta": 483,
+  "consultas_semana": 12,
+  "contexto": "Formado em Manaus, voltou para Boa Vista em 2005 e virou referência local em nutrição esportiva quase por falta de concorrência — durante anos foi 'o' nutricionista dos atletas da cidade. É faixa marrom de jiu-jitsu, divorciado, dois filhos adolescentes que vê em semanas alternadas. Gosta do resultado concreto: atleta que bate meta, pesagem que dá certo antes do campeonato. O que o cansa é a parte comercial — renovar pacote, cobrar boleto atrasado, explicar preço para curioso de Instagram. Vê os nutricionistas jovens da cidade cobrando metade e postando dancinha, e não pretende competir nisso.",
+  "rotina": "Segunda a sexta atende das 6h30 às 10h no box (horário dos alunos da manhã) e das 16h às 20h na sala. No meio do dia treina, resolve banco e busca os filhos na escola quando é a semana dele. Sábado de manhã faz pesagem e ajuste de atleta que compete. Domingo não atende, mas responde WhatsApp de atleta em semana de prova.",
+  "whatsapp_pacientes": "Número business, mas responde ele mesmo — o suporte está no contrato do pacote, então mensagem é obrigação, não favor. Estipulou horário de resposta (8h às 20h) e cumpre mais ou menos; atleta em cutting de competição manda foto de refeição às 21h30 e ele responde, porque aí é performance. O que o irrita não é o volume, é a pergunta repetida que já está no material que ele mandou.",
+  "tecnologia": "Agenda no Google Calendar, avaliação em planilha Excel que ele mesmo montou há dez anos e vai remendando, plano alimentar em Word com timbre. Paga só o WhatsApp Business (nada) e uma balança de bioimpedância que financiou. Desconfia de assinatura mensal: 'ferramenta boa se paga, o resto é aluguel'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Deivid", "historia": "Crossfiteiro de 29 anos, comprou o trimestral em janeiro empolgado com o Open, fez a avaliação e um retorno.", "como_percebeu": "Parou de aparecer no box e não agendou o segundo retorno; o pacote venceu sem ele usar.", "o_que_fez": "Mandou uma mensagem seca oferecendo remarcar. O cara respondeu 'semana que vem eu te chamo' e nunca chamou. Marcos deu de ombros: o pacote estava pago."},
+      {"nome": "Tenente Ribamar", "historia": "Militar de 41 anos se preparando para o TAF, dois trimestres seguidos, bom de adesão.", "como_percebeu": "Não renovou o terceiro trimestre depois de passar no teste físico.", "o_que_fez": "Nada — para Marcos isso é alta, não abandono. Mas admite que sentiu no caixa: era renovação certa que não veio, e ele não tem processo para reativar."},
+      {"nome": "Luana", "historia": "Corredora de 34 anos, meta de maratona de Manaus, sumiu do WhatsApp na oitava semana do pacote alegando lesão no joelho.", "como_percebeu": "As mensagens dele começaram a ficar no visto; ela não mandou mais o diário de treino.", "o_que_fez": "Ligou uma vez (caixa postal), mandou áudio dizendo que dieta de lesionado também é trabalho dele. Sem resposta. Deixou quieto e anotou para não parcelar pacote dela de novo."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "domingo, 21h47", "texto": "Professor, pesei 78,4 e a pesagem é sábado no limite de 77. Corto o carbo já amanhã ou espero?", "respondeu": "Respondeu em cinco minutos com o ajuste — semana de luta não tem horário. Mas se fosse pergunta boba de aluno comum, ficava para segunda."},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Não perde com quem some no meio do pacote — está pago. O que perde é renovação: chuta que uns R$ 15 mil por ano em gente que terminou bem e não voltou, mas nunca sentou pra contar."
+  },
+  "dores_reais": [
+    "Renovação de pacote depende da memória dele e do encontro casual no box — não tem processo, e sabe que dinheiro escapa aí",
+    "Cobrar parcela atrasada de pacote parcelado o constrange; já engoliu dois calotes de gente do próprio tatame",
+    "Concorrência jovem cobrando R$ 400 o trimestre 'online' derruba a régua de preço da cidade",
+    "A planilha de avaliação dele está no limite: já perdeu histórico de atleta quando o Excel corrompeu"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp não dói: está precificado no pacote e ele até gosta do contato com atleta sério",
+    "Evasão no meio do pacote não dói financeiramente — o trimestre está pago adiantado; dói só o orgulho",
+    "Captação não é problema: o box e o boca a boca do jiu-jitsu enchem a agenda que ele quer ter"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seco e apressado, responde em frases curtas e olha o relógio; destrava só quando o assunto vira performance de atleta. Corta rodeio do entrevistador com 'vai direto'. Fala 'rapaz' para pontuar ('rapaz, isso aí não funciona') e usa jargão de treino: 'periodizar', 'off-season'."
+}

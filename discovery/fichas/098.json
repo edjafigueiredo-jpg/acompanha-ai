@@ -1,0 +1,62 @@
+{
+  "id": "098",
+  "nome": "Juliana Furlan Almeida",
+  "idade": 35,
+  "genero": "feminino",
+  "cidade": "Piracicaba",
+  "uf": "SP",
+  "carreira_anos": 11,
+  "especialidade": "Nutrição clínica para emagrecimento e saúde metabólica",
+  "modelo_atendimento": "Consultório próprio num centro médico perto do Shopping Piracicaba, atendendo particular três dias e meio por semana. Deliberadamente enxuta: sem secretária, sem convênio, agenda que ela mesma controla. A renda vem das consultas e de um grupo fechado de reeducação alimentar que ela roda duas vezes por ano com 15 vagas.",
+  "carteira_ativa": 22,
+  "ticket_consulta": 240,
+  "consultas_semana": 13,
+  "contexto": "Piracicabana, formada na PUC-Campinas, voltou para a cidade depois de cinco anos atendendo em São Paulo capital, de onde saiu fugindo do custo e da correria. Casada com um agrônomo da região canavieira, filha de 4 anos. Estruturou a vida para trabalhar menos e melhor: menos pacientes, ticket maior, tarde de sexta livre. O que a move é autonomia; o que a incomoda é a sensação recorrente de estar deixando dinheiro na mesa sem saber exatamente onde. Desconfiada por natureza e por experiência: já foi mal atendida por contador, já caiu num curso de marketing caro e inútil, e hoje examina qualquer promessa comercial com lupa.",
+  "rotina": "Atende segunda, terça e quinta das 8h30 às 17h, e quarta só de manhã. Quarta à tarde é do administrativo: agenda, recibos, planejamento do grupo. Sexta é da filha e da casa. Busca a filha na escola às 17h30 nos dias de consultório, inegociável.",
+  "whatsapp_pacientes": "WhatsApp Business com horário de atendimento no perfil e mensagem automática fora dele. Responde duas vezes ao dia, no fim da manhã e no fim da tarde, e os pacientes em geral respeitam — quem insiste de noite recebe resposta no dia seguinte, de propósito. Funciona razoavelmente, mas ela nota um padrão que a incomoda: é nos silêncios do WhatsApp que os pacientes começam a sumir, e o sistema dela de duas janelas não capta isso.",
+  "tecnologia": "Software de prescrição e prontuário por R$ 95 mensais, agenda online gratuita com lembrete automático de consulta (que reduziu no-show pela metade), planilha de fluxo de caixa que o marido montou. Usa bem tecnologia, mas compra devagar: testa tudo no gratuito primeiro, lê letra miúda de contrato e cancela sem dó no primeiro sinal de enrolação.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Ricardo",
+        "historia": "Empresário de 47 anos, pré-diabético, mandado pela esposa. Três consultas boas, exames melhorando, e desmarcou o quarto retorno na semana da colheita — ele tem transportadora de cana e some todo pico de safra.",
+        "como_percebeu": "O lembrete automático da agenda voltou com 'remarco depois da safra'. Isso foi em junho; estamos em agosto e nada.",
+        "o_que_fez": "Anotou para cobrar em setembro. Ela tem uma listinha manual de 'reativar' na quarta à tarde, que funciona quando ela lembra de olhar — e ela mesma admite que nem sempre lembra."
+      },
+      {
+        "nome": "Simone",
+        "historia": "Professora de 39 anos que fez o grupo de reeducação, adorou, migrou para consulta individual e sumiu depois da segunda — ficou claro depois que o valor individual não cabia no orçamento dela, mas ela nunca disse isso.",
+        "como_percebeu": "Sumiu das duas janelas de WhatsApp e não remarcou. Juliana só entendeu o motivo quando Simone reapareceu meses depois perguntando da próxima turma do grupo.",
+        "o_que_fez": "Guardou a lição: criou uma opção de retorno quinzenal mais curto e mais barato, ainda em teste. Não gosta de admitir, mas perdeu meses de acompanhamento da paciente por não ter percebido o real motivo."
+      },
+      {
+        "nome": "Fábio",
+        "historia": "Rapaz de 33 anos que chegou motivadíssimo em janeiro, clássico projeto de ano novo. Duas consultas e evaporou, sem responder nem o lembrete automático.",
+        "como_percebeu": "O sistema de agenda marcou a falta; ela viu na revisão de quarta-feira.",
+        "o_que_fez": "Uma mensagem de reativação, sem resposta, e arquivou. 'Janeiro traz uns três desses todo ano, eu já conto com isso na receita.'"
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta, 20h55",
+      "texto": "Juliana boa noite! Saiu o resultado da minha glicada, 5.9!!! Tinha que dividir com você 😄 posso manter o plano igual até o retorno?",
+      "respondeu": "Viu na hora, sorriu, mas respondeu só na janela das 11h do dia seguinte, parabenizando. Regra é regra, inclusive para notícia boa — 'se eu abro exceção pra alegria, abro pra tudo'."
+    },
+    "gasto_ferramentas_mes": 95,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Pensa antes de responder, desconfiada da pergunta: 'nunca calculei direito... se forem uns 10 sumidos por ano a dois retornos cada, dá uns 8 a 12 mil. Agora, se você está me perguntando isso pra me vender alguma coisa, já aviso que eu faço essa conta sozinha'."
+  },
+  "dores_reais": [
+    "A listinha manual de reativação que depende da memória dela na quarta à tarde — ela sabe que paciente esfria no silêncio e que o processo atual vaza",
+    "Encher as duas turmas anuais do grupo, que dependem de um esforço de divulgação que ela odeia fazer",
+    "A solidão operacional de tocar tudo sozinha: qualquer imprevisto com a filha derruba o dia inteiro de agenda",
+    "Sensação de teto: para ganhar mais teria que atender mais, e ela não quer — precisa extrair mais de quem já entra, e não sabe bem como"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp: as duas janelas diárias domaram isso anos atrás; ela não vive refém do celular",
+    "No-show: o lembrete automático gratuito já resolveu o grosso — 2 faltas no mês é ruído",
+    "Agenda cheia demais: o modelo enxuto é escolha; ela não quer volume, então 'ferramenta para atender mais gente' não a atrai"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada: pergunta logo de cara se a pesquisa é de alguma empresa e o que será feito com as respostas, e responde de forma medida até se convencer de que não há venda embutida. Dali em diante é precisa e até generosa. Fala 'ó' paulista do interior ('ceis tão gravando, ó') e um 'daí' recorrente para encadear frases."
+}

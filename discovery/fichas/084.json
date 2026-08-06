@@ -1,0 +1,44 @@
+{
+  "id": "084",
+  "nome": "Débora Zanetti Amorim",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Cuiabá",
+  "uf": "MT",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição clínica para emagrecimento, com protocolo próprio focado em pacientes 40+ resistentes a dieta",
+  "modelo_atendimento": "Consultório próprio num coworking de saúde no bairro Jardim das Américas, sala alugada por turno. Atende particular com primeira consulta de 1h30 e retornos de 40 minutos, cobrados avulsos. A renda vem 90% do consultório e 10% de um convênio com uma academia que encaminha alunos.",
+  "carteira_ativa": 26,
+  "ticket_consulta": 260,
+  "consultas_semana": 16,
+  "contexto": "Formada pela UFMT, filha de contador — e herdou o vício: controla o consultório em planilha desde o primeiro dia. Casada com o Rodrigo, analista de sistemas, um filho de 4 anos, o Bento, e a logística escola-consultório no calor de 40 graus de Cuiabá é uma operação militar. Metódica, mede taxa de retorno por trimestre e sabe de cabeça que ela caiu de 68% para 54% em dois anos, sem saber exatamente o porquê. O que a move é o dado; o que a cansa é a sensação de que a parte comercial do consultório depende de uma disciplina de follow-up que ela planeja e nunca executa.",
+  "rotina": "Atende segunda, quarta e sexta o dia inteiro, das 8h às 18h. Terça de manhã monta planos e alimenta as planilhas; quinta é dia de buscar o Bento cedo e resolver vida. Domingo à noite, ritual: revisa a semana na planilha com um chimarrão gelado (tereré, ela corrige).",
+  "whatsapp_pacientes": "WhatsApp Business com etiquetas por status (ativo, retorno atrasado, sumido) que ela mesma criou — e mantém pela metade. Definiu horário de resposta das 8h às 19h na mensagem automática, mas responde às 21h com frequência, o que a irrita consigo mesma. Chegam umas 20 mensagens por dia; dúvida clínica ela responde, remarcação empurra para o link da agenda.",
+  "tecnologia": "Agenda online do Google integrada a um link de agendamento gratuito (Calendly plano free), prescrição no Dietbox no plano de R$ 74 por mês, e a planilha-mãe no Google Sheets com receita, taxa de retorno e origem de cada paciente. Gosta de ferramenta, mas só adota o que consegue medir; testa tudo no gratuito antes de pagar.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Silvana", "historia": "Professora de 47 anos, perdeu 6 kg em três meses, empolgada, indicou duas colegas.", "como_percebeu": "A etiqueta 'retorno atrasado' acusou 40 dias sem remarcar. Ela só viu porque fez a limpeza mensal das etiquetas.", "o_que_fez": "Mandou mensagem padrão de reativação que ela mesma redigiu. Silvana respondeu 'semana que vem marco', não marcou, e Débora anotou na planilha: 'perdida, motivo desconhecido'."},
+      {"nome": "Marcos Vinícius", "historia": "Encaminhado pela academia conveniada, 35 anos, queria secar para o verão, veio duas vezes.", "como_percebeu": "Cruzou a lista da academia com a dela no fim do trimestre e viu que ele tinha até cancelado a matrícula da academia.", "o_que_fez": "Nada — concluiu que o abandono foi do projeto inteiro, não dela. Mas registrou: pacientes da academia têm retenção 30% pior, e está repensando o convênio."},
+      {"nome": "Cleide", "historia": "Paciente com hipotireoidismo e 15 kg a perder, avançava devagar e se frustrava a cada plateau.", "como_percebeu": "Cancelou o retorno pelo link com o motivo 'imprevisto' e não reagendou. Débora percebeu na hora porque o cancelamento caiu no e-mail.", "o_que_fez": "Ligou dois dias depois — coisa rara para ela. Cleide desabafou que estava desanimada de pagar para 'ouvir que estava indo devagar'. Remarcou, veio mais uma vez e sumiu de vez. Esse caso a incomoda porque o dado não explicou."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "terça-feira, 21h20", "texto": "Dra Débora, saiu meu exame, deu glicada 6,1, tô pré-diabética?? posso te mandar o pdf?", "respondeu": "Respondeu às 21h30 pedindo o PDF e tranquilizando, e marcou de discutir no retorno. Depois ficou remoendo que tinha prometido a si mesma não responder depois das 19h."},
+    "gasto_ferramentas_mes": 74,
+    "horas_semana_respondendo": 5,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Essa eu tenho na planilha: 31 pacientes perdidos nos últimos 12 meses, se cada um faria em média 4 retornos de R$ 260... dá uns R$ 32 mil por ano. Falo o número e me dá azia."
+  },
+  "dores_reais": [
+    "A taxa de retorno caindo (68% para 54%) sem uma causa que ela consiga isolar nos dados que tem",
+    "O follow-up manual que ela desenha e não sustenta: as etiquetas do WhatsApp viram bagunça em três semanas",
+    "O buraco entre consultas: ela suspeita que o paciente desanima na semana 3 e ela só fica sabendo na semana 6, tarde demais",
+    "Culpa de responder paciente às 21h roubando a hora do Bento, sem conseguir parar porque 'resposta rápida retém'",
+    "O convênio com a academia, que traz volume ruim e ela ainda não teve coragem de cortar"
+  ],
+  "nao_dores": [
+    "Captação não é o gargalo: indicação e a planilha de origem mostram fluxo de entrada estável; o balde é que está furado",
+    "Precificação está resolvida: reajusta todo janeiro com base na planilha e não tem dó",
+    "Burocracia não pesa: contadora, MEI arrumado, agenda automatizada — a parte administrativa ela domina"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica e precisa: responde com números, pede definição das perguntas vagas ('sumir quanto tempo? 30 dias? 60?') e desconfia de conclusão sem dado. Se a entrevista for boa, pega o notebook e mostra a planilha sem ninguém pedir. Tiques: 'na média...', 'deixa eu ser justa com o dado', e o 'ó' mato-grossense no fim da frase."
+}

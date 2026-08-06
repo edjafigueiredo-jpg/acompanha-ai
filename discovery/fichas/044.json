@@ -1,0 +1,63 @@
+{
+  "id": "044",
+  "nome": "Vanessa Rocha de Lima",
+  "idade": 34,
+  "genero": "feminino",
+  "cidade": "Campo Grande",
+  "uf": "MS",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição materno-infantil: gestantes, lactantes e introdução alimentar",
+  "modelo_atendimento": "Atende por convênio em duas clínicas de Campo Grande — uma clínica de ginecologia e obstetrícia e uma clínica pediátrica — recebendo por produção, repasse por consulta realizada. A agenda é preenchida pela fila dos planos (Unimed e Cassems principalmente) e vive lotada; ela quase não escolhe quem atende. Tem meia dúzia de particulares soltos que atende num consultório sublocado no sábado de manhã.",
+  "carteira_ativa": 85,
+  "ticket_consulta": 42,
+  "consultas_semana": 44,
+  "contexto": "Formada pela UFMS, sempre trabalhou no circuito de clínicas conveniadas da cidade. Casada, um filho de 4 anos que fica na escolinha em período integral. É rápida, competente e cronicamente atrasada 20 minutos para tudo. O que a move é o momento em que a mãe de primeira viagem relaxa os ombros na cadeira — ela é boa nisso e sabe. O que a cansa é a esteira: consulta de 20 minutos, repasse pequeno, glosa de convênio, e a sensação de que trabalha muito para ganhar o mesmo há três anos. O sonho vago é migrar para particular, mas nunca sobra fôlego para construir isso.",
+  "rotina": "Segunda, quarta e sexta na clínica de GO das 7h30 às 13h; terça e quinta na pediátrica das 13h às 19h. Sábado de manhã, os particulares. Faz evolução de prontuário correndo entre um paciente e outro ou à noite, no sofá, depois que o filho dorme. Domingo é sagrado da família — na teoria.",
+  "whatsapp_pacientes": "Não passa o número pessoal para paciente de convênio — a recepção das clínicas resolve agendamento. As gestantes ainda assim conseguem o número dela por baixo dos panos (uma passa para a outra no grupo de mães) e mandam foto de teste de farmácia, dúvida de enjoo, foto de papinha. Ela responde no intervalo, telegráfica: 'Pode. Sem mel antes de 1 ano. Bjs'. Não sente culpa de demorar; sente incômodo de o número dela circular sem controle.",
+  "tecnologia": "Usa o sistema que cada clínica assina (dois sistemas diferentes, senhas diferentes, e ela odeia os dois), agenda controlada pelas recepções. De seu, só o WhatsApp e um bloco de modelos de orientação de introdução alimentar em PDF que ela manda para as mães. Não paga ferramenta nenhuma do próprio bolso — 'ferramenta é problema da clínica'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Uma gestante do plano (não lembra o sobrenome, Talita, acha)",
+        "historia": "Veio duas vezes no segundo trimestre, sumiu. Provavelmente ganhou o bebê e não voltou para o pós-parto.",
+        "como_percebeu": "Sinceramente? Não percebeu. Se a pesquisadora não perguntasse, o nome não teria ocorrido a ela. A vaga foi preenchida pela fila no mesmo dia.",
+        "o_que_fez": "Nada. Convênio não se persegue; a recepção liga uma vez por protocolo e pronto."
+      },
+      {
+        "nome": "Bernardo, 11 meses",
+        "historia": "Bebê com dificuldade de aceitação alimentar. A mãe faltou duas consultas seguidas porque o plano da empresa dela trocou de operadora.",
+        "como_percebeu": "A recepção avisou que o plano não cobria mais e perguntou se ela queria oferecer particular.",
+        "o_que_fez": "Mandou mensagem oferecendo o horário de sábado com desconto. A mãe agradeceu e nunca marcou. Esse caso incomodou de verdade — o bebê precisava de acompanhamento."
+      },
+      {
+        "nome": "Priscila (particular do sábado)",
+        "historia": "Tentante de 36 anos que queria emagrecer antes da FIV. Fez três consultas particulares e sumiu quando o ciclo de fertilização começou e o dinheiro apertou.",
+        "como_percebeu": "Essa sim ela percebeu na hora: sábado é curto, cada horário vazio é dinheiro dela, não da clínica.",
+        "o_que_fez": "Mandou duas mensagens espaçadas. A segunda foi respondida com 'assim que respirar eu volto!'. Não voltou."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "terça-feira, 6h20 da manhã",
+      "texto": "Dra bom dia!! O Theo cuspiu o ovo, tento de novo hoje ou espero uns dias?? Tô indo trabalhar e a vó que vai dar o almoço, me ajuda 🙏",
+      "respondeu": "Respondeu 12h40, no intervalo: 'Tenta de novo hoje, formato diferente (omelete). Cuspir faz parte.' Nem registrou como incômodo — é o mar em que ela nada."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 14,
+    "estimativa_perda_anual_intuitiva": "'Perder com paciente que some? No convênio a fila repõe, eu não perco nada — perco é com falta, porque falta de convênio eu não recebo e o horário morre. Se for contar os particulares do sábado... sei lá, uns 5 mil por ano? Nunca parei pra pensar nisso, pra falar a verdade.'"
+  },
+  "dores_reais": [
+    "Repasse de R$ 42 congelado há três anos enquanto tudo subiu — trabalhar mais é a única alavanca que ela tem",
+    "No-show de convênio: a paciente falta, o plano não paga, a manhã rende menos e ela não pode cobrar de ninguém",
+    "Glosa e burocracia das operadoras: guia recusada, código errado, ligar para autorizar — tempo que ninguém paga",
+    "Consulta de 20 minutos para uma mãe de primeira viagem que precisava de 50 — a qualidade que ela sabe entregar não cabe na esteira",
+    "Zero tempo e energia para construir a carteira particular que a tiraria dessa roda"
+  ],
+  "nao_dores": [
+    "Retenção/evasão no convênio: a fila do plano repõe qualquer buraco em horas — evasão é invisível e indolor",
+    "Plantão de WhatsApp: ela nunca prometeu suporte, responde quando dá e ninguém reclama",
+    "Captação: pelo convênio falta paciente nunca — o problema dela é o oposto, sobra gente e falta valor por consulta"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada: olha o relógio, avisa de cara que tem 40 minutos, responde em frases curtas e boas. Descongela um pouco só quando fala do caso do Bernardo. Tiques: fala rápido com o sotaque cantado do MS, usa 'guri' para os bebês e encerra respostas com um 'é isso' definitivo."
+}

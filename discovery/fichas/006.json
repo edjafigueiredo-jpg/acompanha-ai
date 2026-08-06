@@ -1,0 +1,63 @@
+{
+  "id": "006",
+  "nome": "Pollyana Resende Curado",
+  "idade": 31,
+  "genero": "feminino",
+  "cidade": "Goiânia",
+  "uf": "GO",
+  "carreira_anos": 8,
+  "especialidade": "Emagrecimento feminino 100% online — mulheres de 25 a 45 que 'já tentaram de tudo'",
+  "modelo_atendimento": "Atendimento totalmente online por videochamada, captação pelo Instagram (41 mil seguidoras construídas em cinco anos de reels sobre emagrecimento sem terrorismo). Vende acompanhamento mensal recorrente: consulta + ajuste + um grupo de 'boas do mês'. Renda vem das mensalidades; quando a carteira cai, ela grava mais reels e faz caixa com uma 'semana de vagas abertas'. Atende do home office no Setor Bueno.",
+  "carteira_ativa": 68,
+  "ticket_consulta": 180,
+  "consultas_semana": 30,
+  "contexto": "Formada pela PUC Goiás em 2017, penou três anos em clínica de bairro ganhando mal até apostar tudo no online na pandemia — e deu certo. Solteira, mora com duas gatas, família em Anápolis. Construiu tudo sozinha: edita vídeo, responde direct, faz planilha de métrica de funil. A move a liberdade e o dinheiro, que hoje é bom; a corrói a instabilidade invisível da carteira — todo mês entram 10 e saem 12, e ela sente que enche um balde furado. Já foi lesada por agência de marketing e por 'mentoria de posicionamento' cara, então desconfia de qualquer promessa por padrão.",
+  "rotina": "Atende de segunda a sexta em blocos de videochamada: 8h-12h e 14h-18h, consultas de 30 minutos costuradas uma na outra. Segunda de manhã é de gravação de conteúdo com a agenda bloqueada. Entre consultas responde WhatsApp e direct em modo metralhadora. Quinta à noite faz live quinzenal. Sábado de manhã 'organiza a casa' do negócio: quem pagou, quem não renovou, quem sumiu — a parte que ela mais odeia.",
+  "whatsapp_pacientes": "WhatsApp Business com respostas rápidas configuradas e etiquetas por cor (ativa, vencendo, sumida). Só ela responde — já tentou contratar uma assistente virtual por três meses e desistiu porque as pacientes percebiam que não era ela e reclamavam. Mensagens chegam o dia inteiro, com pico às 21h-23h ('hora em que a mulherada fura a dieta e vem confessar'). Ela responde até as 22h e se odeia por isso, mas mensagem sem resposta de noite vira não-renovação no fim do mês — ela já viu o padrão.",
+  "tecnologia": "Stack montado na marra: agenda online com pagamento integrado (R$ 97/mês), planilha de acompanhamento de renovações que ela mesma criou, Canva Pro, um app de link de pagamento. Já pagou muita coisa que não usou. É fluente em tecnologia, mas trata qualquer ferramenta nova como culpada até prova em contrário: pede teste grátis, mede tudo, cancela sem dó no segundo mês se não performar.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Sheila",
+        "historia": "Paciente de Rio Verde, 34 anos, sete meses de acompanhamento, menos 11 kg. Começou a pular consultas de videochamada alegando trabalho, migrou para 'só ajuste por mensagem' e daí para o silêncio.",
+        "como_percebeu": "A etiqueta 'vencendo' virou 'sumida' na planilha de sábado. O pix da mensalidade não caiu no dia 5.",
+        "o_que_fez": "Mandou a mensagem de resgate que ela mesma padronizou ('senti sua falta, bora retomar leve?'). Sheila respondeu com áudio chorando, disse que tinha engordado 3 kg e estava com vergonha de aparecer na câmera. Renovou, sumiu de novo dois meses depois. Pollyana guarda esse áudio como prova de uma tese que ela repete: 'elas não desistem de mim, desistem delas — e somem em vez de falar'."
+      },
+      {
+        "nome": "Vanessa",
+        "historia": "Advogada de Brasília que chegou pelo Instagram, perfil ansioso, queria resposta imediata pra tudo. Três meses intensos. Quando Pollyana demorou um domingo inteiro pra responder, levou uma indireta nos stories e um cancelamento na segunda.",
+        "como_percebeu": "A própria paciente cancelou por mensagem, educada e gelada.",
+        "o_que_fez": "Respondeu profissional, devolveu proporcional, bloqueou o assunto da cabeça. Aprendeu que paciente que exige plantão 24h ela não quer — mas ficou a pulga: quantas das quietinhas esperam a mesma coisa e simplesmente não renovam sem avisar?"
+      },
+      {
+        "nome": "Gleiciane",
+        "historia": "Paciente antiga de Aparecida de Goiânia, mensalidade no valor 'de fundadora' (R$ 120). Fez um ano, atingiu a meta, e no mês seguinte sumiu — missão cumprida, na cabeça dela.",
+        "como_percebeu": "Não renovou no dia 10; a planilha acusou no sábado.",
+        "o_que_fez": "Mandou parabéns pela meta e ofereceu um 'plano manutenção' mais barato que ela inventou na hora, por mensagem. Gleiciane disse que ia pensar. Não voltou. Pollyana anotou num caderno de ideias: 'criar oferta de manutenção DE VERDADE' — está lá há oito meses."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "terça-feira, 23h32",
+      "texto": "Polly me desculpa, eu sei que é tarde 😭 mas eu comi 6 brigadeiros do aniversário da minha filha e to me sentindo um lixo, joguei tudo fora né? me fala a verdade",
+      "respondeu": "Viu às 23h33, respondeu às 7h02 do dia seguinte com um áudio acolhedor e firme. A regra das 22h ela até segura — o problema é que acorda pensando nas que escreveram de madrugada."
+    },
+    "gasto_ferramentas_mes": 152,
+    "horas_semana_respondendo": 14,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "Eu sei exatamente, porque eu meço funil: perco em média 11 pacientes por mês e recupero 2. Cada uma que sai valia uns 4 meses a mais de R$ 180. Passa de 70 mil por ano escorrendo. Eu sei o número e não sei tampar o buraco, o que é pior."
+  },
+  "dores_reais": [
+    "O balde furado: churn de dezena de pacientes por mês que a obriga a gravar conteúdo eternamente só para repor — ela vive cansada de 'vender de novo o que já tinha vendido'",
+    "Paciente que some por vergonha de ter engordado, exatamente quando mais precisa dela — e o resgate hoje é mensagem manual de sábado, tarde e a frio",
+    "O plantão implícito das 21h-23h: ela sabe que resposta rápida à noite segura renovação e paga esse preço com a própria noite",
+    "A gestão de renovação/sumida é uma planilha de sábado de manhã que depende dela lembrar e doer",
+    "Não conseguir delegar a comunicação porque a voz dela É o produto — já tentou assistente e as pacientes notaram"
+  ],
+  "nao_dores": [
+    "Captação — o Instagram dela enche vaga quando ela quer; abrir 'semana de vagas' lota em dois dias. O caro é repor, não captar",
+    "Aparecer/vender — ela gosta de câmera e é boa nisso, sem o bloqueio que muitas colegas têm",
+    "Precificação — testou preço A/B na prática e sabe o que o público dela paga; não tem insegurança aí"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada de saída: pergunta quem está pagando a pesquisa, se vão vender algo no final e avisa que 'já caí em papo de mentoria, então vai direto'. Responde curto no início e vai abrindo quando percebe que ninguém está vendendo nada — aí entrega números precisos de churn que surpreendem o entrevistador. Tiques: 'uai' involuntário, 'ó pra você ver' quando confirma uma suspeita, e checar o celular a cada cinco minutos pedindo desculpa sem parar de checar."
+}

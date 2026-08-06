@@ -1,0 +1,45 @@
+{
+  "id": "065",
+  "nome": "Priscila dos Santos Barreto",
+  "idade": 36,
+  "genero": "feminino",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "carreira_anos": 12,
+  "especialidade": "Nutrição oncológica ambulatorial — pacientes em quimioterapia e pós-tratamento",
+  "modelo_atendimento": "Contratada PJ de uma clínica multiprofissional de oncologia na Tijuca, recebe fixo de R$ 7.200 por 32 horas semanais mais um variável pequeno por produtividade. A agenda é montada pela recepção da clínica com os pacientes dos oncologistas da casa; a carteira é da clínica, não dela. Faz uns poucos particulares por fora, no sábado, quase como hobby.",
+  "carteira_ativa": 85,
+  "ticket_consulta": 60,
+  "consultas_semana": 38,
+  "contexto": "Cria de Madureira, primeira da família a se formar, escolheu oncologia depois de acompanhar o tratamento do pai. Doze anos de estrada, seis nessa clínica. Solteira, mora com a mãe, e o subúrbio-Tijuca de trem e metrô come duas horas e meia do dia dela. Ama o que faz com uma seriedade que impressiona — manter um paciente comendo durante a quimio é, nas palavras dela, 'metade do tratamento'. O que a esgota é o volume: 38 atendimentos por semana em slots de 30 minutos, prontuário atrasado, e a sensação de que para a clínica ela é uma linha de produção. O que ela quer mesmo é um aumento ou um concurso, não um negócio próprio.",
+  "rotina": "Segunda a sexta na clínica das 8h às 16h, atendimentos de 30 em 30 minutos com meia hora de almoço que vira 15. Termina prontuário no trem de volta, pelo celular. Dois sábados por mês atende 3 ou 4 particulares numa sala sublocada em Madureira. Domingo é da mãe, da igreja e do sofá.",
+  "whatsapp_pacientes": "Os pacientes da clínica falam com a recepção, não com ela — a clínica proíbe passar número pessoal, e ela agradece a proibição. O que chega no pessoal dela são os poucos particulares de sábado e um ou outro paciente antigo que conseguiu o número; com paciente oncológico ela responde mesmo fora de hora, porque náusea de quimioterapia não escolhe horário, mas é raro e ela não vê como fardo.",
+  "tecnologia": "Usa o sistema de prontuário que a clínica paga — acha lento e reclama toda semana, mas a decisão de trocar é do dono, que já negou duas vezes. Para os particulares, usa Word e uma agenda de papel. Não paga nada de ferramenta do próprio bolso e não pretende: 'ferramenta é problema do patrão'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Seu Jorge", "historia": "Paciente de 67 anos com tumor de cabeça e pescoço que ela acompanhou por oito meses de tratamento.", "como_percebeu": "Sumiu da agenda dela porque o convênio dele mudou e ele migrou de clínica. Ela soube pela recepção, semanas depois.", "o_que_fez": "Nada a fazer — o paciente é da clínica e do plano, não dela. Ficou chateada por não ter podido se despedir nem passar o caso adiante direito."},
+      {"nome": "Dona Neusa", "historia": "Senhora em pós-tratamento de mama que faltou a três retornos seguidos.", "como_percebeu": "A recepção marcou, ela faltou, a recepção remarcou automaticamente — o buraco na agenda foi preenchido pela fila no mesmo dia.", "o_que_fez": "Pediu à recepção que ligasse com carinho, porque em oncologia falta pode ser recaída ou depressão. Descobriram que a filha que a trazia mudou de cidade. Priscila anotou no prontuário e seguiu; a agenda dela não sentiu nada."},
+      {"nome": "Marcelo", "historia": "Particular de sábado, 45 anos, pós-linfoma, queria recuperar peso e massa muscular.", "como_percebeu": "Depois da terceira consulta parou de responder. Esse ela percebeu na hora, porque particular de sábado são só quatro.", "o_que_fez": "Mandou mensagem, ele disse que 'estava apertado esse mês'. Ela sentiu no bolso — R$ 250 a menos no sábado — mas deu de ombros: o salário da semana não muda."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "quarta-feira, 21h10", "texto": "Priscila, minha esposa não segura nada no estômago desde a química de ontem, nem o soro caseiro. Dou o quê a ela?", "respondeu": "Respondeu em dez minutos com orientação e mandou procurar a emergência se não melhorasse até de manhã. Não cobrou nem pensou em cobrar; para ela isso é o juramento, não plantão."},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "'Perder com paciente que some? Eu não perco nada, quem perde é a clínica — e olhe lá, porque a fila do convênio repõe no mesmo dia. Nos meus particulares de sábado, sei lá... uns R$ 2 mil no ano? Não é isso que me tira o sono.'"
+  },
+  "dores_reais": [
+    "Volume desumano: 38 atendimentos por semana em slots de 30 minutos, sem tempo de fazer a nutrição oncológica bem feita",
+    "Salário parado há dois anos enquanto a clínica cresce; o variável por produtividade é uma esmola",
+    "Prontuário lento da clínica a faz trabalhar de graça no trem, todo dia",
+    "Invisibilidade profissional: o mérito do resultado vai para o oncologista, e ela quer reconhecimento ou um concurso público",
+    "Duas horas e meia de deslocamento diário que ninguém paga"
+  ],
+  "nao_dores": [
+    "Evasão de paciente não custa nada a ela: a carteira é da clínica e a fila do convênio repõe qualquer buraco no mesmo dia",
+    "Captação nunca passou pela cabeça: a agenda vem pronta da recepção, cheia demais inclusive",
+    "Comprar ferramenta não é decisão dela nem despesa dela — qualquer software é assunto do dono da clínica",
+    "WhatsApp de paciente não a sufoca: a recepção filtra quase tudo"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada — encaixou a entrevista no horário de almoço e avisa isso duas vezes. Respostas objetivas, meio sindicalizadas ('isso aí é problema de patrão, não meu'), mas amolece quando fala de paciente oncológico. Tiques cariocas de subúrbio: 'entendeu?' no fim das frases e um 'caô' para descartar exagero ('isso é caô de quem nunca pisou em ambulatório')."
+}

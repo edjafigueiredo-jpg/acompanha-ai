@@ -1,0 +1,64 @@
+{
+  "id": "027",
+  "nome": "Bruna Zanella",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Caxias do Sul",
+  "uf": "RS",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição geral de adultos e famílias em clínica popular conveniada",
+  "modelo_atendimento": "CLT-PJ híbrido: recebe por produção numa clínica popular de bairro em Caxias que atende três convênios e consulta social a preço fixo. A agenda é montada pela recepção com a fila do plano; ela atende quem cai na grade, de gestante a vô com gota. A renda é o repasse por consulta — R$ 28 a R$ 35 conforme o plano — e ponto final; paciente que some não muda o holerite, a fila repõe no minuto seguinte.",
+  "carteira_ativa": 28,
+  "ticket_consulta": 32,
+  "consultas_semana": 42,
+  "contexto": "Filha de família de serra gaúcha, pai metalúrgico, mãe cozinheira de restaurante italiano — cresceu entre galeto e polenta e resolveu estudar o prato por dentro. Formou-se na UCS em 2023, está no primeiro emprego de verdade e mora com os pais para juntar dinheiro. Namora o Douglas, que trabalha na Marcopolo. É pragmática ao extremo: gosta do emprego pelo salário previsível, mas já entendeu que produção de convênio tem teto, e o plano dela é abrir consultório particular em dois ou três anos. O que a move é essa poupança com nome e sobrenome; o que a cansa é atender 10 pacientes por turno em consultas de 20 minutos sabendo que metade não volta — e não ser problema dela que não voltem.",
+  "rotina": "Segunda a sexta na clínica das 8h às 12h e das 13h30 às 18h, consultas de 20 minutos marcadas pela recepção, sem intervalo que dure. Quarta à noite faz pós de nutrição clínica online, meio dormindo. Sábado de manhã ajuda a mãe no restaurante em troca de um por fora. Domingo é fondue na casa do namorado e planilha de poupança no celular.",
+  "whatsapp_pacientes": "Paciente não tem o número dela — política da clínica, e ela cumpre com alegria. Tudo passa pelo WhatsApp da recepção: remarcação, dúvida, atestado. Uma ou outra paciente descola o número dela por fora e ela responde uma vez, educada, e redireciona pra recepção. Sente zero culpa: 'me pagam pela consulta, não pelo plantão'. O que ela olha com atenção é como as nutris de consultório particular se matam no WhatsApp — e anota mentalmente que, quando abrir o dela, vai cobrar por isso.",
+  "tecnologia": "Usa o sistema de gestão da clínica (quem paga é o dono; ela acha lento e vive caindo). Prescrição no editor do próprio sistema, sem opção de escolher outro — a decisão de ferramenta é do dono da clínica e ele corta custo até de papel toalha. Do bolso dela: Spotify e a pós. Planilha pessoal de economias no Google Sheets, essa sim atualizada com carinho.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Um senhor de sobrenome Bettega, acha ela",
+        "historia": "Diabético encaminhado pelo clínico geral, veio uma vez, reclamou que 20 minutos era pouco, não voltou.",
+        "como_percebeu": "Não percebeu na hora — só se deu conta quando o mesmo clínico perguntou semanas depois 'e o seu Bettega, evoluiu?' e ela não soube responder. Ficou com vergonha do médico, não do buraco na agenda, que a fila já tinha tapado.",
+        "o_que_fez": "Pediu pra recepção ligar. A recepção 'ia ver' e nunca viu. Ela deixou pra lá; não existe processo de busca ativa na clínica e não é ela quem define processo."
+      },
+      {
+        "nome": "Jéssica",
+        "historia": "Gestante do convênio, fez duas consultas do pré-natal nutricional e sumiu. Provavelmente migrou pro obstetra particular que tem nutri na equipe.",
+        "como_percebeu": "Viu o nome dela na lista de faltas do dia, entre outras cinco. Falta é linha em relatório que ninguém lê.",
+        "o_que_fez": "Nada — a recepção manda o lembrete padrão de remarcação e acabou. 'Se eu fosse correr atrás de cada falta, eu não almoçava.'"
+      },
+      {
+        "nome": "Loreni",
+        "historia": "Paciente da consulta social, 58 anos, adorava ela, levou até cuca de presente. Sumiu quando a linha de ônibus do bairro dela mudou.",
+        "como_percebeu": "Essa ela sentiu de verdade, porque era das poucas que fazia o dia valer. Perguntou pra recepção, descobriram o problema do ônibus por outra paciente vizinha.",
+        "o_que_fez": "Mandou mensagem pelo número da recepção sugerindo horário logo depois do único ônibus da manhã. Loreni voltou uma vez e sumiu de novo. Bruna guardou a lição: 'no particular, eu vou querer saber disso ANTES de perder a pessoa'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta-feira, 19h40",
+      "texto": "oi bruna sou eu a marinês da consulta de terça, me diz uma coisa o chimia pode ou não pode no café? o whats da clinica não responde de noite",
+      "respondeu": "Respondeu em uma linha ('pode, uma colher rasa, amanhã a recepção te manda o material') e avisou, simpática, que dúvidas são pelo canal da clínica. Fechou o celular e foi jantar sem pensar duas vezes no assunto."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 14,
+    "estimativa_perda_anual_intuitiva": "'Pra mim? Zero. Falta um, a fila põe outro na cadeira e o repasse é o mesmo. Quem perde é o dono da clínica, e olha, nem sei se ele perde, porque a agenda vive estourada. Nunca calculei porque não tem o que calcular.'"
+  },
+  "dores_reais": [
+    "O teto do repasse: 42 consultas por semana a R$ 32 dá conta feita e sonho adiado — a dor dela é ganhar mais, não reter ninguém",
+    "Consulta de 20 minutos que não deixa fazer nutrição de verdade, só entregar folha de dieta",
+    "Não ter dinheiro nem coragem ainda para abrir o consultório próprio: aluguel em Caxias, equipamento, e o medo de trocar o certo pelo duvidoso",
+    "Invisibilidade profissional: na clínica ela é 'a nutri da sala 4', sem nome, sem carteira própria, sem Instagram profissional decolando (827 seguidores)",
+    "Cansaço físico de emendar dez atendimentos por turno num sistema que trava"
+  ],
+  "nao_dores": [
+    "Evasão de paciente: sinceramente não custa nada a ela — a fila do convênio repõe e o salário não muda; é a definição do modelo",
+    "Plantão de WhatsApp: a política da clínica a blinda por completo, 1 hora por semana e olhe lá",
+    "Ferramenta de gestão: não é ela quem decide nem paga — vendedor que quiser vender software ali tem que falar com o seu Edson, o dono, e boa sorte",
+    "No-show: quatorze no mês passado e nenhum tirou o sono dela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Pragmática: respostas curtas, concretas e sem drama, separa com nitidez 'o que é problema meu' do 'que é problema do dono', e fala do futuro consultório com os pés no chão e cifras na ponta da língua. Tiques: 'tri' como intensificador ('tri complicado'), 'bah' de entrada quando a pergunta é boa, e 'né, não sei se tu me entende' no fim das explicações."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "058",
+  "nome": "Elisângela Loureiro Nunes",
+  "idade": 51,
+  "genero": "feminino",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "carreira_anos": 26,
+  "especialidade": "Nutrição clínica geral e de família: emagrecimento, doenças crônicas, adolescentes e idosos, muitas famílias completas",
+  "modelo_atendimento": "Consultório particular próprio em Jardim da Penha, Vitória, com duas salas e uma secretária em tempo integral. Volume alto: consultas de 40 minutos, agenda fechada com três semanas de antecedência. Renda das consultas particulares e de reembolso de plano que as pacientes pedem por conta própria; ela não credencia convênio de jeito nenhum.",
+  "carteira_ativa": 78,
+  "ticket_consulta": 280,
+  "consultas_semana": 34,
+  "contexto": "Capixaba de Vila Velha, formada pela Emescam em 1999, construiu em 26 anos uma das carteiras mais sólidas de Jardim da Penha — tem paciente que ela atende desde antes do filho da paciente nascer, e hoje atende o filho. Viúva desde 2021, dois filhos adultos, um morando em Portugal. Trabalha demais e sabe disso; a irmã vive mandando ela desacelerar. Move-a a clínica bem-feita e a fidelidade das famílias; cansam-na a papelada, o WhatsApp que não para e a sensação, cada vez mais frequente, de que paciente escorre pelos dedos entre um retorno e outro sem que ela tenha tempo de perceber.",
+  "rotina": "Segunda a sexta das 7h30 às 13h e terça e quinta também das 15h às 19h. Consulta em sequência, café em pé na copa, prontuário atrasado que ela põe em dia sábado de manhã no consultório vazio. Domingo almoça com a mãe em Vila Velha e tenta não abrir o celular de trabalho — tenta. Pilates segunda e quarta às 6h15, única coisa que marca para ela mesma.",
+  "whatsapp_pacientes": "WhatsApp Business no celular da secretária para agenda, mas o número pessoal dela vazou para a carteira antiga há anos e não tem mais volta. Chegam 30-40 mensagens por dia entre os dois números: remarcação, foto de rótulo, 'deu 5 quilos a menos!', dúvida de exame. A secretária filtra o que pode; o clínico sobra para ela, que responde em rajadas — 13h10, 19h30 e um pente-fim às 21h30 na cama, coisa que ela mesma acha errada e faz assim mesmo. Resume assim: 'eu cobro a consulta e dou de graça um plantão'.",
+  "tecnologia": "Sistema de agenda e prontuário de clínica genérico (R$ 129/mês) que usa pela metade — prescrição ela ainda faz num Word timbrado porque o módulo do sistema é ruim. Maquininha, emissor de NFS-e, e uma planilha de indicadores que o filho contador montou e ela alimenta quando lembra. Não tem paciência para ferramenta que exige curso para usar: 'se precisar de tutorial de vinte minutos, já era'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Marcelo, 47, empresário do ramo de rochas",
+        "historia": "Paciente de oito anos, vinha trimestralmente. Sumiu depois de abrir filial em Cachoeiro; a agenda dele engoliu a dela. São seis meses sem retorno e triglicerídeo que ela sabe que está subindo.",
+        "como_percebeu": "Só percebeu quando a esposa dele, também paciente, veio em consulta e comentou de passagem.",
+        "o_que_fez": "Pediu à secretária para ligar oferecendo horário das 7h30. Ele agradeceu, pediu para 'voltar mês que vem' e não voltou. Ela anotou num post-it que está colado no monitor há dois meses. É esse tipo de coisa que a faz pensar que precisa de um método, não de memória."
+      },
+      {
+        "nome": "Bianca, 19, estudante, filha de paciente antiga",
+        "historia": "Veio quatro vezes por pressão da mãe para 'aprender a comer na faculdade' e sumiu quando passou a fazer as refeições no RU e achou que estava resolvido.",
+        "como_percebeu": "A mãe reclamou na própria consulta: 'a senhora precisa ver o que essa menina anda comendo'.",
+        "o_que_fez": "Mandou uma mensagem direta e bem-humorada para a Bianca. Recebeu 'kkk verdade tia, vou marcar' e nada. Deu de ombros — adolescente é assim — mas registrou: perdeu a consulta, não a família."
+      },
+      {
+        "nome": "Dona Célia, 68, diabética, paciente de 12 anos",
+        "historia": "Sumiu por quatro meses. Elisângela assumiu que era a viagem anual para a casa da filha em Goiânia. Era depressão pós-perda do marido, e a diabetes descompensou feio nesse meio-tempo.",
+        "como_percebeu": "Quando dona Célia finalmente voltou, com a glicada em 9,8, e Elisângela sentiu um soco de culpa: os sinais estavam lá, no silêncio.",
+        "o_que_fez": "Reorganizou o retorno dela para mensal e criou, à mão, uma rotina de a secretária ligar para os idosos que passam de 60 dias sem vir. A rotina funciona quando a semana deixa — ou seja, falha uma semana sim, outra também."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 14h05",
+      "texto": "Dra Elis, desculpa incomodar no domingo!! Almoço de aniversário aqui em casa, posso repetir a moqueca ou estrago tudo? Rs",
+      "respondeu": "Respondeu às 14h07, do almoço da mãe: 'Pode. Aniversário é vida. Segunda a gente conversa.' Depois se irritou consigo mesma — não pela paciente, mas por não conseguir deixar para segunda."
+    },
+    "gasto_ferramentas_mes": 129,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 7,
+    "estimativa_perda_anual_intuitiva": "Nunca sentei para calcular, mas sinto no caixa: se me somem uns 20 por ano e cada um valia três, quatro retornos... passa fácil de R$ 20 mil. E não conto o estrago clínico, que para mim pesa mais."
+  },
+  "dores_reais": [
+    "Pacientes que escorrem no intervalo entre retornos sem que ela perceba a tempo — o caso da dona Célia virou uma pedra na consciência e um argumento que ela mesma repete",
+    "O plantão informal de WhatsApp: 8 horas semanais não cobradas, espalhadas em rajadas até na cama, sem conseguir largar porque 'é o que fideliza'",
+    "Depender da memória, de post-it e de uma rotina manual de ligações que falha sempre que a semana aperta",
+    "No-shows que em volume alto viram dinheiro grande: 7 num mês são quase R$ 2 mil",
+    "Prontuário eternamente atrasado consumindo o sábado dela"
+  ],
+  "nao_dores": [
+    "Captação: agenda fechada com três semanas de espera há anos; ela recusa mais divulgação porque não teria onde pôr paciente novo",
+    "Precificação: R$ 280 passa sem resistência na clientela consolidada; reajusta anualmente sem drama",
+    "Concorrência de Instagram: as nutris jovens não alcançam a clientela de 26 anos de vínculo dela — 'quem me deixa não vai pra influencer, vai pra vida'"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "plataforma genérica de acompanhamento nutricional com app para paciente (plano de R$ 149/mês)",
+    "historia": "Em 2022 assinou uma plataforma com app onde o paciente registrava refeições e via o plano. Pagou catorze meses, na esperança. Dos 70 e tantos pacientes, uns 20 baixaram o app, uns 6 usaram além da segunda semana e sobrou ela cobrando registro de diário como quem cobra dever de casa — mais uma tarefa, não menos. Cancelou e ficou com o pé atrás: 'ferramenta que depende do paciente ser disciplinado resolve o problema de quem não tem problema'."
+  },
+  "postura_entrevista": "Seca e apressada, olha o relógio e avisa de saída que tem 40 minutos. Respostas curtas, opiniões prontas, zero rodeio — mas precisas e cheias de exemplo concreto quando o assunto lhe interessa. Se a pergunta for boa, ela desacelera sem perceber. Fala 'pra caramba' como intensificador capixaba e um 'entendeu?' seco a cada duas frases, que não é pergunta de verdade."
+}

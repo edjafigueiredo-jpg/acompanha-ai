@@ -1,0 +1,66 @@
+{
+  "id": "097",
+  "nome": "Rosângela Cavalcanti Nóbrega",
+  "idade": 45,
+  "genero": "feminino",
+  "cidade": "João Pessoa",
+  "uf": "PB",
+  "carreira_anos": 21,
+  "especialidade": "Nutrição clínica para emagrecimento, forte em mulheres 40+ e climatério",
+  "modelo_atendimento": "Consultório próprio consolidado em Tambaú, com secretária meio período. Atende particular há duas décadas, com carteira grande construída por gerações de indicação — atende a mãe, a filha e agora a neta de algumas famílias. A renda vem das consultas e retornos; ela reluta em vender pacote porque acha que 'compromisso se constrói, não se vende'.",
+  "carteira_ativa": 74,
+  "ticket_consulta": 220,
+  "consultas_semana": 30,
+  "contexto": "Pessoense da Torre, formada pela UFPB em 2005, viúva há quatro anos — o marido cardiologista era quem mais a incentivava. Dois filhos: um fazendo medicina em Campina Grande, outra no ensino médio. O consultório é a extensão da casa dela: tem paciente que traz bolo de rolo, tem paciente que ela abraça chorando. O que a move é o vínculo — ela sabe o nome do neto de cada paciente; o que a esgota é exatamente o mesmo vínculo: cada paciente que some ela sente como abandono pessoal, e ultimamente somem mais do que antes, para os desafios de emagrecimento de aplicativo e para as canetas emagrecedoras que o Instagram empurra. Chora fácil falando disso.",
+  "rotina": "Segunda a sexta no consultório das 8h às 12h30 e das 14h30 às 18h30, consultas de 40 minutos. Quarta à tarde reserva para retornos de pacientes antigas. Sábado de manhã, feira e missa. À noite responde WhatsApp da cama, coisa que jurou parar de fazer e não para.",
+  "whatsapp_pacientes": "Número pessoal de mais de dez anos — trocar seria 'perder o fio com as meninas'. A secretária marca consulta pelo número do consultório, mas o desabafo, a foto do prato, a recaída de domingo, tudo vem no pessoal dela, entre 20h e 23h. Ela responde uma por uma, com áudio, porque acha frio responder por escrito. Sente-se honrada e devorada ao mesmo tempo: 'elas confiam em mim, mas eu não tenho mais hora minha'.",
+  "tecnologia": "Prontuário em fichas de papel num arquivo de aço mais um software de dieta de R$ 65 mensais que a filha a ensinou a usar. Agenda com a secretária num livro e no celular. Tecnologia a intimida um pouco desde a experiência frustrada com o aplicativo de acompanhamento, mas ela não é fechada — é escaldada.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Verônica",
+        "historia": "Paciente de sete anos de vínculo, 51 anos, perdeu 14 quilos com ela ao longo do tempo. Sumiu em março e reapareceu no Instagram visivelmente mais magra — começou caneta emagrecedora com um médico prescritor online, sem contar a ela.",
+        "como_percebeu": "Pelo Instagram, num domingo à noite. Ficou com o celular na mão, tonta, e chorou.",
+        "o_que_fez": "Mandou mensagem dizendo que a porta estava aberta e que caneta sem acompanhamento nutricional preocupava. Verônica respondeu com coração e 'te amo, Rô, logo apareço'. Não apareceu."
+      },
+      {
+        "nome": "Dona Marluce",
+        "historia": "Senhora de 67 anos, diabética, paciente desde 2013. Parou de vir quando a filha que a trazia se mudou para Recife; sozinha, foi deixando de remarcar.",
+        "como_percebeu": "A secretária notou três remarcações desfeitas seguidas e avisou.",
+        "o_que_fez": "Rosângela ligou — ligou, não mandou mensagem. Combinaram consulta por vídeo com ajuda do neto, que aconteceu uma vez e depois se perdeu de novo. Ela se cobra por não ter insistido mais."
+      },
+      {
+        "nome": "Larissa",
+        "historia": "Noiva de 28 anos, projeto casamento. Emagreceu 9 quilos em cinco meses, casou linda, mandou foto do vestido — e nunca mais voltou, engordando tudo de novo segundo a mãe dela, que também é paciente.",
+        "como_percebeu": "Pela mãe, na consulta da mãe, o que tornou tudo mais constrangedor.",
+        "o_que_fez": "Mandou mensagem dizendo que recomeço não é vergonha. Larissa visualizou e não respondeu. Rosângela guarda a foto do vestido no celular e suspira quando conta."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 22h20",
+      "texto": "Rô, minha flor, me perdoa a hora. Comi um baião inteiro na casa da minha sogra e tô me sentindo um lixo. Amanhã eu compenso jejuando? Me diz que eu não estraguei tudo 😭",
+      "respondeu": "Respondeu com áudio de dois minutos, acalmando, proibindo o jejum e marcando de conversar na terça. Dormiu depois da meia-noite por causa da conversa que se seguiu."
+    },
+    "gasto_ferramentas_mes": 65,
+    "horas_semana_respondendo": 12,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Já pensou nisso de madrugada: 'se cada menina que some levava dois retornos e a renovação... menina, passa fácil de 30 mil por ano. Mas o que me corta não é o dinheiro, é que eu não sei em que pé elas estão'."
+  },
+  "dores_reais": [
+    "Pacientes de anos sumindo em silêncio entre consultas — ela só descobre quando já viraram 'ex' ou quando aparecem transformadas pela caneta de outro prescritor",
+    "O plantão emocional de WhatsApp: 12 horas semanais de áudios à noite que ela não cobra e não consegue negar",
+    "Não ter nenhuma visão de quem está esfriando: o arquivo de aço não avisa que Dona Marluce desmarcou três vezes",
+    "A concorrência das canetas emagrecedoras, que entrega em 3 meses o que o método dela entrega em 12",
+    "Cansaço de quem carrega 74 vínculos afetivos sem nenhuma estrutura além da secretária meio período"
+  ],
+  "nao_dores": [
+    "Captação: 21 anos de boca a boca em João Pessoa lotam a agenda sem ela mover um dedo — chega a ter fila de espera em janeiro",
+    "Instagram e marketing: ela posta pouco e não sofre por isso; a clientela dela não vem de lá",
+    "Precificação: os R$ 220 são aceitos sem choro há anos; ela reajusta anualmente sem perder gente por preço"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "aplicativo de acompanhamento nutricional com diário alimentar para o paciente",
+    "historia": "Em 2022 assinou um plano de R$ 149 por mês, empolgada pela promessa de 'acompanhar suas pacientes entre as consultas'. Passou dois fins de semana cadastrando 60 pacientes com a filha ajudando. Em três meses, só 4 pacientes ainda registravam refeições — as outras usaram duas semanas e abandonaram o app, e ela continuava pagando para olhar telas vazias. Cancelou no sexto mês se sentindo boba, e a moça do suporte ainda dificultou o cancelamento."
+  },
+  "postura_entrevista": "Emotiva: os olhos marejam quando fala das pacientes que sumiram, e ela pede desculpa pela emoção. Responde com histórias, nomes e datas. Chama a entrevistadora de 'minha flor', intercala 'visse?' no fim das frases e de vez em quando um 'ave Maria' de espanto."
+}

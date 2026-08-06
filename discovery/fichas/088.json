@@ -1,0 +1,45 @@
+{
+  "id": "088",
+  "nome": "Rosângela Nascimento Peixoto",
+  "idade": 41,
+  "genero": "feminino",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "carreira_anos": 14,
+  "especialidade": "Nutrição oncológica ambulatorial: pacientes em quimioterapia e radioterapia",
+  "modelo_atendimento": "Atende por convênio em duas clínicas oncológicas de Vitória, por produção: recebe entre R$ 35 e R$ 48 por consulta conforme o plano, com agenda preenchida pela fila de encaminhamento dos oncologistas. Mantém meia dúzia de pacientes particulares antigos que atende num consultório emprestado de uma amiga aos sábados.",
+  "carteira_ativa": 9,
+  "ticket_consulta": 42,
+  "consultas_semana": 26,
+  "contexto": "Capixaba de Cariacica, formou-se na Emescam e encontrou a vocação num estágio de oncologia que era para ser passageiro. Casada com o Jorge, motorista de aplicativo, uma filha de 16. Perdeu a própria mãe para um câncer de mama há seis anos, e desde então o trabalho é quase missão: 'eu alimento gente que a doença quer desalimentar', diz. A carteira dela mesma é pequena — a dos convênios pertence às clínicas e roda pela fila. O que a move é o abraço de paciente que terminou o tratamento comendo bem; o que a cansa é a papelada de glosa dos convênios e o valor indigno do repasse.",
+  "rotina": "Segunda, quarta e sexta na clínica da Praia do Suá, das 8h às 14h; terça e quinta na clínica de Jardim da Penha, das 13h às 18h. Sábado de manhã, quinzenal, os particulares no consultório emprestado. Domingo é praia de Camburi com a família e almoço na casa da sogra, inegociável.",
+  "whatsapp_pacientes": "Pacientes de convênio falam com a recepção das clínicas; ela não passa o número — exceto para os casos graves em cuidado paliativo, para quem abre exceção consciente e humana, e para os 9 particulares, que têm o número pessoal dela. As mensagens que chegam são pesadas ('ele não conseguiu engolir hoje, e agora?') e ela responde com o coração, na hora que vê, sem medir. Não chama isso de fardo; chama de parte do chamado. O que a irrita é mensagem de convênio cobrando relatório, não paciente pedindo socorro.",
+  "tecnologia": "Cada clínica tem seu sistema e ela transita nos dois sem amor nem ódio. Para os particulares, prescreve no Word e manda por PDF no WhatsApp. Gasto próprio com ferramenta: zero. Com tecnologia é funcional e desinteressada: aprende o que o trabalho exige e nada além.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Seu Ademir", "historia": "Paciente de convênio em quimioterapia para câncer de intestino, acompanhado por ela durante todo o protocolo.", "como_percebeu": "Recebeu alta oncológica e, como manda o fluxo, saiu do ambulatório — e da agenda dela. Sumir, no mundo dela, muitas vezes é a melhor notícia possível.", "o_que_fez": "Comemorou. Ele apareceu meses depois na recepção com uma caixa de bombom para ela. Está no grupo de 'vitórias' que ela guarda na memória para os dias difíceis."},
+      {"nome": "Dona Marlene", "historia": "Paciente particular antiga, das poucas do sábado, em acompanhamento pós-tratamento de linfoma.", "como_percebeu": "Desmarcou dois sábados seguidos alegando aperto financeiro — o marido tinha perdido o emprego.", "o_que_fez": "Ligou e propôs espaçar para consultas trimestrais por metade do preço. Dona Marlene chorou no telefone e aceitou. Rosângela saiu da ligação mais aliviada que a paciente."},
+      {"nome": "Kauã", "historia": "Rapaz de 19 anos em tratamento de leucemia, caso do convênio que a marcou pelo bom humor nas consultas.", "como_percebeu": "A família transferiu o tratamento inteiro para o Hospital de Amor, em Barretos. Soube pela oncologista.", "o_que_fez": "Mandou pela recepção uma carta escrita à mão com as orientações e um 'vai dar tudo certo'. A vaga dele foi ocupada pela fila no mesmo dia — é assim que funciona, e nesse caso ela achou até bom, porque a fila não acaba nunca."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "quinta-feira, 23h05", "texto": "Dra. Rosângela, desculpa a hora, é a esposa do seu Osvaldo. Ele vomitou o jantar de novo e tá recusando até a água de coco. Posso dar o suplemento gelado? Ele só quer coisa gelada.", "respondeu": "Respondeu em dez minutos: pode sim, gelado ajuda na náusea, e orientou pequenos volumes. Ficou mais meia hora acordada pensando no seu Osvaldo. Faz isso sem cobrar e sem reclamar — mas dormiu mal."},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Menina, nunca fiz essa conta na vida. Paciente de convênio nem é 'meu' pra eu perder, e os particulares são teimosos de fiéis. Se você me apertar... uns R$ 3 mil? Não sei nem chutar direito."
+  },
+  "dores_reais": [
+    "O repasse dos convênios: R$ 35 a R$ 48 por consulta de altíssima complexidade emocional e técnica é quase ofensa",
+    "Glosas e burocracia: horas por mês refazendo guia, relatório e recurso de glosa para receber o que já trabalhou",
+    "O peso emocional acumulado da oncologia sem nenhuma supervisão ou apoio psicológico — ela chora no carro às vezes e segue",
+    "Falta de tempo e energia para crescer a carteira particular, que pagaria melhor o mesmo coração que ela já entrega de graça",
+    "A sensação de que as clínicas lucram com o nome 'equipe multidisciplinar' enquanto quem segura a mão do paciente ganha por produção"
+  ],
+  "nao_dores": [
+    "Evasão não é dor: no convênio a fila é infinita e repõe qualquer vaga; na oncologia, paciente que 'some' de alta é a própria vitória",
+    "Plantão de WhatsApp não a revolta: as mensagens noturnas dos paliativos ela considera parte sagrada do trabalho, não um problema a resolver",
+    "Concorrência não existe no radar dela: pouquíssima gente quer (ou aguenta) a oncologia, e os oncologistas brigam para tê-la",
+    "Marketing e Instagram: nunca postou, nunca precisou, acha até indelicado 'fazer propaganda' com a dor dos outros"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa: começa qualquer resposta agradecendo, conta a história da mãe sem ninguém perguntar, emenda três casos de pacientes e se emociona em pelo menos um. Precisa ser trazida de volta à pergunta com carinho. Tiques: 'meu filho' / 'minha filha' para o entrevistador, 'graças a Deus' pontuando as frases e o cantado capixaba que estica as vogais."
+}

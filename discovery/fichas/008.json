@@ -1,0 +1,63 @@
+{
+  "id": "008",
+  "nome": "Lívia Pantoja Cordeiro",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Manaus",
+  "uf": "AM",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição geral e familiar online — muita rotina de família, marmita de trabalhador de turno e reeducação sem sofrimento",
+  "modelo_atendimento": "Atende 100% online do quarto-escritório no apartamento dos pais, no Parque Dez. Capta pelo Instagram (6.800 seguidores, crescendo devagar com conteúdo sobre comida regional — tucumã, jaraqui, açaí sem neura) e por indicação de ex-pacientes. Cobra consulta avulsa mais retorno mensal; renda ainda instável, complementa dando aula num curso técnico duas noites por semana.",
+  "carteira_ativa": 8,
+  "ticket_consulta": 130,
+  "consultas_semana": 5,
+  "contexto": "Formada pela UFAM em 2023, começou no online direto porque não tinha capital para montar consultório. Solteira, mora com os pais e a irmã mais nova; o pai é técnico da Zona Franca. Metódica ao extremo: tem planilha para tudo, lê artigo, faz curso gratuito, anota métricas do Instagram num caderno quadriculado. A move provar (para si e para a família) que dá para viver de nutrição fora do CLT; a desanima a matemática do começo: com 8 pacientes ativos, cada abandono é estatisticamente enorme, e ela analisa cada sumiço como se fosse um estudo de caso — porque, para ela, é.",
+  "rotina": "Manhãs: consultas online (9h-12h) nos dias em que tem paciente, produção de conteúdo quando não tem. Tardes: monta planos, estuda, responde comentários e directs. Terça e quinta à noite dá aula no curso técnico, das 19h às 22h. Domingo à tarde faz sua 'reunião consigo mesma': revisa a semana na planilha, conta quantos pacientes respondeu, quantos retornos confirmou, quantos seguidores entraram.",
+  "whatsapp_pacientes": "WhatsApp Business com catálogo, mensagem de saudação e horário configurados — ela seguiu um tutorial completo. Só ela responde, entre 8h e 20h, com disciplina que ela mesma se impôs e quase sempre cumpre. Chegam poucas mensagens por dia (a carteira é pequena), mas ela nota um padrão que a incomoda: paciente que vai esfriar primeiro para de mandar mensagem, depois responde seco, depois some — e ela assiste a sequência sem saber em que ponto deveria intervir.",
+  "tecnologia": "Agenda no Google Calendar com link de Meet automático, planos alimentares num template caprichado de Canva gratuito, controle de pacientes numa planilha do Google Sheets com abas de status ('ativo', 'esfriando', 'sumiu') que ela mesma desenhou. Gasta R$ 0 em ferramenta por necessidade, não por convicção — testa tudo que tem plano gratuito e sabe listar prós e contras de cada um.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Raimundo",
+        "historia": "Pai de uma amiga, 58 anos, diabético, trabalhador de turno na Zona Franca. Três consultas boas, mas o plano não sobrevivia à escala 6x1 com turno virado; ele foi ficando sem graça de dizer que não seguia nada.",
+        "como_percebeu": "A aba 'esfriando' da planilha: ele levou quatro dias para responder o lembrete de retorno, depois oito, depois não respondeu.",
+        "o_que_fez": "Refez o plano de graça adaptado ao turno da noite e mandou. Ele agradeceu muito e sumiu do mesmo jeito. Ela registrou a hipótese no caderno: 'o problema não era o plano, era vergonha de falhar comigo'."
+      },
+      {
+        "nome": "Thayná",
+        "historia": "Colega da idade dela, 25 anos, veio pelo Instagram querendo emagrecer para uma viagem. Pagou a consulta, amou o atendimento, elogiou nos stories — e nunca marcou o retorno.",
+        "como_percebeu": "O retorno sugerido para 30 dias simplesmente nunca foi agendado; a planilha mostrou o buraco na revisão de domingo.",
+        "o_que_fez": "Mandou uma mensagem no dia 32 oferecendo horário. Resposta: 'amiga te amo, esse mês não vai dar 😭'. Lívia calculou que 60% das consultas avulsas dela morrem assim, na primeira consulta, e passou a considerar vender pacote fechado — está modelando o preço na planilha até hoje."
+      },
+      {
+        "nome": "Família Colares",
+        "historia": "Mãe, pai e filho adolescente, o combo que ela mais gosta de atender. Dois meses ótimos. Aí o pai perdeu o emprego e a mãe cancelou os três acompanhamentos numa mensagem só, pedindo muita desculpa.",
+        "como_percebeu": "A própria mãe avisou, coisa rara — ela até agradeceu a honestidade.",
+        "o_que_fez": "Ofereceu segurar só o do adolescente por metade do preço. A mãe aceitou por um mês e depois cancelou também. Foi o mês em que a receita do consultório caiu 35% de uma vez, e ela pensou seriamente em prestar concurso."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta-feira, 21h37",
+      "texto": "Lívia boa noite! me responde amanhã sem pressa tá, mas me bateu a dúvida: açaí com farinha de tapioca conta como o lanche da tarde ou já era a janta? kk",
+      "respondeu": "Viu às 21h40 e NÃO respondeu — regra é regra, das 8h às 20h. Respondeu às 8h04 do dia seguinte com áudio detalhado. Ficou secretamente orgulhosa de ter segurado, e anotou que a paciente não se importou nem um pouco."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Eu tenho quase esse número: das minhas primeiras consultas, 60% não viram retorno. Se cada uma que ficasse rendesse uns 4 retornos de 130... passa de 15 mil por ano que eu deixo na mesa. Para o meu faturamento atual, é quase metade de tudo."
+  },
+  "dores_reais": [
+    "A consulta avulsa que morre solteira: 60% dos pacientes não voltam para o primeiro retorno, e com carteira de 8 isso trava o crescimento inteiro",
+    "Ela VÊ o paciente esfriar em câmera lenta (a aba 'esfriando' da planilha) e não sabe qual intervenção funciona nem quando disparar",
+    "Cada abandono é financeiramente enorme: uma família que cancela derruba um terço da receita do mês",
+    "Insegurança de iniciante para cobrar follow-up ativo: tem medo de parecer que está 'implorando' paciente de volta",
+    "A pressão silenciosa da família para prestar concurso, que cresce a cada mês ruim"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp — com 8 pacientes e a regra 8h-20h funcionando, o volume de mensagens é tranquilo e até bem-vindo",
+    "Exaustão de agenda — o problema dela é agenda vazia, não cheia",
+    "Tecnologia difícil — ela domina e gosta; a barreira para qualquer ferramenta paga é caber em um orçamento que hoje é zero"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica: responde com estrutura ('são três motivos, o primeiro...'), cita os próprios números de cabeça e distingue com cuidado o que sabe do que está supondo ('isso é hipótese minha, não tenho dado'). Faz perguntas de volta sobre a metodologia por curiosidade genuína, não desconfiança. Tiques: 'maninha' escapando quando relaxa, 'né isso?' ao validar raciocínio, e desenhar tabelinhas imaginárias com o dedo na mesa enquanto explica."
+}

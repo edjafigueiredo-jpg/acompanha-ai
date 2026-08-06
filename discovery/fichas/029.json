@@ -1,0 +1,63 @@
+{
+  "id": "029",
+  "nome": "Cláudia Westphal",
+  "idade": 45,
+  "genero": "feminino",
+  "cidade": "Florianópolis",
+  "uf": "SC",
+  "carreira_anos": 21,
+  "especialidade": "Emagrecimento e recomposição corporal de executivos e profissionais liberais 35-55",
+  "modelo_atendimento": "Vende exclusivamente acompanhamento semestral (R$ 5.400, em até 6x) com consulta mensal presencial no consultório próprio no Itacorubi, ajustes quinzenais por formulário e suporte por WhatsApp incluso com SLA que ela mesma definiu: resposta em até 24h úteis. Não faz consulta avulsa desde 2019. A renda é previsível por desenho: contratos semestrais escalonados para vencerem distribuídos ao longo do ano.",
+  "carteira_ativa": 41,
+  "ticket_consulta": 900,
+  "consultas_semana": 11,
+  "contexto": "Nascida em Brusque, formada pela UFSC, fez carreira em clínica de medicina esportiva antes de abrir o próprio consultório em 2011. Divorciada, um filho de 17 anos vestibulando, velejadora de fim de semana na baía Norte. Trata o consultório como empresa: tem CNPJ organizado, contadora, e uma planilha-mãe que acompanha cada contrato desde 2016 — ela sabe a taxa de renovação por semestre, por origem de indicação e por faixa etária. O que a move é o jogo intelectual de fazer executivo workaholic emagrecer sem largar os jantares de negócios; o que a incomoda é um dado que a planilha mostra e ela ainda não decifrou: a adesão despenca entre a segunda e a terceira mensal, e é ali que mora a não-renovação lá na frente.",
+  "rotina": "Atende terça a quinta, das 8h às 12h30 e das 14h às 17h, consultas mensais de 50 minutos. Segunda é dia de gestão: revisa os formulários quinzenais da semana, atualiza a planilha-mãe, responde o WhatsApp acumulado dentro do SLA. Sexta de manhã estuda (assina dois periódicos) e à tarde encerra cedo. Sábado é barco, celular no cockpit só para emergência do filho.",
+  "whatsapp_pacientes": "WhatsApp Business com horário declarado em contrato: mensagens respondidas em até 24h úteis, e ela cumpre — nem antes por ansiedade, nem depois por descuido. Quem responde é só ela; testou assistente em 2022 e os dados de satisfação que ela mesma coletou pioraram, então desfez. O volume é administrável porque o formulário quinzenal drena as dúvidas. O que a inquieta não é o plantão — é que as mensagens dos pacientes esfriando chegam cada vez mais curtas antes de sumirem, e ela lê esses sinais manualmente, um a um.",
+  "tecnologia": "Agenda no Google Workspace pago (R$ 49/mês), software de avaliação física e prescrição (R$ 119/mês), formulários quinzenais no Typeform (R$ 155/mês), contratos por assinatura digital (R$ 42/mês). A planilha-mãe no Excel é o cérebro de tudo — 9 abas, tabela dinâmica, gráfico de coorte que ela montou sozinha num feriado. Relação com tecnologia: compradora madura, testa com hipótese e critério de sucesso definidos antes de assinar.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Alexandre",
+        "historia": "Sócio de construtora, dois semestres completos, resultado excelente. Não renovou o terceiro alegando 'já internalizei o método'. A planilha diz que 30% dos que saem assim voltam em 18 meses, 8 kg mais pesados.",
+        "como_percebeu": "Pela régua de renovação dela: contato aos 30 dias do vencimento, proposta aos 15, follow-up aos 5. Ele declinou no segundo contato, educadíssimo.",
+        "o_que_fez": "Registrou na planilha com o motivo codificado ('autossuficiência percebida'), agendou um follow-up frio para daqui a 12 meses e seguiu. 'Não é pessoal, é coorte.'"
+      },
+      {
+        "nome": "Renata",
+        "historia": "Médica dermatologista, sumiu DENTRO do contrato: pagou o semestre inteiro mas parou de responder formulário na semana 9 e faltou à quarta mensal.",
+        "como_percebeu": "O formulário quinzenal não preenchido acendeu o alerta manual dela na revisão de segunda-feira — duas quinzenas em branco é o padrão que antecede não-renovação em 80% dos casos da planilha.",
+        "o_que_fez": "Aplicou o protocolo dela de reengajamento: mensagem pessoal sem cobrança, oferta de encontro online curto de 20 minutos 'só pra recalibrar'. Renata aceitou o online, voltou meio no gás, e Cláudia anotou o caso como 'recuperada parcial'. Sabe que detectou tarde: a quinzena 5 já mostrava atraso de 3 dias no formulário."
+      },
+      {
+        "nome": "Guilherme",
+        "historia": "Empresário do ramo de software, ironicamente. Cancelou no meio do contrato por mudança para Portugal, pediu rescisão proporcional prevista em contrato.",
+        "como_percebeu": "Ele mesmo avisou com um mês de antecedência, civilizadamente.",
+        "o_que_fez": "Rescindiu conforme cláusula, ofereceu continuar online do fuso de Lisboa; ele preferiu encerrar. Ela registrou como 'churn não endereçável' — categoria que ela criou para não poluir a taxa que de fato a interessa."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sexta-feira, 21h30",
+      "texto": "Cláudia, boa noite. Jantar de fechamento de contrato amanhã num steakhouse. Alguma diretriz? Sem urgência, responde quando puder.",
+      "respondeu": "Leu no sábado de manhã antes do barco e respondeu em três linhas objetivas, dentro do SLA. Notou, analítica como é, que os pacientes dela aprenderam o tom: 'sem urgência, responde quando puder' aparece em metade das mensagens. Contrato educa paciente, conclui ela."
+    },
+    "gasto_ferramentas_mes": 365,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 1,
+    "estimativa_perda_anual_intuitiva": "'Não chuto, eu tenho o número: renovação em 62%, meta 75. Cada ponto percentual vale R$ 2.200 ano. A lacuna me custa uns R$ 28 mil/ano. O que eu não tenho é o mecanismo: eu SEI quem vai esfriar, a planilha mostra, mas eu detecto na segunda-feira de revisão, e às vezes a segunda-feira chega tarde.'"
+  },
+  "dores_reais": [
+    "Detecção tardia do esfriamento: os sinais estão nos dados dela (formulário atrasado, mensagem encurtando), mas a leitura é manual e semanal — ela queria ver na terça o que hoje só vê na segunda seguinte",
+    "A taxa de renovação travada em 62% com meta 75, que ela persegue há dois anos como um velejador persegue vento",
+    "O trabalho invisível da segunda-feira de gestão: 5-6 horas cruzando formulário, planilha e WhatsApp na mão",
+    "Escalar sem se diluir: a carteira de 41 é o teto operacional dela no modelo atual, e recusar paciente dói na planilha"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp: o SLA de 24h úteis em contrato blindou a agenda e os pacientes respeitam — 4 horas semanais, ponto",
+    "No-show: um no mês, executivo remarca porque pagou caro e valoriza",
+    "Captação: entra por indicação qualificada de paciente e de dois médicos parceiros; ela tem fila de espera curta e gosta assim",
+    "Organização e cobrança: o stack dela de R$ 365/mês roda liso; vendedor de 'sistema completo' vai esbarrar no ceticismo de quem já construiu o próprio"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica: responde com estrutura ('são três fatores'), cita os próprios números de coorte, diferencia opinião de dado explicitamente e corrige a pergunta quando mal formulada ('depende do que você chama de abandono'). Fria não é — é precisa. Tiques: 'na minha base...' antecedendo qualquer afirmação, e um 'ó' catarinense discreto ('olha só, ó') quando algo genuinamente a interessa."
+}

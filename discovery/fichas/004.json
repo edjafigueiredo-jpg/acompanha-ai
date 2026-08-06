@@ -1,0 +1,63 @@
+{
+  "id": "004",
+  "nome": "Tatiane Bombonato Ferrari",
+  "idade": 35,
+  "genero": "feminino",
+  "cidade": "São José do Rio Preto",
+  "uf": "SP",
+  "carreira_anos": 11,
+  "especialidade": "Nutrição clínica geral e familiar — do executivo com gordura no fígado à adolescente com compulsão",
+  "modelo_atendimento": "Consultório próprio em sala alugada num prédio de clínicas perto do shopping, com secretária em tempo integral e uma nutricionista recém-formada que ela contratou meio período para dar conta dos retornos. Renda vem de consultas particulares e de um 'plano semestral' com desconto que ela criou para segurar os pacientes. Agenda cheia com lista de espera de duas a três semanas para consulta nova.",
+  "carteira_ativa": 72,
+  "ticket_consulta": 280,
+  "consultas_semana": 38,
+  "contexto": "Formada na UNESP de Botucatu em 2014, fez uns anos de clínica em São Paulo capital, cansou do trânsito e voltou pra Rio Preto em 2019 — melhor decisão da vida, segundo ela. Casada com um dentista, sem filhos ainda ('a agenda não deixa, e eu sei que isso é um problema'). Cresceu rápido demais: em três anos saiu de 20 para mais de 70 pacientes ativos e virou refém do próprio sucesso. A move a sensação de consultório cheio e o carinho dos pacientes; a esgota o volume — ela sente que virou uma linha de produção e que os pacientes que somem escorrem por baixo da porta sem ela nem ver.",
+  "rotina": "Atende de segunda a sexta das 7h30 às 19h com uma hora de almoço que vira meia; consultas de 40 minutos que vivem atrasando. Sábado alternado, das 8h às 13h, só retornos. Domingo à noite faz o 'plantão de planilha': revisa a semana, termina planos atrasados e responde o WhatsApp acumulado. Academia às 6h da manhã três vezes por semana — único horário que sobrou.",
+  "whatsapp_pacientes": "WhatsApp Business no celular da clínica, que a secretária responde em horário comercial (agendamento e recado), mas dúvida técnica vai tudo para o pessoal da Tatiane, e são MUITAS: com 70 e tantos ativos, chegam 30, 40 mensagens por dia, das 6h às 23h. Ela responde em três blocos e ainda assim dorme com mensagem pendente. Sente culpa dupla: de demorar a responder e de estar sempre respondendo em vez de viver.",
+  "tecnologia": "Usa um sistema de agenda online com lembrete automático de consulta por WhatsApp (paga R$ 89/mês) que reduziu no-show de novo agendamento, prescreve num software de plano alimentar avulso que comprou licença vitalícia anos atrás, e mantém um Excel de controle financeiro. Gosta de tecnologia, testa coisas, mas se frustra com sistema que promete muito: 'eu não tenho tempo de configurar nada que leve mais de uma tarde'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Rodrigo",
+        "historia": "Empresário do agro, 48 anos, esteatose hepática, paciente há um ano. Viajava muito e foi remarcando, remarcando, até parar de remarcar de vez lá por março.",
+        "como_percebeu": "Honestamente? Só percebeu quando o médico que o encaminhou perguntou dele num evento. Ela ficou sem graça na frente do colega.",
+        "o_que_fez": "Chegou no consultório e pediu para a secretária levantar quem estava há mais de 90 dias sem retorno. A lista veio com 19 nomes e ela quase passou mal. Mandou mensagem para uns oito, recuperou dois, e a lista nunca mais foi refeita porque a rotina engoliu."
+      },
+      {
+        "nome": "Dona Aparecida e as filhas",
+        "historia": "Família inteira, mãe e duas filhas adultas, vinham juntas mensalmente. A filha mais velha discutiu com a secretária por causa de uma remarcação em cima da hora e as três sumiram em bloco.",
+        "como_percebeu": "A secretária contou semanas depois, meio de lado, com medo de bronca.",
+        "o_que_fez": "Ligou pessoalmente para a Dona Aparecida, pediu desculpa, ofereceu horário fixo. A mãe voltou uma vez sozinha e depois sumiu de novo. Três tickets de uma vez — foi a evasão que mais doeu no ano."
+      },
+      {
+        "nome": "Yasmin",
+        "historia": "Adolescente de 16 anos com compulsão alimentar, trazida pela mãe. Caso delicado que precisava de constância, e a constância dependia da agenda da mãe, que era caótica.",
+        "como_percebeu": "Dois no-shows seguidos. Nos casos de adolescente ela percebe rápido porque fica genuinamente preocupada.",
+        "o_que_fez": "Mandou mensagem para a mãe, indicou uma psicóloga parceira, se colocou à disposição. A mãe respondeu agradecendo e dizendo que 'vão dar um tempo'. Tatiane pensa nessa menina até hoje e se pergunta se um acompanhamento mais próximo entre consultas teria segurado o caso."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "ontem, 22h51",
+      "texto": "Tati desculpa a hora!! Amanhã 6h30 tenho exame de sangue em jejum e tomei café preto sem querer agora pouco, ferrou tudo?? remarco??",
+      "respondeu": "Respondeu em dois minutos porque estava com o celular na mão terminando os planos de domingo. Depois mandou print pro marido com a legenda 'me aposenta'."
+    },
+    "gasto_ferramentas_mes": 89,
+    "horas_semana_respondendo": 11,
+    "no_shows_ultimo_mes": 12,
+    "estimativa_perda_anual_intuitiva": "Depois daquela lista dos 19 sumidos eu fiz uma conta de padaria e me arrependi: passa fácil de 50 mil por ano entre abandono e buraco de agenda. Falei em voz alta pro meu marido e a gente ficou em silêncio."
+  },
+  "dores_reais": [
+    "Com 72 ativos, paciente some no meio da multidão e ela só descobre por acidente — a 'lista dos 90 dias' provou o tamanho do buraco e morreu por falta de braço",
+    "Plantão de WhatsApp de 30-40 mensagens/dia que nem a secretária nem a nutri júnior podem responder por ela",
+    "Sensação de linha de produção: consulta de 40 minutos atrasada, vínculo raso, e ela sabe que vínculo raso é a antessala do abandono",
+    "No-show de retorno (12 no mês) que o lembrete automático de agenda não resolve, porque o problema é motivação, não esquecimento",
+    "Zero tempo de gestão: ela é a gargalo de tudo e adia até a decisão de ter filhos por causa da agenda"
+  ],
+  "nao_dores": [
+    "Captação — lista de espera de três semanas; ela precisa de menos pacientes novos, não de mais",
+    "Precificação — aumentou o ticket duas vezes em dois anos e a demanda nem sentiu",
+    "Medo de delegar tecnologia — ela adoraria automatizar; a barreira é tempo de implantação, não resistência"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante em modo rajada: responde a pergunta, emenda três histórias, faz piada consigo mesma e volta ao ponto sozinha ('gente, viajei, o que você tinha perguntado?'). Dá números de cabeça e se entusiasma visivelmente quando o tema é o caos da agenda dela — entrevistar ela é abrir uma torneira. Tiques: 'gente' e 'assim, ó' o tempo todo, e um 'nossa senhora' rio-pretense quando cita a lista dos 19 sumidos."
+}

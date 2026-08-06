@@ -1,0 +1,64 @@
+{
+  "id": "037",
+  "nome": "Denise Werneck Sampaio",
+  "idade": 49,
+  "genero": "feminino",
+  "cidade": "Volta Redonda",
+  "uf": "RJ",
+  "carreira_anos": 24,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e síndrome metabólica — muito paciente encaminhado por endocrinologista e cardiologista",
+  "modelo_atendimento": "Coordenadora do setor de nutrição de uma clínica multiprofissional grande no Aterrado, em Volta Redonda, com três nutricionistas sob sua gestão. Contratada PJ: recebe fixo de R$ 6.500 mais percentual por produção própria. A clínica vende a consulta a R$ 180, monta a agenda de todo mundo e é dona da carteira — decisão de sistema, ferramenta e marketing é do conselho de sócios, do qual ela não faz parte, embora seja consultada.",
+  "carteira_ativa": 74,
+  "ticket_consulta": 180,
+  "consultas_semana": 28,
+  "contexto": "Nascida e criada em Volta Redonda, filha de operário da CSN, fez Nutrição na UFRJ subindo e descendo a serra de ônibus. Voltou para a cidade por escolha: 'no Rio eu seria mais uma; aqui eu construí um setor'. Está na clínica há 11 anos, montou os protocolos de atendimento, treinou as três nutricionistas da equipe e tem orgulho de engenheira disso. Casada com Paulo César, metalúrgico aposentado; a filha faz medicina em Vassouras. O que a move é sistema funcionando: protocolo, indicador, reunião com pauta. O que a cansa é a política interna — convencer sócio médico de que nutrição não é 'setor acessório' — e a produção própria de 28 consultas semanais que ela mantém para não perder o percentual.",
+  "rotina": "Segunda a sexta das 8h às 18h na clínica: atende das 8h às 13h, e a tarde divide entre atendimento e gestão — escala das meninas, reunião com a recepção, relatório mensal de produção que ela mesma inventou de fazer. Quinta 17h tem reunião de coordenação com o diretor clínico. Caminha no aterro três noites por semana com uma amiga fisioterapeuta. Domingo faz o almoço para a família e planeja a semana num caderno pautado.",
+  "whatsapp_pacientes": "Política que ela mesma escreveu: paciente fala com o número central da clínica, duas recepcionistas respondem em horário comercial com respostas padronizadas que Denise redigiu; dúvida clínica vira 'encaixe de retorno de 15 minutos', cobrado. Paciente com o pessoal dela: raríssimo, meia dúzia de casos antigos. Ela considera esse desenho uma das melhores coisas que fez — 'nutricionista de plantão de zap é falha de processo, não é dedicação'.",
+  "tecnologia": "A clínica paga um sistema de gestão robusto (agenda, prontuário, faturamento — ela sabe que custa uns R$ 800/mês para a casa) e um software de prescrição nutricional no plano clínica. Do bolso dela: nada, por princípio. Denise domina o sistema melhor que o suporte técnico, exporta relatório para o Excel e monta gráfico de produção por conta própria. Avalia ferramenta friamente: quem propõe algo novo na clínica precisa passar pela planilha de custo-benefício dela antes de chegar ao sócio.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Jorge Luiz, 55 anos",
+        "historia": "Metabólico clássico, encaminhado pelo cardiologista da casa. Quatro consultas, boa evolução, parou de remarcar em maio.",
+        "como_percebeu": "No relatório mensal que ela mesma criou: a taxa de retorno do setor caiu de 68% para 61% no trimestre e ela foi olhar nome a nome. Sem o relatório dela, ninguém teria visto — o sistema da clínica não acusa nada.",
+        "o_que_fez": "Incluiu o caso na lista que a recepção liga oferecendo reagendamento (protocolo dela, duas ligações e encerra). Jorge não voltou. Para Denise, virou dado: linha a menos na taxa, argumento a mais para pedir ao sócio uma ação de reativação que está há oito meses 'em análise'."
+      },
+      {
+        "nome": "Fernanda, 36 anos",
+        "historia": "Paciente da Thaís, uma das nutricionistas da equipe dela. Sumiu após a segunda consulta reclamando no Google da demora na recepção.",
+        "como_percebeu": "Pela avaliação de 2 estrelas no Google, que ela monitora toda sexta.",
+        "o_que_fez": "Respondeu a avaliação formalmente, chamou a Thaís para revisar o caso e levou o episódio para a reunião de coordenação como evidência de que o gargalo é a recepção, não a nutrição. A paciente em si? 'Perdida. Faz parte do funil.'"
+      },
+      {
+        "nome": "Dona Neuza, 68 anos",
+        "historia": "Paciente dela há seis anos, fiel, sumiu em março.",
+        "como_percebeu": "Sentiu falta pessoalmente — exceção que confirma a regra, com 74 ativos ela não acompanha ninguém de cabeça.",
+        "o_que_fez": "Pediu à recepção que ligasse; descobriu que a senhora tinha fraturado o fêmur. Denise mandou mensagem pessoal desejando melhora e deixou registrado retorno em suspenso. 'Essa não evadiu, essa a vida atropelou.'"
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Terça-feira, 19h20",
+      "texto": "Boa noite Dra Denise, aqui é o Ademir marido da Solange. Ela tá passando mal depois do jantar, será que foi a dieta nova? Pode ligar pra ela?",
+      "respondeu": "Respondeu em cinco minutos, objetiva: orientou procurar a UPA se houvesse dor forte e avisou que ligaria no dia seguinte no horário comercial. Ligou às 8h10. Caso clínico ela nunca deixa no vácuo — mas também não vira plantão: 'urgência é serviço de urgência, não é zap de nutricionista'."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 11,
+    "estimativa_perda_anual_intuitiva": "Para a clínica eu tenho o número, porque eu calculei: a evasão do setor de nutrição custa uns R$ 90 mil/ano para a casa. Para MIM? Meu percentual oscila talvez uns R$ 3 mil no ano — a fila de encaminhamento repõe rápido. É exatamente por isso que o sócio não prioriza: quem sente o número não decide, e quem decide não sente."
+  },
+  "dores_reais": [
+    "A política interna: ter o diagnóstico pronto, com números, e ver a decisão apodrecer na mesa dos sócios — a ação de reativação de pacientes que ela propôs está 'em análise' desde o ano passado",
+    "Carregar 28 consultas semanais de produção própria além da gestão, porque abrir mão do percentual derrubaria a renda",
+    "Reter a própria equipe: a Thaís já recebeu proposta para abrir consultório e Denise não tem alçada para dar aumento",
+    "A recepção como gargalo do setor dela: paciente evade por demora e desorganização que não estão sob o controle dela",
+    "Sensação de teto: 24 anos de carreira, coordenadora, e o próximo degrau seria ser sócia — assunto que os médicos da casa nunca deixam maduro"
+  ],
+  "nao_dores": [
+    "Evasão no próprio bolso: a fila de encaminhamento dos médicos repõe a agenda dela em uma semana; o prejuízo grande é da clínica, e ela é a primeira a dizer isso com números",
+    "Plantão de WhatsApp: o processo que ela desenhou blindou o setor — uma hora por semana e olhe lá",
+    "Captação pessoal: nunca postou um reels e não precisa; encaminhamento interno é a fonte, e ela cuida é do relacionamento com os médicos",
+    "Comprar ferramenta do próprio bolso: por princípio, jamais — 'quem é dono do problema paga pela solução, e o dono do problema tem CNPJ'"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica: pede a pergunta por escrito antes, responde em estrutura ('são três fatores...'), corrige imprecisão do entrevistador com dado e desconfia de generalização. Se entusiasma de verdade só quando abre a própria planilha para mostrar. Fluminense do interior: trata todo mundo por 'você' cerimonioso, usa 'entendeu?' de pontuação e 'na prática, assim...' antes de aterrissar qualquer teoria."
+}

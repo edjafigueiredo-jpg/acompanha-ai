@@ -1,0 +1,63 @@
+{
+  "id": "003",
+  "nome": "Rosângela Prates Macedo",
+  "idade": 42,
+  "genero": "feminino",
+  "cidade": "Vitória da Conquista",
+  "uf": "BA",
+  "carreira_anos": 18,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e síndrome metabólica",
+  "modelo_atendimento": "Consultório próprio num centro médico na Avenida Olívia Flores, dividindo a recepcionista com um cardiologista. Renda é toda de consulta particular avulsa: primeira consulta mais retornos mensais, com desconto para quem fecha três retornos adiantados. Recebe muito encaminhamento de endocrinologistas e cardiologistas da cidade e de pacientes que descem de cidades menores da região, tipo Barra do Choça e Anagé.",
+  "carteira_ativa": 26,
+  "ticket_consulta": 250,
+  "consultas_semana": 16,
+  "contexto": "Formada em Salvador (UNEB, 2007), voltou para Conquista quando casou. Divorciada há quatro anos, uma filha de 12. Já teve carteira de mais de 50 pacientes na época em que atendia até de noite; reduziu de propósito depois do divórcio para conseguir buscar a filha na escola, e agora cada paciente pesa mais na conta. É objetiva: gosta de meta, de balança de bioimpedância, de gráfico de evolução desenhado à mão na frente do paciente. O que a cansa é o ciclo do emagrecimento: paciente empolga, emagrece 5 kg, some, engorda, volta com vergonha — ou não volta.",
+  "rotina": "Atende segunda, terça, quinta e sexta das 8h às 12h e das 14h30 às 18h; quarta é dia de resolver vida e fazer os planos alimentares acumulados. Busca a filha na escola às 12h10 em ponto — a agenda é desenhada em volta disso. Sexta à tarde costuma ter mais no-show que os outros dias e ela já nem se surpreende. À noite responde WhatsApp por uma meia hora com a novela de fundo, celular no silencioso depois das 21h30.",
+  "whatsapp_pacientes": "Tem WhatsApp Business com etiqueta e mensagem automática de horário, coisa que ela mesma configurou — mas na prática os pacientes antigos têm o pessoal dela e usam. A recepcionista do centro médico só agenda, não responde dúvida. Chegam mensagens de foto de prato na hora do almoço, 'posso trocar o jantar por açaí?', desabafo de quem furou a dieta no fim de semana. Ela responde duas vezes por dia, curto e direto, e acha que responder é parte do serviço — mas se irrita quando o paciente some do retorno e continua mandando pergunta de graça pelo zap.",
+  "tecnologia": "Google Agenda compartilhado com a recepcionista, planos alimentares no Word com papel timbrado, evolução antropométrica numa planilha de Excel que ela alimenta religiosamente há dez anos. Paga a bioimpedância em 24x e o Office; fora isso, nada de assinatura. Com tecnologia é pragmática: usa bem o que já domina, desconfia do custo-benefício de coisa nova, 'ferramenta boa é a que se paga'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Adriana",
+        "historia": "Professora, 38 anos, veio com pré-diabetes e 14 kg para perder. Perdeu 7 kg em quatro meses, ficou seis semanas 'em manutenção' — e sumiu exatamente quando o resultado desacelerou.",
+        "como_percebeu": "A planilha entregou: quando foi lançar o mês, viu que a Adriana estava sem registro havia sete semanas.",
+        "o_que_fez": "Mandou mensagem oferecendo remarcar. Resposta: 'esse mês tá corrido, prof, mês que vem eu marco'. Rosângela conhece esse 'mês que vem' — pra ela é o atestado de óbito do acompanhamento."
+      },
+      {
+        "nome": "Gilmar",
+        "historia": "Caminhoneiro, 45 anos, mandado pela esposa depois do infarto do irmão. Duas consultas. Homem de estrada, sem rotina nenhuma, o plano não cabia na vida dele.",
+        "como_percebeu": "No-show no terceiro retorno; a esposa é que avisou depois, sem graça, na fila do mercado.",
+        "o_que_fez": "Disse à esposa que quando ele quisesse voltar, voltasse. Não correu atrás. Anotou mentalmente que paciente que vem empurrado por outro quase nunca fica."
+      },
+      {
+        "nome": "Luana",
+        "historia": "Noiva de 26 anos, pacote informal de seis meses até o casamento. Cumpriu tudo, casou linda — e depois da lua de mel em Porto Seguro nunca mais respondeu.",
+        "como_percebeu": "Era esperado; ela até brincou na última consulta 'depois do casamento tu vai sumir, né?'. E foi.",
+        "o_que_fez": "Nada além de curtir as fotos do casamento. Mas ficou pensando que se tivesse um jeito fácil de manter essas 'formadas' num acompanhamento leve e mais barato, metade voltaria."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quinta-feira, 22h20",
+      "texto": "Dra to na rodovia parada num posto, só tem coxinha e cachorro quente, o que eu como que estraga menos? kkk socorro",
+      "respondeu": "Viu na hora porque o celular acendeu, respondeu em uma linha ('cachorro quente sem maionese e sem batata palha, água em vez de refri') e voltou a dormir meio contrariada, meio rindo."
+    },
+    "gasto_ferramentas_mes": 130,
+    "horas_semana_respondendo": 5,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Olha, eu nunca botei no papel, mas chuto rápido: se por mês uns dois desistem no meio e cada um renderia mais uns quatro retornos de 200... dá uns 19, 20 mil por ano. É um carro popular indo embora, né?"
+  },
+  "dores_reais": [
+    "O ciclo emagrece-some-engorda-volta: ela perde o paciente exatamente no momento em que o resultado desacelera, e não tem nenhum mecanismo entre consultas para segurar",
+    "Carteira enxuta por escolha familiar significa que cada abandono e cada no-show doem direto no orçamento do mês",
+    "Sexta à tarde de cadeira vazia: no-show sem aviso que ela já 'precificou' emocionalmente mas não financeiramente",
+    "Responder dúvida no WhatsApp de paciente que sumiu do retorno — trabalha de graça e sente que está sendo usada",
+    "Falta de um jeito estruturado de manter ex-pacientes num vínculo leve que os traga de volta antes de reengordarem tudo"
+  ],
+  "nao_dores": [
+    "Captação — os encaminhamentos médicos enchem a agenda que ela quer ter; ela limita a carteira por opção, não por falta de procura",
+    "Presença digital — tem Instagram parado com 900 seguidores e zero culpa: 'meu funil é o consultório do endócrino'",
+    "Medo de tecnologia — ela usa planilha melhor que muita gente nova; o filtro dela é preço e retorno, não medo"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Pragmática: responde na ordem, com número quando tem número, e devolve pergunta quando acha vaga ('depende, tu quer saber em reais ou em paciente?'). Não se emociona fácil, mas é honesta até sobre o que faz de errado. Se a conversa render, negocia: 'e isso aí que vocês tão estudando, vai custar quanto?'. Tiques: 'ó' para iniciar explicação ('ó, é assim...') e 'lá ele' quando quer desconversar brincadeira, além de chamar a entrevistadora de 'minha querida' sem nenhuma doçura."
+}

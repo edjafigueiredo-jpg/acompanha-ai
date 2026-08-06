@@ -1,0 +1,64 @@
+{
+  "id": "033",
+  "nome": "Fátima Leal Carvalho",
+  "idade": 45,
+  "genero": "feminino",
+  "cidade": "Teresina",
+  "uf": "PI",
+  "carreira_anos": 20,
+  "especialidade": "Nutrição comportamental — comer intuitivo e paz com a comida, abordagem não-prescritiva; não entrega 'dieta' e faz questão de avisar isso antes de fechar",
+  "modelo_atendimento": "Vende um programa trimestral de R$ 2.100 chamado 'Reconciliação': seis sessões quinzenais de uma hora no consultório dela no bairro Jóquei, em Teresina, mais WhatsApp aberto entre sessões — que ela usa para acolher angústia, nunca para fiscalizar prato. Não vende consulta avulsa há seis anos. A renda vem dos pacotes e de supervisão clínica que dá para nutricionistas mais novas.",
+  "carteira_ativa": 22,
+  "ticket_consulta": 350,
+  "consultas_semana": 11,
+  "contexto": "Vinte anos de carreira, os dez primeiros prescrevendo dieta de déficit como todo mundo — até acompanhar de perto uma paciente com anorexia e atravessar ela mesma um burnout que a fez repensar o ofício. Fez formação em nutrição comportamental em São Paulo, voltou a Teresina e reconstruiu a prática do zero, perdendo metade da clientela no processo e não se arrependendo. Divorciada, dois filhos adolescentes (Pedro, 16, e Luísa, 13), mora no mesmo apartamento há quinze anos. O que a move é tirar gente da cadeia de dieta-compulsão-culpa. O que a cansa é remar contra a maré: a cidade inteira querendo 'fechar a boca pro verão' e ela explicando pela milésima vez que não entrega cardápio.",
+  "rotina": "Atende terça, quarta e quinta, das 8h às 13h, no máximo quatro sessões por dia — sessão dela é longa e ela não empilha gente. Segunda de manhã faz supervisão com três nutricionistas jovens por vídeo; sexta é dia de estudo, escrita do grupo de leitura e fisioterapia do ombro. Fim de tarde é dos filhos: leva a Luísa no handebol e cozinha ouvindo rádio. Dorme cedo, acorda 5h30 e caminha na Raul Lopes antes do calor.",
+  "whatsapp_pacientes": "Número comercial separado, que ela mesma responde em duas janelas fixas: 12h30 e 18h, e avisa isso no contrato. As mensagens que chegam são desabafo — 'comi escondido e tô me odiando', 'fui num aniversário e travei' — e ela responde com áudio calmo, sem pressa. Recusa ativamente qualquer dinâmica de paciente mandando foto de refeição: 'aqui ninguém presta conta de prato'. Não sente peso; sente que o WhatsApp, do jeito que ela desenhou, é parte da clínica.",
+  "tecnologia": "Agenda de papel Moleskine há vinte anos e um caderno por paciente, escrito à mão — diz que digitar durante sessão quebra a escuta. Paga só R$ 49/mês de um sistema simples de recibo e agenda online que a contadora mandou usar. Recordatório, app de dieta, balança em consultório: aboliu tudo por princípio clínico, não por atraso — ela lê pesquisa, cita autor, sabe exatamente o que está recusando.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Rejane, 38 anos",
+        "historia": "Chegou querendo emagrecer para o casamento da irmã. Na terceira sessão entendeu que Fátima não ia dar dieta, agradeceu educadamente e migrou para uma nutricionista de 'projeto verão' famosa no Instagram de Teresina.",
+        "como_percebeu": "A própria Rejane mandou mensagem honesta desmarcando o restante do pacote e pedindo reembolso proporcional.",
+        "o_que_fez": "Devolveu o proporcional sem discutir e desejou sorte de verdade. Para Fátima isso não é evasão, é triagem: 'não era o momento dela, e forçar seria violência'."
+      },
+      {
+        "nome": "Sílvia, 52 anos",
+        "historia": "Fez dois trimestres inteiros, melhorou muito da compulsão noturna, e no fim do segundo disse que ia 'caminhar sozinha um tempo'.",
+        "como_percebeu": "Foi combinado em sessão, de frente, como alta negociada.",
+        "o_que_fez": "Fez uma sessão de fechamento e deixou a porta aberta. Oito meses depois Sílvia mandou foto de um bolo que comeu sem culpa. Fátima considera esse o desfecho ideal — paciente que 'some' assim é sucesso, não perda."
+      },
+      {
+        "nome": "Tainá, 24 anos",
+        "historia": "Caso delicado, traço de transtorno alimentar, encaminhada por psiquiatra. Parou de responder no meio do pacote, sem aviso, depois de uma sessão difícil sobre a mãe.",
+        "como_percebeu": "Silêncio na janela de WhatsApp e falta na sessão seguinte — nela, que não falta.",
+        "o_que_fez": "Esse foi o único que tirou o sono. Ligou duas vezes, mandou carta de próprio punho (sim, carta), avisou a psiquiatra que encaminhou. Tainá voltou três semanas depois. Fátima diz: 'eu corro atrás de gente em risco, não de mensalidade'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Sábado, 23h10",
+      "texto": "Fátima me desculpa a hora. Briguei com minha mãe no jantar e ataquei a travessa de maria-isabel depois. Tô com muita vergonha de te contar isso.",
+      "respondeu": "Viu no domingo às 7h, como sempre. Respondeu com áudio de dois minutos: 'vergonha não entra na nossa sala, me conta terça como você dormiu'. Não considera isso plantão; considera clínica."
+    },
+    "gasto_ferramentas_mes": 49,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 1,
+    "estimativa_perda_anual_intuitiva": "Olhe, essa conta eu me recuso a fazer desse jeito. Paciente que sai porque quer dieta eu não 'perdi', eu filtrei. Se você me obrigar a chutar um número de reais... dois pacotes por ano? Uns quatro mil? Mas a pergunta tá errada, viu."
+  },
+  "dores_reais": [
+    "Captação qualificada: atrair o paciente que quer o trabalho DELA numa cidade onde 90% da procura é por cardápio de emagrecimento rápido",
+    "O desgaste de educar o mercado sozinha — cada primeira consulta gasta meia hora desfazendo expectativa de dieta",
+    "Concorrência de conteúdo raso: nutricionistas jovens de Teresina vendendo 'destrave mental' em carrossel, usando o vocabulário comportamental sem a clínica por trás",
+    "Sustentar ticket alto com carteira pequena: quando dois pacotes atrasam o pagamento no mesmo mês, o caixa dela sente",
+    "O ombro e o cansaço de vinte anos escutando dor alheia sem equipe"
+  ],
+  "nao_dores": [
+    "Monitoramento de paciente entre consultas: ela é ATIVAMENTE contra — check-in de refeição, foto de prato, gráfico de peso, tudo isso na visão dela reproduz a vigilância que adoece; um vendedor que oferecer isso perde a reunião no segundo minuto",
+    "Plantão de WhatsApp: as janelas fixas resolvem há anos e os pacientes respeitam porque está no contrato",
+    "No-show: paciente de pacote quinzenal de R$ 2.100 não falta; teve um no mês passado e foi internação de parente",
+    "Escalar atendimento: ela não quer mais que 25 pacientes, quer ir mais fundo com os que tem"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética e articulada: responde pergunta com pergunta ('e por que vocês acham que paciente tem que ser monitorado?'), fareja pesquisa de mercado disfarçada e diz isso na cara, com elegância. Piauiense de fala mansa: usa 'olhe' para abrir frase e 'é conversa' para descartar o que acha bobagem."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "085",
+  "nome": "Franciele Bortolotto Kuhn",
+  "idade": 34,
+  "genero": "feminino",
+  "cidade": "Cascavel",
+  "uf": "PR",
+  "carreira_anos": 11,
+  "especialidade": "Nutrição clínica para emagrecimento, forte em pós-bariátrica e obesidade grau II/III",
+  "modelo_atendimento": "Consultório próprio em sala comprada num prédio comercial do centro de Cascavel, sem secretária desde que a última pediu demissão. Atende só particular, agenda lotada com consultas de 40 minutos encadeadas, e mantém parceria informal com dois cirurgiões bariátricos que encaminham pacientes. Renda vem toda do consultório.",
+  "carteira_ativa": 68,
+  "ticket_consulta": 200,
+  "consultas_semana": 32,
+  "contexto": "Filha de produtores de soja da região de Toledo, primeira da família a se formar, fez nutrição na Unioeste e nunca saiu do oeste do Paraná. Divorciada, sem filhos, mora num apartamento a oito minutos do consultório e trabalha, na conta dela, 'umas 55 horas por semana'. Construiu carteira grande no braço: atende muito, cobra justo, entrega resultado. O que a move é orgulho de ter feito tudo sozinha; o que a cansa é que o 'sozinha' virou literal — ela é nutricionista, secretária, cobradora e plantonista de WhatsApp, e sente que a qualidade do acompanhamento entre consultas é onde o negócio dela vaza.",
+  "rotina": "Segunda a sexta das 7h30 às 19h, atendendo direto com almoço de meia hora na copa do consultório. Sábado de manhã atende das 8h às 12h, os encaixes de quem trabalha em semana. Domingo é o dia de responder o WhatsApp acumulado e montar planos — 'meu dia de folga', diz com ironia.",
+  "whatsapp_pacientes": "Número business, mas quem responde é só ela. Chegam 60 a 80 mensagens por dia: foto de refeição, dúvida de suplemento pós-bariátrica, remarcação, desabafo. Ela responde em blocos (12h30, 19h30 e o mutirão de domingo) e vive com a nuca tensa de saber que tem gente esperando. Já perdeu paciente por demorar dois dias para responder, e isso a corrói: 'a pessoa acha que eu não ligo, e eu só não dou conta'.",
+  "tecnologia": "Agenda no Google Calendar que ela mesma administra, prescrição no WebDiet a R$ 59 por mês, lembrete de consulta manual por WhatsApp quando lembra de mandar. Já olhou ferramentas de acompanhamento por cima, nunca assinou nenhuma: 'até hoje ninguém me provou que o paciente usa depois da segunda semana'. Não é avessa a tecnologia, é avessa a promessa.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Jocemara", "historia": "Pós-bariátrica de 8 meses, fase crítica de reganho, vinha mensalmente por exigência do cirurgião.", "como_percebeu": "Faltou ao retorno de junho sem avisar. Franciele só se deu conta de verdade três semanas depois, ao revisar a agenda num domingo.", "o_que_fez": "Mandou mensagem, sem resposta. Soube pelo cirurgião que a paciente estava reganhando e com vergonha de aparecer. Ligou, insistiu, conseguiu trazê-la de volta em agosto. Ficou com a pulga: quantas Jocemaras ela não pegou a tempo?"},
+      {"nome": "Edson", "historia": "Caminhoneiro de 51 anos, 128 kg, hipertenso, o tipo de paciente que ela mais gosta de pegar. Foi bem um mês e meio.", "como_percebeu": "Sumiu entre a segunda e a terceira consulta. Ela só notou quando a esposa dele, também paciente, veio à consulta e pediu desculpas pelo marido.", "o_que_fez": "Mandou áudio direto para ele, meio bronca meio carinho. Ele respondeu 'semana que vem apareço, prometo'. Não apareceu. Ela ainda tem o retorno dele anotado num post-it no monitor."},
+      {"nome": "Larissa Vitória", "historia": "Jovem de 24 anos com compulsão, chorou na primeira consulta, saiu decidida. Pagou a consulta e o retorno antecipado.", "como_percebeu": "Não veio ao retorno já pago. Isso nunca tinha acontecido — pagar e não vir.", "o_que_fez": "Mandou três mensagens em duas semanas, ofereceu remarcar sem custo, nada. Devolveu o valor por Pix por questão de princípio. Pensa nela até hoje: 'essa eu perdi na semana em que ela mais precisava, e eu nem vi acontecer'."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "sábado, 22h35", "texto": "Fran desculpa a hora, eu furei a dieta feio hoje na janta de aniversário do meu sogro, tô desesperada, joguei fora o mês?", "respondeu": "Respondeu no domingo de manhã com um áudio de 2 minutos acalmando. Fez isso da cama, antes do café, e depois reclamou sozinha que a profissão não tem porteira."},
+    "gasto_ferramentas_mes": 59,
+    "horas_semana_respondendo": 10,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "Já fiz essa conta numa noite de raiva: uns 3 pacientes por mês que somem, cada um valia uns 5 retornos no ano... passa de R$ 35 mil fácil. Falei o número em voz alta e fui dormir mal."
+  },
+  "dores_reais": [
+    "Pacientes que somem no vão entre consultas e ela só descobre semanas depois, quando o estrago (reganho, desistência) já aconteceu",
+    "O plantão de WhatsApp de 10 horas semanais que ela banca sozinha, sem conseguir nem cobrar por ele nem largar dele",
+    "Ser a própria secretária: confirmação de consulta, cobrança e remarcação comem o pouco tempo que sobra",
+    "Os 9 no-shows do mês, que numa agenda encadeada são buracos de R$ 200 que ninguém paga",
+    "Medo de que o modelo 'atender muito e barato' esteja com prazo de validade no corpo dela"
+  ],
+  "nao_dores": [
+    "Captação não dói nada: os bariátricos mandam paciente toda semana e a agenda vive com espera de 15 dias",
+    "Marketing digital não faz falta na visão dela: tem um Instagram parado há um ano e o consultório cheio assim mesmo",
+    "Precificação incomoda menos do que deveria: ela sabe que cobra abaixo de Curitiba, mas em Cascavel o volume compensa e ela não quer mexer"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética e direta: cruza os braços, responde com contra-pergunta ('e isso resolve como, na prática?') e despreza jargão de startup na hora. Mas quando o assunto encosta na dor real — a Larissa Vitória, o domingo de mutirão — ela para de testar e fala de verdade. Tiques: 'ah, mas daí...', o 's' chiado do oeste paranaense e um 'piá' ocasional."
+}

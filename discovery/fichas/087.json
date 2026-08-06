@@ -1,0 +1,45 @@
+{
+  "id": "087",
+  "nome": "Gisele Westphal Cardoso",
+  "idade": 38,
+  "genero": "feminino",
+  "cidade": "Florianópolis",
+  "uf": "SC",
+  "carreira_anos": 13,
+  "especialidade": "Nutrição geral e de família: do adolescente ao idoso, com forte demanda de doenças crônicas",
+  "modelo_atendimento": "Nutricionista CLT sênior de uma clínica multiprofissional grande no Estreito, com quatro nutricionistas no quadro. Salário fixo de R$ 6.100 mais uma gratificação pequena por meta de ocupação da agenda, que a clínica controla. A carteira é da clínica; os pacientes chegam pelos convênios e pela marca da casa, não pelo nome dela.",
+  "carteira_ativa": 82,
+  "ticket_consulta": 42,
+  "consultas_semana": 38,
+  "contexto": "Catarinense de Blumenau, veio para Florianópolis fazer faculdade na UFSC e ficou. Casada com o Márcio, dois filhos (11 e 8), casa financiada em Coqueiros. Está na mesma clínica há nove anos: viu o dono trocar de sistema três vezes, viu colegas irem 'empreender' e voltarem pedindo vaga. É a veterana que treina as nutricionistas novas e a quem a coordenação recorre para opinar sobre protocolo — opinar, nunca decidir. O que a move é a estabilidade que sustenta a casa e os filhos; o que a desgasta é a matemática fria de fazer 38 consultas por semana e ver seu valor de mercado congelado no contracheque.",
+  "rotina": "Segunda a sexta das 8h às 18h na clínica, com 30 minutos de almoço na sala dos funcionários. Terças e quintas as consultas são de convênio, em fila de 25 minutos cada. Quarta à noite leva o filho mais velho ao handebol. Fim de semana é sagrado da família, celular de trabalho nem existe.",
+  "whatsapp_pacientes": "Não dá o número a paciente, política da clínica que ela apoia com entusiasmo. Toda comunicação passa pela central de atendimento da clínica, que confirma consulta, remarca e repassa recado. Se um paciente insiste em contato direto, ela orienta com um sorriso a falar com a recepção. Acha um privilégio: as amigas de consultório próprio vivem escravas do WhatsApp e ela dorme em paz.",
+  "tecnologia": "Usa o sistema de gestão que a clínica assina (prontuário eletrônico, agenda central, prescrição integrada) — não paga nada e não escolheu nada. Em casa, tecnologia dela é planilha de orçamento doméstico e o app do banco. Avalia ferramenta profissional com frieza de quem já migrou de sistema três vezes por decisão alheia: 'ferramenta boa é a que não me dá trabalho novo'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Seu Waldemar", "historia": "Diabético de 72 anos que ela acompanhava havia quatro anos, um dos poucos com quem tinha vínculo de verdade.", "como_percebeu": "O sistema marcou três faltas seguidas. Ela pediu à central que ligasse; descobriu que ele tinha falecido.", "o_que_fez": "Mandou condolências à família pela central e ficou abalada uns dias. É o tipo de perda que o relatório de ocupação da clínica não sabe medir."},
+      {"nome": "Família Steiner", "historia": "Casal e dois adolescentes que atendia em bloco, encaminhados pelo convênio da empresa do pai.", "como_percebeu": "A empresa trocou de plano de saúde e a família inteira evaporou do sistema de um mês para o outro.", "o_que_fez": "Nada a fazer: sem convênio compatível, o vínculo com a clínica acaba. Os horários foram preenchidos pela fila em uma semana. Ela nem soube se procuraram outro profissional."},
+      {"nome": "Tainá", "historia": "Adolescente de 15 anos com sobrepeso e autoestima no chão, trazida pela mãe. Caso que Gisele achava que ia longe.", "como_percebeu": "A mãe cancelou pela central alegando 'vamos dar uma pausa'. Gisele viu a anotação no prontuário dias depois.", "o_que_fez": "Registrou orientação de retorno em prontuário e sinalizou o caso à psicóloga da clínica, que atendia a menina também. Até onde podia ir, foi. A agenda dela não sentiu: entrou outro paciente do convênio no mesmo horário."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "sexta-feira, 19h40 (na central da clínica, não no celular dela)", "texto": "Boa noite, a Dra. Gisele pode me passar por mensagem aquela lista de substituição que ela falou na consulta? Esqueci de anotar. — recado repassado pela recepção na segunda", "respondeu": "Na segunda de manhã anexou a lista em PDF no sistema e a central enviou. Ela nem soube o horário original da mensagem, e é assim que gosta."},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 0.5,
+    "no_shows_ultimo_mes": 14,
+    "estimativa_perda_anual_intuitiva": "Pra mim, zero — meu salário cai igual. Pra clínica deve ser um dinheirão, os 14 no-show do mês que o relatório mostra... mas essa conta é do financeiro, não minha, graças a Deus."
+  },
+  "dores_reais": [
+    "Teto salarial: nove anos de casa, 38 consultas por semana, e o contracheque cresceu menos que a inflação",
+    "Esteira de convênio: 25 minutos por paciente crônico é pouco, e ela sai com a sensação diária de medicina de balcão",
+    "Invisibilidade profissional: o paciente elogia 'a clínica', o Google avalia 'a clínica', e o nome Gisele Westphal não existe no mercado se ela sair",
+    "Medo silencioso de demissão aos 38: viu a clínica trocar uma veterana por duas recém-formadas mais baratas",
+    "Zero voz nas decisões: protocolos, sistema e tempo de consulta mudam por e-mail da diretoria, e quem se adapta é ela"
+  ],
+  "nao_dores": [
+    "Evasão de paciente não custa nada a ela: a fila do convênio repõe qualquer buraco em dias e o salário é fixo",
+    "WhatsApp de paciente não existe na vida dela: a central filtra tudo, e ela considera isso o maior benefício não-monetário do emprego",
+    "Captação nunca foi problema seu: em 13 anos jamais precisou atrair um paciente",
+    "Ferramenta nova não a seduz: ela não compra, não decide e já sabe que migração de sistema significa três meses de retrabalho para ela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica e comedida: pensa antes de responder, separa com cuidado 'o que é problema meu' de 'o que é problema da clínica' e corrige generalização do entrevistador com delicadeza firme. Não fala mal do empregador com todas as letras, mas as pausas dizem muito. Tiques: 'ó, vou te dizer uma coisa', e o cantado manezinho suavizado por 15 anos de Estreito."
+}

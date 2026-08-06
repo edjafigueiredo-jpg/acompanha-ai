@@ -1,0 +1,62 @@
+{
+  "id": "052",
+  "nome": "Larissa Baggio",
+  "idade": 27,
+  "genero": "feminino",
+  "cidade": "Pato Branco",
+  "uf": "PR",
+  "carreira_anos": 4,
+  "especialidade": "Nutrição comportamental com foco em relação com a comida e imagem corporal, sem prescrição de dieta restritiva",
+  "modelo_atendimento": "Consultório próprio numa sala alugada num centro clínico perto da praça Presidente Vargas, em Pato Branco. Atendimento presencial particular, sessões de 50 minutos, pagamento por Pix ou cartão na maquininha. A renda é 100% das consultas; recém começou uma parceria com uma psicóloga da sala ao lado para casos compartilhados.",
+  "carteira_ativa": 34,
+  "ticket_consulta": 150,
+  "consultas_semana": 19,
+  "contexto": "Filha de família de descendência italiana de Pato Branco, formou-se na Unochapecó e voltou para a cidade decidida a não ser 'a nutri da dieta da proteína'. Fez pós em nutrição comportamental em Curitiba, viajando um fim de semana por mês durante um ano e meio. Noiva do Maicon, que toca a agropecuária da família dele; casam em outubro e metade da cabeça dela está no orçamento da festa. Move-a ver paciente comer um pedaço de bolo de aniversário sem chorar; cansa-a explicar para a cidade inteira, inclusive para a própria nonna, que ela 'não passa dieta' e mesmo assim é nutricionista de verdade.",
+  "rotina": "Atende segunda a sexta das 8h30 às 12h e das 13h30 às 18h, com quarta à tarde bloqueada para supervisão online e prontuários. Almoça em casa quase todo dia, coisa de cidade pequena que ela faz questão. Quinta à noite dá aula convidada num grupo de estágio da faculdade da região. Sábado de manhã, a cada quinze dias, roda um grupo terapêutico de imagem corporal com a psicóloga parceira.",
+  "whatsapp_pacientes": "Número comercial separado no mesmo celular, ela mesma responde. Combina na primeira sessão: WhatsApp serve para agendamento e para a paciente avisar coisas práticas, não para 'posso comer isso?'. Quando chega pergunta de comida — e chega, umas três por semana — ela responde com carinho devolvendo a pergunta para a autonomia da paciente e anota para a sessão. Mensagens chegam mais no fim de tarde. Ela não sofre com volume; sofre quando percebe que a pergunta esconde uma crise que só vai poder acolher dali a dez dias.",
+  "tecnologia": "Agenda no Google Agenda com lembrete manual por WhatsApp na véspera, prontuário num caderno estruturado que ela digitaliza escaneando, recibos pelo app da maquininha. Paga só o Canva Pro (R$ 40/mês) para os posts quinzenais. Com tecnologia é funcional e desinteressada: 'se o caderno resolve, o caderno fica'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Jussara, 52, professora aposentada",
+        "historia": "Oito meses de processo, evolução linda com beliscamento noturno. Sumiu quando o marido enfartou; a vida virou hospital.",
+        "como_percebeu": "Cancelou duas sessões seguidas pelo WhatsApp e depois silenciou.",
+        "o_que_fez": "Mandou mensagem de cuidado sem falar de reagendar. Três semanas depois Jussara respondeu agradecendo e dizendo que volta 'quando a poeira baixar'. Larissa considera caso de vida, não de evasão."
+      },
+      {
+        "nome": "Pâmela, 23, balconista de farmácia",
+        "historia": "Chegou querendo 'fechar a boca pro verão', Larissa explicou a proposta, ela topou tentar. Aguentou três sessões e migrou para uma nutri de Francisco Beltrão que prescreve low carb com lista de compras.",
+        "como_percebeu": "Viu nos stories da própria Pâmela a foto do novo plano alimentar, com marmita marcada.",
+        "o_que_fez": "Nada. Doeu o ego meia hora, depois lembrou que triagem mal feita foi dela: aprendeu a alinhar expectativa antes de fechar."
+      },
+      {
+        "nome": "Otávio, 38, representante comercial",
+        "historia": "Um dos raros homens da carteira, encaminhado pelo cardiologista. Nunca engatou: faltava, remarcava, tratava a sessão como consulta de cardápio.",
+        "como_percebeu": "Depois do segundo no-show, simplesmente não remarcou mais.",
+        "o_que_fez": "Mandou uma mensagem única oferecendo encaminhamento para colega mais prescritiva, que talvez fizesse mais sentido para ele. Sem resposta. Ela acha que foi o mais ético que podia fazer."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta-feira, 22h15",
+      "texto": "Lari desculpa o horário!! Amanhã tem o jantar de firma do Maicon digo do meu marido kkk e eu já to ansiosa desde agora, come o que lá??",
+      "respondeu": "Respondeu na manhã seguinte, às 8h10, com um áudio curto: lembrou a paciente das ferramentas que já construíram juntas e disse que não ia responder 'o que comer' porque confiava nela. A paciente mandou coração. Para Larissa, foi uma vitória clínica, não um incômodo."
+    },
+    "gasto_ferramentas_mes": 40,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Nunca fiz essa conta. Quem sai no início é desalinhamento de proposta, quem sai no meio geralmente volta. Chutando alto? Uns 8 mil por ano, e olhe lá."
+  },
+  "dores_reais": [
+    "Educar o mercado local: em Pato Branco 'nutricionista boa' é a que emagrece a paciente em dois meses, e ela perde lead para concorrente prescritiva toda semana",
+    "Precificação: cobra R$ 150 numa cidade em que colega cobra R$ 90 com cardápio impresso, e cansa de justificar o valor de um trabalho cujo resultado é invisível na balança",
+    "Fila irregular de captação: depende de boca a boca e de dois médicos parceiros; tem mês com lista de espera e mês com buraco na agenda",
+    "A pós e a supervisão custam caro e o CRN da região oferece pouco em formação comportamental"
+  ],
+  "nao_dores": [
+    "Paciente 'descontrolada' entre consultas: ela não quer controlar ninguém — vigilância alimentar é exatamente o que ela desmonta em sessão",
+    "Volume de WhatsApp: duas horas por semana, administrável, e as mensagens viram material clínico",
+    "Gerar plano alimentar rápido: não prescreve cardápio fechado, então automação de dieta não lhe serve para nada"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante e calorosa, ri de si mesma, conta causos da cidade e do consultório emendados ('daí ela chegou, né, e eu pensei: opa'). Usa 'daí' e 'piá' sem perceber e um 'slavina' herdado da nonna quando algo a espanta. Só fecha a cara se sentir que o entrevistador acha que nutrição comportamental é frescura — aí a resposta vira aula."
+}

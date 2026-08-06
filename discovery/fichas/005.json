@@ -1,0 +1,63 @@
+{
+  "id": "005",
+  "nome": "Ingrid Sarraf Monteiro",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Marabá",
+  "uf": "PA",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição esportiva — corredores de rua, crossfiteiros e o pessoal do futevôlei do rio Tocantins",
+  "modelo_atendimento": "Vende consultoria trimestral fechada (R$ 1.350 o trimestre) com avaliação presencial numa sala que subloca dentro de um box de crossfit na Nova Marabá, ajustes quinzenais e suporte por WhatsApp incluso no preço — é o carro-chefe do serviço dela. Renda vem quase toda desses pacotes, mais umas palestras avulsas em academias e no time de corrida que ela apadrinha. Trabalha com carteira propositalmente pequena: 'poucos alunos, colados em mim'.",
+  "carteira_ativa": 8,
+  "ticket_consulta": 450,
+  "consultas_semana": 6,
+  "contexto": "Formada em Belém (UFPA, 2016), veio para Marabá acompanhando o marido, engenheiro de mineradora, e construiu tudo do zero numa cidade quente e sem tradição de nutrição esportiva. Dois filhos pequenos, 4 e 2 anos, e uma rede de apoio curta — a mãe dela ficou em Belém. Corre meia maratona, é figura conhecida nos treinos de rua das 5h30. A move ver atleta amador bater prova; a esgota o modelo que ela mesma criou: com o suporte incluso, ela é o produto, e quando o aluno some do WhatsApp o pacote continua correndo e ela se sente falhando com ele.",
+  "rotina": "Treina às 5h30, leva as crianças pra escolinha às 7h30, atende avaliações e ajustes entre 9h e 12h no box. Tarde é para montar planilhas de dieta casadas com o treino e responder o WhatsApp dos consultorados. Fim de tarde é das crianças; das 21h às 22h30, celular de novo, porque atleta amador treina de noite e manda feedback de noite. Domingo de manhã acompanha prova ou treinão quando tem.",
+  "whatsapp_pacientes": "Número comercial separado, que ela mesma criou justamente para 'desligar' — e não desliga: como o suporte é pago no pacote, ela sente obrigação contratual de responder rápido e responde em média em uma hora, das 6h às 23h. Chega de tudo: foto de marmita, print do relógio de corrida, 'posso beber no aniversário do sogro?'. Ela adora o vínculo, mas o silêncio a angustia mais que o excesso: quando um consultorado passa quatro dias sem mandar nada, ela sabe que ele desandou — e é ela quem tem que notar e ir atrás.",
+  "tecnologia": "Google Agenda, planilhas de Excel caprichadas com abas por aluno (dieta, medidas, provas-alvo), formulário do Google para o check-in quinzenal que metade dos alunos esquece de preencher, e o WhatsApp como coluna vertebral de tudo. Paga só o Canva Pro (R$ 55) pros materiais. Tecnologia pra ela é meio artesanal: ela monta as próprias gambiarras com carinho, mas admite que vive de lembrete manual.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Márcio",
+        "historia": "Crossfiteiro de 38 anos, gerente na Vale, pacote trimestral renovado duas vezes. Entrou numa fase pesada de turno na mina e sumiu do WhatsApp na metade do terceiro trimestre — pago e não usado.",
+        "como_percebeu": "O check-in quinzenal não veio e as mensagens dela foram ficando no visto. Ela percebe em dias, não em semanas — com 8 alunos, silêncio grita.",
+        "o_que_fez": "Mandou áudio, depois ligou. Ele pediu desculpa, disse que 'tava pagando à toa' e não renovou. Ela ofereceu congelar o plano; ideia boa, tarde demais. Perder 1 de 8 foi perder 12% da receita de uma vez."
+      },
+      {
+        "nome": "Patrícia",
+        "historia": "Corredora iniciante, 41 anos, meta de correr os 10 km do circuito de Marabá. Machucou o joelho no segundo mês, parou de treinar e, junto, achou que 'não fazia sentido' continuar a nutrição.",
+        "como_percebeu": "Ela mesma avisou, ao menos: mandou mensagem dizendo que ia parar 'até o joelho sarar'.",
+        "o_que_fez": "Ingrid insistiu que nutrição na lesão é quando mais importa, mandou material sobre recuperação, deu duas semanas de bônus. Segurou mais um mês e a Patrícia sumiu assim mesmo. Não renovou. O joelho sarou; a aluna não voltou."
+      },
+      {
+        "nome": "Deyvison",
+        "historia": "Menino de 22 anos do futevôlei, talento da várzea, pagava o pacote com aperto dividido no cartão. Trocou de emprego, o dinheiro apertou e ele sumiu sem conseguir dizer que era grana.",
+        "como_percebeu": "Parou de responder de um dia pro outro, coisa que não era do feitio dele — ela desconfiou na hora que era vergonha, não desinteresse.",
+        "o_que_fez": "Chamou pra um papo sem cobrança, ofereceu um plano reduzido só com ajuste mensal. Ele agradeceu, disse que voltava 'quando organizar a vida'. Ela ainda manda mensagem quando ele posta treino."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 23h10",
+      "texto": "Ingrid perdoa a hora!! churrasco do time hj, comi MUITO além do plano e amanhã é o treinão de 16k às 5h, tomo o whey mesmo assim? levo gel? me salva",
+      "respondeu": "Respondeu às 23h14 com áudio rindo, ajustou o café pré-treino e no dia seguinte às 5h ainda mandou 'bom treino, me conta como foi'. Faz parte do pacote — e do jeito dela."
+    },
+    "gasto_ferramentas_mes": 55,
+    "horas_semana_respondendo": 10,
+    "no_shows_ultimo_mes": 1,
+    "estimativa_perda_anual_intuitiva": "Isso eu sei de cabeça, porque cada um que não renova é um baque: perdi 3 renovações esse ano, 1.350 cada, e uns dois trimestres que a pessoa pagou e abandonou no meio... uns 8 a 10 mil. Pra uma carteira de 8, é um mundo."
+  },
+  "dores_reais": [
+    "O silêncio do aluno: quando o consultorado some do WhatsApp o pacote segue correndo, e é ela quem carrega a angústia de perceber e resgatar — manualmente, um por um",
+    "Renovação de trimestre é a hora da verdade: aluno que sumiu nas duas últimas semanas não renova, e cada não-renovação leva 12% da receita",
+    "O suporte incluso não tem fronteira: 6h às 23h, sábado e domingo, porque atleta amador vive fora do horário comercial",
+    "Check-in quinzenal por formulário do Google que metade esquece — o 'sistema' de acompanhamento dela depende do aluno lembrar",
+    "Carteira pequena numa cidade sem cultura de nutrição esportiva: perder um aluno dói na hora e repor demora meses"
+  ],
+  "nao_dores": [
+    "No-show — com 8 alunos e horário combinado no zap, quase não existe; remarca-se conversando",
+    "Concorrência local — em Marabá ela é praticamente a única com esse posicionamento; a barreira é o mercado ser pequeno, não disputado",
+    "Burocracia de recibo e prontuário — o volume é tão baixo que ela resolve numa tarde por mês sem sofrer"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa: trata a entrevista como conversa de pós-treino, conta a história de cada aluno com nome, prova e tempo de conclusão, e se emociona falando do Deyvison. Divaga para o calor de Marabá, a saudade de Belém e a maternidade antes de voltar ao ponto. Tiques: 'égua' como pontuação de espanto, 'mana' para se dirigir à entrevistadora, e 'tá entendendo?' fechando explicações."
+}

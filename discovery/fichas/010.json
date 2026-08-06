@@ -1,0 +1,63 @@
+{
+  "id": "010",
+  "nome": "Fernanda Ottoni Rezende",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Brasília",
+  "uf": "DF",
+  "carreira_anos": 9,
+  "especialidade": "Emagrecimento para concurseiros e servidores públicos — rotina sedentária, estresse e comer emocional de quem vive sentado estudando ou despachando processo",
+  "modelo_atendimento": "Atendimento 100% online do apartamento em Águas Claras, captação pelo Instagram (18 mil seguidores) com um nicho esperto: 'nutrição para quem estuda 8 horas por dia sentado'. Vende acompanhamento mensal por assinatura (consulta + ajuste quinzenal por mensagem) e um plano trimestral com desconto que ela empurra sempre, porque descobriu que trimestral segura mais. Renda vem toda daí.",
+  "carteira_ativa": 27,
+  "ticket_consulta": 230,
+  "consultas_semana": 15,
+  "contexto": "Mineira de Uberlândia, formada pela UnB em 2016, ficou em Brasília — cidade que ela lê friamente: 'aqui todo mundo ou é servidor, ou quer ser, ou atende um dos dois'. Casada com um analista do Banco Central, sem filhos, uma cachorra chamada Farofa. Já trabalhou em clínica de estética e saiu enojada das promessas milagrosas; montou o negócio atual em 2021 com posicionamento sóbrio e planilha de gestão. É objetiva, mede tudo o que consegue medir sozinha e trata o consultório como negócio sem culpa. A move a autonomia; a irrita perder paciente no ciclo previsível dela: o concurseiro some na reta final da prova — exatamente quando o comer emocional explode — e reaparece meses depois, se reaparece.",
+  "rotina": "Atende terça a sexta, das 9h às 13h e das 15h às 18h, em consultas online de 40 minutos. Segunda é dia de negócio: conteúdo, métricas, ajustes de plano e a revisão da lista de assinaturas. Fim de tarde caminha com a Farofa no parque de Águas Claras ouvindo áudio de paciente em velocidade 1,5x. Responde mensagens em duas janelas fixas (12h30 e 17h30) e de noite tenta — tenta — não abrir o aplicativo.",
+  "whatsapp_pacientes": "WhatsApp Business com etiquetas, respostas rápidas e janelas de resposta declaradas na primeira consulta: 'respondo às 12h30 e às 17h30, urgência é exceção'. Funciona 80% do tempo. O ajuste quinzenal por mensagem faz parte do que o paciente paga, então o volume é real: umas 25 mensagens por dia. O que ela sente: o sistema dela segura o dia a dia, mas quebra nas épocas de prova — semana de concurso grande é enxurrada de mensagem ansiosa fora de hora, seguida de um silêncio coletivo pós-prova que derruba a receita do mês seguinte.",
+  "tecnologia": "Agenda online com cobrança recorrente integrada (R$ 119/mês), planilha própria de churn por safra ('quem entra em janeiro dura mais que quem entra em agosto — dado meu'), formulário de check-in quinzenal. Fluente e cética ao mesmo tempo: assina rápido, mede o retorno em 60 dias e corta sem cerimônia. Já testou e cancelou dois apps de marketing que não se pagaram.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Henrique",
+        "historia": "Concurseiro de carreira fiscal, 29 anos, oito meses de acompanhamento, ótima evolução. Na reta final da prova da Receita cancelou a assinatura 'pra focar': sumiu no exato mês em que passou a viver de café e biscoito.",
+        "como_percebeu": "O cancelamento chegou pelo próprio sistema de cobrança, formal, sem drama.",
+        "o_que_fez": "Mandou mensagem propondo um 'modo reta final' mais leve, metade do preço. Ele recusou educado. Ela anotou na planilha o padrão que já viu dezenas de vezes: 'pré-prova = churn'. Já pensou em criar um produto específico pra essa fase; está no backlog dela há um ano."
+      },
+      {
+        "nome": "Roberta",
+        "historia": "Servidora de tribunal, 44 anos, dois anos de casa, a paciente-propaganda. Passou num processo de remoção pra Belém e, na mudança, cancelou 'temporariamente'.",
+        "como_percebeu": "Avisou com antecedência, gentil como sempre — mas o 'volto quando me instalar' já dura cinco meses.",
+        "o_que_fez": "Fez follow-up no mês 2 e no mês 4, mensagens boas, sem resposta efetiva. Perder a Roberta doeu no bolso e no ego: se nem a paciente ideal fica, o produto de 'longo prazo' dela tem um furo que ela ainda não achou."
+      },
+      {
+        "nome": "Diego",
+        "historia": "Assessor parlamentar, 35 anos, entrou empolgado no trimestral. Homem de picos: duas semanas seguindo tudo, três sumido, voltava pedindo desculpa. No segundo trimestre parou de agendar as consultas mas continuou pagando dois meses sem usar nada.",
+        "como_percebeu": "A planilha de utilização acusou: pagante ativo, uso zero. Pra ela isso é pior que cancelamento — 'é churn andando morto'.",
+        "o_que_fez": "Mandou mensagem honesta: 'você está pagando e não está usando; bora reativar ou pausar?'. Ele reativou por quinze dias e cancelou no vencimento. Ela mantém a política de avisar mesmo perdendo dinheiro com isso — acha que é o certo e que preserva a marca."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 20h15",
+      "texto": "Fernanda, boa noite. Prova do TJ foi hoje. Não fui bem. Pedi um balde de 14 pedaços de frango frito no app e comi sozinho. Só queria te contar antes de você ver no check-in. Desculpa.",
+      "respondeu": "Quebrou a própria regra e respondeu às 20h31, séria e acolhedora, marcando conversa pra segunda. Depois fechou o app e disse ao marido: 'é por isso que eu não consigo automatizar tudo'."
+    },
+    "gasto_ferramentas_mes": 119,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "Tenho o número da minha planilha: churn médio de 3 pacientes/mês, vida média que eu queria de 12 meses e consigo 6. A diferença dá uns 45 mil por ano. O que eu não tenho é a solução, senão já tinha aplicado."
+  },
+  "dores_reais": [
+    "O churn cíclico do nicho: o concurseiro cancela na reta final da prova, justamente quando o comer emocional piora — ela vê o padrão na planilha e não tem produto nem processo para segurar",
+    "'Churn andando morto': pagante que para de usar o serviço semanas antes de cancelar, e a detecção depende dela cruzar planilha na segunda-feira",
+    "O acompanhamento entre consultas é o que segura a retenção, mas é manual e tem o tamanho do dia dela — as janelas de 12h30/17h30 não escalam além dos ~30 pacientes",
+    "Follow-up de recuperação artesanal (caso Roberta): mensagens boas, disparadas quando ela lembra, sem cadência nem medição",
+    "Sensação de teto: sabe que dobrar a carteira sem quebrar a qualidade do acompanhamento é impossível no braço, e não sabe qual parte dá pra sistematizar sem perder o toque humano"
+  ],
+  "nao_dores": [
+    "Captação — o nicho concurseiro é um oceano em Brasília e o funil dela enche; ela recusa paciente fora do perfil",
+    "Cobrança e inadimplência — a assinatura automática resolveu isso em 2022; quase não pensa mais no assunto",
+    "Medo de tecnologia ou de parecer fria — ela automatiza sem culpa o que dá; o critério é só se funciona e se paga"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Pragmática cirúrgica: chega com os números dela anotados, responde no tamanho da pergunta e corta rodeio do entrevistador ('essa pergunta é igual à terceira, quer que eu repita ou aprofunde?'). Sem frieza, mas sem cerimônia; termina no horário combinado. Tiques: 'uai' mineiro que sobreviveu a Brasília, 'na minha planilha' como muleta de autoridade, e resumir a própria resposta no final ('em uma frase: o problema é X')."
+}

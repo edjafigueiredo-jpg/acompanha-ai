@@ -1,0 +1,63 @@
+{
+  "id": "015",
+  "nome": "Márcia Furtado Lins",
+  "idade": 51,
+  "genero": "feminino",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "carreira_anos": 27,
+  "especialidade": "Nutrição oncológica ambulatorial: pacientes em quimioterapia, radioterapia e sobreviventes de câncer",
+  "modelo_atendimento": "Consultório próprio na Tijuca, perto do Hospital Universitário onde fez residência, atendendo só particular. A carteira é grande porque o acompanhamento oncológico é longo: paciente em tratamento volta a cada duas ou três semanas por meses. A renda vem toda da consulta particular, com muitos encaminhamentos de três oncologistas que confiam nela há mais de uma década.",
+  "carteira_ativa": 52,
+  "ticket_consulta": 320,
+  "consultas_semana": 21,
+  "contexto": "Márcia é carioca da Tijuca, formada pela UERJ em 1999, e entrou na oncologia por causa do pai, que ela acompanhou num câncer de esôfago durante a faculdade. Viúva desde 2019, um filho adulto morando em Lisboa, e uma rotina que ela mesma descreve como 'trabalho, praia de domingo de manhã e olhe lá'. É referência no nicho: oncologistas mandam paciente porque sabem que ela segura a mão da família inteira durante o tratamento. O que a move é impedir que o paciente chegue caquético na cirurgia. O que a cansa é que, no nicho dela, paciente que some não é paciente desmotivado — pode ser paciente internado, piorando ou desistindo de comer, e cada silêncio no WhatsApp carrega esse peso. Ela vive num estado de meia-vigília permanente.",
+  "rotina": "Atende de segunda a sexta, 8h às 17h, com consultas de 40 minutos e almoço curto na padaria da esquina. Quarta à noite tem reunião online com uma liga de nutrição oncológica da qual é tutora. Responde WhatsApp em três blocos que ela impôs a si mesma: 7h30, 13h e 20h — mas urgência de paciente em quimio fura qualquer bloco. Domingo de manhã, praia do Leme com as irmãs, celular no modo som alto 'por via das dúvidas'.",
+  "whatsapp_pacientes": "Número business, mas na prática funciona como plantão clínico: mucosite que impede de comer, vômito que não para, família perguntando se pode suspender o suplemento. Quem responde é só ela — não delega porque um erro ali machuca gente frágil. As mensagens chegam a qualquer hora e ela responde as urgências em minutos, inclusive de madrugada quando acorda e olha. Não se ressente como quem reclama de incomodo: se ressente de não ter sistema nenhum por trás dela, de tudo depender da memória e da vigilância dela.",
+  "tecnologia": "Prontuário num software simples de clínica que paga há anos (R$ 89 por mês), agenda com a secretária no mesmo sistema, cálculos de necessidade energética numa planilha antiga que ela mesma refina desde a residência. Relação com tecnologia é utilitária e sem medo: usa o que funciona, não caça novidade, mas topa mudar se alguém mostrar que reduz risco de ela deixar um paciente escapar.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Waldir",
+        "historia": "Paciente com câncer de cabeça e pescoço, 68 anos, em radioterapia. Faltou ao retorno e não respondeu por cinco dias. Márcia foi atrás: ele estava internado por desidratação, tinha parado de usar o espessante e ninguém a avisou.",
+        "como_percebeu": "A secretária marcou a falta, e Márcia, que revisa as faltas do dia toda noite, estranhou na hora, porque Waldir nunca faltava.",
+        "o_que_fez": "Ligou para a filha, descobriu a internação, falou com a nutricionista do hospital e retomou o caso na alta. Ficou uma semana ruminando que só descobriu por teimosia dela, não porque algo a avisou."
+      },
+      {
+        "nome": "Renata",
+        "historia": "Sobrevivente de câncer de mama, 44 anos, em acompanhamento de manutenção pós-tratamento. Com a vida voltando ao normal, foi espaçando: de mensal para 'marco mês que vem', até sumir de vez.",
+        "como_percebeu": "Levou uns três meses para cair a ficha, porque paciente de manutenção não tem a urgência dos que estão em quimio e escorrega para o fundo da fila de atenção dela.",
+        "o_que_fez": "Mandou mensagem carinhosa, Renata respondeu 'tô ótima, logo marco!'. Márcia sabe que é nessa fase que o peso volta e os hábitos desandam, e admite que os pacientes de manutenção são o furo do modelo dela: ela não tem largura de banda para vigiar quem não está grave."
+      },
+      {
+        "nome": "Dona Terezinha",
+        "historia": "Paciente paliativa de 81 anos. A família suspendeu as consultas quando ela entrou em cuidado domiciliar exclusivo, e Márcia soube do falecimento por um áudio da neta, um mês depois.",
+        "como_percebeu": "O silêncio ali era esperado; a notícia veio quando veio.",
+        "o_que_fez": "Mandou flores e uma mensagem. Guarda o áudio da neta agradecendo. No nicho dela, nem todo sumiço é churn, e ela faz questão de dizer isso: 'tem sumiço que é luto, e a gente respeita'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quinta-feira, 23h40",
+      "texto": "Dra Marcia, é a Sueli filha do sr Ademir. Ele vomitou o jantar de novo e não quer nem a dieta da caixinha. Amanhã tem quimio. O que eu faço??",
+      "respondeu": "Respondeu em dez minutos: orientou hidratação fracionada, o que ofertar de madrugada e mandou avisar a enfermagem da quimio logo cedo. Dormiu mal, checou o celular às 6h."
+    },
+    "gasto_ferramentas_mes": 89,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 5,
+    "estimativa_perda_anual_intuitiva": "Em dinheiro eu nunca fechei essa conta, mas os pacientes de manutenção que escorregam... uns dois por mês, fácil. Isso deve dar uns 25 mil por ano. Só que o que me pesa não é o valor, é não saber se o sumido tá bem."
+  },
+  "dores_reais": [
+    "Vigiar 52 pacientes na memória: o sistema de alerta dela é ela mesma revisando faltas à noite, e ela sabe que um dia vai deixar um Waldir passar",
+    "O plantão de WhatsApp clínico sem retaguarda: urgência real chega a qualquer hora e não existe triagem nem histórico organizado por trás",
+    "Pacientes de manutenção pós-tratamento que escorregam para fora do radar porque os graves consomem toda a atenção dela",
+    "Cansaço acumulado de estar 'de sobreaviso' há vinte anos sem nunca ter feito férias com o celular desligado",
+    "Ter que reconstruir o contexto de cada caso de cabeça quando a mensagem chega, porque o histórico está espalhado entre prontuário, planilha e conversas"
+  ],
+  "nao_dores": [
+    "Captação: três oncologistas lotam a agenda dela; a lista de espera é de três semanas e ela não faz marketing nenhum, nem tem Instagram profissional",
+    "Preço e concorrência: no nicho oncológico da Tijuca praticamente não há concorrente, e as famílias não escolhem por preço",
+    "Engajamento do paciente com dieta: o paciente oncológico e a família são dos mais aderentes que existem — o problema nunca é motivação, é a doença"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Pragmática e direta: responde o que foi perguntado, em frases curtas, e avisa 'tenho quarenta minutos, vamos aproveitar'. Não romantiza nem dramatiza, mas quando fala dos pacientes o tom muda e ela deixa escapar afeto. Carioca de 'cara' e 'entendeu?' no fim das frases, e um 'olha' seco antes de discordar."
+}

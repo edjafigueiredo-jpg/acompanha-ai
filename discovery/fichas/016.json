@@ -1,0 +1,63 @@
+{
+  "id": "016",
+  "nome": "Patrícia Ormond Arruda",
+  "idade": 43,
+  "genero": "feminino",
+  "cidade": "Cuiabá",
+  "uf": "MT",
+  "carreira_anos": 18,
+  "especialidade": "Nutrição comportamental: comer intuitivo e relação com a comida, abordagem não-prescritiva — sem dieta, sem balança, sem contagem",
+  "modelo_atendimento": "Vende exclusivamente um programa semestral (R$ 3.300 em seis parcelas) com sessão quinzenal de uma hora e suporte por WhatsApp incluso, que ela chama de 'acompanhamento entre encontros'. Atende num consultório aconchegante no bairro Popular, em Cuiabá, metade presencial, metade online para pacientes de Rondonópolis, Sinop e até fora do estado. A renda vem toda das parcelas dos programas ativos.",
+  "carteira_ativa": 63,
+  "ticket_consulta": 275,
+  "consultas_semana": 24,
+  "contexto": "Patrícia é cuiabana, formada pela UFMT em 2008, e passou dez anos prescrevendo dieta de emagrecimento até quebrar por dentro: o próprio transtorno alimentar, tratado aos 33, a fez migrar para a nutrição comportamental. Hoje atende majoritariamente mulheres com anos de dietas fracassadas e compulsão. Divorciada, um filho de 12, mãe que mora com ela. O que a move é ver paciente comer bolo sem culpa pela primeira vez em vinte anos. O que a cansa: o processo comportamental é longo e o abandono no meio é uma ferida clínica — quando a paciente some na semana difícil, é justamente quando mais precisa — e o WhatsApp incluso a transformou numa escuta permanente de 63 mulheres em sofrimento. Importante: ela é visceralmente contra monitorar comida, foto de prato e diário alimentar; o acompanhamento que ela quer é do vínculo e do processo, jamais do prato.",
+  "rotina": "Sessões de segunda a quinta, das 8h às 12h e das 14h às 18h, presencial de manhã e online à tarde. Sexta é dia de supervisão clínica com uma psicóloga parceira, estudo e grupo terapêutico mensal que ela conduz. Responde WhatsApp entre sessões e num bloco das 20h30 às 21h30, mas mensagem de crise fura o horário. Domingo tenta ser do filho, com sucesso parcial.",
+  "whatsapp_pacientes": "Número business, só ela responde — terceirizar escuta seria trair o método. As mensagens não são de logística: são desabafos. Episódio de compulsão às 22h, choro depois de comentário da sogra no almoço, medo de recaída. O suporte está incluso no programa e é parte do que cura, ela acredita nisso de verdade. Mas confessa, com a guarda baixa, que carrega o sofrimento de 63 pessoas no bolso, e que o silêncio repentino de uma paciente a assombra mais que qualquer mensagem: 'quando param de escrever é que eu me preocupo'.",
+  "tecnologia": "Agenda no Google Agenda, anotações de sessão num caderno físico por paciente (faz questão do papel), contratos e parcelas controlados pela irmã, que é contadora, numa planilha. Paga R$ 49 por mês de uma plataforma de agendamento com lembrete automático, que aceitou usar porque lembrete de sessão não é vigilância. Desconfia por princípio de qualquer tecnologia que prometa 'monitorar' paciente: no mundo dela, monitoramento de comida é gatilho e retrocesso clínico.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Luciana",
+        "historia": "Paciente com compulsão em franca melhora, quarto mês de programa. Teve uma recaída forte num churrasco de família, sentiu vergonha de contar e sumiu das sessões — o clássico do transtorno: some exatamente quando mais precisa.",
+        "como_percebeu": "Faltou a uma quinzenal sem avisar, coisa que nunca tinha feito, e o chat dela ficou mudo. Patrícia sentiu o alarme no corpo no mesmo dia.",
+        "o_que_fez": "Mandou uma mensagem sem cobrança: 'Lu, recaída faz parte do processo, a porta tá aberta e sem julgamento'. Luciana voltou três semanas depois, chorando. Foi a sessão mais importante do programa dela."
+      },
+      {
+        "nome": "Vera",
+        "historia": "Senhora de 58 anos, veio empurrada pela filha. Nunca comprou a abordagem: queria 'a dieta', pesava-se escondido toda semana. Abandonou no segundo mês e pediu cancelamento das parcelas restantes.",
+        "como_percebeu": "A própria Vera mandou mensagem seca pedindo para cancelar, dizendo que 'sem dieta não funciona pra ela'.",
+        "o_que_fez": "Devolveu a parcela do mês sem discutir e encaminhou dois nomes de colegas prescritivas. Doeu menos no bolso e mais na convicção — e ela reconhece que paciente com o perfil errado dentro do programa é um erro de triagem dela."
+      },
+      {
+        "nome": "Gabriela",
+        "historia": "Paciente online de Sinop, sétima sessão, evolução linda. O marido perdeu a safra de soja, a família cortou tudo que não era essencial, e o programa dela foi junto.",
+        "como_percebeu": "A irmã contadora avisou da parcela estornada antes mesmo da mensagem de desculpas da Gabriela chegar.",
+        "o_que_fez": "Ofereceu congelar o programa por seis meses em vez de cancelar. Gabriela aceitou e manda notícia de vez em quando. Patrícia não sabe se ela volta, e isso a incomoda mais do que admite."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sexta-feira, 23h55",
+      "texto": "Pati eu comi tudo que tinha na cozinha. Tudo. Eu tava indo tão bem. Eu sou um fracasso mesmo, me desculpa",
+      "respondeu": "Respondeu à meia-noite e cinco, com um áudio calmo de dois minutos, e agendou uma conversa extra no sábado de manhã. Não cobrou nada. Domingo estava exausta e brigou com o filho por bobagem, e se culpou pelas duas coisas."
+    },
+    "gasto_ferramentas_mes": 49,
+    "horas_semana_respondendo": 12,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Nunca fiz essa conta em dinheiro, acho até feio pensar assim... mas se me apertar: umas cinco ou seis que abandonam no meio por ano, programa de 3 mil e pouco... uns 12, 15 mil? O pior pra mim não é isso, é que quem some tá pior do que quem fica."
+  },
+  "dores_reais": [
+    "O sumiço silencioso da paciente em recaída: o abandono acontece exatamente no momento clínico mais crítico, e ela só percebe quando a falta já aconteceu",
+    "Carregar a escuta de 63 mulheres no WhatsApp incluso no programa: 12 horas semanais e um cansaço emocional que supervisão nenhuma dá conta",
+    "Não conseguir desligar: mensagem de compulsão à meia-noite não espera segunda-feira, e ela é o único plantão que existe",
+    "Triagem falha: paciente que quer dieta entra no programa, abandona no meio e sai falando que 'não funciona', o que machuca a reputação do método na cidade",
+    "A agenda saturada com 24 sessões semanais: não cabe mais ninguém e ela não vê como crescer sem se trair"
+  ],
+  "nao_dores": [
+    "Monitoramento do que o paciente come entre sessões: um vendedor assumiria que ela quer 'visibilidade da adesão', mas para ela diário alimentar e foto de prato são gatilho e violência — ela pagaria para NÃO ter isso",
+    "Captação: a fila de espera do programa é de dois meses, alimentada por psicólogas e psiquiatras que encaminham; ela não precisa de mais gente, precisa de fôlego",
+    "Prescrição de dieta e cálculo: não prescreve plano alimentar por princípio, então qualquer ferramenta de 'montar dieta em 5 minutos' é irrelevante para ela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada de saída: quer saber quem financia a pesquisa, avisa que 'se for coisa de app de dieta, a gente já pode encerrar' e responde curto até sentir que o entrevistador não é vendedor. Quando confia, abre com profundidade rara. Fala cuiabana: 'vôte', um 'né mano' ocasional, e o 'tchá por Deus' quando se espanta."
+}

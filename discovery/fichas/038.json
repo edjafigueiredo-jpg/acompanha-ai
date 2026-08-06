@@ -1,0 +1,63 @@
+{
+  "id": "038",
+  "nome": "Camila Menezes Fontes",
+  "idade": 25,
+  "genero": "feminino",
+  "cidade": "Aracaju",
+  "uf": "SE",
+  "carreira_anos": 2,
+  "especialidade": "Nutrição oncológica ambulatorial — suporte nutricional a pacientes em quimioterapia e radioterapia",
+  "modelo_atendimento": "Atende por convênio em duas clínicas de Aracaju: um centro de oncologia no bairro São José (três dias) e uma clínica de especialidades no Luzia (dois dias). Agenda lotada pela fila dos planos — Unimed, Cassi, Ipes —, repasse por produção de R$ 38 a R$ 55 por consulta conforme o plano. A fila de encaminhamento oncológico nunca acaba; o problema dela nunca foi ter paciente, é o quanto cada um paga.",
+  "carteira_ativa": 88,
+  "ticket_consulta": 45,
+  "consultas_semana": 38,
+  "contexto": "Sergipana de Itabaiana, caçula de quatro irmãos, primeira da família com diploma — Nutrição na UFS, com residência ainda fresca em oncologia no Huse. Escolheu a área depois de acompanhar o câncer da avó, que morreu no seu terceiro período; conta isso com a voz embargada até hoje. Mora num quitinete no bairro Inácio Barbosa, dividindo custos com uma amiga da residência, e manda dinheiro para a mãe todo mês. O que a move é devolver comida à boca de quem a quimio tirou o gosto de viver. O que a cansa é fazer isso a R$ 45 a consulta, 38 vezes por semana, chorando escondido no banheiro da clínica em dia de notícia ruim.",
+  "rotina": "Segunda, quarta e sexta no centro de oncologia das 7h às 13h, consultas de 25 minutos coladas umas nas outras; terça e quinta na clínica do Luzia, das 13h às 19h. Nos buracos, evolui prontuário e briga com glosa de convênio — o relatório que o plano devolve pedindo justificativa é o terror das noites de domingo. Sábado de manhã faz plantão voluntário num grupo de apoio a pacientes oncológicos na paróquia. Praia de Atalaia quando sobra alma.",
+  "whatsapp_pacientes": "Oficialmente o contato é a recepção de cada clínica. Na prática, ela dá o número pessoal para os casos graves — caquexia, paciente em quimio paliativa — porque 'família de paciente oncológico não pode esperar segunda-feira'. Chegam mensagens duras a qualquer hora: 'ele não quis nem a sopa hoje', 'a senhora acha que suplemento resolve?'. Ela responde tudo, inclusive de madrugada, e sabe que isso não é sustentável; a supervisora da residência já a alertou sobre isso e ela concorda chorando e continua respondendo.",
+  "tecnologia": "Usa os sistemas das duas clínicas (diferentes entre si, ambos travando) e não paga nada do próprio bolso — com o repasse que recebe, R$ 50/mês de ferramenta seria escolher entre software e a feira. Faz cálculo de necessidade energética em planilha que trouxe da residência. É jovem e fluente em celular, mas tecnologia para ela hoje é sinônimo de sistema de convênio travado e senha que expira.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Josué, 71 anos",
+        "historia": "Câncer de esôfago, ela lutou três meses pela via alimentar dele. Sumiu da agenda em junho.",
+        "como_percebeu": "Perguntou à enfermagem do centro de oncologia, coração apertado, achando que ele tinha morrido.",
+        "o_que_fez": "Descobriu que a família mudou o tratamento para Salvador. Alívio e um vazio: ela nunca soube se ele seguiu com nutricionista lá. Na fila do convênio, o horário dele foi de outro paciente na mesma semana — administrativamente ninguém sentiu; só ela sentiu."
+      },
+      {
+        "nome": "Dona Terezinha, 58 anos",
+        "historia": "Câncer de mama, finalizou a quimio, recebeu alta oncológica — e com a alta, o convênio parou de autorizar as consultas de nutrição de seguimento.",
+        "como_percebeu": "A recepção avisou que o plano negou a continuidade. Não foi a paciente que sumiu; foi o sistema que a levou.",
+        "o_que_fez": "Orientou por telefone de graça, indicou o posto de saúde e engoliu a revolta. 'Aqui paciente não abandona a gente. O plano é que descarta o paciente.' É a frase que ela repete quando alguém fala de evasão."
+      },
+      {
+        "nome": "Adriano, 34 anos",
+        "historia": "Linfoma, jovem, revoltado com o diagnóstico, faltou três consultas seguidas mandando a esposa avisar que 'não aguentava mais falar de comida'.",
+        "como_percebeu": "As faltas apareceram na produção dela — três buracos de R$ 45 que a fila repôs no mesmo dia — mas o caso ficou martelando por ser paliativo nutricional importante.",
+        "o_que_fez": "Ligou do pessoal, conversou com a esposa, conseguiu que ele voltasse com consulta encaixada junto com a do psico-oncologista. Foi a vitória do mês dela, e não rendeu um real a mais."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Quinta-feira, 23h47",
+      "texto": "Dra Camila desculpe a hora. É Marlene filha do sr Edson. Ele vomitou o jantar todinho e tá recusando água. A senhora falou daquele soro caseiro, é 1 colher de açúcar mesmo? Tô desesperada",
+      "respondeu": "Respondeu em dez minutos, orientou o soro, mandou observar sinais de desidratação e pedir avaliação na urgência oncológica se piorasse. Ficou acordada até a 1h esperando o 'ele melhorou'. No dia seguinte atendeu das 7h às 13h normalmente."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 7,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "Perder dinheiro com paciente que some? Vixe... a fila repõe na hora, então acho que quase nada, uns quinhentos reais no ano de produção? O que eu perco não entra nessa conta — eu perco é o desfecho da pessoa, perco é dormir."
+  },
+  "dores_reais": [
+    "O repasse indigno: R$ 45 por consulta oncológica de 25 minutos, e a conta do mês que só fecha com 38 atendimentos semanais",
+    "Glosa e burocracia de convênio: horas não pagas justificando para o plano por que paciente em quimio precisa de nutricionista",
+    "O peso emocional sem rede: dois lutos de paciente este ano e nenhum suporte psicológico institucional nas clínicas",
+    "O convênio cortando o seguimento de quem recebe alta oncológica — ela perde os pacientes na hora em que poderia consolidar o trabalho",
+    "Não conseguir enxergar o caminho para o consultório próprio: sem capital, sem tempo e com medo de largar a fila certa do convênio"
+  ],
+  "nao_dores": [
+    "Evasão por desmotivação: paciente oncológico não 'desiste da dieta'; quando some é óbito, mudança de cidade ou o plano que negou — e a fila repõe o horário no mesmo dia",
+    "Captação: os planos e o encaminhamento dos oncologistas lotam a agenda dela há dois anos sem ela mover uma palha",
+    "Marketing e Instagram: nunca postou e não sente falta; o público dela não a escolhe, é encaminhado"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva: chora com facilidade e sem drama, pede um instante, respira e continua. Conta caso clínico com riqueza de detalhe e se pega sorrindo quando fala de paciente que voltou a comer. Sergipana: 'vixe', 'oxente' e 'a senhora/o senhor' até para entrevistador jovem, herança de residência hospitalar."
+}

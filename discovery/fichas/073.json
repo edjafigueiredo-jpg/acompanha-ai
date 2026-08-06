@@ -1,0 +1,66 @@
+{
+  "id": "073",
+  "nome": "Fernanda Starling Guimarães",
+  "idade": 35,
+  "genero": "feminino",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "carreira_anos": 11,
+  "especialidade": "Nutrição materno-infantil: gestantes, lactantes e introdução alimentar",
+  "modelo_atendimento": "Consultório próprio no Santo Antônio, sala alugada num centro de saúde da mulher. Atende particular, com pacote gestante (consulta mensal até o parto) e consultoria de introdução alimentar em duas sessões mais retorno. A renda é toda das consultas; recibo para reembolso de plano é rotina.",
+  "carteira_ativa": 26,
+  "ticket_consulta": 280,
+  "consultas_semana": 12,
+  "contexto": "Formada na UFMG, fez residência em saúde da mulher e trabalhou seis anos numa maternidade privada antes de abrir o consultório em 2019. Casada com o Henrique, engenheiro da Vale que viaja demais; mãe do Antônio, de 4 anos, e da Cecília, de 1 e meio — engravidou da segunda no meio da pandemia de agenda e quase quebrou. O que a move é acompanhar a mesma mulher da barriga ao prato do bebê, um vínculo de dois anos que ela chama de 'ciclo completo'. O que a cansa é exatamente o avesso: gestante que ela acompanhou com todo o cuidado e que, depois do parto, evapora no puerpério — e cada uma que some é um ciclo de receita de dois anos que morre no meio.",
+  "rotina": "Atende segunda, quarta e sexta das 8h30 às 13h, para pegar as crianças na escola às 14h. Terça de manhã faz visita domiciliar de introdução alimentar (cobra à parte, R$ 450). Quinta é dia administrativo: agenda, recibos, posts e — na prática — correr atrás de paciente sumida. Toda noite, entre 21h e 22h30, depois que as crianças dormem, responde o WhatsApp represado do dia com o notebook no colo.",
+  "whatsapp_pacientes": "Número business, mas ela responde tudo pessoalmente — já tentou secretária virtual terceirizada por três meses e as gestantes reclamaram que 'não era a Fê'. Mensagens chegam o dia inteiro e explodem à noite: dúvida de enjoo, foto de papinha, 'posso comer canela?', bebê que recusou abobrinha. Ela ama e odeia: sabe que esse cuidado é o que justifica o ticket dela, mas as 21h-23h viraram segundo expediente e o marido já reclamou formalmente no aniversário de casamento.",
+  "tecnologia": "Paga um software de nutrição tradicional (R$ 89/mês) para prontuário e cálculos de gestante, agenda com confirmação automática num app de agendamento (R$ 49/mês), Canva Pro. Total de uns R$ 180/mês. Confortável com tecnologia, gosta de testar coisa nova — o problema, diz ela, é que as pacientes não sustentam o uso.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Marcela",
+        "historia": "Gestante acompanhada por sete meses, diabetes gestacional controlada a muito custo. Teve o bebê em março e a consulta de puerpério, já pré-agendada, nunca aconteceu.",
+        "como_percebeu": "A confirmação automática ficou sem resposta duas vezes; quando Fernanda mandou mensagem pessoal, veio 'tá corrida demais, remarco semana que vem' — há quatro meses.",
+        "o_que_fez": "Insistiu três vezes com carinho, mandou até um material sobre amamentação de graça. Desistiu de insistir para não parecer cobrança. Perdeu, na conta dela, o puerpério e a introdução alimentar inteira: uns R$ 2.000."
+      },
+      {
+        "nome": "Vivian e o Théo",
+        "historia": "Introdução alimentar que ia lindamente até o Théo empacar com sólidos aos 8 meses. A avó começou a dar mingau escondido, a Vivian se sentiu julgada entre a sogra e o plano da nutricionista.",
+        "como_percebeu": "Os retornos foram ficando espaçados, as fotos de prato pararam de chegar, e o último 'como ele está?' dela ficou no visto.",
+        "o_que_fez": "Ligou — ligou mesmo, telefone. A Vivian atendeu constrangida, disse que ia voltar 'quando organizar a casa'. Fernanda anotou no prontuário 'perdida para a sogra' e riu para não chorar."
+      },
+      {
+        "nome": "Priscila",
+        "historia": "Tentante que fez três consultas de nutrição pré-concepcional e sumiu sem explicação nenhuma — o caso que mais a intriga, porque estava engajadíssima.",
+        "como_percebeu": "Faltou ao retorno sem avisar. Meses depois, Fernanda descobriu pelo Instagram que ela engravidou e está sendo acompanhada por outra nutricionista, mais famosa, de São Paulo, online.",
+        "o_que_fez": "Nada. Ficou remoendo semanas: 'ela usou meu protocolo pra engravidar e me trocou na hora do prêmio'. Foi quando começou a pensar seriamente que precisa de um jeito de segurar as pacientes entre consultas."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "ontem, 23h05",
+      "texto": "Fê me desculpa a hora!! O Davi acordou com o bumbum todo assado, será que foi o morango que a gente introduziu hoje?? Tô desesperada, posso dar o antialérgico?",
+      "respondeu": "Respondeu 23h12, acalmou, explicou que assadura não é alergia, orientou e disse para observar. Ficou mais meia hora sem sono. No dia seguinte pensou, de novo, que precisava de um limite — e de novo não pôs."
+    },
+    "gasto_ferramentas_mes": 183,
+    "horas_semana_respondendo": 9,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "Essa conta eu já fiz, e refiz agora há pouco: cada gestante que some no puerpério leva junto uns dois mil reais de ciclo. Umas oito somem por ano... dá uns 15, 18 mil. Falando assim em voz alta até dói."
+  },
+  "dores_reais": [
+    "O buraco do puerpério: pacientes que ela acompanhou a gestação inteira somem depois do parto, exatamente quando o ciclo renderia mais um ano de acompanhamento",
+    "O segundo expediente das 21h às 23h no WhatsApp, que já virou pauta de DR com o marido",
+    "Não ter um jeito de saber quem está 'esfriando' antes de sumir — ela só descobre quando a falta já aconteceu",
+    "A culpa de cobrar de mãe atolada: insistir parece cobrança, não insistir é perder a paciente",
+    "Concorrência de nutricionistas materno-infantis online e famosas, que levam até paciente fiel de BH"
+  ],
+  "nao_dores": [
+    "Captação: a parceria com dois obstetras e uma pediatra do prédio garante fila de gestantes novas — o funil de entrada dela é saudável",
+    "Precificação: ela sabe o valor que entrega e reajusta todo janeiro sem crise",
+    "Ferramenta de cálculo dietético: o software atual resolve a parte técnica; a lacuna dela é vínculo, não cálculo"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "aplicativo de acompanhamento com diário alimentar e chat, contratado em 2023 no plano de R$ 119/mês",
+    "historia": "Contratou empolgada para as pacientes registrarem refeições e ela acompanhar entre consultas. Nas duas primeiras semanas era lindo: foto de prato, gráficos, tudo. Na terceira semana as gestantes abandonavam o app em bloco — 'muita tela, Fê, prefiro te mandar no zap' — e ela acabava pagando 119 reais para conversar no WhatsApp do mesmo jeito. Cancelou depois de sete meses, com raiva de si mesma pela teimosia, e ficou com o dedo atrás para qualquer app que dependa de o paciente ter disciplina."
+  },
+  "postura_entrevista": "Falante e quente: responde uma pergunta com três histórias, imita as pacientes com voz e tudo, e às vezes é preciso trazê-la de volta ao tópico. Generosa com números e sincera sobre o que dói. Tiques: o mineiro 'uai' e 'cê tá entendendo?' a cada duas frases; diminutivos em série ('um retornozim', 'a papinha dele')."
+}

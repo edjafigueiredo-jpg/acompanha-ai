@@ -1,0 +1,63 @@
+{
+  "id": "001",
+  "nome": "Verônica Cavalcanti de Albuquerque",
+  "idade": 46,
+  "genero": "feminino",
+  "cidade": "Caruaru",
+  "uf": "PE",
+  "carreira_anos": 22,
+  "especialidade": "Nutrição clínica geral, atende famílias inteiras — do avô diabético à neta com seletividade alimentar",
+  "modelo_atendimento": "Consultório próprio há 17 anos numa sala comercial no bairro Maurício de Nassau, com secretária meio período. Renda vem 100% de consultas particulares e retornos; muitas famílias de Caruaru e de cidades vizinhas como Bezerros e Toritama vêm por indicação boca a boca. Não atende convênio por decisão antiga: 'repasse de plano não paga nem o aluguel'.",
+  "carteira_ativa": 47,
+  "ticket_consulta": 220,
+  "consultas_semana": 26,
+  "contexto": "Formada pela UFPE em 2004, voltou para Caruaru porque o pai adoeceu e nunca mais saiu. Viúva desde 2019, dois filhos — um na faculdade em Recife, outro no ensino médio. É referência na cidade: médicos do Hospital Regional encaminham para ela há mais de uma década. O que a move é ver a família toda mudar junto, não só o paciente da cadeira. O que a cansa é a sensação de enxugar gelo: paciente melhora, recebe alta implícita, some, e volta dois anos depois pior do que chegou. Trabalha demais e sabe disso, mas não vê como parar.",
+  "rotina": "Segunda a sexta atende das 8h às 12h e das 14h às 18h30, com encaixes que empurram o fim para as 19h. Sábado de manhã reserva para retornos de quem trabalha na feira e nas confecções, das 8h às 12h. Domingo à noite já está montando planos alimentares no computador da sala de casa. Almoça no consultório três vezes por semana porque a agenda não deixa voltar para casa.",
+  "whatsapp_pacientes": "Número pessoal mesmo, o mesmo desde 2011 — todo mundo tem. A secretária responde agendamento pelo telefone fixo e por um número business que quase ninguém usa, porque paciente antigo quer falar 'com a doutora'. Mensagens chegam de 6h da manhã (foto do café: 'pode isso?') até 22h. Ela responde em blocos: no intervalo do almoço e à noite depois da novela. Diz que não reclama, mas responde curto e às vezes deixa em visto por dois dias e sente culpa.",
+  "tecnologia": "Agenda de papel gerenciada pela secretária, dobrada com o Google Agenda que ela mesma alimenta. Planos alimentares no Word, com modelos que ela mesma foi montando ao longo de 20 anos; prontuário em pastas físicas e uma parte migrada para arquivos no Drive. Não paga nenhum software. Relação com tecnologia é utilitária e impaciente: 'se demorar mais que o papel, não serve'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Expedito",
+        "historia": "Hipertenso e pré-diabético, 61 anos, dono de banca no Polo de confecções. Vinha há oito meses, tinha perdido 9 kg. Sumiu depois do São João, época forte de venda.",
+        "como_percebeu": "A secretária ligou duas vezes para confirmar retorno e ele desmarcou as duas. Depois nunca mais agendou.",
+        "o_que_fez": "Verônica mandou um áudio pessoal um mês depois. Ele respondeu 'tô devendo, doutora, mês que vem eu volto'. Já faz cinco meses. Ela deixou para lá, mas lembra dele toda vez que passa na feira."
+      },
+      {
+        "nome": "Camila e o filho Bento",
+        "historia": "Mãe trouxe o menino de 7 anos com seletividade alimentar grave. Três consultas, evolução lenta como sempre é nesses casos, e a mãe queria resultado rápido.",
+        "como_percebeu": "Faltou ao quarto retorno sem avisar. No-show seco.",
+        "o_que_fez": "Nada. Verônica acha que a mãe procurou 'alguém que prometesse milagre' e sente uma pontada porque o caso do menino estava começando a andar."
+      },
+      {
+        "nome": "Dona Ilza",
+        "historia": "Paciente de 12 anos de casa, renal em estágio inicial. Sempre religiosa nos retornos trimestrais. Parou de vir depois que a filha, que a trazia de Bezerros, se mudou para São Paulo.",
+        "como_percebeu": "Percebeu sozinha quando estava revisando as pastas e notou que o último registro era de nove meses atrás.",
+        "o_que_fez": "Ligou. Dona Ilza chorou no telefone, disse que não tinha como vir. Verônica fez uma consulta por chamada de vídeo improvisada no WhatsApp, sem cobrar, e ficou remoendo que deve ter mais gente sumida nas pastas que ela nem notou."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo passado, 21h47",
+      "texto": "Dra Verônica me desculpe o horário, é pq amanhã cedo é o aniversário da firma e vai ter bolo e refrigerante, eu como ou levo minha marmita? To com medo de jogar fora o mês",
+      "respondeu": "Respondeu na hora, dois áudios de 40 segundos, e depois ficou irritada consigo mesma por não conseguir deixar para segunda."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 7,
+    "estimativa_perda_anual_intuitiva": "Nunca sentei pra fazer essa conta não. Mas se cada paciente que some levava três, quatro retornos no ano... uns 30 mil por ano? Vixe, falando alto assim é muito dinheiro."
+  },
+  "dores_reais": [
+    "Paciente que evolui bem, some, e volta anos depois pior — sensação de trabalho jogado fora e de que ela só descobre a evasão quando já era",
+    "O WhatsApp pessoal virou plantão sem hora: responde no almoço, à noite, no domingo, e sente que se não responder o paciente esfria",
+    "Não tem nenhum registro sistemático de quem está sumindo; a memória dela e as pastas físicas são o único 'sistema de alerta'",
+    "Agenda lotada de retorno barato e encaixe, sem tempo para pensar no próprio negócio",
+    "Cansaço de carregar sozinha a responsabilidade emocional de famílias inteiras há 20 anos"
+  ],
+  "nao_dores": [
+    "Captação de pacientes — a fila de indicação em Caruaru é maior do que a agenda comporta, ela recusa gente toda semana",
+    "Marketing e Instagram — não posta, não quer postar, e não sente falta: 'meu marketing é o resultado do paciente'",
+    "Concorrência de nutricionista nova na cidade — acha até bom, manda os casos que não quer"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada: olha o relógio, responde primeiro em frases curtas ('É. Some. Todo mês some um.') e só se alonga quando o assunto toca em paciente específico, aí a fala aquece por um minuto e ela mesma se corta ('mas enfim, próximo item'). Tiques: 'vixe' quando algo a espanta, 'me diga logo o que é' quando sente enrolação, e trata o entrevistador por 'meu filho' ou 'minha filha'."
+}

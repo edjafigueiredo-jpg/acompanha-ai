@@ -1,0 +1,63 @@
+{
+  "id": "009",
+  "nome": "Cauã Feitosa Landim",
+  "idade": 27,
+  "genero": "masculino",
+  "cidade": "Juazeiro do Norte",
+  "uf": "CE",
+  "carreira_anos": 4,
+  "especialidade": "Nutrição esportiva — hipertrofia e fisiculturismo amador do circuito do Cariri",
+  "modelo_atendimento": "Vende consultoria trimestral (R$ 900 o trimestre) com avaliação presencial numa sala dentro da maior academia de Juazeiro, ajustes mensais e suporte por WhatsApp incluso — 'o aluno me paga pra me ter no bolso'. Renda vem dos pacotes, de parceria com a academia (que lhe repassa indicados) e de uns atletas de palco que ele prepara e que são a vitrine do trabalho. Sonha em virar referência do Cariri inteiro, de Crato ao Barbalha.",
+  "carteira_ativa": 22,
+  "ticket_consulta": 300,
+  "consultas_semana": 12,
+  "contexto": "Formado pela URCA em 2022, cria de Juazeiro, filho de comerciante da rua São Pedro. Treina pesado desde os 16 e virou nutricionista pelo caminho natural do menino de academia. Noivo da Beatriz, casamento marcado para o ano que vem — o que deixou a meta de faturamento mais séria. É elétrico, generoso e ambicioso: quer crescer, aparecer, lotar. A verdade que ele mesmo admite entre uma empolgação e outra: o aluno raiz de academia renova quase sozinho; o que tira o sono dele é ENTRAR gente nova no funil e o teto pequeno da cidade — embora doa, sim, quando um aluno paga o trimestre, some do zap e ele só nota na renovação.",
+  "rotina": "Acorda 5h, treina, e às 7h já está na academia atendendo. Avaliações e ajustes de manhã (7h-12h); tarde no notebook montando dietas e gravando vídeo pro Instagram (11 mil seguidores) na própria sala. Fim de tarde circula pelo salão da academia 'fazendo social', que é como ele capta. Noite é da noiva e do WhatsApp misturados no sofá. Sábado de manhã atende atleta de palco em fase de preparação.",
+  "whatsapp_pacientes": "Número pessoal mesmo — 'no interior, cara, se tu bota número comercial o povo acha que tu se acha'. Responde do momento em que acorda até umas 23h, rápido, com áudio e figurinha de maromba. O suporte incluso pra ele é diferencial competitivo e ele gosta de verdade do papo. O que ele não gosta: aluno que some do zap por semanas com o trimestre pago — ele sabe que aquele silêncio vira não-renovação, mas na correria só vai atrás quando lembra, e lembra tarde.",
+  "tecnologia": "Agenda no caderno e na cabeça, dietas montadas num aplicativo gratuito de prescrição que vive travando, avaliações físicas com adipômetro e uma planilha que o professor da URCA passou e ele nunca mudou. Paga R$ 30 num app de treino que usa mais pra ele mesmo que pros alunos. Com tecnologia é entusiasta desorganizado: baixa, testa, empolga, abandona.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Jefferson",
+        "historia": "Aluno de bulking, 24 anos, motoboy. Pagou o trimestre no pix, veio na avaliação, mandou mensagem duas semanas — e evaporou do WhatsApp com dois meses de pacote ainda pagos.",
+        "como_percebeu": "Só se tocou de verdade quando foi montar a lista de renovações do trimestre e viu que não falava com o Jefferson havia sete semanas.",
+        "o_que_fez": "Mandou áudio na hora, meio constrangido pelo tempo passado. O menino respondeu que tinha desanimado e achou que 'já tinha perdido o dinheiro mesmo'. Não renovou. Cauã ficou com aquilo atravessado: o cara pagou e ELE não percebeu o sumiço."
+      },
+      {
+        "nome": "Dr. Hermes",
+        "historia": "Advogado de 52 anos, o aluno de maior ticket que ele já teve — fechou um semestre inteiro adiantado. Público diferente do dele: queria saúde, não palco. Cauã tratou como maromba, mandava meta de shape, e o homem foi esfriando.",
+        "como_percebeu": "As respostas foram minguando de áudio pra 'ok, obrigado'. Quando o semestre venceu, o advogado não renovou e foi 'fazer acompanhamento com uma nutricionista clínica'.",
+        "o_que_fez": "Nada na hora — orgulho ferido. Depois, frio, entendeu a lição: ele não tem serviço nem linguagem pra reter quem não é de academia, e esse é justamente o público que paga mais em Juazeiro."
+      },
+      {
+        "nome": "Wemerson",
+        "historia": "Atleta amador de palco, promessa da cidade, o xodó do Cauã. Um coach de treino de Fortaleza acenou com 'assessoria completa, treino + dieta' pelo Instagram e levou o menino no meio da preparação.",
+        "como_percebeu": "O próprio Wemerson ligou, sem jeito, avisando. Pelo menos teve a decência de ligar.",
+        "o_que_fez": "Desejou sorte com a voz travada e passou uma semana remoendo. Esse aqui não foi abandono, foi concorrência — e acendeu no Cauã a urgência de se profissionalizar antes que 'o pessoal de Fortaleza' colonize o Cariri pelo online."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sexta-feira, 23h55",
+      "texto": "Cauã meu irmão me perdoa a hora, to no São João aqui em Barbalha, o que eu como nessas barraca que não me tira do cutting?? tem baião, tem espetinho, me orienta aí kkkk",
+      "respondeu": "Respondeu 00h02 com áudio rindo: 'espetinho sem farofa, dois no máximo, e me manda foto'. Pra ele isso nem é incômodo — é sexta à noite, ele tava acordado e acha que esse é o jogo."
+    },
+    "gasto_ferramentas_mes": 30,
+    "horas_semana_respondendo": 9,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Rapaz... nunca botei na ponta do lápis. Uns 4 ou 5 num ano que pagam e somem no meio, mais os que não renovam porque eu deixei esfriar... uns 12 mil? Mas se tu me perguntar quanto eu deixo de GANHAR por não ter mais aluno novo, aí o número é maior, viu."
+  },
+  "dores_reais": [
+    "Crescimento com teto: a academia dá um fluxo de indicados, mas Juazeiro é pequena e ele não sabe transformar os 11 mil seguidores em pacote fechado — captação é a obsessão dele",
+    "Concorrência online de fora: coach e nutri de Fortaleza e do Sudeste pescando os melhores alunos dele pelo Instagram",
+    "Aluno que paga o trimestre e some do WhatsApp sem ele notar — ele só descobre na renovação, e cada caso desses o faz se sentir amador",
+    "Não saber reter público fora da bolha maromba (o caso do advogado): perde exatamente os tickets mais altos por falta de método",
+    "Desorganização geral: agenda no caderno, renovações de cabeça, e o casamento chegando exigindo previsibilidade de renda"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp — responder maromba a qualquer hora ele considera o produto e até curte; não há fadiga real aí ainda",
+    "No-show — aluno de academia está no prédio; a avaliação remarca no corredor",
+    "Vínculo com o público raiz — o aluno de treino renova quase sozinho quando ele está presente; a retenção que falha é só fora da bolha"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Caloroso e prolixo em versão elétrica: responde de pé, gesticulando, conta a história do Wemerson com detalhe de novela e se atrapalha na cronologia de tanto entusiasmo. Elogia a pergunta antes de responder ('rapaz, boa essa') e desvia fácil para planos de crescimento quando o assunto é problema. Tiques: 'meu irmão' e 'rapaz' abrindo quase toda frase, 'vixe Maria' de espanto, e transformar resposta em promessa ('ano que vem tu volta aqui que eu vou tá com 50 alunos, escreve aí')."
+}

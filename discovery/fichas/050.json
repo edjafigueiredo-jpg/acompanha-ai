@@ -1,0 +1,64 @@
+{
+  "id": "050",
+  "nome": "Camila Barreto Fialho",
+  "idade": 34,
+  "genero": "feminino",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "carreira_anos": 8,
+  "especialidade": "Emagrecimento e autoestima feminina, atendimento online",
+  "modelo_atendimento": "Atende online do apartamento na Tijuca, tentando viver do consultório digital: capta pelo Instagram (4.300 seguidores que não crescem) e por indicação de amigas. Vende consulta avulsa e um acompanhamento mensal que pouca gente fecha. A renda dos atendimentos não fecha o mês: ela complementa dando aula num curso técnico de nutrição duas noites por semana e fazendo cardápios freelance para uma marmitaria fit de um conhecido.",
+  "carteira_ativa": 7,
+  "ticket_consulta": 150,
+  "consultas_semana": 5,
+  "contexto": "Carioca de Vila Isabel, formada há 8 anos, passou por clínica de estética na Barra, consultório compartilhado no Centro (fechou na pandemia) e um emprego CLT em empresa de refeições coletivas que a fez infeliz e do qual saiu em 2024 para 'viver o sonho do online'. O sonho está devendo: um ano e meio depois, a agenda tem mais buraco que consulta. Solteira, divide as contas do apartamento com a irmã. O que a move é a certeza teimosa de que ela é boa clinicamente — as poucas pacientes que ficam têm resultado e a adoram. O que a cansa, e envergonha, é o marketing: gravar Reels dançando lhe dá agonia, anúncio ela não sabe configurar, e todo mês aparece um gestor de tráfego cobrando R$ 1.500 que ela não tem.",
+  "rotina": "As 5 consultas da semana se espalham entre terça e quinta, mais remarcadas do que ela gostaria. Segunda e sexta 'produz conteúdo' — na prática, procrastina, compara-se com nutris de 100 mil seguidores e posta um story no fim do dia. Terça e quinta à noite dá aula no curso técnico. Domingo faz os cardápios da marmitaria vendo série.",
+  "whatsapp_pacientes": "WhatsApp pessoal mesmo. Com 7 pacientes ativas, mensagem fora de hora é rara e, quando chega, ela quase comemora — responde na hora, longo, caprichado, porque cada paciente é preciosa demais para esfriar. O silêncio do WhatsApp é que a angustia: dias sem nenhuma mensagem de paciente, só grupo de família e boleto.",
+  "tecnologia": "Google Agenda, planos alimentares num software de nutrição que paga R$ 45/mês (usa bem, gosta), Canva grátis para os posts. Já pagou R$ 89 num curso de Reels que não terminou. Com tecnologia clínica ela se vira ótimo; com tecnologia de marketing ela se sente burra, e detesta se sentir burra.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Vivian",
+        "historia": "Amiga de amiga, fechou o mensal em janeiro cheia de meta, veio duas consultas e sumiu alegando correria no trabalho novo.",
+        "como_percebeu": "Com 7 pacientes, percebeu no mesmo dia — o horário vazio de quinta gritou na agenda.",
+        "o_que_fez": "Mandou três mensagens ao longo de um mês, cada uma mais cuidadosamente casual que a anterior. A última nem foi visualizada. Doeu como rejeição pessoal, e ela sabe que não devia levar assim."
+      },
+      {
+        "nome": "Tia Sônia (tia de verdade)",
+        "historia": "A própria tia, diabética, que ela atendia com desconto de família. Sumiu das consultas mas continua mandando bom dia no grupo da família — o que torna tudo constrangedor.",
+        "como_percebeu": "A tia cancelou dois retornos seguidos com desculpas de novela.",
+        "o_que_fez": "Decidiu não cobrar para não azedar o almoço de domingo. Concluiu que atender família foi erro, mas família é metade da carteira dela — e essa matemática a deprime."
+      },
+      {
+        "nome": "Priscila",
+        "historia": "Paciente boa, 3 meses de acompanhamento, resultado lindo — e aí a empresa dela colocou um plano de benefícios com nutricionista de graça no pacote.",
+        "como_percebeu": "A própria Priscila contou, sem graça, num áudio longo e carinhoso.",
+        "o_que_fez": "Agradeceu, desejou sorte e chorou depois. Contra 'de graça no benefício da empresa' ela não sabe competir. Perder uma paciente dessas com uma carteira de 7 é perder 14% do consultório de uma vez."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta-feira, 21h15",
+      "texto": "Camila!! Provei o vestido e FECHOU o zíper!!! Obrigada por tudo amiga 😭❤️",
+      "respondeu": "Respondeu na hora com áudio emocionado e pediu (morrendo de vergonha) um depoimento para postar. A paciente mandou. Foi o post de melhor desempenho do mês dela."
+    },
+    "gasto_ferramentas_mes": 45,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "'Gente, com 7 pacientes eu sinto cada uma que sai na pele, então... se perco umas 5, 6 por ano que era pra ter ficado, a R$ 150... uns 8, 9 mil? Mas sendo bem honesta, meu problema não é quem sai. É quem nunca chega.'"
+  },
+  "dores_reais": [
+    "Captação, captação, captação: o Instagram não cresce, o direct não toca, e ela não sabe se o problema é o conteúdo, o algoritmo ou ela",
+    "A vergonha do marketing: sabe que precisa aparecer, se compara, trava e procrastina — e cada semana travada é uma agenda vazia adiante",
+    "Renda em fatias: consultório + aula + marmitaria e ainda assim o mês fecha no limite; o CLT que ela abandonou paga hoje mais do que ela tira",
+    "A síndrome de impostora comercial: clinicamente segura, comercialmente perdida — cobrar, ofertar, fechar são verbos que a paralisam",
+    "O prazo silencioso: prometeu a si mesma que se até dezembro o online não parar em pé, volta para CLT — e o prazo pesa"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp: com 7 pacientes, mensagem é escassa e bem-vinda — oferecer 'alívio do plantão' para ela beira o insulto",
+    "Retenção como problema sistêmico: as pacientes que ficam, ficam agarradas; quando alguém sai é evento raro e explicável, não vazamento de processo",
+    "Gestão e organização: agenda com 5 consultas por semana se administra num guardanapo; sistema de gestão é solução procurando problema",
+    "Otimizar tempo de consulta: tempo é o que mais sobra na vida dela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva com humor carioca: ri de si mesma antes de admitir as partes difíceis ('vou te falar a real, tá? segura'), a voz embarga quando fala da Priscila e do prazo de dezembro, e agradece demais a oportunidade de ser ouvida — desabafa como quem estava precisando. Tiques: 'caraca' e 'sério, juro' de pontuação, e o s chiado carioca que engrossa quando se empolga."
+}

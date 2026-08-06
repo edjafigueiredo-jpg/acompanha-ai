@@ -1,0 +1,63 @@
+{
+  "id": "042",
+  "nome": "Larissa Conceição dos Santos",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Salvador",
+  "uf": "BA",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição comportamental, comer intuitivo e relação com a comida — abordagem não-prescritiva",
+  "modelo_atendimento": "Contratada PJ de uma clínica multiprofissional na Pituba, com psicólogas e uma endócrina; recebe fixo mais uma pequena porcentagem por consulta realizada. A agenda e a carteira são da clínica: a recepção marca, remarca e cobra. Ela está montando devagar uma carteirinha própria de pacientes comportamentais, por indicação, mas ainda são pouquíssimos.",
+  "carteira_ativa": 8,
+  "ticket_consulta": 70,
+  "consultas_semana": 18,
+  "contexto": "Cria do Cabula, primeira da família a se formar, fez UFBA e se apaixonou por nutrição comportamental num estágio em transtornos alimentares. Ela mesma teve compulsão na adolescência, e isso é o motor de tudo: não quer ser 'a nutricionista da dieta de papel'. Mora com a mãe e a irmã mais nova, ajuda nas contas de casa com o salário da clínica, que é apertado. O que a move é ver paciente fazer as pazes com a comida; o que a cansa é a clínica empurrar para ela paciente que só quer 'fechar 5 kg até o verão' — e o dono medir o trabalho dela em quilos perdidos e consultas por hora.",
+  "rotina": "Terça a sábado na clínica, das 9h às 18h, consultas de 50 minutos marcadas pela recepção — ela não controla a própria agenda. Segunda é o dia de estudar, fazer supervisão com uma nutricionista mais experiente de São Paulo (online) e cuidar do seu perfil profissional. À noite, duas vezes por semana, faz um curso de aperfeiçoamento em transtornos alimentares.",
+  "whatsapp_pacientes": "O WhatsApp oficial é o da clínica: a recepção responde, marca e manda lembrete de consulta. Pacientes não têm o número pessoal dela — regra da clínica que, sinceramente, ela agradece. Os quatro ou cinco pacientes particulares dela têm o número, mas ela combina desde a primeira sessão: mensagem é só para agendamento, porque na abordagem dela ficar vigiando prato por foto atrapalha o processo. Já chorou uma vez ao receber um desabafo pesado de paciente às 23h — respondeu com carinho no dia seguinte e levou o tema para a sessão.",
+  "tecnologia": "Usa o sistema de prontuário que a clínica assina (ela nem sabe o nome direito, 'aquele que a recepção usa') e um caderno pautado onde escreve suas impressões de cada sessão, que ela considera sagrado. Não paga nada de ferramenta do próprio bolso, não sobra para isso. Com tecnologia se vira bem, mas acha que o essencial do trabalho dela acontece na escuta, não na tela.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Sr. Antônio",
+        "historia": "Paciente da clínica, encaminhado pela endócrina, diabético, queria cardápio pronto. Não voltou depois da segunda consulta porque 'ela não passou dieta'.",
+        "como_percebeu": "A recepcionista comentou rindo que ele remarcou com outra nutri da própria clínica, uma mais prescritiva. Ela nem ficou sabendo por si.",
+        "o_que_fez": "Nada — a carteira é da clínica, o paciente continuou lá dentro. Mas ficou dois dias remoendo se falhou em explicar a abordagem."
+      },
+      {
+        "nome": "Vitória",
+        "historia": "Paciente particular dela, 19 anos, com sinais de compulsão, que a mãe pagava. A mãe cortou o acompanhamento dizendo que 'não estava vendo resultado na balança'.",
+        "como_percebeu": "A própria mãe ligou avisando. A menina mandou depois um áudio chorando, pedindo desculpa.",
+        "o_que_fez": "Ofereceu um valor social escondido da mãe. Não deu certo. Essa ainda dói, e ela cita em supervisão."
+      },
+      {
+        "nome": "Rebeca",
+        "historia": "Paciente da clínica pelo plano, faltou três vezes seguidas por causa do horário do trabalho no shopping.",
+        "como_percebeu": "Viu no sistema a sequência de faltas quando foi puxar o prontuário.",
+        "o_que_fez": "Pediu à recepção para tentar um horário de sábado. A vaga dela já tinha sido preenchida por outro paciente da fila — a agenda nunca fica furada."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quinta-feira, 22h50",
+      "texto": "Lari me desculpa o horário… tive um episódio hoje de novo, comi escondida no banheiro e tô me sentindo um lixo",
+      "respondeu": "Leu na hora, mandou no dia seguinte cedo uma mensagem acolhedora e segurou o assunto para a sessão. Chorou antes de dormir."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 5,
+    "estimativa_perda_anual_intuitiva": "'Perder quanto? Menina, os pacientes nem são meus… se faltam na clínica eu recebo menos naquele dia, mas a fila repõe. Nunca botei na ponta do lápis, não.'"
+  },
+  "dores_reais": [
+    "O salário da clínica: fixo baixo, porcentagem pequena, e a sensação de estar enriquecendo o dono enquanto ela não consegue guardar nada",
+    "Construir carteira própria do zero sem verba, sem tempo e competindo com nutricionistas de Instagram que prometem 10 kg em 2 meses",
+    "O dono da clínica cobrando 'resultado' em quilos, o oposto da filosofia dela",
+    "Carga emocional dos casos de transtorno alimentar sem estrutura de apoio — a supervisão sai do bolso dela"
+  ],
+  "nao_dores": [
+    "Pacientes que somem entre consultas: na clínica a fila do plano repõe e não muda o salário dela; nos particulares dela, sumir faz parte do processo e ela não persegue",
+    "Plantão de WhatsApp: ela ativamente NÃO quer monitorar paciente fora da sessão — vigilância alimentar é o que ela combate",
+    "Ferramentas de acompanhamento com foto de refeição e gráfico de peso: para ela isso reforça exatamente a relação doente com a comida",
+    "Agenda vazia na clínica: nunca acontece, o convênio lota"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva: os olhos marejam quando fala da paciente de 19 anos, gesticula muito, conta histórias em vez de dar respostas diretas. Pede desculpa por se emocionar. Tiques: 'ô, minha querida', 'véi' quando relaxa, e um 'entendeu?' baiano no meio das frases."
+}

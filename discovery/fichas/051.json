@@ -1,0 +1,66 @@
+{
+  "id": "051",
+  "nome": "Ingrid Picanço Barbosa",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Santana",
+  "uf": "AP",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição comportamental, abordagem não-prescritiva focada em comer intuitivo e paz com a comida",
+  "modelo_atendimento": "Atende 100% online pelo Google Meet, do quarto-escritório da casa dos pais em Santana. Capta tudo pelo Instagram (@ingridnutricomportamental, 21 mil seguidores), onde posta reels quase diários sobre gatilhos de compulsão e cultura da dieta. A renda vem das consultas avulsas e de um grupinho pago de acolhimento no Telegram.",
+  "carteira_ativa": 38,
+  "ticket_consulta": 180,
+  "consultas_semana": 16,
+  "contexto": "Formou-se pela UNIFAP em Macapá e voltou para Santana, onde cresceu vendo a mãe fazer dieta da sopa a vida inteira — foi isso que a empurrou para a nutrição comportamental. Descobriu cedo que o Instagram alcançava gente do Brasil todo e hoje atende paciente de São Paulo pagando mais do que qualquer consultório de Macapá pagaria. É solteira, cuida do irmão adolescente à tarde e sonha em fazer formação em transtornos alimentares em Fortaleza. O que a move é tirar mulher de dieta; o que a cansa é a esteira de conteúdo — se para de postar três dias, o direct seca. Tem pavor de virar 'nutri de cardápio'.",
+  "rotina": "Grava conteúdo segunda de manhã, das 8h às 11h, com tripé e anel de luz. Consultas online terça a sexta, das 14h às 20h, porque muita paciente do Sudeste só pode depois do trabalho — e o fuso de Brasília joga tudo uma hora pra frente pra ela. Sexta de manhã responde o grupo do Telegram e faz devolutivas de diário alimentar afetivo. Sábado é dia de planejar conteúdo da semana com a irmã, que edita os vídeos por R$ 400/mês.",
+  "whatsapp_pacientes": "Usa WhatsApp Business com mensagem automática. A regra é clara e está no contrato: WhatsApp só para remarcação e dúvida pontual, resposta em até 48h úteis. Ela deliberadamente NÃO quer paciente mandando foto de prato — acha que isso alimenta a vigilância que ela combate. Chegam mensagens à noite, ela responde no dia seguinte sem culpa. O que a incomoda no WhatsApp não são pacientes: são os 30 directs por dia de curiosas que nunca fecham consulta.",
+  "tecnologia": "Agenda pelo Calendly gratuito ligado ao Google Agenda, pagamento por Pix e link do Mercado Pago, prontuário em Google Docs organizado por pastas. Paga Canva Pro (R$ 40/mês) e o CapCut da irmã. É rápida com ferramenta nova, mas desconfia de qualquer coisa que prometa 'monitorar' paciente.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Débora, 31, analista de RH em Campinas",
+        "historia": "Fez quatro sessões, estava indo bem no trabalho de fome-saciedade, e sumiu depois que a irmã dela emagreceu 8 kg com uma nutri prescritiva. Voltou a fazer low carb.",
+        "como_percebeu": "Não reagendou pelo Calendly e parou de responder o diário no Telegram.",
+        "o_que_fez": "Mandou um áudio acolhedor dizendo que a porta ficava aberta, sem cobrança. Para Ingrid, correr atrás seria trair o método: a paciente tem que estar pronta."
+      },
+      {
+        "nome": "Rosinha, 44, dona de casa de Macapá",
+        "historia": "Paciente local, das poucas. Achou o processo 'lento demais' porque em dois meses não perdeu peso — e Ingrid tinha avisado que peso não era o foco.",
+        "como_percebeu": "A própria Rosinha mandou mensagem educada dizendo que ia 'dar um tempo'.",
+        "o_que_fez": "Agradeceu, explicou de novo a proposta e soltou. Usou o caso (anonimizado) num carrossel sobre expectativa de emagrecimento que rendeu 40 mil visualizações."
+      },
+      {
+        "nome": "Taís, 24, estudante de medicina em Belém",
+        "historia": "Quadro de compulsão mais sério do que consulta de nutri dava conta. Ingrid encaminhou para psicóloga e psiquiatra e ela sumiu das duas.",
+        "como_percebeu": "A psicóloga parceira avisou que ela também tinha abandonado lá.",
+        "o_que_fez": "Mandou mensagem única de cuidado e registrou no prontuário. Esse é o tipo que tira o sono dela — não pela agenda, pela pessoa."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 21h40",
+      "texto": "Ingrid me ajuda, comi um pote de sorvete inteiro depois do almoço de família e tô me odiando, isso é recaída?",
+      "respondeu": "Viu, não respondeu no domingo de propósito. Segunda às 9h mandou áudio de 3 minutos acolhendo e remarcando o tema para a sessão. Acredita que responder na hora ensinaria a paciente a terceirizar a regulação emocional."
+    },
+    "gasto_ferramentas_mes": 40,
+    "horas_semana_respondendo": 3,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "Nunca calculei, e nem gosto dessa conta — quem sai é porque não era o momento. Se for chutar, sei lá, uns 10 mil? Mas o funil do Instagram repõe."
+  },
+  "dores_reais": [
+    "Dependência total do algoritmo do Instagram: uma semana sem postar e o direct esfria, e ela vive com medo de o perfil cair ou ser hackeado",
+    "Triagem de curiosas: dezenas de directs por dia que perguntam preço e somem, roubando horas que consulta nenhuma paga",
+    "Ser confundida com coach e ter que defender a abordagem não-prescritiva até para colegas de profissão",
+    "Solidão profissional em Santana: não tem par técnico por perto, supervisão é online e cara",
+    "No-show de consulta online, que no caso dela é buraco direto no caixa porque agenda apertada não repõe"
+  ],
+  "nao_dores": [
+    "Paciente 'fora de controle' entre consultas: monitorar comida do paciente contraria frontalmente a filosofia dela — ela não quer relatório do que a paciente comeu, quer autonomia",
+    "Plantão de WhatsApp: a regra de 48h funciona, as pacientes aceitam, e ela não sente culpa nenhuma",
+    "Montar cardápio mais rápido: ela não prescreve cardápio, então qualquer promessa de 'plano alimentar em 2 minutos' é ofensa, não ajuda"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "app genérico de acompanhamento com diário alimentar fotográfico (plano de R$ 89/mês)",
+    "historia": "No segundo ano de carreira assinou um app onde a paciente fotografava refeições e ela comentava. Pagou oito meses. Cancelou por dois motivos: as pacientes abandonavam o app na segunda semana, e pior, as que usavam ficavam MAIS obsessivas com comida — uma chegou a fotografar bala de hortelã. Percebeu que a ferramenta militava contra o próprio tratamento e hoje conta essa história em consulta como exemplo do que não fazer."
+  },
+  "postura_entrevista": "Falante e engajada, responde uma pergunta com três histórias, cita paciente com nome trocado e emenda pauta de conteúdo no meio ('isso dava um reel, viu'). Usa 'égua' quando se empolga e 'é pesado' para tudo que a indigna. Se o entrevistador insinuar monitoramento de paciente, ela educadamente vira a mesa e passa cinco minutos explicando por que vigilância alimentar adoece."
+}

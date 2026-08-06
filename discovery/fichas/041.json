@@ -1,0 +1,63 @@
+{
+  "id": "041",
+  "nome": "Priscila Andrade Nogueira",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Brasília",
+  "uf": "DF",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição clínica com foco em emagrecimento feminino, atendimento 100% online",
+  "modelo_atendimento": "Atende exclusivamente online, por videochamada no Google Meet, captando pacientes pelo Instagram (34 mil seguidoras). Vende consulta avulsa e um plano bimestral com retorno incluso; a renda vem toda dos atendimentos e de uma ou outra publicidade pequena de marca de suplemento. Trabalha do home office no apartamento em Águas Claras.",
+  "carteira_ativa": 68,
+  "ticket_consulta": 250,
+  "consultas_semana": 28,
+  "contexto": "Formada pela UnB, começou em clínica de estética no Sudoeste e migrou para o online em 2020, quando percebeu que o Instagram trazia mais paciente que a recepção da clínica. Hoje vive disso, e bem: paga o apartamento, o carro e ainda ajuda a mãe em Taguatinga. É solteira, mora sozinha, treina crossfit às 6h. O que a move é a independência — não ter chefe, não dividir repasse com ninguém. O que a cansa é a sensação de estar sempre 'ligada': o Instagram não fecha, a caixa de mensagens não fecha, e ela desconfia de todo mundo que aparece prometendo 'escalar' o negócio dela — já levou dois golpes de agência de tráfego.",
+  "rotina": "Segunda a sexta atende das 8h às 12h e das 14h às 18h, consultas de 40 minutos em blocos. Sexta à tarde reserva para gravar Reels e responder directs acumulados. Sábado de manhã faz os planos alimentares da semana no computador, umas 3 horas. Domingo tenta não abrir o Instagram, raramente consegue.",
+  "whatsapp_pacientes": "Usa WhatsApp Business com mensagem automática de horário, mas responde ela mesma, todo dia, inclusive fim de semana. As pacientes do plano bimestral acham que o acompanhamento inclui suporte, embora o contrato não diga isso — ela nunca teve coragem de cobrar à parte. As mensagens chegam mais entre 20h e 23h ('posso trocar o jantar?', foto de prato, desabafo). Ela sente que virou refém: se demora a responder, a paciente esfria e some; se responde tudo, não vive.",
+  "tecnologia": "Agenda pelo Google Agenda com link de pagamento do Mercado Pago, planos alimentares montados no Word a partir de modelos próprios, controle de pacientes numa planilha do Google Sheets que ela mesma montou com cores. Paga R$ 49/mês num app de agendamento simples que quase não usa. Sabe mexer bem em rede social, mas desconfia de sistema novo — acha que metade é promessa.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Débora",
+        "historia": "Servidora pública de 41 anos, fechou o plano bimestral, perdeu 4 kg no primeiro mês e sumiu antes do retorno incluso, que já estava pago.",
+        "como_percebeu": "Só notou quando foi montar a agenda da semana e viu o horário do retorno vazio, sem remarcação.",
+        "o_que_fez": "Mandou dois áudios oferecendo remarcar. Visualizado, sem resposta. Desistiu para não parecer desesperada."
+      },
+      {
+        "nome": "Kelly",
+        "historia": "Noiva que queria emagrecer para o casamento em outubro. Depois da segunda consulta começou a seguir uma influencer low carb e passou a questionar o plano inteiro.",
+        "como_percebeu": "A própria Kelly mandou mensagem dizendo que ia 'seguir outro protocolo por enquanto'.",
+        "o_que_fez": "Respondeu educada, disse que a porta estava aberta. Por dentro ficou com raiva da influencer, não da paciente."
+      },
+      {
+        "nome": "Rosana",
+        "historia": "Paciente antiga, de dois anos, que sempre renovava. Parou de responder depois que perdeu o emprego no fim do ano.",
+        "como_percebeu": "As visualizações pararam. Depois viu nos stories que a Rosana estava fazendo marmita fit por conta própria.",
+        "o_que_fez": "Não cobrou. Curtiu um story dela semanas depois, meio como quem diz 'ainda estou aqui'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo passado, 21h40",
+      "texto": "Pri, socorro, comi coxinha e brigadeiro no aniversário da minha sogra, joguei a semana fora né?? me fala que não 😭",
+      "respondeu": "Respondeu na hora um áudio de 1 minuto acalmando. Depois ficou irritada consigo mesma por ter respondido no domingo de novo."
+    },
+    "gasto_ferramentas_mes": 49,
+    "horas_semana_respondendo": 9,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Nunca sentou pra calcular, mas chuta rápido: 'se uns 3 ou 4 somem por mês sem renovar, dá fácil uns 30, 40 mil por ano'. Diz o número e muda de assunto, porque dói."
+  },
+  "dores_reais": [
+    "O plantão informal de WhatsApp que ela nunca precificou e não consegue mais desligar",
+    "Pacientes que pagam o bimestral, empolgam duas semanas e evaporam antes do retorno — e ela só descobre quando o horário fica vazio",
+    "Dependência total do Instagram: se o alcance cai, a agenda do mês seguinte cai junto",
+    "No-show em consulta online, que ela acha mais fácil de dar porque 'é só não entrar no link'",
+    "Medo constante de ser enganada por fornecedor — agência, mentor, sistema — depois dos golpes que levou"
+  ],
+  "nao_dores": [
+    "Captação de paciente novo: o Instagram ainda entrega; a fila de espera para primeira consulta é de duas semanas",
+    "Precificação: já subiu o ticket três vezes e a demanda segurou, não sofre com isso",
+    "Burocracia de convênio: nunca atendeu plano e não pretende"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada: responde curto no início, pergunta duas vezes 'mas isso aqui é pesquisa de quê, mesmo?' e 'quem tá pagando esse estudo?'. Só abre depois de uns 15 minutos, quando sente que ninguém vai vender nada. Tiques: 'ó, vou ser bem sincera contigo', e um 'né, não?' brasiliense no fim das frases."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "083",
+  "nome": "Vânia Maciel Bezerra",
+  "idade": 49,
+  "genero": "feminino",
+  "cidade": "Rio Branco",
+  "uf": "AC",
+  "carreira_anos": 24,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e síndrome metabólica",
+  "modelo_atendimento": "Consultório próprio há 18 anos numa sala comercial no centro de Rio Branco, com secretária meio período. Atende só particular, primeira consulta mais retornos mensais, muitos pacientes de década — trata mãe, filha e agora neta das mesmas famílias. A renda vem toda do consultório, com um extra eventual de palestras em empresas locais.",
+  "carteira_ativa": 24,
+  "ticket_consulta": 220,
+  "consultas_semana": 14,
+  "contexto": "Formada em Belém pela UFPA, voltou para Rio Branco nos anos 2000 quando quase não havia nutricionista na cidade, e construiu nome sendo praticamente pioneira. Viúva há quatro anos, dois filhos adultos — um em Porto Velho, outra fazendo medicina em São Paulo, e é para ajudar a filha que ela ainda segura o ritmo. Conhece meia cidade pelo nome e é conhecida como 'a doutora Vânia do centro'. O que a move é o vínculo comprido com as famílias; o que a cansa é ver a carteira minguar devagar: os antigos envelhecem, e os jovens da cidade vão atrás de nutricionista de Instagram, coisa que ela não faz nem sabe fazer.",
+  "rotina": "Consultório de segunda a sexta, das 8h ao meio-dia, com no máximo quatro consultas por manhã, sem pressa. Tarde é para a casa, a igreja às quartas e a hidroginástica. Sexta à tarde fecha a semana com a secretária conferindo a agenda e os recebimentos no caderno.",
+  "whatsapp_pacientes": "Número pessoal, o mesmo há quinze anos, que meia Rio Branco tem. Pacientes mandam mensagem a qualquer hora — foto de exame, 'doutora, posso tomar tal chá?', áudio de 3 minutos contando a semana — e ela responde quase tudo, às vezes da fila do supermercado. Diz que não incomoda porque 'aqui é assim, é tudo pessoal', mas admite que domingo à noite dá uma preguiça, e que áudio longo ela deixa acumular.",
+  "tecnologia": "Agenda de papel gerida pela secretária, planos alimentares no Word com modelos que ela mesma foi ajeitando ao longo de 20 anos, impressos e entregues na mão. Pagamento em dinheiro, Pix e maquininha. Gasto com ferramenta: zero. Com tecnologia se vira no básico, mas quem resolve as coisas do celular é a filha por videochamada.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Dona Socorro", "historia": "Paciente de doze anos, diabética, vinha todo mês religiosamente com o caderninho de anotações.", "como_percebeu": "A secretária notou que ela não remarcou depois de julho. Vânia estranhou na hora — Socorro nunca falhava.", "o_que_fez": "Ligou ela mesma. Descobriu que o marido tinha adoecido e o dinheiro ficou curto. Mandou ela vir assim mesmo e cobrou metade. Voltou em setembro."},
+      {"nome": "Alessandro", "historia": "Empresário de 38 anos do ramo de material de construção, veio emagrecer para uma cirurgia, perdeu 9 kg em quatro meses.", "como_percebeu": "Fez a cirurgia, mandou mensagem agradecendo e nunca mais marcou retorno. Isso foi há oito meses.", "o_que_fez": "Respondeu o agradecimento com carinho e deixou por isso mesmo. De vez em quando pensa que devia mandar um 'e aí, como estamos?', mas acha que ficaria parecendo cobrança."},
+      {"nome": "Yasmin", "historia": "Menina de 22 anos, filha de uma paciente antiga, veio duas vezes por pressão da mãe para emagrecer.", "como_percebeu": "Sumiu depois do segundo retorno. A mãe contou depois, meio sem graça, que ela contratou 'uma nutri online famosa' de São Paulo pelo Instagram.", "o_que_fez": "Engoliu o orgulho e disse à mãe que o importante era a menina se cuidar. Mas doeu, e ela cita esse caso quando reclama que 'a internet levou a juventude'."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "domingo, 20h50", "texto": "Doutora Vânia, boa noite, desculpe o horário. A senhora lembra o remédio de vitamina D que a senhora passou pra minha mãe? A caixinha molhou e apagou o nome.", "respondeu": "Respondeu em cinco minutos com o nome e a dose. Achou até graça. 'Se eu não responder, quem vai?'"},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "Nunca botei no papel. Mas se cada paciente que se despede e não volta levasse embora uns quatro retornos por ano... vixe, deve dar uns R$ 15 mil, R$ 20 mil? Melhor nem calcular."
+  },
+  "dores_reais": [
+    "A carteira encolhendo ano a ano: os pacientes fiéis envelhecem ou se mudam e não entra gente nova na mesma velocidade",
+    "Sentir-se invisível para os jovens da própria cidade, que preferem nutricionista de Instagram de fora, enquanto ela tem 24 anos de clínica e não sabe 'aparecer'",
+    "O retorno que não acontece: paciente atinge o objetivo, agradece e some, e ela não tem jeito de chamar de volta sem se sentir mercenária",
+    "Cansaço acumulado de ser 'a doutora da cidade inteira' no WhatsApp pessoal, mesmo jurando que não se importa",
+    "A dependência da secretária e do caderno: quando a secretária tirou férias, a agenda virou um nó"
+  ],
+  "nao_dores": [
+    "Concorrência de preço local não a afeta: o nome dela vale o ticket e ninguém pechincha com a doutora Vânia",
+    "No-show dói pouco: a agenda é folgada de propósito e os faltosos são conhecidos que remarcam na mesma semana",
+    "Não sonha com atendimento online: já recusou; para ela consulta é olho no olho, balança e mão no ombro"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante e histórica: cada resposta vem com um causo de paciente, nome trocado por apelido, e um pedaço da história de Rio Branco junto. Precisa ser redirecionada com jeito. Tiques: 'vixe Maria', 'aqui no Acre é diferente, deixa eu te explicar', e chama a entrevistadora de 'minha filha'."
+}

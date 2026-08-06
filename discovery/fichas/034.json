@@ -1,0 +1,65 @@
+{
+  "id": "034",
+  "nome": "Larissa Kunzler Ortiz",
+  "idade": 27,
+  "genero": "feminino",
+  "cidade": "Campo Grande",
+  "uf": "MS",
+  "carreira_anos": 4,
+  "especialidade": "Nutrição comportamental — imagem corporal e relação com a comida, abordagem não-prescritiva com forte influência do HAES (saúde em todos os tamanhos)",
+  "modelo_atendimento": "Consultório particular próprio, uma sala alugada num coworking de saúde na Rua Euclides da Cunha, em Campo Grande, dois dias por semana, mais atendimentos por vídeo. Cobra R$ 220 a sessão avulsa e a maioria fecha ciclo mensal de duas sessões. A renda é 100% dos atendimentos particulares; ela complementa com oficinas de comer intuitivo que organiza a cada dois meses.",
+  "carteira_ativa": 16,
+  "ticket_consulta": 220,
+  "consultas_semana": 9,
+  "contexto": "Neta de gaúchos que desceram para o Mato Grosso do Sul, formou-se na UFMS e ainda na faculdade se decepcionou com o estágio em clínica de estética — saiu de lá jurando nunca pesar paciente contra a vontade. Fez pós em nutrição comportamental online e abriu o consultório com 25 anos, contra o conselho da mãe. Mora com a namorada, Bruna, que é designer, e dois gatos. O que a move é atender gente gorda que foi maltratada em consultório a vida inteira. O que a cansa é o dinheiro curto: carteira pequena, aluguel do coworking, e a sensação de que precisa aparecer no Instagram para sobreviver, coisa que odeia fazer.",
+  "rotina": "Atende terça e quinta presencial das 13h às 20h, e segunda de manhã faz as sessões online. Quarta é dia de produzir conteúdo a contragosto: grava dois reels com roteiro da Bruna. Sexta de manhã faz terapia (dela) e supervisão mensal com uma nutricionista comportamental de São Paulo por vídeo. Fim de semana tenta não abrir o WhatsApp profissional, com sucesso parcial.",
+  "whatsapp_pacientes": "WhatsApp Business só dela, com mensagem automática avisando que responde em até 24h úteis. Chega pouca coisa — remarcação, dúvida de horário e de vez em quando um desabafo pesado sobre corpo, que ela responde com cuidado dentro do horário comercial. O que a incomoda não é o volume, é o tipo: mensagem de gente nova perguntando 'você passa dieta low carb?' que ela precisa responder explicando que não, e que às vezes vira debate.",
+  "tecnologia": "Agenda no Google Calendar gratuito, recibos por um app de MEI, prontuário em documentos protegidos por senha no Drive. Não paga nenhuma ferramenta de nutrição hoje — já pagou, e a história a deixou com o pé atrás. É de uma geração fluente em tecnologia, mas passou a tratar software de saúde com desconfiança de quem já foi mordida.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Priscila, 33 anos",
+        "historia": "Veio encaminhada por uma psicóloga, engatou bem quatro sessões e sumiu depois que o marido perdeu o emprego. Mandou mensagem honesta: 'não consigo pagar agora'.",
+        "como_percebeu": "A própria paciente avisou, coisa que Larissa valoriza demais.",
+        "o_que_fez": "Ofereceu espaçar para uma sessão por mês com desconto. A paciente aceitou dois meses e depois sumiu de vez. Larissa sentiu no caixa — dois ciclos a menos num mês fazem diferença real no aluguel."
+      },
+      {
+        "nome": "Camily, 21 anos",
+        "historia": "Universitária com compulsão, chegou pelo Instagram. Na segunda sessão pediu 'um cardápio pelo menos básico', Larissa explicou a abordagem de novo, e ela não voltou.",
+        "como_percebeu": "Desmarcou pela mensagem automática de lembrete e não remarcou. Depois Larissa viu que ela deixou de segui-la.",
+        "o_que_fez": "Nada. Anotou no caderno de supervisão para discutir: como segurar paciente jovem no período em que a abordagem ainda 'não mostra resultado de balança'. É a evasão que mais se repete no consultório dela — e ela sabe."
+      },
+      {
+        "nome": "Rosemeire, 47 anos",
+        "historia": "Paciente antiga, oito meses de processo, melhorou muito e foi rareando naturalmente as sessões até parar de marcar.",
+        "como_percebeu": "Percebeu num fim de mês, olhando a agenda rala.",
+        "o_que_fez": "Mandou uma mensagem carinhosa de 'porta aberta', sem cobrança. Rosemeire respondeu com um áudio chorando de gratidão. Larissa considera caso encerrado com sucesso — mas admite que o buraco de R$ 440/mês dela ninguém preencheu ainda."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Quarta-feira, 22h30",
+      "texto": "Lari, me desculpa o horário. Minha sogra falou do meu corpo no jantar de novo e eu tô trancada no banheiro. Só precisava contar pra alguém que não ia me julgar.",
+      "respondeu": "Quebrou a própria regra e respondeu na hora, curto e firme: 'você não tem que engolir isso. Respira. Me manda mensagem amanhã que a gente encaixa um horário'. Depois ficou remoendo se fez certo em responder — pela paciente, sim; pelo precedente, não sabe."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Nunca calculei assim... mas eu sei que meu problema não é quem sai, é quem nunca chega. Se for chutar o que perco com quem some: uns seis mil por ano? O que me quebra mesmo é agenda que não enche."
+  },
+  "dores_reais": [
+    "Captação: encher a agenda com o paciente certo numa cidade onde a nutrição de estética e a low carb dominam a conversa — ela precisa de mais 10 pacientes, não de reter os 16",
+    "Depender do Instagram para existir profissionalmente, detestando cada minuto de gravação",
+    "Dinheiro apertado: aluguel do coworking, contadora e pós sendo pagos com uma carteira de 16 pacientes",
+    "A evasão específica das pacientes jovens que desistem quando descobrem que não vão receber cardápio — que ela lê como problema de comunicação de posicionamento, não de acompanhamento"
+  ],
+  "nao_dores": [
+    "Monitoramento entre consultas: fotos de prato, diário alimentar com nota, gráfico de peso — para a linha dela isso é gatilho e vigilância; ela não compraria nem com desconto, e já cancelou ferramenta por isso",
+    "Plantão de WhatsApp: o volume é pequeno e a regra de 24h funciona",
+    "Automatizar lembrete de consulta: o Google Calendar já manda e os três no-shows do mês foram de primeira consulta, gente que ela nem conhecia"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "NutriPlanner Pro (app genérico de prescrição e acompanhamento)",
+    "historia": "Assinou por R$ 79/mês no primeiro ano de consultório, porque 'todo mundo usava'. O app mandava para o paciente checklist diário de refeições com carinha verde ou vermelha e gráfico de peso na tela inicial — o oposto exato do que ela prega. Uma paciente com histórico de transtorno alimentar contou que as carinhas vermelhas a faziam pular refeição para 'compensar'. Larissa cancelou no mesmo dia, com raiva de si mesma, e hoje conta essa história como divisor de águas da prática dela."
+  },
+  "postura_entrevista": "Desconfiada: pergunta duas vezes quem está financiando a pesquisa e se as respostas viram material de venda, responde curto até ganhar confiança, depois abre. Tem tique de dizer 'assim...' antes de discordar e o 'sô' campo-grandense escapa quando esquenta."
+}

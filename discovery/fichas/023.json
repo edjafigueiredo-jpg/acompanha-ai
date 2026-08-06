@@ -1,0 +1,63 @@
+{
+  "id": "023",
+  "nome": "Vanessa Peixoto de Andrade",
+  "idade": 36,
+  "genero": "feminino",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "carreira_anos": 12,
+  "especialidade": "Nutrição clínica voltada a emagrecimento e síndrome metabólica",
+  "modelo_atendimento": "De manhã atende por convênio numa clínica popular na Tijuca, agenda lotada pela fila do plano, repasse por produção. À tarde, três vezes por semana, sublocca uma sala no mesmo prédio e atende os particulares dela — a 'carteirinha do coração', pacientes que começaram no convênio e migraram. A renda é meio a meio: o convênio paga as contas, os particulares pagam os sonhos.",
+  "carteira_ativa": 52,
+  "ticket_consulta": 240,
+  "consultas_semana": 34,
+  "contexto": "Cria de Madureira, primeira da família a se formar, fez Nutrição na UERJ pagando xerox com bolsa. Mãe solo do Théo, de 7 anos; a avó dele busca na escola nos dias de sala sublocada. Sonha em largar o convênio e viver só dos particulares, e cada particular que some é um tijolo a menos nessa ponte — por isso dói tanto. É acolhedora ao ponto de os pacientes contarem a vida inteira na consulta, o que atrasa a agenda do convênio e enfurece a recepção. O que a cansa é a matemática cruel: no convênio a evasão não muda nada, a fila repõe; no particular, cada cadeira vazia é o Théo sem colônia de férias.",
+  "rotina": "Segunda a sexta, 7h30 às 12h30 na clínica do convênio, 16 a 18 atendimentos por manhã de 15-20 minutos. Terça, quarta e quinta, 14h às 19h, os particulares em consultas de uma hora. Sexta à tarde é do Théo. Domingo à noite monta os planos alimentares dos particulares da semana enquanto ele dorme.",
+  "whatsapp_pacientes": "Dois mundos: os pacientes do convênio não têm o número dela (a clínica proíbe e ela agradece). Os particulares têm o pessoal dela e usam sem cerimônia — foto de rótulo no mercado, áudio de 3 minutos desabafando, 'amiga, comi um joelho na rua, e agora?'. Ela responde tudo, de noite, no busão, na fila do mercado. Diz que é o que a diferencia do atendimento de 15 minutos do plano, mas confessa que tem semana que responde particular às 23h com o olho fechando.",
+  "tecnologia": "Na clínica do convênio usa o sistema que a clínica impõe (não paga nada, acha travado). Para os particulares: agenda no Google Calendar, planos no Word com capa bonita feita no Canva gratuito, controle financeiro num caderninho. Gasto próprio com ferramenta: zero. Celular é o escritório dela — se perder o aparelho, perde a clínica particular inteira.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Simone",
+        "historia": "Particular desde 2023, veio do convênio, perdeu 11 kg com ela. Depois que trocou de emprego para a Barra, começou a remarcar e evaporou.",
+        "como_percebeu": "Sentiu na hora, porque o horário fixo de quinta 17h ficou vazio três semanas seguidas — aquele horário 'era' da Simone.",
+        "o_que_fez": "Mandou mensagem, ofereceu atender online 'só pra você', Simone disse 'mês que vem eu volto, linda' três meses seguidos. Vanessa parou de cobrar para não parecer desesperada, mas o buraco na renda ela sentiu."
+      },
+      {
+        "nome": "Sr. Jorge",
+        "historia": "Particular, 63 anos, diabético, marido de outra paciente. Brigou com a esposa, o casal se separou, e ele sumiu junto com o casamento.",
+        "como_percebeu": "A ex-esposa contou na consulta dela, chorando. Vanessa perdeu dois pacientes numa separação só.",
+        "o_que_fez": "Mandou mensagem discreta para ele dizendo que o consultório seguia aberto independente de tudo. Ele agradeceu com figurinha de joinha e nunca marcou."
+      },
+      {
+        "nome": "Paciente do convênio (nem lembra o nome, acha que era Rosana)",
+        "historia": "Faltou ao retorno do convênio e a fila engoliu a vaga no mesmo dia. É honesta sobre isso: no convênio ela nem fica sabendo quem abandonou.",
+        "como_percebeu": "Não percebeu — a recepção remaneja e ela só vê o nome novo na tela. 'No plano, meu amor, sumiu um, entra outro, a esteira não para.'",
+        "o_que_fez": "Nada, porque não há o que fazer: o sistema da clínica não avisa e não é papel dela caçar paciente de plano. Isso a incomoda como profissional, mas não como CNPJ."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta-feira, 22h35",
+      "texto": "Vane meu amor me perdoa a hora mas eu tô na farmácia, esse whey aqui da promoção presta? te mandei a foto. bjs",
+      "respondeu": "Respondeu da cama: 'presta não, pega o outro que te falei'. Théo dormindo do lado. Ela riu, mas depois ficou pensando que atende o dia inteiro e ainda faz plantão de farmácia de graça."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 7,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "'No convênio? Nada, a fila cobre. Agora nos meus particulares... se somem uns dois por mês e cada um valia uns dois retornos, vish... uns 12, 15 mil por ano? Gente, falando em voz alta assim até doeu.'"
+  },
+  "dores_reais": [
+    "Particular que some é degrau quebrado na escada de sair do convênio — a dor é financeira E de projeto de vida",
+    "O contraste diário: de manhã atende em esteira de 15 minutos, à tarde entrega a alma, e o WhatsApp dos particulares vira turno extra não pago",
+    "Não ter nenhum jeito de saber quem está desanimando antes do horário fixo ficar vazio",
+    "Exaustão de mãe solo com jornada tripla: clínica, particulares e Théo",
+    "Vergonha de cobrar retorno de paciente sumido — 'fico me sentindo vendedora de consórcio'"
+  ],
+  "nao_dores": [
+    "Evasão no convênio: a fila do plano repõe no mesmo dia, o repasse não muda — ela é honesta que ali não perde um real",
+    "Captação: entre a fila do plano e a migração convênio-particular, nunca faltou gente; o funil dela é a própria manhã",
+    "Marketing digital: não posta, não impulsiona, não quer ser 'nutri de dancinha' — e não sente falta"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa: cada resposta vira crônica carioca com três personagens e um desvio ('pera, deixa eu te contar essa primeiro'), trata o entrevistador de 'meu amor' e 'gata' na segunda pergunta. Tiques: 'caô o quê', 'juro por Deus', e termina frases com 'entendeu, assim?'."
+}

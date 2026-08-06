@@ -1,0 +1,64 @@
+{
+  "id": "028",
+  "nome": "Fernanda Kaminski",
+  "idade": 38,
+  "genero": "feminino",
+  "cidade": "Curitiba",
+  "uf": "PR",
+  "carreira_anos": 13,
+  "especialidade": "Nutrição renal: pacientes crônicos em hemodiálise e pré-diálise",
+  "modelo_atendimento": "Atende em duas clínicas de nefrologia conveniadas em Curitiba (uma no Portão, outra no Cabral), por produção, dentro do time multiprofissional exigido pela legislação de diálise. Os pacientes são vinculados às clínicas e ao tratamento — quem dialisa três vezes por semana não 'some', está sempre lá na poltrona. A renda vem do repasse das duas clínicas, estável como relógio; ela complementa dando aula num curso técnico às quintas à noite.",
+  "carteira_ativa": 85,
+  "ticket_consulta": 45,
+  "consultas_semana": 40,
+  "contexto": "Curitibana de família polonesa do Abranches, casada com o Ricardo, bancário, mãe do Otto de 4 anos que vive resfriado na creche. Caiu na nutrição renal por um estágio e se apaixonou pela complexidade: fósforo, potássio, kt/v, o xadrez bioquímico que a emagreceria de tédio se fosse 'dieta de verão'. Conhece cada um dos 85 pacientes pelo nome, pelo apelido e pela novela que assistem — conversa na beira da máquina é metade do trabalho. O que a move é segurar o fósforo do seu Waldemar sem tirar dele a bergamota; o que a cansa não é paciente sumir — é o oposto: eles nunca vão embora, o vínculo é para a vida, e a papelada dos relatórios obrigatórios come as noites dela.",
+  "rotina": "Segunda, quarta e sexta na clínica do Portão das 7h às 13h, circulando entre as poltronas dos três turnos de diálise; terça no Cabral o dia inteiro com consultas de pré-diálise. Quinta de manhã fecha relatórios e indicadores nutricionais que as clínicas mandam para auditoria; quinta à noite dá aula. Busca o Otto na creche às 17h30 quando consegue, e quando não consegue liga pedindo socorro pra sogra.",
+  "whatsapp_pacientes": "Número pessoal, e ela dá para todo mundo — sabe que não devia, mas 'paciente renal é da família'. Chegam fotos de rótulo ('esse presunto pode?'), pesagens, e mensagens de filhos aflitos no fim de semana sobre potássio e carambola, que ela responde na hora porque carambola em renal é emergência de verdade. O volume é grande mas o tom é afetuoso; ela reclama rindo, responde fazendo janta, e diz que o dia que isso pesar de verdade ela põe limite. Não pôs ainda.",
+  "tecnologia": "Cada clínica tem seu sistema de prontuário de diálise (um deles arcaico, telinha azul que parece 1998); ela lança os dados nutricionais lá porque a auditoria exige. Relatórios em Excel com macros que um estagiário fez em 2021 e ninguém mais sabe mexer. Do próprio bolso, nada — quem decide ferramenta é o diretor técnico de cada clínica. Com tecnologia ela é funcional e sem paixão: aprende o que mandarem, resmunga e usa.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Ariovaldo",
+        "historia": "Não sumiu — faleceu, depois de seis anos de hemodiálise e seiscentas conversas sobre o Coritiba. Na nutrição renal é assim que os pacientes 'saem da carteira'.",
+        "como_percebeu": "A técnica de enfermagem avisou no grupo da equipe na segunda de manhã, antes do primeiro turno.",
+        "o_que_fez": "Foi ao velório no Água Verde com duas enfermeiras. Guarda no armário da clínica o vidro de tempero que ele deu de Natal. 'Aqui paciente não abandona a gente; a gente é que se despede deles.'"
+      },
+      {
+        "nome": "Dona Zilda",
+        "historia": "Transplantou depois de quatro anos de fila — o melhor tipo de 'sumiço' que existe no setor dela. Saiu da diálise e do acompanhamento dela de uma vez.",
+        "como_percebeu": "A própria Zilda ligou chorando de alegria da porta do hospital.",
+        "o_que_fez": "Comemorou, orientou a transição para a equipe do transplante e sentiu aquele luto bom. Ainda recebe foto da Zilda comendo feijoada 'com moderação, Fer, juro'."
+      },
+      {
+        "nome": "Ivo",
+        "historia": "Pré-diálise, 51 anos, teimoso, faltou a três consultas de acompanhamento conservador seguidas — o único tipo de evasão real que existe no mundo dela, e o mais caro clinicamente: quem abandona o conservador chega antes à máquina.",
+        "como_percebeu": "A secretária do Cabral mostrou a lista de faltas do trimestre; o nome do Ivo estava três vezes.",
+        "o_que_fez": "Pediu ao nefrologista para ligar junto com ela — dupla pressão. Ivo voltou de cara amarrada com a esposa a tiracolo. 'Renal a gente busca com laço, não com lembrete.'"
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 11h50",
+      "texto": "Fernanda me desculpe incomodar no domingo, sou a nora do sr. Estanislau, a família fez churrasco e ele já comeu 3 espetinhos e tá namorando a carambola do quintal, pode???",
+      "respondeu": "Respondeu em 4 minutos, do almoço na sogra: 'CARAMBOLA NÃO, de jeito nenhum, pode fatal. O churrasco a gente conversa terça.' Salvou a mensagem pra usar de exemplo na aula de quinta."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "'Perder dinheiro com paciente que some? Aqui não existe, querida — paciente de diálise vem três vezes por semana nem que chova canivete, e o repasse é por produção da clínica cheia. Se tu falar de perda, eu penso em perda de gente, não de receita. É outro mundo, o meu.'"
+  },
+  "dores_reais": [
+    "A burocracia dos relatórios de auditoria das duas clínicas: horas de Excel com macro quebrada que ninguém paga nem agradece",
+    "Repasse estagnado: o valor por atendimento não sobe desde 2023 e negociar com dois diretores técnicos é bater em porta de banco",
+    "A carga emocional acumulada de pacientes crônicos: ela não perde paciente para a evasão, perde para a doença — e isso não tem software que resolva",
+    "Correr entre duas clínicas e uma creche: a agenda dela é cheia por definição, o problema é caber a vida nos vãos",
+    "Sensação de teto de carreira: para ganhar mais teria que virar coordenadora ou abrir consultório de renal particular, e faltam horas no dia para planejar qualquer um dos dois"
+  ],
+  "nao_dores": [
+    "Retenção de pacientes: o tratamento crônico e o vínculo com a clínica fazem isso por ela — o paciente literalmente não pode ir embora",
+    "Captação: a máquina de diálise capta por ela; nunca precisou de um post patrocinado na vida e os 85 estão sempre lá",
+    "No-show no sentido comercial: falta em diálise é intercorrência médica, aciona busca ativa da equipe, não prejuízo dela",
+    "Comprar ferramenta: não decide nem paga nada — qualquer solução teria que encantar dois diretores técnicos, não ela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa: adora conversar, emenda causos de paciente com genealogia polonesa da família e receita de pierogi adaptado pra renal, precisa ser trazida de volta à pergunta com jeitinho — e vem rindo, sem se ofender. Tiques curitibanos: 'piá' e 'vina' escapam nos exemplos, 'daí' a cada três frases, e um 'mas de repente...' quando especula."
+}

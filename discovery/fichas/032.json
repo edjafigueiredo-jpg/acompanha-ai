@@ -1,0 +1,62 @@
+{
+  "id": "032",
+  "nome": "Matheus Nogueira da Cruz",
+  "idade": 26,
+  "genero": "masculino",
+  "cidade": "Cruzeiro do Sul",
+  "uf": "AC",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição esportiva — hipertrofia e emagrecimento para o pessoal das academias e do time de jiu-jitsu da cidade",
+  "modelo_atendimento": "Vende consultoria trimestral de R$ 750 (avaliação presencial ou por vídeo, plano alimentar, ajuste mensal e suporte por WhatsApp incluso no preço). Atende numa sala alugada dentro da academia Corpus, a maior de Cruzeiro do Sul, e uma parte crescente é online — atleta de Rio Branco, Tarauacá e até um cliente em Manaus. A renda é toda de pacote: quase ninguém compra consulta avulsa dele.",
+  "carteira_ativa": 68,
+  "ticket_consulta": 250,
+  "consultas_semana": 22,
+  "contexto": "Filho de comerciante de material de construção, fez Nutrição na Uninorte em Rio Branco e voltou para Cruzeiro do Sul apostando que a cidade não tinha nenhum esportivo — acertou. Em três anos virou 'o nutri' da cena de musculação e jiu-jitsu local, patrocina atleta amador com consultoria de graça e cresceu quase só no boca a boca e no Instagram. Solteiro, mora sozinho num apê perto da academia, treina todo dia às 5h30. O que o move é uma ambição meio crua de ser referência no Acre inteiro antes dos 30. O que o cansa ele demorou a admitir: o celular. Sessenta e oito pessoas com direito contratual de mandar mensagem, e ele respondendo checklist de refeição no intervalo entre atendimentos, no almoço, no banho de rio no domingo.",
+  "rotina": "Treina 5h30-7h, atende presencial na sala da academia das 8h às 12h e das 16h às 21h, quando a academia enche. Entre 13h e 15h faz as chamadas de vídeo dos clientes online e grava stories. Sábado de manhã tem avaliação física em fila, das 7h às 13h. Domingo é o único dia sem atendimento, mas responde WhatsApp do sofá 'para não acumular segunda'.",
+  "whatsapp_pacientes": "WhatsApp Business com etiqueta por cor (verde = renovou, amarelo = vence esse mês), respondido só por ele — já pensou em contratar secretária, acha que ninguém responderia 'com o conhecimento técnico'. As mensagens chegam o dia todo e explodem entre 21h e 23h, quando o pessoal sai do treino: foto de marmita, 'posso trocar tilápia por ovo', print de balança. Ele vende o suporte como diferencial ('meu acompanhamento é de verdade, não é plano em PDF') e por isso se sente sem direito de reclamar — mas confessa que já acordou com 40 não lidas e vontade de jogar o celular no Rio Juruá.",
+  "tecnologia": "Paga R$ 89/mês num software de avaliação física e prescrição de treino/dieta que o pessoal da educação física indicou, e usa Google Agenda gratuito. Controla renovação de pacote numa planilha de celular meio bagunçada. É rápido com tecnologia, aprende sozinho no YouTube, mas desconfia de gasto novo: em Cruzeiro do Sul a internet cai e 'ferramenta bonita de sudeste' nem sempre funciona no 4G daqui.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Wesley, 22 anos, atleta de jiu-jitsu",
+        "historia": "Comprou o trimestral para bater peso para um campeonato em Rio Branco. Lutou, perdeu no primeiro combate, e sumiu com um mês e meio de pacote ainda pago.",
+        "como_percebeu": "O checklist diário dele parou de chegar de um dia pro outro. Matheus notou em uns quatro dias porque o Wesley era dos mais ativos no grupo.",
+        "o_que_fez": "Mandou áudio de motivação, chamou pro treino, nada. O pacote venceu sem renovar. Doeu mais o orgulho que o bolso — ele usa o Wesley de exemplo do que 'cabeça fraca' faz com resultado."
+      },
+      {
+        "nome": "Dona Ivone, 54 anos",
+        "historia": "Mãe de um aluno da academia, comprou pacote para emagrecer. Renovou uma vez, na segunda renovação disse que 'esse mês tá apertado' e nunca mais respondeu.",
+        "como_percebeu": "Pela etiqueta amarela vencida na planilha, umas três semanas depois do vencimento — cliente quieto ele só vê quando a renovação atrasa.",
+        "o_que_fez": "Mandou a mensagem padrão de renovação duas vezes, ofereceu parcelar. Visualizou e não respondeu. Ele apagou a etiqueta e seguiu, tem fila de avaliação no sábado."
+      },
+      {
+        "nome": "Caio, 31 anos, cliente online de Manaus",
+        "historia": "Fechou pacote depois de ver um reels dele. Fez a primeira chamada, mandou dieta, o cara nunca preencheu o recordatório nem apareceu na chamada de ajuste.",
+        "como_percebeu": "Na hora da chamada marcada, esperou 20 minutos no vídeo sozinho.",
+        "o_que_fez": "Reagendou duas vezes, o cara sumiu com o pacote pago inteiro. Matheus deu de ombros: 'pago tá pago'. Mas ficou incomodado de não saber se o cara fala mal dele por aí."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Domingo, 22h15",
+      "texto": "Mano me salva, amanhã 6h tenho pesagem escondida aqui do trampo, se eu tomar só café preto quebra o jejum pro teste de bioimpedância??",
+      "respondeu": "Respondeu em três minutos, do sofá, áudio de 40 segundos. Suporte incluso é suporte incluso. Depois ficou mais meia hora rolando as outras não lidas."
+    },
+    "gasto_ferramentas_mes": 89,
+    "horas_semana_respondendo": 12,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "Quem some já pagou, então perder mesmo... é a renovação que não vem, né. Uns 15 pacotes por ano que não renovam por desânimo, dá uns 11 mil. Nunca sentei pra fazer essa conta, e ela me incomoda."
+  },
+  "dores_reais": [
+    "As 10-12 horas semanais de WhatsApp que ele mesmo vendeu como diferencial e agora não consegue nem terceirizar nem cobrar à parte",
+    "Cliente que some com pacote pago e não renova — não dói no caixa do mês, dói na taxa de renovação que ele sabe que é o que sustenta o modelo",
+    "Teto da cidade: Cruzeiro do Sul tem 90 mil habitantes e ele sente que já atendeu 'todo mundo que paga'; crescer significa online, e online a concorrência é o Brasil inteiro",
+    "Precificação: cobra R$ 750 o trimestre e vê consultoria esportiva de capital cobrando R$ 2.500, mas tem medo de aumentar e perder o volume local"
+  ],
+  "nao_dores": [
+    "No-show de consulta avulsa: quase não vende avulsa, e quem falta na avaliação do pacote remarca porque já pagou",
+    "Captação imediata: o Instagram e o boca a boca da academia enchem a agenda; a fila de avaliação de sábado prova isso",
+    "Burocracia de convênio: nunca atendeu plano de saúde e não pretende"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seco e apressado: responde em frases curtas, olha o relógio, avisa logo que 'tem atendimento às 16h'. Esquenta e alonga só quando fala de resultado de atleta. Chama o entrevistador de 'mano', usa 'é... basicamente isso' para encerrar assunto e o 'né' acreano puxado no fim das frases."
+}

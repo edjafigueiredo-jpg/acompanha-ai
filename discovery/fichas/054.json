@@ -1,0 +1,64 @@
+{
+  "id": "054",
+  "nome": "Roseane Costa Serra",
+  "idade": 47,
+  "genero": "feminino",
+  "cidade": "São Luís",
+  "uf": "MA",
+  "carreira_anos": 22,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e comorbidades (diabetes tipo 2, hipertensão, dislipidemia)",
+  "modelo_atendimento": "Atende por convênio em duas clínicas populares de São Luís — uma no Renascença, outra no João Paulo — em regime de produção: recebe por consulta realizada via repasse dos planos (Hapvida, Unimed e um plano regional). A agenda é montada pelas recepções das clínicas, sempre lotada pela fila do plano. Consulta de 25-30 minutos, retorno em 30-60 dias quando o paciente marca.",
+  "carteira_ativa": 55,
+  "ticket_consulta": 38,
+  "consultas_semana": 46,
+  "contexto": "Ludovicense da Cohab, formada pela UFMA em 2003, começou no NASF e migrou para as clínicas de convênio quando os filhos nasceram — precisava de volume e previsibilidade. Casada com o Ribamar, técnico da Equatorial; dois filhos, um vestibulando. É a nutricionista que a paciente de convênio ama: fala a língua do povo, adapta plano para farinha d'água, juçara e peixe frito, negocia meta pequena. Move-a a paciente diabética que volta com a glicada baixa; cansam-na as sete horas de cadeira por dia, o repasse que não reajusta desde 2023 e a glosa do plano quando a guia vem com um carimbo errado.",
+  "rotina": "Segunda, quarta e sexta na clínica do Renascença, 8h às 14h, uma consulta a cada 25 minutos. Terça e quinta na do João Paulo, 13h às 19h. Leva marmita e come na copa entre um paciente e outro. Sábado de manhã resolve casa e feira do João Paulo; domingo é igreja e almoço na casa da mãe. À noite, quando sobra fôlego, assiste série com o marido e dorme às 22h30.",
+  "whatsapp_pacientes": "Não dá o número pessoal para paciente — aprendeu a lição em 2015, quando uma paciente ligou às 23h por causa de sopa. Toda comunicação passa pela recepção das clínicas: remarcação, encaixe, confirmação. Umas poucas pacientes antigas têm o número dela e mandam 'bênção dotôra' e foto de prato de vez em quando; ela responde quando dá, sem compromisso. Sente alívio por esse muro existir e sabe que ele só existe porque a estrutura da clínica segura tudo.",
+  "tecnologia": "Usa o sistema de prontuário que cada clínica fornece (dois sistemas diferentes, ambos lentos), imprime plano alimentar num modelo Word que carrega no pendrive há dez anos. Não paga ferramenta nenhuma do próprio bolso e não pretende: 'sistema é problema do dono da clínica'. Celular é para família, grupo da igreja e o grupo das colegas de turma da UFMA.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Raimundo Nonato, 63, hipertenso e diabético",
+        "historia": "Veio três vezes, emagreceu 4 kg, e não voltou mais. Provavelmente o plano dele descredenciou a clínica ou ele achou que já estava bom — ela nunca soube.",
+        "como_percebeu": "Sinceramente? Não percebeu na hora. Notou meses depois, quando reorganizava fichas e viu a dele parada. A agenda seguiu cheia igual, a fila do plano repõe no mesmo dia.",
+        "o_que_fez": "Nada — não tem como. A clínica não faz busca ativa de paciente de convênio, e ela não tem o telefone dele; o cadastro é da recepção."
+      },
+      {
+        "nome": "Dona Zulmira, 58, obesidade grau II",
+        "historia": "Paciente querida, vinha religiosamente havia um ano. Sumiu depois que o plano aumentou a coparticipação e a consulta 'de graça' passou a custar R$ 30 do bolso dela.",
+        "como_percebeu": "Essa ela percebeu porque a Zulmira mandou recado pela recepcionista, pedindo desculpa como se devesse algo.",
+        "o_que_fez": "Pediu à recepção para avisar quando abrisse campanha de encaixe. Ficou com pena — mas o horário da Zulmira foi preenchido pela fila em menos de uma semana. Financeiramente, zero diferença."
+      },
+      {
+        "nome": "Adriana, 34, pós-bariátrica",
+        "historia": "Encaminhada pelo cirurgião via plano, precisava de acompanhamento mensal e sumiu na terceira consulta. Caso que preocupa clinicamente, porque pós-bariátrica sem acompanhamento dá deficiência nutricional séria.",
+        "como_percebeu": "A recepção avisou que ela faltou e não remarcou — só porque o cirurgião ligou perguntando.",
+        "o_que_fez": "Registrou no prontuário e devolveu a bola ao cirurgião. É o máximo que o modelo permite; ela mesma diz: 'no convênio o paciente é do plano, não é meu'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 20h10",
+      "texto": "Dotôra Roseane me perdoe no domingo, é a filha de dona Graça, a senhora pode encaixar mainha essa semana? Ela tá com a pressão avexada",
+      "respondeu": "Respondeu segunda de manhã orientando a procurar a recepção às 7h para vaga de encaixe — e mandou um 'diga a dona Graça que tomo conta dela'. Foi a única mensagem de paciente do mês no celular dela."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 11,
+    "estimativa_perda_anual_intuitiva": "Perder com paciente que some? Nada, minha filha, a fila do plano não acaba nunca. O que me rouba é glosa e falta: falta não paga e a cadeira fica ali, vazia. Se somar glosa, vai dar uns 3 mil no ano, isso sim."
+  },
+  "dores_reais": [
+    "Repasse congelado: R$ 38 por consulta desde 2023 enquanto tudo subiu; para manter a renda, só aumentando volume, e o corpo já reclama",
+    "Glosas e burocracia de guia: perde horas do mês brigando com auditoria de plano por consulta que já realizou",
+    "Consulta de 25 minutos para caso que pedia uma hora: sai com a sensação de atendimento pela metade, e isso corrói o orgulho profissional",
+    "No-show do convênio: paciente falta sem avisar, a clínica não cobra, e o horário dela vira zero na produção do mês",
+    "Dor no ombro e nas costas de sete horas diárias de cadeira, dois turnos, dois bairros"
+  ],
+  "nao_dores": [
+    "Retenção de paciente: a fila do plano repõe qualquer evasão no mesmo dia; paciente que some não muda um real da produção dela",
+    "Captação e marketing: nunca postou nada profissional na vida e a agenda vive lotada — Instagram é para foto de neto das amigas",
+    "Plantão de WhatsApp: o muro da recepção funciona há vinte anos; ela recebe uma mensagem de paciente por mês, se tanto",
+    "Software próprio de acompanhamento: qualquer ferramenta seria custo dela para melhorar um processo cujo lucro é do dono da clínica"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante e cheia de causos, trata o entrevistador como visita: oferece contexto, genealogia da paciente e opinião sobre o plano de saúde sem ser perguntada. Fala 'olhe' para abrir frase e 'é pique disso' quando compara situações; chama todo mundo de 'minha filha' ou 'meu filho'. Ri alto, mas quando o assunto é o repasse dos planos a voz muda e vem discurso pronto de quem já reclamou em assembleia de sindicato."
+}

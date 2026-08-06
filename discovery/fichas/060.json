@@ -1,0 +1,63 @@
+{
+  "id": "060",
+  "nome": "Priscila Taques Arruda",
+  "idade": 32,
+  "genero": "feminino",
+  "cidade": "Cuiabá",
+  "uf": "MT",
+  "carreira_anos": 8,
+  "especialidade": "Nutrição clínica com foco em emagrecimento, incluindo pacientes em uso de análogos de GLP-1 encaminhados por endocrinologistas",
+  "modelo_atendimento": "Consultório particular próprio num centro médico no bairro Jardim das Américas, em Cuiabá, dividindo recepção com uma dermatologista. Consulta avulsa (R$ 250) e um plano de retorno mensal com desconto que metade da carteira assina. Renda 100% do consultório; parceria informal de encaminhamento com dois endócrinos e um cirurgião bariátrico.",
+  "carteira_ativa": 72,
+  "ticket_consulta": 250,
+  "consultas_semana": 32,
+  "contexto": "Cuiabana de chapa e cruz, de família tradicional da baixada, formada pela UFMT em 2017. Fez nome pegando a onda dos emagrecedores injetáveis: os endócrinos receitam, ela segura a parte alimentar e a massa magra. Casada com o Douglas, engenheiro agrônomo que vive embarcado em fazenda no norte do estado; filha de 4 anos, a Maitê, e uma rede de apoio que é basicamente a mãe dela. Move-a a paciente que emagrece com saúde e exame limpo; cansa-a o malabarismo de mãe-solo-de-semana com agenda de 32 consultas, e a frustração de ver paciente investir R$ 1.300 por mês na caneta e sumir da nutricionista que custa R$ 250.",
+  "rotina": "Atende segunda a sexta das 8h às 12h30 e das 14h às 18h, com a sexta à tarde reservada para retornos rápidos de 20 minutos dos pacientes do plano mensal. Busca a Maitê na escolinha às 18h30 — hora sagrada, quem atrasa a agenda é remanejado. À noite, depois que a filha dorme, responde WhatsApp das 21h às 22h30 no sofá. Domingo à tarde deixa duas horas para organizar a semana e chorar as pitangas com o Douglas por videochamada.",
+  "whatsapp_pacientes": "WhatsApp Business que só ela responde, com respostas rápidas configuradas. Recebe de 40 a 60 mensagens por dia: foto de refeição, efeito colateral da caneta ('enjoada demais, almoço o quê?'), balança, remarcação. Responde no intervalo do almoço e no turno das 21h. Sente que é um segundo expediente invisível: já somou uma semana no relógio do celular e deu quase 9 horas. E o que mais a angustia é o inverso — o paciente que PARA de mandar mensagem: 'quando o WhatsApp esfria, na renovação ele não aparece, é matemático'.",
+  "tecnologia": "Sistema de agenda com lembrete automático por WhatsApp (R$ 89/mês) que reduziu as faltas pela metade, prescrição num software de nutrição na versão básica (R$ 55/mês), planilha de renovações no Excel que atualiza domingo. Confortável com tecnologia, avalia ferramenta pelo custo-benefício em minutos poupados; o que ela procura e não achou até hoje é algo que enxergue o paciente ENTRE as consultas sem depender do paciente ser disciplinado.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Rodrigo, 44, produtor rural",
+        "historia": "Perdeu 11 kg em quatro meses com caneta mais o plano dela, viajou para a colheita da soja em Sinop e nunca mais voltou. Continua na caneta, sem acompanhamento alimentar, perdendo músculo — ela sabe porque a esposa dele ainda é paciente.",
+        "como_percebeu": "Na planilha de domingo: a linha dele ficou dois meses sem retorno marcado.",
+        "o_que_fez": "Mandou mensagem oferecendo teleconsulta na época da colheita. Ele respondeu 'na volta eu marco, doutora' — o 'na volta' já dura cinco meses. Ela criou horário de teleconsulta às 7h por causa desses casos, mas confessa que não tem sistema para lembrar de cobrar cada um."
+      },
+      {
+        "nome": "Kelly, 29, recepcionista de hospital",
+        "historia": "Emagreceu 6 kg em três meses, empolgadíssima, e sumiu quando o dinheiro apertou — escolheu manter a caneta (que o endócrino já tentou baixar) e cortou a nutricionista, achando que o remédio faz tudo.",
+        "como_percebeu": "O WhatsApp dela esfriou primeiro: parou de mandar foto de marmita umas duas semanas antes de faltar o retorno. Priscila viu o padrão acontecendo e não tinha o que fazer além de mandar mensagem.",
+        "o_que_fez": "Ofereceu o plano mensal com desconto e espaçamento bimestral. Kelly agradeceu e disse que voltava 'mês que vem'. Priscila guarda esse caso como o resumo da dor dela: ela vê o paciente esfriando em câmera lenta e não tem processo para agir a tempo."
+      },
+      {
+        "nome": "Marta, 51, professora, pré-diabética",
+        "historia": "Fez seis meses direitinho, reverteu a glicemia, recebeu os parabéns — e entendeu o resultado como alta definitiva. Sumiu feliz. Um ano depois voltou com a glicemia de novo no limite.",
+        "como_percebeu": "Na época nem percebeu direito, a agenda estava lotada; só se deu conta quando ela reapareceu pior.",
+        "o_que_fez": "Reagendou e criou o hábito de marcar 'consulta de manutenção' semestral já na alta. Metade dos pacientes falta essa consulta — e ninguém no consultório tem rotina de correr atrás de quem falta consulta marcada para dali a seis meses."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta-feira, 21h52",
+      "texto": "Dra boa noite! Apliquei a caneta hoje e tô com um enjôo medonho, jantei não. Como uma bolachinha de água e sal ou fico sem nada mesmo?",
+      "respondeu": "Respondeu às 21h55, do sofá, com uma resposta rápida que ela já tem salva para enjoo de GLP-1 mais um ajuste pessoal. Depois anotou no Excel para retomar o fracionamento na consulta. Faz isso toda noite e cobra zero por isso — 'faz parte', diz, sem convicção nenhuma."
+    },
+    "gasto_ferramentas_mes": 144,
+    "horas_semana_respondendo": 9,
+    "no_shows_ultimo_mes": 5,
+    "estimativa_perda_anual_intuitiva": "Eu fiz essa conta no domingo passado, por sinal: uns 25 pacientes por ano me somem depois da fase de resultado. Cada um valeria uns R$ 1.000/ano em retornos. R$ 25 mil, fácil. Quando falei em voz alta, me deu até azia."
+  },
+  "dores_reais": [
+    "Paciente que some depois do resultado — especialmente os de caneta, que atribuem tudo ao remédio e cortam justo o acompanhamento que protege a massa magra; ela vê o ciclo e não tem processo para quebrá-lo",
+    "O 'esfriamento' visível no WhatsApp antes da evasão: ela reconhece o sinal, mas com 72 ativos não dá conta de agir caso a caso na mão",
+    "O segundo expediente das 21h no sofá: 9 horas semanais respondendo sem cobrar, roubadas do único tempo dela",
+    "A planilha de domingo como único radar: se ela pula um domingo (e pula, quando a Maitê adoece), pacientes escorrem sem ninguém notar",
+    "Fazer busca ativa parecer cuidado e não cobrança — ela tem medo de soar vendedora insistente"
+  ],
+  "nao_dores": [
+    "Captação: os dois endócrinos e o bariátrico mandam paciente novo toda semana; a agenda de avulso tem fila de 15 dias",
+    "No-show puro: o lembrete automático do sistema já derrubou as faltas de 11 para 5 por mês; esse problema ela considera meio resolvido",
+    "Aparecer no Instagram: posta uma vez por semana por obrigação e não sente falta — a fonte dela é encaminhamento médico, não seguidor"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante e prática, do tipo que responde e já completa com exemplo e número ('olha, te dou um caso'). Riso fácil, autoironia sobre a vida de mãe com marido embarcado. Usa 'vixe' e o diminutivo cuiabano em tudo ('rapidinho', 'certinho') e um 'né, verdade?' buscando cumplicidade. Se a entrevista tocar na dor certa — paciente sumindo depois do resultado — ela toma a rédea e fala dez minutos sem pausa, com a azia do R$ 25 mil incluída."
+}

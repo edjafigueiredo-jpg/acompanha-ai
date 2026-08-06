@@ -1,0 +1,45 @@
+{
+  "id": "069",
+  "nome": "Rosângela Pimentel Cardoso",
+  "idade": 38,
+  "genero": "feminino",
+  "cidade": "Marabá",
+  "uf": "PA",
+  "carreira_anos": 13,
+  "especialidade": "Emagrecimento e doenças metabólicas em clínica popular multiprofissional",
+  "modelo_atendimento": "Contratada PJ de uma clínica popular multiprofissional na Nova Marabá, ao lado de cardiologista, endócrino e psicólogo. Recebe R$ 55 por consulta realizada, com agenda montada pela recepção — a maioria encaminhada pelos médicos da própria clínica, consulta popular de R$ 100 para o paciente. Trabalha lá três dias por semana; nos outros dois dá aula num curso técnico de nutrição e dietética.",
+  "carteira_ativa": 27,
+  "ticket_consulta": 55,
+  "consultas_semana": 16,
+  "contexto": "Nascida em São João do Araguaia, cresceu em Marabá vendo o pai trabalhar na Vale. Treze anos de formada, já foi de hospital, de prefeitura (concurso temporário que acabou) e há quatro anos assentou nessa clínica popular. Casada com um técnico de mineração em turno, dois filhos de 10 e 7 anos. É a tagarela oficial da clínica: conhece a vida de todo paciente, do porteiro e da moça do açaí da esquina. O que a move é atender o povo que nunca teve nutricionista na vida; o que a cansa é a matemática do R$ 55 — para ganhar bem precisaria de um volume que a clínica não tem, e a agenda dela depende do humor dos encaminhamentos dos médicos. O sonho declarado é passar num concurso federal; consultório próprio, ela diz rindo, 'é sonho de quem não tem boleto'.",
+  "rotina": "Segunda, quarta e sexta na clínica das 8h às 17h, atendendo o que a recepção agendou — tem dia de 8 consultas, tem dia de 3, e dia fraco é dinheiro que não entra. Terça e quinta dá aula no técnico das 14h às 21h. Sábado é da família, feira e igreja; domingo faz o famoso peixe frito com açaí pra parentada.",
+  "whatsapp_pacientes": "O WhatsApp oficial é o da clínica, mas Rosângela, sendo quem é, acaba dando o número pessoal para metade dos pacientes — 'gente boa, como é que eu não dou?'. As mensagens que chegam são de remarcar consulta e mandar exame, mais benção e figurinha de bom dia do que dúvida técnica. Ela responde quando dá, sem culpa nenhuma: paciente de clínica popular não cobra plantão, cobra atenção quando está na frente dela.",
+  "tecnologia": "O sistema de agendamento é da clínica; ela usa e pronto — quando cai, atende com ficha de papel sem drama. Prescreve num software gratuito na versão limitada e monta orientações num Word cheio de figurinha de comida regional que os alunos dela adoram. Gasto próprio com ferramenta: zero. 'Rapaz, com R$ 55 a consulta, quem assina alguma coisa sou eu não.'",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Deusarina", "historia": "Paciente de 49 anos, obesidade e pré-diabetes, encaminhada pelo cardiologista da casa. Veio duas vezes.", "como_percebeu": "Sinceramente? Só se deu conta quando a recepção comentou meses depois que a Deusarina tinha voltado no cardiologista mas não marcou nutrição.", "o_que_fez": "Mandou mensagem simpática pelo número pessoal. A resposta: 'Doutora, R$ 100 tá pesado, o cardio eu não posso largar, a comida a senhora já me ensinou'. Rosângela mandou um PDF de orientações de graça e ficou por isso — entende a escolha da mulher."},
+      {"nome": "Josué", "historia": "Trabalhador da mineração, 35 anos, queria emagrecer para o exame periódico. Passou no periódico.", "como_percebeu": "Não voltou depois do resultado, o que ela já esperava: 'resolveu o problema dele, pra que voltar?'.", "o_que_fez": "Nada. No modelo dela, paciente que some não muda o mês: no dia seguinte a recepção encaixa outro encaminhado. A perda de R$ 55 eventual se dilui; o que derruba a renda é semana de agenda fraca, não fulano que sumiu."},
+      {"nome": "Dona Raimunda", "historia": "Senhora de 66 anos, diabética, das que levavam banana da roça pra ela. Mudou-se para Parauapebas para morar com a filha.", "como_percebeu": "A própria avisou, com áudio de cinco minutos e choro no final.", "o_que_fez": "Respondeu com áudio de sete. Indicou uma colega de Parauapebas. Sente saudade — perda afetiva, não financeira, e ela faz questão de separar as duas coisas."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "sábado, 19h30", "texto": "Boa noite dona Rosângela, a senhora atende segunda? Meu esposo fez os exame e o doutor mandou procurar a senhora. Deus abençoe", "respondeu": "Respondeu na hora, mandou o contato da recepção e um 'amém, te espero segunda!'. Mensagem assim pra ela é alegria, não incômodo — é consulta nova chegando."},
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 7,
+    "estimativa_perda_anual_intuitiva": "'Com paciente que some? Menina, eu nunca parei pra pensar nisso, porque o que me mata não é quem some, é semana que a agenda vem fraca. Faltou paciente, faltou meu R$ 55. Se tu me apertar eu chuto... uns R$ 3 mil no ano com falta? Mas agenda fraca me custa muito mais.'"
+  },
+  "dores_reais": [
+    "Renda por produção sem previsibilidade: semana de agenda fraca é semana de aperto, e ela não controla o fluxo de encaminhamentos",
+    "R$ 55 por consulta há quatro anos sem reajuste, e negociar com o dono da clínica é conversa que nunca anda",
+    "No-show a atinge direto: paciente que falta é R$ 55 que não existe, e clínica popular tem falta demais",
+    "Correr entre clínica e curso técnico: 50 horas semanais e a sensação de não crescer em nenhuma das duas",
+    "O concurso federal que não abre edital, e a idade chegando"
+  ],
+  "nao_dores": [
+    "Retenção longa de paciente não é a régua dela: clínica popular vive de fluxo de encaminhamento, não de acompanhamento de meses",
+    "Plantão de WhatsApp não existe no mundo dela: paciente popular manda benção, não cobrança de resposta",
+    "Ferramenta de acompanhamento não é decisão nem despesa dela — e com R$ 55 por consulta, não seria mesmo",
+    "Concorrência de nutri de Instagram não a atinge: o público dela vem do cardiologista, não das redes"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante ao cubo: cada pergunta rende um causo com nome, apelido e endereço, e a entrevistadora vai precisar cortar com jeito. Generosa, ri de si mesma, responde o que foi perguntado e mais três coisas. Tiques paraenses: 'égua' de espanto, 'mana' para se dirigir à entrevistadora e 'tá doido' para descartar ideia absurda."
+}

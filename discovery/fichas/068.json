@@ -1,0 +1,44 @@
+{
+  "id": "068",
+  "nome": "Milena Menezes Fontes",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Itabaiana",
+  "uf": "SE",
+  "carreira_anos": 3,
+  "especialidade": "Materno-infantil: gestantes, introdução alimentar e seletividade em crianças pequenas",
+  "modelo_atendimento": "Consultório particular numa sala anexa à casa dos pais, em Itabaiana, reformada com dinheiro do pai caminhoneiro. Consulta gestante R$ 160, consulta de introdução alimentar R$ 180 (mais longa), retorno R$ 120. Renda toda do consultório, ainda instável; complementa dando oficina de papinhas uma vez por mês num buffet infantil parceiro.",
+  "carteira_ativa": 22,
+  "ticket_consulta": 150,
+  "consultas_semana": 11,
+  "contexto": "Itabaianense da rua do mercado, formou-se em Aracaju e voltou porque em Itabaiana 'gestante ou vai no obstetra e pronto, ou viaja pra capital'. Três anos de carreira, um e meio de consultório. Solteira, mora com os pais, é a tia babona de dois sobrinhos. O modelo dela tem prazo de validade embutido: gestante 'termina' no parto, introdução alimentar 'termina' quando o bebê come de tudo — então cada paciente que some antes da hora dói dobrado, porque a carteira é pequena e naturalmente rotativa. O que a move é mãe saindo da consulta aliviada; o que a aflige é fim de mês com agenda de 11 consultas e boleto da sala que o pai finge que não precisa receber.",
+  "rotina": "Atende terça a sexta das 8h às 12h e das 15h às 18h — a agenda tem buracos e ela sofre com eles. Segunda visita o buffet, prepara a oficina de papinhas e posta no Instagram local. Fim de tarde ajuda a mãe com o jantar e responde WhatsApp até a novela. Sábado de manhã atende gestante que trabalha em comércio, que em Itabaiana é quase todas.",
+  "whatsapp_pacientes": "Número pessoal, sem separação nenhuma — mãe de recém-nascido não conhece horário comercial e ela também não impõe: madrugada chega foto de fralda, engasgo, 'ela recusou a abobrinha, e agora?'. Responde tudo, rápido, com áudio carinhoso. Sabe que esse plantão gratuito é o que a diferencia na cidade e ao mesmo tempo a esgota; nunca cobrou por ele porque 'mãe aperreada não se cobra'.",
+  "tecnologia": "Agenda no caderno de capa dura mais lembretes no celular, plano alimentar montado no Canva (acha os modelos de software feios para materno-infantil), prontuário em fichário. Paga só o Canva Pro, R$ 40/mês. Sabe usar tecnologia, mas o caixa não deixa assinar nada: 'todo real que entra já tem nome'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Gabriela", "historia": "Gestante de 24 anos com diabetes gestacional, acompanhamento que era pra ir até o parto. Sumiu na 31ª semana.", "como_percebeu": "Faltou ao retorno quinzenal e não respondeu à confirmação — coisa rara em gestante de risco.", "o_que_fez": "Insistiu, ligou, a sogra atendeu: o marido perdeu o bico e 'agora só o pré-natal do posto'. Milena ofereceu meio preço, a moça não voltou por vergonha. Ela ainda pensa na glicemia dessa menina."},
+      {"nome": "Bebê Théo (mãe Camily)", "historia": "Introdução alimentar iniciada aos 6 meses, duas consultas ótimas, o plano previa acompanhar até 1 ano.", "como_percebeu": "Camily parou de mandar os vídeos das refeições que mandava todo dia; depois faltou ao retorno.", "o_que_fez": "Mandou mensagem, Camily respondeu que a avó assumiu a comida do bebê e que 'a senhora sabe como é mãe de marido, né'. Milena riu, chorou por dentro e perdeu a paciente pra sogra. História que ela conta como piada e sente como derrota."},
+      {"nome": "Vitória", "historia": "Gestante que veio uma vez por indicação da doula, adorou, disse que voltaria todo mês.", "como_percebeu": "Nunca mais agendou; Milena viu depois no Instagram que ela passou a acompanhar com uma nutri online de Aracaju que posta muito.", "o_que_fez": "Nada — orgulho travou. Ficou matutando se o problema foi preço, se foi o Instagram fraco dela, ou se consulta presencial perdeu a graça. Não descobriu."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "quarta-feira, 23h51", "texto": "Milena me desculpe a hora!!! O Théo é 8 meses e engasgou com a banana hj de tarde, tirei o pedaço mas fiquei traumatizada, posso voltar tudo pra papa amassada né? Não durmo com medo", "respondeu": "Respondeu à meia-noite com áudio calmo explicando gag reflex versus engasgo e segurando a regressão total para papa. A mãe mandou sete corações. Milena dormiu 1h e atendeu às 8h."},
+    "gasto_ferramentas_mes": 40,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "'Nunca fiz essa conta não... Cada gestante que some antes do parto são umas cinco consultas perdidas, R$ 600. Se somar as que sumiram esse ano... vixe, dá uns R$ 8 mil? Pra mim isso é o aluguel do ano todo.'"
+  },
+  "dores_reais": [
+    "Cada abandono pesa dobrado: carteira de 22, modelo com prazo curto — quem sai antes da hora leva um pedaço grande do faturamento",
+    "O plantão de madrugada de mãe aflita: é o diferencial dela e é de graça, e ela já sente o esgotamento aos 26",
+    "Agenda com buraco: 11 consultas por semana não pagam a independência que ela quer ter dos pais",
+    "Perder paciente para nutri online de Aracaju com Instagram bonito, sem entender o porquê",
+    "Constrangimento de cobrar e reajustar preço numa cidade onde todo mundo se conhece"
+  ],
+  "nao_dores": [
+    "Burocracia não a incomoda: MEI, contadora amiga da mãe, tudo simples",
+    "Não sofre com concorrência local presencial: é praticamente a única materno-infantil de Itabaiana",
+    "Ferramenta cara de gestão não é dor sentida: o caderno dá conta do volume atual, o problema dela é encher o caderno"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada por circunstância, não por temperamento: responde entre uma consulta e outra, frases curtas, 'pronto', 'é isso' — mas quando o assunto é bebê engasgado ou gestante que sumiu, para tudo e se estende. Tiques sergipanos: 'vixe' e 'aperreada', e chama a entrevistadora de 'minha filha' apesar de ter 26 anos."
+}

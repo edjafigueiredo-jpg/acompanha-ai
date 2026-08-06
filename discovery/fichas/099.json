@@ -1,0 +1,66 @@
+{
+  "id": "099",
+  "nome": "Maria do Socorro Vasconcelos Leal",
+  "idade": 47,
+  "genero": "feminino",
+  "cidade": "Teresina",
+  "uf": "PI",
+  "carreira_anos": 23,
+  "especialidade": "Nutrição materno-infantil: gestantes, lactantes e introdução alimentar",
+  "modelo_atendimento": "Consultório próprio na zona leste de Teresina, referência da cidade em gestante e introdução alimentar, com recepcionista em tempo integral. Atende particular com forte fluxo de encaminhamento de quatro obstetras e dois pediatras. A renda vem das consultas, de um acompanhamento gestacional fechado por trimestre e de uma oficina mensal de introdução alimentar para grupos de mães.",
+  "carteira_ativa": 48,
+  "ticket_consulta": 260,
+  "consultas_semana": 24,
+  "contexto": "Teresinense, 23 anos de carreira, mestrado em saúde da criança pela UFPI, dá aula num curso de especialização aos sábados. Casada com um auditor fiscal, dois filhos criados, um já na faculdade. É metódica ao extremo: tem protocolo escrito para cada fase da gestação e planilha de acompanhamento por paciente que ela mesma desenha há quinze anos. O que a move é o desfecho — bebê nascendo bem, IA sem trauma; o que a atormenta é a natureza do funil dela: a paciente tem data para 'acabar' (o parto), e é exatamente na transição gestante-puérpera que metade some, no puerpério, quando mais precisaria de nutrição. Ela estudou o próprio negócio o bastante para saber que esse vazamento é o maior problema financeiro e clínico da prática dela.",
+  "rotina": "Segunda a quinta atende das 8h às 12h e das 15h às 19h, consultas de 45 minutos. Sexta de manhã faz a oficina de IA ou visita as maternidades parceiras; sexta à tarde fecha a semana revisando a planilha de gestantes por DPP (data provável do parto). Sábado de manhã, aula na especialização.",
+  "whatsapp_pacientes": "Dois números: o do consultório, que a recepcionista opera das 8h às 18h, e o pessoal, que ela libera apenas para gestantes do terceiro trimestre e puérperas nas primeiras seis semanas — fase em que dúvida de amamentação não espera. Nessas janelas chegam mensagens até de madrugada ('o leite não desce', 'ela mama e chora') e ela responde cedinho, às 6h. Considera o desenho racional, mas reconhece que as seis semanas de pós-parto de cada paciente viram um plantão não remunerado que se acumula.",
+  "tecnologia": "Prontuário eletrônico com agenda por R$ 130 mensais, as planilhas próprias de acompanhamento por DPP, e formulários que a recepcionista envia por link antes da primeira consulta. É a mais tecnológica da geração dela: analisa ferramenta com friamente, mede o que resolve, e já cancelou o que não entregou — inclusive um app de acompanhamento que testou por um ano.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Amanda",
+        "historia": "Gestante acompanhada da 8ª à 39ª semana, ganho de peso impecável, diabetes gestacional controlado só com dieta. Pariu em maio e nunca veio à consulta de puerpério, apesar de estar agendada desde antes do parto.",
+        "como_percebeu": "A planilha de DPP dela sinaliza puérperas sem retorno em 30 dias. Amanda está na lista de junho, marcada de amarelo.",
+        "o_que_fez": "A recepcionista mandou duas mensagens; Amanda respondeu 'tá corrida com o bebê, logo marco'. Socorro sabe de cor essa frase: é assim que 60% das puérperas dela se despedem sem se despedir. É o vazamento estrutural do negócio dela."
+      },
+      {
+        "nome": "Camille",
+        "historia": "Mãe que fez a oficina de IA e três consultas para o bebê. Sumiu quando o bebê aceitou bem a comida — objetivo percebido como cumprido, embora Socorro quisesse acompanhar até os 2 anos.",
+        "como_percebeu": "Falta no retorno de 9 meses do bebê, apontada na revisão de sexta.",
+        "o_que_fez": "Mandou pessoalmente um material sobre seletividade alimentar aos 12 meses, plantando semente de retorno. Funciona umas vezes; dessa vez ainda não funcionou."
+      },
+      {
+        "nome": "Rejane",
+        "historia": "Gestante do interior (Campo Maior, 80 km) que vinha de carona com o marido. Perdeu a carona no sétimo mês quando o marido mudou de turno e passou a faltar.",
+        "como_percebeu": "Duas faltas seguidas com o mesmo motivo registrado pela recepção.",
+        "o_que_fez": "Converteu para consulta por vídeo até o parto — deu certo, mas por vídeo a paciente paga menos e a adesão é visivelmente menor. Após o parto, sumiu de vez, padrão de novo."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "ontem, 5h20",
+      "texto": "Dra. Socorro, me desculpe a hora, a Alice mamou 4h e vomitou tudo em jato. É do leite? Foi algo que eu comi? Tô apavorada.",
+      "respondeu": "Respondeu às 6h05, acalmou, diferenciou regurgitação de vômito em jato e orientou procurar o pediatra na abertura do consultório. Puérpera de 3 semanas: dentro da janela em que ela aceita esse plantão."
+    },
+    "gasto_ferramentas_mes": 130,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 5,
+    "estimativa_perda_anual_intuitiva": "Responde com número, porque calculou: 'umas 35 gestantes por ano me dão alta sozinhas no parto; se um terço seguisse no puerpério e IA, a média de seis consultas a mais cada... passa de 50 mil por ano. Eu calculei em 2023 e o número me incomodou tanto que criei a planilha de DPP.'"
+  },
+  "dores_reais": [
+    "O vazamento gestante-puérpera: a paciente 'termina' no parto justamente quando o acompanhamento seria mais valioso — clínica e financeiramente é a maior perda da prática dela",
+    "O plantão real e legítimo das seis semanas de puerpério, não remunerado e emocionalmente pesado",
+    "A planilha de DPP depende dela e da recepcionista lembrarem de agir na sexta — o processo é bom no papel e falho na execução",
+    "Converter a oficina de IA (que lota) em acompanhamento contínuo: as mães vêm ao evento e não viram carteira",
+    "No-show de gestante do interior, que é logística, não má vontade, e derruba blocos de 45 minutos"
+  ],
+  "nao_dores": [
+    "Captação: os obstetras e pediatras parceiros mandam mais gestante do que a agenda comporta — há lista de espera",
+    "Precificação: 23 anos de referência na cidade sustentam o ticket sem contestação",
+    "Concorrência de nutricionista generalista: o nicho materno-infantil dela em Teresina tem pouquíssima gente com o currículo dela"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "aplicativo de acompanhamento com diário alimentar e chat, plano profissional",
+    "historia": "Assinou em 2023 por R$ 179 mensais no plano com número ilimitado de pacientes, na esperança de acompanhar as gestantes entre as consultas e principalmente não perdê-las no pós-parto. Onboarding trabalhoso, e o resultado foi o clássico: as gestantes registravam tudo por duas ou três semanas e abandonavam o app — puérpera, então, nem instalava. Após onze meses medindo adesão na planilha dela (12% de uso ativo no terceiro mês), cancelou com relatório e tudo, e mandou o relatório para o suporte da empresa, que respondeu com um cupom de desconto."
+  },
+  "postura_entrevista": "Analítica: responde com estrutura ('são três fatores'), cita números próprios e corrige a entrevistadora se a pergunta confundir correlação com causa. Sem frieza, porém — o assunto puérpera a envolve. Tiques: 'veja bem' para abrir raciocínio e um 'ó, é tanto que...' teresinense quando dá exemplos."
+}

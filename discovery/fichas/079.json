@@ -1,0 +1,63 @@
+{
+  "id": "079",
+  "nome": "Larissa Meira Prates",
+  "idade": 32,
+  "genero": "feminino",
+  "cidade": "Vitória da Conquista",
+  "uf": "BA",
+  "carreira_anos": 8,
+  "especialidade": "Nutrição clínica com foco em emagrecimento, forte em mulheres 30-55 do funcionalismo e do comércio local",
+  "modelo_atendimento": "Consultório próprio no bairro Candeias, num centro empresarial, com secretária meio período. Atende só particular: consulta avulsa e um 'programa de 90 dias' com três consultas mais retornos quinzenais rápidos. A renda é toda do consultório, e ela sente cada cadeira vazia no fluxo de caixa do mês — aluguel, secretária e a parcela do carro não esperam.",
+  "carteira_ativa": 47,
+  "ticket_consulta": 180,
+  "consultas_semana": 24,
+  "contexto": "Conquistense da Rua Dois de Julho, formada na UESB, Larissa montou o consultório com 26 anos usando o dinheiro do consórcio que a mãe, professora aposentada, fez para ela. Casada com o Túlio, corretor de imóveis; sem filhos ainda, 'quem sabe ano que vem', frase que repete há três anos porque o consultório não deixa. Construiu uma carteira sólida de mulheres da cidade — servidoras, comerciantes, professoras — que emagrecem, ficam ótimas, e somem. Esse é o filme que ela vê em loop: a paciente atinge a meta, ganha alta implícita de si mesma, desaparece, e volta 14 quilos depois, dois anos depois, começando do zero. O que a move é a clínica lotada e o nome que construiu; o que a cansa é a roda de recomeços e a sensação de enxugar gelo.",
+  "rotina": "Atende segunda a sexta, 8h às 12h e 14h às 18h30, com a secretária Josy confirmando a agenda do dia seguinte todo fim de tarde. Terça e quinta no fim do dia vai à academia (nem sempre consegue). Quarta à noite grava stories de receita e dicas — sua única ação de marketing constante. Sábado de manhã, duas vezes por mês, abre agenda extra para quem trabalha em horário comercial; odeia, mas o caixa agradece.",
+  "whatsapp_pacientes": "Número business do consultório no celular da Josy de dia — remarcação e confirmação — mas o pós-consulta é no número da própria Larissa: as pacientes do programa de 90 dias mandam foto de prato, dúvida de rótulo, desabafo de fim de semana. Chega mensagem até 22h e ela responde 'só as urgentes' — que na prática são quase todas, porque ela sabe que a paciente que fica duas semanas sem interação é a próxima que some. Vive com o celular na mão e o Túlio já apelidou o aparelho de 'a amante'.",
+  "tecnologia": "Software de nutrição completo (R$ 119/mês) para prontuário, antropometria e planos; agenda com lembrete automático embutida no mesmo sistema; maquininha e Pix. Total: R$ 119 mais a maquininha. Confortável com tecnologia, mas pragmática: só paga o que se paga. Já namorou soluções de acompanhamento contínuo em congresso, nunca assinou — ficou com medo de pagar e as pacientes não usarem.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Adriana",
+        "historia": "Servidora da prefeitura, perdeu 11 kg em cinco meses, virou case dos stories (autorizado). Chegou na meta em abril e... evaporou. Nem cancelou: foi remarcando o retorno até parar de responder.",
+        "como_percebeu": "A Josy mostrou a lista de retornos vencidos do mês e o nome da Adriana no topo, com três remarcações e um visto sem resposta.",
+        "o_que_fez": "Mandou mensagem pessoal ('saudade de você por aqui!'), ofereceu um horário de sábado. Nada. Ela sabe o roteiro: a Adriana volta em 2027, chorando, com o peso de volta. Isso a corrói — pela paciente e pelos R$ 180 quinzenais que sumiram juntos."
+      },
+      {
+        "nome": "Verinha do salão",
+        "historia": "Cabeleireira, dona do salão que a Larissa frequenta. Fez o programa de 90 dias, foi bem, e no fim entrou num grupo de emagrecimento com 'chá detox e jejum' da igreja de uma cliente do salão.",
+        "como_percebeu": "Soube no próprio salão, com o cabelo molhado, ouvindo a Verinha contar animada do grupo — sem nem se dar conta de que estava 'traindo' a nutricionista na frente dela.",
+        "o_que_fez": "Sorriu, orientou com jeito sobre os riscos do chá, e saiu do salão se sentindo derrotada por um grupo de WhatsApp gratuito. Naquela noite fez a conta de quantas 'Verinhas' perde por ano e não gostou do número."
+      },
+      {
+        "nome": "Dona Nadja",
+        "historia": "Diabética de 58 anos, paciente há um ano e meio, disciplinadíssima — até quebrar o fêmur em janeiro. A recuperação a prendeu em casa e o acompanhamento morreu junto.",
+        "como_percebeu": "A filha avisou da cirurgia e pediu para 'pausar'. A pausa nunca acabou.",
+        "o_que_fez": "Ofereceu teleconsulta duas vezes; a filha achou que 'a mãe não ia se adaptar com o celular'. Larissa ficou sem saída — e com a pulga atrás da orelha de que precisava de um jeito mais leve de acompanhar de longe quem não pode vir."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 20h35",
+      "texto": "Lari, socorro. Fui no aniversário da minha mãe, comi de TUDO, tô me sentindo um lixo e com vontade de nem ir na consulta de quinta pra você não ver a balança 🙈",
+      "respondeu": "Largou a novela e respondeu na hora, longa: 'consulta não é tribunal, é justamente quinta que eu preciso de você aqui'. Sabe de cor que a paciente que falta 'de vergonha da balança' é a que nunca mais volta. Segurou essa. Ficou pensando em quantas não avisam."
+    },
+    "gasto_ferramentas_mes": 119,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 7,
+    "estimativa_perda_anual_intuitiva": "Eu já fiz essa conta numa noite de raiva: se cada paciente que atinge a meta e some levaria mais uns seis meses de retorno quinzenal, e somem umas 15 por ano... passa fácil de 25, 30 mil por ano. Falei pro Túlio e ele disse que é o valor de um carro popular indo embora pelo ralo."
+  },
+  "dores_reais": [
+    "A evasão pós-meta: paciente emagrece, some e volta anos depois do zero — o buraco financeiro e emocional central da prática dela",
+    "Não enxergar quem está esfriando: ela só descobre a desistência quando o retorno já foi remarcado três vezes",
+    "As 8 horas semanais de WhatsApp fora de hora, que ela mantém justamente por pânico de perder o vínculo — o remédio dela para a evasão é o que a exaure",
+    "No-show de retorno (7 no mês passado): a consulta cheia paga o aluguel, o retorno vazio é prejuízo silencioso",
+    "Concorrência mágica na cidade: chá detox, caneta, grupo de igreja e influencer — tudo mais barato e mais sedutor que constância"
+  ],
+  "nao_dores": [
+    "Captação — o boca a boca de oito anos em Conquista mantém a agenda a 85%; ela quer reter quem entra, não caçar gente nova",
+    "Precificação — testou R$ 200 em janeiro, a demanda segurou; esse fantasma ela já enfrentou",
+    "Burocracia de convênio — nunca credenciou e tem orgulho disso: 'meu tempo eu vendo pra quem valoriza'"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante, expansiva, riso fácil e indignação fácil — conta os casos com nome, cenário e diálogo reconstituído ('aí ela virou pra mim e disse...'). Dá números de cabeça e se empolga quando percebe que a entrevista toca na ferida certa. Tiques: 'ô, meu rei / minha rainha' com o entrevistador, 'másconverse!' de espanto conquistense, e bater a unha na mesa quando fala de dinheiro perdido."
+}

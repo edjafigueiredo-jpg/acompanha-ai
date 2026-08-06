@@ -1,0 +1,62 @@
+{
+  "id": "012",
+  "nome": "Ana Célia Ribeiro Aroucha",
+  "idade": 45,
+  "genero": "feminino",
+  "cidade": "São Luís",
+  "uf": "MA",
+  "carreira_anos": 21,
+  "especialidade": "Nutrição clínica geral com foco em famílias: atende a avó hipertensa, a filha e o neto no mesmo consultório",
+  "modelo_atendimento": "Consultório próprio no Renascença, em São Luís, montado há doze anos, com secretária meio período. Renda vem toda de consulta particular avulsa; muitas famílias inteiras se consultam com ela e o boca a boca sustenta a agenda há duas décadas. Não atende convênio por decisão antiga: 'repasse de plano não paga nem o estacionamento'.",
+  "carteira_ativa": 26,
+  "ticket_consulta": 220,
+  "consultas_semana": 15,
+  "contexto": "Ana Célia se formou na UFMA em 2005 e nunca saiu de São Luís, cidade que ela defende com unhas e dentes em qualquer conversa. Casada com um professor de educação física, dois filhos adolescentes, e uma rotina que inclui buscar menino em colégio no meio da tarde. Construiu a clientela atendendo gerações: tem família em que ela já atendeu avó, mãe e agora a neta gestante. O que a move é esse vínculo quase de comadre com os pacientes; o que a cansa é perceber que a agenda, que já foi lotada com lista de espera, hoje tem buracos que não existiam antes da pandemia, e ela não sabe direito se o problema é preço, concorrência dos nutris de Instagram ou o quê. Fala disso rindo, mas incomoda.",
+  "rotina": "Atende de segunda a quinta, das 8h30 às 12h e das 14h30 às 18h, com consultas de 50 minutos. Sexta de manhã resolve banco, compras da casa e visita a mãe no Anil. Almoça em casa quase todo dia, faz questão. Fim de tarde de quinta é sagrado: sai com as amigas da faculdade para comer uma peixada.",
+  "whatsapp_pacientes": "Número pessoal, com foto dos filhos no perfil, e ela mesma responde tudo — a secretária só confirma agenda pelo fixo. Paciente antigo manda mensagem como manda para amiga: bom dia com figurinha, foto do prato no almoço de domingo, 'Ana querida, posso comer cuxá na dieta?'. Ela responde entre uma consulta e outra e à noite no sofá. Reclama de brincadeira ('esse povo acha que eu sou plantonista, é uma agonia'), mas no fundo gosta, porque sente que é isso que segura o paciente com ela há vinte anos.",
+  "tecnologia": "Agenda de papel na recepção mais o caderno dela, prontuário em ficha impressa num arquivo de aço, plano alimentar digitado num Word antigo e impresso na hora. Não paga nenhuma ferramenta. Com tecnologia é funcional mas sem paciência: quem resolve as coisas de computador em casa é o filho de 16 anos, e ela acha graça disso.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Dona Zuleide",
+        "historia": "Paciente de oito anos, diabética, vinha de dois em dois meses religiosamente. Depois que o marido faleceu, veio uma vez chorosa e não marcou mais.",
+        "como_percebeu": "Sentiu falta no mês seguinte, porque Dona Zuleide era de marcar sempre na saída.",
+        "o_que_fez": "Ligou — ligou mesmo, não mandou mensagem. Conversaram vinte minutos, Zuleide disse que estava sem cabeça. Ana Célia disse que a porta estava aberta. Até hoje nada, e ela pensa nisso com aperto."
+      },
+      {
+        "nome": "Família do seu Ribamar",
+        "historia": "Pai, mãe e dois filhos que ela atendia em bloco, quatro consultas seguidas na mesma tarde. A empresa do pai apertou, e as quatro consultas viraram nenhuma de uma vez.",
+        "como_percebeu": "A esposa avisou direto, com vergonha: 'Ana, esse ano não vai dar pra gente'.",
+        "o_que_fez": "Ofereceu atender só os meninos com desconto. A mãe agradeceu e disse que voltavam 'quando melhorar'. Foi o mês em que ela sentiu no bolso: quase R$ 900 de receita recorrente sumiu numa conversa."
+      },
+      {
+        "nome": "Yasmin",
+        "historia": "Universitária de 23 anos, filha de uma paciente antiga, que veio meio empurrada pela mãe para 'aprender a comer'. Fez a primeira consulta, achou tudo ótimo, marcou retorno e sumiu.",
+        "como_percebeu": "A própria mãe contou na consulta dela: 'Yasmin agora tá seguindo uma menina no Instagram que manda treino e dieta por 50 reais'.",
+        "o_que_fez": "Não fez nada com a Yasmin, mas ficou matutando dias. Foi a primeira vez que sentiu que o boca a boca dela não alcança essa geração."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 20h10",
+      "texto": "Ana querida boa noite! Me diz uma coisa, torta de camarão pode? To numa festa aqui e não quero pecar kkkk",
+      "respondeu": "Respondeu com áudio rindo: 'Mulher, come a torta e me procura segunda'. Para ela isso nem conta como trabalho, é quase amizade."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 5,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "Ave Maria, nunca fiz essa conta. Mas se eu pensar nos buracos da agenda que antes não existiam... uns 15, 20 mil no ano? Menina, é muito dinheiro quando a gente fala em voz alta."
+  },
+  "dores_reais": [
+    "A agenda que era lotada há cinco anos hoje tem buracos, e ela não sabe diagnosticar o porquê — isso é o que tira o sono",
+    "Sentir que não alcança o público jovem: filha de paciente antiga prefere 'nutricionista de Instagram' e ela não sabe nem por onde começar a competir ali",
+    "No-show de última hora: paciente antigo acha que tem intimidade para desmarcar às 8h da consulta das 9h, e ela não tem coragem de cobrar multa de quem conhece há quinze anos",
+    "A papelada física: achar exame de paciente de 2019 no arquivo de aço é uma novela, e ela sabe que isso é atraso"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp: um vendedor acharia que as mensagens de fim de semana a incomodam, mas para ela aquilo é vínculo, é o que faz a paciente ficar vinte anos — reclamaria de perder isso, não de ter",
+    "Retenção dos pacientes antigos: quem entra na carteira dela fica anos; o problema dela é entrar gente nova, não segurar quem já está",
+    "Prescrição e cálculo: com 21 anos de clínica geral, ela monta plano quase de cabeça e não sente falta de ferramenta para isso"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante ao ponto de o entrevistador precisar interromper com jeito: cada pergunta vira um causo com nome, sobrenome e bairro. Calorosa, chama o entrevistador de 'meu filho' ou 'minha querida' na segunda pergunta. Tiques: 'ave Maria', 'menina do céu', e termina frase com 'né isso?'. Mas no meio da prosa entrega ouro: os detalhes dela são concretos e sinceros."
+}

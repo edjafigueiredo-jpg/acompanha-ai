@@ -1,0 +1,44 @@
+{
+  "id": "070",
+  "nome": "Ana Clara Borges Rezende",
+  "idade": 24,
+  "genero": "feminino",
+  "cidade": "Rio Verde",
+  "uf": "GO",
+  "carreira_anos": 2,
+  "especialidade": "Emagrecimento clínico de adultos, começando a se interessar por saúde da mulher",
+  "modelo_atendimento": "Atende por convênio em duas clínicas de Rio Verde: numa cooperativa médica local (repasse de R$ 42 por consulta) e numa clínica que atende plano de funcionários das agroindústrias (R$ 38). A agenda vem da fila do plano, cheia e impessoal. Por fora, tem 6 pacientes particulares a R$ 130, atendidos num consultório emprestado de uma amiga dermatologista nas terças à noite — o embrião do que ela sonha construir.",
+  "carteira_ativa": 6,
+  "ticket_consulta": 42,
+  "consultas_semana": 24,
+  "contexto": "Filha de gerente de loja de insumos agrícolas, cresceu em Rio Verde no ritmo da soja. Formou-se em Goiânia em 2023 e voltou porque o namorado, agrônomo, trabalha nas fazendas da região. Dois anos de carreira: pegou os credenciamentos de convênio que apareceram porque 'era o que tinha', e hoje vive o choque de realidade — 24 consultas por semana de plano, corridas, de 25 minutos, com paciente que muitas vezes só veio 'porque o médico mandou' e nunca mais aparece. Chora fácil, se emociona com paciente que melhora e se frustra com a linha de montagem. O sonho é viver só dos particulares; o medo é largar o certo pelo duvidoso.",
+  "rotina": "Segunda a sexta, manhã numa clínica (7h30 às 12h) e três tardes na outra (13h30 às 18h); consultas de plano em sequência, com prontuário atrasando sempre. Terça à noite, das 18h30 às 21h30, os particulares no consultório emprestado — a parte da semana que ela ama. Domingo à tarde monta os planos dos particulares com capricho de primeira viagem, escolhendo fonte e capa.",
+  "whatsapp_pacientes": "Os pacientes de convênio falam com a recepção das clínicas; ela nem fica sabendo. Os 6 particulares têm o número pessoal dela e ganham um atendimento de primeira-dama: ela responde rápido, manda receita, lembra aniversário. Como são só 6, isso ocupa minutos por dia e é prazer, não peso — ela ainda está na fase de amar cada mensagem porque cada particular é uma vitória.",
+  "tecnologia": "Nas clínicas, usa os sistemas que cada uma tem (um deles ainda com ficha de papel). Para os particulares, assinou o plano de entrada de um software de prescrição por R$ 49/mês — dói no orçamento, mas o plano bonito em PDF é o cartão de visitas dela. Nativa digital, aprende qualquer coisa em uma tarde; o limite é o cartão de crédito, não a habilidade.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Um senhor do plano da agroindústria", "historia": "Paciente de convênio, uns 50 anos, colesterol alto, veio uma vez mandado pelo cardiologista. Ela nem lembra o sobrenome.", "como_percebeu": "Não percebeu — no convênio ela atende quem está na fila do dia. Só notou porque reencontrou o prontuário semanas depois procurando outro.", "o_que_fez": "Nada, e sente uma culpa vaga com isso: 'no plano a gente nem fica sabendo quem sumiu, a fila engole'. O buraco dele foi preenchido no mesmo dia por outro encaminhado."},
+      {"nome": "Kelly", "historia": "Paciente de convênio que era exceção: engajada, voltou três vezes, perdeu 5 kg. Ana Clara já sonhava convertê-la em particular.", "como_percebeu": "O plano dela era da empresa; foi demitida na entressafra e perdeu o convênio.", "o_que_fez": "Ofereceu o preço particular com desconto, morrendo de vergonha. Kelly agradeceu e disse que não dava. Ana Clara chorou no carro — foi quando entendeu que no convênio o paciente nunca é realmente dela."},
+      {"nome": "Roberta", "historia": "Uma das particulares da terça, noiva, projeto de emagrecer para o casamento em Goiânia.", "como_percebeu": "Adiou o retorno duas vezes por causa das provas do vestido e depois parou de responder. Com 6 particulares, a ausência de uma grita.", "o_que_fez": "Mandou mensagem carinhosa, depois um áudio. Roberta voltou um mês depois, sem graça, e remarcou. Ana Clara comemorou como quem ganhou campeonato — e percebeu que com particulares ela luta por cada um, coisa que no convênio é impossível."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "quinta-feira, 21h05", "texto": "Aninha, deu tudo certo com o exame que vc pediu!! Colesterol desceu 30 pontos!!! Te amo dra 😭😭", "respondeu": "Respondeu na hora com três áudios comemorando e mandou print para a mãe e para o namorado. Ficou feliz o resto da semana. Fora de hora, para ela, ainda é sinônimo de carinho, não de invasão."},
+    "gasto_ferramentas_mes": 49,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 12,
+    "estimativa_perda_anual_intuitiva": "'Nossa, nunca calculei... No convênio não perco nada, né, a fila repõe — perde a clínica, ou nem ela. Nos meus particulares, se uma some são uns R$ 500 no ano que não viram nada... Uns R$ 2 mil no total? Meu problema é outro: é ter particular pra perder.'"
+  },
+  "dores_reais": [
+    "Captação de particulares: tem 6 e precisaria de 30 para largar os convênios — e não sabe como chegar lá em Rio Verde",
+    "A linha de montagem do convênio: 25 minutos por paciente, repasse de R$ 42 congelado, e a sensação de que não faz nutrição de verdade ali",
+    "No-show do convênio (12 no mês) que ela não controla: paciente de plano falta sem dó e a agenda dela vira queijo suíço sem remuneração",
+    "Medo financeiro de dar o salto: largar o certo dos convênios pelo duvidoso do consultório",
+    "Síndrome de recém-formada: se compara com nutris de Goiânia no Instagram e se sente atrasada aos 24"
+  ],
+  "nao_dores": [
+    "Retenção não é a dor: no convênio a fila repõe qualquer evasão, e os 6 particulares ela segura no colo, um a um",
+    "Plantão de WhatsApp não pesa: 6 particulares geram minutos de mensagem por dia, e ela ainda ama cada uma",
+    "Gestão de agenda cheia não é problema: as recepções das clínicas cuidam de tudo no convênio"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva: os olhos marejam ao contar da Kelly, ri alto da própria inexperiência, pede desculpa por se emocionar e se emociona de novo. Responde com histórias, não com números. Tiques goianos: 'uai' e 'nossa senhora', e um 'moço/moça' para se dirigir ao entrevistador."
+}

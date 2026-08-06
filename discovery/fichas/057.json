@@ -1,0 +1,63 @@
+{
+  "id": "057",
+  "nome": "Camila Vasconcelos Bittar",
+  "idade": 34,
+  "genero": "feminino",
+  "cidade": "Brasília",
+  "uf": "DF",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição comportamental e comer intuitivo, com formação em Health at Every Size; público majoritário de mulheres em histórico de dietas crônicas",
+  "modelo_atendimento": "Consultório particular próprio numa sala comercial na Asa Norte (CLN 208), atendimento presencial e algumas sessões online para pacientes que se mudaram de Brasília. Sessões de 60 minutos, processo mínimo de seis encontros combinado na entrada. Renda das consultas e de um grupo de estudos pago sobre imagem corporal que ela conduz para outras nutricionistas duas vezes por ano.",
+  "carteira_ativa": 22,
+  "ticket_consulta": 320,
+  "consultas_semana": 14,
+  "contexto": "Brasiliense de família libanesa do Lago Sul, formada pela UnB em 2016, trabalhou dois anos numa clínica de emagrecimento da Asa Sul até pedir demissão enjoada de vender restrição — chama esse período de 'meus anos de dívida com as pacientes'. Fez formação em nutrição comportamental e supervisiona-se mensalmente com uma referência de São Paulo. Casada com a Renata, arquiteta; sem filhos, dois gatos. Move-a devolver a comida ao lugar de comida; cansa-a a hostilidade do mercado de Brasília, saturado de nutris de resultado com antes-e-depois pagando tráfego.",
+  "rotina": "Atende terça a sexta, das 9h às 13h e das 15h às 18h, nunca mais que quatro sessões por dia porque sessão de uma hora densa esgota. Segunda é dia de estudo, supervisão e do texto quinzenal que escreve num boletim por e-mail com 900 assinantes. Quinta à noite faz aula de cerâmica na 308 Sul — inegociável, é a terapia dela. Domingo de manhã, feira orgânica com a esposa.",
+  "whatsapp_pacientes": "WhatsApp Business com horário de atendimento explícito no perfil: seg-sex, 9h às 18h. O contrato terapêutico da primeira sessão define: WhatsApp é canal administrativo; questão de comida e angústia é material de sessão, e há um encaixe de emergência por mês para quem precisar. As pacientes respeitam — em nove anos ela lapidou esse enquadre. Recebe pouquíssima coisa fora de hora e não sente culpa: considera o limite parte do tratamento, não uma falha de disponibilidade.",
+  "tecnologia": "Agenda e prontuário num sistema simples de psicólogos (R$ 69/mês) que ela adaptou, porque os softwares de nutrição que avaliou eram todos organizados em torno de dieta, meta e balança — 'a arquitetura da ferramenta já é o problema'. Nota fiscal pelo app da prefeitura, boletim por uma plataforma de e-mail gratuita. Tecnologicamente competente e ideologicamente seletiva.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Mariana, 41, procuradora",
+        "historia": "Sete meses de processo, avanços reais, e sumiu duas semanas depois de comentar que a endocrinologista havia oferecido caneta emagrecedora. Camila leu o sumiço na hora: a promessa rápida venceu.",
+        "como_percebeu": "Cancelou uma sessão por e-mail formal demais e não remarcou.",
+        "o_que_fez": "Mandou uma mensagem cuidadosa nomeando o que talvez estivesse acontecendo e deixando a porta aberta sem julgamento. Sem resposta. Levou o caso para supervisão; a dor dela é clínica e um pouco narcísica, ela admite — não financeira."
+      },
+      {
+        "nome": "Letícia, 28, servidora do TCU",
+        "historia": "Concluiu o processo combinado de seis sessões, chegou onde queria e se despediu com uma carta escrita à mão agradecendo.",
+        "como_percebeu": "Não precisou perceber: teve sessão de encerramento marcada, como o método pede.",
+        "o_que_fez": "Nada a fazer — alta bem-feita é o objetivo do trabalho. Ela faz questão de citar esse 'sumiço' quando alguém fala em retenção: no modelo dela, paciente que fica para sempre é sinal de dependência, não de sucesso."
+      },
+      {
+        "nome": "Vera, 56, dona de galeria de arte",
+        "historia": "Interrompeu na quarta sessão dizendo que 'não estava pronta para largar a dieta'. Voltou onze meses depois, por conta própria, dizendo que precisou tentar mais uma dieta para se convencer.",
+        "como_percebeu": "A própria Vera avisou por mensagem, com honestidade.",
+        "o_que_fez": "Agradeceu a honestidade e disse que estaria lá. Para Camila, esse vai-e-volta é o ciclo natural de quem sai da cultura de dieta — perseguir a paciente no intervalo seria repetir a vigilância que a adoeceu."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sexta-feira, 19h35",
+      "texto": "Camila, boa noite! Só para avisar que consegui remarcar meu voo e chego a tempo da sessão de terça. Bom fim de semana!",
+      "respondeu": "Curtiu a mensagem com um joinha na segunda de manhã. Fora de horário, para ela, é isso: logística educada. Angústia alimentar de madrugada as pacientes aprenderam a escrever no diário e trazer para a sessão."
+    },
+    "gasto_ferramentas_mes": 69,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 1,
+    "estimativa_perda_anual_intuitiva": "Essa pergunta parte de uma premissa que eu rejeito. Mas se insistirem: talvez uns 15 mil em interrupções precoces por sedução de dieta — e eu não chamaria isso de perda minha, chamaria de sintoma do mercado."
+  },
+  "dores_reais": [
+    "Captação qualificada: o funil dela é estreito porque precisa de paciente que já se desencantou de dieta; em Brasília o tráfego pago é dominado por antes-e-depois e ela se recusa a competir nessa gramática",
+    "Teto de agenda: 14 sessões densas por semana é o limite físico dela, e crescer significaria formar outras profissionais, não atender mais",
+    "Solidão de nicho: colegas de Brasília a tratam como radical, e as alianças clínicas (psicólogas, psiquiatras alinhadas) são raras e disputadas",
+    "O boletim e o grupo de estudos consomem horas não pagas que são o único marketing que a consciência dela permite"
+  ],
+  "nao_dores": [
+    "Monitorar paciente entre consultas: é a antítese do trabalho dela — qualquer ferramenta de vigilância alimentar seria iatrogênica no consultório dela, e ela diz isso com essas palavras",
+    "Plantão de WhatsApp: o enquadre resolve; uma mensagem administrativa por dia não é dor",
+    "No-show: política de cancelamento com 24h e cobrança integral, assinada no contrato; teve um no-show no último mês e foi pago",
+    "Retenção infinita: alta é meta, não falha; 'reter' paciente indefinidamente lhe soa como modelo de negócio de academia"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada de forma sofisticada: antes de responder, disseca a pergunta ('quando você diz acompanhar, você quer dizer vigiar?'). Dá respostas precisas e cita literatura sem pedantismo, mas mantém o entrevistador em teste permanente. Tique de fala: 'veja bem' antes de discordar e um 'isso não existe' brasiliense para absurdos. Se farejar que a pesquisa é bastidor de venda de software de monitoramento, encerra a cordialidade e passa a responder em uma frase."
+}

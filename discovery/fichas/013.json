@@ -1,0 +1,63 @@
+{
+  "id": "013",
+  "nome": "Rosângela Schmitz Wagner",
+  "idade": 49,
+  "genero": "feminino",
+  "cidade": "Blumenau",
+  "uf": "SC",
+  "carreira_anos": 24,
+  "especialidade": "Materno-infantil: gestantes, amamentação e introdução alimentar",
+  "modelo_atendimento": "Vende acompanhamento em pacotes: o principal é o trimestral de gestante (R$ 1.680: consulta mensal, ajustes de plano e suporte por WhatsApp incluso no preço) e o de introdução alimentar de 4 meses (R$ 1.980). Atende em consultório próprio anexo à casa, no bairro Velha, em Blumenau, e quase não vende consulta avulsa — insiste que 'gestação não se acompanha em consulta solta'. A renda é toda dessa carteira de pacotes ativos.",
+  "carteira_ativa": 44,
+  "ticket_consulta": 300,
+  "consultas_semana": 19,
+  "contexto": "Rosângela é blumenauense de família de origem alemã, formada em Itajaí em 2002, e desde que engravidou da primeira filha mergulhou no materno-infantil. Casada com um contador, duas filhas — uma na faculdade em Floripa, outra no terceirão. Já acompanhou mais de mil gestações e conhece obstetra, doula e pediatra da cidade inteira, que a indicam sem parar. O que a move é o vínculo: recebe foto de 'bebê que ela ajudou a comer' anos depois e chora. O que a cansa é que o pacote com WhatsApp incluso virou um plantão sem fim — gestante ansiosa e mãe de bebê de 6 meses não têm horário comercial — e ela sente que carrega quarenta e quatro famílias nas costas o tempo todo, sem conseguir tirar férias de verdade desde 2023.",
+  "rotina": "Atende de segunda a sexta das 8h às 12h e das 14h às 17h30, reservando as manhãs de quarta só para bebês em introdução alimentar. Entre consultas e à noite, das 20h às 22h, responde o WhatsApp dos pacotes — chama isso de 'segundo expediente'. Sábado de manhã faz revisão dos planos da semana seguinte e, uma vez por mês, dá um curso de introdução alimentar para grupos de pais no consultório.",
+  "whatsapp_pacientes": "Número business, mas quem responde é só ela — já tentou treinar a secretária para triar e desistiu, porque 'mãe percebe quando não é você'. As mensagens chegam o dia inteiro e explodem entre 19h e 23h: bebê que recusou a papinha, gestante com azia, foto de fralda com pergunta. O suporte está no contrato do pacote, então ela se sente na obrigação de responder rápido, e responde. Ama e se ressente ao mesmo tempo: sabe que o WhatsApp é o motivo de as mães ficarem, e sabe que é ele que a está consumindo.",
+  "tecnologia": "Agenda no Google Agenda sincronizada com a secretária, prontuário e evolução em pastas do Word por família, curvas de crescimento plotadas à mão em gráfico impresso da OMS, controle dos pacotes e vencimentos numa planilha de Excel que o marido montou. Paga apenas R$ 26 por mês de armazenamento do Google. Com tecnologia é boa vontade pura e pouca intimidade: aprende o que precisa, mas se o Excel do marido quebrar, ela para.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Camila",
+        "historia": "Gestante que fechou o trimestral, fez duas consultas e travou o pagamento da segunda parcela depois que o marido ficou desempregado. Sumiu por vergonha da dívida, não por desinteresse.",
+        "como_percebeu": "O lembrete de parcela da planilha do marido acusou o atraso, e as mensagens dela no WhatsApp pararam de um dia para o outro.",
+        "o_que_fez": "Mandou mensagem dizendo para esquecer a parcela e continuar o acompanhamento assim mesmo. Camila voltou chorando de gratidão. Rosângela não contou ao marido que abriu mão do valor."
+      },
+      {
+        "nome": "Franciele",
+        "historia": "Mãe de gêmeos em introdução alimentar, do pacote de 4 meses. No segundo mês as respostas foram rareando, os retornos foram remarcados duas vezes, e no terceiro mês ela simplesmente parou de responder, com o pacote pago.",
+        "como_percebeu": "Percebeu no dia a dia mesmo: o chat dela, que era diário, esfriou. Rosângela sente esse esfriamento como um termômetro.",
+        "o_que_fez": "Insistiu três vezes, ofereceu horário à noite, mandou áudio pessoal. Nada. Ficou semanas com aquilo entalado: 'pagou e não usa, o bebê que perde'."
+      },
+      {
+        "nome": "Jéssica",
+        "historia": "Gestante encaminhada por uma doula, terminou o trimestral, teve o bebê e não renovou para o pacote de amamentação, que era o caminho natural. Foi seguir um perfil de 'consultora de introdução alimentar' no Instagram que vende e-book.",
+        "como_percebeu": "Viu a Jéssica marcando o tal perfil nos stories. Doeu no orgulho.",
+        "o_que_fez": "Nada. Curtiu o story do bebê e engoliu. Depois desabafou com o marido que perder a renovação dói mais que perder a venda nova, porque a relação já estava construída."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "terça-feira, 23h20",
+      "texto": "Rô desculpa a hora!! O Theo acordou com o bumbum todo assado, será que foi a manga que dei no almoço?? To desesperada",
+      "respondeu": "Respondeu às 23h31, acalmou a mãe, explicou que provavelmente não era a manga e orientou procurar o pediatra se piorasse. Apagou a luz depois da meia-noite, de novo."
+    },
+    "gasto_ferramentas_mes": 26,
+    "horas_semana_respondendo": 11,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Isso eu já pensei, viu... Entre pacote que não renova e gente que esfria no meio, se eu perder uma renovação por mês já são uns 20 mil no ano. E eu perco mais que uma por mês."
+  },
+  "dores_reais": [
+    "O plantão de WhatsApp incluso no pacote: 11 horas semanais respondendo, sem conseguir desligar nem em jantar de família, porque suporte é a promessa central do que ela vende",
+    "Não enxergar quem está esfriando a tempo: quando percebe que a mãe sumiu do chat, o vínculo já esfriou e a renovação já está perdida",
+    "Renovação de pacote depender de ela lembrar de olhar a planilha e ter coragem de cobrar, duas coisas que falham",
+    "Não tirar férias desde 2023 porque quarenta e quatro famílias 'não podem ficar sem resposta'",
+    "Medo de escalar: sabe que caberia mais pacotes na agenda, mas não cabe mais nada nela"
+  ],
+  "nao_dores": [
+    "Captação: obstetras, doulas e pediatras de Blumenau mandam gestante sem parar; ela recusa paciente todo mês, então promessa de 'atrair mais pacientes' não a atinge",
+    "Precificação: os pacotes dela são os mais caros da cidade e fecham mesmo assim; ela não tem insegurança de preço",
+    "No-show: com pacote pago adiantado, quase ninguém falta; remarcam, mas não somem da consulta"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa: oferece café até por videochamada, responde qualquer pergunta com uma história de mãe e bebê que começa três anos antes do ponto. Emenda um assunto no outro com 'e daí, óh...' e precisa ser trazida de volta com delicadeza. Tiques do Vale do Itajaí: 'daí' a cada duas frases, 'mas óh', e diminutivos em tudo — 'planinho', 'papinha', 'grupinho'."
+}

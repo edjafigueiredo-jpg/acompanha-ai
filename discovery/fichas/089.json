@@ -1,0 +1,44 @@
+{
+  "id": "089",
+  "nome": "Gabriel Okamoto Ferraz",
+  "idade": 27,
+  "genero": "masculino",
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "carreira_anos": 4,
+  "especialidade": "Nutrição esportiva: corredores amadores de rua e atletas de crossfit",
+  "modelo_atendimento": "Vende consultoria trimestral de R$ 2.100 (avaliação presencial num box de crossfit parceiro na Vila Mariana, plano periodizado junto com a planilha de treino, ajustes quinzenais e WhatsApp incluso). Também fecha planos semestrais de R$ 3.800 para quem vai correr maratona. Renda complementada com aulas de avaliação física que dá numa pós de educação física.",
+  "carteira_ativa": 9,
+  "ticket_consulta": 700,
+  "consultas_semana": 6,
+  "contexto": "Paulistano da Saúde, neto de japoneses da Liberdade pelo lado da mãe, formado pelo Mackenzie. Corredor de 42 km com PR de 3h21, atende o público do qual faz parte — conheceu quase todos os clientes correndo no Ibirapuera ou no box. Solteiro, divide apartamento com um amigo engenheiro, treina seis vezes por semana. Escolheu ticket alto e carteira pequena por convicção: 'prefiro 10 clientes bem atendidos a 40 no piloto automático'. O que o move é performance — dele e dos clientes; o que o corrói é a matemática do modelo: com 9 clientes, cada não-renovação balança o mês, e ele ainda não descobriu como encher o funil sem virar influencer, papel que despreza.",
+  "rotina": "Treina das 6h às 7h30 todo dia. Atende avaliações presenciais terça e quinta à tarde no box. Manhãs de segunda e quarta monta e ajusta planos; sexta dá aula na pós. Domingo de manhã é longão de 25 km — onde, ironicamente, fecha mais cliente que no Instagram.",
+  "whatsapp_pacientes": "Número pessoal, suporte incluso no pacote com regra dita na venda: respostas em até 24h úteis, sem plantão de madrugada. Na prática chegam 10 a 15 mensagens por dia — print de treino, foto de refeição pré-longão, 'posso trocar arroz por batata?' — e ele responde em duas janelas fixas, 12h e 20h. Administra bem, mas nota o padrão que o incomoda: cliente que para de mandar mensagem na semana 8 é cliente que não renova na semana 12, e ele ainda não sabe o que fazer com esse sinal.",
+  "tecnologia": "Agenda no Google Calendar, avaliação física em planilha própria no Sheets que considera melhor que qualquer app, plano alimentar no Dietbox de R$ 74 por mês, e acompanha os treinos dos clientes pelo Strava de graça. Curte tecnologia de dado (potência, pace, VO2), mas trata software de nutrição como commodity superfaturada.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Vinícius", "historia": "Crossfiteiro de 31 anos, fechou o trimestral para um campeonato interno do box. Competiu, foi bem, terminou o ciclo.", "como_percebeu": "Na reunião de renovação, adiou a decisão duas vezes e depois respondeu que ia 'tocar sozinho com o plano que já tenho'.", "o_que_fez": "Aceitou numa boa por fora e por dentro ficou remoendo: o cara vai reciclar o plano dele por um ano. Pensou em criar um plano de manutenção mais barato, está no caderno de ideias até hoje."},
+      {"nome": "Fernanda", "historia": "Corredora de 39 anos, meta de sub-2h nos 21 km, cliente exemplar por dois trimestres.", "como_percebeu": "As mensagens foram rareando no meio do terceiro trimestre — o sinal que ele conhece. Depois ela sumiu do Strava também.", "o_que_fez": "Mandou mensagem perguntando do treino, descobriu uma fascite plantar. Sem correr, ela não viu sentido em pagar nutrição e não renovou. Ele engoliu: não tinha oferta para 'cliente lesionado', e perdeu a melhor divulgadora que tinha."},
+      {"nome": "Ricardo", "historia": "Executivo de 45 anos que chegou pelo sócio do box querendo 'largar a barriga e correr 10 km'. Perfil fora do padrão dele.", "como_percebeu": "Sumiu das mensagens na terceira semana do pacote. Visualizava os check-ins e não respondia.", "o_que_fez": "Fez duas tentativas por mensagem e uma ligação não atendida. O pacote venceu em silêncio, pago e não usado. Gabriel ficou com o dinheiro e com o incômodo — concluiu que aceitou um cliente que não devia, mas não tem certeza se o problema foi o cliente ou o acompanhamento dele."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "sábado, 5h50", "texto": "Okamoto, bom dia! Longão daqui a pouco, acordei enjoado, tomo o gel mesmo assim ou vou só de água? Me responde rápido kkk", "respondeu": "Respondeu 5h55 — estava acordado indo treinar também. Para mensagens pré-treino de fim de semana ele abre exceção sem drama: faz parte do nicho, atleta acorda cedo."},
+    "gasto_ferramentas_mes": 74,
+    "horas_semana_respondendo": 5,
+    "no_shows_ultimo_mes": 0,
+    "estimativa_perda_anual_intuitiva": "Cara, eu sei exatamente quanto custa UMA não-renovação: R$ 2.100. Perco umas 4 ou 5 por ano que eu sinto que eram evitáveis, então uns R$ 9 ou 10 mil. O que eu não sei é qual delas eu poderia ter segurado."
+  },
+  "dores_reais": [
+    "Funil raso: com 9 clientes e captação dependente de boca a boca do box e do Ibira, dois trimestres ruins de renovação quebram o caixa",
+    "O sinal silencioso da não-renovação: ele percebe o cliente esfriando pelas mensagens que rareiam, mas não tem um processo para reagir a tempo",
+    "Falta de oferta intermediária: cliente que termina o objetivo ou se lesiona não tem onde ficar, e sai do ecossistema dele por completo",
+    "A pressão de 'virar marca': todo mundo diz que ele precisa bombar no Instagram, e produzir conteúdo o entedia profundamente"
+  ],
+  "nao_dores": [
+    "No-show é zero: quem pagou R$ 2.100 adiantado comparece até com chuva",
+    "Volume de WhatsApp não o sufoca: 9 clientes com janelas fixas de resposta é confortável, e o suporte é justamente o que justifica o ticket",
+    "Precificação não o assombra: fez a conta do próprio hora-valor e defende o preço sem gaguejar, mesmo perdendo cliente por ele",
+    "Burocracia: MEI, contrato padrão e Pix resolvem; a operação de 9 clientes cabe numa planilha"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cético do tipo educado e cirúrgico: responde com precisão, devolve perguntas ('quem mais vocês entrevistaram? qual a hipótese de vocês?') e detecta pergunta enviesada na hora. Se convence da seriedade, é generoso com detalhe. Tiques: 'na moral', 'assim, ó' paulistano, e reduz tudo a número de treino ('isso aí é tipo pace: parece bom até você olhar o relevo')."
+}

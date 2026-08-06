@@ -1,0 +1,65 @@
+{
+  "id": "030",
+  "nome": "Larissa Tosta Loureiro",
+  "idade": 32,
+  "genero": "feminino",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "carreira_anos": 8,
+  "especialidade": "Emagrecimento de adultos com foco em rotina real: marmita, filho pequeno e pouco tempo",
+  "modelo_atendimento": "Consultório particular próprio, uma sala enxuta em Jardim da Penha dividida com uma psicóloga (cada uma usa três dias). Cobra consulta avulsa com retorno em 40 dias; tentou vender pacote duas vezes e desistiu porque o público dela, classe média de bairro, prefere pagar por vez. A renda vem das consultas e de um grupo de emagrecimento presencial que ela roda duas vezes por ano com 12 vagas.",
+  "carteira_ativa": 22,
+  "ticket_consulta": 220,
+  "consultas_semana": 13,
+  "contexto": "Capixaba de Vila Velha, atravessou a ponte para estudar na UFES e ficou em Vitória. Casada com o Renan, professor de educação física, mãe da Alice de 3 anos. Saiu de uma clínica de estética em 2020 para empreender sozinha e vive o ciclo clássico do consultório solo: mês bom, mês assustador. É cética de carteirinha desde que uma consultoria de marketing lhe vendeu 'agenda lotada em 90 dias' e entregou template de post; a segunda decepção foi um app de acompanhamento — essa deixou cicatriz com nome e boleto. O que a move é paciente comum emagrecendo com comida de panela; o que a cansa é a montanha-russa financeira e a sensação de já ter sido enganada por gente que vende solução para nutricionista.",
+  "rotina": "Atende segunda, quarta e sexta das 8h30 às 18h, com pausa às 12h para buscar retorno de exame e almoçar com a mãe que mora perto. Terça e quinta fica com a Alice de manhã e monta planos à tarde de casa. Quinta à noite, quando tem grupo, conduz o encontro das 19h30 às 21h. Domingo à noite prepara a semana e se irrita fazendo isso.",
+  "whatsapp_pacientes": "WhatsApp Business, mas quem responde é só ela, em teoria nos intervalos, na prática o dia todo. Paciente manda foto de marmita pedindo aprovação, áudio desabafando sobre a sogra que cozinha com banha, 'posso tomar a cerveja do jogo?' às sextas 19h. Ela responde porque sabe que esse fio de conversa é o que segura o paciente até o retorno de 40 dias — quando o fio silencia, o retorno não acontece. Sente um misto de vínculo genuíno e servidão sem hora extra.",
+  "tecnologia": "Agenda no Google Calendar gratuito, prescrição num software de R$ 59,90/mês (esse ficou), recibos por app do banco, prontuário em pastas no Drive. Total do bolso: uns R$ 60/mês. Depois das duas decepções, adotou uma regra: não assina mais nada anual, não compra mais nada por promessa de vendedor — só por indicação de colega que usa há mais de seis meses e mostra a tela ao vivo.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Rodrigo",
+        "historia": "Motorista de aplicativo, 38 anos, perdeu 5 kg em dois meses comendo marmita que a esposa fazia pelo plano dela. Sumiu quando começou a fazer corrida noturna e a rotina virou do avesso.",
+        "como_percebeu": "O fio do WhatsApp silenciou: as fotos de marmita, que eram quase diárias, pararam. Duas semanas depois o retorno ficou vazio. Ela já sabe ler esse silêncio, só não sabe agir a tempo.",
+        "o_que_fez": "Mandou mensagem leve ('sumido, hein? bora ajustar o plano pra essa rotina nova?'). Ele respondeu 'semana que vem marco' — o mesmo 'semana que vem' que ela já ouviu dúzias de vezes. Não marcou."
+      },
+      {
+        "nome": "Penha",
+        "historia": "Servidora aposentada, 61 anos, paciente fiel havia um ano, veio ao grupo de emagrecimento e tudo. Sumiu depois que quebrou o pé descendo a escada da Igreja de Fátima.",
+        "como_percebeu": "A filha da paciente avisou pelo próprio WhatsApp da mãe, pedindo pra 'segurar a vaga'.",
+        "o_que_fez": "Ofereceu atendimento online durante a recuperação; Penha, desconfiada de vídeo, preferiu esperar. Quatro meses depois ainda não voltou, e Larissa suspeita que a pausa virou fim silencioso. Pensa nela toda vez que passa pela Reta da Penha."
+      },
+      {
+        "nome": "Camila",
+        "historia": "Analista de RH, 29 anos, chegou pelo Instagram cheia de pressa, queria resultado pro casamento em 4 meses. Na segunda consulta discordou do ritmo ('minha amiga secou com low carb') e não voltou.",
+        "como_percebeu": "No-show no retorno já pago? Não — essa nem chegou a pagar retorno: simplesmente não agendou e deixou de responder a mensagem de follow-up.",
+        "o_que_fez": "Uma mensagem de follow-up e soltou. 'Paciente que quer milagre acha quem prometa.' Dói menos o ego, mas a cadeira vazia da tarde de quarta doeu no caixa do mês."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sexta-feira, 19h05",
+      "texto": "Lari me salva, cheguei no aniversário do meu sobrinho e só tem salgadinho frito e bolo, como o que?? kkk socorro",
+      "respondeu": "Respondeu da mesa de jantar em dois toques ('3 salgados assados se tiver, água entre eles, fatia fina do bolo e me conta segunda') enquanto o Renan revirava o olho. Ela defende que esses 30 segundos seguram o paciente — e se ressente de que a semana tem uns cem desses 30 segundos."
+    },
+    "gasto_ferramentas_mes": 60,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 4,
+    "estimativa_perda_anual_intuitiva": "'Nunca sentei pra calcular, mas se somem uns 3 por mês entre consulta e retorno, e cada um valia pelo menos mais duas consultas no ano... dá o quê, uns 15, 18 mil? É um carro popular por ano indo embora pelo WhatsApp silencioso. Falando assim até assusta, mas desconfio de quem chega com essa conta pronta pra me vender coisa.'"
+  },
+  "dores_reais": [
+    "A montanha-russa do caixa: mês com 4 sumiços e 4 no-shows é mês de mexer na reserva — retenção para ela é conta de padaria, não conceito",
+    "Saber ler o silêncio do WhatsApp que antecede o abandono e não ter tempo nem sistema para agir antes do retorno vazio",
+    "As 6 horas semanais de plantão informal que seguram paciente mas não aparecem em recibo nenhum",
+    "Cansaço de decidir tudo sozinha: preço, agenda, marketing, cobrança — sem sócio, sem chefe, sem folga mental"
+  ],
+  "nao_dores": [
+    "Prescrição e cardápio: o software de R$ 59,90 que sobreviveu à limpa resolve bem — não quer 'plataforma completa' que refaça o que já funciona",
+    "Presença digital básica: o Instagram dela (6 mil seguidores locais) traz 2-3 pacientes novos por mês sem tráfego pago, suficiente para o tamanho de sala que tem",
+    "Medo de tecnologia: ela não tem medo nenhum, tem memória — o problema nunca foi usar, foi o que prometeram"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "VidaLeve Pro, um app genérico de acompanhamento de dieta com versão 'para profissionais'",
+    "historia": "Assinou em 2023 por R$ 97/mês no plano anual, empolgada com a promessa de que os pacientes registrariam refeições e ela veria tudo num painel. Na prática, dos 19 pacientes que ela onboardou, uns 14 baixaram, uns 8 usaram na primeira semana e depois de quinze dias sobraram dois registrando — e o painel virou um cemitério de perfis abandonados que ela ainda pagava para olhar. Cancelou no sétimo mês pagando multa proporcional, e desde então recebe qualquer 'app de acompanhamento' com um sorriso educado e a mão no bolso fechada."
+  },
+  "postura_entrevista": "Cética com lastro: educada mas testando o tempo todo ('isso aí é pesquisa de verdade ou vocês vão me ligar vendendo?'), conta as duas vezes em que se queimou logo nos primeiros dez minutos, e valoriza quem admite limite do próprio produto. Tiques capixabas: 'pocotó' pra coisa meia-boca, 'caô' herdado do Renan carioca, e um 'entendeu como que é?' fechando argumento."
+}

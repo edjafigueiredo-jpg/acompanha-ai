@@ -1,0 +1,66 @@
+{
+  "id": "011",
+  "nome": "Larissa Junqueira Resende",
+  "idade": 27,
+  "genero": "feminino",
+  "cidade": "Lavras",
+  "uf": "MG",
+  "carreira_anos": 4,
+  "especialidade": "Nutrição vegetariana e vegana, com foco em adequação nutricional de quem tira a carne do prato",
+  "modelo_atendimento": "Atende em uma sala alugada dentro de um espaço de terapias no centro de Lavras, três tardes por semana, e faz algumas teleconsultas para ex-alunos da UFLA que se mudaram. Toda a renda vem de consulta particular avulsa; retorno é cobrado com desconto e ela vive correndo atrás de fechar o mês.",
+  "carteira_ativa": 17,
+  "ticket_consulta": 170,
+  "consultas_semana": 9,
+  "contexto": "Larissa se formou na UFLA e ficou em Lavras porque o namorado, hoje noivo, é técnico de laboratório na universidade. Virou 'a nutricionista dos vegetarianos' da cidade meio sem planejar, depois que um post dela sobre ferro em dieta vegana circulou num grupo local. Divide as contas do consultório com uma psicóloga e ainda dá plantão de recepção do próprio negócio: agenda, cobra, confirma consulta. O que a move é tirar paciente do improviso de dieta de internet; o que a cansa é a sensação de que em cidade pequena o teto de preço é baixo e todo mundo acha que nutricionista 'só passa folhinha'. Já se queimou pagando ferramenta que prometia mundos e fundos, então hoje desconfia de qualquer coisa com mensalidade.",
+  "rotina": "Segunda, quarta e sexta atende das 13h30 às 19h, com consultas de uma hora. Terça de manhã faz teleconsultas em casa e à tarde monta planos alimentares no notebook. Quinta é o dia de gravar conteúdo para o Instagram, coisa que ela empurra com a barriga e metade das vezes não sai. Sábado de manhã responde WhatsApp acumulado da semana tomando café.",
+  "whatsapp_pacientes": "Usa o número pessoal mesmo, nunca separou. As mensagens chegam espalhadas: dúvida de rótulo às 21h, foto de marmita no domingo, pedido de remarcação às 7h da manhã. Ela responde quase tudo no mesmo dia porque tem medo de parecer relapsa e perder o paciente, mas por dentro acha um abuso silencioso — só não sabe como cobrar por isso sem soar mercenária numa cidade onde todo mundo se conhece.",
+  "tecnologia": "Agenda no Google Agenda, plano alimentar montado num modelo de Word que ela mesma diagramou no Canva, evolução de paciente numa planilha do Google Sheets. Hoje paga só o Canva Pro, R$ 34,90 por mês. Mexe bem com tecnologia por ser nova, mas depois da experiência ruim com app de acompanhamento passou a exigir prova antes de acreditar em qualquer promessa.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Tainá",
+        "historia": "Estudante de agronomia, 21 anos, vegana há um ano, chegou com queda de cabelo e ferritina baixa. Fez duas consultas, começou a suplementar, melhorou o cabelo e desapareceu.",
+        "como_percebeu": "Só notou quando foi revisar a planilha no fim do semestre e viu que o retorno marcado para outubro nunca aconteceu.",
+        "o_que_fez": "Mandou um 'oi Tainá, tudo bem? bora remarcar seu retorno?'. Foi visualizada e não respondida. Não insistiu para não parecer desesperada."
+      },
+      {
+        "nome": "Sr. Joaquim",
+        "historia": "Aposentado de 63 anos que virou vegetariano por pressão da filha e por colesterol alto. Vinha meio a contragosto, sempre trazido pela filha. Depois da terceira consulta a filha viajou a trabalho e ele nunca mais apareceu.",
+        "como_percebeu": "A filha mandou mensagem um mês depois pedindo desculpas e dizendo que o pai 'deu para trás'.",
+        "o_que_fez": "Respondeu a filha com carinho, ofereceu teleconsulta para ele, mas sabia que não ia rolar. Deu como perdido."
+      },
+      {
+        "nome": "Priscila",
+        "historia": "Professora de yoga, paciente que mais divulgava o trabalho dela. Fez quatro consultas, aí começou a remarcar, remarcar, remarcar, até parar de responder.",
+        "como_percebeu": "Percebeu na hora, porque a Priscila era de responder rápido. O silêncio doeu mais que o cancelamento.",
+        "o_que_fez": "Depois de três semanas mandou áudio perguntando se estava tudo bem. Priscila respondeu que estava 'sem grana esse mês' e que voltava depois. Não voltou. Larissa ficou remoendo se deveria ter oferecido parcelamento."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo passado, 21h47",
+      "texto": "Lari me salva, proteína de soja texturizada tem que deixar de molho quanto tempo? To fazendo pro almoço de amanhã kkk",
+      "respondeu": "Respondeu na hora, com áudio de 40 segundos explicando, e depois ficou irritada consigo mesma por ter respondido na hora."
+    },
+    "gasto_ferramentas_mes": 35,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Nunca sentei pra calcular, mas se cada paciente que some levaria mais uns dois retornos... sei lá, uns 6 ou 7 mil por ano? Falando assim até assusta."
+  },
+  "dores_reais": [
+    "Carteira pequena demais para viver só disso: o fim do mês depende de dois ou três agendamentos novos que nem sempre vêm",
+    "Teto de preço do interior: sente que R$ 170 já é o limite do que Lavras paga, e aumentar significa perder gente",
+    "Fazer tudo sozinha (agenda, cobrança, confirmação, conteúdo) e sentir que o Instagram, que é de onde vem paciente novo, fica sempre por último",
+    "Pacientes que melhoram e somem antes do retorno, levando junto a receita futura que ela já contava",
+    "Vergonha de cobrar pelo suporte de WhatsApp que já dá de graça"
+  ],
+  "nao_dores": [
+    "Burocracia de convênio: não atende plano nenhum e não pretende, então glosa e repasse não fazem parte do mundo dela",
+    "Concorrência de coach ou influencer fitness: no nicho vegetariano de Lavras ela é praticamente a única referência, ninguém disputa esse paciente",
+    "Prescrição complexa: os casos dela são relativamente padronizados (ferro, B12, proteína), montar plano não é o gargalo"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "NutriConnect, um app genérico de acompanhamento com diário alimentar para o paciente",
+    "historia": "Pagou R$ 89 por mês durante sete meses no primeiro ano de consultório, achando que ia 'profissionalizar' o atendimento. Dos pacientes que instalaram, quase todos preencheram o diário por umas duas semanas e abandonaram, e ela continuou pagando para olhar telas vazias. Cancelou depois que uma paciente disse que o app 'dava ansiedade' e ficou com a sensação de ter jogado mais de R$ 600 fora."
+  },
+  "postura_entrevista": "Cética na medida: responde tudo, mas com uma sobrancelha levantada, e devolve perguntas do tipo 'mas isso funciona mesmo ou é só mais uma promessa?'. Testa o entrevistador citando a experiência ruim que já teve antes de abrir qualquer entusiasmo. Mineira de falar 'uai' e 'cê' sem perceber, e encurta tudo: 'pro', 'tá', 'num é'."
+}

@@ -1,0 +1,64 @@
+{
+  "id": "074",
+  "nome": "Regina Sarmento Pontes",
+  "idade": 51,
+  "genero": "feminino",
+  "cidade": "Manaus",
+  "uf": "AM",
+  "carreira_anos": 27,
+  "especialidade": "Nutrição esportiva, com prática marcada por atletas amadores de corrida de rua e jiu-jitsu",
+  "modelo_atendimento": "Atende por convênio em duas clínicas credenciadas em Manaus (Adrianópolis e Centro), por produção: a clínica marca, a fila do plano enche a agenda, ela atende. Mantém, quase por afeto, um punhado de pacientes esportivos particulares antigos que atende num consultório emprestado de uma amiga aos sábados. A renda de verdade é o repasse do convênio; os particulares são 'o luxo dela'.",
+  "carteira_ativa": 8,
+  "ticket_consulta": 45,
+  "consultas_semana": 34,
+  "contexto": "Regina se formou na UFAM em 1999, viu Manaus crescer e os planos de saúde dominarem o mercado local. Já teve consultório próprio no Vieiralves nos anos 2000, fechou em 2014 quando a crise levou os particulares e nunca mais quis saber de pagar aluguel de sala. Viúva desde 2021, dois filhos adultos (um em Portugal), mora no Parque Dez com a mãe de 78 anos, de quem cuida. É apaixonada por corrida de rua — completou a Maratona Internacional de Manaus três vezes — e os poucos particulares que mantém são desse mundo. O que a move é a segurança do fluxo do convênio e o carinho dos atletas de sábado; o que a cansa é a esteira: 17 pacientes num turno, 20 minutos cada, glosa de guia e a sensação de que vira só um carimbo.",
+  "rotina": "Segunda a sexta: manhã numa clínica (7h30 às 12h30), três tardes na outra (14h às 18h). Atende de 30 a 36 consultas de convênio por semana, 20 minutos cada, agenda montada pela recepção. Sábado de manhã atende 3 ou 4 atletas particulares no consultório da amiga, com hora cheia e cafezinho. Domingo é treino longo de corrida às 5h da manhã, antes do calor, e almoço com a mãe.",
+  "whatsapp_pacientes": "Paciente de convênio não tem o número dela — tudo passa pela recepção da clínica, e é assim que ela gosta. Os atletas de sábado têm o número pessoal e mandam coisa de atleta: print de treino, dúvida de suplemento pré-prova, foto do pódio. Ela responde quando dá, com áudio longo e cheio de conselho de mãe. Não vê como trabalho; vê como amizade.",
+  "tecnologia": "Nas clínicas, usa o sistema que a clínica manda usar (prontuário do convênio) — ela não paga nada e não escolheu nada. Para os atletas de sábado, prescreve num software de nutrição antigo, versão desktop que comprou com licença vitalícia em 2011 e recusa-se a trocar. Agenda dos sábados: caderninho. Relação com tecnologia: 'funciona? então deixa quieto'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Um senhor do convênio, ela acha que era seu Waldir",
+        "historia": "Diabético encaminhado pelo endócrino, veio duas vezes pela fila do plano e não voltou. Regina sinceramente não sabe dizer por quê, nem quando exatamente.",
+        "como_percebeu": "Não percebeu. A recepção preenche o horário com o próximo da fila; ela só notou porque a entrevistadora perguntou e ela foi puxar pela memória.",
+        "o_que_fez": "Nada — não há o que fazer, o fluxo é da clínica. 'Meu bem, se eu fosse sentir falta de cada um, eu não almoçava.'"
+      },
+      {
+        "nome": "Ingrid",
+        "historia": "Das particulares de sábado: corredora de 35 anos que se mudou para Boa Vista por causa do trabalho do marido, no meio da preparação para a meia de Manaus.",
+        "como_percebeu": "A própria Ingrid contou num áudio choroso de despedida, ainda pediu indicação de nutricionista lá.",
+        "o_que_fez": "Fez a última consulta de graça, entregou o plano da prova de presente e até hoje trocam mensagem em dia de prova. Sentiu como quem perde uma afilhada, não uma receita."
+      },
+      {
+        "nome": "Coronel Ribamar",
+        "historia": "Militar reformado, faixa-preta de jiu-jitsu, particular antigo dos sábados. Passou a achar que 'já sabia tudo' depois de dois anos e foi rareando.",
+        "como_percebeu": "Foi espaçando de mensal para 'quando precisar', até parar. Ela percebeu porque sábado é pequeno — quatro cadeiras, sente-se quem falta.",
+        "o_que_fez": "Mandou mensagem no aniversário dele, ele respondeu com figurinha de bom dia. Ela ri: 'formei o homem, ele se formou de mim'. Zero drama financeiro; sábado nem paga o combustível direito."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado passado, 5h50 da manhã",
+      "texto": "Dona Regina, tô na concentração da prova! Confirma: é o gel aos 7km e outro aos 14, né? Benção!",
+      "respondeu": "Respondeu na hora porque também estava acordada indo treinar: 'Isso, meu filho! E água em todo posto. Vai com Deus!'. Passou o treino inteiro sorrindo."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 11,
+    "estimativa_perda_anual_intuitiva": "Perder com paciente que some? Olhe, no convênio não existe isso — sumiu um, a fila põe outro na cadeira no mesmo dia. Falta me custa a produção da hora, isso sim: uns 45 reais cada. Nunca somei no ano. Deve dar... sei lá, uns 2 mil de buraco de agenda?"
+  },
+  "dores_reais": [
+    "A esteira do convênio: 20 minutos por paciente não dá para fazer nutrição de verdade, e isso corrói o orgulho profissional de 27 anos de carreira",
+    "Glosas e burocracia de guia: horas de retrabalho para receber R$ 45 por consulta, às vezes três meses depois",
+    "Repasse congelado há anos enquanto tudo em Manaus subiu — ela ganha hoje, em valor real, menos que em 2015",
+    "No-show do convênio: paciente de plano falta sem dó (11 no mês passado) e a hora dela fica oca sem remuneração",
+    "Cansaço físico aos 51: dois turnos, trânsito de Manaus, mãe idosa em casa — sobra pouco dela para ela"
+  ],
+  "nao_dores": [
+    "Retenção de paciente — a fila do convênio repõe qualquer evasão no mesmo dia; paciente que some não custa nada, quem some é remunerado igual pelo próximo",
+    "Captação e marketing — ela nunca postou nada profissional na vida e a agenda vive lotada; Instagram é para foto de corrida e da mãe",
+    "Plantão de WhatsApp — o convênio a protege (recepção filtra tudo) e os atletas de sábado são prazer, não plantão",
+    "Pagar ferramenta — não decide sistema nas clínicas e a licença vitalícia de 2011 resolve o sábado; qualquer mensalidade nova é despesa sem sentido para ela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa: oferece café antes de sentar, responde qualquer pergunta começando por 1999, conta a história do consultório do Vieiralves inteira antes de chegar ao ponto. Precisa ser redirecionada com jeito, mas não se ofende. Tiques: 'olhe...' iniciando frase, 'meu filho / minha filha' para se dirigir ao entrevistador, e o manauara 'é reti-í-ssimo' quando concorda muito."
+}

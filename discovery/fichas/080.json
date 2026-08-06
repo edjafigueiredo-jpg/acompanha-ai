@@ -1,0 +1,67 @@
+{
+  "id": "080",
+  "nome": "Verônica Aragão Façanha",
+  "idade": 49,
+  "genero": "feminino",
+  "cidade": "Fortaleza",
+  "uf": "CE",
+  "carreira_anos": 24,
+  "especialidade": "Nutrição materno-infantil: pré-natal de alto risco, lactação e alimentação infantil até os 5 anos",
+  "modelo_atendimento": "Coordenadora de nutrição (CLT) de uma clínica materno-infantil grande na Aldeota, com quatro nutricionistas na equipe dela. A carteira é da clínica: as pacientes chegam pelos obstetras e pediatras da casa e pelos convênios premium. Ela atende os casos de alto risco e gerencia a agenda das outras; salário fixo com bônus por indicadores da unidade, que dependem mais de ocupação geral do que da retenção da nutrição.",
+  "carteira_ativa": 41,
+  "ticket_consulta": 90,
+  "consultas_semana": 18,
+  "contexto": "Formada na UECE em 2002, fez especialização em nutrição materno-infantil e construiu a carreira inteira em clínica: prefere um contracheque previsível a 'viver de cadeira vazia', frase que repete desde que viu colegas quebrarem no consultório próprio. Divorciada, dois filhos — a mais velha na faculdade de medicina, motivo de orgulho e de boleto — mora no Papicu e vai de bicicleta elétrica ao trabalho. É a veterana pragmática da casa: os médicos confiam nela, a diretoria a escuta (às vezes). O que a move é caso difícil de alto risco bem resolvido e formar as meninas da equipe; o que a cansa é a gestão — escala, indicador, reunião — que come o tempo clínico dela, e a diretoria que decide ferramenta por planilha de custo sem pisar no atendimento.",
+  "rotina": "Segunda a sexta das 7h30 às 16h30 na clínica: manhãs de atendimento de alto risco (18 consultas semanais), tardes de gestão — supervisão da equipe, reunião com a diretoria às quartas, auditoria de prontuário às sextas. Uma sexta por mês dá aula na especialização da UECE, o luxo intelectual dela. Fim de tarde é bicicleta na Beira Mar; domingo, almoço na casa da mãe em Messejana, sagrado.",
+  "whatsapp_pacientes": "Existe um WhatsApp central da clínica, operado pela recepção com respostas padrão e triagem; nenhuma nutricionista da equipe dela pode dar número pessoal a paciente — norma que a própria Verônica escreveu depois de anos vendo colegas escravizadas pelo celular. Urgência clínica de verdade vira encaixe na agenda ou vai pro obstetra. Ela mesma recebe pouquíssima mensagem direta, quase toda de médico da casa. Considera o esquema civilizado e defende que 'plantão de zap' é falha de processo, não dedicação.",
+  "tecnologia": "A clínica usa um sistema de gestão hospitalar-lite (agenda, prontuário, faturamento de convênio) que a diretoria contratou; ela participou da comissão de escolha e perdeu a queda de braço pela opção mais clínica e menos financeira. Do bolso dela: nada — e um app de bicicleta. Relação com tecnologia: pragmática e experiente, avalia qualquer ferramenta com a régua de quem já implantou três sistemas: 'quem alimenta o dado? quem cobra o uso? o que acontece no mês 4?'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Gestante da dra. Lícia, Camila de sobrenome comprido",
+        "historia": "Pré-natal de gêmeos, fez três consultas de nutrição e parou de agendar a parte nutricional — continuou só com a obstetra, achando a nutrição 'consulta a mais' que o convênio nem sempre cobria bem.",
+        "como_percebeu": "No relatório mensal de produção da unidade: consultas de nutrição por gestante caindo. A paciente específica ela só identificou porque auditou a amostra.",
+        "o_que_fez": "Levou o dado agregado à reunião de quarta e propôs que os obstetras reforçassem o encaminhamento. A diretoria anotou. O salário dela não mudou em nada — mas o indicador da unidade é problema dela, então ela cutuca."
+      },
+      {
+        "nome": "Bianca com o bebê Levi",
+        "historia": "Acompanhamento de lactação que ia bem até o convênio dela descredenciar a clínica na renovação anual do contrato — de um mês pro outro, umas trinta famílias na mesma situação.",
+        "como_percebeu": "O faturamento avisou a coordenação por e-mail, com a lista de pacientes afetadas.",
+        "o_que_fez": "A clínica ofereceu tabela particular com desconto; umas cinco famílias ficaram, a Bianca não. Verônica classifica com frieza: 'isso não é evasão, é contrato de convênio — acontece todo ano e não há follow-up que resolva'."
+      },
+      {
+        "nome": "Rebeca",
+        "historia": "Mãe de trigêmeos prematuros, caso que a Verônica atendia pessoalmente e adorava. A família se mudou para o Eusébio e trocou tudo por uma clínica mais perta, por logística pura.",
+        "como_percebeu": "A própria Rebeca mandou mensagem pela recepção agradecendo e pedindo o relatório de transferência.",
+        "o_que_fez": "Preparou um relatório de transição caprichado e ligou para a nutricionista que ia assumir. Sentiu a perda como clínica, admite — mas fez questão de mostrar pra equipe como se transfere paciente direito."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 8h20",
+      "texto": "Dra. Verônica, é a Auxiliadora da recepção. A paciente do leito... digo, a gestante Fabíola do dr. Emanuel tá no privado da clínica desesperada com náusea, diz que não segura nem água desde ontem. Encaminho pra sra.?",
+      "respondeu": "Respondeu em dez minutos, seca e resolutiva: 'Não é WhatsApp, é emergência obstétrica. Orienta procurar a maternidade AGORA e avisa o dr. Emanuel.' Depois usou o caso no treinamento da recepção como exemplo do que triagem por mensagem não deve segurar."
+      },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "Perda minha? Zero — sou CLT, meu contracheque não sabe quem faltou. Perda da unidade eu tenho no relatório: a evasão de nutrição deve custar à clínica uns 60, 70 mil por ano. Já apresentei esse número pra diretoria duas vezes. Sabe o que fizeram? Reunião."
+  },
+  "dores_reais": [
+    "Gestão comendo a clínica: ela virou apagadora de incêndio de escala e indicador, e atende metade do que gostaria",
+    "Decidir sem poder decidir: qualquer melhoria de ferramenta ou processo passa por uma diretoria que olha custo por planilha e demora seis meses para dizer não",
+    "Reter EQUIPE, não paciente: nutricionista boa se forma com ela e sai para o consultório próprio ou para clínica que paga mais",
+    "O sistema atual da clínica, financeiro demais e clínico de menos — briga que ela já perdeu uma vez e terá de comprar de novo na renovação do contrato",
+    "O boleto da faculdade de medicina da filha, que faz qualquer proposta de emprego concorrente merecer ao menos uma olhada"
+  ],
+  "nao_dores": [
+    "Retenção de paciente como dor pessoal — é indicador da unidade, não dor dela; ela trata com relatório e reunião, sem perder sono",
+    "Plantão de WhatsApp — a norma que ela mesma escreveu a protege e protege a equipe; 1 hora por semana e olhe lá",
+    "Comprar ferramenta — ela não tem alçada de compra; vendedor que chega nela está falando com influenciadora, não com decisora, e ela avisa isso logo",
+    "Captação — o fluxo de obstetras e pediatras da casa lota a agenda da equipe sem nenhum marketing"
+  ],
+  "cicatriz_ferramenta": {
+    "ferramenta": "plataforma de engajamento de pacientes com app próprio, contratada pela clínica em 2022 por cerca de R$ 800/mês na cota da nutrição",
+    "historia": "Ela mesma defendeu a contratação na comissão: app para as gestantes registrarem refeições e receberem conteúdo entre consultas. No primeiro mês, 60% baixaram; no terceiro, menos de 15% abriam; no sexto, a diretoria cortou na revisão de custos citando o relatório de uso — com razão, ela admite. Ficou a lição que ela repete em toda reunião desde então: 'app que depende de disciplina de puérpera exausta morre no mês dois; quem promete engajamento tem que me mostrar o mês quatro'."
+  },
+  "postura_entrevista": "Pragmática: pede a pauta antes de começar, responde em tópicos, cita números de relatório de memória e corta especulação ('isso é achismo, próximo ponto'). Cordial, mas gerencia o tempo da entrevista como se fosse a reunião de quarta. Tiques: 'na prática...' abrindo metade das respostas e o cearense 'diga aí' quando devolve a palavra; ironia seca ocasional sobre 'a diretoria'."
+}

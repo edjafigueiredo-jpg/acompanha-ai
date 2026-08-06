@@ -1,0 +1,64 @@
+{
+  "id": "077",
+  "nome": "Marcos Aurélio Peçanha",
+  "idade": 46,
+  "genero": "masculino",
+  "cidade": "Volta Redonda",
+  "uf": "RJ",
+  "carreira_anos": 21,
+  "especialidade": "Nutrição esportiva, forte em hipertrofia e atletas de base do futebol e vôlei da região",
+  "modelo_atendimento": "Contratado PJ de uma clínica multiprofissional grande no Aterrado (ortopedia, fisioterapia, psicologia esporte), com salário fixo mais uma variável pequena por produção. A carteira é da clínica: os pacientes chegam pelos ortopedistas e pelos convênios com clubes de base da região. Se um paciente some, a agenda dele é preenchida pela própria clínica; se ele sair da clínica, os pacientes ficam.",
+  "carteira_ativa": 28,
+  "ticket_consulta": 60,
+  "consultas_semana": 22,
+  "contexto": "Cria de Volta Redonda, filho de metalúrgico da CSN, Marcos jogou futebol de base até os 19 e levou a frustração da carreira que não veio para a nutrição esportiva (formado na UniFOA em 2004). Trabalhou em academia, teve um consultório próprio que fechou em 2016 na crise do estado, e desde 2018 está na clínica — estabilidade que ele valoriza e ressente na mesma medida. Divorciado, paga pensão de dois adolescentes, mora sozinho num apê na Vila Santa Cecília e treina todo dia às 6h. O que o move é trabalhar com os garotos da base, ver moleque de Volta Redonda subir pra equipe profissional. O que o cansa é sentir-se peça de engrenagem: bater meta de produção, seguir protocolo da casa e saber que cada paciente que ele fideliza engorda o negócio do dono, não o dele.",
+  "rotina": "Segunda a sexta na clínica, das 8h às 12h e das 14h às 17h, com agenda montada pela recepção central. Terça e quinta à tarde sai para atender os atletas da base no CT de um clube conveniado — a parte da semana que ele de fato gosta. Sexta entrega os relatórios de produção que o administrador cobra. Fim de semana é dos filhos (quinzenal) e de churrasco com os amigos do futebol society de sábado.",
+  "whatsapp_pacientes": "O contato oficial é o WhatsApp da clínica, respondido pelas secretárias. Ele tem um grupo com a comissão técnica da base (isso sim mexe com ele) e evita dar o número pessoal a paciente comum — aprendeu em 2016, quando tinha consultório e vivia refém do telefone. Quando um paciente consegue o número e manda dúvida, ele responde curto e redireciona para marcar retorno: 'consulta é consulta'.",
+  "tecnologia": "Usa o sistema de gestão que a clínica assina — ele nem sabe quanto custa, não é problema dele — e um software de avaliação física e prescrição que a clínica também paga, escolhido pelo dono sem consultar ninguém ('e olha que eu era o único que ia usar o módulo de dobras cutâneas'). Do bolso dele: zero. Relação com tecnologia: usa o que mandam, desconfia de novidade, acha que 'sistema novo' geralmente significa 'mais campo pra preencher'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Um paciente do ortopedista, Cláudio ou Cláudius",
+        "historia": "Pós-cirúrgico de joelho, veio duas vezes para recomposição corporal na reabilitação e sumiu quando terminou a fisioterapia — padrão clássico da clínica: acabou a fisio, acabou a nutrição.",
+        "como_percebeu": "Viu o horário preenchido com outro nome no sistema. Só isso.",
+        "o_que_fez": "Nada. 'A carteira é da casa. O administrador que corra atrás, ele que fica com a margem.'"
+      },
+      {
+        "nome": "Pedrão",
+        "historia": "Atacante de 16 anos da base, talento de verdade, que a família tirou do clube para tentar peneira em clube grande de São Paulo — e com o clube foi embora o acompanhamento.",
+        "como_percebeu": "O preparador físico contou no grupo da comissão antes de ele saber oficialmente.",
+        "o_que_fez": "Mandou mensagem pro garoto com as orientações do que manter, de graça e por conta própria. Esse tipo de 'sumiço' dói nele — mas é dor de padrinho, não de dono de negócio."
+      },
+      {
+        "nome": "Rosângela",
+        "historia": "Paciente de emagrecimento que o dono da clínica encaixou na agenda dele mesmo não sendo o perfil dele. Veio três vezes, sem química nenhuma, e migrou para a outra nutricionista da casa.",
+        "como_percebeu": "A secretária comentou que ela pediu 'a doutora, não o doutor'.",
+        "o_que_fez": "Ficou até aliviado. Sugeriu ao administrador que parasse de mandar emagrecimento genérico pra ele. Foi ignorado, como de costume."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quarta, 21h30",
+      "texto": "Professor, sou o pai do Vinícius da base sub-17. O menino pode tomar creatina? O treinador da escolinha antiga disse que atrofia o rim. Desculpa incomodar.",
+      "respondeu": "Respondeu no dia seguinte de manhã, seco e educado: marcou uma conversa no CT na quinta. Pai de atleta ele não deixa sem resposta, mas também não abre precedente de consultório via WhatsApp."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1.5,
+    "no_shows_ultimo_mes": 6,
+    "estimativa_perda_anual_intuitiva": "Perder EU? Nada. Meu salário cai igual com paciente sumindo ou não. Quem perde é o dono da clínica — e sinceramente? Não sou pago pra fazer essa conta pra ele. Se ele me desse participação, aí a gente conversava."
+  },
+  "dores_reais": [
+    "Sentir que constrói valor para o negócio dos outros: 21 anos de carreira, salário travado e nenhuma participação no que ele gera",
+    "A vontade recorrente (e o medo, aos 46, com pensão pra pagar) de tentar de novo algo próprio, focado só em esporte",
+    "Ser tratado como generalista pela gestão da clínica, que encaixa qualquer paciente na agenda dele para bater produção",
+    "Reunião de meta e relatório de produção — burocracia que ele considera teatro corporativo",
+    "A base: verba curta dos clubes da região, garoto talentoso sem dinheiro pra comer direito, e ele sem poder fazer muito"
+  ],
+  "nao_dores": [
+    "Retenção de pacientes — a carteira é da clínica; paciente fiel ou evadido, o contracheque dele é o mesmo",
+    "Comprar ferramenta — ele não decide nada de compra; qualquer proposta de software tem que convencer o dono, não ele",
+    "Plantão de WhatsApp — as secretárias filtram e ele policia o próprio número desde 2016; problema resolvido na marra",
+    "Captação — nunca precisou buscar paciente na vida de clínica; o fluxo dos ortopedistas nunca seca"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiado: primeiro quer saber quem financia a pesquisa e 'pra onde vai isso aí'. Responde curto no início, braços cruzados, e só destrava quando o assunto é a base e os garotos. Testa o entrevistador com ironia fluminense. Tiques: 'tá entendendo?' com sobrancelha erguida, 'papo reto' antes de opinar de verdade, e chama o entrevistador de 'chefia'."
+}

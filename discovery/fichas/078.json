@@ -1,0 +1,64 @@
+{
+  "id": "078",
+  "nome": "Débora Castiel Franco",
+  "idade": 34,
+  "genero": "feminino",
+  "cidade": "Ji-Paraná",
+  "uf": "RO",
+  "carreira_anos": 10,
+  "especialidade": "Nutrição comportamental online: relação com a comida, compulsão e comer intuitivo, abordagem não-prescritiva",
+  "modelo_atendimento": "Atendimento 100% online do home office em Ji-Paraná, com pacientes espalhadas pelo Brasil inteiro (e três na Europa, brasileiras emigradas). Capta pelo Instagram, onde tem 28 mil seguidoras construídas com conteúdo contra cultura de dieta. Vende sessão avulsa e ciclo de 8 sessões quinzenais; a renda vem das sessões e de uma oficina online gravada que vende no automático.",
+  "carteira_ativa": 44,
+  "ticket_consulta": 190,
+  "consultas_semana": 20,
+  "contexto": "Débora nasceu em Porto Velho, formou-se em Cuiabá (UFMT) e foi parar em Ji-Paraná por causa do marido, Elias, engenheiro agrônomo de uma trading de soja. Atendia presencial numa clínica local até 2020; a pandemia a jogou no online e ela descobriu que a cidade onde mora não limita mais o trabalho. Teve ela própria transtorno alimentar na adolescência — história que conta abertamente no Instagram e que é o coração da autoridade dela. Mãe da Alice, de 3 anos, que fica na creche até as 17h. O que a move é tirar mulheres da prisão das dietas; o que a cansa é o volume: 44 pacientes em ciclo ativo, 20 sessões por semana de escuta profunda, e a máquina de conteúdo que não pode parar.",
+  "rotina": "Sessões de segunda a quinta, das 8h às 12h e das 14h às 17h, cada uma de 45 minutos por vídeo. Sexta é dia de gravar conteúdo, responder comentários e reunião mensal com a supervisora clínica (uma psicóloga de São Paulo). Busca a Alice às 17h e desliga — o notebook fecha e só reabre segunda. Domingo de manhã faz trilha com a família no Parque Ecológico.",
+  "whatsapp_pacientes": "Número business com mensagem automática clara: WhatsApp é só para agendamento e remarcação, respondido em horário comercial por ela mesma em dois blocos (12h e 16h45). Conteúdo emocional no chat ela acolhe com UMA frase e leva para a sessão — regra de enquadre que aprendeu com a supervisora e defende com unhas e dentes: 'terapia nutricional não acontece em bolha de texto'. As pacientes aceitam bem porque ela avisa no contrato. Ela sente orgulho desse limite; foi a coisa mais difícil que construiu.",
+  "tecnologia": "Plataforma de agendamento com pagamento integrado (R$ 69/mês) que cuida de marcação, lembrete e cobrança das sessões; Google Meet pago no pacote Workspace (R$ 42); área de membros da oficina gravada (R$ 97/mês). Total: uns R$ 210/mês, que ela considera barato pelo que resolve. É fluente em tecnologia — mas rejeita por princípio qualquer ferramenta de 'monitorar' alimentação de paciente: diário, foto de prato, contagem, nada disso entra na prática dela.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Larissa de Floripa",
+        "historia": "Advogada com compulsão, quatro sessões do ciclo, sumiu depois que a irmã emagreceu 12 kg com canetinha e a família inteira começou a pressioná-la a fazer igual.",
+        "como_percebeu": "Faltou à quinta sessão sem remarcar pela plataforma — coisa rara, o lembrete automático costuma segurar.",
+        "o_que_fez": "Mandou uma única mensagem de porta aberta, sem cobrança, como manda o protocolo dela. Sem resposta. Levou o caso pra supervisão, chorou lá, e seguiu: 'recaída em cultura de dieta faz parte do caminho de quase todas'."
+      },
+      {
+        "nome": "Soraia de Belém",
+        "historia": "Professora, oito sessões completas, ciclo encerrado com alta combinada. Tecnicamente não 'sumiu' — mas não renovou o ciclo de manutenção que Débora sugeriu.",
+        "como_percebeu": "Recusou educadamente a proposta de manutenção mensal: 'acho que consigo caminhar sozinha agora'.",
+        "o_que_fez": "Comemorou de verdade — na abordagem dela, paciente que se sente pronta para caminhar sozinha é o RESULTADO, não uma perda. Usou o caso (anonimizado, com autorização) num post que bombou."
+      },
+      {
+        "nome": "Michele, a das 7 remarcações",
+        "historia": "Paciente de Manaus que remarcava sem parar — fuso, filhos, trabalho — até a plataforma virar um histórico de sete remarcações e nenhuma sessão nos últimos dois meses.",
+        "como_percebeu": "O relatório mensal da plataforma mostrou o ciclo dela parado com duas sessões pagas e não usadas.",
+        "o_que_fez": "Ofereceu congelar o ciclo por 90 dias sem custo. Michele agradeceu e congelou. Débora não sabe se ela volta, e — confessa — dói menos pelo dinheiro e mais por saber que ela deve estar fazendo dieta por conta própria de novo."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sexta, 22h50",
+      "texto": "Dé, surtei. Comi escondida no banheiro de novo, igual antes. Você vai me desistir de mim?",
+      "respondeu": "Viu no sábado de manhã (o celular de trabalho dorme na gaveta). Respondeu uma frase de acolhimento — 'ninguém desiste de você aqui, e episódio não apaga caminhada' — e antecipou a sessão para segunda. Não se culpou pelas horas de silêncio: 'meu enquadre é o que me mantém inteira pra elas'."
+    },
+    "gasto_ferramentas_mes": 208,
+    "horas_semana_respondendo": 2.5,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Nunca calculei em dinheiro, de propósito — medir paciente em reais é o tipo de conta que adoece a prática. Se você insistir: os ciclos que congelam e não voltam devem dar uns 10 mil no ano. Mas eu reponho com a fila de espera, então não sangra."
+  },
+  "dores_reais": [
+    "Volume de escuta: 20 sessões semanais de conteúdo emocional pesado — o risco real dela é burnout, não caixa",
+    "A guerra de narrativa no Instagram: competir por atenção com canetas emagrecedoras, coaches de defict calórico e 'antes e depois' que performam 10 vezes mais que conteúdo responsável",
+    "Encontrar profissionais alinhadas para encaminhar (psicólogas, psiquiatras) na rede das pacientes espalhadas pelo país",
+    "O preço da autoridade: expor a própria história de transtorno alimentar todo dia no feed cobra um pedágio emocional",
+    "Culpa de classe: o ciclo dela custa R$ 1.520 e ela sabe que quem mais precisa não pode pagar; a bolsa social que oferece nunca parece suficiente"
+  ],
+  "nao_dores": [
+    "Monitoramento de pacientes entre sessões — é ANTÍTESE da abordagem dela: registro alimentar, foto de prato e check-in de peso são, para ela, ferramentas de vigilância que reproduzem o adoecimento",
+    "Plantão de WhatsApp — o enquadre resolve; 2,5 horas por semana, em blocos, com regras que as pacientes conhecem e respeitam",
+    "Captação — 28 mil seguidoras e fila de espera de um mês; o funil está mais do que resolvido",
+    "No-show — a plataforma cobra antecipado e aplica a política de remarcação sozinha"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante e articulada, quase didática: responde em parágrafos prontos de tanto dar aula no Instagram, cita a supervisora e autoras da nutrição comportamental. Fica visivelmente ativada (e mais eloquente ainda) se sentir cheiro de 'ferramenta de vigilância' na conversa. Tiques: 'olha só' para abrir explicação, 'faz sentido?' no fim, e o nortista 'lá em casa' para se referir a Ji-Paraná."
+}

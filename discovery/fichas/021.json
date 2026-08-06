@@ -1,0 +1,63 @@
+{
+  "id": "021",
+  "nome": "Regina Starling Nogueira",
+  "idade": 47,
+  "genero": "feminino",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "carreira_anos": 23,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e reeducação alimentar de adultos 40+",
+  "modelo_atendimento": "Consultório próprio no bairro Santo Antônio, uma sala alugada num prédio de consultórios médicos, atende presencial de segunda a sexta. Toda a renda vem das consultas particulares e dos retornos; não atende convênio há mais de dez anos porque 'convênio paga o estacionamento, não a vida'. Cobra consulta avulsa e um retorno mensal, sem pacote formal.",
+  "carteira_ativa": 48,
+  "ticket_consulta": 320,
+  "consultas_semana": 22,
+  "contexto": "Formada pela UFMG em 2003, começou em ambulatório de hospital e migrou para o consultório quando a segunda filha nasceu. Viúva desde 2021, cria as duas filhas adolescentes e fala delas em quase toda conversa. É o tipo de nutricionista que os pacientes chamam de 'Dra. Regina' com carinho: muitos estão com ela há mais de cinco anos, voltam, somem, voltam de novo. O que a move é ver paciente hipertenso largar remédio; o que a cansa é a sensação de que ela se importa mais com a dieta do paciente do que o próprio paciente. Chora com facilidade quando conta caso de paciente que recuperou saúde — e também quando conta dos que sumiram.",
+  "rotina": "Atende das 8h às 12h e das 14h às 18h30, com segunda-feira de manhã reservada para 'colocar a casa em ordem' (prontuários, respostas atrasadas, mercado). Quinta à noite faz aula de hidroginástica que vive furando. Sábado de manhã, a cada quinze dias, abre agenda para pacientes que só podem no fim de semana. Domingo à noite já começa a responder WhatsApp 'para não acumular na segunda'.",
+  "whatsapp_pacientes": "Usa o número pessoal mesmo, o mesmo da família — nunca separou. Responde tudo ela, entre consultas, no almoço e principalmente à noite no sofá. As mensagens chegam a qualquer hora: foto de prato às 21h40, 'posso trocar o jantar?' no domingo. Ela diz que não reclama, 'faz parte do cuidado', mas admite com a voz embargada que às vezes larga o celular na gaveta porque não aguenta ver a bolinha verde.",
+  "tecnologia": "Agenda de papel Tilibra que ela compra todo janeiro, mais um caderno por paciente antigo; os novos vão para pastas no Google Drive que a filha mais velha montou. Prescreve no Word, num modelo de 2010 com o logo antigo. Paga só o Canva Pro (R$ 54,90/mês) que quase não usa. Diz que não é 'contra tecnologia', é que nunca sobrou tempo para aprender.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Geraldo",
+        "historia": "Diabético, 61 anos, paciente há três anos, tinha perdido 9 kg. Depois do carnaval remarcou duas vezes e parou de responder.",
+        "como_percebeu": "Ela mesma notou quando foi separar o prontuário para o retorno e viu que o retorno nunca tinha sido marcado.",
+        "o_que_fez": "Mandou dois áudios carinhosos e uma mensagem no aniversário dele em maio. Ele visualizou e não respondeu. Ela ainda pensa nele."
+      },
+      {
+        "nome": "Cristiane",
+        "historia": "Professora, 44 anos, veio por causa de compulsão noturna. Fez quatro consultas, estava indo bem, sumiu quando o pai adoeceu.",
+        "como_percebeu": "Só percebeu quase dois meses depois, mexendo no caderno. 'Ela escorregou por entre os dedos', foi a expressão que usou.",
+        "o_que_fez": "Ligou — não só mensagem, ligou. Cristiane atendeu chorando, prometeu voltar 'quando as coisas acalmarem'. Não voltou."
+      },
+      {
+        "nome": "Tadeu",
+        "historia": "Executivo, 52 anos, mandado pela cardiologista. Veio duas vezes, achou o plano 'muito restritivo', deu no-show no terceiro encontro.",
+        "como_percebeu": "No-show seco: ela esperou 40 minutos na sala com o prontuário aberto.",
+        "o_que_fez": "Mandou mensagem educada oferecendo remarcar. Ele respondeu 'vou ver com minha secretária' e nunca mais. Esse doeu menos — 'ele não estava pronto'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo passado, 22h10",
+      "texto": "Dra Regina desculpa a hora, é que amanhã tem almoço de aniversário na firma e eu queria saber o que eu posso comer pra não jogar tudo fora, to desesperada",
+      "respondeu": "Respondeu na hora, com áudio de dois minutos acalmando a paciente. Depois ficou remoendo até meia-noite que não devia ter respondido, 'mas e se ela desandasse?'"
+    },
+    "gasto_ferramentas_mes": 55,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 5,
+    "estimativa_perda_anual_intuitiva": "Nunca fez a conta no papel, mas quando puxa de cabeça os que sumiram esse ano ela para, respira e diz: 'menina, deve passar de trinta mil. Não quero nem pensar.'"
+  },
+  "dores_reais": [
+    "Paciente que ia bem e some sem despedida — ela leva para o pessoal, perde o sono, se pergunta o que fez de errado",
+    "O WhatsApp que não desliga nunca: sente que virou plantonista emocional dos pacientes e não sabe cobrar nem cortar isso",
+    "Não saber quem está 'escorregando' entre uma consulta e outra até ser tarde demais",
+    "A papelada dominical: passar horas de domingo atualizando caderno e Drive em vez de estar com as filhas",
+    "Medo silencioso de envelhecer no consultório sem nunca ter organizado nada disso"
+  ],
+  "nao_dores": [
+    "Captação: não faz anúncio, não posta quase nada, e a agenda vive 80% cheia só de indicação — 23 anos de boca a boca em BH",
+    "Precificação: reajusta todo ano sem culpa e os pacientes pagam; ela sabe o valor que tem",
+    "Concorrência com influencer de dieta: 'meu público não está no TikTok, meu bem'"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva: responde perguntas objetivas com histórias de pacientes, se emociona de verdade falando dos que sumiram (pega o lencinho na terceira pergunta), pede desculpa por chorar e continua. Mineirice carregada: 'uai', 'meu bem', 'cê entende?', diminutivos em tudo ('uma coisinha', 'rapidinho')."
+}

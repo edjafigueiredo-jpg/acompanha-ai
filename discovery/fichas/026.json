@@ -1,0 +1,63 @@
+{
+  "id": "026",
+  "nome": "Patrícia Wanderley Lins",
+  "idade": 35,
+  "genero": "feminino",
+  "cidade": "João Pessoa",
+  "uf": "PB",
+  "carreira_anos": 11,
+  "especialidade": "Nutrição geral de adultos e famílias, do colesterol do pai à lancheira do filho",
+  "modelo_atendimento": "Atendimento 100% online em volume: consultas de 30 minutos, ticket acessível, captação por Instagram (61 mil seguidores) e por indicação dentro das próprias famílias — atende o marido, a esposa, a sogra. Trabalha do apartamento em Manaíra com uma secretária remota, a Josy, que agenda, cobra e faz triagem. A renda vem do giro: muita consulta, preço baixo, funil sempre cheio.",
+  "carteira_ativa": 74,
+  "ticket_consulta": 130,
+  "consultas_semana": 38,
+  "contexto": "Paraibana de Campina Grande, desceu a serra para a UFPB e ficou em João Pessoa. Casada com um analista de sistemas que montou a parte técnica do negócio dela; sem filhos, dois projetos: quitar o apartamento e abrir uma segunda agenda com uma nutricionista júnior contratada. Transformou o consultório num pequeno negócio de volume e fala disso sem romantismo — 'consulta é produto, cuidado é o serviço'. O que a move é a meta na planilha batida; o que a cansa é a esteira de 38 consultas semanais que não pode parar nunca, porque o modelo dela só para em pé girando.",
+  "rotina": "Atende segunda a sexta das 8h às 13h e das 14h30 às 17h30, consultas de 30 em 30 minutos, pontualidade militar — Josy derruba a chamada aos 32 minutos. Quinta 17h30 grava conteúdo em lote com o marido segurando o ringlight. Sexta à tarde fecha o caixa da semana e revisa os indicadores que ele montou num painel. Sábado é praia do Bessa e telefone no modo avião até as 14h.",
+  "whatsapp_pacientes": "WhatsApp Business da clínica, respondido primeiro pela Josy com scripts que a própria Patrícia escreveu; só chega na nutricionista o que é técnico, duas vezes por dia, em lista. Paciente não tem o número pessoal dela, ponto. Mensagens fora de horário caem na automática e são respondidas no dia útil seguinte. Ela sente orgulho do sistema, mas sabe o custo: paciente às vezes reclama que 'é atendida pela assistente', e ela se pergunta se o volume não está comendo o vínculo.",
+  "tecnologia": "Plataforma de agendamento com pagamento antecipado (R$ 89/mês), software de prescrição (R$ 74,90/mês), planilha de indicadores no Google Sheets feita pelo marido — taxa de retorno, ocupação, faturamento por semana. Paga também R$ 120/mês de tráfego não, isso é verba à parte: uns R$ 600/mês em impulsionamento. Adora ferramenta que economiza minuto e cancela sem cerimônia a que não economiza.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Família Bezerra (Edilson, Márcia e a filha)",
+        "historia": "Três pacientes de uma vez. O pai perdeu o emprego na construtora e os três cancelaram no mesmo dia pela Josy.",
+        "como_percebeu": "Apareceu na planilha de sexta: três cancelamentos com a mesma etiqueta 'financeiro'. Ela sentiu no indicador antes de sentir no coração.",
+        "o_que_fez": "Mandou pela Josy uma condição de 'plano família' com desconto. Não voltaram. Anotou a aprendizagem: família é ótima de captar e perigosa de perder, porque sai em bloco."
+      },
+      {
+        "nome": "Rosângela",
+        "historia": "Paciente de retorno mensal havia um ano, dessas que seguravam a taxa de recorrência. Foi diagnosticada com depressão e disse que 'não tem cabeça pra dieta agora'.",
+        "como_percebeu": "A própria paciente avisou a Josy com um áudio longo. Josy encaminhou; Patrícia ouviu inteiro entre duas consultas.",
+        "o_que_fez": "Quebrou o protocolo e mandou mensagem pessoal, sem script, dizendo que a porta ficava aberta e sugerindo psicólogo. Foi a exceção que a lembrou por que começou. Rosângela agradeceu; segue sumida."
+      },
+      {
+        "nome": "Fábio",
+        "historia": "Primeira consulta paga, não apareceu no retorno gratuito, não respondeu a régua de mensagens da Josy. Perfil clássico do funil dela: compra no impulso do reel e esfria em duas semanas.",
+        "como_percebeu": "Nem percebeu individualmente — ele é uma linha na aba 'churn 30 dias', que roda em torno de 40% e ela acha 'normal do online, será que é?'",
+        "o_que_fez": "Nada além da régua automática. Na cabeça dela, o tráfego repõe o Fábio por R$ 30 de anúncio. Dito em voz alta, ela mesma acha a frase meio fria."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 9h20",
+      "texto": "Bom dia dra! sei que é sábado mas é rapidinho: posso trocar o iogurte natural por desnatado? é pro café de hoje 😅",
+      "respondeu": "Estava de modo avião na praia; a automática respondeu. Josy mandou a resposta na segunda às 8h05. Patrícia nem ficou sabendo — e quando soube, na lista de segunda, achou o sistema funcionando exatamente como deveria."
+    },
+    "gasto_ferramentas_mes": 165,
+    "horas_semana_respondendo": 3,
+    "no_shows_ultimo_mes": 8,
+    "estimativa_perda_anual_intuitiva": "'Sei de cabeça: churn de 30 dias em 40%, uns 12 novos por mês, ticket 130 com LTV médio de umas 4 consultas... se eu segurasse metade desse churn dava uns 35 a 40 mil por ano. O marido já até plotou o gráfico. Saber o número é fácil; ter braço pra agir nele é outra história.'"
+  },
+  "dores_reais": [
+    "O churn de 40% em 30 dias que ela conhece de cor e não consegue atacar porque a esteira de 38 consultas não deixa sobrar braço",
+    "A esteira em si: se ela gripar uma semana, o faturamento gripa junto — o modelo depende do corpo dela",
+    "Dependência de tráfego pago para repor os que somem: o CAC subiu 30% em um ano e a margem sente",
+    "A dúvida incômoda de que o volume matou o vínculo — e de que é o vínculo que segura retorno"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp: a Josy e os scripts blindam; ela responde 3 horas por semana e dorme em paz",
+    "Desorganização: agenda, cobrança e indicadores rodam melhor que os de muita clínica grande — vendedor que chegar oferecendo 'organização' vai ouvir um 'já tenho, próximo'",
+    "No-show: pagamento antecipado derrubou para quase nada do que era",
+    "Medo de tecnologia: ela compra rápido — desde que a conta feche em minutos economizados"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada: avisa de saída que tem 25 minutos, responde em bullet points falados ('um... dois... três...'), pede para pular pergunta que julga óbvia e olha o relógio sem disfarçar. Respeita entrevistador que vai direto. Tiques: 'pronto' para fechar raciocínio, 'vamo que vamo' quando quer acelerar, e um 'visse?' paraibano que escapa quando relaxa."
+}

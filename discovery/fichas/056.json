@@ -1,0 +1,63 @@
+{
+  "id": "056",
+  "nome": "Milena Cavalcanti de Brito",
+  "idade": 25,
+  "genero": "feminino",
+  "cidade": "Campina Grande",
+  "uf": "PB",
+  "carreira_anos": 2,
+  "especialidade": "Nutrição oncológica ambulatorial: pacientes em quimioterapia e radioterapia, manejo de sintomas e terapia nutricional",
+  "modelo_atendimento": "Atende no ambulatório de oncologia de um hospital filantrópico de Campina Grande que recebe por convênios e SUS: consulta por produção via planos (Unimed, Geap e filantropia), agenda montada pelo setor de regulação do hospital. Complementa a renda com um plantão semanal de dietas na enfermaria. O paciente chega encaminhado pelo oncologista; ela não escolhe nem capta ninguém.",
+  "carteira_ativa": 26,
+  "ticket_consulta": 32,
+  "consultas_semana": 22,
+  "contexto": "Campinense do bairro da Prata, formada pela UEPB em 2024, fez estágio no ambulatório de onco e ficou — foi ficando por amor à área, contra o conselho da mãe, que queria a filha 'de consultório, bem arrumada, sem sofrimento'. Mora com os pais, namora o Artur, que faz mestrado em computação na UFCG. Chora escondido no banheiro do ambulatório pelo menos uma vez por mês e mesmo assim não se imagina em outra área: ver um paciente terminar a quimio comendo bem é o que a sustenta. Cansam-na o salário curto, a burocracia das guias e ir ao velório de paciente — já foi a quatro.",
+  "rotina": "Segunda a sexta no ambulatório das 7h às 13h, com reunião multiprofissional na quarta às 7h. Terça à tarde faz o plantão de enfermaria. Duas tardes por semana estuda para a prova de residência multiprofissional em oncologia — o plano dela para ganhar melhor sem sair da área. Domingo almoça na casa da avó em Lagoa Seca, inegociável.",
+  "whatsapp_pacientes": "O contato oficial é o telefone do ambulatório, mas na oncologia a regra se dissolve: várias famílias têm o número pessoal dela, porque quando um paciente em quimio para de comer, esperar a próxima consulta não é opção. Chegam áudios de filhas aflitas à noite ('painho não desceu nada hoje, nem o mingau'). Ela responde quase sempre, mesmo sabendo que não devia, e sente um misto de dever cumprido e invasão — mas não cobraria por isso nem acha que 'organizar' isso é o ponto: o ponto é que tem gente morrendo.",
+  "tecnologia": "Prontuário eletrônico do hospital (lento, cai toda quinta), guias de convênio em papel, uma planilha própria de triagem de risco nutricional que ela montou no Google Sheets e a coordenação adorou. Não paga nada de ferramenta e não poderia pagar. Curiosa com tecnologia, é a pessoa que as colegas mais velhas chamam quando a impressora falha.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Josenildo, 67, câncer de esôfago",
+        "historia": "Faltou duas consultas seguidas. Milena temeu o pior; descobriu pela regulação que ele fora transferido para tratamento paliativo em João Pessoa, perto da filha.",
+        "como_percebeu": "Pela ausência na agenda e depois pelo sistema do hospital.",
+        "o_que_fez": "Ligou para a filha dele para passar as orientações de conforto alimentar. No modelo dela ninguém 'some' por desinteresse: some por logística de tratamento, por piora, ou porque faleceu — e a agenda é reposta pela regulação no mesmo dia."
+      },
+      {
+        "nome": "Dona Ivonete, 54, câncer de mama",
+        "historia": "Abandonou o acompanhamento nutricional (não a quimio) porque a passagem de ônibus de Queimadas duas vezes por mês não cabia no orçamento — vinha só nos dias de infusão.",
+        "como_percebeu": "A técnica de enfermagem comentou que a via na quimio mas nunca mais na nutrição.",
+        "o_que_fez": "Passou a atendê-la de forma informal na cadeira de infusão, dez minutos, sem gerar guia. O hospital não sabe; a produção dela não conta essa consulta. Ela faz assim mesmo."
+      },
+      {
+        "nome": "Rivaldo, 45, câncer de laringe",
+        "historia": "Encerrou o tratamento com sucesso e recebeu alta do oncologista — e com a alta médica, sumiu também da nutrição, embora ela quisesse acompanhar a readaptação alimentar por mais seis meses.",
+        "como_percebeu": "Ele mesmo se despediu no corredor, agradecendo, dizendo que 'agora era só viver'.",
+        "o_que_fez": "Entregou um resumo impresso de orientações e o telefone do ambulatório. Ficou feliz e frustrada em igual medida: alta médica esvazia a cadeira dela e não há fluxo de seguimento."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quinta-feira, 22h47",
+      "texto": "Dra Milena desculpa a hora, é Rejane filha de seu Damião. Ele vomitou o jantar de novo e a quimio é segunda. Dou o suplemento assim mesmo? Tô desesperada",
+      "respondeu": "Respondeu em áudio às 22h55, orientou fracionar gelado e em pequenos volumes, e pediu para chegarem 30 minutos antes na segunda para ela pesá-lo. Foi dormir com o coração apertado e acordou pensando nele."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "Perder dinheiro com paciente que some? Nunca pensei nisso desse jeito, a regulação repõe a agenda na hora. Eu perco é o desfecho do paciente, e isso não tem preço não... em dinheiro deve dar zero."
+  },
+  "dores_reais": [
+    "Salário e repasse: R$ 32 por consulta de uma complexidade que exigiria uma hora; ela ganha menos que colega de consultório estético e faz o triplo de estudo",
+    "A dor emocional do luto ocupacional: perder paciente para a doença, ir a velório, e não ter nenhum suporte psicológico institucional",
+    "Burocracia de guias e autorizações: suplemento que o paciente precisa hoje e o plano autoriza em três semanas",
+    "Falta de fluxo de seguimento pós-alta: o paciente que ela mais queria acompanhar é justamente o que o sistema manda embora",
+    "Estudar para residência depois de seis horas de ambulatório, com medo de não passar e ficar para sempre no repasse de R$ 32"
+  ],
+  "nao_dores": [
+    "Captação e marketing: paciente chega encaminhado pela oncologia, a fila é infinita e triste; divulgação não faz parte do mundo dela",
+    "Retenção como problema financeiro: quem sai da agenda é reposto pela regulação no mesmo dia; evasão não muda o repasse dela",
+    "Ferramentas pagas de acompanhamento: ela não tem orçamento nem autonomia — qualquer sistema é decisão do hospital, não dela"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Emotiva e transparente: os olhos marejam ao falar de pacientes específicos e ela pede desculpa por chorar, mas não muda de assunto. Fala 'visse?' no fim das frases e 'painho/mainha' ao citar as famílias. Responde generosamente qualquer pergunta sobre rotina e sentimentos, mas trava em perguntas de dinheiro — acha feio, na oncologia, reduzir paciente a receita."
+}

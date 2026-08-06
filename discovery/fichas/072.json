@@ -1,0 +1,64 @@
+{
+  "id": "072",
+  "nome": "Rayane Bezerra Cavalcanti",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Caruaru",
+  "uf": "PE",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição clínica com foco em emagrecimento feminino, atendimento 100% online",
+  "modelo_atendimento": "Atende só online, por videochamada, do quarto-escritório no apartamento dos pais. Capta exclusivamente pelo Instagram (11 mil seguidores) com reels de receita fit e antes-e-depois. Vende consulta avulsa e um plano bimestral com retorno incluso; a renda oscila muito conforme o algoritmo entrega ou não.",
+  "carteira_ativa": 22,
+  "ticket_consulta": 130,
+  "consultas_semana": 9,
+  "contexto": "Formada na ASCES-UNITA em Caruaru em 2022, tentou vaga em clínica e hospital, não conseguiu, e montou o consultório online 'até aparecer coisa melhor' — que acabou virando o negócio. Mora com os pais no bairro Maurício de Nassau; o pai tem banca no Polo de confecções e não entende direito o que ela faz 'no telefone'. Solteira, treina às 5h30 na academia antes do engajamento do dia. O que a move é a meta de sair do aluguel de conteúdo do algoritmo e ter agenda cheia previsível; o que a cansa é gravar reels todo santo dia sabendo que um vídeo flopado significa mês magro. Fala rápido porque vive com cronômetro na cabeça.",
+  "rotina": "Acorda 5h, treina, 7h30 já está gravando conteúdo com luz boa. Consultas concentradas de terça a quinta, das 14h às 20h, para deixar manhãs livres para edição de vídeo e prospecção no direct. Sexta é dia de planejar o conteúdo da semana num caderno quadriculado. Domingo à noite posta o reel 'mais forte' da semana porque descobriu que rende mais.",
+  "whatsapp_pacientes": "Número business com etiquetas (lead quente, paciente ativa, retorno). Ela responde tudo sozinha, em blocos: 12h e 19h. O grosso das mensagens não é de paciente — é de seguidora perguntando preço e sumindo quando ela manda. Paciente ativa manda pouca coisa; ela responde rápido e seco. O que a incomoda no WhatsApp não é o volume de paciente, é o funil: 30 diretas de 'quanto tá a consulta?' para fechar duas.",
+  "tecnologia": "Usa um app de nutrição no plano gratuito para calcular e gerar o PDF do plano alimentar (versão free, com marca d'água que ela corta no print), agenda no Google Calendar com link de Pix manual, planilha no celular para controlar quem pagou. Paga R$ 27 num app de edição de vídeo. Toda tecnologia que ela considera comprar é avaliada por uma régua só: traz seguidor ou fecha venda?",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Milena",
+        "historia": "Vendedora de loja no Caruaru Shopping, fechou plano bimestral, fez a primeira consulta empolgadíssima e nunca marcou o retorno que já estava pago.",
+        "como_percebeu": "Viu no fim do bimestre, revisando a planilha de pagamentos, que o retorno da Milena nunca aconteceu.",
+        "o_que_fez": "Mandou uma mensagem oferecendo remarcar, sem resposta. Deu de ombros: o plano estava pago, e lead novo importava mais. 'Se ela quiser, ela volta.'"
+      },
+      {
+        "nome": "Jéssica",
+        "historia": "Noiva de Bezerros que queria perder 8 kg até o casamento. Fez duas consultas, aí descobriu no Instagram uma 'mentoria de emagrecimento' de uma influencer de Recife por quase o mesmo preço.",
+        "como_percebeu": "A própria Jéssica contou no story: marcou a influencer, postou o kit de boas-vindas. Rayane viu no feed.",
+        "o_que_fez": "Ficou com raiva uns dois dias — não da Jéssica, da influencer. Concluiu que precisa melhorar o próprio 'kit de experiência' e foi pesquisar caixinha personalizada no Polo."
+      },
+      {
+        "nome": "Auxiliadora",
+        "historia": "Senhora de 55 anos, mãe de uma seguidora, que nunca se adaptou à consulta por vídeo — a câmera caía, o áudio falhava, ela pedia pra fazer 'pelo zap mesmo'.",
+        "como_percebeu": "Depois da segunda consulta travada, a filha avisou que a mãe ia procurar 'uma nutricionista de ir lá', presencial.",
+        "o_que_fez": "Indicou uma colega presencial de Caruaru. Anotou mentalmente: público 50+ não é o dela, parou de fazer conteúdo mirando essa faixa."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 22h15",
+      "texto": "Ray, posso trocar o jantar de amanhã por pizza? É aniversário do meu cunhado kkk",
+      "respondeu": "Viu às 22h20, respondeu no domingo ao meio-dia, no bloco: 'Pode! Duas fatias + salada antes. Segunda a gente segue o plano.' Não perde sono com isso; perde sono com direct de lead não respondido."
+    },
+    "gasto_ferramentas_mes": 27,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Perder com quem some? Nunca fiz essa conta não. Minha conta é outra: quanto eu deixo de ganhar com direct que não fecha. Mas chuta aí uns 3 mil, sei lá."
+  },
+  "dores_reais": [
+    "CAPTAÇÃO: dependência total do algoritmo do Instagram — um mês de alcance ruim derruba a renda pela metade",
+    "Taxa de conversão do direct: dezenas de 'quanto custa?' que somem depois do preço; ela não sabe se o problema é o preço, o pitch ou o público",
+    "Concorrência de influencer e de nutricionista de capital cobrando quase o mesmo com muito mais audiência",
+    "Renda imprevisível morando com os pais aos 26 — a meta de alugar o próprio apê fica escorregando",
+    "Exaustão de produzir conteúdo diário sozinha: gravar, editar, legendar, responder comentário"
+  ],
+  "nao_dores": [
+    "Paciente que some entre consultas — a carteira dela é pequena e giratória por desenho; ela mesma diz que vive de 'entrada', não de 'permanência'",
+    "Plantão de WhatsApp de paciente — paciente ativa manda pouca mensagem; o volume esmagador é de lead, e lead ela QUER que mande",
+    "Software de prescrição robusto — o app gratuito resolve; ela não paga por recurso clínico enquanto o gargalo é venda",
+    "No-show de consulta paga — cobra 100% antecipado via Pix desde o primeiro mês; quem não vem, já pagou"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada: responde em frases curtas, olha o relógio do celular, pergunta 'quanto tempo falta?' na metade. Dá números redondos sem hesitar, mas se irrita com pergunta que considera óbvia. Tiques: 'visse?' no fim de frase e 'assim, ó' quando vai resumir; abrevia tudo ('o pessoal manda mó textão')."
+}

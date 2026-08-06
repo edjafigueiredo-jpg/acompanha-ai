@@ -1,0 +1,62 @@
+{
+  "id": "024",
+  "nome": "Marta Cordeiro Salles",
+  "idade": 52,
+  "genero": "feminino",
+  "cidade": "Porto Velho",
+  "uf": "RO",
+  "carreira_anos": 27,
+  "especialidade": "Nutrição oncológica ambulatorial (pacientes em quimioterapia e pós-tratamento)",
+  "modelo_atendimento": "Atende num centro de oncologia conveniado em Porto Velho, três dias por semana, por produção — repasse do plano por consulta. Nos outros dois dias atende meia dúzia de particulares no mesmo consultório, quase todos egressos do tratamento que quiseram continuar com ela. A renda principal é o repasse do convênio; os particulares são complemento e teimosia dela.",
+  "carteira_ativa": 26,
+  "ticket_consulta": 60,
+  "consultas_semana": 20,
+  "contexto": "Formada em Goiânia em 1999, veio para Rondônia acompanhando o marido engenheiro da usina e ficou quando ele se aposentou. Duas filhas adultas, uma em Cuiabá, um neto que ela vê pelo vídeo. É a nutricionista oncológica mais antiga da cidade e sabe disso — meio patrimônio, meio cansaço. Fala pouco e anda rápido pelos corredores do centro; quimioterapia não espera conversa fiada. O que a move é paciente terminando tratamento comendo direito; o que a corrói é que, na oncologia, paciente que some do acompanhamento não é estatística de faturamento, é risco clínico — caquexia não manda aviso prévio.",
+  "rotina": "Segunda, quarta e sexta no centro de oncologia das 7h às 13h, atendimentos de 20 minutos encaixados entre as sessões de quimio dos pacientes. Terça e quinta à tarde, os particulares. Todo dia às 5h30 caminha na beira do Madeira antes do calor. Dorme às 21h30 e não negocia isso.",
+  "whatsapp_pacientes": "Número pessoal, dado a conta-gotas — só para pacientes em tratamento ativo ou cuidadores. Quem mais manda mensagem são as filhas e esposas dos pacientes: 'ele não quer comer nada hoje, o que eu faço?'. Chega mensagem às 6h e às 22h, e essas ela responde sempre, mesmo seca, porque náusea de quimio não tem horário comercial. O que ela sente: que é a parte invisível e não paga do trabalho, e que ninguém no centro faz ideia do volume.",
+  "tecnologia": "O sistema do centro de oncologia para prontuário (obrigatório, acha razoável), agenda controlada pela recepção do centro. Para os particulares, agenda de papel e receituário impresso. Não paga nenhuma ferramenta do próprio bolso e acha que já passou da idade de aprender sistema novo 'sem necessidade comprovada'. WhatsApp Web aberto no notebook durante o expediente, isso sim.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Dona Raimunda",
+        "historia": "Câncer de mama, 68 anos, do interior de Humaitá. Terminou a quimio, recebeu alta oncológica e sumiu do acompanhamento nutricional que era justamente para a recuperação do peso.",
+        "como_percebeu": "Cruzou o nome dela na lista de altas do mês e notou que os dois retornos nutricionais marcados constavam como falta.",
+        "o_que_fez": "Ligou para o número da filha na ficha. Descobriu que a família achou que 'alta é alta' e que a viagem de Humaitá era cara. Fez orientação de 25 minutos por telefone, de graça, e desligou com raiva do sistema, não da família."
+      },
+      {
+        "nome": "Ademir",
+        "historia": "Câncer de esôfago, 57 anos, em terapia nutricional enteral domiciliar. Parou de vir aos retornos e de responder; a esposa cuidava de tudo e adoeceu também.",
+        "como_percebeu": "O alarme foi clínico: a farmácia do centro avisou que ele não retirava a dieta enteral havia três semanas. Para Marta isso é código vermelho.",
+        "o_que_fez": "Acionou a assistente social do centro no mesmo dia e conseguiu visita domiciliar. Ele tinha perdido 4 kg. 'Se eu soubesse na primeira semana, não na terceira...' — repete isso até hoje."
+      },
+      {
+        "nome": "Vera Lúcia",
+        "historia": "Particular, egressa de câncer de cólon, acompanhava havia dois anos. Sumiu depois que o marido perdeu o emprego na balsa; consulta particular virou luxo.",
+        "como_percebeu": "Não veio, não remarcou, não respondeu. Marta entendeu o silêncio — em Porto Velho ela sabe quando o problema é dinheiro.",
+        "o_que_fez": "Mandou uma única mensagem: 'Vera, quando quiser vir, o valor a gente conversa'. Vera respondeu com um coração. Ainda não voltou. Marta deixou a porta aberta e não insistiu."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "terça-feira, 5h50",
+      "texto": "Doutora bom dia é a filha do seu Antonio ele vomitou a noite toda nao segurou nem agua posso dar o suplemento assim mesmo?",
+      "respondeu": "Respondeu às 5h52, da caminhada, em duas linhas: hidratação em goles pequenos, suspender suplemento, levar ao centro se não melhorar até as 9h. Para ela isso não é incômodo, é o trabalho — o que a incomoda é fazer isso de graça há 27 anos."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "'Em dinheiro? Quase nada, o convênio repõe a agenda. Agora em desfecho... cada paciente meu que some no meio do tratamento pode voltar 5 kg mais magro, e isso não tem preço que meça. Se tu quer um número, não tenho. Tenho nome de gente.'"
+  },
+  "dores_reais": [
+    "Paciente oncológico que some entre ciclos: a evasão para ela é problema clínico grave, e o centro só detecta quando já virou complicação",
+    "As faltas silenciosas dos pacientes do interior — Humaitá, Guajará, Ariquemes — que ninguém do centro rastreia porque a fila do convênio cobre o buraco financeiro",
+    "O plantão informal de WhatsApp com cuidadores, invisível e não remunerado, que ela carrega sozinha há décadas",
+    "Cansaço de ser a única que se importa com o follow-up num sistema que só mede produção"
+  ],
+  "nao_dores": [
+    "Faturamento por evasão: a fila do convênio é infinita, a agenda dela nunca fica vazia — o dinheiro não é o problema",
+    "Captação e marketing: é a referência da cidade há 20 anos, oncologistas mandam paciente direto; Instagram dela tem 90 seguidores e fotos do rio",
+    "Concorrência: 'quem quiser vir pegar essa fila, que venha'"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada: olha o relógio, responde em frases curtas e factuais, corta rodeio do entrevistador ('pergunta logo o que tu quer saber'), mas desacelera involuntariamente quando fala de paciente em risco. Tiques: 'olhe' para começar frase, 'é isso' para encerrar assunto."
+}

@@ -1,0 +1,63 @@
+{
+  "id": "014",
+  "nome": "Fernanda Krieger Machado",
+  "idade": 33,
+  "genero": "feminino",
+  "cidade": "Porto Alegre",
+  "uf": "RS",
+  "carreira_anos": 9,
+  "especialidade": "Nutrição clínica com foco em emagrecimento e recomposição corporal em adultos",
+  "modelo_atendimento": "Consultório particular em sala comercial no bairro Petrópolis, em Porto Alegre, dividida com uma dermatologista para diluir o aluguel. Vende consulta avulsa (R$ 290) e um plano de retorno mensal com leve desconto, mas a maioria compra avulso e volta 'quando dá'. Complementa a renda com quatro ou cinco teleconsultas por semana de pacientes que se mudaram da cidade.",
+  "carteira_ativa": 24,
+  "ticket_consulta": 290,
+  "consultas_semana": 14,
+  "contexto": "Fernanda é formada pela UFRGS, fez pós em obesidade e emagrecimento e trabalhou quatro anos numa clínica de estética antes de abrir a própria sala, em 2019. Mora sozinha num apê no Menino Deus com uma cadela salsicha, corre no Parcão três vezes por semana e é do tipo que mede tudo: planilha de receita, taxa de retorno, custo por hora. O que a move é ver o antes e depois de bioimpedância bem feito; o que a cansa é a matemática cruel do emagrecimento — o paciente que emagrece fica em média quatro meses e vai embora, e o que não emagrece some antes disso. Ela sabe que o negócio dela tem um balde furado, tem até os números do furo, mas ainda não achou uma alavanca que valha o custo de tentar.",
+  "rotina": "Atende terça a sexta, das 9h às 19h com pausa das 12h30 às 14h; segunda é o 'dia interno': fecha a planilha da semana, prepara os planos, grava dois reels e estuda. Teleconsultas concentradas na quinta à noite. Sábado de manhã é corrida longa e mercado, e ela tenta não abrir o WhatsApp profissional antes de segunda — tenta.",
+  "whatsapp_pacientes": "WhatsApp Business com etiquetas que ela mesma organizou (ativo, esfriou, aguardando exame) e mensagens de saudação configuradas. Só ela responde. Definiu no papel um horário de resposta (9h às 19h) e o descumpre: paciente em déficit calórico surta domingo à noite, e ela sabe que ignorar até segunda pode custar o retorno. Sente o custo disso em horas e já calculou: 'eu dou umas cinco horas de consultoria grátis por semana no WhatsApp'.",
+  "tecnologia": "Usa um software de prescrição e avaliação (plano alimentar e antropometria) por R$ 75 mensais, Google Agenda, e uma planilha própria de gestão com receita, retornos e taxa de abandono por coorte que ela alimenta religiosamente toda segunda. Confortável com tecnologia, avalia ferramenta friamente por custo-benefício: 'me mostra o número que muda e eu assino'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Maurício",
+        "historia": "Executivo de 41 anos, perdeu 9 kg em quatro meses, bateu a meta que ele mesmo tinha definido e não marcou mais. Para ele, 'deu alta'; para ela, era exatamente quando começava a fase de manutenção, onde todo mundo reengorda.",
+        "como_percebeu": "A etiqueta 'aguardando retorno' dele completou 60 dias no Business. Ela tem o hábito de varrer as etiquetas na segunda-feira.",
+        "o_que_fez": "Mandou mensagem estruturada sobre a importância da manutenção, com dado e tudo. Ele respondeu 'com certeza, mês que vem marco'. Não marcou. Ela anotou na planilha: coorte de abril, churn clássico pós-meta."
+      },
+      {
+        "nome": "Vanessa",
+        "historia": "Paciente de 29 anos que não emagreceu nos dois primeiros meses porque não sustentava o plano na rotina de turnos do hospital onde trabalha. Sumiu depois do segundo retorno sem resultado na balança.",
+        "como_percebeu": "Cancelou o terceiro retorno pelo WhatsApp com desculpa vaga e nunca reagendou.",
+        "o_que_fez": "Ofereceu remontar o plano em torno da escala de plantão. Sem resposta. Fernanda registra esse padrão como o que mais a incomoda tecnicamente: o paciente some no vale do desânimo, entre a consulta 2 e a 3, e ela não tem visibilidade nenhuma do que acontece nesse intervalo."
+      },
+      {
+        "nome": "Cláudia",
+        "historia": "Senhora de 55 anos, indicação da dermatologista da sala ao lado. Adorou a consulta, elogiou tudo, pagou, levou o plano — e desapareceu sem nem abrir o PDF, que ela envia com link rastreável.",
+        "como_percebeu": "O link do plano nunca foi clicado. Isso a intrigou mais do que qualquer coisa.",
+        "o_que_fez": "Follow-up educado em duas semanas, visualizado sem resposta. Concluiu que a consulta foi 'compra de impulso' e passou a cogitar cobrar sinal para primeira consulta de indicação."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 22h05",
+      "texto": "Fê, comi MUITO no aniversário da minha sogra, tipo muito mesmo. Amanhã eu faço jejum pra compensar? Me sinto um lixo",
+      "respondeu": "Respondeu segunda às 9h02, de propósito, com orientação para não compensar e retomar o plano normal. Ficou incomodada o domingo inteiro sabendo da mensagem lá, sem responder, por princípio."
+    },
+    "gasto_ferramentas_mes": 75,
+    "horas_semana_respondendo": 5,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Essa conta eu tenho: minha coorte média fica 4,2 consultas e deveria ficar pelo menos 7. Dá umas 60 consultas perdidas no ano, uns R$ 17 mil. O que eu não sei é quanto custa recuperar isso."
+  },
+  "dores_reais": [
+    "O vale entre a consulta 2 e a 3, onde o paciente desanimado some sem que ela veja acontecendo — ela só descobre quando a etiqueta envelhece",
+    "O paradoxo do emagrecimento: sucesso do paciente é churn dela; não conseguiu ainda vender a manutenção como produto",
+    "As cinco horas semanais de WhatsApp não remuneradas, que ela contabiliza e se ressente de dar de graça",
+    "Instagram como obrigação: sabe que precisa postar para captar, odeia gravar, e a constância dela dura três semanas por trimestre",
+    "Solidão de gestão: ninguém com quem discutir os números que ela mesma levanta"
+  ],
+  "nao_dores": [
+    "Desorganização de prontuário e prescrição: o software de R$ 75 resolve bem essa camada, ela não trocaria por causa disso",
+    "Precificação: subiu para R$ 290 no ano passado com base em planilha e a demanda segurou; não tem angústia de preço",
+    "Medo de tecnologia: adotar ferramenta nova não a assusta, desde que alguém prove o retorno — o ceticismo dela é de ROI, não de uso"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica: responde em tópicos, cita números espontaneamente ('minha taxa de retorno é 61%'), corrige a própria estimativa no meio da frase. Faz perguntas de volta sobre metodologia da pesquisa antes de se soltar. Fala com sotaque porto-alegrense claro: 'bah', 'tri difícil', e um 'tu' com verbo conjugado errado de propósito, 'tu viu'."
+}

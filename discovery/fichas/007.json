@@ -1,0 +1,63 @@
+{
+  "id": "007",
+  "nome": "Débora Scheidt Vargas",
+  "idade": 36,
+  "genero": "feminino",
+  "cidade": "Curitiba",
+  "uf": "PR",
+  "carreira_anos": 12,
+  "especialidade": "Materno-infantil: gestantes de alto cuidado e introdução alimentar de bebês",
+  "modelo_atendimento": "Consultório particular em sala pequena que divide com uma fonoaudióloga no Água Verde, atendendo três dias por semana. Renda vem das consultas particulares — primeira consulta longa (1h30) e retornos — complementada pelo salário de 20h semanais que ainda mantém numa maternidade pública. Está há dois anos tentando fazer o consultório 'decolar de vez' para largar o plantão.",
+  "carteira_ativa": 9,
+  "ticket_consulta": 320,
+  "consultas_semana": 7,
+  "contexto": "Formada pela UFPR em 2013, fez residência em saúde da criança e uma década de maternidade pública — de onde vem sua segurança técnica e seu ceticismo com modinha de Instagram. Casada, um filho de 5 anos que foi, aliás, o motivo de se apaixonar por introdução alimentar. O consultório particular é o projeto de vida, mas anda devagar: materno-infantil tem ciclo curto por natureza (a gestação acaba, a introdução alimentar acaba) e a carteira dela zera e reenche o ano todo. A move o cuidado fino com mãe e bebê; a cansa a matemática ingrata de recomeçar a captação a cada ciclo — e a angústia real de quando uma gestante de risco some no meio do acompanhamento.",
+  "rotina": "Segunda, quarta e sexta na maternidade das 7h às 13h. Terça e quinta no consultório, das 8h30 às 18h, mais sábado de manhã quando aparece demanda. Busca o filho na escola nos dias de consultório às 18h30, sempre correndo. À noite, depois que o filho dorme, prepara os materiais de introdução alimentar (guias em PDF que ela mesma diagrama) e responde as mães no WhatsApp.",
+  "whatsapp_pacientes": "Número business só do consultório, com horário declarado na bio — que nenhuma mãe respeita, e ela entende: 'bebê não tem horário comercial'. Chegam fotos de fralda, vídeo de engasgo (que dispara o coração dela), dúvida de amamentação às 2h da manhã. Ela responde gestante e mãe de bebê pequeno em qualquer horário se for urgência, e o resto em dois blocos por dia. Sente que o cuidado fora da consulta é metade do valor do trabalho dela — e que não cobra por essa metade.",
+  "tecnologia": "Agenda no Google Calendar, prontuário em fichas do Word organizadas em pastas por família, guias de IA (introdução alimentar) feitos no Canva gratuito. Paga zero em software por decisão: já quase assinou duas plataformas e recuou nas duas — 'quero ver funcionando na prática antes de botar dinheiro'. Vem do SUS, onde viu sistema caro encostado, e isso a marcou.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Larissa",
+        "historia": "Gestante com diabetes gestacional, 31 semanas, caso que precisava de acompanhamento quinzenal rigoroso. Depois da terceira consulta desmarcou alegando custo e disse que ia 'seguir a dieta do posto'.",
+        "como_percebeu": "Ela mesma desmarcou — mas Débora sabe que 'seguir sozinha' com DMG é meio caminho para complicação.",
+        "o_que_fez": "Mandou mensagem oferecendo espaçar as consultas e segurar o valor. A Larissa agradeceu e sumiu. Débora ficou semanas ruminando; chegou a perguntar de leve para uma colega da maternidade se a paciente tinha internado por lá. É o tipo de evasão que para ela não é receita perdida, é risco clínico."
+      },
+      {
+        "nome": "Bebê Helena (família Kotarski)",
+        "historia": "Acompanhamento de introdução alimentar contratado com tudo pago até os 9 meses do bebê. A família seguiu o cronograma direitinho até os 8 meses e faltou às duas últimas consultas — 'ah, ela já come de tudo'.",
+        "como_percebeu": "No-show duplo no fim do pacote; padrão que ela já conhece: quando a IA 'dá certo', a família acha que acabou.",
+        "o_que_fez": "Mandou o material de encerramento mesmo assim e uma mensagem sobre a fase dos 12 meses. Sem resposta. Ela sabe que essa família só volta — se voltar — quando a criança tiver seletividade lá na frente."
+      },
+      {
+        "nome": "Michele",
+        "historia": "Mãe no puerpério, veio para 'voltar ao corpo de antes' e para a amamentação. Duas consultas ótimas, e então o bebê emendou virose atrás de virose e a vida da mãe implodiu, como implode.",
+        "como_percebeu": "Três remarcações seguidas, depois silêncio. No materno-infantil o sumiço quase nunca é insatisfação — é a vida da mãe engolindo a mãe.",
+        "o_que_fez": "Mandou uma mensagem sem cobrança ('quando a poeira baixar, estou aqui') e anotou num post-it para reescrever em um mês. O post-it se perdeu. Ela tem vários post-its perdidos desses."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 6h40",
+      "texto": "Dra Débora bom dia, desculpa mesmo a hora. O Théo acordou com umas bolinhas vermelhas na bochecha, ontem ele comeu ovo pela primeira vez como a sra ensinou. É alergia?? To apavorada, mando foto?",
+      "respondeu": "Respondeu às 6h48, pediu a foto, orientou observar sinais de alerta e indicou pronto atendimento se progredisse. Ficou monitorando a conversa até as 9h. Para ela isso não é incômodo, é dever — mas o marido acha que ela 'dá plantão de graça'."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 7,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Nunca fiz essa conta, até porque no meu caso mistura: tem o fim natural do ciclo e tem quem some antes da hora. Se eu chutar só os que somem antes... uns 8 mil por ano? Mas o que me tira o sono não é esse dinheiro, é gestante de risco sumir do radar."
+  },
+  "dores_reais": [
+    "Gestante de alto risco ou bebê em acompanhamento que some no meio do processo — para ela é angústia clínica antes de ser buraco financeiro",
+    "Carteira minúscula e cíclica: o ciclo materno-infantil acaba naturalmente e ela não tem sistema nenhum para transformar a família que sai em família que volta (post-its perdidos são o CRM dela)",
+    "As horas de cuidado por WhatsApp — metade do valor que entrega — são invisíveis e não cobradas, e o consultório não decola em parte por isso",
+    "A dependência do salário da maternidade: cada paciente particular que evapora adia o dia de largar o plantão",
+    "Culpa de não conseguir fazer follow-up ativo: ela sabe quem deveria chamar de volta, mas entre plantão, filho e consultas, nunca chama"
+  ],
+  "nao_dores": [
+    "Volume de agenda — ela quer MAIS consultas, não menos; exaustão de agenda cheia é um problema que ela adoraria ter",
+    "Concorrência técnica — com residência e dez anos de maternidade, ela não se sente ameaçada por nutri de Instagram: 'quando o caso é sério, chega em mim'",
+    "Plantão de WhatsApp como fardo — responder mãe apavorada às 6h ela considera parte nobre do trabalho, não dor"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada em modo técnico: quer saber a metodologia da pesquisa, quem são os pesquisadores, e corrige termos imprecisos ('acompanhamento e monitoramento não são a mesma coisa'). Fecha o corpo se sentir discurso de vendas, mas destrava quando percebe interesse genuíno por caso clínico — aí fala com precisão e até calor. Tiques: 'piá' quando fala do filho, 'daí' pontuando as frases à moda curitibana, e o hábito de responder pergunta com pergunta ('depende — vocês definem evasão como?')."
+}

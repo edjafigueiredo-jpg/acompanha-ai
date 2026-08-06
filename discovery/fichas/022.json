@@ -1,0 +1,63 @@
+{
+  "id": "022",
+  "nome": "Débora Krüger Martins",
+  "idade": 34,
+  "genero": "feminino",
+  "cidade": "Florianópolis",
+  "uf": "SC",
+  "carreira_anos": 10,
+  "especialidade": "Emagrecimento feminino com protocolo próprio de 12 semanas",
+  "modelo_atendimento": "Vende quase exclusivamente o 'Projeto D12', pacote trimestral de R$ 2.190 com três consultas presenciais ou online, plano revisado quinzenalmente e suporte por WhatsApp incluso de segunda a sexta em horário comercial. Atende num coworking de saúde no Centro de Floripa duas vezes por semana e o resto online. A renda vem dos pacotes; consulta avulsa ela só faz para 'testar fit' e empurra o pacote em seguida.",
+  "carteira_ativa": 36,
+  "ticket_consulta": 730,
+  "consultas_semana": 14,
+  "contexto": "Nascida em Blumenau, veio para Florianópolis fazer faculdade e ficou. Casada com um corretor de imóveis, sem filhos por escolha, treina crossfit às 6h da manhã. Construiu o método sozinha depois de anos ganhando mal em clínica de estética, e por isso é desconfiada de qualquer coisa que prometa 'resolver a vida do nutricionista' — já viu muita mentoria e muito guru comer dinheiro de colega. O que a move é a independência financeira que finalmente alcançou; o que a cansa é ser refém do próprio celular, porque o suporte incluso é o coração do pacote e é ela quem responde tudo.",
+  "rotina": "Segunda e quinta no coworking das 9h às 17h com presenciais; terça e quarta online em blocos de 40 minutos; sexta é dia de revisar os planos quinzenais e gravar stories. O WhatsApp de suporte ela responde em três janelas fixas — 8h, 13h e 18h — regra que ela mesma criou e ela mesma fura. Sábado de manhã responde 'só urgência', que na prática é meia manhã inteira.",
+  "whatsapp_pacientes": "WhatsApp Business com etiquetas por turma de entrada e mensagens automáticas de fora-de-horário. Quem responde é só ela — já tentou treinar uma secretária virtual por 3 meses e desistiu porque 'a paciente percebe que não sou eu'. As mensagens chegam o dia todo; como o suporte é pago, ela sente obrigação contratual de responder bem, e o que a incomoda não é responder, é a sensação de que 70% das perguntas são repetidas e podiam nem chegar até ela.",
+  "tecnologia": "Agenda no Google Calendar sincronizada com um link de agendamento (plano gratuito), prescrição num software de montar cardápio que paga R$ 74,90/mês, contratos e cobranças pelo PagSeguro com link recorrente. Planilha própria no Excel com o status de cada aluna do D12 — colunas de pesagem, adesão e 'termômetro' que ela pinta de verde/amarelo/vermelho na mão. Confortável com tecnologia, mas cética: só assina o que já viu funcionar na prática de alguém que ela conhece.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Michele",
+        "historia": "Terminou o trimestre com resultado bom (menos 6,5 kg) e não renovou. Disse que 'agora consegue sozinha'.",
+        "como_percebeu": "Na planilha, na aba de renovações — ela acompanha a taxa de renovação todo fim de turma. Está em 55% e ela queria 70%.",
+        "o_que_fez": "Mandou a sequência de renovação que ela mesma escreveu (3 mensagens em 10 dias) com desconto de manutenção. Michele agradeceu e não fechou. Débora anotou 'perdida' e seguiu."
+      },
+      {
+        "nome": "Carol",
+        "historia": "Sumiu no meio do pacote, na semana 6, depois de uma recaída num fim de semana em Balneário. Parou de mandar as pesagens quinzenais mas o pacote estava pago.",
+        "como_percebeu": "O amarelo virou vermelho na planilha: duas pesagens seguidas sem enviar. É o tipo de sumiço que mais a irrita, porque a pessoa pagou e some do suporte que está incluso.",
+        "o_que_fez": "Chamou no privado com áudio direto: 'Carol, tu pagou por mim, me usa'. Carol voltou por duas semanas e sumiu de novo. O pacote venceu e ela não renovou."
+      },
+      {
+        "nome": "Ester",
+        "historia": "Pediu reembolso proporcional na semana 3 alegando problemas financeiros. Débora desconfia que ela achou o método rígido demais e não quis dizer.",
+        "como_percebeu": "A própria paciente mandou mensagem formal pedindo o cancelamento — esse pelo menos avisou.",
+        "o_que_fez": "Devolveu proporcional conforme contrato, sem discutir, e ficou dois dias remoendo se o D12 está caro ou duro demais para quem não é 'perfil'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 20h47",
+      "texto": "Dé, socorro, to no aniversário da minha sogra e tem fondue, o que eu faço?? me responde rapidinho",
+      "respondeu": "Viu, bufou, respondeu em duas linhas ('come devagar, prioriza proteína, amanhã segue o plano') e depois ficou brava consigo mesma: o contrato diz segunda a sexta comercial e ela mesma rasga o contrato."
+    },
+    "gasto_ferramentas_mes": 75,
+    "horas_semana_respondendo": 11,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Ela pensa em renovação, não em 'sumiço': 'se eu subir minha renovação de 55 pra 70%, são umas 5 alunas a mais por trimestre... dá uns 40 e poucos mil por ano que eu deixo na mesa. Essa conta eu já fiz, sim.'"
+  },
+  "dores_reais": [
+    "As 11 horas semanais de WhatsApp: o suporte incluso é o diferencial do pacote e ao mesmo tempo a jaula dela — não escala e não dá para delegar",
+    "Taxa de renovação estagnada em 55%: paciente termina bem e vai embora achando que não precisa mais",
+    "Responder pela milésima vez a mesma pergunta sobre substituição de alimento",
+    "Medo de crescer: cada 10 alunas novas são mais horas de celular, e ela já está no limite"
+  ],
+  "nao_dores": [
+    "Paciente que some no meio do pacote: financeiramente já está pago, o contrato a protege — dói o orgulho, não o caixa",
+    "No-show: quase não existe, porque quem pagou R$ 2.190 aparece",
+    "Captação: os stories e as indicações das ex-alunas enchem as turmas; ela recusa gente fora do perfil",
+    "Prescrição/cardápio: o software que ela já paga resolve, não quer trocar"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Desconfiada: responde curto no começo, pergunta de volta 'por que tu quer saber isso?' e 'quem tá pagando essa pesquisa?', só se abre quando sente que o entrevistador entende do assunto. Sotaque catarinense do Vale: 'tu' com verbo conjugado errado de propósito ('tu pagou'), 'ó lá' e um 'daí' pontuando as frases."
+}

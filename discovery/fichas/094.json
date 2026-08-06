@@ -1,0 +1,63 @@
+{
+  "id": "094",
+  "nome": "Fernanda Magalhães Cruz",
+  "idade": 32,
+  "genero": "feminino",
+  "cidade": "Boa Vista",
+  "uf": "RR",
+  "carreira_anos": 8,
+  "especialidade": "Nutrição esportiva e emagrecimento com treino, público de academias de Boa Vista",
+  "modelo_atendimento": "CLT de uma clínica multiprofissional grande no centro de Boa Vista, das maiores da cidade, que tem convênio com empresas locais e órgãos públicos. A agenda dela é montada pela clínica e vive cheia; ela recebe salário fixo com uma gratificação pequena por meta de atendimentos. Os pacientes são da clínica: se ela sair, não leva ninguém.",
+  "carteira_ativa": 46,
+  "ticket_consulta": 45,
+  "consultas_semana": 34,
+  "contexto": "Paraense de Belém, veio para Boa Vista há oito anos atrás do concurso do marido, militar. Tem um filho de 5 anos e valoriza acima de tudo a previsibilidade: salário no quinto dia útil, férias, horário que acaba às 18h. Já pensou em abrir consultório, fez até as contas, e desistiu — em Boa Vista o particular que paga bem é pequeno e a clínica dá segurança. O que a move é o caso clínico bem resolvido e buscar o filho na escola sem culpa; o que a cansa é a esteira de 34 atendimentos semanais de 25 minutos, decididos por uma planilha de produtividade que ela não controla. Desenvolveu um ceticismo de quem já viu três 'sistemas revolucionários' serem implantados e abandonados pela direção da clínica.",
+  "rotina": "Segunda a sexta bate ponto às 8h, atende em blocos de 25 minutos até 12h, retoma às 14h até 18h. Duas tardes por mês tem reunião de equipe multiprofissional. Sai às 18h em ponto, busca o filho no contraturno e desliga: à noite não abre nada de trabalho.",
+  "whatsapp_pacientes": "A clínica tem central de WhatsApp com duas atendentes; paciente não tem o número dela e ela faz questão disso. Dúvida técnica vira recado no sistema, que ela responde no dia seguinte dentro do expediente. Acha o arranjo civilizado e tem pena das colegas de consultório próprio que 'viram escravas do celular'.",
+  "tecnologia": "Usa o prontuário eletrônico e o software de dieta corporativos da clínica — não paga nada e não escolheu nenhum dos dois. Do bolso, só o Canva grátis para um material educativo que ela mesma imprime. Relação com tecnologia é fria e desconfiada: viu a clínica trocar de sistema duas vezes em três anos, cada troca foi um caos de dados perdidos, então recebe qualquer novidade com 'vamos ver quanto tempo dura'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Sargento Ribamar",
+        "historia": "Militar de 44 anos mandado pelo médico da corporação para perder peso antes do teste físico. Passou no teste e evaporou.",
+        "como_percebeu": "Nem percebeu na hora — o sistema da clínica marca 'faltou' e a central remarca ou preenche com a fila do convênio. Ela viu o nome dele por acaso meses depois.",
+        "o_que_fez": "Nada, e diz isso sem culpa: 'a agenda fecha do mesmo jeito, no dia seguinte tem outro no lugar'."
+      },
+      {
+        "nome": "Ana Beatriz",
+        "historia": "Servidora estadual de 35 anos, ótima paciente, vinha havia cinco meses. Sumiu quando a empresa dela trocou de plano de saúde e a clínica ficou fora da rede.",
+        "como_percebeu": "A própria paciente mandou mensagem na central se despedindo e perguntando quanto custava particular. Desistiu quando soube o preço.",
+        "o_que_fez": "Ficou chateada de verdade nesse caso, pelo vínculo. Mas não podia dar desconto — tabela é da clínica, não dela."
+      },
+      {
+        "nome": "Márcio",
+        "historia": "Jovem de 26 anos de projeto de verão. Duas consultas, plano na mão, sumiu — perfil clássico de quem quer receita e não processo.",
+        "como_percebeu": "A atendente comentou que ele desmarcou dizendo 'depois remarco'.",
+        "o_que_fez": "Nada. Ela até prefere: 'paciente assim ocupa vaga de quem quer tratamento'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "não lembra de nenhuma recente; a última foi há uns dois meses, sábado de manhã",
+      "texto": "Doutora Fernanda, aqui é a Ivone, consegui seu número com minha cunhada. A senhora atende particular por fora? É pro meu esposo.",
+      "respondeu": "Respondeu segunda-feira, educada, orientando a marcar pela central da clínica. Contrato dela proíbe atender por fora e ela não arrisca o emprego."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 9,
+    "estimativa_perda_anual_intuitiva": "Ri da pergunta: 'perda minha? Zero, o prejuízo é do doutor dono. Se for da clínica, sei lá, deve passar de 50 mil, mas isso nunca me tiraram o sono'."
+  },
+  "dores_reais": [
+    "A esteira de produtividade: 25 minutos por paciente não dá para fazer nutrição de verdade, e a meta mensal só aumenta",
+    "Teto salarial: faz oito anos de carreira e ganha quase o mesmo que há três, sem perspectiva de crescer dentro da clínica",
+    "Invisibilidade profissional: o resultado é sempre 'da clínica', e ela não constrói nome nem carteira própria",
+    "As trocas de sistema decididas de cima para baixo, que sempre sobram para ela redigitar prontuário"
+  ],
+  "nao_dores": [
+    "Evasão de paciente: a fila do convênio repõe qualquer falta em 24 horas; retenção não muda o salário dela",
+    "Plantão de WhatsApp: a central blinda o número pessoal dela por completo",
+    "Captação: nunca precisou buscar um paciente na vida — o problema, se existisse, seria da direção",
+    "Custo de ferramenta: não decide e não paga nada de software"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética e econômica no elogio: responde com 'depende' e devolve pergunta ('isso aí funciona onde, no papel?'). Aquece um pouco falando do filho e da rotina. Mistura sotaque paraense com gírias locais, chama o interlocutor de 'meu bem' quando relaxa e usa 'égua' quando se surpreende."
+}

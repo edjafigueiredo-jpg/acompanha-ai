@@ -1,0 +1,44 @@
+{
+  "id": "067",
+  "nome": "Beatriz Cavalcante Firmino",
+  "idade": 27,
+  "genero": "feminino",
+  "cidade": "Arapiraca",
+  "uf": "AL",
+  "carreira_anos": 4,
+  "especialidade": "Emagrecimento e saúde metabólica de adultos, com forte uso de bioimpedância e metas numéricas",
+  "modelo_atendimento": "Consultório particular próprio no centro de Arapiraca, salinha alugada em cima de uma ótica. Consulta R$ 150, retorno R$ 120, pacote de 3 retornos por R$ 300 que ela criou justamente para tentar segurar o paciente. Renda 100% do consultório, complementada por um dia por semana de personal diet num estúdio de musculação parceiro.",
+  "carteira_ativa": 38,
+  "ticket_consulta": 135,
+  "consultas_semana": 20,
+  "contexto": "Filha de feirante de fumo e de uma professora, primeira nutricionista da família, formada em Maceió e voltou para Arapiraca de propósito: 'aqui todo mundo é diabético e ninguém tem nutri'. Quatro anos de carreira, dois de consultório, noiva de um fisioterapeuta com quem planeja uma clínica conjunta. É a mais organizada da turma: controla tudo em planilha — taxa de retorno, origem de cada paciente, ticket médio — e sabe de cabeça que 41% dos pacientes somem entre a segunda e a quarta consulta. Esse número a incomoda profundamente porque ela o mede e não consegue movê-lo. O que a cansa é fazer sozinha o papel de nutricionista, secretária, financeiro e cobradora.",
+  "rotina": "Segunda, terça, quinta e sexta no consultório das 8h às 12h e das 14h às 18h; quarta de manhã no estúdio de musculação e à tarde 'expediente interno': planilhas, confirmações de consulta e mensagens de reativação que ela mesma dispara, uma a uma. Sábado de manhã atende quem vem da zona rural, que só pode no sábado. Corre 5 km três vezes por semana às 5h30, antes do calor.",
+  "whatsapp_pacientes": "Número business com mensagem automática de saudação e horário de atendimento — que ela configurou sozinha e os pacientes ignoram solenemente. Ela responde tudo, entre consultas e das 19h às 20h em bloco, método que leu num podcast de produtividade. Domingo à noite é o pico: 'segunda eu começo'. Sente menos raiva do volume e mais frustração pela falta de sistema: 'eu respondo bem, mas não escala'.",
+  "tecnologia": "Software de prescrição de R$ 75/mês, balança de bioimpedância parcelada em 18x de R$ 390, Google Agenda, e um Google Sheets monstruoso com abas de retenção, financeiro e origem de pacientes que é o orgulho dela. Adora tecnologia que gera número; despreza tecnologia que gera enfeite. Pesquisa ferramenta de acompanhamento há meses, nunca achou uma que justificasse o preço para a realidade de Arapiraca.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {"nome": "Cícero", "historia": "Comerciante da feira do fumo, 44 anos, diabético, mandado pela esposa. Perdeu 4 kg no primeiro mês e comemorou muito.", "como_percebeu": "A planilha dela marcou 'retorno vencido +15 dias' — ela revisa isso toda quarta-feira.", "o_que_fez": "Mandou a mensagem de reativação padrão, depois ligou. Ele: 'oxe, doutora, tô bom demais, quando desregular eu volto'. Ela anotou na aba 'perdidos' com o motivo 'melhorou e sumiu', a categoria mais comum da planilha."},
+      {"nome": "Ediane", "historia": "Auxiliar de loja de 26 anos, pacote de 3 retornos pago, usou só o primeiro.", "como_percebeu": "Pelo controle de pacotes: o dela venceria em 90 dias com dois retornos não usados.", "o_que_fez": "Ofereceu estender o prazo e mudar para atendimento no sábado. Ediane remarcou duas vezes e faltou nas duas. Beatriz devolveu metade do valor por Pix, por princípio, e registrou o prejuízo: R$ 150 mais o tempo."},
+      {"nome": "Dona Marluce", "historia": "Senhora de 63 anos, hipertensa, vinha com o filho da zona rural de Craíbas, 40 minutos de estrada.", "como_percebeu": "Faltou dois sábados seguidos; a confirmação por WhatsApp ficou sem visualizar — o chip dela é de outra operadora e vive sem sinal no sítio.", "o_que_fez": "Ligou no número do filho. A safra apertou, a gasolina pesou. Beatriz ofereceu retorno por chamada de voz e cobrou R$ 60; funcionou uma vez, depois silêncio. Ficou com a pulga atrás da orelha de que existe um jeito de atender essa paciente que ela ainda não inventou."}
+    ],
+    "ultima_msg_fora_horario": {"quando": "domingo, 21h32", "texto": "Boa noite Dra. Beatriz, me diga uma coisa: cuscuz com ovo pode todo dia no café ou tem que variar? E o inhame, engorda?", "respondeu": "Não respondeu na hora — regra dela: domingo depois das 20h fica para segunda 7h. Respondeu segunda cedo com áudio. Cumpre a regra, mas confessa que lê tudo na hora e fica com aquilo na cabeça."},
+    "gasto_ferramentas_mes": 75,
+    "horas_semana_respondendo": 6,
+    "no_shows_ultimo_mes": 5,
+    "estimativa_perda_anual_intuitiva": "Sabe de cor: '41% somem até a quarta consulta. Se cada um ficasse mais três retornos, a R$ 120... dá R$ 26 mil e pouco por ano. Eu fiz essa conta na planilha, tá lá na aba de retenção.'"
+  },
+  "dores_reais": [
+    "Mede a evasão com precisão (41% até a 4ª consulta) e não consegue reduzi-la — a reativação manual dela converte pouco",
+    "O paciente que 'melhorou e sumiu': volta um ano depois pior, e ela sabe que perdeu o paciente e o resultado clínico",
+    "Fazer sozinha secretaria, cobrança, confirmação e reativação come as tardes de quarta inteiras",
+    "Realidade de interior: paciente da zona rural com chip sem sinal e safra apertada não cabe nas soluções que vê anunciadas",
+    "No-show de sábado é o pior: é o dia da zona rural e o buraco não se repõe"
+  ],
+  "nao_dores": [
+    "Captação vai bem: a cidade tem poucos nutricionistas clínicos e o boca a boca da feira funciona — a dor é segurar, não atrair",
+    "Não sofre com precificação: testou preços com método, sabe que R$ 150 é o teto local e está em paz com isso",
+    "Tecnologia não a assusta: configura tudo sozinha, o problema é achar ferramenta que valha o custo, não usá-la"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica: responde com números que sabe de cabeça, corrige a própria estimativa no meio da frase ('não, minto, foi 38%... deixa eu pensar, 41'), pede definição precisa das perguntas vagas. Entrevistada dos sonhos para dados, mais contida em emoção. Tiques alagoanos: 'oxe' de surpresa e 'visse?' arrematando conselho."
+}

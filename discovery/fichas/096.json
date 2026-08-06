@@ -1,0 +1,63 @@
+{
+  "id": "096",
+  "nome": "Milena Quaresma Sousa",
+  "idade": 24,
+  "genero": "feminino",
+  "cidade": "Belém",
+  "uf": "PA",
+  "carreira_anos": 1,
+  "especialidade": "Nutrição clínica com foco em emagrecimento",
+  "modelo_atendimento": "Alugou há oito meses uma sala por turno, duas tardes por semana, numa clínica de estética na Pedreira, em Belém. Atende particular quem chega por indicação da família e do Instagram que ela alimenta com esforço. A renda das consultas ainda não paga as contas: ela complementa dando aula em curso técnico e vendendo brigadeiro fit por encomenda.",
+  "carteira_ativa": 6,
+  "ticket_consulta": 130,
+  "consultas_semana": 3,
+  "contexto": "Recém-formada pela UFPA, primeira da família a ter diploma. Mora com a mãe e a avó no Guamá e sonha com um consultório próprio com a cara dela, cheiro de capim-limão na recepção e tudo. Apaixonada pela profissão de um jeito que ainda não foi gasto: faz material colorido no Canva para cada paciente, manda áudio longo explicando rótulo de produto. O que a move é a primeira paciente que chorou de alegria na balança; o que a cansa é a sala vazia — ela tem amor e técnica de sobra e quase ninguém para receber. À noite fica revisando o Instagram das nutricionistas famosas de Belém tentando entender o que elas têm que ela não tem.",
+  "rotina": "Terça e quinta à tarde fica na sala alugada, das 14h às 19h, mesmo quando só tem uma consulta marcada — usa o tempo para gravar stories. Segunda, quarta e sexta de manhã dá aula no curso técnico. Fim de semana produz os brigadeiros fit e planeja conteúdo. Domingo à noite, culto com a avó.",
+  "whatsapp_pacientes": "Número pessoal, e ela responde tudo, na hora, a qualquer hora — inclusive 23h. Com seis pacientes, chega pouca coisa, e cada mensagem que chega a deixa genuinamente feliz: é sinal de que alguém lembrou dela. Manda bom dia motivacional às segundas para a carteira inteira. Sabe que isso não escala, mas hoje o problema dela é o oposto de excesso.",
+  "tecnologia": "Assinou o plano de R$ 49 por mês de um software de prescrição no impulso da formatura e sente o peso desse valor todo mês. Agenda no caderno de capa dura e no Google Agenda. Adora tecnologia no que é grátis — Canva, CapCut para os reels — mas cada real de assinatura dói no orçamento apertado.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Tia Socorro",
+        "historia": "Amiga da mãe, de 52 anos, foi das primeiras pacientes. Veio duas vezes, perdeu 3 quilos, e sumiu dizendo depois, num almoço de família, que 'já aprendeu o esquema'.",
+        "como_percebeu": "Na hora — com seis pacientes, cada nome tem rosto. O retorno marcado ficou em aberto na agenda de caderno.",
+        "o_que_fez": "Mandou mensagem carinhosa, ofereceu desconto de retorno, ficou sem graça de insistir porque é quase da família. Doeu no orçamento e no orgulho."
+      },
+      {
+        "nome": "Patrícia",
+        "historia": "Moça de 31 anos que chegou pelo Instagram, super animada na primeira consulta, disse que ia fechar o pacote de três meses 'no próximo pagamento'. Nunca fechou.",
+        "como_percebeu": "Viu a Patrícia continuar curtindo os stories dela sem responder as mensagens. Isso a intriga até hoje.",
+        "o_que_fez": "Mandou dois lembretes espaçados e parou, com medo de parecer desesperada. Anotou num caderno de reflexões: 'o que eu disse de errado?'"
+      },
+      {
+        "nome": "Seu Edson",
+        "historia": "Diabético de 60 anos encaminhado por uma colega médica de igreja. Faltou à segunda consulta porque o ônibus do Guamá atrasou e ele não conseguiu remarcar o dia com a filha que o acompanha.",
+        "como_percebeu": "Ele avisou pela filha no mesmo dia, todo constrangido.",
+        "o_que_fez": "Remarcou duas vezes, as duas caíram por logística da família. Ela pensa em atendê-lo online, mas ele não se ajeita com vídeo. Caso parado, com dó dos dois lados."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 22h47",
+      "texto": "Mi, posso comer tacacá amanhã na feira ou tá proibido? Kkkk me diz que pode",
+      "respondeu": "Respondeu em três minutos, com áudio rindo, liberando o tacacá com ajuste no resto do dia. Ficou feliz o fim de semana inteiro com a mensagem."
+    },
+    "gasto_ferramentas_mes": 49,
+    "horas_semana_respondendo": 2,
+    "no_shows_ultimo_mes": 1,
+    "estimativa_perda_anual_intuitiva": "'Menina, nunca fiz essa conta... perder eu perco é o paciente que nunca chega, né? Mas vai, uns 2 mil por ano com quem sumiu? O que me mata mesmo é a agenda vazia.'"
+  },
+  "dores_reais": [
+    "Captação, captação, captação: seis pacientes não pagam a sala; ela precisa é de gente nova entrando",
+    "Insegurança de precificar: cobra R$ 130 morrendo de medo de ser cara para o público dela e barata demais para se sustentar",
+    "A comparação diária com nutricionistas de Instagram de Belém com 50 mil seguidores",
+    "O custo fixo (sala por turno + software) que come a receita antes de sobrar salário",
+    "A família achando que 'esse consultório não vai dar em nada' e sugerindo concurso"
+  ],
+  "nao_dores": [
+    "Excesso de mensagens fora de hora: com seis pacientes, mensagem é presente, não fardo",
+    "Falta de tempo: a agenda dela tem buraco de sobra; organizar o dia não é o problema",
+    "Retenção em escala: ela conhece cada paciente pelo nome e sabe na hora quando alguém esfria — não precisa de sistema para enxergar o que cabe num caderno"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Calorosa e prolixa: cada resposta vira história com começo, meio, avó e contexto. Agradece a oportunidade de participar umas três vezes. Solta 'égua' quando se empolga e 'maninha' para se dirigir à entrevistadora, corrigindo-se sem necessidade: 'desculpa o falatório, é que eu amo o que eu faço'."
+}

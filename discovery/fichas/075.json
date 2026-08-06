@@ -1,0 +1,63 @@
+{
+  "id": "075",
+  "nome": "Thaís Coimbra Aguiar",
+  "idade": 31,
+  "genero": "feminino",
+  "cidade": "Araguaína",
+  "uf": "TO",
+  "carreira_anos": 8,
+  "especialidade": "Nutrição esportiva para praticantes de musculação e crossfit, com fisiculturismo amador crescendo na carteira",
+  "modelo_atendimento": "Vende consultoria trimestral (R$ 1.050 à vista ou 3x de 390) que inclui avaliação presencial ou por vídeo, plano ajustado a cada ciclo de treino e suporte por WhatsApp incluso no preço. Atende numa sala dentro da maior academia de Araguaína, com parceria: a academia indica, ela paga um percentual. Uns 40% da carteira é de cidades vizinhas (Wanderlândia, Babaçulândia, Filadélfia) atendida por vídeo.",
+  "carteira_ativa": 24,
+  "ticket_consulta": 350,
+  "consultas_semana": 10,
+  "contexto": "Formada em Palmas (CEULP), voltou para Araguaína porque o namorado — hoje marido, Diego, dono de box de crossfit — não saía de lá por nada. Construiu a carteira dentro do mundo do treino: ela mesma compete de biquíni fitness regional, o que é seu melhor marketing. Sem filhos por escolha adiada, casa própria em construção no Jardim América, obra que come tudo que sobra. O que a move é ver aluno subir no palco ou bater PR com o plano dela; o que a cansa é ser plano de saúde, coach motivacional e psicóloga de 24 pessoas ao mesmo tempo pelo WhatsApp, porque o suporte 'incluso' virou um poço sem fundo que ela mesma cavou.",
+  "rotina": "Treina 6h com o marido no box. Atende avaliações e retornos de terça a sexta, 9h às 12h e 15h às 19h, entre presencial na academia e vídeo com o pessoal das cidades vizinhas. Segunda é dia de montar e ajustar planos no software — costuma varar até as 20h. O WhatsApp não tem dia: ela responde no intervalo do treino, na fila do mercado, no sofá à noite, com o Diego reclamando do celular na mesa do jantar.",
+  "whatsapp_pacientes": "Número business, mas é ela em pessoa, o dia todo — o suporte é o produto, está no contrato do trimestre. Chega de tudo: foto de refeição pra 'auditar', print de balança, 'posso trocar tilápia por ovo?', desabafo pós-final de semana de churrasco. Ela responde rápido porque o aluno que paga 350 por mês espera resposta rápida, e ela sabe que é isso que renova trimestre. Sente orgulho e sufoco em partes iguais: 'é meu diferencial e é minha coleira'.",
+  "tecnologia": "Paga um software de prescrição esportiva (R$ 75/mês) que gera os planos em PDF bonito com a logo dela, agenda no Google Calendar, controle de renovações numa planilha que o Diego montou. Total: R$ 75/mês. É aberta a tecnologia — se algo tirasse metade do WhatsApp das costas dela sem esfriar o vínculo, ela ouviria com atenção; a desconfiança é se o aluno ia aderir.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Waldeck",
+        "historia": "Fazendeiro de 48 anos que entrou na onda do crossfit, fechou dois trimestres, e no auge da entressafra sumiu — do box, dela e do plano.",
+        "como_percebeu": "A planilha de renovação acusou: trimestre venceu em maio e ele não respondeu à mensagem de renovação. No box, o Diego confirmou que ele também sumiu de lá.",
+        "o_que_fez": "Mandou duas mensagens de renovação com desconto, depois uma perguntando dele como pessoa. Respondeu a terceira: 'na correria do gado, doutora, depois te procuro'. Ela anotou pra reabordar em agosto. R$ 1.050 por trimestre fazem falta na obra."
+      },
+      {
+        "nome": "Kamila",
+        "historia": "Atleta de biquíni que Thaís preparou para o estadual. Depois do campeonato (3º lugar), emendou o off-season com um coach de Goiânia 'mais famoso no meio', que fecha treino e dieta juntos.",
+        "como_percebeu": "Viu no Instagram a Kamila marcando o coach novo no post de 'novo ciclo, novo time'.",
+        "o_que_fez": "Curtiu o post por educação e ficou dois dias engolindo. Doeu no bolso e no ego. Depois disso criou um 'plano pós-campeonato' com preço especial pra segurar atleta no off — ainda não sabe se funciona."
+      },
+      {
+        "nome": "Renatinha",
+        "historia": "Auxiliar administrativa de Wanderlândia, atendida por vídeo. Fez um trimestre animada, mas mandava cada vez menos foto, respondia cada vez mais seco, e não renovou.",
+        "como_percebeu": "Percebeu ANTES do fim: o silêncio no WhatsApp foi esfriando semana a semana e ela viu acontecer sem saber o que fazer além de mandar 'tudo bem por aí?'.",
+        "o_que_fez": "Ofereceu uma chamada extra de ajuste, a Renatinha aceitou, remarcou duas vezes e não apareceu. Não renovou. Thaís guarda essa: 'eu VI a menina indo embora em câmera lenta'."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 14h30",
+      "texto": "Thata me salva!! Tô no aniversário da minha sogra tem churrasco arroz carreteiro maionese TUDO, o que eu como pra não jogar a semana fora?? manda rápido kkk",
+      "respondeu": "Respondeu em cinco minutos, do próprio almoço de domingo, com a lista do que priorizar. O Diego revirou os olhos. Ela justificou: 'é renovação de trimestre isso aqui, amor'."
+    },
+    "gasto_ferramentas_mes": 75,
+    "horas_semana_respondendo": 12,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Já fiz meio que de cabeça: se eu perco uns 6 trimestres de renovação no ano por aluno que esfria, é fácil uns 6, 7 mil. Fora o que eu deixo de pegar de aluno novo porque não tenho braço. Isso me assombra mais que a obra."
+  },
+  "dores_reais": [
+    "As 12 horas semanais de WhatsApp: o suporte incluso é o motor da renovação E o teto do crescimento — ela não consegue passar de ~25 alunos sem enlouquecer",
+    "Ver aluno 'esfriando' no chat semanas antes de não renovar, sem ter um método pra reverter além de mandar mensagem atrás de mensagem",
+    "Sazonalidade do interior: entressafra, festa junina e dezembro derrubam renovações em bloco",
+    "Concorrência de coach de fora (Goiânia, GO e influencers online) que leva justamente os melhores alunos, os de palco",
+    "Precificar o próprio tempo: não sabe se o suporte devia ser cobrado à parte, e tem medo de testar e perder aluno"
+  ],
+  "nao_dores": [
+    "Captação local — a vitrine da academia, o box do marido e o próprio shape dela geram fila; em Araguaína ela é referência",
+    "No-show — no modelo trimestral pago adiantado, faltar consulta é problema do aluno, não do caixa dela",
+    "Software de prescrição — o dela resolve bem e o PDF com a logo impressiona; não é aí que aperta"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Falante, energia de treino o tempo todo: responde com entusiasmo, dá exemplos com nome e sobrenome, puxa o celular pra mostrar print sem ninguém pedir. Interrompe a si mesma ('não, peraí, deixa eu te contar uma melhor'). Tiques: 'égua' herdado da vizinhança paraense de Araguaína, 'fechou?' pra encerrar raciocínio, e chama todo mundo de 'aluno', nunca 'paciente'."
+}

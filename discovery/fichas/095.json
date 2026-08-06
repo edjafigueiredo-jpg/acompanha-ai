@@ -1,0 +1,63 @@
+{
+  "id": "095",
+  "nome": "Cláudia Perim Vasques",
+  "idade": 43,
+  "genero": "feminino",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "carreira_anos": 19,
+  "especialidade": "Nutrição oncológica ambulatorial — pacientes em quimioterapia e pós-tratamento",
+  "modelo_atendimento": "Atende 100% online, por videochamada, uma carteira pequena e seleta de pacientes oncológicos que chegam pelo Instagram, onde publica conteúdo técnico sobre alimentação durante a quimioterapia, e por indicação de dois oncologistas parceiros. Cobra caro por consulta longa e faz também mentoria para nutricionistas recém-formadas, que virou metade da renda dela.",
+  "carteira_ativa": 9,
+  "ticket_consulta": 450,
+  "consultas_semana": 6,
+  "contexto": "Capixaba de Vitória, 19 anos de carreira, sendo 12 dentro de um hospital de referência em oncologia, de onde saiu esgotada em 2021 para montar a prática online. Divorciada, dois filhos adolescentes, mora na Praia do Canto e organiza a vida para trabalhar no máximo seis horas por dia. Escolheu deliberadamente uma carteira pequena: paciente oncológico exige presença densa e ela não aceita mais volume. O que a move é dar dignidade alimentar a quem está no tratamento; o que a cansa é produzir conteúdo para o Instagram, que ela considera pedágio inevitável para ser encontrada. É objetiva ao ponto da secura — anos de hospital tiraram dela a paciência para rodeio.",
+  "rotina": "Atende por vídeo terça, quarta e quinta, das 9h às 13h, no máximo duas consultas de uma hora por dia mais retornos. Segunda de manhã grava conteúdo e responde a mentoria; sexta é dia de estudo e de reunião quinzenal com os oncologistas parceiros. À tarde, vida própria: pilates, filhos, mercado.",
+  "whatsapp_pacientes": "WhatsApp Business com mensagem automática informando horário de resposta (dias úteis, 9h às 17h). Paciente oncológico manda pouca mensagem, mas quando manda é sério — intercorrência de quimio, mucosite, vômito persistente — e para isso ela abre exceção sem reclamar, faz parte do que o ticket de R$ 450 paga. Familiares ansiosos mandando pergunta repetida é o que a irrita; ela devolve com orientação por escrito padronizada.",
+  "tecnologia": "Plataforma de telessaúde com prontuário e agendamento por R$ 119 mensais, Google Agenda sincronizado e material de orientação em PDF que ela mesma montou ao longo dos anos. Paga sem pestanejar o que funciona e corta sem dó o que não usa; não tem paciência para testar novidade.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Seu Waldyr",
+        "historia": "Paciente de 71 anos com câncer colorretal, acompanhou durante toda a quimioterapia. Terminou o tratamento, recebeu alta do oncologista e encerrou com ela também, agradecido.",
+        "como_percebeu": "Não foi sumiço: última consulta marcada como encerramento, com carta de orientações de manutenção.",
+        "o_que_fez": "Arquivou o caso. Na oncologia, paciente que 'some' de alta é vitória, não perda."
+      },
+      {
+        "nome": "Renata",
+        "historia": "Paciente de 49 anos em quimio para câncer de mama que interrompeu o acompanhamento na terceira consulta por aperto financeiro — o tratamento consumiu a reserva da família.",
+        "como_percebeu": "A própria Renata mandou mensagem honesta desmarcando e explicando.",
+        "o_que_fez": "Ofereceu espaçar retornos e mandou os PDFs de orientação sem cobrar. Ficou com isso atravessado dias — não pela receita, pela paciente."
+      },
+      {
+        "nome": "Marcos",
+        "historia": "Paciente de 55 anos que faleceu em decorrência da doença, em abril.",
+        "como_percebeu": "A esposa avisou por mensagem, agradecendo o cuidado.",
+        "o_que_fez": "Respondeu com uma mensagem de condolências que levou uma hora para escrever, e depois cancelou a agenda do dia. É a parte da especialidade que nenhuma métrica de retenção alcança."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 8h15",
+      "texto": "Dra. Cláudia, bom dia, desculpe incomodar. Papai vomitou a noite toda depois da quimio de ontem e não segura nem água. Podemos adiantar alguma coisa da lista da senhora?",
+      "respondeu": "Respondeu às 8h30 com orientação de hidratação fracionada e mandou avisar o oncologista de plantão. Intercorrência clínica não espera segunda-feira, e ela não vê isso como problema — vê como o trabalho."
+    },
+    "gasto_ferramentas_mes": 119,
+    "horas_semana_respondendo": 3,
+    "no_shows_ultimo_mes": 1,
+    "estimativa_perda_anual_intuitiva": "Seca: 'não perco paciente por desengajamento, perço por alta, por dinheiro ou por óbito. Se quer um número, ponha zero, a pergunta não se aplica à minha clínica.'"
+  },
+  "dores_reais": [
+    "Captação: a carteira é pequena por escolha, mas a fila de entrada oscila, e depender de Instagram aos 43 anos a desgasta — 'passo mais tempo editando reel do que estudando'",
+    "Precificação e sazonalidade da mentoria, que virou metade da renda e compete com o tempo clínico",
+    "O peso emocional acumulado da oncologia, que nenhuma ferramenta resolve",
+    "Burocracia de recibo, nota fiscal e reembolso de plano que os pacientes pedem para tentar ressarcimento"
+  ],
+  "nao_dores": [
+    "Retenção: o ciclo do paciente dela é ditado pelo tratamento oncológico, não por engajamento; alta é sucesso",
+    "Plantão de WhatsApp: mensagens fora de hora são raras, graves e legítimas — ela as considera parte nobre do serviço, já precificada",
+    "Agenda cheia: ela limita a carteira de propósito e recusa paciente todo mês",
+    "No-show: paciente oncológico e família não faltam; quando desmarcam é por internação, e isso não se 'resolve'"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Seca e apressada: avisa de saída que tem 30 minutos, responde em frases curtas e corta pergunta mal formulada com 'isso não se aplica ao meu caso'. Honesta e precisa quando a pergunta é boa. Tique capixaba de fechar frases com 'né' seco e um 'olha só' antes de discordar."
+}

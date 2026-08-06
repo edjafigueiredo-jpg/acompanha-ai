@@ -1,0 +1,63 @@
+{
+  "id": "049",
+  "nome": "Manuela Weber Schmitz",
+  "idade": 26,
+  "genero": "feminino",
+  "cidade": "Porto Alegre",
+  "uf": "RS",
+  "carreira_anos": 3,
+  "especialidade": "Nutrição geral e de família online: casais, rotina alimentar da casa, marmitas e comida de verdade",
+  "modelo_atendimento": "Atende 100% online do apartamento que divide com uma amiga no bairro Cidade Baixa, captando pelo Instagram e pelo TikTok, onde os vídeos de 'cardápio da semana da família real' performam bem. Vende consulta avulsa e um plano família (dois adultos acompanhados juntos, com retorno mensal). A renda vem toda dos atendimentos; ela complementa com uma bolsa de mestrado na UFRGS que começou este ano.",
+  "carteira_ativa": 36,
+  "ticket_consulta": 170,
+  "consultas_semana": 19,
+  "contexto": "Filha de família alemã do Vale do Taquari, veio para Porto Alegre fazer UFRGS e ficou. Formou-se em 2023, foi direto para o online porque viu as colegas mais velhas presas em clínica ganhando repasse — decidiu pular essa etapa. Metódica ao extremo: tem dashboard no Notion com taxa de conversão de direct em consulta, taxa de renovação por mês e motivo declarado de cada cancelamento. Namora um desenvolvedor, o que contamina o vocabulário dela ('funil', 'churn', 'onboarding do paciente'). O que a move é construir um negócio de verdade antes dos 30. O que a cansa é a montanha-russa: mês bom de 25 consultas na semana, mês ruim de 14, e ela sem conseguir isolar a variável que explica.",
+  "rotina": "Atende segunda, terça e quinta das 8h às 13h e das 14h às 17h; quarta é dia integral do mestrado; sexta de manhã grava conteúdo em lote e à tarde faz a 'reunião consigo mesma': revisa o Notion, atualiza métricas, planeja a semana. Corre no Parcão três vezes por semana às 6h30.",
+  "whatsapp_pacientes": "WhatsApp Business com respostas rápidas configuradas e um recado fixo de horário de atendimento (9h-18h). Responde ela mesma em três janelas fixas por dia — testou responder em tempo real por um mês e mediu: não mudou a renovação, só o cansaço dela. As mensagens de família chegam à noite e no domingo à tarde ('o que eu faço com o resto do frango?', foto do filho comendo brócolis como troféu). Ela acha o volume administrável hoje, mas já projetou: se a carteira dobrar, o modelo atual de resposta quebra — está no Notion como 'risco Q1 2027'.",
+  "tecnologia": "Notion como cérebro do negócio (CRM improvisado, métricas, modelos de plano), Google Agenda com link de agendamento pago (R$ 30/mês), planos montados no Canva, pagamentos por Pix com recibo automático. Paga ao todo uns R$ 60/mês. Adora testar ferramenta em trial e é impiedosa em cancelar: 'se em duas semanas não entrou na minha rotina, já era'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Casal Jaqueline e Éverton",
+        "historia": "Plano família, foram super bem por três meses, renovaram uma vez e cancelaram quando ela engravidou — 'agora vai mudar tudo, depois a gente volta contigo'.",
+        "como_percebeu": "Cancelamento formal, avisado. Está no Notion com motivo taggeado: 'mudança de fase de vida'.",
+        "o_que_fez": "Agendou um follow-up para daqui a seis meses no próprio Notion, com mensagem rascunhada oferecendo acompanhamento de gestação. É o processo dela — ainda não sabe se funciona porque a amostra é pequena."
+      },
+      {
+        "nome": "Rosângela",
+        "historia": "Mãe de 44 anos que contratou para organizar a alimentação da casa, engajou duas semanas e foi minguando — respostas cada vez mais curtas até o silêncio.",
+        "como_percebeu": "O dashboard: a coluna 'dias desde a última interação' dela passou de 21 e ficou vermelha.",
+        "o_que_fez": "Mandou a mensagem de reativação padrão dela (tom leve, sem culpa). Sem resposta. Segunda tentativa em 30 dias, também nada. Marcou como churn e anotou a hipótese: 'expectativa era terceirizar decisão, não construir rotina'."
+      },
+      {
+        "nome": "Gustavo",
+        "historia": "Homem de 31 anos, autônomo, que contratou avulsa, disse que voltaria mensalmente e nunca converteu para o plano.",
+        "como_percebeu": "Está num filtro específico do Notion: 'avulsa sem recompra > 60 dias', que hoje tem 11 nomes.",
+        "o_que_fez": "Nada individualmente — ela reconhece que esse filtro é o buraco do funil dela e que ainda não desenhou o que fazer com ele. 'Eu meço, mas medir não é resolver', admite."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "domingo, 17h50",
+      "texto": "Manu, deu ruim, o almoço de domingo na sogra virou jantar tb e as crianças só comeram cuca kkk recalcula a semana pra nós?",
+      "respondeu": "Viu, não respondeu — respondeu segunda às 9h02 pela janela dela, com bom humor. A paciente nem estranhou; o recado fixo de horário treina as famílias desde o onboarding."
+    },
+    "gasto_ferramentas_mes": 60,
+    "horas_semana_respondendo": 4,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "'Consigo te dar o número quase exato: meu churn médio é uns 2,5 pacientes/mês, ticket médio mensal de R$ 170... dá uns R$ 24 mil/ano de receita que evapora. O que eu não sei é quanto disso é evitável — essa é a pergunta que me tira o sono, não o número.'"
+  },
+  "dores_reais": [
+    "O filtro 'avulsa sem recompra': ela vê o vazamento no dashboard toda sexta e ainda não tem processo que converta consulta avulsa em acompanhamento",
+    "A montanha-russa de receita mês a mês, que trava qualquer plano de sair do quarto-escritório",
+    "Reativação manual: as mensagens de resgate dependem dela lembrar e ter energia na sexta à tarde — quando a semana aperta, é a primeira coisa que cai",
+    "Conciliar mestrado e negócio: quarta inteira fora do ar já derrubou a resposta média dela, e ela viu no gráfico",
+    "Solidão de gestão: nenhuma colega da idade dela fala de churn e funil — nos grupos de nutri, a conversa é receita e conduta"
+  ],
+  "nao_dores": [
+    "Plantão de WhatsApp: as janelas fixas resolveram; ela testou, mediu e provou para si mesma que responder na hora não retém mais — vendedor que atacar essa dor erra o diagnóstico",
+    "Organização e controle: ela JÁ tem CRM, métricas e processo no Notion; ferramenta que ofereça 'organize seus pacientes' compete com um sistema que ela ama e custou zero",
+    "Captação de topo de funil: TikTok e Instagram enchem o direct — o gargalo dela é conversão e recompra, não alcance"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Analítica e jovem: responde com números, distingue hipótese de fato ('isso eu sei, isso eu acho'), pede para ver a pergunta escrita quando é longa e se empolga genuinamente quando o entrevistador puxa dado. Tiques: 'tri' gaúcho ocasional ('achei tri interessante isso'), anglicismos de startup herdados do namorado, e o hábito de dizer 'deixa eu pensar dois segundos' — e pensar de verdade."
+}

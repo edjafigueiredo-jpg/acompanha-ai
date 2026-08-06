@@ -1,0 +1,63 @@
+{
+  "id": "036",
+  "nome": "Juliana Tenório Cavalcante",
+  "idade": 35,
+  "genero": "feminino",
+  "cidade": "Maceió",
+  "uf": "AL",
+  "carreira_anos": 10,
+  "especialidade": "Nutrição geral e de família — do pré-diabético ao adolescente, com forte carteira de pacientes que trazem o cônjuge e os filhos depois",
+  "modelo_atendimento": "Consultório particular próprio na Ponta Verde, em Maceió, sala comprada financiada em 2021. Cobra R$ 260 a primeira consulta e R$ 200 o retorno, com pacote informal de 'família' (desconto quando vem mais de um da mesma casa). A renda é 100% do consultório e depende diretamente de retorno remarcado: paciente que some é dinheiro que some.",
+  "carteira_ativa": 42,
+  "ticket_consulta": 230,
+  "consultas_semana": 24,
+  "contexto": "Alagoana de Arapiraca, fez Nutrição na UFAL, trabalhou seis anos numa clínica dos outros até juntar coragem e entrada para a sala própria — a conquista da vida dela, financiamento até 2031. Casada com Emerson, professor de educação física, um filho de 6 anos, o Theo. É pragmática de planilha: sabe quanto custa a hora dela, mede taxa de retorno mês a mês e sabe que o negócio dela é vínculo longo — a paciente que fica três anos e traz o marido vale dez primeiras consultas. Por isso o que a corrói é exatamente o vazamento silencioso: gente boa que melhora, some no terceiro mês e leva junto a família inteira que viria. E o WhatsApp, que ela chama de 'meu segundo expediente, o que não aparece no contracheque'.",
+  "rotina": "Atende segunda a sexta das 8h às 12h e das 14h às 18h30, terça até 20h para quem só pode à noite. Segunda 7h, antes do primeiro paciente, faz a 'reunião com ela mesma': abre a planilha, vê quem não remarcou retorno e separa uma lista para chamar no WhatsApp — tarefa que odeia e adia metade das vezes. Almoço em casa com o Theo quando a escola libera cedo. Sábado de manhã, praia com a família e o celular no modo avião até 10h, regra do Emerson.",
+  "whatsapp_pacientes": "WhatsApp Business dela, respondido só por ela — a secretária Val marca consulta, mas dúvida clínica a Val não pode responder. Chega mensagem das 6h30 ('posso treinar em jejum?') às 23h ('comi cuscuz com ovo, quebrei a dieta?'), pico no domingo à noite, quando todo mundo entra em pânico pré-segunda-feira. Ela responde de manhã cedo e no fim da tarde, mas o acumulado a persegue: já respondeu paciente da fila do banco, do sinal, da cama. Sente que o suporte é parte do que a diferencia — e ao mesmo tempo que está pagando com a própria noite um serviço que nunca precificou.",
+  "tecnologia": "Paga R$ 119/mês num sistema de agenda com lembrete automático de consulta por WhatsApp, que reduziu no-show e ela considera o dinheiro mais bem gasto do consultório. Prescrição num software de dieta pago anual (uns R$ 40/mês no rateio) e a famosa planilha de retorno no Excel, feita pelo Emerson. É organizada e aberta a ferramenta nova, mas exige conta de padaria: 'me diga quanto entra a mais no fim do mês, aí a gente conversa'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Gilvan, 48 anos",
+        "historia": "Pré-diabético, perdeu 9 kg em quatro meses, virou propaganda ambulante dela no condomínio. Depois das festas de junho, não remarcou — São João em Alagoas é um massacre de canjica e bolo de milho, e ele deve ter tido vergonha de voltar 'pior'.",
+        "como_percebeu": "Na planilha de segunda-feira: retorno vencido há 5 semanas acende amarelo na regra que o Emerson criou.",
+        "o_que_fez": "Mandou mensagem leve ('São João passou pra todo mundo, bora retomar?'). Ele visualizou, respondeu 'semana que vem marco' e não marcou. Ela anotou para insistir de novo, mas a semana engoliu. É o caso que ela citaria na hora se alguém perguntar 'quem te doeu perder?' — porque a esposa dele ia começar com ela em agosto e também sumiu."
+      },
+      {
+        "nome": "Rebeca, 29 anos",
+        "historia": "Noiva emagrecendo para o casamento. Objetivo batido, casou linda, mandou foto do vestido agradecendo — e nunca mais apareceu.",
+        "como_percebeu": "Esperava: paciente de objetivo curto sai quando o objetivo acaba. Ainda assim tentou a virada para 'manutenção'.",
+        "o_que_fez": "Mandou a mensagem de manutenção 30 dias depois do casamento, sem resposta. Aceitou, mas registrou na planilha uma coluna nova: 'converter objetivo em vínculo', o projeto eterno dela."
+      },
+      {
+        "nome": "Dona Socorro, 61 anos, e a filha Michele",
+        "historia": "Vinham juntas, mãe hipertensa e filha com compulsão. A filha brigou com o marido, se mudou para Recife, e a mãe sem a carona da filha foi rareando até sumir.",
+        "como_percebeu": "Dois retornos vencidos na planilha, e a Val comentou que dona Socorro tinha ligado perguntando 'se tinha como a doutora atender por telefone'.",
+        "o_que_fez": "Ofereceu teleconsulta, dona Socorro não se entendeu com o vídeo e desistiu. Juliana perdeu as duas de uma vez — R$ 400/mês de retorno que viravam recorrentes — e ficou uma semana ruminando se devia ter ido na casa da senhora."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "Domingo, 21h35",
+      "texto": "Ju boa noite! Amanhã começo o plano novo né? Esqueci se o inhame entra no café ou no jantar, e se pode trocar por macaxeira. E a tapioca, libera quantas vezes na semana? Desculpa te encher no domingo 🙏",
+      "respondeu": "Respondeu 21h50, do sofá, depois de bufar: três linhas objetivas e um 'qualquer coisa a gente ajusta quinta'. O Emerson olhou torto. Ela sabe que domingo à noite é o horário que mais responde no ano e nunca cobrou um real por isso."
+    },
+    "gasto_ferramentas_mes": 159,
+    "horas_semana_respondendo": 8,
+    "no_shows_ultimo_mes": 5,
+    "estimativa_perda_anual_intuitiva": "Essa conta eu já fiz, e refaço: uns 12 pacientes que somem por ano sem alta, cada um valia em média 8 retornos e meio familiar novo... entre R$ 25 e R$ 30 mil por ano escorrendo pelo ralo. Falo o número e me dá azia."
+  },
+  "dores_reais": [
+    "O vazamento do terceiro mês: paciente melhora, se acha pronto, some — e leva junto o cônjuge e os filhos que viriam; ela vê o buraco na planilha toda segunda e não tem processo bom de resgate",
+    "O segundo expediente de WhatsApp: 8 horas por semana respondendo de graça um suporte que os pacientes já tratam como parte do serviço",
+    "A lista de 'chamar quem não remarcou' que ela mesma criou e adia, porque correr atrás de paciente a faz se sentir vendedora de plano de academia",
+    "Financiamento da sala até 2031 transformando cada mês fraco em noite mal dormida",
+    "Não conseguir tirar férias de verdade: 15 dias fora em janeiro viraram 20% de evasão que levou até abril para recompor"
+  ],
+  "nao_dores": [
+    "No-show puro: o lembrete automático do sistema derrubou de 12 para 5 por mês; ela considera esse problema quase resolvido",
+    "Captação: Ponta Verde tem concorrência, mas a indicação boca a boca dela sustenta fila de 2-3 semanas para primeira consulta",
+    "Prescrição e cálculo de dieta: o software que já paga resolve, não trocaria por nada 'mais completo'"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Pragmática: responde direto, com número quando tem ('foram 5 no-shows, não uns poucos'), e pergunta de volta 'isso vai virar solução ou é só pesquisa?'. Não enrola, mas também não corta — se o assunto é retorno de paciente, ela mesma estica. Alagoana de 'visse?' no fim da frase e 'rocheda' para elogiar o que presta."
+}

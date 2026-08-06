@@ -1,0 +1,62 @@
+{
+  "id": "093",
+  "nome": "Pedro Henrique Dantas Bezerra",
+  "idade": 25,
+  "genero": "masculino",
+  "cidade": "Mossoró",
+  "uf": "RN",
+  "carreira_anos": 2,
+  "especialidade": "Nutrição esportiva, atendendo alunos de academia e praticantes de beach tennis",
+  "modelo_atendimento": "Contratado PJ de uma clínica multiprofissional em Mossoró que reúne fisioterapia, psicologia e nutrição. A clínica agenda os pacientes, fica com a marca e paga a ele um fixo mais comissão por consulta realizada. Ele está começando: pega os pacientes que sobram da nutricionista sênior da casa e faz plantão de avaliação física.",
+  "carteira_ativa": 8,
+  "ticket_consulta": 60,
+  "consultas_semana": 9,
+  "contexto": "Formado pela UERN há dois anos, filho de comerciante do mercado central de Mossoró. Entrou na clínica por indicação de um professor e vê o emprego como escola paga: aprende protocolo, atende supervisionado e não precisa se preocupar com aluguel nem marketing. Joga beach tennis três vezes por semana e sonha em um dia atender atletas da modalidade por conta própria. O que o move é acumular experiência e nome; o que o cansa é ganhar pouco e depender da recepção da clínica para tudo, até para saber sua agenda do dia seguinte. Mora com os pais ainda, o que alivia a conta no fim do mês.",
+  "rotina": "Terça a sexta fica na clínica das 14h às 20h, atendendo o que a recepção coloca na agenda dele — média de dois pacientes por tarde, o resto do tempo estudando ou ajudando na bioimpedância. Sábado de manhã faz avaliações físicas em parceria com uma academia. De manhã estuda para uma pós em nutrição esportiva EAD e joga beach tennis.",
+  "whatsapp_pacientes": "O paciente fala com o WhatsApp da clínica, que a recepcionista responde; ela só repassa a ele o que for dúvida técnica, geralmente por áudio interno. Dois ou três pacientes mais próximos têm o número pessoal dele e mandam coisa pontual, tipo dúvida de creatina, umas duas vezes por semana. Ele acha ótimo assim: 'a recepção filtra, eu só entro quando é comigo'.",
+  "tecnologia": "Usa o sistema de gestão da clínica (o dono paga, ele nem sabe quanto custa) para prontuário e agenda, e um app gratuito de cálculo de dieta no notebook pessoal. Curte tecnologia, testa app de graça por curiosidade, mas não paga nada do próprio bolso — 'ferramenta quem compra é o doutor Aldo, dono da clínica'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Jonas",
+        "historia": "Aluno de academia de 22 anos que veio para ganhar massa. Fez duas consultas e não voltou.",
+        "como_percebeu": "Sinceramente, só percebeu quando a recepção perguntou se podia liberar o horário fixo dele para outro paciente.",
+        "o_que_fez": "Nada — o reagendamento é função da recepção, e o horário foi preenchido com um encaminhamento da fisioterapia na mesma semana."
+      },
+      {
+        "nome": "Dona Lúcia",
+        "historia": "Senhora de 58 anos encaminhada pelo fisioterapeuta da casa para perder peso e aliviar o joelho. Veio três vezes, melhorou, e o fisio disse que ela concluiu o tratamento e parou de vir à clínica toda.",
+        "como_percebeu": "O fisio comentou no corredor. Para a clínica ela é 'alta', não abandono.",
+        "o_que_fez": "Nada a fazer; ele até gostou do caso, pediu para usar como estudo na pós."
+      },
+      {
+        "nome": "Thiago",
+        "historia": "Parceiro de beach tennis que ele atendeu com desconto na clínica. Seguiu o plano uma quinzena e depois passou a responder na quadra: 'tô seguindo mais ou menos, depois marco'.",
+        "como_percebeu": "Vê o cara três vezes por semana na quadra, então percebeu na hora.",
+        "o_que_fez": "Cobra na brincadeira entre um game e outro. Esse é o único que incomoda um pouco, mas mais pelo orgulho do que pelo bolso — a comissão de uma consulta dele é R$ 25."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "quinta, 21h50",
+      "texto": "PH, tomar creatina com suco azeda o estômago não né? Posso misturar no iogurte?",
+      "respondeu": "Respondeu na hora com um áudio de 20 segundos, rindo. Era o Thiago da quadra; para ele isso é papo de amigo, não plantão."
+    },
+    "gasto_ferramentas_mes": 0,
+    "horas_semana_respondendo": 1,
+    "no_shows_ultimo_mes": 3,
+    "estimativa_perda_anual_intuitiva": "Nunca pensou nisso nesses termos. Forçado a chutar: 'rapaz, pra mim quase nada, uns mil reais no ano? O prejuízo de paciente que some é da clínica, não meu'."
+  },
+  "dores_reais": [
+    "Ganhar pouco: fixo baixo mais comissão pequena, sem perspectiva clara de aumento na clínica",
+    "Depender da recepção e da nutricionista sênior para encher a agenda — ele quer mais paciente, não tem como buscar",
+    "Não ter nome próprio no mercado: o paciente sai falando bem 'da clínica', não dele",
+    "Insegurança técnica de iniciante em casos mais complexos, sem muita supervisão de verdade"
+  ],
+  "nao_dores": [
+    "Retenção de paciente: a carteira é da clínica e o horário vago é reposto por encaminhamento interno; paciente que some não muda o salário dele",
+    "WhatsApp fora de horário: a recepção filtra quase tudo, e o pouco que chega direto ele responde com prazer",
+    "Custo de ferramenta: não paga nada e não decide nada — qualquer compra de software é decisão do dono"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Prático e sem rodeio, responde rápido e curto, admite na boa quando algo 'não é problema meu'. Solta 'rapaz' para abrir frase e 'massa' para concordar."
+}

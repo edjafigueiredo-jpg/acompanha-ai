@@ -1,0 +1,62 @@
+{
+  "id": "046",
+  "nome": "Thaís Camargo Peixoto",
+  "idade": 27,
+  "genero": "feminino",
+  "cidade": "Rio Verde",
+  "uf": "GO",
+  "carreira_anos": 4,
+  "especialidade": "Emagrecimento e reeducação alimentar online, com pegada de vida real do interior",
+  "modelo_atendimento": "Atende 100% online de Rio Verde, captando pelo Instagram (11 mil seguidores, muita gente do agro e de cidades da região). Vende consulta avulsa e um acompanhamento mensal com retorno quinzenal por vídeo. A renda é só disso; o noivo, que trabalha numa trading de grãos, segura as contas maiores enquanto ela cresce.",
+  "carteira_ativa": 44,
+  "ticket_consulta": 160,
+  "consultas_semana": 22,
+  "contexto": "Formada na UniRV, tentou consultório físico por um ano numa galeria do centro e desistiu: aluguel comia tudo e Rio Verde tem nutricionista a três por esquina. Migrou para o online em 2023 e a coisa andou — hoje atende gente de Jataí, Mineiros, Santa Helena e até uma brasileira em Portugal. Noiva, casamento marcado para o ano que vem, e a planilha do casamento disputa espaço mental com a planilha dos pacientes. O que a move é provar (para a família, que queria que ela fizesse concurso) que dá para viver de nutrição. O que a cansa é a roda de conteúdo: sente que virou meio nutricionista, meio criadora de conteúdo, e desconfia de toda 'fórmula mágica de escala' que os gurus vendem.",
+  "rotina": "Atende de segunda a sexta das 8h às 12h e das 15h às 19h, com retornos quinzenais de 20 minutos espremidos entre consultas cheias. Grava conteúdo terça e quinta à tarde. Sábado de manhã monta planos; sábado à tarde é de provas de buffet e fornecedor de casamento. Academia às 6h30, religiosamente.",
+  "whatsapp_pacientes": "WhatsApp Business com etiquetas coloridas por status de paciente — sistema dela, manual. Responde ela mesma, em dois blocos (meio-dia e fim da tarde), mas confessa que espia fora de hora. As mensagens chegam a noite toda: foto de marmita, 'posso trocar arroz por mandioca?', desabafo de sábado depois da pizza. Ela acha que responder faz parte do acompanhamento mensal que vendeu — mas nota que os pacientes que mais mandam mensagem não são os que mais renovam, e isso a intriga.",
+  "tecnologia": "Google Agenda, planos no Canva (bonitos, ela faz questão), pagamento por Pix com controle numa planilha, e as etiquetas do WhatsApp como CRM improvisado. Paga R$ 27/mês só do Canva Pro. Já testou período grátis de dois sistemas de nutrição e largou os dois antes de pagar: 'muito campo pra preencher, e no fim eu voltava pro meu jeito'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Gleice",
+        "historia": "Funcionária de frigorífico em turno, perdeu 6 kg em dois meses, começou a faltar retorno quando mudou de turno e o horário das consultas parou de encaixar.",
+        "como_percebeu": "A etiqueta laranja de 'remarcar' dela ficou parada três semanas no WhatsApp até a Thaís notar rolando a lista.",
+        "o_que_fez": "Ofereceu retorno às 21h, fora do padrão dela. A Gleice veio uma vez nesse horário e depois sumiu de vez. A Thaís ficou sem saber se o problema era horário mesmo ou desculpa."
+      },
+      {
+        "nome": "Ademir",
+        "historia": "Homem de 52 anos, mandado pela esposa, diabetes recém-diagnosticada. Pagou três meses adiantado e desapareceu das consultas — mas continuou pagando até o pacote acabar.",
+        "como_percebeu": "Percebeu na hora, retornos quinzenais furados em sequência — mas o pagamento adiantado anestesiou a urgência de correr atrás.",
+        "o_que_fez": "Mandou mensagens, ele respondia 'semana que vem eu volto, doutora'. Nunca voltou. Ela guarda esse caso como lição: pagamento adiantado sem presença não é retenção."
+      },
+      {
+        "nome": "Isadora",
+        "historia": "Estudante de 22 anos que fechou o mensal na empolgação de janeiro, veio duas consultas e sumiu quando a fatura do cartão virou.",
+        "como_percebeu": "Pediu para 'pausar um mês' por mensagem — que na experiência da Thaís é o atestado de óbito do acompanhamento.",
+        "o_que_fez": "Aceitou a pausa e criou um lembrete no celular para chamar em 30 dias. O lembrete tocou num dia cheio, ela adiou, e a Isadora nunca mais foi chamada."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sexta-feira, 22h30",
+      "texto": "Thata me responde amanhã cedo mas anota aí: churrasco do serviço do Fábio amanhã, eu como o quê pra não estragar tudo?? kkk socorro",
+      "respondeu": "Viu na hora, respondeu sábado 7h40 com um esqueminha de prioridades para churrasco que ela já tem pronto nas notas do celular, de tanto que essa pergunta se repete."
+    },
+    "gasto_ferramentas_mes": 27,
+    "horas_semana_respondendo": 7,
+    "no_shows_ultimo_mes": 5,
+    "estimativa_perda_anual_intuitiva": "'Nunca calculei de verdade... mas se uns 3 por mês não renovam quando era pra renovar, a R$ 160... uns 15, 20 mil no ano? Nossa, falando em voz alta é quase o meu buffet do casamento. Que ódio.'"
+  },
+  "dores_reais": [
+    "A renovação mensal que não acontece: paciente empolga, esfria e escorre entre os dedos, e o sistema de etiquetas dela não avisa a tempo",
+    "A esteira de conteúdo: sem postar, o direct seca; postando, sobra menos energia para quem já é paciente",
+    "Retorno quinzenal de 20 minutos que vira sessão de desculpas do paciente — ela sai drenada e sem saber se aquilo retém alguém",
+    "Cobrar renovação por mensagem sem parecer cobradora — ela reescreve a mensagem três vezes e às vezes não manda"
+  ],
+  "nao_dores": [
+    "Consultório físico e custos fixos: já teve, já desistiu, e não sente falta nenhuma — vendedor que oferece 'solução para clínica' erra o alvo",
+    "Concorrência de preço local: o online tirou ela da briga das nutricionistas de galeria de Rio Verde; ela compete por nicho, não por preço",
+    "Prescrição sofisticada: os planos no Canva resolvem, os pacientes elogiam, e ela não sente falta de software de cálculo dietético"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Cética na medida: participa, mas testa o entrevistador ('isso aí funciona pra quem atende online ou é papo pra consultório?'), e desmonta rapidamente qualquer resposta genérica. Já viu muita promessa de guru e avisa que viu. Tiques: o 'uai' goiano escapa quando se surpreende, e fecha raciocínio com 'é... por aí'."
+}

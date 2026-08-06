@@ -1,0 +1,63 @@
+{
+  "id": "019",
+  "nome": "Rodrigo Bertolini Sampaio",
+  "idade": 35,
+  "genero": "masculino",
+  "cidade": "Ribeirão Preto",
+  "uf": "SP",
+  "carreira_anos": 10,
+  "especialidade": "Nutrição esportiva: corredores amadores, crossfiteiros e atletas de base do interior paulista",
+  "modelo_atendimento": "Vende quase só o 'trimestre esportivo': R$ 1.350 por três meses com avaliação, plano periodizado junto com o calendário de provas e suporte por WhatsApp incluso. Atende numa sala dentro de um box de CrossFit na zona Sul de Ribeirão Preto, com parte dos acompanhamentos online. A renda vem das renovações trimestrais mais dois contratos fixos com equipes de base (um time de futebol júnior e uma assessoria de corrida) que pagam valor mensal fechado.",
+  "carteira_ativa": 26,
+  "ticket_consulta": 250,
+  "consultas_semana": 13,
+  "contexto": "Rodrigo jogou futebol de base até os 18, não vingou, e foi para a nutrição pela porta do vestiário. Formado na Unaerp em 2016, construiu o nome dentro dos boxes de CrossFit da cidade. Casado com uma fisioterapeuta, sem filhos por enquanto, e ele mesmo treina para maratona — cliente e vitrine do próprio método. Pensa o consultório como negócio: sabe seu MRR de cabeça, sabe que renovação custa menos que cliente novo. O que o move é entregar resultado cronometrável: prova concluída, PR batido. O que o cansa é a sazonalidade do esporte amador — depois da prova-alvo o atleta 'tira férias' da nutrição e metade não renova — e o WhatsApp incluso que ele mesmo prometeu como diferencial e hoje come as noites de terça e quinta.",
+  "rotina": "Atende segunda, quarta e sexta das 7h às 12h no box (o esportista gosta de horário antes do trabalho) e terça e quinta à tarde faz os onlines e as visitas às equipes. Treina todo dia às 5h50. Responde WhatsApp em dois blocos, 12h30 e 20h, e estoura o bloco da noite com frequência. Domingo de manhã é prova ou treino longo; à tarde, churrasco e planilha da semana.",
+  "whatsapp_pacientes": "Business, com mensagens rápidas configuradas para as perguntas repetidas (o que comer pré-treino, álcool no fim de semana, whey ou comida). Só ele responde. O suporte está no contrato do trimestre e ele trata como produto: 'é o que justifica meu preço contra o nutri que cobra 150 a consulta avulsa'. O incômodo dele não é filosófico, é operacional: nas semanas de pico de provas chegam 60, 70 mensagens por dia e ele responde dirigindo, na fila do mercado, no sofá — a esposa já deu ultimato sobre o celular no jantar.",
+  "tecnologia": "Paga um software de avaliação física e prescrição esportiva (R$ 94 por mês) e usa Google Agenda, Strava para acompanhar os treinos dos atletas e uma planilha de renovações com data de vencimento de cada trimestre e status (verde, amarelo, vermelho) que ele revisa toda segunda. Adora tecnologia que economiza tempo, ignora a que dá trabalho: 'ferramenta pra mim tem que se pagar em hora ou em renovação'.",
+  "fatos_privados": {
+    "pacientes_sumidos": [
+      {
+        "nome": "Thiago",
+        "historia": "Crossfiteiro de 32 anos, dois trimestres seguidos, evoluiu muito, competiu no campeonato interno do box e depois entrou na 'off-season mental': parou de treinar, parou de responder e deixou o trimestre vencer.",
+        "como_percebeu": "A linha dele ficou vermelha na planilha de renovação e o Strava dele estava parado havia três semanas — Rodrigo cruza as duas coisas.",
+        "o_que_fez": "Mandou a mensagem padrão de renovação e depois uma pessoal. Thiago respondeu 'esse tri não vai rolar, mano, depois te chamo'. Rodrigo anotou para reabordar em janeiro, época de promessa de ano novo, e reabordou: nada ainda."
+      },
+      {
+        "nome": "Camila Beatriz",
+        "historia": "Corredora amadora que fechou o trimestre visando os 21 km da Ribeirão. Fez a prova, bateu a meta, postou agradecendo ele nos stories — e não renovou. Ciclo clássico: objetivo cumprido, motivação zerada.",
+        "como_percebeu": "Na própria semana pós-prova, quando mandou a proposta de renovação com plano de 'próximo objetivo' e recebeu um 'vou dar uma pausa, você é demais!'.",
+        "o_que_fez": "Agradeceu, pediu a indicação de uma amiga (conseguiu) e registrou o padrão: ele perde o cliente no pico da satisfação, e acha isso a coisa mais irônica do negócio dele."
+      },
+      {
+        "nome": "Base do time júnior",
+        "historia": "Não é bem um sumiço de paciente, mas dói igual: a diretoria do time júnior atrasou três mensalidades do contrato fixo e os meninos ficaram dois meses sem acompanhamento, sem ninguém avisar nada oficialmente.",
+        "como_percebeu": "Pelo extrato bancário e pelo silêncio do coordenador no WhatsApp.",
+        "o_que_fez": "Foi pessoalmente ao clube, renegociou, parcelou a dívida e manteve o contrato — mas aprendeu que contrato fixo também 'some', só que em boleto."
+      }
+    ],
+    "ultima_msg_fora_horario": {
+      "quando": "sábado, 6h40",
+      "texto": "Rodrigo bom dia! Prova daqui 1h30 e o café da manhã do hotel só tem pão de queijo e bolo, o que eu como?? kkkk socorro",
+      "respondeu": "Respondeu em cinco minutos, do próprio treino longo: 'pão de queijo tá ótimo, 2 unidades, água e vai'. Dia de prova ele considera plantão legítimo, faz parte do que vende. O que o irrita é a mesma pergunta na terça à noite qualquer."
+    },
+    "gasto_ferramentas_mes": 94,
+    "horas_semana_respondendo": 7,
+    "no_shows_ultimo_mes": 2,
+    "estimativa_perda_anual_intuitiva": "Isso eu sei quase de cabeça: minha renovação tá em uns 55%. Se eu subisse pra 70%, que é factível, são uns quatro trimestres a mais por ano só de quem já é cliente... uns R$ 16 mil na mesa. O problema é que eu não sei o que faria esses 15% renovarem."
+  },
+  "dores_reais": [
+    "Renovação em 55%: o cliente some no pico da satisfação (pós-prova) ou no vale da preguiça (off-season), e a única arma dele é mensagem manual guiada por planilha",
+    "As 7 horas semanais de WhatsApp incluso, concentradas à noite, que já viraram assunto de DR em casa",
+    "Sazonalidade: janeiro e agosto lotam, junho e dezembro esvaziam, e o caixa dele respira nesse sanfonado",
+    "Não conseguir ver quem está 'esfriando' durante o trimestre: quando a planilha fica vermelha, o cara já decidiu não renovar há um mês",
+    "Teto de agenda: para crescer teria que contratar outro nutri ou subir preço, e ele não se decidiu"
+  ],
+  "nao_dores": [
+    "Captação: os boxes e a assessoria de corrida geram fila constante de interessados; ele converte bem e recusa perfil que não é esportivo — mais lead não resolve nada para ele",
+    "Montar dieta rápido: o software de R$ 94 e os templates dele já deixam a prescrição redonda; prometer 'plano em 3 minutos' não o impressiona",
+    "Autoridade e concorrência: em Ribeirão ele é o nome do nicho crossfit/corrida; nutri generalista baratinho não disputa o cliente dele"
+  ],
+  "cicatriz_ferramenta": null,
+  "postura_entrevista": "Pragmático: chega com fone de ouvido entre um compromisso e outro, pede a duração da entrevista de cara e responde em bullet points falados — 'primeiro... segundo...'. Dá números sem rodeio e admite o que não sabe. Tiques do interior paulista: 'mano' e 'daí cê entende' no meio das frases, e o 'ó' paulistano antes de explicar qualquer coisa."
+}
