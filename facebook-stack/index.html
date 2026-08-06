@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A stack do Facebook | 2004 → 2026</title>
+<meta name="description" content="Vinte e dois anos de decisões de engenharia do Facebook/Meta: do LAMP num quarto de dormitório ao silício próprio e aos datacenters de gigawatt. Com fontes primárias e os mitos corrigidos.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231D4ED8'/%3E%3Crect x='7' y='9' width='18' height='3.2' rx='1.6' fill='%23F7F9FC'/%3E%3Crect x='7' y='14.4' width='13' height='3.2' rx='1.6' fill='%23F7F9FC'/%3E%3Crect x='7' y='19.8' width='8' height='3.2' rx='1.6' fill='%23F7F9FC'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+  /* ==================== 1. TOKENS — TEMA CLARO ==================== */
+  :root{
+    --bg:#F7F9FC; --surface:#FFFFFF; --surface2:#EDF1F7;
+    --ink:#111827; --ink-soft:#3F4A5A; --ink-faint:#5B6675;
+    --brand:#0B3D91; --brand-mid:#1D4ED8;
+    --accent:#1D4ED8; --accent-hover:#1E40AF; --accent-ink:#FFFFFF;
+    --ok:#166534; --warn:#B45309; --dead:#9B1C1C;
+    --line:#DDE3ED; --line-forte:#C3CDDC;
+    --shadow:0 10px 30px rgba(17,24,39,.08);
+    --radius:14px;
+  }
+  /* ==================== 2. TOKENS — TEMA ESCURO ==================== */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0D1117; --surface:#151B24; --surface2:#1B2330;
+      --ink:#E6EDF3; --ink-soft:#AEBAC9; --ink-faint:#8B98A8;
+      --brand:#93B4FF; --brand-mid:#7BA3FF;
+      --accent:#3B82F6; --accent-hover:#60A5FA; --accent-ink:#0A1020;
+      --ok:#4ADE80; --warn:#F5B04C; --dead:#F98A8A;
+      --line:#26303D; --line-forte:#3A4657;
+      --shadow:0 10px 30px rgba(0,0,0,.40);
+    }
+  }
+
+  /* ==================== 3. RESET E BASE ==================== */
+  *{margin:0;padding:0;box-sizing:border-box}
+  [hidden]{display:none!important}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.6; font-size:1.0625rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{line-height:1.2;color:var(--ink);text-wrap:balance}
+  h1{font-size:clamp(1.9rem,4.6vw,3rem);font-weight:800;letter-spacing:-.025em}
+  h2{font-size:clamp(1.5rem,3.2vw,2.1rem);font-weight:800;letter-spacing:-.02em;margin-bottom:.75rem}
+  h3{font-size:clamp(1.15rem,2.4vw,1.4rem);font-weight:700}
+  p{color:var(--ink-soft)}
+  strong,b{color:var(--ink);font-weight:700}
+  a{color:var(--brand-mid)}
+  a:hover{color:var(--accent-hover)}
+  code,kbd{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.86em;background:var(--surface2);border:1px solid var(--line);
+    border-radius:5px;padding:.1em .38em;color:var(--ink);
+  }
+
+  /* ==================== 4. LAYOUT ==================== */
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .pular{
+    position:absolute;left:-9999px;top:0;z-index:100;
+    background:var(--accent);color:var(--accent-ink);padding:12px 20px;
+    border-radius:0 0 8px 0;font-weight:700;text-decoration:none;
+  }
+  .pular:focus{left:0}
+  header{border-bottom:1px solid var(--line);background:var(--surface)}
+  .marca{display:flex;align-items:center;gap:12px;padding:16px 0}
+  .marca-logo{
+    width:38px;height:38px;border-radius:9px;flex:none;background:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .marca-logo span{display:block;background:var(--accent-ink);border-radius:2px;height:3px}
+  .marca-logo i{display:flex;flex-direction:column;gap:3.5px;width:20px}
+  .marca-logo i span:nth-child(2){width:70%}
+  .marca-logo i span:nth-child(3){width:42%}
+  .marca-txt b{display:block;font-size:1.02rem;font-weight:800;letter-spacing:-.02em;line-height:1.25}
+  .marca-txt small{display:block;font-size:.78rem;color:var(--ink-faint);line-height:1.3}
+  .eyebrow{
+    display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--brand-mid);margin-bottom:.7rem;
+  }
+  .sub{font-size:1.08rem;max-width:44em}
+  .src{font-size:.74rem;color:var(--ink-faint);line-height:1.45}
+  .src a{color:var(--ink-faint);text-decoration:underline}
+  .src a:hover{color:var(--brand-mid)}
+
+  /* ==================== 5. COMPONENTES ==================== */
+  .btn-ghost{
+    display:inline-block;color:var(--ink);font-weight:600;font-size:.92rem;
+    text-decoration:none;text-align:center;padding:11px 18px;min-height:44px;
+    border-radius:999px;border:1px solid var(--line-forte);background:transparent;cursor:pointer;
+  }
+  .btn-ghost:hover{border-color:var(--brand-mid);color:var(--brand-mid)}
+  .link-btn{
+    background:none;border:0;padding:0;font:inherit;color:var(--brand-mid);
+    text-decoration:underline;cursor:pointer;
+  }
+  .tag{
+    display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.04em;
+    text-transform:uppercase;padding:3px 9px;border-radius:999px;
+    border:1px solid currentColor;white-space:nowrap;
+  }
+  .tag-aberta{color:var(--ok)}
+  .tag-interna{color:var(--warn)}
+  .tag-descontinuada{color:var(--dead)}
+  .vis-oculto{
+    position:absolute!important;width:1px;height:1px;overflow:hidden;
+    clip-path:inset(50%);white-space:nowrap;
+  }
+
+  /* ==================== 6. ABAS ==================== */
+  .tablist-wrap{display:none;border-bottom:1px solid var(--line);background:var(--surface)}
+  .js .tablist-wrap{display:block;position:sticky;top:0;z-index:50}
+  .tablist{display:flex;gap:4px;max-width:1080px;margin:0 auto;padding:0 20px;overflow-x:auto}
+  .tab{
+    appearance:none;background:none;border:0;border-bottom:3px solid transparent;
+    font:inherit;font-size:.96rem;font-weight:600;color:var(--ink-faint);
+    padding:14px 14px 11px;min-height:44px;cursor:pointer;white-space:nowrap;
+    transition:color .15s ease,border-color .15s ease;
+  }
+  .tab:hover{color:var(--ink)}
+  .tab[aria-selected="true"]{color:var(--brand-mid);border-bottom-color:var(--brand-mid)}
+  .painel{outline:none}
+  .painel:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+  /* Sem JS os dois painéis viram capítulos empilhados. Com JS, o 2º some até a IIFE rodar. */
+  .js .abas:not(.pronto) .painel + .painel{display:none}
+  .painel + .painel{border-top:1px solid var(--line);margin-top:56px;padding-top:56px}
+  .js .painel + .painel{border-top:0;margin-top:0;padding-top:0}
+  .js .painel-titulo{
+    position:absolute!important;width:1px;height:1px;overflow:hidden;
+    clip-path:inset(50%);white-space:nowrap;
+  }
+
+  /* ==================== 7. HERO E TESE ==================== */
+  .hero{padding:56px 0 20px}
+  .hero h1{margin-bottom:1rem}
+  .hero h1 em{font-style:normal;color:var(--brand-mid)}
+  .hero .sub{font-size:1.15rem}
+  .tese{padding:28px 0 56px}
+  .tese-grid{display:grid;gap:18px;grid-template-columns:1fr;margin-top:1.6rem}
+  @media(min-width:760px){ .tese-grid{grid-template-columns:repeat(3,1fr)} }
+  .tese-card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;box-shadow:var(--shadow);
+  }
+  .tese-card b{display:block;font-size:2rem;font-weight:800;color:var(--brand-mid);
+    letter-spacing:-.03em;line-height:1.05;font-variant-numeric:tabular-nums}
+  .tese-card p{font-size:.93rem;margin-top:.4rem}
+
+  /* ==================== 8. LINHA DO TEMPO DAS ERAS ==================== */
+  .eras{padding:56px 0;background:var(--surface2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .linha{list-style:none;position:relative;padding-left:36px;margin-top:2.4rem}
+  .linha::before{
+    content:"";position:absolute;left:9px;top:10px;bottom:10px;width:2px;
+    background:linear-gradient(var(--line-forte),var(--brand-mid) 12%,var(--brand-mid) 88%,var(--line-forte));
+  }
+  .era{position:relative;padding-bottom:48px}
+  .era:last-child{padding-bottom:0}
+  .era::before{
+    content:"";position:absolute;left:-36px;top:5px;width:20px;height:20px;
+    border-radius:50%;background:var(--bg);border:3px solid var(--brand-mid);
+  }
+  @media (forced-colors: active){ .era::before{border-color:CanvasText} }
+  .era-periodo{
+    display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.06em;
+    color:var(--accent-ink);background:var(--brand-mid);padding:3px 10px;
+    border-radius:999px;vertical-align:middle;margin-left:8px;
+  }
+  .era-lede{font-size:1.02rem;margin:.7rem 0 .9rem;max-width:46em}
+  .era p + p{margin-top:.7rem}
+  .era-marcos{list-style:none;margin-top:1rem;display:flex;flex-wrap:wrap;gap:8px}
+  .era-marcos li{
+    font-size:.8rem;font-weight:600;background:var(--surface);color:var(--ink-soft);
+    border:1px solid var(--line);border-radius:8px;padding:5px 10px;
+  }
+  .era-saida{margin-top:1rem;font-size:.9rem}
+
+  /* ==================== 9. DEFASAGEM CRIAR → ABRIR ==================== */
+  .gaps-sec{padding:56px 0}
+  .gaps{list-style:none;margin-top:1.8rem;display:flex;flex-direction:column;gap:14px}
+  .gap-item{
+    display:grid;gap:5px 14px;align-items:center;
+    grid-template-columns:1fr auto;grid-template-areas:"nome num" "viz viz";
+  }
+  @media(min-width:640px){
+    .gap-item{grid-template-columns:8.5rem 1fr 10.5rem;grid-template-areas:"nome viz num"}
+  }
+  .gap-nome{grid-area:nome;font-weight:700;font-size:.95rem}
+  .gap-num{grid-area:num;font-size:.82rem;color:var(--ink-faint);text-align:right}
+  .gap-num b{color:var(--ink-soft)}
+  .gap-viz{
+    grid-area:viz;position:relative;display:block;height:20px;
+    background:var(--surface2);border-radius:999px;border:1px solid var(--line);
+  }
+  .gap-barra{
+    position:absolute;top:50%;transform:translateY(-50%);height:6px;border-radius:999px;
+    left:var(--i);width:var(--w);background:var(--brand-mid);
+  }
+  .gap-barra::before,.gap-barra::after{
+    content:"";position:absolute;top:50%;transform:translate(-50%,-50%);
+    width:13px;height:13px;border-radius:50%;
+  }
+  .gap-barra::before{left:0;background:var(--bg);border:3px solid var(--brand-mid)}
+  .gap-barra::after{left:100%;background:var(--brand-mid);border:3px solid var(--brand-mid)}
+  .gap-barra--nunca{
+    background:repeating-linear-gradient(90deg,var(--ink-faint) 0 4px,transparent 4px 9px);
+  }
+  .gap-barra--nunca::after{display:none}
+  .gaps-eixo{
+    display:flex;justify-content:space-between;margin-top:10px;
+    font-size:.72rem;color:var(--ink-faint);font-variant-numeric:tabular-nums;
+  }
+  .gaps-legenda{
+    display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:1.4rem;
+    font-size:.8rem;color:var(--ink-faint);
+  }
+  .gaps-legenda span{display:flex;align-items:center;gap:7px}
+  .gaps-legenda i{width:13px;height:13px;border-radius:50%;flex:none}
+  .lg-criada{background:var(--bg);border:3px solid var(--brand-mid)}
+  .lg-aberta{background:var(--brand-mid);border:3px solid var(--brand-mid)}
+  .lg-nunca{
+    width:26px;height:6px;border-radius:999px;
+    background:repeating-linear-gradient(90deg,var(--ink-faint) 0 4px,transparent 4px 9px);
+  }
+
+  /* ==================== 10. MITOS ==================== */
+  .mitos{padding:56px 0;background:var(--surface2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .mitos-lista{list-style:none;margin-top:1.8rem;display:grid;gap:14px;grid-template-columns:1fr}
+  @media(min-width:760px){ .mitos-lista{grid-template-columns:repeat(2,1fr)} }
+  .mito{
+    background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--dead);
+    border-radius:var(--radius);padding:18px 20px;
+  }
+  .mito-falso{font-weight:700;font-size:.95rem;color:var(--ink);display:block;margin-bottom:.4rem}
+  .mito-falso::before{content:"✗ ";color:var(--dead);font-weight:800}
+  .mito p{font-size:.9rem}
+  .mito p::before{content:"✓ ";color:var(--ok);font-weight:800}
+
+  /* ==================== 11. FILTROS ==================== */
+  .catalogo{padding:56px 0}
+  .filtros,.f-contagem{display:none}
+  .js .filtros{display:block}
+  .js .f-contagem{display:block}
+  .filtros{
+    margin-top:1.8rem;background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);
+  }
+  .f-busca label{display:block;font-size:.85rem;font-weight:700;margin-bottom:.35rem}
+  .f-busca input{
+    width:100%;padding:12px 14px;font-size:1rem;font-family:inherit;color:var(--ink);
+    background:var(--bg);border:1px solid var(--line-forte);border-radius:9px;min-height:44px;
+  }
+  .f-grupo{border:0;margin-top:16px}
+  .f-grupo legend{font-size:.85rem;font-weight:700;color:var(--ink);margin-bottom:.5rem;padding:0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{position:relative;display:inline-flex}
+  .chip input{position:absolute;opacity:0;width:1px;height:1px}
+  .chip span{
+    display:inline-flex;align-items:center;min-height:38px;padding:6px 14px;
+    font-size:.85rem;font-weight:600;color:var(--ink-soft);background:var(--bg);
+    border:1px solid var(--line-forte);border-radius:999px;cursor:pointer;
+    transition:background .15s ease,color .15s ease,border-color .15s ease;
+  }
+  .chip span:hover{border-color:var(--brand-mid);color:var(--brand-mid)}
+  .chip input:checked + span{
+    background:var(--brand-mid);border-color:var(--brand-mid);color:var(--accent-ink);
+  }
+  .chip input:focus-visible + span{outline:2px solid var(--accent);outline-offset:2px}
+  @media (forced-colors: active){
+    .chip input:checked + span{background:Highlight;color:HighlightText;border-color:Highlight}
+  }
+  .f-dica{font-size:.78rem;color:var(--ink-faint);margin-top:.7rem;max-width:52em;line-height:1.5}
+  .f-dica b{color:var(--ink-soft)}
+  .f-limpar{margin-top:16px}
+  .f-contagem{
+    margin-top:1.2rem;font-size:.88rem;color:var(--ink-faint);
+    font-variant-numeric:tabular-nums;
+  }
+  .f-contagem b{color:var(--ink);font-size:1rem}
+  .f-vazio{
+    margin-top:2rem;padding:36px 24px;text-align:center;background:var(--surface);
+    border:1px dashed var(--line-forte);border-radius:var(--radius);
+  }
+
+  /* ==================== 12. CATÁLOGO ==================== */
+  .grade-tech{
+    list-style:none;margin-top:1.2rem;display:grid;gap:16px;grid-template-columns:1fr;
+  }
+  @media(min-width:640px){ .grade-tech{grid-template-columns:repeat(2,1fr)} }
+  @media(min-width:960px){ .grade-tech{grid-template-columns:repeat(3,1fr)} }
+  .tech{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;display:flex;flex-direction:column;gap:.5rem;
+  }
+  .tech-topo{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+  .tech h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em}
+  .tech h3 .anchor{
+    color:var(--line-forte);text-decoration:none;font-weight:400;
+    opacity:0;margin-left:.25rem;
+  }
+  .tech:hover h3 .anchor,.tech h3 .anchor:focus{opacity:1;color:var(--brand-mid)}
+  .tech-anos{
+    font-size:.78rem;font-weight:600;color:var(--ink-faint);
+    font-variant-numeric:tabular-nums;
+  }
+  .tech-desc{font-size:.9rem;line-height:1.55}
+  .tech-meta{
+    display:flex;flex-wrap:wrap;gap:6px 10px;font-size:.75rem;color:var(--ink-faint);
+    margin-top:auto;padding-top:.5rem;
+  }
+  .tech-cat{font-weight:600}
+  .tech .src{margin-top:.35rem}
+  .era-banner{
+    grid-column:1/-1;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line);
+    font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .grade-tech > .era-banner:first-child{margin-top:0;padding-top:0;border-top:0}
+
+  /* ==================== 13. ABA 2 — COMO O SITE FOI FEITO ==================== */
+  .s2-sec{padding:52px 0;border-bottom:1px solid var(--line)}
+  .s2-sec:last-of-type{border-bottom:0}
+  .veredito{
+    display:grid;gap:16px;grid-template-columns:repeat(2,1fr);margin-top:1.8rem;
+  }
+  @media(min-width:760px){ .veredito{grid-template-columns:repeat(4,1fr)} }
+  .ver-card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;text-align:center;
+  }
+  .ver-card b{
+    display:block;font-size:2.2rem;font-weight:800;color:var(--brand-mid);
+    letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums;
+  }
+  .ver-card p{font-size:.86rem;margin-top:.4rem}
+  .tabela-wrap{overflow-x:auto;margin-top:1.6rem;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:.9rem}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:700;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint)}
+  td{color:var(--ink-soft)}
+  td:first-child{color:var(--ink);font-weight:600}
+  .lista-api{list-style:none;margin-top:1.4rem;display:grid;gap:12px;grid-template-columns:1fr}
+  @media(min-width:760px){ .lista-api{grid-template-columns:repeat(2,1fr)} }
+  .lista-api li{
+    background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;
+  }
+  .lista-api b{display:block;font-size:.9rem;margin-bottom:.2rem}
+  .lista-api b code{font-size:.88em}
+  .lista-api p{font-size:.86rem}
+  .naotem{list-style:none;margin-top:1.4rem;display:grid;gap:10px}
+  .naotem li{
+    display:grid;gap:2px 12px;grid-template-columns:1fr;
+    background:var(--surface);border:1px solid var(--line);
+    border-left:4px solid var(--line-forte);border-radius:10px;padding:12px 16px;
+  }
+  @media(min-width:640px){ .naotem li{grid-template-columns:11rem 1fr;align-items:baseline} }
+  .naotem b{font-size:.9rem}
+  .naotem b::before{content:"— ";color:var(--ink-faint)}
+  .naotem span{font-size:.86rem;color:var(--ink-soft)}
+  .checar{
+    margin-top:1.6rem;background:var(--surface);border:1px solid var(--line);
+    border-left:4px solid var(--ok);border-radius:var(--radius);padding:20px 22px;
+  }
+  .checar h3{font-size:1rem;margin-bottom:.5rem}
+  .checar ol{margin:.6rem 0 0 1.2rem;font-size:.9rem;color:var(--ink-soft);line-height:1.75}
+
+  /* ==================== 14. RODAPÉ ==================== */
+  footer{border-top:1px solid var(--line);padding:44px 0 64px;font-size:.85rem;background:var(--surface)}
+  footer h3{font-size:.9rem;margin-bottom:.6rem}
+  footer p{font-size:.85rem}
+  footer p + p{margin-top:.7rem}
+  footer .fine{margin-top:1.8rem;color:var(--ink-faint);font-size:.78rem}
+
+  /* ==================== 15. UTILITÁRIOS, A11Y E IMPRESSÃO ==================== */
+  /* Respiro para a barra de abas fixa não cobrir o alvo de um link direto. */
+  [id]{scroll-margin-top:72px}
+  .js .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+  .js .reveal.vis{opacity:1;transform:none}
+  @media print{
+    .tablist-wrap,.filtros,.f-contagem,.pular{display:none!important}
+    .painel[hidden]{display:block!important}
+    .tech,.mito,.tese-card{break-inside:avoid;box-shadow:none}
+    body{font-size:11pt}
+  }
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header>
+  <div class="wrap marca">
+    <span class="marca-logo" aria-hidden="true"><i><span></span><span></span><span></span></i></span>
+    <span class="marca-txt">
+      <b>A stack do Facebook</b>
+      <small>Vinte e dois anos de decisões de engenharia · 2004 → 2026</small>
+    </span>
+  </div>
+</header>
+
+<main id="conteudo">
+<div class="abas" id="abas">
+
+  <!-- ===== BARRA DE ABAS (escondida sem JS) ===== -->
+  <div class="tablist-wrap">
+    <div role="tablist" aria-label="Seções desta página" class="tablist">
+      <button type="button" role="tab" class="tab" id="tab-stack"
+              aria-controls="painel-stack" aria-selected="true" tabindex="0">A stack do Facebook</button>
+      <button type="button" role="tab" class="tab" id="tab-site"
+              aria-controls="painel-site" aria-selected="false" tabindex="-1">Como este site foi feito</button>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- ===== PAINEL 1 · A STACK DO FACEBOOK                             ===== -->
+  <!-- ===================================================================== -->
+  <div role="tabpanel" class="painel" id="painel-stack" aria-labelledby="tab-stack" tabindex="0" data-aba="stack">
+    <h2 class="painel-titulo">A stack do Facebook</h2>
+
+    <!-- 1.1 Hero + tese -->
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">2004 → 2026</span>
+        <h1>Toda a stack do Facebook é <em>uma dívida técnica sendo paga em público</em>.</h1>
+        <p class="sub">
+          O site nasceu em PHP num quarto de dormitório porque PHP era rápido de escrever, não
+          rápido de executar. Quase tudo que a Meta construiu nos vinte e dois anos seguintes —
+          um compilador, uma máquina virtual, uma linguagem nova, um banco de grafo, um
+          datacenter, um chip — existe para consertar consequências de decisões que já tinham
+          sido tomadas. Esta é a história dessas consequências.
+        </p>
+      </div>
+    </section>
+
+    <section class="tese">
+      <div class="wrap">
+        <div class="tese-grid">
+          <div class="tese-card">
+            <b>~50%</b>
+            <p>da CPU do web tier economizada quando o HipHop passou a compilar PHP para C++, em fevereiro de 2010.</p>
+          </div>
+          <div class="tese-card">
+            <b>1 bi/s</b>
+            <p>de leituras servidas pelo TAO, o banco de grafo que finalmente aposentou o padrão de cache look-aside.</p>
+          </div>
+          <div class="tese-card">
+            <b>8 anos</b>
+            <p>entre adotar o memcached e resolver de verdade o problema que ele criou. Foi a obra mais longa da casa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1.2 Linha do tempo das eras -->
+    <section class="eras" id="eras" aria-labelledby="eras-h">
+      <div class="wrap">
+        <span class="eyebrow">Linha do tempo</span>
+        <h2 id="eras-h">Cinco eras, cinco problemas diferentes</h2>
+        <p class="sub">
+          Cada era começa quando a solução da era anterior vira o gargalo. É um padrão tão
+          regular que dá para prever: resolva o problema no seu nível, e o nível de baixo passa
+          a ser o limite.
+        </p>
+
+        <ol class="linha">
+
+          <li class="era reveal" id="era-1" data-era="1">
+            <h3>LAMP e o primeiro escalonamento <span class="era-periodo">2004–2008</span></h3>
+            <p class="era-lede">
+              Linux, Apache, MySQL e PHP — a stack escolhida por velocidade de escrita, não por
+              capacidade de carga. Tudo desta era é um remendo em cima dessa escolha.
+            </p>
+            <p>
+              Em agosto de 2005 o <strong>memcached</strong> foi instalado nos servidores Apache.
+              Ele não foi inventado ali: é de Brad Fitzpatrick, escrito para o LiveJournal em 2003.
+              A Meta apenas se tornou seu usuário mais agressivo — e descobriu que cachear um grafo
+              social é um problema sem solução limpa, porque o grafo não tem chave de partição.
+              Uma única página estoura em centenas de buscas independentes.
+            </p>
+            <p>
+              O resto da era são serviços nascendo para escapar do PHP: <strong>Thrift</strong>
+              (2006–07) para que o backend pudesse ser poliglota, o <strong>chat em Erlang</strong>
+              (2008) porque conexões persistentes são algo que PHP simplesmente não sabe expressar,
+              e o <strong>Haystack</strong> (2008–09) porque servir bilhões de fotos por NFS gastava
+              três seeks de disco onde deveria gastar um.
+            </p>
+            <p>
+              <strong>Cassandra</strong> e <strong>Hive</strong> também nascem aqui. Nenhum dos dois
+              teve vida longa dentro de casa: o Cassandra foi abandonado em 2010, e o Hive acabou
+              substituído pelo Presto. Os dois viraram infraestrutura de todo mundo, menos de quem
+              os escreveu.
+            </p>
+            <ul class="era-marcos">
+              <li>PHP + MySQL + Apache</li><li>memcached (adotado)</li><li>Thrift</li>
+              <li>Scribe</li><li>Cassandra</li><li>Hive</li><li>Haystack</li><li>Erlang no chat</li>
+            </ul>
+          </li>
+
+          <li class="era reveal" id="era-2" data-era="2">
+            <h3>Reescrever o PHP, inventar o data layer, abrir o hardware <span class="era-periodo">2009–2012</span></h3>
+            <p class="era-lede">
+              A era em que a Meta para de contornar o PHP e vai atacá-lo na raiz — e em que descobre
+              que também precisa projetar os próprios prédios.
+            </p>
+            <p>
+              O <strong>HipHop</strong> (2 de fevereiro de 2010) traduzia PHP para C++, compilava com
+              g++ e produzia um binário único que servia HTTP sozinho, dispensando o Apache.
+              Cortou cerca de metade da CPU do web tier. Mas cobrou um preço venenoso: compilação
+              estática não consegue expressar o dinamismo do PHP, então foi preciso manter o
+              <strong>HPHPi</strong>, um interpretador separado, para desenvolvimento.
+              Os engenheiros passaram a <em>desenvolver num motor e publicar em outro</em> — exatamente
+              a classe de bug que nenhuma revisão de código pega.
+            </p>
+            <p>
+              Dois meses depois do HipHop entrar em produção, um time foi formado para matá-lo. O
+              <strong>HHVM</strong> (anunciado em dezembro de 2011) usava JIT por "tracelets" e no
+              anúncio era <em>mais lento</em> que o compilador estático. Entrou em produção como
+              ferramenta de desenvolvimento e só depois ganhou a corrida: no primeiro trimestre de
+              2013 o facebook.com parou de rodar HipHop compilado.
+            </p>
+            <p>
+              Em paralelo, o <strong>TAO</strong> (iniciado em 2009) enfim resolveu o problema do
+              cache — não otimizando o memcached, mas eliminando o padrão look-aside, em que cada
+              engenheiro de produto tinha que gerenciar dois armazenamentos e escrever invalidação
+              à mão. E o <strong>Open Compute Project</strong> (abril de 2011) publicou o CAD e as
+              especificações elétricas do datacenter de Prineville: PUE de 1,07 contra ~1,5 do que
+              a indústria chamava de melhor prática.
+            </p>
+            <ul class="era-marcos">
+              <li>HipHop for PHP</li><li>HHVM</li><li>XHP</li><li>BigPipe</li><li>TAO</li>
+              <li>Open Compute Project</li><li>RocksDB</li><li>Scuba</li><li>Tupperware</li>
+            </ul>
+          </li>
+
+          <li class="era reveal" id="era-3" data-era="3">
+            <h3>O frontend moderno e a virada mobile <span class="era-periodo">2013–2016</span></h3>
+            <p class="era-lede">
+              Em 11 de setembro de 2012 Zuckerberg disse que apostar em HTML5 tinha sido "o maior
+              erro que cometemos como empresa". Quase tudo desta era sai dessa frase.
+            </p>
+            <p>
+              A reconstrução nativa não foi só "escrever apps nativos". Cada camada teve que ser
+              reinventada. O <strong>GraphQL</strong> — criado em 2012, três anos antes de virar
+              público — é um artefato <em>mobile</em>, não web: existe porque um celular em rede
+              ruim não pode pagar dezenas de idas e voltas nem receber dados que não pediu. O
+              <strong>Buck</strong> (2012) nasceu porque o tempo de build nativo virou o limite da
+              velocidade de iteração.
+            </p>
+            <p>
+              O <strong>React</strong>, aberto em 29 de maio de 2013, tem ascendência direta no
+              <strong>XHP</strong> de 2010: a mesma ideia de componente declarativo com escape
+              automático, movida do servidor para o cliente. A recepção na JSConf foi fria — JSX
+              parecia uma violação da separação de responsabilidades. O que converteu a indústria
+              não foi o React sozinho, e sim o kit que a Meta publicou em volta dele nos seis anos
+              seguintes, cada peça resolvendo um problema que o próprio React criara: Flux para
+              estado, Immutable.js para detecção barata de mudança, Flow para tipos, Jest para
+              teste, Relay para dados, Yarn para dependências.
+            </p>
+            <ul class="era-marcos">
+              <li>React</li><li>Hack</li><li>GraphQL (público)</li><li>React Native</li>
+              <li>Relay</li><li>Flow</li><li>Jest</li><li>Buck</li><li>Presto</li><li>Yarn</li>
+            </ul>
+          </li>
+
+          <li class="era reveal" id="era-4" data-era="4">
+            <h3>Plataforma de ML e infraestrutura de larga escala <span class="era-periodo">2017–2020</span></h3>
+            <p class="era-lede">
+              A Meta chega a 2017 rodando dois frameworks de aprendizado de máquina incompatíveis
+              e sabendo disso. A era é a história dessa consolidação.
+            </p>
+            <p>
+              O <strong>Caffe2</strong> era o framework de produção, rodando em mais de um bilhão de
+              celulares. O <strong>PyTorch</strong>, lançado em janeiro de 2017, era o framework de
+              pesquisa — Python primeiro, grafo definido pela execução, agradável de usar. O
+              <strong>ONNX</strong> (2017, com a Microsoft) foi o remendo diplomático entre os dois.
+              A solução real veio no <strong>PyTorch 1.0</strong> (dezembro de 2018), que absorveu o
+              Caffe2 e juntou pesquisa e produção num artefato só.
+            </p>
+            <p>
+              A Meta venceu a disputa de frameworks contra o TensorFlow não por engenharia de grafos,
+              mas por ser o framework de que os pesquisadores gostavam — e depois instalar capacidade
+              de produção nele.
+            </p>
+            <p>
+              Do lado da infraestrutura, a era é menos celebrada e talvez mais consequente. O
+              <strong>RocksDB</strong> virou o substrato de armazenamento de quase tudo; o
+              <strong>zstd</strong> (2016) acabou sendo o artefato de maior adoção que a empresa já
+              publicou, hoje dentro do kernel Linux e do próprio HTTP; e o <strong>Katran</strong>
+              (2018) moveu o balanceamento de carga para dentro do kernel com eBPF/XDP.
+            </p>
+            <ul class="era-marcos">
+              <li>PyTorch</li><li>ONNX</li><li>FAISS</li><li>Hermes</li><li>Litho</li>
+              <li>zstd</li><li>Katran</li><li>Tectonic</li><li>Velox</li><li>LogDevice</li>
+            </ul>
+          </li>
+
+          <li class="era reveal" id="era-5" data-era="5">
+            <h3>Rust, pesos abertos e silício próprio <span class="era-periodo">2021–2026</span></h3>
+            <p class="era-lede">
+              A era atual anda em duas direções opostas ao mesmo tempo, e é isso que a torna
+              interessante.
+            </p>
+            <p>
+              De um lado, o ferramental interno é reescrito em <strong>Rust</strong> e aberto. A Meta
+              endossou a linguagem para uso em servidor em julho de 2022, e nos quatro anos seguintes
+              quase toda peça central foi refeita: <strong>Sapling</strong> (2022) para controle de
+              versão, <strong>Buck2</strong> (2023) reescrevendo o build system do zero,
+              <strong>Pyrefly</strong> (2025–26) substituindo o verificador de tipos de Python e
+              checando os 20 milhões de linhas do Instagram em cerca de treze segundos. O padrão é
+              sempre o mesmo: uma ferramenta interna vira gargalo de escala, é reescrita em Rust com
+              computação incremental, e depois aberta.
+            </p>
+            <p>
+              Do outro lado, o modelo de fronteira <em>fecha</em>. De fevereiro de 2023 a julho de
+              2024 a Meta construiu a posição mais forte de qualquer laboratório em pesos abertos,
+              culminando no <strong>Llama 3.1 405B</strong>, o primeiro modelo de escala de fronteira
+              com pesos abertos. Depois a curva virou: o Behemoth nunca saiu, a Meta Superintelligence
+              Labs foi criada em junho de 2025, e o <strong>Muse Spark</strong> chegou em abril de 2026
+              com pesos fechados e acesso por API. A leitura honesta não é "a Meta abandonou o open
+              source" — é fronteira fechada, cauda aberta.
+            </p>
+            <p>
+              A ironia fica por conta do <strong>React</strong>, que caminhou na direção contrária: saiu
+              do controle da Meta para a React Foundation, sob a Linux Foundation, em fevereiro de 2026.
+            </p>
+            <ul class="era-marcos">
+              <li>Sapling</li><li>Buck2</li><li>Pyrefly</li><li>StyleX</li><li>React 19</li>
+              <li>React Compiler</li><li>Llama</li><li>Muse Spark</li><li>MTIA</li><li>Velox</li>
+            </ul>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- 1.3 Defasagem criar → abrir -->
+    <section class="gaps-sec" aria-labelledby="gaps-h">
+      <div class="wrap">
+        <span class="eyebrow">O dado mais interessante</span>
+        <h2 id="gaps-h">O tempo entre criar e abrir</h2>
+        <p class="sub">
+          Quase toda história boa deste conjunto mora na diferença entre a data em que a Meta
+          construiu algo e a data em que deixou o resto do mundo ver. Às vezes é um ano. Às vezes
+          é uma década. Às vezes nunca acontece — e é aí que se descobre o que de fato importava
+          para o negócio.
+        </p>
+
+        <ul class="gaps">
+          <li class="gap-item">
+            <span class="gap-nome">Thrift</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:9.1%;--w:4.5%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2006 → 2007 · <b>1 ano</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">Cassandra</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:13.6%;--w:4.5%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2007 → 2008 · <b>1 ano</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">TAO</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:22.7%;--w:77.3%"><i class="gap-barra gap-barra--nunca"></i></span>
+            <span class="gap-num">2009 → <b>nunca aberta</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">HHVM</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:27.3%;--w:4.5%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2010 → 2011 · <b>1 ano</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">Scuba</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:31.8%;--w:68.2%"><i class="gap-barra gap-barra--nunca"></i></span>
+            <span class="gap-num">2011 → <b>nunca aberta</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">React</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:36.4%;--w:4.5%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2012 → 2013 · <b>1 ano</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">RocksDB</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:36.4%;--w:4.5%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2012 → 2013 · <b>1 ano</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">GraphQL</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:36.4%;--w:13.6%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2012 → 2015 · <b>3 anos</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">Sapling</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:40.9%;--w:40.9%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2013 → 2022 · <b>9 anos</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">PyTorch</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:54.5%;--w:4.5%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2016 → 2017 · <b>1 ano</b></span>
+          </li>
+          <li class="gap-item">
+            <span class="gap-nome">Velox</span>
+            <span class="gap-viz" aria-hidden="true" style="--i:72.7%;--w:13.6%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2020 → 2023 · <b>3 anos</b></span>
+          </li>
+        </ul>
+
+        <div class="gaps-eixo" aria-hidden="true">
+          <span>2004</span><span>2010</span><span>2016</span><span>2022</span><span>2026</span>
+        </div>
+
+        <div class="gaps-legenda">
+          <span><i class="lg-criada"></i> Criada internamente</span>
+          <span><i class="lg-aberta"></i> Aberta ao público</span>
+          <span><i class="lg-nunca"></i> Nunca aberta</span>
+        </div>
+
+        <p class="src" style="margin-top:1.4rem">
+          Posição na escala calculada como <code>(ano − 2004) ÷ 22</code>. O gráfico é redundância
+          visual: todo dado está escrito ao lado em texto.
+        </p>
+      </div>
+    </section>
+
+    <!-- 1.4 Mitos -->
+    <section class="mitos" aria-labelledby="mitos-h">
+      <div class="wrap">
+        <span class="eyebrow">Correções</span>
+        <h2 id="mitos-h">Treze coisas que quase todo mundo repete errado</h2>
+        <p class="sub">
+          Listas de "a stack do Facebook" circulam há vinte anos e acumularam erros que se copiam
+          entre si. Estes são os mais comuns, com a versão correta ao lado.
+        </p>
+
+        <ul class="mitos-lista">
+          <li class="mito">
+            <span class="mito-falso">O Facebook criou o memcached.</span>
+            <p>É de Brad Fitzpatrick, escrito para o LiveJournal em 2003. A Meta adotou em agosto de 2005 e virou seu usuário mais agressivo — o que é uma história diferente e melhor.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O Facebook roda em Cassandra.</span>
+            <p>Criou o Cassandra para o Inbox Search e o abandonou no fim de 2010, ao escolher HBase para o Messages, por rejeitar consistência eventual naquele caso. O Instagram, esse sim, é grande usuário.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O Facebook inventou o Hadoop.</span>
+            <p>O Hadoop é de Doug Cutting e Mike Cafarella. A Meta inventou o <strong>Hive</strong> em cima dele, para que analistas pudessem consultar o warehouse sem escrever MapReduce.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O React foi criado em 2013.</span>
+            <p>29 de maio de 2013 é a data de abertura do código. O protótipo FaxJS, de Jordan Walke, entrou na base da Meta como "FBolt" em março de 2012, e o Instagram.com foi o primeiro uso grande.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O GraphQL é de 2015.</span>
+            <p>Foi para produção no verão de 2012, dentro do app iOS. 2015 é quando a especificação e a implementação de referência se tornaram públicas — três anos depois.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O PyTorch foi lançado em 2016.</span>
+            <p>2016 é quando o trabalho interno começou. O lançamento público é de <strong>janeiro de 2017</strong>, e a versão 1.0 estável só chegou em dezembro de 2018.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O Facebook roda PHP.</span>
+            <p>Duplamente errado hoje. Roda <strong>Hack</strong>, sobre a HHVM. E a própria HHVM removeu o suporte a PHP na versão 4.0, em fevereiro de 2019.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O Yarn é um projeto do Facebook.</span>
+            <p>Foi uma colaboração de quatro partes: Facebook, Exponent (hoje Expo), Google e Tilde. Hoje é mantido pela comunidade.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O Trino nasceu de um fork em 2020.</span>
+            <p>O fork é de 2019, com o nome PrestoSQL, feito pelos autores originais do Presto ao saírem da empresa. Dezembro de 2020 é apenas quando mudou de nome.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">A New Architecture do React Native virou padrão na 0.74.</span>
+            <p>A 0.74 trouxe o modo Bridgeless como opção. O padrão veio na <strong>0.76</strong>, em outubro de 2024; a arquitetura antiga só deixou de ser desativável na 0.82.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">Jest e React são projetos da Meta.</span>
+            <p>Nenhum dos dois, hoje. O Jest foi doado à OpenJS Foundation em maio de 2022, e o React passou à React Foundation, sob a Linux Foundation, em fevereiro de 2026.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O Llama 4 Behemoth foi lançado.</span>
+            <p>Nunca saiu. Foi adiado em maio de 2025 e efetivamente arquivado. O modelo de fronteira que a Meta acabou lançando, o Muse Spark, tem pesos fechados.</p>
+          </li>
+          <li class="mito">
+            <span class="mito-falso">O Facebook usava Varnish na borda.</span>
+            <p>Não há evidência disso em fonte primária — e o anúncio do Proxygen cita o Varnish justamente entre as alternativas que a Meta <em>não</em> usou. A borda documentada era Akamai e Limelight, depois Cachr, FHC sobre lighttpd, e enfim o Proxygen.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 1.5 Catálogo -->
+    <section class="catalogo" id="catalogo" aria-labelledby="catalogo-h">
+      <div class="wrap">
+        <span class="eyebrow">Catálogo</span>
+        <h2 id="catalogo-h">As tecnologias, uma a uma</h2>
+        <p class="sub">
+          Tudo que a Meta criou, adotou, adquiriu ou bifurcou entre 2004 e 2026, com o ano de
+          criação interna, o ano de abertura ao público quando houve, e a situação hoje. Cada
+          card cita a fonte.
+        </p>
+
+        <form class="filtros" id="filtros" role="search" aria-labelledby="catalogo-h">
+          <div class="f-busca">
+            <label for="f-q">Buscar</label>
+            <input type="search" id="f-q" autocomplete="off" spellcheck="false"
+                   placeholder="ex.: React, banco de dados, compilador, 2013">
+          </div>
+
+          <fieldset class="f-grupo"><legend>Categoria</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="cat" value="linguagem"><span>Linguagens e runtimes</span></label>
+              <label class="chip"><input type="checkbox" name="cat" value="frontend"><span>Frontend</span></label>
+              <label class="chip"><input type="checkbox" name="cat" value="mobile"><span>Mobile</span></label>
+              <label class="chip"><input type="checkbox" name="cat" value="dados"><span>Dados e armazenamento</span></label>
+              <label class="chip"><input type="checkbox" name="cat" value="infra"><span>Infraestrutura</span></label>
+              <label class="chip"><input type="checkbox" name="cat" value="rede"><span>Rede</span></label>
+              <label class="chip"><input type="checkbox" name="cat" value="ia"><span>IA e machine learning</span></label>
+              <label class="chip"><input type="checkbox" name="cat" value="ferramentas"><span>Ferramentas de dev</span></label>
+              <label class="chip"><input type="checkbox" name="cat" value="hardware"><span>Hardware</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="f-grupo"><legend>Era</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="era" value="1"><span>2004–2008</span></label>
+              <label class="chip"><input type="checkbox" name="era" value="2"><span>2009–2012</span></label>
+              <label class="chip"><input type="checkbox" name="era" value="3"><span>2013–2016</span></label>
+              <label class="chip"><input type="checkbox" name="era" value="4"><span>2017–2020</span></label>
+              <label class="chip"><input type="checkbox" name="era" value="5"><span>2021–2026</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="f-grupo"><legend>Situação</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="status" value="aberta"><span>Aberta</span></label>
+              <label class="chip"><input type="checkbox" name="status" value="interna"><span>Fechada</span></label>
+              <label class="chip"><input type="checkbox" name="status" value="descontinuada"><span>Descontinuada</span></label>
+            </div>
+            <p class="f-dica">
+              <b>Aberta</b>: em uso, com o código disponível. <b>Fechada</b>: em uso, nunca saiu da
+              Meta. <b>Descontinuada</b>: não é mais usada lá — mesmo que o código tenha sido aberto
+              um dia. Quem criou a tecnologia é outra coisa, e está escrita em cada card.
+            </p>
+          </fieldset>
+
+          <button type="button" class="btn-ghost f-limpar" id="f-limpar" hidden>Limpar filtros</button>
+        </form>
+
+        <p class="f-contagem"><b id="f-num">0</b> <span id="f-num-rotulo">tecnologias</span></p>
+        <p class="vis-oculto" id="f-anuncio" role="status" aria-live="polite"></p>
+
+        <ul class="grade-tech" id="grade-tech">
+          <!-- CARDS-INICIO -->
+
+          <!-- ============ ERA 1 · 2004–2008 ============ -->
+          <li class="era-banner" data-era-banner="1">Era 1 · 2004–2008 · LAMP e o primeiro escalonamento</li>
+
+          <li class="tech" id="t-php" data-cat="linguagem" data-era="1" data-status="descontinuada" data-origem="adotada" data-ano="2004">
+            <div class="tech-topo"><h3>PHP <a class="anchor" href="#t-php" aria-label="Link para PHP">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2004 · adotada</p>
+            <p class="tech-desc">A linguagem escolhida por velocidade de escrita, não de execução. Interpretada e sem tipos, ótima para iterar e péssima para servir meio bilhão de pessoas.</p>
+            <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>substituída por Hack</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2010/02/02/web/hiphop-for-php-move-fast/">engineering.fb.com · HipHop for PHP</a></p>
+          </li>
+
+          <li class="tech" id="t-mysql" data-cat="dados" data-era="1" data-status="aberta" data-origem="adotada" data-ano="2004">
+            <div class="tech-topo"><h3>MySQL <a class="anchor" href="#t-mysql" aria-label="Link para MySQL">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2004 · adotada</p>
+            <p class="tech-desc">Sistema de registro desde o primeiro dia. Fragmentado à mão, sem junções entre shards — usado na prática como armazenamento chave-valor distribuído, não como banco relacional.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>hoje atrás do TAO, com MyRocks</span></p>
+            <p class="src"><a href="https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf">USENIX ATC '13 · TAO</a></p>
+          </li>
+
+          <li class="tech" id="t-apache" data-cat="infra" data-era="1" data-status="descontinuada" data-origem="adotada" data-ano="2004">
+            <div class="tech-topo"><h3>Apache + mod_php <a class="anchor" href="#t-apache" aria-label="Link para Apache">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2004 · adotada</p>
+            <p class="tech-desc">O servidor web da era LAMP. Saiu do caminho do PHP quando o HipHop passou a gerar um binário que servia HTTP sozinho, via libevent.</p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>substituído por HipHop e depois Proxygen</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2013/04/15/core-infra/scaling-memcache-at-facebook/">engineering.fb.com · Scaling memcache</a></p>
+          </li>
+
+          <li class="tech" id="t-memcached" data-cat="dados" data-era="1" data-status="aberta" data-origem="adotada" data-ano="2005">
+            <div class="tech-topo"><h3>memcached <a class="anchor" href="#t-memcached" aria-label="Link para memcached">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2005 · adotada (criada em 2003 por terceiros)</p>
+            <p class="tech-desc">Cache em memória na frente do MySQL. Não foi criado aqui: é de Brad Fitzpatrick, do LiveJournal. O fork da Meta de 2008 trocou GET para UDP e foi de 50 mil a 200 mil req/s.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>hoje com mcrouter e CacheLib</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2008/12/12/core-infra/scaling-memcached-at-facebook/">engineering.fb.com · Scaling memcached</a></p>
+          </li>
+
+          <li class="tech" id="t-thrift" data-cat="infra" data-era="1" data-status="aberta" data-origem="criada" data-ano="2006" data-ano-oss="2007">
+            <div class="tech-topo"><h3>Thrift <a class="anchor" href="#t-thrift" aria-label="Link para Thrift">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2006 · aberta em 2007</p>
+            <p class="tech-desc">Linguagem de definição de interface e gerador de código RPC entre linguagens. Tornou viável a política de escrever cada serviço na linguagem que fizer sentido.</p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>hoje fbthrift; Apache Thrift segue à parte</span></p>
+            <p class="src"><a href="https://thrift.apache.org/static/files/thrift-20070401.pdf">Whitepaper Thrift, 2007</a></p>
+          </li>
+
+          <li class="tech" id="t-scribe" data-cat="dados" data-era="1" data-status="interna" data-origem="criada" data-ano="2007" data-ano-oss="2008">
+            <div class="tech-topo"><h3>Scribe <a class="anchor" href="#t-scribe" aria-label="Link para Scribe">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2007 · aberta em 2008, repositório depois arquivado</p>
+            <p class="tech-desc">Agregação distribuída de logs. O repositório público morreu, mas o sistema interno foi reescrito e move petabytes por hora — mais de 2,5 TB/s de entrada.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>em produção, versão aberta abandonada</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2019/10/07/data-infrastructure/scribe/">engineering.fb.com · Scribe (2019)</a></p>
+          </li>
+
+          <li class="tech" id="t-cassandra" data-cat="dados" data-era="1" data-status="descontinuada" data-origem="criada" data-ano="2007" data-ano-oss="2008">
+            <div class="tech-topo"><h3>Cassandra <a class="anchor" href="#t-cassandra" aria-label="Link para Cassandra">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2007 · aberta em 2008</p>
+            <p class="tech-desc">Modelo de colunas do Bigtable com o anel de hash consistente do Dynamo. Criada para o Inbox Search e abandonada no fim de 2010: consistência eventual foi considerada difícil demais de raciocinar.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>fora da Meta; o Instagram usa</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2008/08/25/core-infra/cassandra-a-structured-storage-system-on-a-p2p-network/">engineering.fb.com · Cassandra</a></p>
+          </li>
+
+          <li class="tech" id="t-hive" data-cat="dados" data-era="1" data-status="descontinuada" data-origem="criada" data-ano="2007" data-ano-oss="2008">
+            <div class="tech-topo"><h3>Hive <a class="anchor" href="#t-hive" aria-label="Link para Hive">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2007 · aberta em 2008</p>
+            <p class="tech-desc">SQL declarativo compilado para MapReduce. Criado porque só um punhado de engenheiros sabia escrever MapReduce — o Hive abriu o warehouse para centenas de analistas.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>substituído por Presto e Spark</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2009/06/10/web/hive-a-petabyte-scale-data-warehouse-using-hadoop/">engineering.fb.com · Hive</a></p>
+          </li>
+
+          <li class="tech" id="t-hadoop" data-cat="dados" data-era="1" data-status="descontinuada" data-origem="adotada" data-ano="2007">
+            <div class="tech-topo"><h3>Hadoop e HDFS <a class="anchor" href="#t-hadoop" aria-label="Link para Hadoop">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2007 · adotada</p>
+            <p class="tech-desc">Computação em lote e sistema de arquivos distribuído. Substituiu um data warehouse comercial que não aguentou a curva de 15 TB em 2007 para mais de 100 PB em 2012.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>substituído por Presto e Spark</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2009/06/10/web/hive-a-petabyte-scale-data-warehouse-using-hadoop/">engineering.fb.com · Hive</a></p>
+          </li>
+
+          <li class="tech" id="t-haystack" data-cat="dados" data-era="1" data-status="interna" data-origem="criada" data-ano="2008">
+            <div class="tech-topo"><h3>Haystack <a class="anchor" href="#t-haystack" aria-label="Link para Haystack">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2008 · nunca aberta</p>
+            <p class="tech-desc">Empacota cerca de 10 GB de fotos num arquivo único com índice em memória, para que uma leitura custe um seek de disco em vez de três. Aposentou o NetApp sobre NFS.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>dados mornos e frios foram para o f4</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2009/04/30/core-infra/needle-in-a-haystack-efficient-storage-of-billions-of-photos/">engineering.fb.com · Needle in a haystack</a></p>
+          </li>
+
+          <li class="tech" id="t-cachr" data-cat="infra" data-era="1" data-status="descontinuada" data-origem="criada" data-ano="2005">
+            <div class="tech-topo"><h3>Cachr e FHC <a class="anchor" href="#t-cachr" aria-label="Link para Cachr e FHC">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2005–2008 · nunca abertas</p>
+            <p class="tech-desc">A camada de borda antes do Haystack: Akamai e Limelight na frente, um Cachr com evhttp e memcached, e um cache de file handles sobre lighttpd. Nunca houve Varnish aqui.</p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>substituídas por Haystack e Proxygen</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2014/11/05/production-engineering/introducing-proxygen-facebook-s-c-http-framework/">engineering.fb.com · Proxygen</a></p>
+          </li>
+
+          <li class="tech" id="t-erlang" data-cat="linguagem" data-era="1" data-status="descontinuada" data-origem="adotada" data-ano="2008">
+            <div class="tech-topo"><h3>Erlang no chat <a class="anchor" href="#t-erlang" aria-label="Link para Erlang no chat">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2008 · nunca aberta</p>
+            <p class="tech-desc">Servidores de canal em Erlang com long polling, guardando conversas em memória. Escolhido porque dezenas de milhões de conexões persistentes é algo que PHP não sabe expressar.</p>
+            <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>substituído por MQTT e depois MyRocks</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2008/05/13/web/facebook-chat/">engineering.fb.com · Facebook Chat</a></p>
+          </li>
+
+          <!-- ============ ERA 2 · 2009–2012 ============ -->
+          <li class="era-banner" data-era-banner="2">Era 2 · 2009–2012 · Reescrever o PHP e inventar o data layer</li>
+
+          <li class="tech" id="t-quickling" data-cat="frontend" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2009">
+            <div class="tech-topo"><h3>Quickling e PageCache <a class="anchor" href="#t-quickling" aria-label="Link para Quickling">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2009 · nunca abertos</p>
+            <p class="tech-desc">Navegação por AJAX sem recarregar o cabeçalho, o JS e o CSS compartilhados, com cache das páginas já visitadas. Efetivamente uma arquitetura de SPA em 2009.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>substituídos por React e Relay</span></p>
+            <p class="src">Chanhao Jiang e David Wei, The AJAX Experience, 2009</p>
+          </li>
+
+          <li class="tech" id="t-primer" data-cat="frontend" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2009">
+            <div class="tech-topo"><h3>Primer <a class="anchor" href="#t-primer" aria-label="Link para Primer">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2009 · nunca aberta</p>
+            <p class="tech-desc">Biblioteca JS mínima carregada em toda página, juntando os comportamentos mais comuns para que a página ficasse interativa sem esperar um segundo pacote. Cortou 40% dos bytes de JS.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>substituída por React</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2010/02/18/web/making-facebook-2x-faster/">engineering.fb.com · Making Facebook 2x Faster</a></p>
+          </li>
+
+          <li class="tech" id="t-tornado" data-cat="infra" data-era="2" data-status="aberta" data-origem="adquirida" data-ano="2009" data-ano-oss="2009">
+            <div class="tech-topo"><h3>Tornado <a class="anchor" href="#t-tornado" aria-label="Link para Tornado">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2009 · adquirida com o FriendFeed, aberta em 2009</p>
+            <p class="tech-desc">Servidor web Python não bloqueante para o problema das dez mil conexões. Não foi inventado aqui: veio do FriendFeed, e nunca chegou a ser tecnologia central da Meta.</p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>segue como projeto independente</span></p>
+            <p class="src"><a href="https://www.tornadoweb.org/">tornadoweb.org</a></p>
+          </li>
+
+          <li class="tech" id="t-three20" data-cat="mobile" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2009" data-ano-oss="2009">
+            <div class="tech-topo"><h3>Three20 <a class="anchor" href="#t-three20" aria-label="Link para Three20">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2009 · aberta em 2009</p>
+            <p class="tech-desc">Biblioteca de interface em Objective-C extraída do app de iPhone: visualizador de fotos, tabelas alimentadas por rede, navegação por URL.</p>
+            <p class="tech-meta"><span class="tech-cat">Mobile</span> · <span>arquivada</span></p>
+            <p class="src"><a href="https://github.com/facebookarchive/three20">github.com/facebookarchive/three20</a></p>
+          </li>
+
+          <li class="tech" id="t-hiphop" data-cat="linguagem" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2007" data-ano-oss="2010">
+            <div class="tech-topo"><h3>HipHop for PHP <a class="anchor" href="#t-hiphop" aria-label="Link para HipHop for PHP">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2007 · aberta em 2010</p>
+            <p class="tech-desc">Traduzia PHP para C++ e compilava num binário único que servia HTTP sozinho. Cortou cerca de metade da CPU — mas exigiu o HPHPi, um interpretador separado só para desenvolver.</p>
+            <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>fora de produção desde o 1º trimestre de 2013</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2010/02/02/web/hiphop-for-php-move-fast/">engineering.fb.com · HipHop for PHP</a></p>
+          </li>
+
+          <li class="tech" id="t-xhp" data-cat="linguagem" data-era="2" data-status="aberta" data-origem="criada" data-ano="2010" data-ano-oss="2010">
+            <div class="tech-topo"><h3>XHP <a class="anchor" href="#t-xhp" aria-label="Link para XHP">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2010 · aberta em 2010</p>
+            <p class="tech-desc">Extensão que torna fragmentos de XML expressões de primeira classe no PHP. Dois motivos: escape automático sensível ao contexto, que quase zerou XSS, e detecção de markup malformado.</p>
+            <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>ancestral direto do JSX</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2010/02/09/developer-tools/xhp-a-new-way-to-write-php/">engineering.fb.com · XHP</a></p>
+          </li>
+
+          <li class="tech" id="t-bigpipe" data-cat="frontend" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2010">
+            <div class="tech-topo"><h3>BigPipe <a class="anchor" href="#t-bigpipe" aria-label="Link para BigPipe">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2010 · nunca aberta</p>
+            <p class="tech-desc">Quebra a página em "pagelets" que atravessam servidor e navegador como um pipeline de CPU. O usuário vê conteúdo antes de a consulta mais lenta terminar. PHP e JS puros.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>a ideia sobrevive no streaming SSR</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2010/06/04/web/bigpipe-pipelining-web-pages-for-high-performance/">engineering.fb.com · BigPipe</a></p>
+          </li>
+
+          <li class="tech" id="t-tao" data-cat="dados" data-era="2" data-status="interna" data-origem="criada" data-ano="2009">
+            <div class="tech-topo"><h3>TAO <a class="anchor" href="#t-tao" aria-label="Link para TAO">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2009 · nunca aberta</p>
+            <p class="tech-desc">Armazenamento de grafo com objetos e associações sobre MySQL, com cache próprio. Matou o padrão look-aside: engenheiro de produto parou de gerenciar dois armazenamentos e escrever invalidação à mão.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>mais de 1 bilhão de leituras por segundo</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2013/06/25/core-infra/tao-the-power-of-the-graph/">engineering.fb.com · TAO</a></p>
+          </li>
+
+          <li class="tech" id="t-flashcache" data-cat="dados" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2010" data-ano-oss="2010">
+            <div class="tech-topo"><h3>Flashcache <a class="anchor" href="#t-flashcache" aria-label="Link para Flashcache">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2010 · aberta em 2010</p>
+            <p class="tech-desc">Alvo de device-mapper do Linux que usa SSD como cache de disco. Criado porque o working set do InnoDB deixou de caber no buffer pool — SSD virou camada intermediária.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>substituída por bcache, dm-cache e frotas all-flash</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2013/10/09/core-infra/flashcache-at-facebook-from-2010-to-2013-and-beyond/">engineering.fb.com · Flashcache</a></p>
+          </li>
+
+          <li class="tech" id="t-hbase" data-cat="dados" data-era="2" data-status="descontinuada" data-origem="adotada" data-ano="2010">
+            <div class="tech-topo"><h3>HBase no Messages <a class="anchor" href="#t-hbase" aria-label="Link para HBase">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2010 · adotada</p>
+            <p class="tech-desc">Escolhido para o Messages depois de avaliar MySQL, Cassandra e HBase. Venceu pelo modelo de consistência mais simples e pela experiência interna com HDFS. Guardou 135 bilhões de mensagens por mês.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>migrado para MyRocks em 2018</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2010/11/15/core-infra/the-underlying-technology-of-messages/">engineering.fb.com · Messages</a></p>
+          </li>
+
+          <li class="tech" id="t-hhvm" data-cat="linguagem" data-era="2" data-status="aberta" data-origem="criada" data-ano="2010" data-ano-oss="2011">
+            <div class="tech-topo"><h3>HHVM <a class="anchor" href="#t-hhvm" aria-label="Link para HHVM">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2010 · aberta em 2011</p>
+            <p class="tech-desc">Máquina virtual com JIT por "tracelets". No anúncio era mais lenta que o compilador estático e entrou como ferramenta de desenvolvimento. Venceu mesmo assim: em 2013 o HipHop saiu de produção.</p>
+            <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>só Hack desde a 4.0, de fevereiro de 2019</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2011/12/09/open-source/the-hiphop-virtual-machine/">engineering.fb.com · The HipHop Virtual Machine</a></p>
+          </li>
+
+          <li class="tech" id="t-ocp" data-cat="hardware" data-era="2" data-status="aberta" data-origem="criada" data-ano="2010" data-ano-oss="2011">
+            <div class="tech-topo"><h3>Open Compute Project <a class="anchor" href="#t-ocp" aria-label="Link para Open Compute Project">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2010 · aberta em 2011</p>
+            <p class="tech-desc">Publicou CAD mecânico, especificações elétricas e projetos de rack e prédio do datacenter de Prineville. PUE de 1,07 contra cerca de 1,5 da melhor prática da indústria.</p>
+            <p class="tech-meta"><span class="tech-cat">Hardware</span> · <span>hoje uma fundação independente</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2011/04/07/data-center-engineering/building-efficient-data-centers-with-the-open-compute-project/">engineering.fb.com · Open Compute</a></p>
+          </li>
+
+          <li class="tech" id="t-tupperware" data-cat="infra" data-era="2" data-status="interna" data-origem="criada" data-ano="2011">
+            <div class="tech-topo"><h3>Tupperware / Twine <a class="anchor" href="#t-tupperware" aria-label="Link para Tupperware">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2011 · nunca aberta</p>
+            <p class="tech-desc">Gerenciador de cluster e orquestrador de contêineres que transformou pools dedicados por carga em infraestrutura compartilhada e fungível. Antecede o Kubernetes em quatro anos.</p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>escala a milhões de máquinas por região</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2019/06/06/data-center-engineering/twine/">engineering.fb.com · Twine</a></p>
+          </li>
+
+          <li class="tech" id="t-scuba" data-cat="dados" data-era="2" data-status="interna" data-origem="criada" data-ano="2011">
+            <div class="tech-topo"><h3>Scuba <a class="anchor" href="#t-scuba" aria-label="Link para Scuba">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2011 · nunca aberta</p>
+            <p class="tech-desc">Banco distribuído, totalmente em memória e sem esquema, para análise ad hoc de dados vivos com resposta abaixo de um segundo. É onde se investiga regressão de código e receita de anúncios.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>rearquitetado como Kraken</span></p>
+            <p class="src"><a href="https://vldb.org/pvldb/vol6/p1057-wiener.pdf">VLDB 2013 · Scuba</a></p>
+          </li>
+
+          <li class="tech" id="t-wormhole" data-cat="dados" data-era="2" data-status="interna" data-origem="criada" data-ano="2011">
+            <div class="tech-topo"><h3>Wormhole <a class="anchor" href="#t-wormhole" aria-label="Link para Wormhole">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2011 · nunca aberta</p>
+            <p class="tech-desc">Publicação e assinatura geo-replicada: os publicadores leem o binlog do MySQL e expõem as mudanças como fluxo em tempo real. É o que mantém TAO e memcache coerentes entre datacenters.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>cerca de 50 milhões de mensagens por segundo</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2013/06/13/core-infra/wormhole-pub-sub-system-moving-data-through-space-and-time/">engineering.fb.com · Wormhole</a></p>
+          </li>
+
+          <li class="tech" id="t-phabricator" data-cat="ferramentas" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2007" data-ano-oss="2011">
+            <div class="tech-topo"><h3>Phabricator <a class="anchor" href="#t-phabricator" aria-label="Link para Phabricator">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2007 · aberta em 2011</p>
+            <p class="tech-desc">Revisão de código antes do commit, navegação de repositório e gestão de tarefas, com CLI integrada a lint e testes. Começou como protótipo de uma noite num hackathon.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>encerrado em 2021; segue como fork Phorge</span></p>
+            <p class="src"><a href="https://secure.phabricator.com/book/phabflavor/article/project_history/">Phabricator · Project History</a></p>
+          </li>
+
+          <li class="tech" id="t-folly" data-cat="ferramentas" data-era="2" data-status="aberta" data-origem="criada" data-ano="2009" data-ano-oss="2012">
+            <div class="tech-topo"><h3>Folly <a class="anchor" href="#t-folly" aria-label="Link para Folly">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2009 · aberta em 2012</p>
+            <p class="tech-desc">Biblioteca C++ de componentes reutilizáveis. Foi aberta com um propósito declarado curioso: destravar as outras aberturas, já que nenhum projeto C++ podia sair sem o substrato comum.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>dependência de quase todo projeto C++ da casa</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2012/06/02/developer-tools/folly-the-facebook-open-source-library/">engineering.fb.com · Folly</a></p>
+          </li>
+
+          <li class="tech" id="t-corona" data-cat="dados" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2011" data-ano-oss="2012">
+            <div class="tech-topo"><h3>Corona <a class="anchor" href="#t-corona" aria-label="Link para Corona">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2011 · aberta em 2012</p>
+            <p class="tech-desc">Escalonador que separou gestão de recursos do cluster da coordenação de jobs, consertando o JobTracker sobrecarregado do Hadoop. Utilização subiu de 70% para mais de 95%.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>o YARN venceu essa disputa upstream</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2012/11/08/core-infra/under-the-hood-scheduling-mapreduce-jobs-more-efficiently-with-corona/">engineering.fb.com · Corona</a></p>
+          </li>
+
+          <li class="tech" id="t-prism" data-cat="dados" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2012">
+            <div class="tech-topo"><h3>Prism <a class="anchor" href="#t-prism" aria-label="Link para Prism">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2012 · nunca aberta</p>
+            <p class="tech-desc">Fez um único warehouse Hadoop lógico atravessar datacenters geograficamente separados. O Hadoop assume latência de milissegundos dentro do cluster, e a Meta já não cabia num prédio.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>a imprensa de 2012 disse que seria aberto; não foi</span></p>
+            <p class="src">VentureBeat e Datanami, agosto de 2012</p>
+          </li>
+
+          <li class="tech" id="t-rocksdb" data-cat="dados" data-era="2" data-status="aberta" data-origem="bifurcada" data-ano="2012" data-ano-oss="2013">
+            <div class="tech-topo"><h3>RocksDB <a class="anchor" href="#t-rocksdb" aria-label="Link para RocksDB">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2012 · bifurcada do LevelDB, aberta em 2013</p>
+            <p class="tech-desc">Armazenamento chave-valor LSM embutido, refeito para SSD de servidor: compactação multithread, famílias de colunas, transações. Virou o substrato de quase toda a infraestrutura da casa.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>também sob CockroachDB, TiKV, Kafka Streams e Flink</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2013/11/21/core-infra/under-the-hood-building-and-open-sourcing-rocksdb/">engineering.fb.com · RocksDB</a></p>
+          </li>
+
+          <li class="tech" id="t-mcrouter" data-cat="dados" data-era="2" data-status="aberta" data-origem="criada" data-ano="2012" data-ano-oss="2014">
+            <div class="tech-topo"><h3>mcrouter <a class="anchor" href="#t-mcrouter" aria-label="Link para mcrouter">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2012 · aberta em 2014</p>
+            <p class="tech-desc">Roteador do protocolo memcached: parece servidor para o cliente e cliente para o servidor. Tirou da aplicação o roteamento, a replicação, o failover e o aquecimento de cluster frio.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>ano de criação interno é estimado</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2014/09/15/web/introducing-mcrouter-a-memcached-protocol-router-for-scaling-memcached-deployments/">engineering.fb.com · mcrouter</a></p>
+          </li>
+
+          <li class="tech" id="t-chef" data-cat="ferramentas" data-era="2" data-status="aberta" data-origem="adotada" data-ano="2011">
+            <div class="tech-topo"><h3>Chef <a class="anchor" href="#t-chef" aria-label="Link para Chef">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2011 · adotada</p>
+            <p class="tech-desc">Substituiu o CFEngine 2, que havia produzido proliferação descontrolada de arquivos de configuração. A migração levou três anos, e a parte difícil foi organizacional, não técnica.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>cookbooks abertos em 2016</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2016/04/15/core-infra/facebook-chef-cookbooks/">engineering.fb.com · Chef cookbooks</a></p>
+          </li>
+
+          <!-- ============ ERA 3 · 2013–2016 ============ -->
+          <li class="era-banner" data-era-banner="3">Era 3 · 2013–2016 · O frontend moderno e a virada mobile</li>
+
+          <li class="tech" id="t-react" data-cat="frontend" data-era="3" data-status="aberta" data-origem="criada" data-ano="2012" data-ano-oss="2013">
+            <div class="tech-topo"><h3>React <a class="anchor" href="#t-react" aria-label="Link para React">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2012 · aberta em 29 de maio de 2013</p>
+            <p class="tech-desc">Componentes declarativos com DOM virtual: renderize tudo, compare, aplique a diferença. É o XHP movido do servidor para o cliente. A recepção na JSConf foi fria.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>na React Foundation desde fevereiro de 2026</span></p>
+            <p class="src"><a href="https://react.dev/versions">react.dev · Versions</a></p>
+          </li>
+
+          <li class="tech" id="t-graphql" data-cat="frontend" data-era="3" data-status="aberta" data-origem="criada" data-ano="2012" data-ano-oss="2015">
+            <div class="tech-topo"><h3>GraphQL <a class="anchor" href="#t-graphql" aria-label="Link para GraphQL">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2012 · aberta em 2015</p>
+            <p class="tech-desc">Linguagem de consulta hierárquica especificada pelo cliente, sobre um grafo tipado. É artefato mobile: existe porque celular em rede ruim não paga dezenas de idas e voltas nem recebe dado que não pediu.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>na GraphQL Foundation desde 2018</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2015/09/14/core-infra/graphql-a-data-query-language/">engineering.fb.com · GraphQL</a></p>
+          </li>
+
+          <li class="tech" id="t-hack" data-cat="linguagem" data-era="3" data-status="aberta" data-origem="criada" data-ano="2012" data-ano-oss="2014">
+            <div class="tech-topo"><h3>Hack <a class="anchor" href="#t-hack" aria-label="Link para Hack">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2012 · aberta em março de 2014</p>
+            <p class="tech-desc">Dialeto do PHP com tipagem gradual, genéricos, coleções e async. Com um runtime único sob controle, deu para trocar a linguagem por baixo de milhões de linhas sem parar de entregar produto.</p>
+            <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>a linguagem de servidor da Meta</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2014/03/20/developer-tools/hack-a-new-programming-language-for-hhvm/">engineering.fb.com · Hack</a></p>
+          </li>
+
+          <li class="tech" id="t-buck" data-cat="ferramentas" data-era="3" data-status="descontinuada" data-origem="criada" data-ano="2012" data-ano-oss="2013">
+            <div class="tech-topo"><h3>Buck <a class="anchor" href="#t-buck" aria-label="Link para Buck">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2012 · aberta em 2013</p>
+            <p class="tech-desc">Build paralelo, correto e com cache agressivo, preferindo muitos módulos pequenos a poucos grandes. Nasceu porque o tempo de build mobile virou o teto da velocidade de iteração.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>substituída por Buck2</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2013/05/14/android/buck-how-we-build-android-apps-at-facebook/">engineering.fb.com · Buck</a></p>
+          </li>
+
+          <li class="tech" id="t-watchman" data-cat="ferramentas" data-era="3" data-status="aberta" data-origem="criada" data-ano="2012" data-ano-oss="2013">
+            <div class="tech-topo"><h3>Watchman <a class="anchor" href="#t-watchman" aria-label="Link para Watchman">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2012 · aberta em 2013</p>
+            <p class="tech-desc">Serviço que observa o sistema de arquivos e informa o que de fato mudou. Está por baixo do Buck, do modo watch do Jest e do fsmonitor do Mercurial.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>mantido pelo time de controle de versão</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2013/05/30/core-infra/watchman-faster-builds-with-large-source-trees/">engineering.fb.com · Watchman</a></p>
+          </li>
+
+          <li class="tech" id="t-presto" data-cat="dados" data-era="3" data-status="aberta" data-origem="criada" data-ano="2012" data-ano-oss="2013">
+            <div class="tech-topo"><h3>Presto <a class="anchor" href="#t-presto" aria-label="Link para Presto">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2012 · aberta em 2013</p>
+            <p class="tech-desc">SQL distribuído em memória para latência interativa sobre um warehouse de 300 PB, sem MapReduce nem materialização intermediária. Cerca de 10 vezes melhor que Hive em CPU e latência.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>hoje com workers em C++ sobre Velox</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2013/11/06/core-infra/presto-interacting-with-petabytes-of-data-at-facebook/">engineering.fb.com · Presto</a></p>
+          </li>
+
+          <li class="tech" id="t-flux" data-cat="frontend" data-era="3" data-status="descontinuada" data-origem="criada" data-ano="2013" data-ano-oss="2014">
+            <div class="tech-topo"><h3>Flux <a class="anchor" href="#t-flux" aria-label="Link para Flux">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2013 · aberta em 2014</p>
+            <p class="tech-desc">Fluxo de dados unidirecional, criado para conter o caos de atualizações em cascata do MVC no chat e nas notificações. Respondia à pergunta que o React deixou em aberto: onde mora o estado?</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>substituída por Redux e depois Context e Hooks</span></p>
+            <p class="src"><a href="https://facebookarchive.github.io/flux/">facebookarchive.github.io/flux</a></p>
+          </li>
+
+          <li class="tech" id="t-flow" data-cat="ferramentas" data-era="3" data-status="aberta" data-origem="criada" data-ano="2013" data-ano-oss="2014">
+            <div class="tech-topo"><h3>Flow <a class="anchor" href="#t-flow" aria-label="Link para Flow">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2013 · aberta em novembro de 2014</p>
+            <p class="tech-desc">Verificador estático de tipos para JavaScript, construído sobre a premissa de que a maior parte do JS já é implicitamente tipada — e portanto inferível sem anotação.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>interno na Meta; o mercado foi para TypeScript</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2014/11/18/web/flow-a-new-static-type-checker-for-javascript/">engineering.fb.com · Flow</a></p>
+          </li>
+
+          <li class="tech" id="t-jest" data-cat="ferramentas" data-era="3" data-status="aberta" data-origem="criada" data-ano="2011" data-ano-oss="2014">
+            <div class="tech-topo"><h3>Jest <a class="anchor" href="#t-jest" aria-label="Link para Jest">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2011 · aberta em 2014</p>
+            <p class="tech-desc">Executor de testes JS sem configuração, nascido da reescrita do chat em JavaScript. Ganhou modo watch e teste por snapshot depois de uma reforma em 2016.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>doado à OpenJS Foundation em maio de 2022</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2022/05/11/open-source/jest-openjs-foundation/">engineering.fb.com · Jest e a OpenJS</a></p>
+          </li>
+
+          <li class="tech" id="t-proxygen" data-cat="rede" data-era="3" data-status="aberta" data-origem="criada" data-ano="2011" data-ano-oss="2014">
+            <div class="tech-topo"><h3>Proxygen <a class="anchor" href="#t-proxygen" aria-label="Link para Proxygen">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2011 · aberta em 2014</p>
+            <p class="tech-desc">Biblioteca e servidor HTTP em C++ usados no lugar de Apache e nginx na borda. O anúncio é explícito em não tentar ser Apache, nginx, HAProxy nem Varnish.</p>
+            <p class="tech-meta"><span class="tech-cat">Rede</span> · <span>em desenvolvimento ativo</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2014/11/05/production-engineering/introducing-proxygen-facebook-s-c-http-framework/">engineering.fb.com · Proxygen</a></p>
+          </li>
+
+          <li class="tech" id="t-react-native" data-cat="mobile" data-era="3" data-status="aberta" data-origem="criada" data-ano="2014" data-ano-oss="2015">
+            <div class="tech-topo"><h3>React Native <a class="anchor" href="#t-react-native" aria-label="Link para React Native">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2014 · iOS em março de 2015, Android em setembro de 2015</p>
+            <p class="tech-desc">O modelo de componentes do React renderizando em views nativas. Resposta direta à retirada do HTML5: manter a velocidade da web e entregar experiência nativa.</p>
+            <p class="tech-meta"><span class="tech-cat">Mobile</span> · <span>New Architecture virou padrão na 0.76, em 2024</span></p>
+            <p class="src"><a href="https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here">reactnative.dev · The New Architecture</a></p>
+          </li>
+
+          <li class="tech" id="t-relay" data-cat="frontend" data-era="3" data-status="aberta" data-origem="criada" data-ano="2014" data-ano-oss="2015">
+            <div class="tech-topo"><h3>Relay <a class="anchor" href="#t-relay" aria-label="Link para Relay">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2014 · aberta em agosto de 2015</p>
+            <p class="tech-desc">Cliente GraphQL que coloca a necessidade de dados junto do componente que a tem, agrupando e deduplicando as consultas resultantes.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>reescrito como Relay Modern em 2017</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2017/04/18/web/relay-modern-simpler-faster-more-extensible/">engineering.fb.com · Relay Modern</a></p>
+          </li>
+
+          <li class="tech" id="t-infer" data-cat="ferramentas" data-era="3" data-status="aberta" data-origem="adquirida" data-ano="2013" data-ano-oss="2015">
+            <div class="tech-topo"><h3>Infer <a class="anchor" href="#t-infer" aria-label="Link para Infer">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2013 · adquirida com a Monoidics, aberta em 2015</p>
+            <p class="tech-desc">Análise estática por lógica de separação que encontra desreferência nula, vazamento e bug de recurso — rodando sobre o diff, antes de entrar no ar.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>hoje também cobre Erlang e Hack</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2015/06/11/developer-tools/open-sourcing-facebook-infer-identify-bugs-before-you-ship/">engineering.fb.com · Infer</a></p>
+          </li>
+
+          <li class="tech" id="t-componentkit" data-cat="mobile" data-era="3" data-status="aberta" data-origem="criada" data-ano="2014" data-ano-oss="2015">
+            <div class="tech-topo"><h3>ComponentKit <a class="anchor" href="#t-componentkit" aria-label="Link para ComponentKit">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2014 · aberta em março de 2015</p>
+            <p class="tech-desc">Interface declarativa e funcional no iOS, no estilo React, com layout assíncrono fora da thread principal. Já rodava no News Feed havia mais de seis meses quando foi aberta.</p>
+            <p class="tech-meta"><span class="tech-cat">Mobile</span> · <span>ritmo de manutenção baixo</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2015/03/25/ios/introducing-componentkit-functional-and-declarative-ui-on-ios/">engineering.fb.com · ComponentKit</a></p>
+          </li>
+
+          <li class="tech" id="t-fresco" data-cat="mobile" data-era="3" data-status="aberta" data-origem="criada" data-ano="2014" data-ano-oss="2015">
+            <div class="tech-topo"><h3>Fresco <a class="anchor" href="#t-fresco" aria-label="Link para Fresco">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2014 · aberta em março de 2015</p>
+            <p class="tech-desc">Pipeline de imagens do Android que guarda bitmaps em ashmem, fora do heap do Java, para eliminar erros de memória e pausas de coletor em aparelhos modestos.</p>
+            <p class="tech-meta"><span class="tech-cat">Mobile</span> · <span>ritmo de manutenção baixo</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2015/03/26/android/introducing-fresco-a-new-image-library-for-android/">engineering.fb.com · Fresco</a></p>
+          </li>
+
+          <li class="tech" id="t-nuclide" data-cat="ferramentas" data-era="3" data-status="descontinuada" data-origem="criada" data-ano="2014" data-ano-oss="2015">
+            <div class="tech-topo"><h3>Nuclide <a class="anchor" href="#t-nuclide" aria-label="Link para Nuclide">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2014 · aberta em junho de 2015</p>
+            <p class="tech-desc">IDE sobre o Atom unificando Hack, Flow, React Native e desenvolvimento remoto nos servidores da empresa. Demonstrada no F8 de março, aberta em junho.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>encerrada em dezembro de 2018; foi para VS Code</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2015/06/23/developer-tools/building-nuclide-a-unified-developer-experience/">engineering.fb.com · Nuclide</a></p>
+          </li>
+
+          <li class="tech" id="t-draftjs" data-cat="frontend" data-era="3" data-status="descontinuada" data-origem="criada" data-ano="2013" data-ano-oss="2016">
+            <div class="tech-topo"><h3>Draft.js <a class="anchor" href="#t-draftjs" aria-label="Link para Draft.js">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2013 · aberta em fevereiro de 2016</p>
+            <p class="tech-desc">Framework de editor de texto rico para React, com estado imutável. Movia os comentários, o compositor de status e as notas.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>substituída pelo Lexical</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2016/02/26/web/facebook-open-sources-rich-text-editor-framework-draft-js/">engineering.fb.com · Draft.js</a></p>
+          </li>
+
+          <li class="tech" id="t-yarn" data-cat="ferramentas" data-era="3" data-status="aberta" data-origem="criada" data-ano="2016" data-ano-oss="2016">
+            <div class="tech-topo"><h3>Yarn <a class="anchor" href="#t-yarn" aria-label="Link para Yarn">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2016 · aberta em outubro de 2016</p>
+            <p class="tech-desc">Cliente determinístico do registro npm, com modo offline. Não é projeto só da Meta: foi feito com Exponent, Google e Tilde, para resolver o não determinismo do npm em escala de monorepo.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>hoje comunitário</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2016/10/11/web/yarn-a-new-package-manager-for-javascript/">engineering.fb.com · Yarn</a></p>
+          </li>
+
+          <li class="tech" id="t-zstd" data-cat="dados" data-era="3" data-status="aberta" data-origem="criada" data-ano="2015" data-ano-oss="2016">
+            <div class="tech-topo"><h3>Zstandard <a class="anchor" href="#t-zstd" aria-label="Link para Zstandard">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2015 · versão 1.0 em agosto de 2016</p>
+            <p class="tech-desc">Compressor sem perdas com velocidade de zlib e razão bem melhor, além de dicionários treinados para cargas pequenas. Provavelmente o artefato de maior adoção que a casa já publicou.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>no kernel Linux, no Btrfs e no próprio HTTP</span></p>
+            <p class="src"><a href="https://github.com/facebook/zstd">github.com/facebook/zstd</a></p>
+          </li>
+
+          <li class="tech" id="t-yoga" data-cat="mobile" data-era="3" data-status="aberta" data-origem="criada" data-ano="2014" data-ano-oss="2016">
+            <div class="tech-topo"><h3>Yoga <a class="anchor" href="#t-yoga" aria-label="Link para Yoga">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2014 como css-layout · relançada como Yoga em dezembro de 2016</p>
+            <p class="tech-desc">Motor de layout Flexbox em C, com ligações para Java, Objective-C e C#. Um algoritmo de layout só, compartilhado por React Native, Litho, ComponentKit e Oculus.</p>
+            <p class="tech-meta"><span class="tech-cat">Mobile</span> · <span>na versão 3.x</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2016/12/07/android/yoga-a-cross-platform-layout-engine/">engineering.fb.com · Yoga</a></p>
+          </li>
+
+          <li class="tech" id="t-myrocks" data-cat="dados" data-era="3" data-status="aberta" data-origem="criada" data-ano="2014" data-ano-oss="2016">
+            <div class="tech-topo"><h3>MyRocks <a class="anchor" href="#t-myrocks" aria-label="Link para MyRocks">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2014 · em produção a partir de 2016</p>
+            <p class="tech-desc">RocksDB como motor de armazenamento do MySQL: semântica relacional sobre uma árvore LSM. A migração do banco de usuários reduziu o tamanho das instâncias em cerca de 62%.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>incorporado ao MariaDB e ao Percona</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2017/09/25/core-infra/migrating-a-database-from-innodb-to-myrocks/">engineering.fb.com · InnoDB para MyRocks</a></p>
+          </li>
+
+          <li class="tech" id="t-fasttext" data-cat="ia" data-era="3" data-status="aberta" data-origem="criada" data-ano="2016" data-ano-oss="2016">
+            <div class="tech-topo"><h3>fastText <a class="anchor" href="#t-fasttext" aria-label="Link para fastText">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2016 · aberta em agosto de 2016</p>
+            <p class="tech-desc">Embeddings de palavra com subpalavras e classificador linear de texto, treináveis em CPU sobre bilhões de palavras em minutos. Resolvia classificação multilíngue com vocabulário raro.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>superada por embeddings de transformer</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2016/08/18/ml-applications/fair-open-sources-fasttext/">engineering.fb.com · fastText</a></p>
+          </li>
+
+          <li class="tech" id="t-fblearner" data-cat="ia" data-era="3" data-status="interna" data-origem="criada" data-ano="2014">
+            <div class="tech-topo"><h3>FBLearner Flow <a class="anchor" href="#t-fblearner" aria-label="Link para FBLearner Flow">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2014 · nunca aberta</p>
+            <p class="tech-desc">Plataforma de autoria e execução de fluxos de ML, com gestão de experimentos e pipelines prontos. Transformou aprendizado de máquina de artefato de pesquisa em fábrica reutilizável.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>evoluída internamente</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2016/05/09/core-infra/introducing-fblearner-flow-facebook-s-ai-backbone/">engineering.fb.com · FBLearner Flow</a></p>
+          </li>
+
+          <li class="tech" id="t-fboss" data-cat="rede" data-era="3" data-status="aberta" data-origem="criada" data-ano="2013" data-ano-oss="2015">
+            <div class="tech-topo"><h3>Wedge e FBOSS <a class="anchor" href="#t-fboss" aria-label="Link para Wedge e FBOSS">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2013 · abertos a partir de 2015</p>
+            <p class="tech-desc">Switch de topo de rack desagregado mais o sistema operacional de switch da casa. Tratar switch como servidor Linux permitiu lançamentos semanais de software na frota de rede.</p>
+            <p class="tech-meta"><span class="tech-cat">Rede</span> · <span>evoluídos em Minipack e Wedge 400</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2015/11/19/data-center-engineering/open-networking-advances-with-wedge-and-fboss/">engineering.fb.com · Wedge e FBOSS</a></p>
+          </li>
+
+          <li class="tech" id="t-zippydb" data-cat="dados" data-era="3" data-status="interna" data-origem="criada" data-ano="2013">
+            <div class="tech-topo"><h3>ZippyDB <a class="anchor" href="#t-zippydb" aria-label="Link para ZippyDB">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2013 · nunca aberta</p>
+            <p class="tech-desc">Chave-valor distribuído: RocksDB no armazenamento e replicação estilo Paxos por cima, com consistência e durabilidade escolhidas por requisição. O maior KV store da Meta.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>descrito publicamente só em 2021</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2021/08/06/core-infra/zippydb/">engineering.fb.com · ZippyDB</a></p>
+          </li>
+
+          <li class="tech" id="t-shardmanager" data-cat="infra" data-era="3" data-status="interna" data-origem="criada" data-ano="2016">
+            <div class="tech-topo"><h3>Shard Manager <a class="anchor" href="#t-shardmanager" aria-label="Link para Shard Manager">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2016 · nunca aberta</p>
+            <p class="tech-desc">Framework genérico de fragmentação: a aplicação declara a intenção de posicionamento e ele planeja as operações de contêiner. Gerencia dezenas de milhões de shards.</p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>base do ZippyDB e de centenas de serviços</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/">engineering.fb.com · Evolução da infraestrutura</a></p>
+          </li>
+
+          <li class="tech" id="t-bigsur" data-cat="hardware" data-era="3" data-status="descontinuada" data-origem="criada" data-ano="2015" data-ano-oss="2015">
+            <div class="tech-topo"><h3>Big Sur <a class="anchor" href="#t-bigsur" aria-label="Link para Big Sur">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2015 · projeto doado ao OCP em dezembro de 2015</p>
+            <p class="tech-desc">Primeira plataforma de treinamento de IA amplamente implantada na casa: oito GPUs de até 300 W, refrigeração a ar, compatível com rack OCP.</p>
+            <p class="tech-meta"><span class="tech-cat">Hardware</span> · <span>sucedida por Big Basin</span></p>
+            <p class="src">Open Compute Project, dezembro de 2015</p>
+          </li>
+
+          <!-- ============ ERA 4 · 2017–2020 ============ -->
+          <li class="era-banner" data-era-banner="4">Era 4 · 2017–2020 · Plataforma de ML e infraestrutura de larga escala</li>
+
+          <li class="tech" id="t-pytorch" data-cat="ia" data-era="4" data-status="aberta" data-origem="criada" data-ano="2016" data-ano-oss="2017">
+            <div class="tech-topo"><h3>PyTorch <a class="anchor" href="#t-pytorch" aria-label="Link para PyTorch">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2016 · aberta em janeiro de 2017</p>
+            <p class="tech-desc">Framework com Python primeiro e grafo definido pela execução. Resolveu o teto de adoção do Torch em Lua e a rigidez do grafo estático. A 1.0, de dezembro de 2018, absorveu o Caffe2.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>na PyTorch Foundation desde 2022</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2018/12/07/ai-research/pytorch-developer-ecosystem-expands-1-0-stable-release/">engineering.fb.com · PyTorch 1.0</a></p>
+          </li>
+
+          <li class="tech" id="t-caffe2" data-cat="ia" data-era="4" data-status="descontinuada" data-origem="criada" data-ano="2016" data-ano-oss="2017">
+            <div class="tech-topo"><h3>Caffe2 <a class="anchor" href="#t-caffe2" aria-label="Link para Caffe2">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2016 · aberta em abril de 2017</p>
+            <p class="tech-desc">Framework leve e modular voltado a produção e a celular, rodando em mais de um bilhão de aparelhos. Era o complemento de produção do PyTorch, voltado à pesquisa.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>incorporada ao PyTorch em 2018</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2018/12/07/ai-research/pytorch-developer-ecosystem-expands-1-0-stable-release/">engineering.fb.com · PyTorch 1.0</a></p>
+          </li>
+
+          <li class="tech" id="t-onnx" data-cat="ia" data-era="4" data-status="aberta" data-origem="criada" data-ano="2017" data-ano-oss="2017">
+            <div class="tech-topo"><h3>ONNX <a class="anchor" href="#t-onnx" aria-label="Link para ONNX">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2017 · aberta em setembro de 2017</p>
+            <p class="tech-desc">Formato comum de troca de modelos, feito com a Microsoft, para que um modelo treinado no PyTorch pudesse ser servido pelo Caffe2. Era o remendo diplomático entre os dois frameworks da casa.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>na LF AI &amp; Data desde 2019</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2017/12/08/ml-applications/onnx-v1-released/">engineering.fb.com · ONNX v1</a></p>
+          </li>
+
+          <li class="tech" id="t-faiss" data-cat="ia" data-era="4" data-status="aberta" data-origem="criada" data-ano="2016" data-ano-oss="2017">
+            <div class="tech-topo"><h3>FAISS <a class="anchor" href="#t-faiss" aria-label="Link para FAISS">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2016 · aberta em 2017</p>
+            <p class="tech-desc">Busca por similaridade e agrupamento de vetores densos em escala de bilhões, com implementação em GPU. Resolveu vizinhos mais próximos sobre bilhões de embeddings em milissegundos.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>substrato de busca vetorial da era RAG</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/">engineering.fb.com · FAISS</a></p>
+          </li>
+
+          <li class="tech" id="t-prophet" data-cat="ia" data-era="4" data-status="aberta" data-origem="criada" data-ano="2016" data-ano-oss="2017">
+            <div class="tech-topo"><h3>Prophet <a class="anchor" href="#t-prophet" aria-label="Link para Prophet">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2016 · aberta em fevereiro de 2017</p>
+            <p class="tech-desc">Previsão de séries temporais por decomposição aditiva — tendência, sazonalidade e feriados — pensada para analistas, não só para estatísticos. Em Python e R.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>ritmo de manutenção baixo</span></p>
+            <p class="src"><a href="https://facebook.github.io/prophet/">facebook.github.io/prophet</a></p>
+          </li>
+
+          <li class="tech" id="t-detectron" data-cat="ia" data-era="4" data-status="aberta" data-origem="criada" data-ano="2017" data-ano-oss="2018">
+            <div class="tech-topo"><h3>Detectron e Detectron2 <a class="anchor" href="#t-detectron" aria-label="Link para Detectron">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2017 · Detectron em 2018, Detectron2 em 2019</p>
+            <p class="tech-desc">Plataforma de detecção e segmentação de objetos, com implementações de referência de Mask R-CNN, RetinaNet e FPN. O Detectron2 é a reescrita completa em PyTorch.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>em manutenção; o foco de visão foi para SAM e DINO</span></p>
+            <p class="src"><a href="https://github.com/facebookresearch/detectron2">github.com/facebookresearch/detectron2</a></p>
+          </li>
+
+          <li class="tech" id="t-litho" data-cat="mobile" data-era="4" data-status="aberta" data-origem="criada" data-ano="2016" data-ano-oss="2017">
+            <div class="tech-topo"><h3>Litho <a class="anchor" href="#t-litho" aria-label="Link para Litho">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2016 · aberta em abril de 2017</p>
+            <p class="tech-desc">Interface declarativa no Android desacoplada de objetos View, com medição e layout em threads de fundo. A Meta relatou até 35% de melhora no desempenho de rolagem.</p>
+            <p class="tech-meta"><span class="tech-cat">Mobile</span> · <span>o ecossistema Android foi para Jetpack Compose</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2017/04/18/android/open-sourcing-litho-a-declarative-ui-framework-for-android/">engineering.fb.com · Litho</a></p>
+          </li>
+
+          <li class="tech" id="t-hermes" data-cat="mobile" data-era="4" data-status="aberta" data-origem="criada" data-ano="2018" data-ano-oss="2019">
+            <div class="tech-topo"><h3>Hermes <a class="anchor" href="#t-hermes" aria-label="Link para Hermes">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2018 · aberta em julho de 2019</p>
+            <p class="tech-desc">Motor JavaScript com bytecode compilado antecipadamente. Admite que a restrição real do React Native nunca foi nativo contra JS, e sim celular Android barato: corta tempo de início, APK e memória.</p>
+            <p class="tech-meta"><span class="tech-cat">Mobile</span> · <span>sucedido pelo Hermes V1, padrão desde a RN 0.84</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2019/07/12/android/hermes/">engineering.fb.com · Hermes</a></p>
+          </li>
+
+          <li class="tech" id="t-flipper" data-cat="ferramentas" data-era="4" data-status="aberta" data-origem="criada" data-ano="2017" data-ano-oss="2018">
+            <div class="tech-topo"><h3>Flipper <a class="anchor" href="#t-flipper" aria-label="Link para Flipper">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2017 · aberta em junho de 2018, como Sonar</p>
+            <p class="tech-desc">Plataforma extensível de depuração mobile, com API de plugins para rede, layout e banco. Lançada como Sonar e renomeada em julho de 2018 por colisão de marca.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>substituída no RN pelo React Native DevTools</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2018/06/11/android/flipper/">engineering.fb.com · Flipper</a></p>
+          </li>
+
+          <li class="tech" id="t-docusaurus" data-cat="ferramentas" data-era="4" data-status="aberta" data-origem="criada" data-ano="2017" data-ano-oss="2017">
+            <div class="tech-topo"><h3>Docusaurus <a class="anchor" href="#t-docusaurus" aria-label="Link para Docusaurus">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2017 · aberta em dezembro de 2017</p>
+            <p class="tech-desc">Gerador de sites de documentação, criado para que os times de código aberto parassem de escrever à mão o mesmo site de docs várias vezes.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>na versão 3</span></p>
+            <p class="src"><a href="https://github.com/facebook/docusaurus">github.com/facebook/docusaurus</a></p>
+          </li>
+
+          <li class="tech" id="t-katran" data-cat="rede" data-era="4" data-status="aberta" data-origem="criada" data-ano="2017" data-ano-oss="2018">
+            <div class="tech-topo"><h3>Katran <a class="anchor" href="#t-katran" aria-label="Link para Katran">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2017 · aberta em maio de 2018</p>
+            <p class="tech-desc">Plano de encaminhamento de balanceador de carga L4 reconstruído sobre XDP e eBPF, processando pacotes ainda no caminho do driver do kernel. Ganho grande de vazão sobre o estilo IPVS.</p>
+            <p class="tech-meta"><span class="tech-cat">Rede</span> · <span>em uso</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2018/05/22/open-source/open-sourcing-katran-a-scalable-network-load-balancer/">engineering.fb.com · Katran</a></p>
+          </li>
+
+          <li class="tech" id="t-mvfst" data-cat="rede" data-era="4" data-status="aberta" data-origem="criada" data-ano="2017" data-ano-oss="2019">
+            <div class="tech-topo"><h3>mvfst <a class="anchor" href="#t-mvfst" aria-label="Link para mvfst">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2017 · aberta em 2018–2019</p>
+            <p class="tech-desc">Implementação C++ do QUIC: multiplexação de streams no transporte, 0-RTT e controle de congestionamento plugável. Foi para bilhões de usuários antes de o QUIC virar RFC.</p>
+            <p class="tech-meta"><span class="tech-cat">Rede</span> · <span>data exata de abertura do repositório não confirmada</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2019/05/01/open-source/f8-open-source/">engineering.fb.com · F8 2019</a></p>
+          </li>
+
+          <li class="tech" id="t-logdevice" data-cat="dados" data-era="4" data-status="descontinuada" data-origem="criada" data-ano="2017" data-ano-oss="2018">
+            <div class="tech-topo"><h3>LogDevice <a class="anchor" href="#t-logdevice" aria-label="Link para LogDevice">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2017 · aberta em setembro de 2018</p>
+            <p class="tech-desc">Armazenamento de log distribuído, durável e totalmente ordenado — não é sistema de arquivos nem chave-valor. Ingeria mais de 1 TB por segundo internamente.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>repositório inativo; superado internamente</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2018/09/21/core-infra/open-sourcing-logdevice-a-distributed-data-store-for-sequential-data/">engineering.fb.com · LogDevice</a></p>
+          </li>
+
+          <li class="tech" id="t-delos" data-cat="infra" data-era="4" data-status="interna" data-origem="criada" data-ano="2018">
+            <div class="tech-topo"><h3>Delos <a class="anchor" href="#t-delos" aria-label="Link para Delos">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2018 · nunca aberta</p>
+            <p class="tech-desc">Armazenamento de plano de controle sobre um log virtual: consenso virtualizado permite trocar o protocolo por baixo sem parar. Resolve a circularidade de quem guarda a configuração de quem guarda a configuração.</p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>base do ServiceRouter</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2019/06/06/data-center-engineering/delos/">engineering.fb.com · Delos</a></p>
+          </li>
+
+          <li class="tech" id="t-tectonic" data-cat="dados" data-era="4" data-status="interna" data-origem="criada" data-ano="2018">
+            <div class="tech-topo"><h3>Tectonic <a class="anchor" href="#t-tectonic" aria-label="Link para Tectonic">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2018 · nunca aberta</p>
+            <p class="tech-desc">Sistema de arquivos distribuído em escala de datacenter, na casa dos exabytes, consolidando os silos anteriores — Haystack, f4 e o HDFS do warehouse. Metadados no ZippyDB.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>serve os dados de treinamento de IA</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/">engineering.fb.com · Infraestrutura de GenAI</a></p>
+          </li>
+
+          <li class="tech" id="t-pyre" data-cat="ferramentas" data-era="4" data-status="descontinuada" data-origem="criada" data-ano="2017" data-ano-oss="2018">
+            <div class="tech-topo"><h3>Pyre <a class="anchor" href="#t-pyre" aria-label="Link para Pyre">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2017 · aberta em maio de 2018</p>
+            <p class="tech-desc">Verificador de tipos de Python escrito em OCaml, feito para bases muito grandes — nasceu explicitamente para o monólito do Instagram. Mesmo roteiro do verificador do Hack.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>substituído pelo Pyrefly</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2025/05/15/developer-tools/introducing-pyrefly-a-new-type-checker-and-ide-experience-for-python/">engineering.fb.com · Pyrefly</a></p>
+          </li>
+
+          <li class="tech" id="t-react16" data-cat="frontend" data-era="4" data-status="aberta" data-origem="criada" data-ano="2015" data-ano-oss="2017">
+            <div class="tech-topo"><h3>React 16 "Fiber" e Hooks <a class="anchor" href="#t-react16" aria-label="Link para React 16 e Hooks">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">Fiber em setembro de 2017 · Hooks em fevereiro de 2019</p>
+            <p class="tech-desc">O Fiber reescreveu o reconciliador inteiro sem mudar a API, comprando a maquinaria de agendamento. Os Hooks, na 16.8, gastaram esse crédito e aposentaram classes e wrappers de ordem superior.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>a maior virada de autoria da história do frontend</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2017/09/26/web/react-16-a-look-inside-an-api-compatible-rewrite-of-our-frontend-ui-library/">engineering.fb.com · React 16</a></p>
+          </li>
+
+          <li class="tech" id="t-osquery" data-cat="ferramentas" data-era="4" data-status="aberta" data-origem="criada" data-ano="2014" data-ano-oss="2014">
+            <div class="tech-topo"><h3>osquery <a class="anchor" href="#t-osquery" aria-label="Link para osquery">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2014 · aberta em outubro de 2014</p>
+            <p class="tech-desc">Expõe o estado do sistema operacional — processos, sockets, extensões de kernel — como tabelas SQL, para análise de segurança em toda a frota.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>doado à Linux Foundation em 2019</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2014/10/29/security/introducing-osquery/">engineering.fb.com · osquery</a></p>
+          </li>
+
+          <li class="tech" id="t-bigbasin" data-cat="hardware" data-era="4" data-status="descontinuada" data-origem="criada" data-ano="2016" data-ano-oss="2017">
+            <div class="tech-topo"><h3>Big Basin <a class="anchor" href="#t-bigbasin" aria-label="Link para Big Basin">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
+            <p class="tech-anos">2016 · doada ao OCP em março de 2017</p>
+            <p class="tech-desc">Sucessora do Big Sur, com NVIDIA Tesla P100. Permitiu modelos cerca de 30% maiores e foi recontribuída ao Open Compute em 2018.</p>
+            <p class="tech-meta"><span class="tech-cat">Hardware</span> · <span>sucedida por Zion e depois Grand Teton</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2017/03/08/data-center-engineering/introducing-big-basin-our-next-generation-ai-hardware/">engineering.fb.com · Big Basin</a></p>
+          </li>
+
+          <!-- ============ ERA 5 · 2021–2026 ============ -->
+          <li class="era-banner" data-era-banner="5">Era 5 · 2021–2026 · Rust, pesos abertos e silício próprio</li>
+
+          <li class="tech" id="t-rust" data-cat="linguagem" data-era="5" data-status="aberta" data-origem="adotada" data-ano="2016">
+            <div class="tech-topo"><h3>Rust <a class="anchor" href="#t-rust" aria-label="Link para Rust">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2016 · endossada oficialmente em julho de 2022</p>
+            <p class="tech-desc">Entrou na lista curta de linguagens de servidor suportadas, ao lado de Hack, C++ e Python. Recomendada para CLIs e back-ends sensíveis a desempenho — e virou a base do ferramental novo.</p>
+            <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>em expansão</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2022/07/27/developer-tools/programming-languages-endorsed-for-server-side-use-at-meta/">engineering.fb.com · Linguagens endossadas</a></p>
+          </li>
+
+          <li class="tech" id="t-sapling" data-cat="ferramentas" data-era="5" data-status="aberta" data-origem="criada" data-ano="2013" data-ano-oss="2022">
+            <div class="tech-topo"><h3>Sapling <a class="anchor" href="#t-sapling" aria-label="Link para Sapling">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2013 · aberta em novembro de 2022</p>
+            <p class="tech-desc">Controle de versão escalável e compatível com Git, para um monorepo de milhões de arquivos. Só o cliente é suportado externamente: o servidor Mononoke e o sistema de arquivos virtual EdenFS não.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>nove anos entre criar e abrir</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2022/11/15/open-source/sapling-source-control-scalable/">engineering.fb.com · Sapling</a></p>
+          </li>
+
+          <li class="tech" id="t-buck2" data-cat="ferramentas" data-era="5" data-status="aberta" data-origem="criada" data-ano="2021" data-ano-oss="2023">
+            <div class="tech-topo"><h3>Buck2 <a class="anchor" href="#t-buck2" aria-label="Link para Buck2">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2021 · aberta em abril de 2023</p>
+            <p class="tech-desc">Reescrita do build system do zero, com núcleo em Rust e até o interpretador Starlark em Rust. Separa o núcleo das regras de linguagem. Cerca de duas vezes mais rápido que o Buck original.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>substituiu o Buck</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2023/04/06/open-source/buck2-open-source-large-scale-build-system/">engineering.fb.com · Buck2</a></p>
+          </li>
+
+          <li class="tech" id="t-pyrefly" data-cat="ferramentas" data-era="5" data-status="aberta" data-origem="criada" data-ano="2024" data-ano-oss="2025">
+            <div class="tech-topo"><h3>Pyrefly <a class="anchor" href="#t-pyrefly" aria-label="Link para Pyrefly">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2024 · alpha em maio de 2025, 1.0 em maio de 2026</p>
+            <p class="tech-desc">Verificador de tipos e language server de Python escrito em Rust, do zero. Checa o Instagram em cerca de 13 segundos, onde o Pyre levava mais de 100 — rápido o bastante para rodar a cada tecla.</p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>adotado por PyTorch, NumPy e JAX</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2025/05/15/developer-tools/open-sourcing-pyrefly-a-faster-python-type-checker-written-in-rust/">engineering.fb.com · Pyrefly</a></p>
+          </li>
+
+          <li class="tech" id="t-cinder" data-cat="linguagem" data-era="5" data-status="aberta" data-origem="bifurcada" data-ano="2018" data-ano-oss="2021">
+            <div class="tech-topo"><h3>Cinder e CinderX <a class="anchor" href="#t-cinder" aria-label="Link para Cinder">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2018 · aberta em 2021; CinderX a partir de 2024</p>
+            <p class="tech-desc">Fork do CPython com JIT, cache inline e objetos imortais, para cortar o custo de CPU do Django do Instagram. O CinderX reembala tudo como extensão, para voltar a acompanhar o upstream.</p>
+            <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>parte foi contribuída ao CPython 3.12</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2023/10/05/developer-tools/python-312-meta-new-features/">engineering.fb.com · Python 3.12</a></p>
+          </li>
+
+          <li class="tech" id="t-stylex" data-cat="frontend" data-era="5" data-status="aberta" data-origem="criada" data-ano="2020" data-ano-oss="2023">
+            <div class="tech-topo"><h3>StyleX <a class="anchor" href="#t-stylex" aria-label="Link para StyleX">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2020 · aberta em dezembro de 2023</p>
+            <p class="tech-desc">CSS-in-JS de tempo de compilação que gera CSS atômico sem colisão e com tipos. Resolve especificidade, colisão de nomes e CSS morto em bases enormes. Nasceu na reconstrução do facebook.com.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>padrão em Facebook, Instagram, WhatsApp e Threads</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2025/11/11/web/stylex-a-styling-library-for-css-at-scale/">engineering.fb.com · StyleX</a></p>
+          </li>
+
+          <li class="tech" id="t-lexical" data-cat="frontend" data-era="5" data-status="aberta" data-origem="criada" data-ano="2021" data-ano-oss="2022">
+            <div class="tech-topo"><h3>Lexical <a class="anchor" href="#t-lexical" aria-label="Link para Lexical">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2021 · aberta em abril de 2022</p>
+            <p class="tech-desc">Framework de editor de texto extensível, com núcleo de cerca de 22 KB, agnóstico de framework, com árvore de estado imutável e transações. Substituiu o Draft.js.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>move os editores de Facebook, Messenger e WhatsApp</span></p>
+            <p class="src"><a href="https://lexical.dev/">lexical.dev</a></p>
+          </li>
+
+          <li class="tech" id="t-react-compiler" data-cat="frontend" data-era="5" data-status="aberta" data-origem="criada" data-ano="2021" data-ano-oss="2024">
+            <div class="tech-topo"><h3>React Compiler <a class="anchor" href="#t-react-compiler" aria-label="Link para React Compiler">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2021 como "React Forget" · 1.0 estável em outubro de 2025</p>
+            <p class="tech-desc">Compilador que faz memoização automática em tempo de build, tornando obsoletos o useMemo e o useCallback escritos à mão. Funciona no React e no React Native.</p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>a Meta relatou −12% no tempo de carga da Quest Store</span></p>
+            <p class="src"><a href="https://react.dev/blog/2025/10/07/react-compiler-1">react.dev · React Compiler 1.0</a></p>
+          </li>
+
+          <li class="tech" id="t-rn-newarch" data-cat="mobile" data-era="5" data-status="aberta" data-origem="criada" data-ano="2018" data-ano-oss="2024">
+            <div class="tech-topo"><h3>RN New Architecture <a class="anchor" href="#t-rn-newarch" aria-label="Link para React Native New Architecture">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2018 · padrão na 0.76, em outubro de 2024</p>
+            <p class="tech-desc">Fabric, TurboModules e JSI substituem a bridge JSON assíncrona por chamadas síncronas e tipadas. Habilita Suspense, Transitions e batching automático no mobile.</p>
+            <p class="tech-meta"><span class="tech-cat">Mobile</span> · <span>sem opção de desativar desde a 0.82</span></p>
+            <p class="src"><a href="https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here">reactnative.dev · New Architecture</a></p>
+          </li>
+
+          <li class="tech" id="t-velox" data-cat="dados" data-era="5" data-status="aberta" data-origem="criada" data-ano="2020" data-ano-oss="2023">
+            <div class="tech-topo"><h3>Velox <a class="anchor" href="#t-velox" aria-label="Link para Velox">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2020 · anunciada formalmente em março de 2023</p>
+            <p class="tech-desc">Biblioteca C++ de execução vetorizada, independente de dialeto e reutilizável entre engines. Resolve a reimplementação dos mesmos operadores em cada sistema de dados da casa.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>ganhos de 3 a 10 vezes no Presto C++</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2023/03/09/open-source/velox-open-source-execution-engine/">engineering.fb.com · Velox</a></p>
+          </li>
+
+          <li class="tech" id="t-tulip" data-cat="dados" data-era="5" data-status="interna" data-origem="criada" data-ano="2019">
+            <div class="tech-topo"><h3>Tulip <a class="anchor" href="#t-tulip" aria-label="Link para Tulip">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2019 · nunca aberta</p>
+            <p class="tech-desc">Novo formato de serialização de logging, no lugar de texto e JSON do Hive. Cortou cerca de 85% dos bytes registrados, com migração de milhares de esquemas.</p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>em uso</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2023/01/26/data-infrastructure/tulip-modernizing-metas-data-platform/">engineering.fb.com · Tulip</a></p>
+          </li>
+
+          <li class="tech" id="t-llama" data-cat="ia" data-era="5" data-status="aberta" data-origem="criada" data-ano="2023" data-ano-oss="2023">
+            <div class="tech-topo"><h3>Llama <a class="anchor" href="#t-llama" aria-label="Link para Llama">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2023 · Llama 1 em fevereiro de 2023, Llama 4 em abril de 2025</p>
+            <p class="tech-desc">A aposta em pesos abertos. Culminou no Llama 3.1 405B, de julho de 2024, primeiro modelo de escala de fronteira com pesos abertos e licença que permite destilação.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>o Llama 4 Behemoth nunca foi lançado</span></p>
+            <p class="src"><a href="https://ai.meta.com/blog/meta-llama-3-1/">ai.meta.com · Llama 3.1</a></p>
+          </li>
+
+          <li class="tech" id="t-muse" data-cat="ia" data-era="5" data-status="interna" data-origem="criada" data-ano="2026">
+            <div class="tech-topo"><h3>Muse Spark <a class="anchor" href="#t-muse" aria-label="Link para Muse Spark">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2026 · pesos fechados, acesso por API</p>
+            <p class="tech-desc">O primeiro modelo da série Muse, da Meta Superintelligence Labs, criada em junho de 2025. Marca a virada: fronteira fechada, com a Meta declarando esperar abrir versões futuras.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>Meta Model API em preview desde julho de 2026</span></p>
+            <p class="src"><a href="https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/">about.fb.com · Muse Spark</a></p>
+          </li>
+
+          <li class="tech" id="t-executorch" data-cat="ia" data-era="5" data-status="aberta" data-origem="criada" data-ano="2023" data-ano-oss="2023">
+            <div class="tech-topo"><h3>ExecuTorch <a class="anchor" href="#t-executorch" aria-label="Link para ExecuTorch">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2023 · versão 1.0 em outubro de 2025</p>
+            <p class="tech-desc">Runtime de inferência nativo do PyTorch para a borda — iOS, Android, embarcado e desktop — sem etapa de conversão de modelo. Já em produção nos apps da casa.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>CPU, GPU e NPU</span></p>
+            <p class="src"><a href="https://pytorch.org/blog/introducing-executorch-1-0/">pytorch.org · ExecuTorch 1.0</a></p>
+          </li>
+
+          <li class="tech" id="t-sam" data-cat="ia" data-era="5" data-status="aberta" data-origem="criada" data-ano="2023" data-ano-oss="2023">
+            <div class="tech-topo"><h3>Segment Anything <a class="anchor" href="#t-sam" aria-label="Link para Segment Anything">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2023 · SAM 1 em abril de 2023, SAM 3 em novembro de 2025</p>
+            <p class="tech-desc">Segmentação por prompt, sem treino específico. O SAM 2 levou para vídeo em tempo real; o SAM 3 aceita um substantivo curto e devolve máscaras de todas as instâncias daquele conceito.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>código, checkpoints e benchmark abertos</span></p>
+            <p class="src"><a href="https://ai.meta.com/research/publications/sam-3-segment-anything-with-concepts/">ai.meta.com · SAM 3</a></p>
+          </li>
+
+          <li class="tech" id="t-dinov3" data-cat="ia" data-era="5" data-status="aberta" data-origem="criada" data-ano="2023" data-ano-oss="2025">
+            <div class="tech-topo"><h3>DINOv2 e DINOv3 <a class="anchor" href="#t-dinov3" aria-label="Link para DINOv3">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">2023 · DINOv3 em agosto de 2025</p>
+            <p class="tech-desc">Backbone de visão treinado sem rótulos. O DINOv3 tem 7 bilhões de parâmetros, foi treinado em 1,7 bilhão de imagens e funciona até em imagem de satélite.</p>
+            <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>usado por NASA JPL e World Resources Institute</span></p>
+            <p class="src"><a href="https://ai.meta.com/blog/dinov3-self-supervised-vision-model/">ai.meta.com · DINOv3</a></p>
+          </li>
+
+          <li class="tech" id="t-mtia" data-cat="hardware" data-era="5" data-status="interna" data-origem="criada" data-ano="2023">
+            <div class="tech-topo"><h3>MTIA <a class="anchor" href="#t-mtia" aria-label="Link para MTIA">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2023 · v1 em maio de 2023, gerações 300 a 500 anunciadas em março de 2026</p>
+            <p class="tech-desc">O acelerador próprio da Meta. Começou em inferência de ranking e chegou a treinamento. A cadência declarada é de um chip novo a cada seis meses, contra um a dois anos da indústria.</p>
+            <p class="tech-meta"><span class="tech-cat">Hardware</span> · <span>racks OCP, com PyTorch, vLLM e Triton</span></p>
+            <p class="src"><a href="https://about.fb.com/news/2026/03/expanding-metas-custom-silicon-to-power-our-ai-workloads/">about.fb.com · Silício próprio</a></p>
+          </li>
+
+          <li class="tech" id="t-grandteton" data-cat="hardware" data-era="5" data-status="aberta" data-origem="criada" data-ano="2022" data-ano-oss="2022">
+            <div class="tech-topo"><h3>Grand Teton e Catalina <a class="anchor" href="#t-grandteton" aria-label="Link para Grand Teton e Catalina">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
+            <p class="tech-anos">Grand Teton em outubro de 2022 · Catalina em outubro de 2024</p>
+            <p class="tech-desc">Plataformas de GPU doadas ao Open Compute. O Grand Teton juntou energia, controle, computação e fabric num chassi só; o Catalina leva 72 GPUs e 140 kW com refrigeração líquida.</p>
+            <p class="tech-meta"><span class="tech-cat">Hardware</span> · <span>base dos clusters de 24.576 GPUs H100</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2024/10/15/data-infrastructure/metas-open-ai-hardware-vision/">engineering.fb.com · OCP 2024</a></p>
+          </li>
+
+          <li class="tech" id="t-datacenters" data-cat="hardware" data-era="5" data-status="interna" data-origem="criada" data-ano="2025">
+            <div class="tech-topo"><h3>Prometheus e Hyperion <a class="anchor" href="#t-datacenters" aria-label="Link para Prometheus e Hyperion">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2025 · em construção</p>
+            <p class="tech-desc">Os primeiros superclusters em escala de gigawatt: Prometheus, em Ohio, com cerca de 1 GW; Hyperion, na Luisiana, projetado para 5 GW. É o movimento de 2010 repetido duas ordens de grandeza acima.</p>
+            <p class="tech-meta"><span class="tech-cat">Hardware</span> · <span>rede baseada no Non-Scheduled Fabric</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2025/10/13/data-infrastructure/ocp-summit-2025-the-open-future-of-networking-hardware-for-ai/">engineering.fb.com · OCP 2025</a></p>
+          </li>
+
+          <!-- CARDS-FIM -->
+        </ul>
+
+        <p class="f-vazio" id="f-vazio" hidden>
+          Nenhuma tecnologia bate com esses filtros.
+          <button type="button" class="link-btn" data-limpar>Limpar filtros</button>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- ===== PAINEL 2 · COMO ESTE SITE FOI FEITO                        ===== -->
+  <!-- ===================================================================== -->
+  <div role="tabpanel" class="painel" id="painel-site" aria-labelledby="tab-site" tabindex="0" data-aba="site">
+    <h2 class="painel-titulo">Como este site foi feito</h2>
+
+    <!-- 2.1 O veredito primeiro -->
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">A stack deste site</span>
+        <h1>Nenhum framework. <em>Nenhuma dependência.</em> Nenhuma etapa de build.</h1>
+        <p class="sub">
+          Há uma ironia em escrever sobre a empresa que produziu o React, o React Native, o
+          GraphQL, o Jest e o Yarn — e não usar nada disso. Mas a resposta honesta à pergunta
+          "quais frameworks e bibliotecas você usou para fazer este site" é: <strong>zero</strong>.
+          Esta aba explica o que existe no lugar deles, e por quê.
+        </p>
+      </div>
+    </section>
+
+    <section class="s2-sec">
+      <div class="wrap">
+        <div class="veredito">
+          <div class="ver-card"><b>0</b><p>frameworks e bibliotecas</p></div>
+          <div class="ver-card"><b>0</b><p>pacotes npm, zero etapa de build</p></div>
+          <div class="ver-card"><b>1</b><p>arquivo, com 163 KB</p></div>
+          <div class="ver-card"><b>1</b><p>requisição de rede, no total</p></div>
+        </div>
+        <p class="src" style="margin-top:1.2rem">
+          O arquivo tem exatamente 166.599 bytes e 2.240 linhas, contendo 99 fichas de
+          tecnologia. Os números foram medidos no arquivo pronto, não estimados — numa aba cujo
+          assunto é honestidade, um número chutado seria o pior defeito possível.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2.2 O que faz o papel de framework -->
+    <section class="s2-sec">
+      <div class="wrap">
+        <h2>O que faz o papel de framework</h2>
+        <p class="sub">
+          Um framework não é mágica: é um conjunto de respostas prontas para problemas concretos.
+          Quando não se usa um, os problemas continuam existindo — só que a resposta passa a vir da
+          própria plataforma. Foi assim em cada caso aqui.
+        </p>
+        <div class="tabela-wrap">
+          <table>
+            <thead>
+              <tr><th>Problema</th><th>Solução usada aqui</th><th>O que um framework usaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Componentes</td><td>HTML estático, escrito uma vez</td><td>React, Vue, Svelte</td></tr>
+              <tr><td>Estado da interface</td><td>O atributo <code>hidden</code> e atributos <code>data-*</code></td><td>Redux, Zustand, Signals</td></tr>
+              <tr><td>Rotas</td><td>Hash da URL com <code>history.replaceState</code></td><td>React Router, TanStack Router</td></tr>
+              <tr><td>Escopo de estilo</td><td>Custom properties e prefixo de classe</td><td>Tailwind, CSS Modules, StyleX</td></tr>
+              <tr><td>Tema claro e escuro</td><td><code>prefers-color-scheme</code>, sem botão nem armazenamento</td><td>next-themes</td></tr>
+              <tr><td>Animação de entrada</td><td><code>IntersectionObserver</code> e uma transição CSS</td><td>Framer Motion, GSAP</td></tr>
+              <tr><td>Busca e filtro</td><td>Índice em memória e <code>hidden</code> nos cards</td><td>Fuse.js, TanStack Table</td></tr>
+              <tr><td>Ícones</td><td>SVG inline e um favicon em <code>data:</code> URI</td><td>Lucide, Font Awesome</td></tr>
+              <tr><td>Tipografia</td><td>Pilha de fontes do sistema</td><td>Google Fonts, Fontsource</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.3 APIs de navegador -->
+    <section class="s2-sec">
+      <div class="wrap">
+        <h2>As APIs de navegador que fazem o trabalho</h2>
+        <p class="sub">
+          Tudo que esta página faz de dinâmico sai daqui. Nenhuma delas precisa de polyfill nos
+          navegadores atuais, e todas têm um caminho de degradação se faltarem.
+        </p>
+        <ul class="lista-api">
+          <li>
+            <b><code>IntersectionObserver</code></b>
+            <p>Revela os blocos conforme entram na tela. Vem atrás de uma checagem de existência e de <code>prefers-reduced-motion</code>: se qualquer um falhar, tudo aparece de uma vez.</p>
+          </li>
+          <li>
+            <b><code>history.replaceState</code> e <code>hashchange</code></b>
+            <p>Sincroniza a aba ativa com a URL, para poder compartilhar link direto. Usa <code>replaceState</code> e não <code>pushState</code> para não entupir o histórico ao navegar pelas setas.</p>
+          </li>
+          <li>
+            <b><code>String.prototype.normalize</code></b>
+            <p>Decompõe os acentos para que buscar "codigo" encontre "código". Está atrás de uma checagem: sem ele, a busca continua funcionando, só que sensível a acento.</p>
+          </li>
+          <li>
+            <b><code>Element.closest</code></b>
+            <p>Descobre em qual painel mora o alvo de um link como <code>#t-react</code>, para abrir a aba certa antes de rolar até lá.</p>
+          </li>
+          <li>
+            <b><code>matchMedia</code></b>
+            <p>Lê <code>prefers-reduced-motion</code> no JavaScript, para desligar as animações de entrada em vez de apenas encurtá-las.</p>
+          </li>
+          <li>
+            <b>O atributo <code>hidden</code></b>
+            <p>É a primitiva de filtro inteira. Além de esconder, remove o elemento da árvore de acessibilidade — que é exatamente o comportamento certo para um card filtrado.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2.4 CSS -->
+    <section class="s2-sec">
+      <div class="wrap">
+        <h2>As decisões de CSS</h2>
+        <p class="sub">
+          O CSS é escrito à mão, num único bloco, sem pré-processador e sem pós-processador.
+          Custom properties fazem o papel que um Sass faria há dez anos, e fazem melhor: mudam em
+          tempo de execução.
+        </p>
+        <ul class="lista-api">
+          <li><b>Custom properties como design tokens</b><p>Um bloco <code>:root</code> define cor, sombra e raio. O bloco de tema escuro redeclara todos, e nada mais no arquivo precisa saber que existe tema escuro.</p></li>
+          <li><b><code>clamp()</code> para tipografia fluida</b><p>Títulos escalam com a largura da tela sem uma única media query, entre um mínimo e um máximo definidos.</p></li>
+          <li><b>Grid com <code>auto-fit</code> e <code>minmax</code></b><p>O catálogo passa de uma para três colunas conforme cabe, sem breakpoints escritos à mão para cada faixa.</p></li>
+          <li><b>Timeline em CSS puro</b><p>O trilho vertical é um <code>::before</code> com gradiente; cada nó é outro <code>::before</code> com <code>border</code>, não <code>box-shadow</code>, para sobreviver ao modo de alto contraste.</p></li>
+          <li><b>O gráfico de defasagem sem SVG</b><p>Cada barra é um elemento posicionado com duas variáveis, <code>--i</code> e <code>--w</code>. As duas pontas são <code>::before</code> e <code>::after</code> — nenhum elemento extra, nenhuma imagem.</p></li>
+          <li><b><code>@media print</code></b><p>Ao imprimir, as abas somem, os dois painéis aparecem empilhados e os filtros desaparecem. O documento impresso fica completo.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2.5 Acessibilidade -->
+    <section class="s2-sec">
+      <div class="wrap">
+        <h2>Acessibilidade, e uma decisão contraintuitiva</h2>
+        <p class="sub">
+          As abas seguem o padrão ARIA Tabs completo: <code>role="tablist"</code>, estado em
+          <code>aria-selected</code>, e <em>roving tabindex</em> — só a aba ativa é focável, então o
+          Tab atravessa o conjunto de abas em um passo, em vez de parar em cada uma. As setas
+          navegam, Home e End vão para as pontas.
+        </p>
+        <p>
+          A decisão contraintuitiva é o contador de resultados. O caminho natural seria colocar
+          <code>aria-live="polite"</code> no número visível — e isso produziria um bug clássico: ao
+          digitar "react", um leitor de tela recitaria "cinquenta e dois... trinta e um... doze...
+          três... um". Então são dois elementos. O número visível muda a cada tecla, sem
+          <code>aria-live</code>. Um segundo elemento, invisível, anuncia o total meio segundo
+          depois de a digitação parar.
+        </p>
+        <ul class="lista-api">
+          <li><b>Funciona sem JavaScript</b><p>As duas abas viram capítulos empilhados, e as 99 fichas aparecem todas. Os controles de filtro, que sem JS não fariam nada, ficam escondidos — controle morto é pior que controle ausente.</p></li>
+          <li><b>Situação com texto, nunca só cor</b><p>Aberta, Fechada e Descontinuada são palavras escritas. A cor é reforço, não a informação.</p></li>
+          <li><b>Alvos de toque de 44 pixels</b><p>Todo botão, chip e campo tem pelo menos 44 pixels de altura, inclusive os chips de filtro no celular.</p></li>
+          <li><b>Foco sempre visível</b><p>Os inputs dos chips ficam transparentes, e não <code>display:none</code>, justamente para continuarem focáveis. O anel de foco aparece no irmão visível.</p></li>
+          <li><b>Modo de alto contraste</b><p>Um bloco <code>forced-colors</code> troca as cores de marca por cores do sistema nos nós da timeline e nos chips marcados.</p></li>
+          <li><b>O gráfico é redundante</b><p>A barra de defasagem é <code>aria-hidden</code>. Todo dado que ela mostra está escrito ao lado em texto — "React · 2012 → 2013 · 1 ano".</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2.6 O que não tem -->
+    <section class="s2-sec">
+      <div class="wrap">
+        <h2>O que este site não tem, e por quê</h2>
+        <ul class="naotem">
+          <li><b>npm e node_modules</b><span>Não há nada para instalar. O arquivo abre direto do disco, com clique duplo.</span></li>
+          <li><b>Bundler</b><span>Um arquivo não precisa ser empacotado. Não há Vite, webpack, Rollup nem esbuild.</span></li>
+          <li><b>Pré-processador de CSS</b><span>Custom properties cobrem o que Sass cobriria, e funcionam em tempo de execução.</span></li>
+          <li><b>CDN</b><span>Toda requisição a um domínio de terceiros é um ponto de falha e um vazamento de dado de navegação.</span></li>
+          <li><b>Webfont</b><span>A pilha de fontes do sistema não custa requisição, não pisca no carregamento e já é familiar em cada plataforma.</span></li>
+          <li><b>Imagens</b><span>Não há um único arquivo de imagem. O logotipo e os ícones são CSS e SVG inline; o favicon é um <code>data:</code> URI.</span></li>
+          <li><b>Analytics e cookies</b><span>Nada é medido, nada é gravado. Não há banner de consentimento porque não há o que consentir.</span></li>
+          <li><b>Servidor</b><span>É um arquivo estático. Funciona em <code>file://</code>, em qualquer hospedagem, ou dentro de um anexo de e-mail.</span></li>
+        </ul>
+
+        <div class="checar">
+          <h3>Verifique você mesmo</h3>
+          <p>Nada disso precisa de confiança. Leva trinta segundos:</p>
+          <ol>
+            <li>Abra as ferramentas de desenvolvedor e vá na aba <b>Network</b>. Recarregue. Deve haver <b>uma</b> requisição — este próprio arquivo. Nenhum domínio externo.</li>
+            <li>Desligue o JavaScript e recarregue. A página inteira continua legível, com as duas seções empilhadas e todas as fichas visíveis.</li>
+            <li>Salve a página e abra o arquivo sem internet. Funciona igual.</li>
+            <li>Use <b>Ver código-fonte</b>. Tudo — conteúdo, estilo e comportamento — está ali, em ordem, com os comentários em português.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.7 Como a pesquisa foi feita -->
+    <section class="s2-sec">
+      <div class="wrap">
+        <h2>Como o conteúdo da outra aba foi apurado</h2>
+        <p class="sub">
+          A parte mais difícil deste site não foi o código: foi não publicar informação errada.
+          Listas de "a stack do Facebook" circulam há vinte anos copiando os erros umas das outras.
+        </p>
+        <p>
+          O levantamento foi feito em três varreduras independentes, uma por recorte de tempo,
+          buscando fonte primária: o blog de engenharia da Meta, artigos publicados em SIGMOD,
+          VLDB, NSDI, OSDI e USENIX ATC, e repositórios oficiais. Cada varredura foi instruída a
+          marcar explicitamente o que <em>não</em> conseguiu verificar, em vez de preencher a
+          lacuna com uma estimativa plausível.
+        </p>
+        <p>
+          Três regras governaram o que entrou na página. Primeira: <strong>só publica o que tem
+          fonte</strong> — por isso cada ficha cita a sua. Segunda: <strong>o não verificado fica
+          de fora</strong>, e alguns itens que aparecem em listas parecidas foram descartados
+          justamente por isso, incluindo um sistema cujo nome circula bastante e que não foi
+          possível confirmar que exista. Terceira: <strong>separar quem criou de quem apenas
+          usou</strong>. É a distinção que evita o erro mais comum do gênero — repetir que o
+          Facebook criou o memcached, quando ele apenas o adotou, dois anos depois de outra pessoa
+          o ter escrito.
+        </p>
+        <p>
+          Quando duas varreduras discordaram — o caso do ano em que o React entrou em produção — a
+          página diz que as fontes divergem, em vez de escolher a versão mais bonita.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2.8 Ferramentas de autoria -->
+    <section class="s2-sec">
+      <div class="wrap">
+        <h2>As ferramentas de autoria</h2>
+        <p class="sub">
+          Isto é diferente da lista de dependências, e vale não confundir as duas coisas. Nada
+          abaixo é executado por quem visita a página: são as ferramentas que produziram o arquivo,
+          não coisas que ele carrega.
+        </p>
+        <ul class="lista-api">
+          <li><b>Claude Code</b><p>Escreveu o HTML, o CSS e o JavaScript, e coordenou as três varreduras de pesquisa que produziram o conteúdo da primeira aba.</p></li>
+          <li><b>Git e GitHub</b><p>Controle de versão e hospedagem do repositório. O arquivo vive numa branch própria, ao lado de um projeto sem relação com ele.</p></li>
+          <li><b>Um navegador</b><p>Toda a verificação: as abas, o teclado, os filtros, o tema escuro, a largura de 360 pixels e a contagem de requisições de rede.</p></li>
+        </ul>
+        <p class="src" style="margin-top:1.4rem">
+          Nenhuma dessas ferramentas deixa rastro no arquivo entregue. Se você baixar este HTML,
+          o que resta é texto que qualquer editor abre e qualquer navegador executa — o que também
+          é o motivo de ele provavelmente ainda funcionar daqui a dez anos.
+        </p>
+      </div>
+    </section>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>Sobre as fontes</h3>
+    <p>
+      O conteúdo da primeira aba foi levantado em três varreduras de fontes primárias — o blog de
+      engenharia da Meta, artigos acadêmicos publicados em SIGMOD, VLDB, NSDI, OSDI e USENIX ATC,
+      e repositórios oficiais. Cada card do catálogo cita a sua.
+    </p>
+    <p>
+      Onde não havia fonte primária, a informação foi omitida em vez de estimada. Alguns itens que
+      circulam em listas parecidas ficaram de fora exatamente por isso.
+    </p>
+    <p class="fine">
+      Página independente, sem vínculo com a Meta Platforms. Nomes de produtos e projetos pertencem
+      aos seus respectivos donos. Sem cookies, sem analytics, sem requisições externas.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ==================== 0. UTILITÁRIOS ==================== */
+
+  /* Minúsculas e sem acento, para a busca casar "codigo" com "código". */
+  function normalizar(s){
+    s = String(s).toLowerCase();
+    return s.normalize ? s.normalize("NFD").replace(/[̀-ͯ]/g, "") : s;
+  }
+
+  /* Só escreve o atributo quando o valor muda — evita trabalho de layout à toa. */
+  function vis(el, esconder){
+    if (el && el.hidden !== esconder) el.hidden = esconder;
+  }
+
+  function slice(lista){ return Array.prototype.slice.call(lista); }
+
+  /* ==================== 1. ABAS + HASH ==================== */
+
+  var abas     = document.getElementById("abas");
+  var tabs     = slice(document.querySelectorAll('[role="tab"]'));
+  var paineis  = slice(document.querySelectorAll('[role="tabpanel"]'));
+  var CHAVES   = { "tab-stack":"stack", "tab-site":"site" };
+
+  function chaveDoBotao(b){ return CHAVES[b.id]; }
+  function botaoDaChave(k){
+    for (var i = 0; i < tabs.length; i++) if (chaveDoBotao(tabs[i]) === k) return tabs[i];
+    return tabs[0];
+  }
+
+  function selecionarAba(chave, opts){
+    opts = opts || {};
+    var alvo = botaoDaChave(chave);
+    for (var i = 0; i < tabs.length; i++){
+      var ativo = tabs[i] === alvo;
+      tabs[i].setAttribute("aria-selected", ativo ? "true" : "false");
+      tabs[i].tabIndex = ativo ? 0 : -1;
+    }
+    for (var j = 0; j < paineis.length; j++){
+      vis(paineis[j], paineis[j].getAttribute("data-aba") !== chaveDoBotao(alvo));
+    }
+    if (opts.foco) alvo.focus();
+    if (opts.escreverHash !== false) escreverHash("#" + chaveDoBotao(alvo));
+  }
+
+  /* replaceState e não pushState: navegar pelas setas não deve entupir o histórico.
+     Consequência aceita: o botão Voltar não desfaz troca de aba.
+     O try/catch existe porque replaceState pode lançar SecurityError sob file://. */
+  function escreverHash(h){
+    try { history.replaceState(null, "", h); } catch(e){ /* silêncio proposital */ }
+  }
+
+  /* Resolve tanto "#site" quanto "#t-react" (id de um card dentro de um painel). */
+  function irParaHash(hash, opts){
+    opts = opts || {};
+    var chave = String(hash || "").replace(/^#/, "");
+    if (!chave){ selecionarAba("stack", {escreverHash:false}); return; }
+
+    if (chave === "stack" || chave === "site"){
+      selecionarAba(chave, {escreverHash:opts.escreverHash});
+      return;
+    }
+
+    var el = null;
+    try { el = document.getElementById(chave); } catch(e){ el = null; }
+    if (!el){ selecionarAba("stack", {escreverHash:true}); return; }
+
+    var painel = el.closest ? el.closest('[role="tabpanel"]') : null;
+    if (painel) selecionarAba(painel.getAttribute("data-aba"), {escreverHash:false});
+
+    /* Se um filtro está escondendo o alvo, o link não levaria a lugar nenhum. */
+    if (el.classList.contains("tech") && el.hidden) limparFiltros();
+
+    /* O scroll nativo de fragmento não funciona em elemento display:none, e o
+       navegador não tenta de novo depois. Por isso rolamos à mão — e de forma
+       instantânea: com scroll-behavior:smooth, um link para um card lá embaixo
+       faria a pessoa assistir a página inteira passar. O respiro do cabeçalho
+       fixo vem do scroll-margin-top no CSS. */
+    if (el.scrollIntoView){
+      try { el.scrollIntoView({block:"start", behavior:"instant"}); }
+      catch(e){ el.scrollIntoView(true); }
+    }
+  }
+
+  function onTeclaTablist(ev){
+    var i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    var n = -1;
+    if (ev.key === "ArrowRight") n = (i + 1) % tabs.length;
+    else if (ev.key === "ArrowLeft") n = (i - 1 + tabs.length) % tabs.length;
+    else if (ev.key === "Home") n = 0;
+    else if (ev.key === "End") n = tabs.length - 1;
+    if (n < 0) return;
+    ev.preventDefault();
+    selecionarAba(chaveDoBotao(tabs[n]), {foco:true});
+  }
+
+  function initAbas(){
+    if (!abas || !tabs.length) return;
+    for (var i = 0; i < tabs.length; i++){
+      tabs[i].addEventListener("click", function(ev){
+        selecionarAba(chaveDoBotao(ev.currentTarget), {foco:true});
+      });
+    }
+    var tablist = document.querySelector('[role="tablist"]');
+    if (tablist) tablist.addEventListener("keydown", onTeclaTablist);
+
+    window.addEventListener("hashchange", function(){
+      irParaHash(location.hash, {escreverHash:false});
+    });
+
+    /* Sem hash a URL limpa continua limpa: seleciona a aba 1 sem escrever nada. */
+    if (!location.hash) selecionarAba("stack", {escreverHash:false});
+    else irParaHash(location.hash, {escreverHash:false});
+
+    /* A partir daqui o atributo hidden é o único mecanismo de exibição de painel. */
+    abas.classList.add("pronto");
+  }
+
+  /* ==================== 2. CATÁLOGO E FILTROS ==================== */
+
+  var ITENS   = [];
+  var campoQ  = document.getElementById("f-q");
+  var grade   = document.getElementById("grade-tech");
+  var numEl   = document.getElementById("f-num");
+  var rotuloEl= document.getElementById("f-num-rotulo");
+  var vazioEl = document.getElementById("f-vazio");
+  var limparEl= document.getElementById("f-limpar");
+  var anuncioEl = document.getElementById("f-anuncio");
+  var formEl  = document.getElementById("filtros");
+  var timerAnuncio = null;
+
+  function marcados(nome){
+    var out = [], els = formEl ? formEl.querySelectorAll('input[name="' + nome + '"]:checked') : [];
+    for (var i = 0; i < els.length; i++) out.push(els[i].value);
+    return out;
+  }
+
+  function casaTermos(h, termos){
+    for (var i = 0; i < termos.length; i++) if (h.indexOf(termos[i]) < 0) return false;
+    return true;
+  }
+
+  /* aria-live num contador que muda a cada tecla faz o leitor de tela recitar
+     "52... 31... 12... 3..." enquanto a pessoa digita. O número visível é imediato;
+     o anúncio espera a digitação parar. */
+  function anunciarDepois(n){
+    if (!anuncioEl) return;
+    if (timerAnuncio) clearTimeout(timerAnuncio);
+    timerAnuncio = setTimeout(function(){
+      anuncioEl.textContent = n === 0
+        ? "Nenhuma tecnologia encontrada."
+        : n + (n === 1 ? " tecnologia encontrada." : " tecnologias encontradas.");
+    }, 500);
+  }
+
+  function aplicarFiltros(){
+    if (!ITENS.length) return;
+    var termos = normalizar(campoQ ? campoQ.value : "").split(/\s+/);
+    var limpos = [];
+    for (var t = 0; t < termos.length; t++) if (termos[t]) limpos.push(termos[t]);
+
+    var cats = marcados("cat"), eras = marcados("era"), sts = marcados("status");
+    var visiveis = 0;
+
+    for (var i = 0; i < ITENS.length; i++){
+      var it = ITENS[i];
+      var ok = (!cats.length || cats.indexOf(it.cat) > -1)
+            && (!eras.length || eras.indexOf(it.era) > -1)
+            && (!sts.length  || sts.indexOf(it.status) > -1)
+            && casaTermos(it.h, limpos);
+      vis(it.el, !ok);
+      if (ok) visiveis++;
+    }
+
+    /* Banner de era some quando nenhum card daquela era está visível. */
+    var banners = grade ? grade.querySelectorAll(".era-banner") : [];
+    for (var b = 0; b < banners.length; b++){
+      var era = banners[b].getAttribute("data-era-banner");
+      var algum = false;
+      for (var k = 0; k < ITENS.length; k++){
+        if (ITENS[k].era === era && !ITENS[k].el.hidden){ algum = true; break; }
+      }
+      vis(banners[b], !algum);
+    }
+
+    if (numEl) numEl.textContent = visiveis;
+    if (rotuloEl) rotuloEl.textContent = visiveis === 1 ? "tecnologia" : "tecnologias";
+    vis(vazioEl, visiveis !== 0);
+    vis(limparEl, !(limpos.length || cats.length || eras.length || sts.length));
+    anunciarDepois(visiveis);
+  }
+
+  function limparFiltros(){
+    if (!formEl) return;
+    if (campoQ) campoQ.value = "";
+    var cxs = formEl.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < cxs.length; i++) cxs[i].checked = false;
+    aplicarFiltros();
+  }
+
+  function initCatalogo(){
+    if (!grade) return;
+    var cards = grade.querySelectorAll(".tech");
+    for (var i = 0; i < cards.length; i++){
+      var el = cards[i];
+      ITENS.push({
+        el: el,
+        cat: el.getAttribute("data-cat") || "",
+        era: el.getAttribute("data-era") || "",
+        status: el.getAttribute("data-status") || "",
+        /* Índice montado uma vez: texto do card + facetas. Buscar só por nome seria
+           inútil numa página em português cujos nomes são todos em inglês. */
+        h: normalizar(
+          el.textContent + " " +
+          (el.getAttribute("data-cat") || "") + " " +
+          (el.getAttribute("data-origem") || "") + " " +
+          (el.getAttribute("data-status") || "")
+        )
+      });
+    }
+
+    if (formEl){
+      formEl.addEventListener("submit", function(ev){ ev.preventDefault(); });
+      formEl.addEventListener("input", aplicarFiltros);
+      formEl.addEventListener("change", aplicarFiltros);
+    }
+    if (limparEl) limparEl.addEventListener("click", limparFiltros);
+    var botoesLimpar = document.querySelectorAll("[data-limpar]");
+    for (var j = 0; j < botoesLimpar.length; j++){
+      botoesLimpar[j].addEventListener("click", limparFiltros);
+    }
+
+    aplicarFiltros();
+  }
+
+  /* ==================== 3. REVEAL AO ROLAR ==================== */
+
+  function initReveal(){
+    var reduzido = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var alvos = slice(document.querySelectorAll(".reveal"));
+    if (reduzido || !("IntersectionObserver" in window)){
+      for (var i = 0; i < alvos.length; i++) alvos[i].classList.add("vis");
+      return;
+    }
+    var io = new IntersectionObserver(function(entradas){
+      for (var i = 0; i < entradas.length; i++){
+        if (entradas[i].isIntersecting){
+          entradas[i].target.classList.add("vis");
+          io.unobserve(entradas[i].target);
+        }
+      }
+    }, {threshold:.15});
+    for (var j = 0; j < alvos.length; j++) io.observe(alvos[j]);
+  }
+
+  /* ==================== 4. SANIDADE (?dev=1) ==================== */
+
+  /* Setenta cards escritos à mão erram em silêncio: um data-cat com typo some do
+     filtro sem avisar ninguém. Isto roda só com ?dev=1 na URL. */
+  function verificarSanidade(){
+    if (!/[?&]dev=1/.test(location.search)) return;
+    var avisos = [];
+
+    var cats = {}, eras = {}, sts = {};
+    var cx = formEl ? formEl.querySelectorAll('input[type="checkbox"]') : [];
+    for (var i = 0; i < cx.length; i++){
+      var mapa = cx[i].name === "cat" ? cats : (cx[i].name === "era" ? eras : sts);
+      mapa[cx[i].value] = true;
+    }
+
+    var ids = {};
+    for (var k = 0; k < ITENS.length; k++){
+      var it = ITENS[k], nome = it.el.querySelector("h3");
+      nome = nome ? nome.textContent.trim() : "(sem título)";
+      if (!cats[it.cat])   avisos.push('categoria sem chip: "' + it.cat + '" em ' + nome);
+      if (!eras[it.era])   avisos.push('era sem chip: "' + it.era + '" em ' + nome);
+      if (!sts[it.status]) avisos.push('situação sem chip: "' + it.status + '" em ' + nome);
+      if (!it.el.getAttribute("data-origem")) avisos.push("sem data-origem: " + nome);
+      if (!it.el.querySelector(".src")) avisos.push("sem fonte (.src): " + nome);
+      if (!it.el.id) avisos.push("sem id: " + nome);
+      else if (ids[it.el.id]) avisos.push("id duplicado: " + it.el.id);
+      else ids[it.el.id] = true;
+      if (!document.getElementById("era-" + it.era)) avisos.push("sem seção era-" + it.era);
+    }
+
+    if (avisos.length){
+      console.warn("[sanidade] " + avisos.length + " problema(s):");
+      for (var a = 0; a < avisos.length; a++) console.warn("  · " + avisos[a]);
+    } else {
+      console.log("[sanidade] " + ITENS.length + " cards, tudo consistente.");
+    }
+  }
+
+  /* ==================== INICIALIZAÇÃO ==================== */
+  initAbas();
+  initCatalogo();
+  initReveal();
+  verificarSanidade();
+})();
+</script>
+</body>
+</html>
