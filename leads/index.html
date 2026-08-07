@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Prospector · Acompanha.ai</title>
+<meta name="description" content="Ferramenta interna de prospeccao de nutricionistas.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2315803D'/%3E%3Ccircle cx='14' cy='14' r='6' fill='none' stroke='%23FAF9F6' stroke-width='2.5'/%3E%3Cpath d='M18.5 18.5 L24 24' stroke='%23FAF9F6' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#FAF9F6; --surface:#FFFFFF; --surface2:#F1EFE7;
+    --ink:#1E2A26; --ink-soft:#49584F; --ink-faint:#5A695F;
+    --brand:#14532D; --brand-mid:#166534;
+    --accent:#15803D; --accent-hover:#166534; --accent-ink:#FFFFFF;
+    --amber:#B45309; --line:#E3E0D6; --line-input:#5A695F;
+    --danger:#B3261E;
+    --shadow:0 10px 30px rgba(30,42,38,.08);
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#101613; --surface:#17201B; --surface2:#1C2721;
+      --ink:#E9F0EB; --ink-soft:#B4C2B9; --ink-faint:#93A399;
+      --brand:#7FD8A2; --brand-mid:#5ABF84;
+      --accent:#22C55E; --accent-hover:#4ADE80; --accent-ink:#052E16;
+      --amber:#F5B04C; --line:#2A362F; --line-input:#93A399;
+      --danger:#F2B8B5;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  [hidden]{display:none!important}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.6; font-size:1rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  section{padding:28px 0}
+  h1,h2,h3{line-height:1.25;color:var(--ink);text-wrap:balance}
+  h1{font-size:1.35rem}
+  h2{font-size:1.15rem;margin-bottom:.5rem}
+  h3{font-size:1rem}
+  p{color:var(--ink-soft)}
+  a{color:var(--brand-mid)}
+  strong{color:var(--ink)}
+  .eyebrow{
+    display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--brand-mid);margin-bottom:.4rem;
+  }
+  .src{font-size:.75rem;color:var(--ink-faint);line-height:1.45}
+
+  .btn{
+    display:inline-block;background:var(--accent);color:var(--accent-ink);
+    font-weight:700;font-size:.95rem;text-decoration:none;text-align:center;
+    padding:12px 22px;border-radius:999px;border:none;cursor:pointer;
+    min-height:44px;transition:background .15s ease;font-family:inherit;
+  }
+  .btn:hover{background:var(--accent-hover)}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+  .btn-ghost{
+    display:inline-block;color:var(--ink);font-weight:600;text-decoration:none;
+    padding:11px 18px;min-height:44px;border-radius:999px;
+    border:1px solid var(--line);background:transparent;cursor:pointer;
+    font-size:.9rem;font-family:inherit;
+  }
+  .btn-ghost:hover{border-color:var(--brand-mid)}
+  .btn-sm{padding:7px 14px;min-height:36px;font-size:.82rem}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:var(--bg);
+    background:color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+  .logo{display:flex;align-items:center;gap:8px;font-weight:800;color:var(--ink);text-decoration:none;font-size:1rem}
+  .logo span.dot{width:10px;height:10px;border-radius:50%;background:var(--accent);display:inline-block}
+  .tag{
+    font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--amber);border:1px solid var(--amber);border-radius:999px;padding:2px 8px;
+  }
+
+  /* Campos */
+  label{display:block;font-weight:600;font-size:.85rem;margin-bottom:4px;color:var(--ink)}
+  input,select,textarea{
+    width:100%;font:inherit;font-size:.95rem;color:var(--ink);background:var(--surface);
+    border:1px solid var(--line-input);border-radius:10px;padding:10px 12px;min-height:44px;
+    font-family:inherit;
+  }
+  textarea{min-height:70px;resize:vertical;line-height:1.5}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  .campo{margin-bottom:12px}
+  .linha{display:grid;gap:12px}
+  @media (min-width:700px){
+    .linha.l2{grid-template-columns:1fr 1fr}
+    .linha.l3{grid-template-columns:1.4fr 1fr auto}
+  }
+
+  .painel{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px;box-shadow:var(--shadow);
+  }
+  .painel + .painel{margin-top:16px}
+
+  details.cfg{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);margin-top:14px}
+  details.cfg > summary{
+    cursor:pointer;padding:14px 18px;font-weight:600;font-size:.92rem;min-height:44px;
+    display:flex;align-items:center;gap:8px;list-style:none;
+  }
+  details.cfg > summary::-webkit-details-marker{display:none}
+  details.cfg > summary::before{content:"▸";color:var(--brand-mid);font-size:.8rem}
+  details.cfg[open] > summary::before{content:"▾"}
+  details.cfg > div{padding:0 18px 18px}
+
+  .aviso{
+    border-left:3px solid var(--amber);background:var(--surface2);
+    padding:10px 14px;border-radius:0 10px 10px 0;font-size:.85rem;color:var(--ink-soft);margin:10px 0;
+  }
+  .aviso strong{color:var(--ink)}
+  .erro{
+    border-left:3px solid var(--danger);background:var(--surface2);
+    padding:10px 14px;border-radius:0 10px 10px 0;font-size:.88rem;color:var(--ink);margin:10px 0;
+  }
+  .ok{
+    border-left:3px solid var(--accent);background:var(--surface2);
+    padding:10px 14px;border-radius:0 10px 10px 0;font-size:.88rem;color:var(--ink);margin:10px 0;
+  }
+
+  /* Funil */
+  .funil{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .etapa{
+    border:1px solid var(--line);background:var(--surface);border-radius:999px;
+    padding:6px 14px;font-size:.82rem;cursor:pointer;min-height:36px;
+    display:flex;align-items:center;gap:6px;color:var(--ink);font-family:inherit;
+  }
+  .etapa:hover{border-color:var(--brand-mid)}
+  .etapa[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+  .etapa b{font-variant-numeric:tabular-nums}
+
+  /* Lead */
+  .lead{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:14px 16px;margin-bottom:10px;
+  }
+  .lead.vencido{border-left:3px solid var(--amber)}
+  .lead-topo{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .lead h3{font-size:1rem;margin-bottom:2px}
+  .lead .meta{font-size:.82rem;color:var(--ink-faint);line-height:1.5}
+  .lead .meta a{color:var(--brand-mid);word-break:break-all}
+  .score{
+    text-align:center;min-width:56px;border:1px solid var(--line);border-radius:10px;
+    padding:4px 8px;background:var(--surface2);
+  }
+  .score b{display:block;font-size:1.2rem;line-height:1.1;font-variant-numeric:tabular-nums}
+  .score small{font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-faint)}
+  .score.alto b{color:var(--accent)}
+  .score.medio b{color:var(--amber)}
+  .score.baixo b{color:var(--ink-faint)}
+  .selos{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+  .selo{
+    font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:2px 9px;
+    color:var(--ink-soft);background:var(--surface2);
+  }
+  .selo.zap{border-color:var(--accent);color:var(--accent)}
+  .selo.alerta{border-color:var(--amber);color:var(--amber)}
+  .acoes{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+  .acoes select{width:auto;min-width:150px;min-height:38px;padding:6px 10px;font-size:.85rem}
+  .acoes input[type=date]{width:auto;min-height:38px;padding:6px 10px;font-size:.85rem}
+  .lead details{margin-top:10px}
+  .lead details summary{
+    cursor:pointer;font-size:.82rem;color:var(--brand-mid);font-weight:600;
+    min-height:32px;display:flex;align-items:center;
+  }
+  .lead details > div{padding-top:8px}
+  .porque{font-size:.8rem;color:var(--ink-soft);margin:0;padding-left:16px}
+  .porque li{margin:2px 0}
+
+  .barra{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin-bottom:14px}
+  .barra .campo{margin-bottom:0}
+  .barra select,.barra input{min-width:150px;width:auto}
+
+  .vazio{text-align:center;padding:36px 20px;color:var(--ink-faint);font-size:.92rem}
+
+  .contador{font-size:.78rem;color:var(--ink-faint);font-variant-numeric:tabular-nums}
+  .grupo-btn{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+
+  footer{border-top:1px solid var(--line);padding:24px 0 40px;margin-top:24px}
+  .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="/"><span class="dot"></span>Acompanha.ai <span class="tag">Prospector</span></a>
+    <span class="contador" id="uso" aria-live="polite"></span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- BUSCA -->
+  <section aria-label="Buscar nutricionistas">
+    <span class="eyebrow">Passo 1</span>
+    <h1>Encontre nutricionistas para prospectar</h1>
+    <p class="src" style="margin-bottom:14px">Busca consultórios e profissionais no Google Maps, qualifica cada um e monta sua lista de abordagem. Tudo fica salvo só neste navegador.</p>
+
+    <div class="painel">
+      <form id="form-busca">
+        <div class="linha l2">
+          <div class="campo">
+            <label for="b-cidade">Cidade e estado</label>
+            <input id="b-cidade" name="cidade" type="text" placeholder="Petrolina, PE" autocomplete="off" required>
+          </div>
+          <div class="campo">
+            <label for="b-termo">O que procurar</label>
+            <input id="b-termo" name="termo" type="text" list="termos" value="nutricionista" autocomplete="off" required>
+            <datalist id="termos">
+              <option value="nutricionista"></option>
+              <option value="clínica de nutrição"></option>
+              <option value="nutrição esportiva"></option>
+              <option value="nutricionista materno-infantil"></option>
+              <option value="nutricionista emagrecimento"></option>
+              <option value="consultório de nutrição"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="grupo-btn">
+          <button class="btn" type="submit" id="b-btn">Buscar</button>
+          <button class="btn-ghost" type="button" id="b-mais" hidden>Buscar mais 20</button>
+        </div>
+      </form>
+      <div id="b-msg" role="status" aria-live="polite"></div>
+      <p class="src" style="margin-top:10px">Dica: o mesmo bairro rende leads diferentes com termos diferentes. Repetir a busca trocando o termo não duplica ninguém — a ferramenta deduplica sozinha.</p>
+    </div>
+
+    <details class="cfg" id="cfg-chave">
+      <summary>Chave do Google Places <span id="chave-estado" class="src"></span></summary>
+      <div>
+        <div class="aviso">
+          <strong>Por que precisa de chave:</strong> é o Google que tem os dados de consultório no Brasil. Testei as alternativas gratuitas — o OpenStreetMap devolve 3 nutricionistas em São Paulo inteira e 1 em Belo Horizonte, então não serve.
+        </div>
+        <div class="campo">
+          <label for="k-chave">Cole sua chave</label>
+          <input id="k-chave" type="password" placeholder="AIza..." autocomplete="off" spellcheck="false">
+        </div>
+        <div class="grupo-btn">
+          <button class="btn btn-sm" type="button" id="k-salvar">Salvar chave</button>
+          <button class="btn-ghost btn-sm" type="button" id="k-remover">Remover</button>
+        </div>
+        <div id="k-msg" role="status" aria-live="polite"></div>
+
+        <h3 style="margin-top:16px">Custo real</h3>
+        <p class="src">Cada busca de 20 leads custa <strong>1 requisição</strong>. O plano com telefone, site e nota tem <strong>1.000 requisições grátis por mês</strong> — ou seja, até cerca de 20.000 nutricionistas por mês sem pagar nada. Acima disso, US$ 35 por mil requisições.</p>
+
+        <h3 style="margin-top:16px">Trave a chave antes de usar</h3>
+        <p class="src">Esta página é pública. Sua chave nunca é gravada no código nem enviada para lugar nenhum além do Google — ela fica só no seu navegador. Ainda assim, no Google Cloud Console:</p>
+        <ol class="src" style="padding-left:18px;margin-top:6px">
+          <li>Restrinja por <strong>referenciador HTTP</strong>: <code>www.acompanhanutri.com.br/*</code></li>
+          <li>Restrinja a <strong>API</strong>: apenas Places API (New)</li>
+          <li>Defina uma <strong>cota diária máxima</strong> — chave vazada sem cota vira conta alta</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- LISTA -->
+  <section aria-label="Seus leads">
+    <span class="eyebrow">Passo 2</span>
+    <h2>Sua lista</h2>
+
+    <div class="funil" id="funil" role="group" aria-label="Filtrar por etapa"></div>
+
+    <div class="barra">
+      <div class="campo">
+        <label for="f-texto">Buscar na lista</label>
+        <input id="f-texto" type="search" placeholder="nome ou cidade" autocomplete="off">
+      </div>
+      <div class="campo">
+        <label for="f-ordem">Ordenar por</label>
+        <select id="f-ordem">
+          <option value="score">Nota de qualificação</option>
+          <option value="avaliacoes">Nº de avaliações</option>
+          <option value="nome">Nome</option>
+          <option value="recente">Adicionado recentemente</option>
+          <option value="followup">Follow-up mais próximo</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="f-zap">Filtro</label>
+        <select id="f-zap">
+          <option value="">Todos</option>
+          <option value="zap">Só com WhatsApp</option>
+          <option value="semsite">Só sem site</option>
+          <option value="vencido">Follow-up vencido</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="lista" aria-live="polite"></div>
+  </section>
+
+  <!-- FERRAMENTAS -->
+  <section aria-label="Importar, exportar e mensagem">
+    <span class="eyebrow">Passo 3</span>
+    <h2>Mensagem, backup e importação</h2>
+
+    <details class="cfg">
+      <summary>Modelo da mensagem de WhatsApp</summary>
+      <div>
+        <div class="campo">
+          <label for="m-modelo">Use <code>{nome}</code> e <code>{cidade}</code> — são trocados pelos dados do lead</label>
+          <textarea id="m-modelo" rows="5"></textarea>
+        </div>
+        <div class="grupo-btn">
+          <button class="btn btn-sm" type="button" id="m-salvar">Salvar modelo</button>
+          <button class="btn-ghost btn-sm" type="button" id="m-padrao">Voltar ao padrão</button>
+        </div>
+        <div id="m-msg" role="status" aria-live="polite"></div>
+        <div class="aviso" style="margin-top:14px">
+          <strong>Abordagem responsável:</strong> são contatos comerciais públicos, e prospecção B2B tem base legal de legítimo interesse na LGPD. Isso não autoriza disparo em massa. Mande uma a uma, personalizada, e retire da lista na hora quem pedir para não ser mais procurado.
+        </div>
+      </div>
+    </details>
+
+    <details class="cfg">
+      <summary>Exportar e importar CSV</summary>
+      <div>
+        <p class="src">Seus leads vivem no armazenamento deste navegador. Limpar os dados do site apaga tudo — <strong>exporte de vez em quando</strong>.</p>
+        <div class="grupo-btn">
+          <button class="btn btn-sm" type="button" id="c-exportar">Exportar CSV</button>
+          <label class="btn-ghost btn-sm" for="c-arquivo" style="display:inline-flex;align-items:center">Importar CSV</label>
+          <input id="c-arquivo" type="file" accept=".csv,text/csv" class="sr">
+          <button class="btn-ghost btn-sm" type="button" id="c-limpar">Apagar tudo</button>
+        </div>
+        <div id="c-msg" role="status" aria-live="polite"></div>
+        <p class="src" style="margin-top:10px">O arquivo sai com ponto e vírgula e acentuação certa, do jeito que o Excel brasileiro abre. Na importação ele aceita vírgula ou ponto e vírgula e não duplica quem já está na lista.</p>
+      </div>
+    </details>
+
+    <details class="cfg">
+      <summary>Adicionar lead manualmente</summary>
+      <div>
+        <form id="form-manual">
+          <div class="linha l2">
+            <div class="campo">
+              <label for="man-nome">Nome</label>
+              <input id="man-nome" type="text" required>
+            </div>
+            <div class="campo">
+              <label for="man-tel">Telefone</label>
+              <input id="man-tel" type="tel" placeholder="(87) 99107-0716">
+            </div>
+          </div>
+          <div class="linha l2">
+            <div class="campo">
+              <label for="man-cidade">Cidade</label>
+              <input id="man-cidade" type="text">
+            </div>
+            <div class="campo">
+              <label for="man-site">Site ou Instagram</label>
+              <input id="man-site" type="text" placeholder="instagram.com/...">
+            </div>
+          </div>
+          <button class="btn btn-sm" type="submit">Adicionar</button>
+        </form>
+        <div id="man-msg" role="status" aria-live="polite"></div>
+      </div>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="src">Ferramenta interna do Acompanha.ai. Não indexada, sem pixel de anúncios, sem servidor: chave e leads ficam apenas no armazenamento local deste navegador. Dados de estabelecimento vêm da Places API do Google.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Constantes ---------- */
+
+  var CHAVE_LS   = "acompanha_places_chave";
+  var DADOS_LS   = "acompanha_leads_v1";
+  var ETAPAS     = ["Novo","Contatado","Respondeu","Reunião marcada","Cliente","Descartado"];
+  var MODELO_PADRAO =
+    "Oi, {nome}! Tudo bem?\n\n" +
+    "Sou do Acompanha.ai. A gente cuida do acompanhamento dos pacientes entre as consultas pelo WhatsApp: check-in, dúvida de fim de semana, foto de refeição — e te avisa quem está prestes a sumir.\n\n" +
+    "Faz sentido eu te mostrar em 10 minutos como ficaria com os seus planos?";
+  var LIMITE_GRATIS = 1000;
+
+  var ENDPOINT = "https://places.googleapis.com/v1/places:searchText";
+  var CAMPOS = [
+    "places.id","places.displayName","places.formattedAddress",
+    "places.nationalPhoneNumber","places.internationalPhoneNumber","places.websiteUri",
+    "places.rating","places.userRatingCount","places.businessStatus",
+    "places.googleMapsUri","places.primaryType","places.addressComponents",
+    "nextPageToken"
+  ].join(",");
+
+  /* ---------- Estado ---------- */
+
+  var loja = carregar();
+  var proximoToken = null;
+  var ultimaBusca = null;
+  var filtroEtapa = "";
+
+  function vazia(){
+    return { versao:1, leads:{}, config:{ modelo:MODELO_PADRAO, reqMes:{} } };
+  }
+
+  function carregar(){
+    try{
+      var cru = localStorage.getItem(DADOS_LS);
+      if(!cru) return vazia();
+      var d = JSON.parse(cru);
+      if(!d || typeof d !== "object" || !d.leads) return vazia();
+      if(!d.config) d.config = { modelo:MODELO_PADRAO, reqMes:{} };
+      if(!d.config.reqMes) d.config.reqMes = {};
+      if(!d.config.modelo) d.config.modelo = MODELO_PADRAO;
+      d.versao = 1;
+      return d;
+    }catch(e){ return vazia(); }
+  }
+
+  function salvar(){
+    try{
+      /* _k e _p sao derivados a cada render; nao vao para o disco */
+      localStorage.setItem(DADOS_LS, JSON.stringify(loja, function(k, v){
+        return (k === "_k" || k === "_p") ? undefined : v;
+      }));
+      return true;
+    }catch(e){
+      msg("c-msg","erro","Não deu para salvar: o armazenamento do navegador encheu. Exporte o CSV e apague os leads descartados para liberar espaço.");
+      return false;
+    }
+  }
+
+  function chaveApi(){
+    try{ return localStorage.getItem(CHAVE_LS) || ""; }catch(e){ return ""; }
+  }
+
+  /* ---------- Utilidades ---------- */
+
+  function esc(s){
+    return String(s == null ? "" : s)
+      .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+      .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+  }
+
+  /* So aceita http/https — barra javascript: e data: vindos de dado externo */
+  function urlSegura(u){
+    if(!u) return "";
+    var s = String(u).trim();
+    if(/^https?:\/\//i.test(s)) return s;
+    if(/^[\w.-]+\.[a-z]{2,}(\/|$)/i.test(s)) return "https://" + s;
+    return "";
+  }
+
+  function msg(id, tipo, texto){
+    var el = document.getElementById(id);
+    if(!el) return;
+    if(!texto){ el.innerHTML = ""; return; }
+    el.innerHTML = '<div class="' + tipo + '">' + esc(texto) + "</div>";
+  }
+
+  function mesAtual(){
+    var d = new Date();
+    return d.getFullYear() + "-" + ("0" + (d.getMonth()+1)).slice(-2);
+  }
+
+  function hoje(){
+    var d = new Date();
+    return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+d.getDate()).slice(-2);
+  }
+
+  /* Escapes \u explicitos de proposito: acento literal em regex quebra se o
+     arquivo for regravado noutra codificacao. */
+  function semAcento(s){
+    var t = String(s == null ? "" : s);
+    return t.normalize ? t.normalize("NFD").replace(/[\u0300-\u036f]/g,"") : t;
+  }
+
+  function slug(s){
+    return semAcento(s).toLowerCase().replace(/[^a-z0-9]+/g,"");
+  }
+
+  /* Telefone BR -> so digitos com DDI. 13 digitos = celular (WhatsApp), 12 = fixo. */
+  function normalizarTel(bruto){
+    var d = String(bruto||"").replace(/\D/g,"");
+    if(!d) return "";
+    if(d.length === 10 || d.length === 11) d = "55" + d;
+    if(d.charAt(0) === "0") d = d.replace(/^0+/,"");
+    if(d.length === 12 || d.length === 13) return d;
+    return "";
+  }
+
+  function ehCelular(d){
+    return d.length === 13 && d.charAt(4) === "9";
+  }
+
+  function formatarTel(d){
+    if(!d) return "";
+    var ddd = d.slice(2,4), num = d.slice(4);
+    if(num.length === 9) return "(" + ddd + ") " + num.slice(0,5) + "-" + num.slice(5);
+    if(num.length === 8) return "(" + ddd + ") " + num.slice(0,4) + "-" + num.slice(4);
+    return d;
+  }
+
+  /* ---------- Pontuacao ---------- */
+
+  var RX_NUTRI = /nutri|nutric|nutrolog|dieta|dietet|alimenta/i;
+  var RX_GRANDE = /hospital|santa casa|unimed|universidade|faculdade|prefeitura|secretaria|laborat[óo]rio|drogaria|farm[áa]cia|academia|supermercado/i;
+
+  function pontuar(l){
+    var partes = [], total = 0;
+
+    function add(pts, rotulo){
+      if(pts === 0) return;
+      total += pts; partes.push({ pts:pts, rotulo:rotulo });
+    }
+
+    if(l.situacao && l.situacao !== "OPERATIONAL"){
+      return { total:0, partes:[{pts:0, rotulo:"Estabelecimento fechado ou suspenso no Google"}] };
+    }
+
+    /* Precisao: e mesmo uma nutricionista? */
+    var nome = l.nome || "";
+    if(RX_GRANDE.test(nome)) add(-15, "Parece rede, hospital ou comércio — provavelmente não é consultório");
+    if(RX_NUTRI.test(nome)) add(30, "O nome indica nutrição");
+    else if(l.tipo && /doctor|medical|wellness|health/i.test(l.tipo)) add(12, "Categoria de saúde, mas o nome não cita nutrição");
+    else add(0, "");
+
+    /* Alcance */
+    if(l.telefone && ehCelular(l.telefone)) add(25, "Celular — dá para abordar no WhatsApp");
+    else if(l.telefone) add(10, "Só telefone fixo — dá para ligar, não para mandar mensagem");
+
+    /* Volume de pacientes */
+    var av = l.avaliacoes || 0;
+    if(av >= 100) add(25, av + " avaliações — consultório com bastante movimento");
+    else if(av >= 40) add(20, av + " avaliações — base sólida de pacientes");
+    else if(av >= 15) add(14, av + " avaliações — consultório estabelecido");
+    else if(av >= 5) add(8, av + " avaliações");
+    else if(av > 0) add(3, av + (av === 1 ? " avaliação" : " avaliações"));
+
+    /* Reputacao */
+    if(l.nota >= 4.5) add(10, "Nota " + String(l.nota).replace(".",",") + " — cuida da experiência do paciente");
+    else if(l.nota >= 4) add(5, "Nota " + String(l.nota).replace(".",","));
+
+    /* Maturidade digital */
+    if(l.site) add(10, "Tem site — mais aberta a contratar software");
+
+    if(total < 0) total = 0;
+    if(total > 100) total = 100;
+    return { total:total, partes:partes.filter(function(p){ return p.rotulo; }) };
+  }
+
+  /* ---------- Deduplicacao ---------- */
+
+  function chaveLead(l){
+    if(l.id) return "g:" + l.id;
+    if(l.telefone) return "t:" + l.telefone;
+    return "n:" + slug(l.nome) + "|" + slug(l.cidade);
+  }
+
+  function mesclar(novos, termo){
+    var add = 0, dup = 0;
+    novos.forEach(function(l){
+      var k = chaveLead(l);
+      if(loja.leads[k]){
+        /* Completa buracos sem sobrescrever o trabalho ja feito */
+        var atual = loja.leads[k];
+        if(!atual.telefone && l.telefone) atual.telefone = l.telefone;
+        if(!atual.site && l.site) atual.site = l.site;
+        if(!atual.nota && l.nota) atual.nota = l.nota;
+        if(!atual.avaliacoes && l.avaliacoes) atual.avaliacoes = l.avaliacoes;
+        dup++;
+        return;
+      }
+      l.status = "Novo";
+      l.anotacao = "";
+      l.followup = "";
+      l.termo = termo || "";
+      l.criadoEm = new Date().toISOString();
+      loja.leads[k] = l;
+      add++;
+    });
+    return { add:add, dup:dup };
+  }
+
+  /* ---------- Google Places ---------- */
+
+  function mapear(p){
+    var cidade = "", uf = "";
+    (p.addressComponents || []).forEach(function(c){
+      var t = c.types || [];
+      if(t.indexOf("administrative_area_level_2") >= 0 && !cidade) cidade = c.longText || "";
+      if(t.indexOf("administrative_area_level_1") >= 0 && !uf) uf = c.shortText || "";
+    });
+    var tel = normalizarTel(p.internationalPhoneNumber || p.nationalPhoneNumber || "");
+    return {
+      id: p.id || "",
+      nome: (p.displayName && p.displayName.text) || "(sem nome)",
+      endereco: p.formattedAddress || "",
+      cidade: cidade,
+      uf: uf,
+      telefone: tel,
+      site: urlSegura(p.websiteUri || ""),
+      nota: typeof p.rating === "number" ? p.rating : 0,
+      avaliacoes: p.userRatingCount || 0,
+      situacao: p.businessStatus || "",
+      mapa: p.googleMapsUri || "",
+      tipo: p.primaryType || "",
+      origem: "Google Places"
+    };
+  }
+
+  function explicarErro(status, http, corpo){
+    var razao = "";
+    try{ razao = corpo.error.details[0].reason || ""; }catch(e){}
+
+    if(razao === "API_KEY_INVALID" || /API key not valid/i.test((corpo.error||{}).message || ""))
+      return "A chave não foi aceita pelo Google. Confira se copiou inteira e se a Places API (New) está ativada no projeto.";
+    if(razao === "API_KEY_HTTP_REFERRER_BLOCKED")
+      return "A chave está travada para outro endereço. No Google Cloud, libere o referenciador " + location.origin + "/*";
+    if(status === "PERMISSION_DENIED" || http === 403)
+      return "O Google recusou a chave. Costuma ser a Places API (New) desativada, faturamento não habilitado, ou restrição de referenciador diferente deste site.";
+    if(status === "RESOURCE_EXHAUSTED" || http === 429)
+      return "Cota estourada. Espere o próximo ciclo ou aumente o limite no Google Cloud.";
+    if(http === 400)
+      return "O Google recusou a busca: " + (((corpo.error||{}).message) || "requisição inválida") + ".";
+    return "O Google respondeu com erro " + http + ". Tente de novo em instantes.";
+  }
+
+  function contarRequisicao(){
+    var m = mesAtual();
+    loja.config.reqMes[m] = (loja.config.reqMes[m] || 0) + 1;
+    salvar();
+    pintarUso();
+  }
+
+  function buscar(cidade, termo, token){
+    var chave = chaveApi();
+    if(!chave){
+      msg("b-msg","erro","Falta a chave do Google Places. Abra 'Chave do Google Places' logo abaixo e cole a sua. Sem ela dá para importar CSV e cadastrar à mão, mas não dá para buscar.");
+      var d = document.getElementById("cfg-chave"); if(d) d.open = true;
+      return;
+    }
+
+    var btn = document.getElementById("b-btn");
+    var btnMais = document.getElementById("b-mais");
+    btn.disabled = true; btnMais.disabled = true;
+    btn.textContent = "Buscando...";
+    msg("b-msg","","");
+
+    var corpo = {
+      textQuery: termo + " em " + cidade,
+      languageCode: "pt-BR",
+      regionCode: "BR",
+      pageSize: 20
+    };
+    if(token) corpo.pageToken = token;
+
+    fetch(ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Goog-Api-Key": chave,
+        "X-Goog-FieldMask": CAMPOS
+      },
+      body: JSON.stringify(corpo)
+    })
+    .then(function(r){
+      return r.json().then(function(j){ return { http:r.status, ok:r.ok, corpo:j }; });
+    })
+    .then(function(res){
+      contarRequisicao();
+
+      if(!res.ok){
+        msg("b-msg","erro", explicarErro((res.corpo.error||{}).status, res.http, res.corpo));
+        return;
+      }
+
+      var lugares = res.corpo.places || [];
+      if(!lugares.length && !token){
+        msg("b-msg","aviso","Nenhum resultado para “" + termo + " em " + cidade + "”. Confira a grafia da cidade ou tente um termo mais amplo, como “nutricionista”.");
+        proximoToken = null; btnMais.hidden = true;
+        return;
+      }
+
+      var r = mesclar(lugares.map(mapear), termo);
+      salvar();
+
+      proximoToken = res.corpo.nextPageToken || null;
+      ultimaBusca = { cidade:cidade, termo:termo };
+      btnMais.hidden = !proximoToken;
+
+      var texto = r.add + (r.add === 1 ? " lead novo" : " leads novos");
+      if(r.dup) texto += ", " + r.dup + (r.dup === 1 ? " já estava na lista" : " já estavam na lista");
+      texto += ".";
+      if(proximoToken) texto += " O Google tem mais — use “Buscar mais 20”.";
+      msg("b-msg","ok", texto);
+
+      renderizar();
+    })
+    .catch(function(){
+      msg("b-msg","erro","Não consegui falar com o Google. Verifique a conexão e tente de novo.");
+    })
+    .then(function(){
+      btn.disabled = false; btnMais.disabled = false;
+      btn.textContent = "Buscar";
+    });
+  }
+
+  /* ---------- Render ---------- */
+
+  function pintarUso(){
+    var n = loja.config.reqMes[mesAtual()] || 0;
+    var el = document.getElementById("uso");
+    var total = Object.keys(loja.leads).length;
+    var txt = total + (total === 1 ? " lead" : " leads");
+    if(n > 0){
+      txt += " · " + n + "/" + LIMITE_GRATIS + " buscas no mês";
+      if(n >= LIMITE_GRATIS) txt += " (acima da franquia grátis)";
+      else if(n >= LIMITE_GRATIS * 0.8) txt += " (perto do limite grátis)";
+    }
+    el.textContent = txt;
+  }
+
+  function listaFiltrada(){
+    var arr = [];
+    var texto = (document.getElementById("f-texto").value || "").toLowerCase();
+    var extra = document.getElementById("f-zap").value;
+    var h = hoje();
+
+    Object.keys(loja.leads).forEach(function(k){
+      var l = loja.leads[k];
+      l._k = k;
+      l._p = pontuar(l);
+
+      if(filtroEtapa && l.status !== filtroEtapa) return;
+      if(texto && ((l.nome||"") + " " + (l.cidade||"") + " " + (l.endereco||"")).toLowerCase().indexOf(texto) < 0) return;
+      if(extra === "zap" && !(l.telefone && ehCelular(l.telefone))) return;
+      if(extra === "semsite" && l.site) return;
+      if(extra === "vencido" && !(l.followup && l.followup <= h && l.status !== "Cliente" && l.status !== "Descartado")) return;
+      arr.push(l);
+    });
+
+    var ordem = document.getElementById("f-ordem").value;
+    arr.sort(function(a,b){
+      if(ordem === "nome") return (a.nome||"").localeCompare(b.nome||"","pt-BR");
+      if(ordem === "avaliacoes") return (b.avaliacoes||0) - (a.avaliacoes||0);
+      if(ordem === "recente") return String(b.criadoEm||"").localeCompare(String(a.criadoEm||""));
+      if(ordem === "followup"){
+        var fa = a.followup || "9999", fb = b.followup || "9999";
+        if(fa !== fb) return fa < fb ? -1 : 1;
+        return b._p.total - a._p.total;
+      }
+      return b._p.total - a._p.total;
+    });
+    return arr;
+  }
+
+  function pintarFunil(){
+    var cont = {}, total = 0;
+    Object.keys(loja.leads).forEach(function(k){
+      var s = loja.leads[k].status || "Novo";
+      cont[s] = (cont[s]||0) + 1; total++;
+    });
+
+    var html = '<button type="button" class="etapa" data-etapa="" aria-pressed="' + (filtroEtapa === "" ? "true" : "false") + '">Todos <b>' + total + "</b></button>";
+    ETAPAS.forEach(function(e){
+      html += '<button type="button" class="etapa" data-etapa="' + esc(e) + '" aria-pressed="' + (filtroEtapa === e ? "true" : "false") + '">' +
+              esc(e) + " <b>" + (cont[e]||0) + "</b></button>";
+    });
+    document.getElementById("funil").innerHTML = html;
+  }
+
+  function classeScore(n){ return n >= 65 ? "alto" : (n >= 40 ? "medio" : "baixo"); }
+
+  function cartao(l){
+    var p = l._p;
+    var zap = l.telefone && ehCelular(l.telefone);
+    var venc = l.followup && l.followup <= hoje() && l.status !== "Cliente" && l.status !== "Descartado";
+    var h = "";
+
+    h += '<article class="lead' + (venc ? " vencido" : "") + '" data-k="' + esc(l._k) + '">';
+    h += '<div class="lead-topo"><div style="flex:1;min-width:200px">';
+    h += "<h3>" + esc(l.nome) + "</h3>";
+
+    var meta = [];
+    if(l.endereco) meta.push(esc(l.endereco));
+    else if(l.cidade) meta.push(esc(l.cidade));
+    if(l.telefone) meta.push(esc(formatarTel(l.telefone)));
+    h += '<p class="meta">' + meta.join(" · ") + "</p>";
+
+    var links = [];
+    if(l.site) links.push('<a href="' + esc(l.site) + '" target="_blank" rel="noopener nofollow">site</a>');
+    if(l.mapa) links.push('<a href="' + esc(l.mapa) + '" target="_blank" rel="noopener nofollow">ver no Maps</a>');
+    if(links.length) h += '<p class="meta">' + links.join(" · ") + "</p>";
+
+    h += "</div>";
+    h += '<div class="score ' + classeScore(p.total) + '"><b>' + p.total + "</b><small>nota</small></div>";
+    h += "</div>";
+
+    h += '<div class="selos">';
+    if(zap) h += '<span class="selo zap">WhatsApp</span>';
+    else if(l.telefone) h += '<span class="selo">só fixo</span>';
+    else h += '<span class="selo alerta">sem telefone</span>';
+    if(l.nota) h += '<span class="selo">' + String(l.nota).replace(".",",") + " ★ (" + (l.avaliacoes||0) + ")</span>";
+    if(!l.site) h += '<span class="selo">sem site</span>';
+    if(venc) h += '<span class="selo alerta">follow-up vencido</span>';
+    if(l.origem) h += '<span class="selo">' + esc(l.origem) + "</span>";
+    h += "</div>";
+
+    h += '<div class="acoes">';
+    h += '<label class="sr" for="st-' + esc(l._k) + '">Etapa de ' + esc(l.nome) + "</label>";
+    h += '<select id="st-' + esc(l._k) + '" data-acao="status">';
+    ETAPAS.forEach(function(e){
+      h += '<option value="' + esc(e) + '"' + ((l.status||"Novo") === e ? " selected" : "") + ">" + esc(e) + "</option>";
+    });
+    h += "</select>";
+    h += '<label class="sr" for="fu-' + esc(l._k) + '">Follow-up de ' + esc(l.nome) + "</label>";
+    h += '<input id="fu-' + esc(l._k) + '" type="date" data-acao="followup" value="' + esc(l.followup||"") + '">';
+    if(zap) h += '<button type="button" class="btn btn-sm" data-acao="zap">Abrir WhatsApp</button>';
+    h += '<button type="button" class="btn-ghost btn-sm" data-acao="remover">Remover</button>';
+    h += "</div>";
+
+    h += "<details><summary>Anotação e por que essa nota</summary><div>";
+    h += '<label class="sr" for="an-' + esc(l._k) + '">Anotação sobre ' + esc(l.nome) + "</label>";
+    h += '<textarea id="an-' + esc(l._k) + '" data-acao="anotacao" rows="2" placeholder="Ex.: pediu para retornar terça de manhã">' + esc(l.anotacao||"") + "</textarea>";
+    h += '<ul class="porque" style="margin-top:8px">';
+    if(p.partes.length){
+      p.partes.forEach(function(x){
+        h += "<li>" + (x.pts > 0 ? "+" + x.pts : x.pts) + " — " + esc(x.rotulo) + "</li>";
+      });
+    } else {
+      h += "<li>Sem sinais suficientes para pontuar.</li>";
+    }
+    h += "</ul></div></details>";
+    h += "</article>";
+    return h;
+  }
+
+  function renderizar(){
+    pintarUso();
+    pintarFunil();
+    var arr = listaFiltrada();
+    var el = document.getElementById("lista");
+
+    if(!arr.length){
+      var total = Object.keys(loja.leads).length;
+      el.innerHTML = '<div class="vazio">' +
+        (total ? "Nenhum lead com esses filtros." : "Sua lista está vazia. Busque uma cidade acima, importe um CSV ou cadastre alguém à mão.") +
+        "</div>";
+      return;
+    }
+    el.innerHTML = arr.map(cartao).join("");
+  }
+
+  /* ---------- CSV ---------- */
+
+  var COLUNAS = ["Nome","Telefone","WhatsApp","Site","Cidade","UF","Endereco","Nota","Avaliacoes","Score","Status","Anotacao","Followup","Origem","Termo","Mapa","Id"];
+
+  function celula(v){
+    var s = String(v == null ? "" : v);
+    if(/[";\n\r]/.test(s)) return '"' + s.replace(/"/g,'""') + '"';
+    return s;
+  }
+
+  function exportar(){
+    var linhas = [COLUNAS.join(";")];
+    Object.keys(loja.leads).forEach(function(k){
+      var l = loja.leads[k];
+      var p = pontuar(l);
+      linhas.push([
+        l.nome, formatarTel(l.telefone), (l.telefone && ehCelular(l.telefone)) ? "sim" : "nao",
+        l.site, l.cidade, l.uf, l.endereco, l.nota || "", l.avaliacoes || 0, p.total,
+        l.status || "Novo", l.anotacao || "", l.followup || "", l.origem || "", l.termo || "",
+        l.mapa || "", l.id || ""
+      ].map(celula).join(";"));
+    });
+
+    /* BOM para o Excel pt-BR nao comer os acentos */
+    var blob = new Blob(["\uFEFF" + linhas.join("\r\n")], {type:"text/csv;charset=utf-8;"});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "leads-nutricionistas-" + hoje() + ".csv";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    msg("c-msg","ok", Object.keys(loja.leads).length + " leads exportados.");
+  }
+
+  /* Parser tolerante: aspas, delimitador , ou ;, CRLF e BOM */
+  function lerCsv(texto){
+    texto = texto.replace(/^\uFEFF/, "");
+    var cab = texto.slice(0, texto.indexOf("\n") < 0 ? texto.length : texto.indexOf("\n"));
+    var del = (cab.split(";").length > cab.split(",").length) ? ";" : ",";
+
+    var linhas = [], campo = "", linha = [], aspas = false;
+    for(var i = 0; i < texto.length; i++){
+      var c = texto.charAt(i);
+      if(aspas){
+        if(c === '"'){
+          if(texto.charAt(i+1) === '"'){ campo += '"'; i++; }
+          else aspas = false;
+        } else campo += c;
+      } else if(c === '"'){
+        aspas = true;
+      } else if(c === del){
+        linha.push(campo); campo = "";
+      } else if(c === "\n"){
+        linha.push(campo); linhas.push(linha); linha = []; campo = "";
+      } else if(c !== "\r"){
+        campo += c;
+      }
+    }
+    if(campo !== "" || linha.length){ linha.push(campo); linhas.push(linha); }
+    return linhas;
+  }
+
+  function importar(texto){
+    var linhas = lerCsv(texto);
+    if(linhas.length < 2){
+      msg("c-msg","erro","O arquivo parece vazio ou só tem o cabeçalho.");
+      return;
+    }
+    var cab = linhas[0].map(function(s){
+      return String(s).trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+    });
+    function col(){
+      for(var i = 0; i < arguments.length; i++){
+        var idx = cab.indexOf(arguments[i]);
+        if(idx >= 0) return idx;
+      }
+      return -1;
+    }
+    var iNome = col("nome","name","estabelecimento");
+    if(iNome < 0){
+      msg("c-msg","erro","Não achei a coluna “Nome” no arquivo. Exporte um CSV daqui para ver o formato esperado.");
+      return;
+    }
+    var iTel = col("telefone","phone","whatsapp","celular"),
+        iSite = col("site","website","instagram"),
+        iCid = col("cidade","city"),
+        iUf = col("uf","estado"),
+        iEnd = col("endereco","address"),
+        iNota = col("nota","rating"),
+        iAv = col("avaliacoes","reviews"),
+        iSt = col("status","etapa"),
+        iAn = col("anotacao","observacao","nota interna"),
+        iFu = col("followup","follow-up","retorno"),
+        iId = col("id");
+
+    var novos = [];
+    for(var i = 1; i < linhas.length; i++){
+      var r = linhas[i];
+      if(!r || !r.length) continue;
+      var nome = String(r[iNome]||"").trim();
+      if(!nome) continue;
+      novos.push({
+        id: iId >= 0 ? String(r[iId]||"").trim() : "",
+        nome: nome,
+        telefone: iTel >= 0 ? normalizarTel(r[iTel]) : "",
+        site: iSite >= 0 ? urlSegura(r[iSite]) : "",
+        cidade: iCid >= 0 ? String(r[iCid]||"").trim() : "",
+        uf: iUf >= 0 ? String(r[iUf]||"").trim() : "",
+        endereco: iEnd >= 0 ? String(r[iEnd]||"").trim() : "",
+        nota: iNota >= 0 ? (parseFloat(String(r[iNota]).replace(",",".")) || 0) : 0,
+        avaliacoes: iAv >= 0 ? (parseInt(r[iAv],10) || 0) : 0,
+        situacao: "OPERATIONAL",
+        mapa: "", tipo: "",
+        origem: "CSV",
+        _status: iSt >= 0 ? String(r[iSt]||"").trim() : "",
+        _anotacao: iAn >= 0 ? String(r[iAn]||"").trim() : "",
+        _followup: iFu >= 0 ? String(r[iFu]||"").trim() : ""
+      });
+    }
+
+    var st = mesclar(novos, "importado");
+    /* Restaura funil/anotacao de quem veio de um export nosso */
+    novos.forEach(function(l){
+      var k = chaveLead(l), alvo = loja.leads[k];
+      if(!alvo) return;
+      if(l._status && ETAPAS.indexOf(l._status) >= 0) alvo.status = l._status;
+      if(l._anotacao && !alvo.anotacao) alvo.anotacao = l._anotacao;
+      if(l._followup && /^\d{4}-\d{2}-\d{2}$/.test(l._followup) && !alvo.followup) alvo.followup = l._followup;
+      delete alvo._status; delete alvo._anotacao; delete alvo._followup;
+    });
+
+    salvar();
+    renderizar();
+    msg("c-msg","ok", st.add + (st.add === 1 ? " lead importado" : " leads importados") +
+        (st.dup ? ", " + st.dup + " já estavam na lista" : "") + ".");
+  }
+
+  /* ---------- Eventos ---------- */
+
+  document.getElementById("form-busca").addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var cidade = document.getElementById("b-cidade").value.trim();
+    var termo = document.getElementById("b-termo").value.trim() || "nutricionista";
+    if(!cidade){ msg("b-msg","erro","Escreva a cidade, com o estado de preferência (ex.: Petrolina, PE)."); return; }
+    proximoToken = null;
+    document.getElementById("b-mais").hidden = true;
+    buscar(cidade, termo, null);
+  });
+
+  document.getElementById("b-mais").addEventListener("click", function(){
+    if(proximoToken && ultimaBusca) buscar(ultimaBusca.cidade, ultimaBusca.termo, proximoToken);
+  });
+
+  /* Chave */
+  function pintarChave(){
+    var c = chaveApi();
+    var el = document.getElementById("chave-estado");
+    if(c) el.textContent = "· salva (" + c.slice(0,4) + "…" + c.slice(-4) + ")";
+    else el.textContent = "· não configurada";
+  }
+
+  document.getElementById("k-salvar").addEventListener("click", function(){
+    var v = document.getElementById("k-chave").value.trim();
+    if(!v){ msg("k-msg","erro","Cole a chave antes de salvar."); return; }
+    try{
+      localStorage.setItem(CHAVE_LS, v);
+      document.getElementById("k-chave").value = "";
+      msg("k-msg","ok","Chave salva neste navegador. Já pode buscar.");
+      pintarChave();
+    }catch(e){
+      msg("k-msg","erro","Este navegador bloqueou o armazenamento local. Saia da navegação anônima e tente de novo.");
+    }
+  });
+
+  document.getElementById("k-remover").addEventListener("click", function(){
+    try{ localStorage.removeItem(CHAVE_LS); }catch(e){}
+    msg("k-msg","ok","Chave removida.");
+    pintarChave();
+  });
+
+  /* Filtros */
+  ["f-texto","f-ordem","f-zap"].forEach(function(id){
+    document.getElementById(id).addEventListener("input", renderizar);
+  });
+
+  document.getElementById("funil").addEventListener("click", function(ev){
+    var b = ev.target.closest("[data-etapa]");
+    if(!b) return;
+    filtroEtapa = b.getAttribute("data-etapa");
+    renderizar();
+  });
+
+  /* Acoes no cartao */
+  document.getElementById("lista").addEventListener("click", function(ev){
+    var b = ev.target.closest("[data-acao]");
+    if(!b) return;
+    var art = b.closest(".lead");
+    if(!art) return;
+    var l = loja.leads[art.getAttribute("data-k")];
+    if(!l) return;
+    var acao = b.getAttribute("data-acao");
+
+    if(acao === "zap"){
+      var modelo = loja.config.modelo || MODELO_PADRAO;
+      var texto = modelo
+        .replace(/\{nome\}/g, primeiroNome(l.nome))
+        .replace(/\{cidade\}/g, l.cidade || "sua cidade");
+      window.open("https://wa.me/" + l.telefone + "?text=" + encodeURIComponent(texto), "_blank", "noopener");
+      if((l.status||"Novo") === "Novo"){ l.status = "Contatado"; salvar(); renderizar(); }
+    }
+
+    if(acao === "remover"){
+      if(window.confirm("Remover “" + l.nome + "” da lista?")){
+        delete loja.leads[art.getAttribute("data-k")];
+        salvar(); renderizar();
+      }
+    }
+  });
+
+  document.getElementById("lista").addEventListener("change", function(ev){
+    var el = ev.target.closest("[data-acao]");
+    if(!el) return;
+    var art = el.closest(".lead");
+    if(!art) return;
+    var l = loja.leads[art.getAttribute("data-k")];
+    if(!l) return;
+    var acao = el.getAttribute("data-acao");
+
+    if(acao === "status"){ l.status = el.value; salvar(); renderizar(); }
+    if(acao === "followup"){ l.followup = el.value; salvar(); pintarFunil(); }
+    if(acao === "anotacao"){ l.anotacao = el.value; salvar(); }
+  });
+
+  function primeiroNome(nome){
+    var n = String(nome||"").trim();
+    /* "Dra. Ana Paula Nutricao" -> "Ana"; nomes de clinica ficam inteiros */
+    var limpo = n.replace(/^(dra?\.?|nutri(cionista)?)\s+/i, "");
+    var primeiro = limpo.split(/\s+/)[0] || n;
+    return primeiro.length >= 3 ? primeiro : n;
+  }
+
+  /* Modelo de mensagem */
+  var elModelo = document.getElementById("m-modelo");
+  elModelo.value = loja.config.modelo || MODELO_PADRAO;
+
+  document.getElementById("m-salvar").addEventListener("click", function(){
+    loja.config.modelo = elModelo.value;
+    if(salvar()) msg("m-msg","ok","Modelo salvo.");
+  });
+  document.getElementById("m-padrao").addEventListener("click", function(){
+    elModelo.value = MODELO_PADRAO;
+    loja.config.modelo = MODELO_PADRAO;
+    if(salvar()) msg("m-msg","ok","Modelo restaurado.");
+  });
+
+  /* CSV */
+  document.getElementById("c-exportar").addEventListener("click", exportar);
+
+  document.getElementById("c-arquivo").addEventListener("change", function(ev){
+    var f = ev.target.files && ev.target.files[0];
+    if(!f) return;
+    var fr = new FileReader();
+    fr.onload = function(){ importar(String(fr.result||"")); ev.target.value = ""; };
+    fr.onerror = function(){ msg("c-msg","erro","Não consegui ler o arquivo."); };
+    fr.readAsText(f, "UTF-8");
+  });
+
+  document.getElementById("c-limpar").addEventListener("click", function(){
+    var n = Object.keys(loja.leads).length;
+    if(!n){ msg("c-msg","aviso","A lista já está vazia."); return; }
+    if(!window.confirm("Apagar os " + n + " leads? Isso não tem volta — exporte o CSV antes.")) return;
+    loja.leads = {};
+    salvar(); renderizar();
+    msg("c-msg","ok","Lista apagada.");
+  });
+
+  /* Cadastro manual */
+  document.getElementById("form-manual").addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var nome = document.getElementById("man-nome").value.trim();
+    if(!nome) return;
+    var r = mesclar([{
+      id:"", nome:nome,
+      telefone: normalizarTel(document.getElementById("man-tel").value),
+      site: urlSegura(document.getElementById("man-site").value),
+      cidade: document.getElementById("man-cidade").value.trim(),
+      uf:"", endereco:"", nota:0, avaliacoes:0,
+      situacao:"OPERATIONAL", mapa:"", tipo:"", origem:"Manual"
+    }], "manual");
+    salvar(); renderizar();
+    if(r.add){
+      this.reset();
+      msg("man-msg","ok","Lead adicionado.");
+    } else {
+      msg("man-msg","aviso","Esse lead já estava na lista.");
+    }
+  });
+
+  /* ---------- Boot ---------- */
+  pintarChave();
+  renderizar();
+
+})();
+</script>
+</body>
+</html>
