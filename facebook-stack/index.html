@@ -13,7 +13,7 @@
   :root{
     --bg:#F7F9FC; --surface:#FFFFFF; --surface2:#EDF1F7;
     --ink:#111827; --ink-soft:#3F4A5A; --ink-faint:#5B6675;
-    --brand:#0B3D91; --brand-mid:#1D4ED8;
+    --brand-mid:#1D4ED8;
     --accent:#1D4ED8; --accent-hover:#1E40AF; --accent-ink:#FFFFFF;
     --ok:#166534; --warn:#B45309; --dead:#9B1C1C;
     --line:#DDE3ED; --line-forte:#C3CDDC;
@@ -25,7 +25,7 @@
     :root{
       --bg:#0D1117; --surface:#151B24; --surface2:#1B2330;
       --ink:#E6EDF3; --ink-soft:#AEBAC9; --ink-faint:#8B98A8;
-      --brand:#93B4FF; --brand-mid:#7BA3FF;
+      --brand-mid:#7BA3FF;
       --accent:#3B82F6; --accent-hover:#60A5FA; --accent-ink:#0A1020;
       --ok:#4ADE80; --warn:#F5B04C; --dead:#F98A8A;
       --line:#26303D; --line-forte:#3A4657;
@@ -179,7 +179,6 @@
     font-size:.8rem;font-weight:600;background:var(--surface);color:var(--ink-soft);
     border:1px solid var(--line);border-radius:8px;padding:5px 10px;
   }
-  .era-saida{margin-top:1rem;font-size:.9rem}
 
   /* ==================== 9. DEFASAGEM CRIAR → ABRIR ==================== */
   .gaps-sec{padding:56px 0}
@@ -1572,7 +1571,7 @@
             <div class="tech-topo"><h3>React Compiler <a class="anchor" href="#t-react-compiler" aria-label="Link para React Compiler">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
             <p class="tech-anos">2021 como "React Forget" · 1.0 estável em outubro de 2025</p>
             <p class="tech-desc">Compilador que faz memoização automática em tempo de build, tornando obsoletos o useMemo e o useCallback escritos à mão. Funciona no React e no React Native.</p>
-            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>a Meta relatou −12% no tempo de carga da Quest Store</span></p>
+            <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>até 12% mais rápido no carregamento da Quest Store</span></p>
             <p class="src"><a href="https://react.dev/blog/2025/10/07/react-compiler-1">react.dev · React Compiler 1.0</a></p>
           </li>
 
@@ -1704,7 +1703,7 @@
           <div class="ver-card"><b>1</b><p>requisição de rede, no total</p></div>
         </div>
         <p class="src" style="margin-top:1.2rem">
-          O arquivo tem exatamente 166.599 bytes e 2.240 linhas, contendo 99 fichas de
+          O arquivo tem exatamente 167.093 bytes e 2.248 linhas, contendo 99 fichas de
           tecnologia. Os números foram medidos no arquivo pronto, não estimados — numa aba cujo
           assunto é honestidade, um número chutado seria o pior defeito possível.
         </p>
@@ -2065,6 +2064,7 @@
   var anuncioEl = document.getElementById("f-anuncio");
   var formEl  = document.getElementById("filtros");
   var timerAnuncio = null;
+  var primeiraPassada = true;
 
   function marcados(nome){
     var out = [], els = formEl ? formEl.querySelectorAll('input[name="' + nome + '"]:checked') : [];
@@ -2124,7 +2124,11 @@
     if (rotuloEl) rotuloEl.textContent = visiveis === 1 ? "tecnologia" : "tecnologias";
     vis(vazioEl, visiveis !== 0);
     vis(limparEl, !(limpos.length || cats.length || eras.length || sts.length));
-    anunciarDepois(visiveis);
+
+    /* A região viva só fala em resposta a uma ação. Anunciar "99 tecnologias"
+       meio segundo depois de a página abrir seria ruído puro no leitor de tela. */
+    if (primeiraPassada) primeiraPassada = false;
+    else anunciarDepois(visiveis);
   }
 
   function limparFiltros(){
@@ -2228,9 +2232,13 @@
     }
   }
 
-  /* ==================== INICIALIZAÇÃO ==================== */
-  initAbas();
+  /* ==================== INICIALIZAÇÃO ====================
+     O catálogo vem primeiro de propósito. initAbas() resolve o hash, e resolver
+     o hash pode precisar limpar um filtro que esconde o alvo — o que só funciona
+     com ITENS já montado. Importa quando o navegador restaura o estado do
+     formulário ao recarregar (o Firefox faz isso) e um filtro volta ativo. */
   initCatalogo();
+  initAbas();
   initReveal();
   verificarSanidade();
 })();
