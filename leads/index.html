@@ -170,6 +170,10 @@
   }
   .selo.zap{border-color:var(--accent);color:var(--accent)}
   .selo.alerta{border-color:var(--amber);color:var(--amber)}
+  .selo.online{border-color:var(--brand-mid);color:var(--brand-mid);font-weight:700}
+  .selo.insta{border-color:var(--brand-mid);color:var(--brand-mid)}
+  .etapa.hoje{border-color:var(--amber);color:var(--amber);font-weight:700}
+  .etapa.hoje[aria-pressed="true"]{background:var(--amber);color:var(--bg);border-color:var(--amber)}
   .acoes{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
   .acoes select{width:auto;min-width:150px;min-height:38px;padding:6px 10px;font-size:.85rem}
   .acoes input[type=date]{width:auto;min-height:38px;padding:6px 10px;font-size:.85rem}
@@ -298,8 +302,10 @@
         <select id="f-zap">
           <option value="">Todos</option>
           <option value="zap">Só com WhatsApp</option>
+          <option value="online">Só quem atende online</option>
+          <option value="insta">Só com Instagram</option>
           <option value="semsite">Só sem site</option>
-          <option value="vencido">Follow-up vencido</option>
+          <option value="vencido">Retorno vencido</option>
         </select>
       </div>
     </div>
@@ -316,7 +322,7 @@
       <summary>Modelo da mensagem de WhatsApp</summary>
       <div>
         <div class="campo">
-          <label for="m-modelo">Use <code>{nome}</code> e <code>{cidade}</code> — são trocados pelos dados do lead</label>
+          <label for="m-modelo">Use <code>{nome}</code>, <code>{cidade}</code> e <code>{link}</code> — são trocados na hora do envio</label>
           <textarea id="m-modelo" rows="5"></textarea>
         </div>
         <div class="grupo-btn">
@@ -324,6 +330,7 @@
           <button class="btn-ghost btn-sm" type="button" id="m-padrao">Voltar ao padrão</button>
         </div>
         <div id="m-msg" role="status" aria-live="polite"></div>
+        <p class="src" style="margin-top:10px"><code>{link}</code> vira o endereço da sua landing com etiqueta de origem. Quando a nutricionista pedir demonstração por ali, o e-mail que você recebe já diz de qual lead prospectado ela veio — é assim que você descobre se a prospecção está funcionando.</p>
         <div class="aviso" style="margin-top:14px">
           <strong>Abordagem responsável:</strong> são contatos comerciais públicos, e prospecção B2B tem base legal de legítimo interesse na LGPD. Isso não autoriza disparo em massa. Mande uma a uma, personalizada, e retire da lista na hora quem pedir para não ser mais procurado.
         </div>
@@ -395,8 +402,13 @@
   var MODELO_PADRAO =
     "Oi, {nome}! Tudo bem?\n\n" +
     "Sou do Acompanha.ai. A gente cuida do acompanhamento dos pacientes entre as consultas pelo WhatsApp: check-in, dúvida de fim de semana, foto de refeição — e te avisa quem está prestes a sumir.\n\n" +
-    "Faz sentido eu te mostrar em 10 minutos como ficaria com os seus planos?";
+    "Faz sentido eu te mostrar em 10 minutos como ficaria com os seus planos?\n\n{link}";
   var LIMITE_GRATIS = 1000;
+
+  /* Loop de atribuicao: a landing so preserva fbclid e utm_<minusculas>
+     (index.html:869-880), entao a identidade do lead viaja em utm_content. */
+  var LANDING = "https://www.acompanhanutri.com.br/";
+  var DIAS_FOLLOWUP = 3;
 
   var ENDPOINT = "https://places.googleapis.com/v1/places:searchText";
   var CAMPOS = [
@@ -409,13 +421,32 @@
 
   /* ---------- Estado ---------- */
 
+  /* Declarado ANTES de carregar(): migrar() escreve nesta flag durante a
+     chamada abaixo, e um "var x = false" depois dela apagaria o valor. */
+  var migrouAgora = false;
+
   var loja = carregar();
   var proximoToken = null;
   var ultimaBusca = null;
   var filtroEtapa = "";
 
   function vazia(){
-    return { versao:1, leads:{}, config:{ modelo:MODELO_PADRAO, reqMes:{} } };
+    return { versao:2, leads:{}, config:{ modelo:MODELO_PADRAO, reqMes:{} } };
+  }
+
+  /* v1 -> v2: toques por lead e Instagram separado do site. Nada e descartado.
+     Marca migrouAgora para o boot gravar de volta — senao a conversao se
+     repetiria a cada carregamento e o disco ficaria eternamente na v1. */
+  function migrar(d){
+    if(d.versao >= 2) return d;
+    migrouAgora = true;
+    Object.keys(d.leads).forEach(function(k){
+      var l = d.leads[k];
+      if(typeof l.toques !== "number") l.toques = (l.status && l.status !== "Novo") ? 1 : 0;
+      if(!l.instagram) l.instagram = instagramDe(l.site);
+    });
+    d.versao = 2;
+    return d;
   }
 
   function carregar(){
@@ -427,8 +458,8 @@
       if(!d.config) d.config = { modelo:MODELO_PADRAO, reqMes:{} };
       if(!d.config.reqMes) d.config.reqMes = {};
       if(!d.config.modelo) d.config.modelo = MODELO_PADRAO;
-      d.versao = 1;
-      return d;
+      if(!d.versao) d.versao = 1;
+      return migrar(d);
     }catch(e){ return vazia(); }
   }
 
@@ -494,6 +525,42 @@
     return semAcento(s).toLowerCase().replace(/[^a-z0-9]+/g,"");
   }
 
+  /* Com traco: fica legivel no e-mail de atribuicao ("ana-paula-nutricao") */
+  function slugTraco(s){
+    return semAcento(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  }
+
+  /* Muita nutricionista poe o Instagram no campo "site" do Google.
+     Vira campo proprio: e o canal onde ela realmente responde. */
+  function instagramDe(url){
+    if(!url) return "";
+    var m = String(url).match(/instagram\.com\/([A-Za-z0-9._]+)/i);
+    if(!m) return "";
+    var h = m[1].replace(/\/$/,"");
+    if(/^(p|reel|reels|explore|stories|accounts)$/i.test(h)) return "";
+    return h;
+  }
+
+  function ehAgregador(url){
+    return /linktr\.ee|beacons\.ai|linklist|bio\.link|linkbio/i.test(String(url||""));
+  }
+
+  function emDias(n){
+    var d = new Date();
+    d.setDate(d.getDate() + n);
+    return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+d.getDate()).slice(-2);
+  }
+
+  /* Link da landing com UTM: a landing grava isso no campo "origem" e ele
+     chega no e-mail do FormSubmit, dizendo qual lead prospectado converteu. */
+  function linkLanding(l){
+    var campanha = slugTraco(l.cidade) || "sem-cidade";
+    var conteudo = slugTraco(l.nome).slice(0, 60) || "sem-nome";
+    return LANDING + "?utm_source=prospeccao&utm_medium=whatsapp" +
+           "&utm_campaign=" + encodeURIComponent(campanha) +
+           "&utm_content=" + encodeURIComponent(conteudo);
+  }
+
   /* Telefone BR -> so digitos com DDI. 13 digitos = celular (WhatsApp), 12 = fixo. */
   function normalizarTel(bruto){
     var d = String(bruto||"").replace(/\D/g,"");
@@ -556,8 +623,15 @@
     if(l.nota >= 4.5) add(10, "Nota " + String(l.nota).replace(".",",") + " — cuida da experiência do paciente");
     else if(l.nota >= 4) add(5, "Nota " + String(l.nota).replace(".",","));
 
-    /* Maturidade digital */
-    if(l.site) add(10, "Tem site — mais aberta a contratar software");
+    /* Atende online/domicilio: sem secretaria, sem estrutura, acompanha
+       sozinha pelo proprio WhatsApp. E exatamente a dor que o produto resolve. */
+    if(l.online) add(15, "Atende online ou em domicílio — sem estrutura para acompanhar sozinha");
+
+    /* Maturidade digital: Instagram vale mais que site institucional.
+       Quem vive no Instagram e autonoma, responde por la e ja vende no digital. */
+    if(l.instagram) add(12, "Instagram @" + l.instagram + " — ativa no digital e acessível por lá");
+    else if(l.site && ehAgregador(l.site)) add(10, "Link na bio (Linktree) — perfil de autônoma no digital");
+    else if(l.site) add(6, "Tem site");
 
     if(total < 0) total = 0;
     if(total > 100) total = 100;
@@ -581,14 +655,17 @@
         var atual = loja.leads[k];
         if(!atual.telefone && l.telefone) atual.telefone = l.telefone;
         if(!atual.site && l.site) atual.site = l.site;
+        if(!atual.instagram && l.instagram) atual.instagram = l.instagram;
         if(!atual.nota && l.nota) atual.nota = l.nota;
         if(!atual.avaliacoes && l.avaliacoes) atual.avaliacoes = l.avaliacoes;
+        if(!atual.endereco && l.endereco){ atual.endereco = l.endereco; atual.online = false; }
         dup++;
         return;
       }
       l.status = "Novo";
       l.anotacao = "";
       l.followup = "";
+      l.toques = 0;
       l.termo = termo || "";
       l.criadoEm = new Date().toISOString();
       loja.leads[k] = l;
@@ -607,6 +684,11 @@
       if(t.indexOf("administrative_area_level_1") >= 0 && !uf) uf = c.shortText || "";
     });
     var tel = normalizarTel(p.internationalPhoneNumber || p.nationalPhoneNumber || "");
+    var site = urlSegura(p.websiteUri || "");
+    /* Sem endereco nem coordenada = negocio de area de atendimento:
+       nutricionista que atende online ou em domicilio. Melhor ICP que existe
+       para este produto, e ate agora invisivel na lista. */
+    var online = !p.formattedAddress && !p.location;
     return {
       id: p.id || "",
       nome: (p.displayName && p.displayName.text) || "(sem nome)",
@@ -614,7 +696,9 @@
       cidade: cidade,
       uf: uf,
       telefone: tel,
-      site: urlSegura(p.websiteUri || ""),
+      site: site,
+      instagram: instagramDe(site),
+      online: online,
       nota: typeof p.rating === "number" ? p.rating : 0,
       avaliacoes: p.userRatingCount || 0,
       situacao: p.businessStatus || "",
@@ -666,7 +750,10 @@
       textQuery: termo + " em " + cidade,
       languageCode: "pt-BR",
       regionCode: "BR",
-      pageSize: 20
+      pageSize: 20,
+      /* Traz tambem quem nao tem endereco fisico: atendimento online
+         e domiciliar. Sem isso, esse segmento inteiro fica de fora. */
+      includePureServiceAreaBusinesses: true
     };
     if(token) corpo.pageToken = token;
 
@@ -736,26 +823,61 @@
     el.textContent = txt;
   }
 
+  /* Aberto = ainda da para trabalhar (nem fechado, nem descartado) */
+  function aberto(l){
+    return l.status !== "Cliente" && l.status !== "Descartado";
+  }
+
+  function vencido(l){
+    return !!(l.followup && l.followup <= hoje() && aberto(l));
+  }
+
+  /* Fila do dia: primeiro quem tem retorno vencido, depois lead bom
+     ainda nao abordado. E a resposta para "com quem eu falo agora". */
+  function ehDeHoje(l){
+    if(!aberto(l)) return false;
+    if(vencido(l)) return true;
+    return (l.status || "Novo") === "Novo" && l._p.total >= 55 && l.telefone && ehCelular(l.telefone);
+  }
+
   function listaFiltrada(){
     var arr = [];
     var texto = (document.getElementById("f-texto").value || "").toLowerCase();
     var extra = document.getElementById("f-zap").value;
-    var h = hoje();
 
     Object.keys(loja.leads).forEach(function(k){
       var l = loja.leads[k];
       l._k = k;
       l._p = pontuar(l);
 
-      if(filtroEtapa && l.status !== filtroEtapa) return;
+      if(filtroEtapa === "__hoje"){ if(!ehDeHoje(l)) return; }
+      else if(filtroEtapa && l.status !== filtroEtapa) return;
+
       if(texto && ((l.nome||"") + " " + (l.cidade||"") + " " + (l.endereco||"")).toLowerCase().indexOf(texto) < 0) return;
       if(extra === "zap" && !(l.telefone && ehCelular(l.telefone))) return;
       if(extra === "semsite" && l.site) return;
-      if(extra === "vencido" && !(l.followup && l.followup <= h && l.status !== "Cliente" && l.status !== "Descartado")) return;
+      if(extra === "insta" && !l.instagram) return;
+      if(extra === "online" && !l.online) return;
+      if(extra === "vencido" && !vencido(l)) return;
       arr.push(l);
     });
 
     var ordem = document.getElementById("f-ordem").value;
+
+    /* Na fila de hoje a ordem e a prioridade de contato, nao a escolhida no filtro */
+    if(filtroEtapa === "__hoje"){
+      arr.sort(function(a,b){
+        var va = vencido(a) ? 0 : 1, vb = vencido(b) ? 0 : 1;
+        if(va !== vb) return va - vb;
+        if(va === 0){
+          var fa = a.followup || "9999", fb = b.followup || "9999";
+          if(fa !== fb) return fa < fb ? -1 : 1;
+        }
+        return b._p.total - a._p.total;
+      });
+      return arr;
+    }
+
     arr.sort(function(a,b){
       if(ordem === "nome") return (a.nome||"").localeCompare(b.nome||"","pt-BR");
       if(ordem === "avaliacoes") return (b.avaliacoes||0) - (a.avaliacoes||0);
@@ -771,13 +893,18 @@
   }
 
   function pintarFunil(){
-    var cont = {}, total = 0;
+    var cont = {}, total = 0, nHoje = 0;
     Object.keys(loja.leads).forEach(function(k){
-      var s = loja.leads[k].status || "Novo";
+      var l = loja.leads[k];
+      var s = l.status || "Novo";
       cont[s] = (cont[s]||0) + 1; total++;
+      l._p = l._p || pontuar(l);
+      if(ehDeHoje(l)) nHoje++;
     });
 
-    var html = '<button type="button" class="etapa" data-etapa="" aria-pressed="' + (filtroEtapa === "" ? "true" : "false") + '">Todos <b>' + total + "</b></button>";
+    var html = '<button type="button" class="etapa hoje" data-etapa="__hoje" aria-pressed="' +
+               (filtroEtapa === "__hoje" ? "true" : "false") + '">Hoje <b>' + nHoje + "</b></button>";
+    html += '<button type="button" class="etapa" data-etapa="" aria-pressed="' + (filtroEtapa === "" ? "true" : "false") + '">Todos <b>' + total + "</b></button>";
     ETAPAS.forEach(function(e){
       html += '<button type="button" class="etapa" data-etapa="' + esc(e) + '" aria-pressed="' + (filtroEtapa === e ? "true" : "false") + '">' +
               esc(e) + " <b>" + (cont[e]||0) + "</b></button>";
@@ -790,7 +917,7 @@
   function cartao(l){
     var p = l._p;
     var zap = l.telefone && ehCelular(l.telefone);
-    var venc = l.followup && l.followup <= hoje() && l.status !== "Cliente" && l.status !== "Descartado";
+    var venc = vencido(l);
     var h = "";
 
     h += '<article class="lead' + (venc ? " vencido" : "") + '" data-k="' + esc(l._k) + '">';
@@ -800,11 +927,15 @@
     var meta = [];
     if(l.endereco) meta.push(esc(l.endereco));
     else if(l.cidade) meta.push(esc(l.cidade));
+    else if(l.online) meta.push("Sem endereço fixo — atende online ou em domicílio");
     if(l.telefone) meta.push(esc(formatarTel(l.telefone)));
     h += '<p class="meta">' + meta.join(" · ") + "</p>";
 
     var links = [];
-    if(l.site) links.push('<a href="' + esc(l.site) + '" target="_blank" rel="noopener nofollow">site</a>');
+    if(l.instagram) links.push('<a href="https://instagram.com/' + esc(l.instagram) +
+                               '" target="_blank" rel="noopener nofollow">@' + esc(l.instagram) + "</a>");
+    if(l.site && !l.instagram) links.push('<a href="' + esc(l.site) + '" target="_blank" rel="noopener nofollow">' +
+                               (ehAgregador(l.site) ? "link na bio" : "site") + "</a>");
     if(l.mapa) links.push('<a href="' + esc(l.mapa) + '" target="_blank" rel="noopener nofollow">ver no Maps</a>');
     if(links.length) h += '<p class="meta">' + links.join(" · ") + "</p>";
 
@@ -816,10 +947,13 @@
     if(zap) h += '<span class="selo zap">WhatsApp</span>';
     else if(l.telefone) h += '<span class="selo">só fixo</span>';
     else h += '<span class="selo alerta">sem telefone</span>';
+    if(l.online) h += '<span class="selo online">atende online</span>';
+    if(l.instagram) h += '<span class="selo insta">Instagram</span>';
     if(l.nota) h += '<span class="selo">' + String(l.nota).replace(".",",") + " ★ (" + (l.avaliacoes||0) + ")</span>";
-    if(!l.site) h += '<span class="selo">sem site</span>';
-    if(venc) h += '<span class="selo alerta">follow-up vencido</span>';
-    if(l.origem) h += '<span class="selo">' + esc(l.origem) + "</span>";
+    if(!l.site && !l.instagram) h += '<span class="selo">sem site nem Instagram</span>';
+    if(l.toques) h += '<span class="selo">' + l.toques + "º toque</span>";
+    if(venc) h += '<span class="selo alerta">retorno vencido</span>';
+    else if(l.followup) h += '<span class="selo">retorno ' + esc(l.followup.split("-").reverse().slice(0,2).join("/")) + "</span>";
     h += "</div>";
 
     h += '<div class="acoes">';
@@ -859,9 +993,11 @@
 
     if(!arr.length){
       var total = Object.keys(loja.leads).length;
-      el.innerHTML = '<div class="vazio">' +
-        (total ? "Nenhum lead com esses filtros." : "Sua lista está vazia. Busque uma cidade acima, importe um CSV ou cadastre alguém à mão.") +
-        "</div>";
+      var vazio;
+      if(!total) vazio = "Sua lista está vazia. Busque uma cidade acima, importe um CSV ou cadastre alguém à mão.";
+      else if(filtroEtapa === "__hoje") vazio = "Nada para hoje — nenhum retorno vencido e nenhum lead novo bem qualificado esperando. Bom momento para buscar outra cidade.";
+      else vazio = "Nenhum lead com esses filtros.";
+      el.innerHTML = '<div class="vazio">' + esc(vazio) + "</div>";
       return;
     }
     el.innerHTML = arr.map(cartao).join("");
@@ -869,7 +1005,7 @@
 
   /* ---------- CSV ---------- */
 
-  var COLUNAS = ["Nome","Telefone","WhatsApp","Site","Cidade","UF","Endereco","Nota","Avaliacoes","Score","Status","Anotacao","Followup","Origem","Termo","Mapa","Id"];
+  var COLUNAS = ["Nome","Telefone","WhatsApp","Instagram","Online","Site","Cidade","UF","Endereco","Nota","Avaliacoes","Score","Status","Toques","Anotacao","Followup","Origem","Termo","Mapa","Id"];
 
   function celula(v){
     var s = String(v == null ? "" : v);
@@ -884,8 +1020,9 @@
       var p = pontuar(l);
       linhas.push([
         l.nome, formatarTel(l.telefone), (l.telefone && ehCelular(l.telefone)) ? "sim" : "nao",
+        l.instagram || "", l.online ? "sim" : "nao",
         l.site, l.cidade, l.uf, l.endereco, l.nota || "", l.avaliacoes || 0, p.total,
-        l.status || "Novo", l.anotacao || "", l.followup || "", l.origem || "", l.termo || "",
+        l.status || "Novo", l.toques || 0, l.anotacao || "", l.followup || "", l.origem || "", l.termo || "",
         l.mapa || "", l.id || ""
       ].map(celula).join(";"));
     });
@@ -960,7 +1097,10 @@
         iSt = col("status","etapa"),
         iAn = col("anotacao","observacao","nota interna"),
         iFu = col("followup","follow-up","retorno"),
-        iId = col("id");
+        iId = col("id"),
+        iInsta = col("instagram","insta","arroba"),
+        iOn = col("online"),
+        iTq = col("toques","toque");
 
     var novos = [];
     for(var i = 1; i < linhas.length; i++){
@@ -968,11 +1108,16 @@
       if(!r || !r.length) continue;
       var nome = String(r[iNome]||"").trim();
       if(!nome) continue;
+      var siteCsv = iSite >= 0 ? urlSegura(r[iSite]) : "";
+      var instaCsv = iInsta >= 0 ? String(r[iInsta]||"").trim().replace(/^@/,"") : "";
+      if(!instaCsv) instaCsv = instagramDe(siteCsv);
       novos.push({
         id: iId >= 0 ? String(r[iId]||"").trim() : "",
         nome: nome,
         telefone: iTel >= 0 ? normalizarTel(r[iTel]) : "",
-        site: iSite >= 0 ? urlSegura(r[iSite]) : "",
+        site: siteCsv,
+        instagram: instaCsv,
+        online: iOn >= 0 ? /^(sim|s|true|1|yes)$/i.test(String(r[iOn]||"").trim()) : false,
         cidade: iCid >= 0 ? String(r[iCid]||"").trim() : "",
         uf: iUf >= 0 ? String(r[iUf]||"").trim() : "",
         endereco: iEnd >= 0 ? String(r[iEnd]||"").trim() : "",
@@ -983,7 +1128,8 @@
         origem: "CSV",
         _status: iSt >= 0 ? String(r[iSt]||"").trim() : "",
         _anotacao: iAn >= 0 ? String(r[iAn]||"").trim() : "",
-        _followup: iFu >= 0 ? String(r[iFu]||"").trim() : ""
+        _followup: iFu >= 0 ? String(r[iFu]||"").trim() : "",
+        _toques: iTq >= 0 ? (parseInt(r[iTq],10) || 0) : 0
       });
     }
 
@@ -995,7 +1141,8 @@
       if(l._status && ETAPAS.indexOf(l._status) >= 0) alvo.status = l._status;
       if(l._anotacao && !alvo.anotacao) alvo.anotacao = l._anotacao;
       if(l._followup && /^\d{4}-\d{2}-\d{2}$/.test(l._followup) && !alvo.followup) alvo.followup = l._followup;
-      delete alvo._status; delete alvo._anotacao; delete alvo._followup;
+      if(l._toques && !alvo.toques) alvo.toques = l._toques;
+      delete alvo._status; delete alvo._anotacao; delete alvo._followup; delete alvo._toques;
     });
 
     salvar();
@@ -1073,9 +1220,15 @@
       var modelo = loja.config.modelo || MODELO_PADRAO;
       var texto = modelo
         .replace(/\{nome\}/g, primeiroNome(l.nome))
-        .replace(/\{cidade\}/g, l.cidade || "sua cidade");
+        .replace(/\{cidade\}/g, l.cidade || "sua cidade")
+        .replace(/\{link\}/g, linkLanding(l));
       window.open("https://wa.me/" + l.telefone + "?text=" + encodeURIComponent(texto), "_blank", "noopener");
-      if((l.status||"Novo") === "Novo"){ l.status = "Contatado"; salvar(); renderizar(); }
+
+      l.toques = (l.toques || 0) + 1;
+      if((l.status||"Novo") === "Novo") l.status = "Contatado";
+      /* Venda B2B fecha entre o 3o e o 5o toque: ja deixa o proximo agendado */
+      l.followup = emDias(DIAS_FOLLOWUP);
+      salvar(); renderizar();
     }
 
     if(acao === "remover"){
@@ -1095,7 +1248,17 @@
     if(!l) return;
     var acao = el.getAttribute("data-acao");
 
-    if(acao === "status"){ l.status = el.value; salvar(); renderizar(); }
+    if(acao === "status"){
+      var antes = l.status || "Novo";
+      l.status = el.value;
+      /* Marcou como abordado sem passar pelo botao: conta o toque e agenda o retorno */
+      if(antes === "Novo" && l.status !== "Novo" && l.status !== "Descartado"){
+        if(!l.toques) l.toques = 1;
+        if(!l.followup) l.followup = emDias(DIAS_FOLLOWUP);
+      }
+      if(l.status === "Cliente" || l.status === "Descartado") l.followup = "";
+      salvar(); renderizar();
+    }
     if(acao === "followup"){ l.followup = el.value; salvar(); pintarFunil(); }
     if(acao === "anotacao"){ l.anotacao = el.value; salvar(); }
   });
@@ -1166,6 +1329,7 @@
   });
 
   /* ---------- Boot ---------- */
+  if(migrouAgora) salvar();
   pintarChave();
   renderizar();
 
