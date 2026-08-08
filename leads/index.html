@@ -192,6 +192,26 @@
 
   .vazio{text-align:center;padding:36px 20px;color:var(--ink-faint);font-size:.92rem}
 
+  .previa{
+    background:var(--surface2);border:1px solid var(--line);border-radius:10px;
+    padding:10px 12px;font-family:inherit;font-size:.82rem;color:var(--ink-soft);
+    white-space:pre-wrap;word-wrap:break-word;margin-bottom:10px;line-height:1.5;
+  }
+  table.stats{width:100%;border-collapse:collapse;font-size:.85rem;margin-top:8px}
+  table.stats th,table.stats td{
+    text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);
+    font-variant-numeric:tabular-nums;
+  }
+  table.stats th{color:var(--ink-faint);font-size:.75rem;text-transform:uppercase;letter-spacing:.04em}
+  table.stats td:not(:first-child),table.stats th:not(:first-child){text-align:right;width:22%}
+  details.obj{border-bottom:1px solid var(--line)}
+  details.obj > summary{
+    cursor:pointer;padding:11px 0;font-weight:600;font-size:.88rem;min-height:44px;
+    display:flex;align-items:center;color:var(--ink);
+  }
+  details.obj > div{padding:0 0 12px}
+  details.obj p{font-size:.85rem;margin-bottom:8px}
+
   .contador{font-size:.78rem;color:var(--ink-faint);font-variant-numeric:tabular-nums}
   .grupo-btn{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 
@@ -319,21 +339,40 @@
     <h2>Mensagem, backup e importação</h2>
 
     <details class="cfg">
-      <summary>Modelo da mensagem de WhatsApp</summary>
+      <summary>Sequência de mensagens <span id="m-resumo" class="src"></span></summary>
       <div>
-        <div class="campo">
-          <label for="m-modelo">Use <code>{nome}</code>, <code>{cidade}</code> e <code>{link}</code> — são trocados na hora do envio</label>
-          <textarea id="m-modelo" rows="5"></textarea>
-        </div>
+        <p class="src">O 1º toque traz mais ou menos 40% das respostas. O resto vem dos toques seguintes — <strong>e só se a mensagem for diferente</strong>. Por isso são quatro, e a ferramenta escolhe sozinha qual sai, pelo número de toques que aquele lead já levou.</p>
+        <div id="m-campos"></div>
         <div class="grupo-btn">
-          <button class="btn btn-sm" type="button" id="m-salvar">Salvar modelo</button>
+          <button class="btn btn-sm" type="button" id="m-salvar">Salvar sequência</button>
           <button class="btn-ghost btn-sm" type="button" id="m-padrao">Voltar ao padrão</button>
         </div>
         <div id="m-msg" role="status" aria-live="polite"></div>
-        <p class="src" style="margin-top:10px"><code>{link}</code> vira o endereço da sua landing com etiqueta de origem. Quando a nutricionista pedir demonstração por ali, o e-mail que você recebe já diz de qual lead prospectado ela veio — é assim que você descobre se a prospecção está funcionando.</p>
+        <p class="src" style="margin-top:10px">
+          <code>{nome}</code> primeiro nome · <code>{cidade}</code> cidade ·
+          <code>{link}</code> sua landing com etiqueta de origem ·
+          <code>{gancho}</code> uma observação verdadeira sobre aquela pessoa (nº de avaliações, atende online, Instagram). Se o lead não tiver nenhum desses sinais, a linha do gancho some sozinha — a ferramenta nunca inventa elogio.
+        </p>
         <div class="aviso" style="margin-top:14px">
           <strong>Abordagem responsável:</strong> são contatos comerciais públicos, e prospecção B2B tem base legal de legítimo interesse na LGPD. Isso não autoriza disparo em massa. Mande uma a uma, personalizada, e retire da lista na hora quem pedir para não ser mais procurado.
         </div>
+      </div>
+    </details>
+
+    <details class="cfg">
+      <summary>Taxa de resposta por toque</summary>
+      <div>
+        <p class="src">Enquanto você trabalha a lista, isto vai dizendo qual mensagem funciona. Com poucos envios o número ainda não significa nada — espere umas dezenas antes de trocar a cópia por causa dele.</p>
+        <div id="m-stats"></div>
+      </div>
+    </details>
+
+    <details class="cfg">
+      <summary>Ela respondeu — o que dizer</summary>
+      <div>
+        <p class="src">As sete objeções que aparecem sempre, com a resposta que já está no ar no seu site. Toque para copiar.</p>
+        <div id="objecoes"></div>
+        <div id="o-msg" role="status" aria-live="polite"></div>
       </div>
     </details>
 
@@ -399,11 +438,37 @@
   var CHAVE_LS   = "acompanha_places_chave";
   var DADOS_LS   = "acompanha_leads_v1";
   var ETAPAS     = ["Novo","Contatado","Respondeu","Reunião marcada","Cliente","Descartado"];
-  var MODELO_PADRAO =
-    "Oi, {nome}! Tudo bem?\n\n" +
-    "Sou do Acompanha.ai. A gente cuida do acompanhamento dos pacientes entre as consultas pelo WhatsApp: check-in, dúvida de fim de semana, foto de refeição — e te avisa quem está prestes a sumir.\n\n" +
-    "Faz sentido eu te mostrar em 10 minutos como ficaria com os seus planos?\n\n{link}";
   var LIMITE_GRATIS = 1000;
+
+  /* Cadencia: o 1o toque traz mais ou menos 40% das respostas; o resto vem
+     dos toques seguintes, e so se a mensagem for DIFERENTE e acrescentar algo.
+     Reenviar a abertura le como robo. Cada passo ataca por outro angulo. */
+  var PASSOS = [
+    "1º toque — abertura",
+    "2º toque — o problema, não o produto",
+    "3º toque — o que ela mais teme",
+    "Última tentativa — encerramento"
+  ];
+
+  var SEQUENCIA_PADRAO = [
+    "Oi, {nome}! Tudo bem?\n\n" +
+    "{gancho}\n\n" +
+    "Sou do Acompanha.ai. A gente cuida do acompanhamento dos seus pacientes entre as consultas, pelo WhatsApp: check-in, dúvida de fim de semana, foto de refeição — e te avisa quem está prestes a sumir.\n\n" +
+    "Faz sentido eu te mostrar em 10 minutos como ficaria com os seus planos?",
+
+    "Oi, {nome}! Voltando aqui rapidinho.\n\n" +
+    "Minha pergunta é mais simples do que a mensagem anterior: hoje, quando um paciente seu trava num fim de semana, ele fala com quem?\n\n" +
+    "Ou cai no seu WhatsApp pessoal às 22h, ou ele não fala com ninguém e some antes do retorno. É esse buraco que a gente fecha.\n\n" +
+    "Se preferir olhar com calma antes de responder: {link}",
+
+    "Oi, {nome}! Prometo que é a última ideia que eu trago.\n\n" +
+    "O medo que toda nutricionista tem é o mesmo: “e se a IA falar besteira no meu nome?”. Por isso a assistente só responde dentro do plano e das substituições que você aprovou. Sintoma, medicamento ou pedido de mudança viram triagem para você decidir. Ela nunca prescreve.\n\n" +
+    "Se quiser ver funcionando com um plano seu: {link}",
+
+    "Oi, {nome}! Vou parar de te procurar para não virar chateação.\n\n" +
+    "Se um dia o acompanhamento entre as consultas virar um problema aí, me chama que eu te mostro em 10 minutos.\n\n" +
+    "Sucesso com o consultório! {link}"
+  ];
 
   /* Loop de atribuicao: a landing so preserva fbclid e utm_<minusculas>
      (index.html:869-880), entao a identidade do lead viaja em utm_content. */
@@ -431,21 +496,43 @@
   var filtroEtapa = "";
 
   function vazia(){
-    return { versao:2, leads:{}, config:{ modelo:MODELO_PADRAO, reqMes:{} } };
+    return { versao:3, leads:{}, config:{ sequencia:SEQUENCIA_PADRAO.slice(), reqMes:{} } };
   }
 
   /* v1 -> v2: toques por lead e Instagram separado do site. Nada e descartado.
      Marca migrouAgora para o boot gravar de volta — senao a conversao se
      repetiria a cada carregamento e o disco ficaria eternamente na v1. */
   function migrar(d){
-    if(d.versao >= 2) return d;
-    migrouAgora = true;
-    Object.keys(d.leads).forEach(function(k){
-      var l = d.leads[k];
-      if(typeof l.toques !== "number") l.toques = (l.status && l.status !== "Novo") ? 1 : 0;
-      if(!l.instagram) l.instagram = instagramDe(l.site);
-    });
-    d.versao = 2;
+    if(d.versao < 2){
+      migrouAgora = true;
+      Object.keys(d.leads).forEach(function(k){
+        var l = d.leads[k];
+        if(typeof l.toques !== "number") l.toques = (l.status && l.status !== "Novo") ? 1 : 0;
+        if(!l.instagram) l.instagram = instagramDe(l.site);
+      });
+      d.versao = 2;
+    }
+
+    /* v2 -> v3: um modelo so virou sequencia de 4 toques. O texto que a
+       pessoa ja tinha editado vira o 1o toque — ninguem perde trabalho. */
+    if(d.versao < 3){
+      migrouAgora = true;
+      if(!d.config.sequencia || !d.config.sequencia.length){
+        var seq = SEQUENCIA_PADRAO.slice();
+        if(d.config.modelo) seq[0] = d.config.modelo;
+        d.config.sequencia = seq;
+      }
+      delete d.config.modelo;
+      Object.keys(d.leads).forEach(function(k){
+        var l = d.leads[k];
+        if(!l.envios) l.envios = [];
+        /* Quem ja tinha sido abordado antes da medicao existir conta como toque 1 */
+        if(!l.envios.length && l.toques) l.envios = [0];
+        if(typeof l.respondeuEm !== "number") l.respondeuEm = null;
+        if(l.respondeuEm === null && respondeu(l.status)) l.respondeuEm = 0;
+      });
+      d.versao = 3;
+    }
     return d;
   }
 
@@ -455,9 +542,8 @@
       if(!cru) return vazia();
       var d = JSON.parse(cru);
       if(!d || typeof d !== "object" || !d.leads) return vazia();
-      if(!d.config) d.config = { modelo:MODELO_PADRAO, reqMes:{} };
+      if(!d.config) d.config = { reqMes:{} };
       if(!d.config.reqMes) d.config.reqMes = {};
-      if(!d.config.modelo) d.config.modelo = MODELO_PADRAO;
       if(!d.versao) d.versao = 1;
       return migrar(d);
     }catch(e){ return vazia(); }
@@ -549,6 +635,53 @@
     var d = new Date();
     d.setDate(d.getDate() + n);
     return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+d.getDate()).slice(-2);
+  }
+
+  /* Status a partir do qual a pessoa deu sinal de vida */
+  function respondeu(status){
+    return status === "Respondeu" || status === "Reunião marcada" || status === "Cliente";
+  }
+
+  /* Gancho: uma observacao VERDADEIRA e especifica sobre aquela pessoa,
+     tirada do que o Places devolveu. Mensagem generica nao e respondida.
+     Regra dura: nunca afirmar nada que o dado nao sustente — se nao houver
+     sinal, devolve vazio e a linha inteira some do texto. */
+  function gancho(l){
+    if(l.avaliacoes >= 15) return "Vi que você tem " + l.avaliacoes + " avaliações no Google — consultório com bastante gente passando.";
+    if(l.online) return "Vi que você atende online.";
+    if(l.instagram) return "Vi seu perfil no Instagram.";
+    if(l.nota >= 4.5) return "Vi que sua nota no Google é " + String(l.nota).replace(".",",") + ".";
+    if(l.avaliacoes > 0) return "Vi seu consultório no Google.";
+    return "";
+  }
+
+  function montarMensagem(l, passo){
+    var seq = loja.config.sequencia || SEQUENCIA_PADRAO;
+    var texto = seq[passo] || seq[0] || SEQUENCIA_PADRAO[0];
+    var g = gancho(l);
+
+    /* Sem gancho, apaga a linha inteira em vez de deixar buraco ou frase solta */
+    if(!g){
+      texto = texto.split("\n").filter(function(linha){
+        return linha.indexOf("{gancho}") < 0;
+      }).join("\n").replace(/\n{3,}/g, "\n\n");
+    }
+
+    /* Sem primeiro nome, "Oi, {nome}!" tem que virar "Oi!" — nao "Oi, !" */
+    var pn = primeiroNome(l.nome);
+    return texto
+      .replace(/,?\s*\{nome\}/g, pn ? ", " + pn : "")
+      .replace(/\{cidade\}/g, l.cidade || "sua cidade")
+      .replace(/\{gancho\}/g, g)
+      .replace(/\{link\}/g, linkLanding(l))
+      .replace(/^\n+|\n+$/g, "");
+  }
+
+  /* Qual passo sai agora: 1o toque -> indice 0, e assim por diante,
+     travando na ultima tentativa. */
+  function passoDe(l){
+    var t = l.toques || 0;
+    return t >= PASSOS.length ? PASSOS.length - 1 : t;
   }
 
   /* Link da landing com UTM: a landing grava isso no campo "origem" e ele
@@ -666,6 +799,8 @@
       l.anotacao = "";
       l.followup = "";
       l.toques = 0;
+      l.envios = [];
+      l.respondeuEm = null;
       l.termo = termo || "";
       l.criadoEm = new Date().toISOString();
       loja.leads[k] = l;
@@ -965,11 +1100,16 @@
     h += "</select>";
     h += '<label class="sr" for="fu-' + esc(l._k) + '">Follow-up de ' + esc(l.nome) + "</label>";
     h += '<input id="fu-' + esc(l._k) + '" type="date" data-acao="followup" value="' + esc(l.followup||"") + '">';
-    if(zap) h += '<button type="button" class="btn btn-sm" data-acao="zap">Abrir WhatsApp</button>';
+    if(zap) h += '<button type="button" class="btn btn-sm" data-acao="zap">' +
+                 (l.toques ? "Enviar " + (passoDe(l) + 1) + "º toque" : "Abrir WhatsApp") + "</button>";
     h += '<button type="button" class="btn-ghost btn-sm" data-acao="remover">Remover</button>';
     h += "</div>";
 
-    h += "<details><summary>Anotação e por que essa nota</summary><div>";
+    h += "<details><summary>Mensagem que vai sair, anotação e por que essa nota</summary><div>";
+    if(zap){
+      h += '<p class="src" style="margin-bottom:4px"><strong>' + esc(PASSOS[passoDe(l)]) + "</strong></p>";
+      h += '<pre class="previa">' + esc(montarMensagem(l, passoDe(l))) + "</pre>";
+    }
     h += '<label class="sr" for="an-' + esc(l._k) + '">Anotação sobre ' + esc(l.nome) + "</label>";
     h += '<textarea id="an-' + esc(l._k) + '" data-acao="anotacao" rows="2" placeholder="Ex.: pediu para retornar terça de manhã">' + esc(l.anotacao||"") + "</textarea>";
     h += '<ul class="porque" style="margin-top:8px">';
@@ -988,6 +1128,7 @@
   function renderizar(){
     pintarUso();
     pintarFunil();
+    pintarStats();
     var arr = listaFiltrada();
     var el = document.getElementById("lista");
 
@@ -1217,13 +1358,12 @@
     var acao = b.getAttribute("data-acao");
 
     if(acao === "zap"){
-      var modelo = loja.config.modelo || MODELO_PADRAO;
-      var texto = modelo
-        .replace(/\{nome\}/g, primeiroNome(l.nome))
-        .replace(/\{cidade\}/g, l.cidade || "sua cidade")
-        .replace(/\{link\}/g, linkLanding(l));
+      var passo = passoDe(l);
+      var texto = montarMensagem(l, passo);
       window.open("https://wa.me/" + l.telefone + "?text=" + encodeURIComponent(texto), "_blank", "noopener");
 
+      if(!l.envios) l.envios = [];
+      l.envios.push(passo);
       l.toques = (l.toques || 0) + 1;
       if((l.status||"Novo") === "Novo") l.status = "Contatado";
       /* Venda B2B fecha entre o 3o e o 5o toque: ja deixa o proximo agendado */
@@ -1251,6 +1391,12 @@
     if(acao === "status"){
       var antes = l.status || "Novo";
       l.status = el.value;
+      /* Credita a resposta ao passo que a provocou — e so uma vez, para o
+         numero nao inflar se o status for mexido de novo depois. */
+      if(!respondeu(antes) && respondeu(l.status) && typeof l.respondeuEm !== "number"){
+        var env = l.envios || [];
+        l.respondeuEm = env.length ? env[env.length - 1] : 0;
+      }
       /* Marcou como abordado sem passar pelo botao: conta o toque e agenda o retorno */
       if(antes === "Novo" && l.status !== "Novo" && l.status !== "Descartado"){
         if(!l.toques) l.toques = 1;
@@ -1263,26 +1409,144 @@
     if(acao === "anotacao"){ l.anotacao = el.value; salvar(); }
   });
 
+  /* Nomes de estabelecimento: aqui nao existe pessoa para chamar pelo nome */
+  var RX_EMPRESA = /cl[íi]nica|consult[óo]rio|espa[çc]o|centro|instituto|studio|est[úu]dio|hospital|policl[íi]nica|unidade|grupo|rede/i;
+  /* Palavras que aparecem ANTES do nome e nao sao o nome */
+  var RX_PREFIXO = /^(dra?\.?|nutri|nutricionista|nutri[çc][ãa]o|online|dieta|dr|dra)$/i;
+
+  /* "Nutri Online Carla Dias" tem que virar "Carla", nao "Online" — e uma
+     clinica nao tem primeiro nome nenhum, entao devolve vazio e a saudacao
+     vira so "Oi!". Mandar "Oi, Online!" queimaria o lead na primeira linha. */
   function primeiroNome(nome){
     var n = String(nome||"").trim();
-    /* "Dra. Ana Paula Nutricao" -> "Ana"; nomes de clinica ficam inteiros */
-    var limpo = n.replace(/^(dra?\.?|nutri(cionista)?)\s+/i, "");
-    var primeiro = limpo.split(/\s+/)[0] || n;
-    return primeiro.length >= 3 ? primeiro : n;
+    if(!n) return "";
+    if(RX_EMPRESA.test(n)) return "";
+
+    var partes = n.split(/[\s—–-]+/);
+    for(var i = 0; i < partes.length; i++){
+      var t = partes[i].replace(/[^\wÀ-ÿ.]/g, "");
+      if(!t || t.length < 3) continue;
+      if(RX_PREFIXO.test(semAcento(t))) continue;
+      if(/^\d+$/.test(t)) continue;
+      return t;
+    }
+    return "";
   }
 
-  /* Modelo de mensagem */
-  var elModelo = document.getElementById("m-modelo");
-  elModelo.value = loja.config.modelo || MODELO_PADRAO;
+  /* ---------- Sequencia de mensagens ---------- */
+
+  function pintarSequencia(){
+    var seq = loja.config.sequencia || SEQUENCIA_PADRAO;
+    var h = "";
+    PASSOS.forEach(function(rotulo, i){
+      h += '<div class="campo">';
+      h += '<label for="m-p' + i + '">' + esc(rotulo) + "</label>";
+      h += '<textarea id="m-p' + i + '" rows="6" data-passo="' + i + '">' + esc(seq[i] || "") + "</textarea>";
+      h += "</div>";
+    });
+    document.getElementById("m-campos").innerHTML = h;
+    document.getElementById("m-resumo").textContent = "· " + PASSOS.length + " toques";
+  }
+
+  function lerSequencia(){
+    var seq = [];
+    PASSOS.forEach(function(_, i){
+      var el = document.getElementById("m-p" + i);
+      seq.push(el ? el.value : SEQUENCIA_PADRAO[i]);
+    });
+    return seq;
+  }
 
   document.getElementById("m-salvar").addEventListener("click", function(){
-    loja.config.modelo = elModelo.value;
-    if(salvar()) msg("m-msg","ok","Modelo salvo.");
+    loja.config.sequencia = lerSequencia();
+    if(salvar()){ msg("m-msg","ok","Sequência salva."); renderizar(); }
   });
+
   document.getElementById("m-padrao").addEventListener("click", function(){
-    elModelo.value = MODELO_PADRAO;
-    loja.config.modelo = MODELO_PADRAO;
-    if(salvar()) msg("m-msg","ok","Modelo restaurado.");
+    loja.config.sequencia = SEQUENCIA_PADRAO.slice();
+    pintarSequencia();
+    if(salvar()){ msg("m-msg","ok","Sequência restaurada."); renderizar(); }
+  });
+
+  /* ---------- Medicao por toque ---------- */
+
+  function pintarStats(){
+    var env = [], resp = [];
+    PASSOS.forEach(function(){ env.push(0); resp.push(0); });
+
+    Object.keys(loja.leads).forEach(function(k){
+      var l = loja.leads[k];
+      (l.envios || []).forEach(function(p){ if(env[p] !== undefined) env[p]++; });
+      if(typeof l.respondeuEm === "number" && resp[l.respondeuEm] !== undefined) resp[l.respondeuEm]++;
+    });
+
+    var totalEnv = env.reduce(function(a,b){ return a+b; }, 0);
+    if(!totalEnv){
+      document.getElementById("m-stats").innerHTML =
+        '<p class="src">Nenhuma mensagem enviada ainda. Assim que você começar a abordar, os números aparecem aqui.</p>';
+      return;
+    }
+
+    var h = '<table class="stats"><caption class="sr">Taxa de resposta por toque</caption><thead><tr>' +
+            "<th>Toque</th><th>Enviadas</th><th>Responderam</th><th>Taxa</th></tr></thead><tbody>";
+    PASSOS.forEach(function(rotulo, i){
+      var taxa = env[i] ? Math.round((resp[i] / env[i]) * 100) : 0;
+      h += "<tr><td>" + esc(rotulo) + "</td><td>" + env[i] + "</td><td>" + resp[i] + "</td><td>" +
+           (env[i] ? taxa + "%" : "—") + "</td></tr>";
+    });
+    var totalResp = resp.reduce(function(a,b){ return a+b; }, 0);
+    h += "<tr><td><strong>Total</strong></td><td><strong>" + totalEnv + "</strong></td><td><strong>" +
+         totalResp + "</strong></td><td><strong>" + Math.round((totalResp/totalEnv)*100) + "%</strong></td></tr>";
+    h += "</tbody></table>";
+    document.getElementById("m-stats").innerHTML = h;
+  }
+
+  /* ---------- Objecoes ----------
+     Texto copiado do FAQ da landing (index.html:717-758), palavra por palavra.
+     Nao reescrever nem criar afirmacao nova aqui: cada alegacao da pagina e
+     sustentada por um claims-ledger que fica fora deste repositorio. */
+
+  var OBJECOES = [
+    ["E se a IA errar? A responsabilidade é minha.",
+     "Pode errar? Pode. Nenhum sistema é infalível, e quem diz o contrário está mentindo. Por isso o desenho é de risco mínimo: a assistente só responde dentro do plano e das substituições que você aprovou. O que sai disso (sintoma, medicamento, pedido de mudança) vira triagem para você. Toda conversa fica registrada e auditável, e uma resposta que você marcar como incorreta vira correção das regras.\n\nNa comparação honesta: hoje, a orientação de improviso acontece no seu WhatsApp pessoal, às 23h, sem registro nenhum."],
+    ["Meu paciente não vai querer falar com robô.",
+     "O paciente sabe desde a primeira mensagem que está falando com a assistente da sua equipe, com o seu nome junto, não um chatbot anônimo. E tem um detalhe prático: às 21h de um sábado, no rodízio, nenhum humano responde em segundos. É nessa hora que o plano quebra. E é nessa hora que a assistente está lá."],
+    ["Quanto custa?",
+     "O valor depende do número de pacientes acompanhados. Na demonstração você sai com o preço exato para o seu consultório, sem surpresa depois. A régua é simples: se a mensalidade não se pagar com os retornos que voltarem a acontecer, não faz sentido para você."],
+    ["E a LGPD? E o sigilo dos meus pacientes?",
+     "Primeiro, uma absolvição: todo mundo atende no número pessoal, porque nunca existiu alternativa de verdade. A culpa não é sua. O que o Acompanha.ai faz é estruturar o que falta nesse cenário: o paciente consente com o acompanhamento no início, os dados são usados exclusivamente para o tratamento e todas as conversas ficam registradas num ambiente acessível a você."],
+    ["Isso não vai me substituir?",
+     "Não pode, nem legalmente, nem na prática. Prescrição dietética é ato privativo seu (Lei 8.234/91), e a assistente é incapaz de prescrever ou decidir conduta. O incentivo do produto é o oposto de te substituir: ele existe para o paciente chegar ao retorno. Mais consultas na sua agenda, não menos."],
+    ["Não aguento mais ferramenta nova para gerenciar.",
+     "Essa mora no WhatsApp que você e seus pacientes já usam. Não tem app novo para o paciente baixar, nem painel que você precise vigiar o dia inteiro: você recebe resumo e alertas. Menos mensagens no seu celular, não mais."],
+    ["Quanto trabalho dá para colocar meus pacientes?",
+     "Você manda o plano do jeito que ele já existe (o PDF do seu software de prescrição ou até uma foto) e a configuração inicial é feita junto com você na implantação. Não é você quem digita plano em sistema novo."]
+  ];
+
+  function pintarObjecoes(){
+    var h = "";
+    OBJECOES.forEach(function(o, i){
+      h += '<details class="obj"><summary>' + esc(o[0]) + "</summary><div>";
+      h += "<p>" + esc(o[1]).replace(/\n\n/g, "</p><p>") + "</p>";
+      h += '<button type="button" class="btn-ghost btn-sm" data-copiar="' + i + '">Copiar resposta</button>';
+      h += "</div></details>";
+    });
+    document.getElementById("objecoes").innerHTML = h;
+  }
+
+  document.getElementById("objecoes").addEventListener("click", function(ev){
+    var b = ev.target.closest("[data-copiar]");
+    if(!b) return;
+    var texto = OBJECOES[parseInt(b.getAttribute("data-copiar"), 10)][1];
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(texto).then(function(){
+        msg("o-msg","ok","Resposta copiada.");
+      }, function(){
+        msg("o-msg","erro","Este navegador bloqueou a cópia. Selecione o texto acima e copie à mão.");
+      });
+    } else {
+      msg("o-msg","erro","Este navegador não permite copiar sozinho. Selecione o texto acima e copie à mão.");
+    }
   });
 
   /* CSV */
@@ -1331,6 +1595,8 @@
   /* ---------- Boot ---------- */
   if(migrouAgora) salvar();
   pintarChave();
+  pintarSequencia();
+  pintarObjecoes();
   renderizar();
 
 })();
