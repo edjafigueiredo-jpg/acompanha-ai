@@ -211,10 +211,24 @@
     background:repeating-linear-gradient(90deg,var(--ink-faint) 0 4px,transparent 4px 9px);
   }
   .gap-barra--nunca::after{display:none}
+  /* O eixo espelha o grid do .gap-item para ficar sob a MESMA faixa das barras,
+     e cada rótulo é posicionado pela fórmula (ano−2004)÷22 — não distribuído em
+     partes iguais, que é o que faria a escala do eixo desmentir a das barras. */
   .gaps-eixo{
-    display:flex;justify-content:space-between;margin-top:10px;
+    display:grid;gap:5px 14px;margin-top:10px;
+    grid-template-columns:1fr auto;grid-template-areas:"eixo eixo";
     font-size:.72rem;color:var(--ink-faint);font-variant-numeric:tabular-nums;
   }
+  @media(min-width:640px){
+    .gaps-eixo{grid-template-columns:8.5rem 1fr 10.5rem;grid-template-areas:". eixo ."}
+  }
+  .gaps-trilha{grid-area:eixo;position:relative;display:block;height:1.4em}
+  .gaps-trilha i{
+    position:absolute;left:var(--p);transform:translateX(-50%);
+    font-style:normal;white-space:nowrap;
+  }
+  .gaps-trilha i:first-child{transform:none}
+  .gaps-trilha i:last-child{transform:translateX(-100%)}
   .gaps-legenda{
     display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:1.4rem;
     font-size:.8rem;color:var(--ink-faint);
@@ -693,8 +707,8 @@
           </li>
           <li class="gap-item">
             <span class="gap-nome">Sapling</span>
-            <span class="gap-viz" aria-hidden="true" style="--i:40.9%;--w:40.9%"><i class="gap-barra"></i></span>
-            <span class="gap-num">2013 → 2022 · <b>9 anos</b></span>
+            <span class="gap-viz" aria-hidden="true" style="--i:36.4%;--w:45.5%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2012 → 2022 · <b>10 anos</b></span>
           </li>
           <li class="gap-item">
             <span class="gap-nome">PyTorch</span>
@@ -703,13 +717,19 @@
           </li>
           <li class="gap-item">
             <span class="gap-nome">Velox</span>
-            <span class="gap-viz" aria-hidden="true" style="--i:72.7%;--w:13.6%"><i class="gap-barra"></i></span>
-            <span class="gap-num">2020 → 2023 · <b>3 anos</b></span>
+            <span class="gap-viz" aria-hidden="true" style="--i:72.7%;--w:4.5%"><i class="gap-barra"></i></span>
+            <span class="gap-num">2020 → 2021 · <b>1 ano</b></span>
           </li>
         </ul>
 
         <div class="gaps-eixo" aria-hidden="true">
-          <span>2004</span><span>2010</span><span>2016</span><span>2022</span><span>2026</span>
+          <span class="gaps-trilha">
+            <i style="--p:0%">2004</i>
+            <i style="--p:27.3%">2010</i>
+            <i style="--p:54.5%">2016</i>
+            <i style="--p:81.8%">2022</i>
+            <i style="--p:100%">2026</i>
+          </span>
         </div>
 
         <div class="gaps-legenda">
@@ -832,6 +852,12 @@
               <label class="chip"><input type="checkbox" name="era" value="4"><span>2017–2020</span></label>
               <label class="chip"><input type="checkbox" name="era" value="5"><span>2021–2026</span></label>
             </div>
+            <p class="f-dica">
+              A era é o momento em que a tecnologia <b>entrou em cena</b>, que nem sempre é o ano
+              em que foi criada — o Sapling nasceu em 2012 e só apareceu em 2022, e o Shard Manager
+              é de 2011 mas só foi descrito publicamente em 2020. É um recorte de narrativa, não um
+              dado; os anos exatos de criação e de abertura estão em cada ficha.
+            </p>
           </fieldset>
 
           <fieldset class="f-grupo"><legend>Situação</legend>
@@ -934,7 +960,7 @@
           <li class="tech" id="t-haystack" data-cat="dados" data-era="1" data-status="interna" data-origem="criada" data-ano="2008">
             <div class="tech-topo"><h3>Haystack <a class="anchor" href="#t-haystack" aria-label="Link para Haystack">#</a></h3><span class="tag tag-interna">Fechada</span></div>
             <p class="tech-anos">2008 · nunca aberta</p>
-            <p class="tech-desc">Empacota cerca de 10 GB de fotos num arquivo único com índice em memória, para que uma leitura custe um seek de disco em vez de três. Aposentou o NetApp sobre NFS.</p>
+            <p class="tech-desc">Empacota cerca de 100 GB de fotos num arquivo único com índice em memória, para que uma leitura custe um seek de disco em vez de três. Aposentou o NetApp sobre NFS.</p>
             <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>dados mornos e frios foram para o f4</span></p>
             <p class="src"><a href="https://engineering.fb.com/2009/04/30/core-infra/needle-in-a-haystack-efficient-storage-of-billions-of-photos/">engineering.fb.com · Needle in a haystack</a></p>
           </li>
@@ -963,7 +989,7 @@
             <p class="tech-anos">2009 · nunca abertos</p>
             <p class="tech-desc">Navegação por AJAX sem recarregar o cabeçalho, o JS e o CSS compartilhados, com cache das páginas já visitadas. Efetivamente uma arquitetura de SPA em 2009.</p>
             <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>substituídos por React e Relay</span></p>
-            <p class="src">Chanhao Jiang e David Wei, The AJAX Experience, 2009</p>
+            <p class="src">Changhao Jiang e David Wei, The AJAX Experience, 2009</p>
           </li>
 
           <li class="tech" id="t-primer" data-cat="frontend" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2009">
@@ -998,17 +1024,17 @@
             <p class="src"><a href="https://engineering.fb.com/2010/02/02/web/hiphop-for-php-move-fast/">engineering.fb.com · HipHop for PHP</a></p>
           </li>
 
-          <li class="tech" id="t-xhp" data-cat="linguagem" data-era="2" data-status="aberta" data-origem="criada" data-ano="2010" data-ano-oss="2010">
+          <li class="tech" id="t-xhp" data-cat="linguagem" data-era="2" data-status="aberta" data-origem="criada" data-ano="2009" data-ano-oss="2010">
             <div class="tech-topo"><h3>XHP <a class="anchor" href="#t-xhp" aria-label="Link para XHP">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
-            <p class="tech-anos">2010 · aberta em 2010</p>
+            <p class="tech-anos">2009 · aberta em 2010</p>
             <p class="tech-desc">Extensão que torna fragmentos de XML expressões de primeira classe no PHP. Dois motivos: escape automático sensível ao contexto, que quase zerou XSS, e detecção de markup malformado.</p>
             <p class="tech-meta"><span class="tech-cat">Linguagens e runtimes</span> · <span>ancestral direto do JSX</span></p>
             <p class="src"><a href="https://engineering.fb.com/2010/02/09/developer-tools/xhp-a-new-way-to-write-php/">engineering.fb.com · XHP</a></p>
           </li>
 
-          <li class="tech" id="t-bigpipe" data-cat="frontend" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2010">
+          <li class="tech" id="t-bigpipe" data-cat="frontend" data-era="2" data-status="descontinuada" data-origem="criada" data-ano="2009">
             <div class="tech-topo"><h3>BigPipe <a class="anchor" href="#t-bigpipe" aria-label="Link para BigPipe">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
-            <p class="tech-anos">2010 · nunca aberta</p>
+            <p class="tech-anos">2009 · nunca aberta</p>
             <p class="tech-desc">Quebra a página em "pagelets" que atravessam servidor e navegador como um pipeline de CPU. O usuário vê conteúdo antes de a consulta mais lenta terminar. PHP e JS puros.</p>
             <p class="tech-meta"><span class="tech-cat">Frontend</span> · <span>a ideia sobrevive no streaming SSR</span></p>
             <p class="src"><a href="https://engineering.fb.com/2010/06/04/web/bigpipe-pipelining-web-pages-for-high-performance/">engineering.fb.com · BigPipe</a></p>
@@ -1058,7 +1084,7 @@
             <div class="tech-topo"><h3>Tupperware / Twine <a class="anchor" href="#t-tupperware" aria-label="Link para Tupperware">#</a></h3><span class="tag tag-interna">Fechada</span></div>
             <p class="tech-anos">2011 · nunca aberta</p>
             <p class="tech-desc">Gerenciador de cluster e orquestrador de contêineres que transformou pools dedicados por carga em infraestrutura compartilhada e fungível. Antecede o Kubernetes em quatro anos.</p>
-            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>escala a milhões de máquinas por região</span></p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>um milhão de máquinas por região</span></p>
             <p class="src"><a href="https://engineering.fb.com/2019/06/06/data-center-engineering/twine/">engineering.fb.com · Twine</a></p>
           </li>
 
@@ -1114,7 +1140,7 @@
             <div class="tech-topo"><h3>RocksDB <a class="anchor" href="#t-rocksdb" aria-label="Link para RocksDB">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
             <p class="tech-anos">2012 · bifurcada do LevelDB, aberta em 2013</p>
             <p class="tech-desc">Armazenamento chave-valor LSM embutido, refeito para SSD de servidor: compactação multithread, famílias de colunas, transações. Virou o substrato de quase toda a infraestrutura da casa.</p>
-            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>também sob CockroachDB, TiKV, Kafka Streams e Flink</span></p>
+            <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>também sob TiKV, Kafka Streams, Flink e Ceph</span></p>
             <p class="src"><a href="https://engineering.fb.com/2013/11/21/core-infra/under-the-hood-building-and-open-sourcing-rocksdb/">engineering.fb.com · RocksDB</a></p>
           </li>
 
@@ -1332,18 +1358,11 @@
           <li class="tech" id="t-zippydb" data-cat="dados" data-era="3" data-status="interna" data-origem="criada" data-ano="2013">
             <div class="tech-topo"><h3>ZippyDB <a class="anchor" href="#t-zippydb" aria-label="Link para ZippyDB">#</a></h3><span class="tag tag-interna">Fechada</span></div>
             <p class="tech-anos">2013 · nunca aberta</p>
-            <p class="tech-desc">Chave-valor distribuído: RocksDB no armazenamento e replicação estilo Paxos por cima, com consistência e durabilidade escolhidas por requisição. O maior KV store da Meta.</p>
+            <p class="tech-desc">Chave-valor distribuído: RocksDB no armazenamento e replicação estilo Paxos por cima, com consistência e durabilidade escolhidas por requisição. O maior KV store fortemente consistente e geodistribuído da Meta.</p>
             <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>descrito publicamente só em 2021</span></p>
             <p class="src"><a href="https://engineering.fb.com/2021/08/06/core-infra/zippydb/">engineering.fb.com · ZippyDB</a></p>
           </li>
 
-          <li class="tech" id="t-shardmanager" data-cat="infra" data-era="3" data-status="interna" data-origem="criada" data-ano="2016">
-            <div class="tech-topo"><h3>Shard Manager <a class="anchor" href="#t-shardmanager" aria-label="Link para Shard Manager">#</a></h3><span class="tag tag-interna">Fechada</span></div>
-            <p class="tech-anos">2016 · nunca aberta</p>
-            <p class="tech-desc">Framework genérico de fragmentação: a aplicação declara a intenção de posicionamento e ele planeja as operações de contêiner. Gerencia dezenas de milhões de shards.</p>
-            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>base do ZippyDB e de centenas de serviços</span></p>
-            <p class="src"><a href="https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/">engineering.fb.com · Evolução da infraestrutura</a></p>
-          </li>
 
           <li class="tech" id="t-bigsur" data-cat="hardware" data-era="3" data-status="descontinuada" data-origem="criada" data-ano="2015" data-ano-oss="2015">
             <div class="tech-topo"><h3>Big Sur <a class="anchor" href="#t-bigsur" aria-label="Link para Big Sur">#</a></h3><span class="tag tag-descontinuada">Descontinuada</span></div>
@@ -1355,6 +1374,13 @@
 
           <!-- ============ ERA 4 · 2017–2020 ============ -->
           <li class="era-banner" data-era-banner="4">Era 4 · 2017–2020 · Plataforma de ML e infraestrutura de larga escala</li>
+          <li class="tech" id="t-shardmanager" data-cat="infra" data-era="4" data-status="interna" data-origem="criada" data-ano="2011">
+            <div class="tech-topo"><h3>Shard Manager <a class="anchor" href="#t-shardmanager" aria-label="Link para Shard Manager">#</a></h3><span class="tag tag-interna">Fechada</span></div>
+            <p class="tech-anos">2011 · nunca aberta</p>
+            <p class="tech-desc">Framework genérico de fragmentação: a aplicação declara a intenção de posicionamento e ele planeja as operações de contêiner. Gerencia dezenas de milhões de shards.</p>
+            <p class="tech-meta"><span class="tech-cat">Infraestrutura</span> · <span>base do ZippyDB e de centenas de serviços</span></p>
+            <p class="src"><a href="https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/">engineering.fb.com · Evolução da infraestrutura</a></p>
+          </li>
 
           <li class="tech" id="t-pytorch" data-cat="ia" data-era="4" data-status="aberta" data-origem="criada" data-ano="2016" data-ano-oss="2017">
             <div class="tech-topo"><h3>PyTorch <a class="anchor" href="#t-pytorch" aria-label="Link para PyTorch">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
@@ -1396,9 +1422,9 @@
             <p class="src"><a href="https://facebook.github.io/prophet/">facebook.github.io/prophet</a></p>
           </li>
 
-          <li class="tech" id="t-detectron" data-cat="ia" data-era="4" data-status="aberta" data-origem="criada" data-ano="2017" data-ano-oss="2018">
+          <li class="tech" id="t-detectron" data-cat="ia" data-era="4" data-status="aberta" data-origem="criada" data-ano="2016" data-ano-oss="2018">
             <div class="tech-topo"><h3>Detectron e Detectron2 <a class="anchor" href="#t-detectron" aria-label="Link para Detectron">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
-            <p class="tech-anos">2017 · Detectron em 2018, Detectron2 em 2019</p>
+            <p class="tech-anos">2016 · Detectron em 2018, Detectron2 em 2019</p>
             <p class="tech-desc">Plataforma de detecção e segmentação de objetos, com implementações de referência de Mask R-CNN, RetinaNet e FPN. O Detectron2 é a reescrita completa em PyTorch.</p>
             <p class="tech-meta"><span class="tech-cat">IA e machine learning</span> · <span>em manutenção; o foco de visão foi para SAM e DINO</span></p>
             <p class="src"><a href="https://github.com/facebookresearch/detectron2">github.com/facebookresearch/detectron2</a></p>
@@ -1519,11 +1545,11 @@
             <p class="src"><a href="https://engineering.fb.com/2022/07/27/developer-tools/programming-languages-endorsed-for-server-side-use-at-meta/">engineering.fb.com · Linguagens endossadas</a></p>
           </li>
 
-          <li class="tech" id="t-sapling" data-cat="ferramentas" data-era="5" data-status="aberta" data-origem="criada" data-ano="2013" data-ano-oss="2022">
+          <li class="tech" id="t-sapling" data-cat="ferramentas" data-era="5" data-status="aberta" data-origem="criada" data-ano="2012" data-ano-oss="2022">
             <div class="tech-topo"><h3>Sapling <a class="anchor" href="#t-sapling" aria-label="Link para Sapling">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
-            <p class="tech-anos">2013 · aberta em novembro de 2022</p>
+            <p class="tech-anos">2012 · aberta em novembro de 2022</p>
             <p class="tech-desc">Controle de versão escalável e compatível com Git, para um monorepo de milhões de arquivos. Só o cliente é suportado externamente: o servidor Mononoke e o sistema de arquivos virtual EdenFS não.</p>
-            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>nove anos entre criar e abrir</span></p>
+            <p class="tech-meta"><span class="tech-cat">Ferramentas de dev</span> · <span>dez anos entre criar e abrir</span></p>
             <p class="src"><a href="https://engineering.fb.com/2022/11/15/open-source/sapling-source-control-scalable/">engineering.fb.com · Sapling</a></p>
           </li>
 
@@ -1583,7 +1609,7 @@
             <p class="src"><a href="https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here">reactnative.dev · New Architecture</a></p>
           </li>
 
-          <li class="tech" id="t-velox" data-cat="dados" data-era="5" data-status="aberta" data-origem="criada" data-ano="2020" data-ano-oss="2023">
+          <li class="tech" id="t-velox" data-cat="dados" data-era="5" data-status="aberta" data-origem="criada" data-ano="2020" data-ano-oss="2021">
             <div class="tech-topo"><h3>Velox <a class="anchor" href="#t-velox" aria-label="Link para Velox">#</a></h3><span class="tag tag-aberta">Aberta</span></div>
             <p class="tech-anos">2020 · anunciada formalmente em março de 2023</p>
             <p class="tech-desc">Biblioteca C++ de execução vetorizada, independente de dialeto e reutilizável entre engines. Resolve a reimplementação dos mesmos operadores em cada sistema de dados da casa.</p>
@@ -1594,7 +1620,7 @@
           <li class="tech" id="t-tulip" data-cat="dados" data-era="5" data-status="interna" data-origem="criada" data-ano="2019">
             <div class="tech-topo"><h3>Tulip <a class="anchor" href="#t-tulip" aria-label="Link para Tulip">#</a></h3><span class="tag tag-interna">Fechada</span></div>
             <p class="tech-anos">2019 · nunca aberta</p>
-            <p class="tech-desc">Novo formato de serialização de logging, no lugar de texto e JSON do Hive. Cortou cerca de 85% dos bytes registrados, com migração de milhares de esquemas.</p>
+            <p class="tech-desc">Novo formato de serialização de logging, no lugar de texto e JSON do Hive. Cortou entre 40% e 85% dos bytes registrados, com migração de milhares de esquemas.</p>
             <p class="tech-meta"><span class="tech-cat">Dados e armazenamento</span> · <span>em uso</span></p>
             <p class="src"><a href="https://engineering.fb.com/2023/01/26/data-infrastructure/tulip-modernizing-metas-data-platform/">engineering.fb.com · Tulip</a></p>
           </li>
@@ -1699,11 +1725,11 @@
         <div class="veredito">
           <div class="ver-card"><b>0</b><p>frameworks e bibliotecas</p></div>
           <div class="ver-card"><b>0</b><p>pacotes npm, zero etapa de build</p></div>
-          <div class="ver-card"><b>1</b><p>arquivo, com 163 KB</p></div>
+          <div class="ver-card"><b>1</b><p>arquivo, com 165 KB</p></div>
           <div class="ver-card"><b>1</b><p>requisição de rede, no total</p></div>
         </div>
         <p class="src" style="margin-top:1.2rem">
-          O arquivo tem exatamente 167.093 bytes e 2.248 linhas, contendo 99 fichas de
+          O arquivo tem exatamente 169.427 bytes e 2.278 linhas, contendo 99 fichas de
           tecnologia. Os números foram medidos no arquivo pronto, não estimados — numa aba cujo
           assunto é honestidade, um número chutado seria o pior defeito possível.
         </p>
@@ -1728,11 +1754,11 @@
               <tr><td>Componentes</td><td>HTML estático, escrito uma vez</td><td>React, Vue, Svelte</td></tr>
               <tr><td>Estado da interface</td><td>O atributo <code>hidden</code> e atributos <code>data-*</code></td><td>Redux, Zustand, Signals</td></tr>
               <tr><td>Rotas</td><td>Hash da URL com <code>history.replaceState</code></td><td>React Router, TanStack Router</td></tr>
-              <tr><td>Escopo de estilo</td><td>Custom properties e prefixo de classe</td><td>Tailwind, CSS Modules, StyleX</td></tr>
+              <tr><td>Escopo de estilo</td><td>Nenhum — só disciplina de nomes</td><td>Tailwind, CSS Modules, StyleX</td></tr>
               <tr><td>Tema claro e escuro</td><td><code>prefers-color-scheme</code>, sem botão nem armazenamento</td><td>next-themes</td></tr>
               <tr><td>Animação de entrada</td><td><code>IntersectionObserver</code> e uma transição CSS</td><td>Framer Motion, GSAP</td></tr>
               <tr><td>Busca e filtro</td><td>Índice em memória e <code>hidden</code> nos cards</td><td>Fuse.js, TanStack Table</td></tr>
-              <tr><td>Ícones</td><td>SVG inline e um favicon em <code>data:</code> URI</td><td>Lucide, Font Awesome</td></tr>
+              <tr><td>Ícones</td><td>Formas em CSS e um favicon em <code>data:</code> URI</td><td>Lucide, Font Awesome</td></tr>
               <tr><td>Tipografia</td><td>Pilha de fontes do sistema</td><td>Google Fonts, Fontsource</td></tr>
             </tbody>
           </table>
@@ -1789,7 +1815,7 @@
         <ul class="lista-api">
           <li><b>Custom properties como design tokens</b><p>Um bloco <code>:root</code> define cor, sombra e raio. O bloco de tema escuro redeclara todos, e nada mais no arquivo precisa saber que existe tema escuro.</p></li>
           <li><b><code>clamp()</code> para tipografia fluida</b><p>Títulos escalam com a largura da tela sem uma única media query, entre um mínimo e um máximo definidos.</p></li>
-          <li><b>Grid com <code>auto-fit</code> e <code>minmax</code></b><p>O catálogo passa de uma para três colunas conforme cabe, sem breakpoints escritos à mão para cada faixa.</p></li>
+          <li><b>Grid com dois breakpoints</b><p>O catálogo é uma coluna, vira duas a partir de 640px e três a partir de 960px. Poderia ser <code>auto-fit</code> com <code>minmax</code> e nenhum breakpoint; são duas media queries porque o banner de era precisa ocupar a linha inteira, e <code>grid-column:1/-1</code> é mais previsível com um número fixo de colunas.</p></li>
           <li><b>Timeline em CSS puro</b><p>O trilho vertical é um <code>::before</code> com gradiente; cada nó é outro <code>::before</code> com <code>border</code>, não <code>box-shadow</code>, para sobreviver ao modo de alto contraste.</p></li>
           <li><b>O gráfico de defasagem sem SVG</b><p>Cada barra é um elemento posicionado com duas variáveis, <code>--i</code> e <code>--w</code>. As duas pontas são <code>::before</code> e <code>::after</code> — nenhum elemento extra, nenhuma imagem.</p></li>
           <li><b><code>@media print</code></b><p>Ao imprimir, as abas somem, os dois painéis aparecem empilhados e os filtros desaparecem. O documento impresso fica completo.</p></li>
@@ -1836,7 +1862,7 @@
           <li><b>Pré-processador de CSS</b><span>Custom properties cobrem o que Sass cobriria, e funcionam em tempo de execução.</span></li>
           <li><b>CDN</b><span>Toda requisição a um domínio de terceiros é um ponto de falha e um vazamento de dado de navegação.</span></li>
           <li><b>Webfont</b><span>A pilha de fontes do sistema não custa requisição, não pisca no carregamento e já é familiar em cada plataforma.</span></li>
-          <li><b>Imagens</b><span>Não há um único arquivo de imagem. O logotipo e os ícones são CSS e SVG inline; o favicon é um <code>data:</code> URI.</span></li>
+          <li><b>Imagens</b><span>Não há um único arquivo de imagem. O logotipo é feito de <code>&lt;span&gt;</code> com CSS, e o favicon é um SVG dentro de um <code>data:</code> URI — não há nenhum <code>&lt;svg&gt;</code> no documento.</span></li>
           <li><b>Analytics e cookies</b><span>Nada é medido, nada é gravado. Não há banner de consentimento porque não há o que consentir.</span></li>
           <li><b>Servidor</b><span>É um arquivo estático. Funciona em <code>file://</code>, em qualquer hospedagem, ou dentro de um anexo de e-mail.</span></li>
         </ul>
@@ -1896,14 +1922,19 @@
           não coisas que ele carrega.
         </p>
         <ul class="lista-api">
-          <li><b>Claude Code</b><p>Escreveu o HTML, o CSS e o JavaScript, e coordenou as três varreduras de pesquisa que produziram o conteúdo da primeira aba.</p></li>
-          <li><b>Git e GitHub</b><p>Controle de versão e hospedagem do repositório. O arquivo vive numa branch própria, ao lado de um projeto sem relação com ele.</p></li>
-          <li><b>Um navegador</b><p>Toda a verificação: as abas, o teclado, os filtros, o tema escuro, a largura de 360 pixels e a contagem de requisições de rede.</p></li>
+          <li><b>Claude Code</b><p>Escreveu o HTML, o CSS e o JavaScript, e coordenou as varreduras de pesquisa que produziram o conteúdo da primeira aba.</p></li>
+          <li><b>Git 2.43 e GitHub</b><p>Controle de versão e hospedagem do repositório. O arquivo vive numa branch própria, ao lado de um projeto sem relação com ele.</p></li>
+          <li><b>Playwright 1.56 sobre Node.js 22</b><p>Uma suíte de 52 testes automatizados que dirige o Chromium sem interface: abas e teclado, links diretos, filtros, degradação sem JavaScript, tema escuro, larguras de 360 a 1280 pixels e a contagem de requisições de rede.</p></li>
+          <li><b>Python 3.11</b><p>Mediu os bytes e as linhas que esta aba exibe, calculou o contraste das 32 combinações de cor nos dois temas, validou o aninhamento das tags e conferiu ids repetidos e filtros órfãos.</p></li>
         </ul>
         <p class="src" style="margin-top:1.4rem">
-          Nenhuma dessas ferramentas deixa rastro no arquivo entregue. Se você baixar este HTML,
-          o que resta é texto que qualquer editor abre e qualquer navegador executa — o que também
-          é o motivo de ele provavelmente ainda funcionar daqui a dez anos.
+          Vale a distinção, porque é fácil confundir: <b>nada disso é dependência do site</b>. O
+          Playwright e o Python foram usados para <em>verificar</em> o arquivo, não para produzi-lo
+          nem para executá-lo — o HTML entregue não os carrega nem sabe que existem. Mas eles vieram
+          do npm e do PyPI, e omiti-los daria a impressão errada de que não houve ferramenta
+          nenhuma no caminho. Se você baixar este HTML, o que resta é texto que qualquer editor abre
+          e qualquer navegador executa, e é por isso que ele provavelmente ainda funciona daqui a
+          dez anos.
         </p>
       </div>
     </section>
