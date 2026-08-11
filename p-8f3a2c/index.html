@@ -330,7 +330,12 @@
           <li>Defina uma <strong>cota diária máxima</strong> — chave vazada sem cota vira conta alta</li>
         </ol>
         <div class="aviso" style="margin-top:12px">
-          <strong>Não use restrição por referenciador HTTP.</strong> Abrindo este arquivo direto no navegador, a origem é local e não existe referenciador para o Google conferir — a chave seria recusada com “A chave não foi aceita”. A trava que protege você aqui é a cota diária. Só volte a restringir por referenciador se um dia publicar esta ferramenta num endereço na web.
+          <strong>Atenção com a restrição por referenciador HTTP.</strong> Ela depende de onde você abre esta ferramenta:
+          <ul style="padding-left:18px;margin-top:6px">
+            <li><strong>Pelo endereço na web</strong> (<code>https://…/p-8f3a2c/</code>): pode e deve restringir por referenciador. É a proteção mais forte.</li>
+            <li><strong>Abrindo o arquivo salvo no seu computador</strong>: <strong>não</strong> restrinja. A origem é local, não existe referenciador para o Google conferir, e a chave seria recusada com “A chave não foi aceita” — sem nenhuma pista da causa.</li>
+          </ul>
+          Se você usa os dois, ou mantém duas chaves (uma restrita, outra não), ou usa só a cota diária como trava.
         </div>
       </div>
     </details>
