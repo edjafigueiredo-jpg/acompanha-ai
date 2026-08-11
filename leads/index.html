@@ -265,6 +265,45 @@
       <p class="src" style="margin-top:10px">Dica: o mesmo bairro rende leads diferentes com termos diferentes. Repetir a busca trocando o termo não duplica ninguém — a ferramenta deduplica sozinha.</p>
     </div>
 
+    <details class="cfg" id="cfg-varredura">
+      <summary>Buscar em várias cidades de uma vez</summary>
+      <div>
+        <p class="src">A assistente é online — a nutricionista não precisa estar perto de você. Quando a praça local secar, é aqui que você abre o mapa.</p>
+
+        <div class="campo">
+          <label for="v-cidades">Cidades, uma por linha</label>
+          <textarea id="v-cidades" rows="5" placeholder="Petrolina, PE&#10;Juazeiro, BA&#10;Recife, PE"></textarea>
+        </div>
+        <div class="grupo-btn" style="margin-bottom:12px">
+          <button class="btn-ghost btn-sm" type="button" id="v-capitais">Usar as 27 capitais</button>
+          <button class="btn-ghost btn-sm" type="button" id="v-limpar">Limpar</button>
+        </div>
+
+        <div class="linha l2">
+          <div class="campo">
+            <label for="v-termos">Termos, separados por vírgula</label>
+            <input id="v-termos" type="text" value="nutricionista" autocomplete="off">
+          </div>
+          <div class="campo">
+            <label for="v-paginas">Leads por cidade e termo</label>
+            <select id="v-paginas">
+              <option value="1">Até 20 (1 requisição)</option>
+              <option value="2">Até 40 (2 requisições)</option>
+              <option value="3">Até 60 (3 requisições)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="aviso" id="v-custo" aria-live="polite"></div>
+
+        <div class="grupo-btn">
+          <button class="btn" type="button" id="v-rodar">Rodar varredura</button>
+          <button class="btn-ghost" type="button" id="v-cancelar" hidden>Cancelar</button>
+        </div>
+        <div id="v-msg" role="status" aria-live="polite"></div>
+      </div>
+    </details>
+
     <details class="cfg" id="cfg-chave">
       <summary>Chave do Google Places <span id="chave-estado" class="src"></span></summary>
       <div>
@@ -360,6 +399,34 @@
     </details>
 
     <details class="cfg">
+      <summary>Proteger seu número <span id="p-resumo" class="src"></span></summary>
+      <div>
+        <div class="aviso">
+          <strong>Por que isso existe:</strong> número pessoal que dispara muita mensagem para desconhecido é bloqueado pelo WhatsApp — e aí a prospecção inteira para. Estes limites não são burocracia: são o que mantém seu número vivo.
+        </div>
+        <div class="linha l2">
+          <div class="campo">
+            <label for="p-limite">Máximo de mensagens por dia</label>
+            <input id="p-limite" type="number" min="1" max="200" step="1">
+          </div>
+          <div class="campo">
+            <label for="p-janela">Só mandar entre</label>
+            <select id="p-janela">
+              <option value="8-20">8h e 20h (recomendado)</option>
+              <option value="9-18">9h e 18h — horário comercial</option>
+              <option value="0-24">Sem restrição de horário</option>
+            </select>
+          </div>
+        </div>
+        <div class="grupo-btn">
+          <button class="btn btn-sm" type="button" id="p-salvar">Salvar</button>
+        </div>
+        <div id="p-msg" role="status" aria-live="polite"></div>
+        <p class="src" style="margin-top:10px">Passar do limite ou mandar fora da janela não é bloqueado — a ferramenta só avisa e pede confirmação. Quem decide é você.</p>
+      </div>
+    </details>
+
+    <details class="cfg">
       <summary>Taxa de resposta por toque</summary>
       <div>
         <p class="src">Enquanto você trabalha a lista, isto vai dizendo qual mensagem funciona. Com poucos envios o número ainda não significa nada — espere umas dezenas antes de trocar a cópia por causa dele.</p>
@@ -440,6 +507,24 @@
   var ETAPAS     = ["Novo","Contatado","Respondeu","Reunião marcada","Cliente","Descartado"];
   var LIMITE_GRATIS = 1000;
 
+  /* Protecao do numero: WhatsApp bloqueia quem dispara para desconhecido.
+     Numero banido = prospeccao morta, entao o limite protege o canal. */
+  var LIMITE_DIA_PADRAO = 30;
+  var JANELA_PADRAO = "8-20";
+
+  /* Intervalo entre requisicoes da varredura: educado com a API e deixa a
+     barra de progresso legivel em vez de piscar tudo de uma vez. */
+  var PAUSA_VARREDURA = 220;
+
+  var CAPITAIS = [
+    "Aracaju, SE","Belém, PA","Belo Horizonte, MG","Boa Vista, RR","Brasília, DF",
+    "Campo Grande, MS","Cuiabá, MT","Curitiba, PR","Florianópolis, SC","Fortaleza, CE",
+    "Goiânia, GO","João Pessoa, PB","Macapá, AP","Maceió, AL","Manaus, AM",
+    "Natal, RN","Palmas, TO","Porto Alegre, RS","Porto Velho, RO","Recife, PE",
+    "Rio Branco, AC","Rio de Janeiro, RJ","Salvador, BA","São Luís, MA","São Paulo, SP",
+    "Teresina, PI","Vitória, ES"
+  ];
+
   /* Cadencia: o 1o toque traz mais ou menos 40% das respostas; o resto vem
      dos toques seguintes, e so se a mensagem for DIFERENTE e acrescentar algo.
      Reenviar a abertura le como robo. Cada passo ataca por outro angulo. */
@@ -496,7 +581,10 @@
   var filtroEtapa = "";
 
   function vazia(){
-    return { versao:3, leads:{}, config:{ sequencia:SEQUENCIA_PADRAO.slice(), reqMes:{} } };
+    return { versao:3, leads:{}, config:{
+      sequencia:SEQUENCIA_PADRAO.slice(), reqMes:{}, enviosDia:{},
+      limiteDia:LIMITE_DIA_PADRAO, janela:JANELA_PADRAO
+    } };
   }
 
   /* v1 -> v2: toques por lead e Instagram separado do site. Nada e descartado.
@@ -544,6 +632,9 @@
       if(!d || typeof d !== "object" || !d.leads) return vazia();
       if(!d.config) d.config = { reqMes:{} };
       if(!d.config.reqMes) d.config.reqMes = {};
+      if(!d.config.enviosDia) d.config.enviosDia = {};
+      if(typeof d.config.limiteDia !== "number") d.config.limiteDia = LIMITE_DIA_PADRAO;
+      if(!d.config.janela) d.config.janela = JANELA_PADRAO;
       if(!d.versao) d.versao = 1;
       return migrar(d);
     }catch(e){ return vazia(); }
@@ -867,6 +958,33 @@
     pintarUso();
   }
 
+  /* Uma consulta ao Places. Usada tanto pela busca de uma cidade quanto
+     pela varredura — a montagem do pedido mora num lugar so. */
+  function consultarPlaces(cidade, termo, token){
+    var corpo = {
+      textQuery: termo + " em " + cidade,
+      languageCode: "pt-BR",
+      regionCode: "BR",
+      pageSize: 20,
+      /* Traz tambem quem nao tem endereco fisico: atendimento online
+         e domiciliar. Sem isso, esse segmento inteiro fica de fora. */
+      includePureServiceAreaBusinesses: true
+    };
+    if(token) corpo.pageToken = token;
+
+    return fetch(ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Goog-Api-Key": chaveApi(),
+        "X-Goog-FieldMask": CAMPOS
+      },
+      body: JSON.stringify(corpo)
+    }).then(function(r){
+      return r.json().then(function(j){ return { http:r.status, ok:r.ok, corpo:j }; });
+    });
+  }
+
   function buscar(cidade, termo, token){
     var chave = chaveApi();
     if(!chave){
@@ -881,29 +999,7 @@
     btn.textContent = "Buscando...";
     msg("b-msg","","");
 
-    var corpo = {
-      textQuery: termo + " em " + cidade,
-      languageCode: "pt-BR",
-      regionCode: "BR",
-      pageSize: 20,
-      /* Traz tambem quem nao tem endereco fisico: atendimento online
-         e domiciliar. Sem isso, esse segmento inteiro fica de fora. */
-      includePureServiceAreaBusinesses: true
-    };
-    if(token) corpo.pageToken = token;
-
-    fetch(ENDPOINT, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Goog-Api-Key": chave,
-        "X-Goog-FieldMask": CAMPOS
-      },
-      body: JSON.stringify(corpo)
-    })
-    .then(function(r){
-      return r.json().then(function(j){ return { http:r.status, ok:r.ok, corpo:j }; });
-    })
+    consultarPlaces(cidade, termo, token)
     .then(function(res){
       contarRequisicao();
 
@@ -941,6 +1037,188 @@
       btn.disabled = false; btnMais.disabled = false;
       btn.textContent = "Buscar";
     });
+  }
+
+  /* ---------- Varredura de varias cidades ---------- */
+
+  var varrendo = false, cancelar = false;
+
+  function listaCidades(){
+    return (document.getElementById("v-cidades").value || "")
+      .split("\n")
+      .map(function(s){ return s.trim(); })
+      .filter(function(s){ return s.length > 1; });
+  }
+
+  function listaTermos(){
+    var t = (document.getElementById("v-termos").value || "")
+      .split(",")
+      .map(function(s){ return s.trim(); })
+      .filter(function(s){ return s.length > 1; });
+    return t.length ? t : ["nutricionista"];
+  }
+
+  function pintarCusto(){
+    var cid = listaCidades(), ter = listaTermos();
+    var pag = parseInt(document.getElementById("v-paginas").value, 10) || 1;
+    var req = cid.length * ter.length * pag;
+    var el = document.getElementById("v-custo");
+    var usado = loja.config.reqMes[mesAtual()] || 0;
+    var sobra = LIMITE_GRATIS - usado;
+
+    if(!cid.length){
+      el.innerHTML = "Escreva pelo menos uma cidade para eu calcular o custo.";
+      return;
+    }
+
+    var txt = "<strong>" + req + (req === 1 ? " requisição" : " requisições") + "</strong> — " +
+              cid.length + (cid.length === 1 ? " cidade" : " cidades") + " × " +
+              ter.length + (ter.length === 1 ? " termo" : " termos") + " × " + pag +
+              (pag === 1 ? " página" : " páginas") + ". Até <strong>" +
+              (req * 20).toLocaleString("pt-BR") + " leads</strong>.<br>";
+
+    if(req <= sobra){
+      txt += "Cabe na franquia grátis: você usou " + usado + " de " + LIMITE_GRATIS +
+             " neste mês, sobram " + sobra + ".";
+    } else {
+      var excedente = req - Math.max(0, sobra);
+      txt += "<strong>Passa da franquia grátis</strong> em " + excedente +
+             " requisições — cerca de US$ " + (excedente * 0.035).toFixed(2) + " neste mês.";
+    }
+    el.innerHTML = txt;
+  }
+
+  function pausa(ms){
+    return new Promise(function(r){ setTimeout(r, ms); });
+  }
+
+  function varrer(){
+    if(varrendo) return;
+    if(!chaveApi()){
+      msg("v-msg","erro","Falta a chave do Google Places. Abra 'Chave do Google Places' e cole a sua.");
+      var d = document.getElementById("cfg-chave"); if(d) d.open = true;
+      return;
+    }
+
+    var cidades = listaCidades(), termos = listaTermos();
+    var paginas = parseInt(document.getElementById("v-paginas").value, 10) || 1;
+    if(!cidades.length){ msg("v-msg","erro","Escreva pelo menos uma cidade."); return; }
+
+    var req = cidades.length * termos.length * paginas;
+    if(!window.confirm("Isso vai fazer " + req + " consultas ao Google e pode trazer até " +
+       (req * 20) + " leads.\n\nPode rodar?")) return;
+
+    varrendo = true; cancelar = false;
+    document.getElementById("v-rodar").disabled = true;
+    document.getElementById("v-cancelar").hidden = false;
+
+    var totalNovos = 0, totalDup = 0, feitas = 0, erros = 0, ultimoErro = "";
+
+    /* Fila achatada: cada item e uma consulta. Sequencial de proposito —
+       da para cancelar entre uma e outra e nao martela a API. */
+    var fila = [];
+    cidades.forEach(function(c){
+      termos.forEach(function(t){ fila.push({ cidade:c, termo:t }); });
+    });
+
+    function progresso(i, cidade, termo){
+      msg("v-msg","ok", "Cidade " + Math.min(i + 1, fila.length) + " de " + fila.length +
+          " · " + cidade + " · " + termo + " — " + totalNovos + " leads novos até agora" +
+          (erros ? " (" + erros + " com erro)" : ""));
+    }
+
+    function proximaCidade(i){
+      if(cancelar || i >= fila.length) return Promise.resolve();
+      var item = fila[i];
+      progresso(i, item.cidade, item.termo);
+
+      var token = null, pagina = 0;
+
+      function proximaPagina(){
+        if(cancelar || pagina >= paginas) return Promise.resolve();
+        return consultarPlaces(item.cidade, item.termo, token)
+          .then(function(res){
+            feitas++;
+            contarRequisicao();
+            if(!res.ok){
+              erros++;
+              ultimoErro = explicarErro((res.corpo.error||{}).status, res.http, res.corpo);
+              return;
+            }
+            var lugares = res.corpo.places || [];
+            if(!lugares.length) return;
+            var r = mesclar(lugares.map(mapear), item.termo);
+            totalNovos += r.add; totalDup += r.dup;
+            token = res.corpo.nextPageToken || null;
+            pagina++;
+            if(!token) return;
+            return pausa(PAUSA_VARREDURA).then(proximaPagina);
+          })
+          .catch(function(){ erros++; ultimoErro = "Falha de rede."; });
+      }
+
+      return proximaPagina()
+        .then(function(){ salvar(); renderizar(); })
+        .then(function(){ return pausa(PAUSA_VARREDURA); })
+        .then(function(){ return proximaCidade(i + 1); });
+    }
+
+    proximaCidade(0).then(function(){
+      varrendo = false;
+      document.getElementById("v-rodar").disabled = false;
+      document.getElementById("v-cancelar").hidden = true;
+      salvar(); renderizar(); pintarCusto();
+
+      var fim = (cancelar ? "Varredura cancelada. " : "Varredura concluída. ") +
+                totalNovos + (totalNovos === 1 ? " lead novo" : " leads novos");
+      if(totalDup) fim += ", " + totalDup + " já estavam na lista";
+      fim += ". " + feitas + (feitas === 1 ? " requisição usada" : " requisições usadas") + ".";
+      if(erros) fim += " " + erros + (erros === 1 ? " consulta falhou" : " consultas falharam") + ": " + ultimoErro;
+      msg("v-msg", erros ? "aviso" : "ok", fim);
+    });
+  }
+
+  /* ---------- Protecao do numero ---------- */
+
+  function enviosHoje(){
+    return loja.config.enviosDia[hoje()] || 0;
+  }
+
+  function janela(){
+    var j = String(loja.config.janela || JANELA_PADRAO).split("-");
+    return { de: parseInt(j[0], 10) || 0, ate: parseInt(j[1], 10) || 24 };
+  }
+
+  /* Devolve o aviso que precisa de confirmacao, ou "" se esta tudo certo.
+     Nunca bloqueia: quem decide mandar e a pessoa. */
+  function avisoEnvio(){
+    var n = enviosHoje(), lim = loja.config.limiteDia || LIMITE_DIA_PADRAO;
+    if(n >= lim){
+      return "Você já mandou " + n + " mensagens hoje, e seu limite é " + lim + ".\n\n" +
+             "WhatsApp costuma bloquear número que dispara muito para desconhecido — e aí a prospecção inteira para.\n\n" +
+             "Mandar mesmo assim?";
+    }
+    var jn = janela(), h = new Date().getHours();
+    if(h < jn.de || h >= jn.ate){
+      return "São " + h + "h, fora da sua janela de " + jn.de + "h às " + jn.ate + "h.\n\n" +
+             "Mensagem comercial fora de hora costuma render bloqueio em vez de resposta.\n\n" +
+             "Mandar mesmo assim?";
+    }
+    return "";
+  }
+
+  function contarEnvio(){
+    var d = hoje();
+    loja.config.enviosDia[d] = (loja.config.enviosDia[d] || 0) + 1;
+    /* Guarda so os ultimos 30 dias para nao inchar o armazenamento */
+    var chaves = Object.keys(loja.config.enviosDia).sort();
+    while(chaves.length > 30){ delete loja.config.enviosDia[chaves.shift()]; }
+  }
+
+  function pintarProtecao(){
+    var n = enviosHoje(), lim = loja.config.limiteDia || LIMITE_DIA_PADRAO;
+    var el = document.getElementById("p-resumo");
+    if(el) el.textContent = "· " + n + "/" + lim + " mensagens hoje";
   }
 
   /* ---------- Render ---------- */
@@ -1129,6 +1407,7 @@
     pintarUso();
     pintarFunil();
     pintarStats();
+    pintarProtecao();
     var arr = listaFiltrada();
     var el = document.getElementById("lista");
 
@@ -1358,10 +1637,14 @@
     var acao = b.getAttribute("data-acao");
 
     if(acao === "zap"){
+      var alerta = avisoEnvio();
+      if(alerta && !window.confirm(alerta)) return;
+
       var passo = passoDe(l);
       var texto = montarMensagem(l, passo);
       window.open("https://wa.me/" + l.telefone + "?text=" + encodeURIComponent(texto), "_blank", "noopener");
 
+      contarEnvio();
       if(!l.envios) l.envios = [];
       l.envios.push(passo);
       l.toques = (l.toques || 0) + 1;
@@ -1432,6 +1715,38 @@
     }
     return "";
   }
+
+  /* Varredura */
+  ["v-cidades","v-termos","v-paginas"].forEach(function(id){
+    document.getElementById(id).addEventListener("input", pintarCusto);
+  });
+  document.getElementById("v-paginas").addEventListener("change", pintarCusto);
+
+  document.getElementById("v-capitais").addEventListener("click", function(){
+    document.getElementById("v-cidades").value = CAPITAIS.join("\n");
+    pintarCusto();
+  });
+  document.getElementById("v-limpar").addEventListener("click", function(){
+    document.getElementById("v-cidades").value = "";
+    pintarCusto(); msg("v-msg","","");
+  });
+  document.getElementById("v-rodar").addEventListener("click", varrer);
+  document.getElementById("v-cancelar").addEventListener("click", function(){
+    cancelar = true;
+    msg("v-msg","aviso","Cancelando depois da consulta atual...");
+  });
+
+  /* Protecao do numero */
+  document.getElementById("p-limite").value = loja.config.limiteDia || LIMITE_DIA_PADRAO;
+  document.getElementById("p-janela").value = loja.config.janela || JANELA_PADRAO;
+
+  document.getElementById("p-salvar").addEventListener("click", function(){
+    var v = parseInt(document.getElementById("p-limite").value, 10);
+    if(!v || v < 1){ msg("p-msg","erro","Escreva um número maior que zero."); return; }
+    loja.config.limiteDia = v;
+    loja.config.janela = document.getElementById("p-janela").value;
+    if(salvar()){ msg("p-msg","ok","Salvo."); pintarProtecao(); }
+  });
 
   /* ---------- Sequencia de mensagens ---------- */
 
@@ -1597,6 +1912,7 @@
   pintarChave();
   pintarSequencia();
   pintarObjecoes();
+  pintarCusto();
   renderizar();
 
 })();
