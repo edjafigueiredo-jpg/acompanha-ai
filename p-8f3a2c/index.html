@@ -324,12 +324,14 @@
         <p class="src">Cada busca de 20 leads custa <strong>1 requisição</strong>. O plano com telefone, site e nota tem <strong>1.000 requisições grátis por mês</strong> — ou seja, até cerca de 20.000 nutricionistas por mês sem pagar nada. Acima disso, US$ 35 por mil requisições.</p>
 
         <h3 style="margin-top:16px">Trave a chave antes de usar</h3>
-        <p class="src">Esta página é pública. Sua chave nunca é gravada no código nem enviada para lugar nenhum além do Google — ela fica só no seu navegador. Ainda assim, no Google Cloud Console:</p>
+        <p class="src">Sua chave nunca é gravada neste arquivo nem enviada para lugar nenhum além do Google — ela fica só no armazenamento deste navegador. Ainda assim, no Google Cloud Console:</p>
         <ol class="src" style="padding-left:18px;margin-top:6px">
-          <li>Restrinja por <strong>referenciador HTTP</strong>: <code>www.acompanhanutri.com.br/*</code></li>
           <li>Restrinja a <strong>API</strong>: apenas Places API (New)</li>
           <li>Defina uma <strong>cota diária máxima</strong> — chave vazada sem cota vira conta alta</li>
         </ol>
+        <div class="aviso" style="margin-top:12px">
+          <strong>Não use restrição por referenciador HTTP.</strong> Abrindo este arquivo direto no navegador, a origem é local e não existe referenciador para o Google conferir — a chave seria recusada com “A chave não foi aceita”. A trava que protege você aqui é a cota diária. Só volte a restringir por referenciador se um dia publicar esta ferramenta num endereço na web.
+        </div>
       </div>
     </details>
   </section>
