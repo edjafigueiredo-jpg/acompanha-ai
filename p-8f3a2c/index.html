@@ -316,14 +316,26 @@
         </div>
         <div class="grupo-btn">
           <button class="btn btn-sm" type="button" id="k-salvar">Salvar chave</button>
+          <button class="btn-ghost btn-sm" type="button" id="k-testar">Testar chave</button>
           <button class="btn-ghost btn-sm" type="button" id="k-remover">Remover</button>
         </div>
         <div id="k-msg" role="status" aria-live="polite"></div>
+        <p class="src" style="margin-top:8px">“Testar chave” gasta 1 requisição das 1.000 grátis do mês e diz exatamente o que está faltando.</p>
+
+        <h3 style="margin-top:16px">Configuração no Google Cloud, nesta ordem</h3>
+        <ol class="src" style="padding-left:18px;margin-top:6px">
+          <li>Criar um projeto em <code>console.cloud.google.com</code></li>
+          <li><strong>Habilitar faturamento no projeto</strong> — obrigatório mesmo para usar só a parte grátis. Sem cartão vinculado, o Google recusa toda requisição. Dentro da franquia você não é cobrado.</li>
+          <li>Ativar a <strong>Places API (New)</strong> — cuidado: existe também uma “Places API” antiga, de nome quase igual. Esta ferramenta usa a <strong>New</strong>; ativar a antiga faz a chave ser recusada.</li>
+          <li>Criar a chave em <em>Credenciais → Criar credenciais → Chave de API</em> e colar aqui</li>
+          <li>Só depois: restringir por API e definir cota diária</li>
+        </ol>
+        <p class="src" style="margin-top:6px">Chave recém-criada pode levar alguns minutos para começar a funcionar.</p>
 
         <h3 style="margin-top:16px">Custo real</h3>
         <p class="src">Cada busca de 20 leads custa <strong>1 requisição</strong>. O plano com telefone, site e nota tem <strong>1.000 requisições grátis por mês</strong> — ou seja, até cerca de 20.000 nutricionistas por mês sem pagar nada. Acima disso, US$ 35 por mil requisições.</p>
 
-        <h3 style="margin-top:16px">Trave a chave antes de usar</h3>
+        <h3 style="margin-top:16px">Trave a chave depois que funcionar</h3>
         <p class="src">Sua chave nunca é gravada neste arquivo nem enviada para lugar nenhum além do Google — ela fica só no armazenamento deste navegador. Ainda assim, no Google Cloud Console:</p>
         <ol class="src" style="padding-left:18px;margin-top:6px">
           <li>Restrinja a <strong>API</strong>: apenas Places API (New)</li>
@@ -941,21 +953,40 @@
     };
   }
 
+  /* Cada causa tem um conserto diferente no Google Cloud. Mensagem generica
+     faz a pessoa mexer no lugar errado, entao aqui cada uma diz o que clicar.
+     O que nao for reconhecido mostra a mensagem do proprio Google, que e
+     melhor que um texto vago meu. */
   function explicarErro(status, http, corpo){
-    var razao = "";
+    var razao = "", texto = "";
     try{ razao = corpo.error.details[0].reason || ""; }catch(e){}
+    try{ texto = corpo.error.message || ""; }catch(e){}
 
-    if(razao === "API_KEY_INVALID" || /API key not valid/i.test((corpo.error||{}).message || ""))
-      return "A chave não foi aceita pelo Google. Confira se copiou inteira e se a Places API (New) está ativada no projeto.";
+    if(razao === "BILLING_DISABLED" || /billing/i.test(texto))
+      return "Falta habilitar o faturamento no projeto do Google Cloud. A Places API exige um cartão vinculado mesmo para usar só a franquia grátis — dentro dela você não é cobrado. Ative em Faturamento e tente de novo em alguns minutos.";
+
+    if(razao === "SERVICE_DISABLED" || /has not been used in project|is disabled/i.test(texto))
+      return "A Places API (New) não está ativada neste projeto. No Google Cloud, vá em APIs e serviços, procure por “Places API (New)” — atenção, não a “Places API” antiga — e clique em Ativar.";
+
+    if(razao === "API_KEY_SERVICE_BLOCKED")
+      return "Esta chave está restrita a outra API. Provavelmente foi liberada para a “Places API” antiga em vez da “Places API (New)”. Edite a chave e marque a New.";
+
     if(razao === "API_KEY_HTTP_REFERRER_BLOCKED")
-      return "A chave está travada para outro endereço. No Google Cloud, libere o referenciador " + location.origin + "/*";
+      return "A chave está travada para outro endereço. No Google Cloud, libere o referenciador " + location.origin + "/* — ou remova a restrição de referenciador se você também abre esta ferramenta pelo arquivo local.";
+
+    if(razao === "API_KEY_INVALID" || /API key not valid/i.test(texto))
+      return "O Google não reconheceu esta chave. As causas, em ordem: faturamento não habilitado no projeto, Places API (New) não ativada, chave copiada incompleta, ou chave criada há menos de 5 minutos. Use “Testar chave” para confirmar qual é.";
+
     if(status === "PERMISSION_DENIED" || http === 403)
-      return "O Google recusou a chave. Costuma ser a Places API (New) desativada, faturamento não habilitado, ou restrição de referenciador diferente deste site.";
+      return "O Google recusou a chave" + (texto ? ": " + texto : "") + ". Confira faturamento habilitado, Places API (New) ativada e as restrições da chave.";
+
     if(status === "RESOURCE_EXHAUSTED" || http === 429)
       return "Cota estourada. Espere o próximo ciclo ou aumente o limite no Google Cloud.";
+
     if(http === 400)
-      return "O Google recusou a busca: " + (((corpo.error||{}).message) || "requisição inválida") + ".";
-    return "O Google respondeu com erro " + http + ". Tente de novo em instantes.";
+      return "O Google recusou a busca: " + (texto || "requisição inválida") + ".";
+
+    return "O Google respondeu com erro " + http + (texto ? ": " + texto : "") + ". Tente de novo em instantes.";
   }
 
   function contarRequisicao(){
@@ -1602,22 +1633,68 @@
     else el.textContent = "· não configurada";
   }
 
+  /* Confirmacao visivel dentro do proprio campo, no lugar de deixa-lo vazio */
+  function mascararCampo(){
+    var c = chaveApi(), el = document.getElementById("k-chave");
+    if(!el) return;
+    if(c){
+      el.type = "text";
+      el.value = c.slice(0,6) + "••••••••••" + c.slice(-4);
+      el.readOnly = true;
+      el.title = "Chave salva. Use “Remover” para trocar.";
+    } else {
+      el.type = "password"; el.value = ""; el.readOnly = false; el.title = "";
+    }
+  }
+
   document.getElementById("k-salvar").addEventListener("click", function(){
     var v = document.getElementById("k-chave").value.trim();
     if(!v){ msg("k-msg","erro","Cole a chave antes de salvar."); return; }
     try{
       localStorage.setItem(CHAVE_LS, v);
-      document.getElementById("k-chave").value = "";
-      msg("k-msg","ok","Chave salva neste navegador. Já pode buscar.");
+      /* NAO esvaziar o campo: campo em branco depois de salvar parece que
+         deu errado. Mostra a chave mascarada como confirmacao visivel. */
+      mascararCampo();
+      msg("k-msg","ok","Chave salva. Clique em “Testar chave” para confirmar que ela funciona.");
       pintarChave();
     }catch(e){
-      msg("k-msg","erro","Este navegador bloqueou o armazenamento local. Saia da navegação anônima e tente de novo.");
+      msg("k-msg","erro","Este navegador bloqueou o armazenamento local. Saia da navegação anônima, ou libere os dados de site para este endereço, e tente de novo.");
     }
+  });
+
+  /* Uma requisicao de verdade so para dizer o que esta faltando. Sem isso, a
+     unica forma de descobrir era rodar uma busca e interpretar o erro. */
+  document.getElementById("k-testar").addEventListener("click", function(){
+    var chave = chaveApi();
+    if(!chave){ msg("k-msg","erro","Salve uma chave antes de testar."); return; }
+
+    var btn = document.getElementById("k-testar");
+    btn.disabled = true; btn.textContent = "Testando...";
+    msg("k-msg","","");
+
+    consultarPlaces("Petrolina PE", "nutricionista", null)
+      .then(function(res){
+        contarRequisicao();
+        if(res.ok){
+          var n = (res.corpo.places || []).length;
+          msg("k-msg","ok","Chave funcionando. O Google respondeu com " + n +
+              (n === 1 ? " resultado" : " resultados") + " no teste — pode buscar à vontade.");
+        } else {
+          msg("k-msg","erro", explicarErro((res.corpo.error||{}).status, res.http, res.corpo));
+        }
+      })
+      .catch(function(){
+        msg("k-msg","erro","Não consegui falar com o Google. Verifique sua conexão e tente de novo.");
+      })
+      .then(function(){
+        btn.disabled = false; btn.textContent = "Testar chave";
+      });
   });
 
   document.getElementById("k-remover").addEventListener("click", function(){
     try{ localStorage.removeItem(CHAVE_LS); }catch(e){}
-    msg("k-msg","ok","Chave removida.");
+    msg("k-msg","ok","Chave removida. Cole outra no campo acima.");
+    mascararCampo();
     pintarChave();
   });
 
@@ -1917,6 +1994,7 @@
   /* ---------- Boot ---------- */
   if(migrouAgora) salvar();
   pintarChave();
+  mascararCampo();
   pintarSequencia();
   pintarObjecoes();
   pintarCusto();
