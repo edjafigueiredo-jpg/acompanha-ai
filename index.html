@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Acompanha.ai | A assistente de IA que acompanha seus pacientes no WhatsApp</title>
-<meta name="description" content="A IA de conversação que responde os pacientes do seu consultório de nutrição entre as consultas: check-ins, dúvidas, foto de refeição e alerta de risco de abandono. A IA tria, você decide.">
+<title>Acompanha.ai | Perceba o sumiço do paciente a tempo</title>
+<meta name="description" content="A assistente de IA que faz check-in com seus pacientes no WhatsApp entre as consultas e avisa você quando alguém esfria — antes do sumiço. A IA tria, você decide.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2315803D'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23FAF9F6'/%3E%3C/svg%3E">
 <script>document.documentElement.classList.add("js")</script>
 <script>
@@ -164,6 +164,8 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
   .msg .t{display:block;font-size:.64rem;color:var(--ink-faint);text-align:right;margin-top:3px}
   .msg.in{background:var(--bubble-in);border-bottom-left-radius:4px;align-self:flex-start;box-shadow:0 1px 1px rgba(0,0,0,.06)}
   .msg.out{background:var(--bubble-out);border-bottom-right-radius:4px;align-self:flex-end}
+  .msg.al{background:var(--surface);border-left:4px solid var(--amber);align-self:center;width:95%;max-width:95%;border-radius:10px;font-size:.8rem}
+  .msg.al .tag{display:block;font-size:.62rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--amber);margin-bottom:2px}
   .chat-note{font-size:.75rem;color:var(--ink-faint)}
   .js .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
   .js .reveal.vis{opacity:1;transform:none}
@@ -370,7 +372,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
 <header>
   <div class="nav">
     <a class="logo" href="#top">acompanha<span>.ai</span></a>
-    <a class="btn" href="#demo">Quero uma demonstração</a>
+    <a class="btn" href="#demo">Ver preço e demonstração</a>
   </div>
 </header>
 
@@ -381,30 +383,33 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
     <div class="wrap">
       <div>
         <span class="eyebrow">Assistente de IA no WhatsApp para nutricionistas de consultório</span>
-        <h1>O plano alimentar não quebra no seu consultório. Quebra <em>na sexta à noite, no rodízio, no churrasco</em>, quando você não está lá.</h1>
-        <p class="sub">O Acompanha.ai é a assistente de IA que conversa com seus pacientes pelo WhatsApp entre as consultas: responde dúvidas na hora, faz check-ins, recebe foto de refeição e te avisa quando alguém está prestes a desistir. <span class="mantra">A IA tria. Você decide.</span></p>
+        <h1>O paciente esfria no dia 10. <em>Você só descobre no dia 45.</em></h1>
+        <p class="sub">O Acompanha.ai é a assistente de IA que cuida do meio-tempo entre as consultas, no WhatsApp que seu paciente já usa: faz check-in, recebe foto de refeição e responde dúvida de rotina — sempre se apresentando como assistente da sua equipe e só com o que você aprovou. O que decide tratamento vira triagem pra você, e o aviso de que alguém está esfriando chega enquanto ainda dá tempo de agir. <span class="mantra">A IA tria. Você decide.</span></p>
         <div class="cta-row">
           <a class="btn wa-btn" data-wa hidden>Chamar no WhatsApp</a>
-          <a class="btn" id="hero-form-btn" href="#demo">Quero uma demonstração</a>
+          <a class="btn" id="hero-form-btn" href="#demo">Quero o preço e a demonstração</a>
         </div>
         <ul class="trust-strip">
-          <li>Sempre se apresenta como assistente da sua equipe</li>
-          <li>Nunca prescreve (Lei 8.234/91)</li>
-          <li>Você aprova cada resposta</li>
+          <li>Seu paciente não baixa nada: é só o WhatsApp que ele já usa</li>
+          <li>A IA avisa você; a mensagem que decide é sempre sua — e ela nunca prescreve (Lei 8.234/91)</li>
+          <li>Transparente: o paciente sabe desde a 1ª mensagem que fala com a assistente da sua equipe</li>
         </ul>
       </div>
       <div class="phone-slot">
-        <div class="phone" role="img" aria-label="Simulação de conversa: paciente pede ajuda num rodízio de japonês no sábado à noite e a assistente orienta dentro do plano prescrito pela nutricionista.">
+        <div class="phone" role="img" aria-label="Simulação: a assistente faz check-in e responde dúvida de rotina; no painel, a nutricionista recebe a triagem e o alerta de que uma paciente esfriou, envia a própria mensagem e a paciente responde.">
           <div class="screen">
             <div class="chat-head">
               <span class="avatar" aria-hidden="true">A</span>
               <span class="who"><b>Ana · assistente virtual da Dra. Camila</b><small>responde em segundos</small></span>
             </div>
             <ul class="chat-body">
-              <li class="msg out reveal">Ana, socorro 😅 tô num rodízio de japonês com a minha família. E agora?<span class="t">21:47</span></li>
-              <li class="msg in reveal">Boa notícia: seu plano com a Dra. Camila já prevê refeições fora 🙂 A base no rodízio: sashimi, atum e salmão. Uns 2 uramakis cabem tranquilo. Hot roll e teriyaki ficam de fora hoje, combinado?<span class="t">21:47</span></li>
-              <li class="msg out reveal">sério que eu posso comer isso tudo?<span class="t">21:48</span></li>
-              <li class="msg in reveal">Pode 🙂 Um jantar não desfaz a sua semana. Amanhã seguimos normal, sem compensar. A Dra. Camila recebe o resumo. 💚<span class="t">21:48</span></li>
+              <li class="msg in reveal">Bom dia! Conseguiu fazer os lanches da tarde essa semana?<span class="t">seg · 08h47</span></li>
+              <li class="msg out reveal">Consegui quase tudo! Ah, e acabou o iogurte aqui — posso trocar pelo quê?<span class="t">seg · 08h51</span></li>
+              <li class="msg in reveal">Pode sim! Das substituições que a Dra. deixou no seu plano: 1 copo de leite ou 2 colheres de cottage 🙂<span class="t">seg · 08h52</span></li>
+              <li class="msg al reveal"><span class="tag">Painel da nutricionista</span>🟡 Carlos perguntou sobre um remédio novo. Fora do escopo da assistente — na sua fila de triagem, sem resposta dada.<span class="t">ter · 09h15</span></li>
+              <li class="msg al reveal"><span class="tag">Painel da nutricionista</span>⚠️ Ana: 5 dias sem responder o check-in — e o retorno não está marcado. Isso é novo pra ela.<span class="t">sex · 14h10</span></li>
+              <li class="msg al reveal"><span class="tag">Você decide</span>Mensagem sua, na hora certa: “Oi Ana, senti sua falta nos check-ins. Tudo bem por aí?”<span class="t">sex · 14h12</span></li>
+              <li class="msg out reveal">Desculpa sumir, Dra.! Mudei de emprego e a rotina virou de cabeça pra baixo 😔<span class="t">sex · 15h02</span></li>
             </ul>
           </div>
         </div>
@@ -418,18 +423,41 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
     <div class="wrap">
       <div class="stat">
         <b>&gt;50%</b>
-        <p>dos pacientes abandonam o tratamento nutricional <strong>nos primeiros 3 meses</strong>.</p>
+        <p>dos pacientes abandonam o tratamento nutricional <strong>nos primeiros 3 meses</strong> — muitas vezes sem avisar.</p>
         <span class="src">Estudo do Hospital Universitário de Brasília</span>
       </div>
       <div class="stat">
-        <b>17,7%</b>
-        <p>chegam à <strong>2ª consulta de retorno</strong> no único dado brasileiro publicado (um ambulatório; serve de referência, não de regra).</p>
-        <span class="src">Levantamento num ambulatório universitário brasileiro</span>
+        <b>66,7%</b>
+        <p>abandonam <strong>antes dos 6 meses</strong>: o sumiço é regra, não exceção.</p>
+        <span class="src">Pesquisa da USP de Ribeirão Preto</span>
       </div>
       <div class="stat">
-        <b>46,7%</b>
-        <p>apontam <strong>comer fora de casa</strong> como a maior barreira ao plano. Eventos sociais vêm logo atrás, com 33,3%.</p>
-        <span class="src">Mesmo estudo do HU de Brasília</span>
+        <b>17,7%</b>
+        <p>chegam à <strong>2ª consulta de retorno</strong> num levantamento brasileiro (um único ambulatório; serve de referência, não de regra).</p>
+        <span class="src">Levantamento num ambulatório universitário brasileiro</span>
+      </div>
+    </div>
+  </section>
+
+<!-- S3 · A DOR -->
+  <section aria-label="A rotina de quem acompanha sozinha">
+    <div class="wrap">
+      <span class="eyebrow">A parte do trabalho que ninguém vê</span>
+      <h2>O sumiço não avisa. Ele só aparece quando já é tarde.</h2>
+      <p style="max-width:40em">A consulta termina e o tratamento passa a viver num lugar que você não enxerga: o WhatsApp pessoal, a rotina do paciente, os dias entre um retorno e outro. É ali que mora o plantão que ninguém paga e o esfriamento que ninguém avisa.</p>
+      <div class="cards c3">
+        <div class="card">
+          <h3>O plantão invisível</h3>
+          <p>Terça, 22h07: <em>“posso trocar o jantar por pão de queijo?”</em>. Você responde de graça, no seu número pessoal, entre as mensagens da família. Sem registro, sem hora para acabar e sem virar prontuário.</p>
+        </div>
+        <div class="card">
+          <h3>O sumiço descoberto tarde</h3>
+          <p>Ela melhorou e relaxou. Ou a vida aconteceu — um parto, uma mudança, um aperto no orçamento que ela não te contou. Ninguém avisa quando o paciente esfria. Você só descobre quando o retorno não é marcado, e aí já se passaram semanas.</p>
+        </div>
+        <div class="card">
+          <h3>O tratamento que fica pela metade</h3>
+          <p>Cada paciente que esfria sem aviso é um resultado que não chega e uma renovação que não acontece — um buraco que você só vê na agenda do mês seguinte. Segurar quem já confia em você custa uma mensagem na hora certa. Recomeçar do zero com outra pessoa custa muito mais — pra você e pra quem desistiu no meio.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -438,36 +466,36 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
   <section class="how" id="como-funciona" aria-label="Como funciona">
     <div class="wrap">
       <span class="eyebrow">Como funciona</span>
-      <h2>Sua assistente no WhatsApp do paciente. Seu critério no comando.</h2>
-      <p style="max-width:40em">O Acompanha.ai conversa com seus pacientes pelo WhatsApp que eles já usam, sempre dentro do plano e das regras que você definiu.</p>
+      <h2>O radar que vê o esfriamento antes do sumiço.</h2>
+      <p style="max-width:40em">O Acompanha.ai conversa com seus pacientes pelo WhatsApp que eles já usam, sempre dentro do plano e das regras que você definiu — e aponta pra você quem está esfriando, enquanto ainda dá tempo de agir.</p>
       <div class="grid">
         <div class="steps">
           <div class="step">
             <span class="n" aria-hidden="true"></span>
             <div>
+              <h3>Radar de esfriamento</h3>
+              <p>Não é um contador de dias sem resposta — isso você já sabe fazer. A assistente acompanha o ritmo de cada paciente — check-ins, dúvidas, fotos — e te avisa quando esse ritmo muda: quem sempre respondia e parou é diferente de quem avisou que ia viajar. O alerta chega com contexto, não só com número de dias.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="n" aria-hidden="true"></span>
+            <div>
               <h3>Check-ins que não dependem de força de vontade</h3>
-              <p>A assistente puxa conversa nos momentos que você definir: <em>“como foi o fim de semana?”</em>, <em>“conseguiu fazer o lanche da tarde?”</em>. Responder leva um toque ou uma foto.</p>
+              <p>A assistente puxa conversa nos momentos que você definir: <em>“como foi a semana?”</em>, <em>“conseguiu fazer o lanche da tarde?”</em>. Responder leva um toque ou uma foto.</p>
             </div>
           </div>
           <div class="step">
             <span class="n" aria-hidden="true"></span>
             <div>
-              <h3>Dúvidas respondidas na hora</h3>
-              <p><em>“Acabou o iogurte, posso trocar pelo quê?”</em> A resposta vem em segundos, direto das substituições que <strong>você</strong> aprovou, não de uma tabela genérica da internet.</p>
+              <h3>Dúvida de rotina respondida na hora — e só ela</h3>
+              <p><em>“Acabou o iogurte, posso trocar pelo quê?”</em> A resposta vem em segundos, direto das substituições que <strong>você</strong> aprovou, não de uma tabela genérica da internet. O que passa disso — sintoma, medicamento, mudança no plano — a assistente não responde: entra na sua fila de triagem, esperando por você.</p>
             </div>
           </div>
           <div class="step">
             <span class="n" aria-hidden="true"></span>
             <div>
-              <h3>Foto no lugar de diário</h3>
-              <p>Sem pesar comida, sem digitar caloria. O paciente manda a foto da refeição; a assistente registra e devolve uma orientação gentil. O registro que hoje morre em poucas semanas passa a acontecer sozinho.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="n" aria-hidden="true"></span>
-            <div>
-              <h3>Socorro no momento em que o plano quebra</h3>
-              <p>Rodízio, festa, viagem. A assistente orienta na hora, dentro do seu plano, e desarma o <em>“já estraguei tudo”</em> antes que ele vire abandono.</p>
+              <h3>Ajuda quando o plano aperta</h3>
+              <p>Viagem, imprevisto, semana corrida: a assistente orienta dentro do que você aprovou, sem inventar regra nova e sem prometer milagre. E a foto no lugar do diário: o registro que hoje morre em poucas semanas passa a acontecer sozinho.</p>
             </div>
           </div>
         </div>
@@ -490,7 +518,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
               12 dúvidas respondidas · 2 encaminhadas a você
             </div>
           </div>
-          <p style="font-size:.92rem;margin-top:14px">Você não recebe cada conversa em tempo real. Recebe <strong>resumo por paciente</strong>, <strong>alerta quando alguém mostra padrão de risco</strong> e uma <strong>fila de triagem</strong> com tudo que a IA não responde: sintoma, medicamento, pedido de mudança. Tudo organizado para a sua decisão.</p>
+          <p style="font-size:.92rem;margin-top:14px">Você não recebe cada conversa em tempo real. Recebe <strong>resumo por paciente</strong>, <strong>alerta quando alguém mostra sinal de esfriamento</strong> e uma <strong>fila de triagem</strong> com tudo que só você pode responder — sem mais uma tela pra vigiar o dia inteiro, sem sistema paralelo pra alimentar. <strong>A IA avisa você — a mensagem que decide o que acontece depois é sempre sua.</strong></p>
         </div>
       </div>
       <p class="mantra-big">A IA tria. <span>Você decide.</span></p>
@@ -501,8 +529,8 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
   <section class="demo" id="demo" aria-label="Pedir demonstração">
     <div class="wrap">
       <span class="eyebrow" style="color:#A7E3BE">Demonstração</span>
-      <h2>Veja a assistente funcionando com os seus planos</h2>
-      <p class="sub">Deixe seus dados e a gente entra em contato em até 1 dia útil. É uma conversa de 15 minutos, sem compromisso, para mostrar a assistente rodando e entender como é o seu consultório.</p>
+      <h2>Veja a assistente funcionando no seu WhatsApp — com o preço na mão</h2>
+      <p class="sub">É uma conversa de 15 minutos no seu WhatsApp, sem instalar nada e sem compromisso: você vê a assistente rodando com os planos que você já usa — do jeito que existem hoje, PDF ou foto — e sai com o preço exato pro seu consultório, sem surpresa depois. Deixe seus dados e a gente te chama em até 1 dia útil.</p>
       <p class="transparencia">✓ Transparência total: sua paciente sempre sabe que fala com a assistente da sua equipe. E quem decide tudo é você.</p>
       <form id="lead-form" action="https://formsubmit.co/franwwe2k16@hotmail.com" method="POST" novalidate>
         <input type="hidden" name="_subject" value="Novo pedido de demonstração | Acompanha.ai">
@@ -537,7 +565,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
           </select>
         </div>
         <p class="wa-alt" data-wa-wrap hidden>Prefere conversar direto? <a data-wa hidden>Chama no WhatsApp</a></p>
-        <button class="btn" type="submit" id="f-btn">Quero uma demonstração</button>
+        <button class="btn" type="submit" id="f-btn">Quero o preço e a demonstração</button>
         <p class="err" id="f-err" role="alert">Não foi possível enviar agora. Fale direto com a gente: <a href="https://wa.me/5587991070716?text=Oi!%20Tentei%20pedir%20uma%20demonstra%C3%A7%C3%A3o%20pelo%20site." target="_blank" rel="noopener">chama no WhatsApp</a> ou <a href="mailto:franwwe2k16@hotmail.com?subject=Demonstra%C3%A7%C3%A3o%20Acompanha.ai">franwwe2k16@hotmail.com</a></p>
         <p class="micro">Seus dados são usados apenas para esse contato. Nada de spam, nada de lista.</p>
       </form>
@@ -547,31 +575,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       </div>
     </div>
   </section>
-<!-- S3 · A DOR -->
-  <section aria-label="A rotina de quem acompanha sozinha">
-    <div class="wrap">
-      <span class="eyebrow">A parte do trabalho que ninguém vê</span>
-      <h2>Você conhece essa semana.</h2>
-      <p style="max-width:40em">A consulta termina, o paciente sai motivado, e o tratamento passa a acontecer num lugar onde você não enxerga nada: o dia a dia dele. O que sobra para você é o plantão informal no seu WhatsApp pessoal.</p>
-      <div class="cards c3">
-        <div class="card">
-          <h3>O plantão invisível</h3>
-          <p>Terça, 22h07: <em>“posso trocar o jantar por pão de queijo?”</em>. Você responde de graça, no seu número pessoal, entre as mensagens da família. Sem registro, sem hora para acabar e sem virar prontuário.</p>
-        </div>
-        <div class="card">
-          <h3>O sumiço sem aviso</h3>
-          <p>Ela sai do plano num fim de semana, sente vergonha de te contar e some. Você só descobre quando o retorno não é marcado. A decisão de desistir amadureceu exatamente no período em que você não via nada.</p>
-        </div>
-        <div class="card">
-          <h3>A agenda imprevisível</h3>
-          <p>Cada paciente que evapora vira um buraco na agenda do mês seguinte. E mais dependência de captar paciente novo, num mercado que nunca foi tão disputado: são <strong>194 mil nutricionistas</strong> no Brasil, 22% a mais que há três anos.</p>
-          <span class="src">Dados do CFN</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- S4 · A CIÊNCIA -->
+<!-- S4 · A CIÊNCIA -->
   <section class="science" aria-label="O que a ciência diz">
     <div class="wrap">
       <span class="eyebrow">O que a evidência mostra</span>
@@ -607,7 +611,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
         <p class="big">O lapso que vira abandono acontece em dias. O ciclo de consultas se mede em semanas.</p>
         <p>Os lapsos são previsíveis: casa, noite, fim de semana, eventos sociais. É o que mostram as pesquisas que acompanham pacientes no dia a dia. Quando o retorno chega, a espiral do desvio que vira culpa e termina em abandono já rodou inteira.</p>
       </div>
-      <p style="margin-top:2rem;max-width:40em"><strong>Você sempre soube que acompanhar de perto funciona.</strong> O que nunca existiu foi um jeito de fazer isso com 40, 60, 80 pacientes ao mesmo tempo sem virar plantão de 24 horas. É exatamente o que você viu lá em cima. E para isso funcionar com paciente de verdade, precisa de limites claros. É o que vem a seguir.</p>
+      <p style="margin-top:2rem;max-width:40em"><strong>Você sempre soube que acompanhar de perto funciona.</strong> O que nunca existiu foi um jeito de perceber o esfriamento de 40, 60, 80 pacientes ao mesmo tempo — a tempo de agir, não só no dia em que o retorno não é marcado. É exatamente o radar que você viu lá em cima. E para isso funcionar com paciente de verdade, precisa de limites claros. É o que vem a seguir.</p>
     </div>
   </section>
 
@@ -670,15 +674,52 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
           <span class="src">Divulgado pela imprensa de tecnologia em 2024</span>
         </div>
       </div>
-      <p class="honesty"><strong>Transparência:</strong> esses números são dessas empresas, não nossos. Eles provam que o modelo funciona. O Acompanha.ai traz esse mesmo modelo para a realidade do consultório brasileiro: PF, marmita, pão de queijo, rodízio e o WhatsApp onde seu paciente já vive. Estamos começando no Brasil, e as primeiras nutricionistas implantam com acompanhamento direto do fundador.</p>
+      <p class="honesty"><strong>Transparência:</strong> esses números são dessas empresas, não nossos. O que eles provam, antes de tudo: paciente usa WhatsApp de verdade, todos os dias, quando é ali que o acompanhamento acontece — sem baixar nada novo. O Acompanha.ai traz esse mesmo modelo para a realidade do consultório brasileiro: PF, marmita, pão de queijo e o WhatsApp onde seu paciente já vive. Estamos começando no Brasil, e as primeiras nutricionistas implantam com acompanhamento direto do fundador.</p>
+    </div>
+  </section>
+
+  <!-- S9 · FAQ -->
+  <section class="faq" aria-label="Perguntas frequentes">
+    <div class="wrap">
+      <span class="eyebrow">Perguntas diretas, respostas diretas</span>
+      <h2>O que toda nutricionista pergunta antes de contratar</h2>
+      <details>
+        <summary>Meu paciente vai usar isso, ou vira mais uma ferramenta abandonada?</summary>
+        <p>Não tem app novo pra ele baixar, nem login, nem cadastro em plataforma: é o WhatsApp que ele já abre todo dia — só que agora com a assistente da sua equipe do outro lado. E do seu lado também não tem painel novo pra vigiar o dia inteiro: você recebe o alerta quando alguém esfria e o resumo do resto. Menos mensagem no seu celular, não mais.</p>
+      </details>
+      <details>
+        <summary>Quem responde o quê? A IA fala com meu paciente ou eu falo?</summary>
+        <p>Os dois — e a fronteira é escrita, não improvisada. Dúvida de rotina, dentro das substituições e regras que você aprovou (<em>“acabou o iogurte, troco pelo quê?”</em>), a assistente responde na hora, sempre se apresentando como assistente da sua equipe — nunca fingindo ser você. Tudo que decide o tratamento — sintoma, medicamento, mudança de plano, desabafo — ela não responde: vira triagem e chega a você, pra mensagem ser sua. O paciente sabe disso desde a primeira conversa, então o vínculo não quebra: quando você aparece, é você mesmo — e mais cedo do que hoje.</p>
+      </details>
+      <details>
+        <summary>E se a IA errar? A responsabilidade é minha.</summary>
+        <p>Pode errar? Pode. Nenhum sistema é infalível, e quem diz o contrário está mentindo. Por isso o desenho é de risco mínimo: a assistente só responde dentro do plano e das substituições que você aprovou. O que sai disso — sintoma, medicamento, pedido de mudança — vira triagem pra você, e toda conversa fica registrada e auditável. Na comparação honesta: hoje, a orientação de improviso acontece no seu WhatsApp pessoal, de madrugada, sem registro nenhum.</p>
+      </details>
+      <details>
+        <summary>Isso não vai me substituir?</summary>
+        <p>Não pode, nem legalmente, nem na prática. Prescrição dietética é ato privativo seu (Lei 8.234/91), e a assistente é incapaz de prescrever ou decidir conduta. O alerta existe pra você agir mais cedo — não pra alguém agir no seu lugar. Mais consultas na sua agenda, não menos.</p>
+      </details>
+      <details>
+        <summary>Quanto custa?</summary>
+        <p>O valor depende do número de pacientes acompanhados. Na demonstração você sai com o preço exato para o seu consultório, sem surpresa depois. A régua é simples: se a mensalidade não se pagar com os retornos que voltarem a acontecer, não faz sentido para você — e a gente prefere que você faça essa conta na demonstração, não depois.</p>
+      </details>
+      <details>
+        <summary>E a LGPD? E o sigilo dos meus pacientes?</summary>
+        <p>Primeiro, uma absolvição: todo mundo atende no número pessoal, porque nunca existiu alternativa de verdade. A culpa não é sua. O que o Acompanha.ai faz é estruturar o que falta nesse cenário: o paciente consente com o acompanhamento no início, os dados são usados exclusivamente para o tratamento e todas as conversas ficam registradas num ambiente acessível a você.</p>
+      </details>
+      <details>
+        <summary>Quanto trabalho dá para colocar meus pacientes?</summary>
+        <p>Você manda o plano do jeito que ele já existe — o PDF do seu software de prescrição ou até uma foto — e a configuração inicial é feita junto com você na implantação. Não é você quem digita plano em sistema novo, e depois de rodando também não é você quem alimenta nada: os alertas e resumos vêm até você, não o contrário.</p>
+      </details>
     </div>
   </section>
 
   <!-- S8 · CALCULADORA -->
-  <section class="calc" aria-label="Calculadora do custo da evasão">
+  <section class="calc" aria-label="Calculadora do custo do sumiço sem aviso">
     <div class="wrap">
-      <span class="eyebrow">Faça a conta</span>
-      <h2>Quanto a evasão custa para o seu consultório?</h2>
+      <span class="eyebrow">Se quiser dimensionar</span>
+      <h2>Quanto o sumiço sem aviso custa pro seu consultório?</h2>
+      <p style="max-width:40em">Isso não é uma promessa de recuperação. É uma conta que você mesma ajusta, com os seus números, pra ver o tamanho do problema — se quiser, a conta é sua.</p>
       <div class="calc-box">
         <div>
           <div class="field">
@@ -701,52 +742,15 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
         </div>
         <div class="calc-out">
           <div class="val" id="c-total" aria-live="polite">R$ 25.920</div>
-          <p>é o que a evasão leva do seu consultório por ano, só em consultas de retorno que não acontecem</p>
+          <p>é o que o sumiço sem aviso leva do seu consultório por ano, só em consultas de retorno que não acontecem</p>
           <p class="src" id="c-math">A conta: 72 pacientes novos no ano × 8 em cada 10 que somem antes do fim × 3 retornos de R$ 150</p>
           <span class="src">A calculadora dimensiona o problema. Não é uma promessa de recuperação.</span>
         </div>
       </div>
       <div class="cta-inline">
-        <a class="btn" href="#demo">Quero uma demonstração</a>
+        <a class="btn" href="#demo">Quero o preço e a demonstração</a>
         <span class="micro">Conversa de 15 minutos, sem compromisso.</span>
       </div>
-    </div>
-  </section>
-
-  <!-- S9 · FAQ -->
-  <section class="faq" aria-label="Perguntas frequentes">
-    <div class="wrap">
-      <span class="eyebrow">Perguntas diretas, respostas diretas</span>
-      <h2>O que toda nutricionista pergunta antes de contratar</h2>
-      <details>
-        <summary>E se a IA errar? A responsabilidade é minha.</summary>
-        <p>Pode errar? Pode. Nenhum sistema é infalível, e quem diz o contrário está mentindo. Por isso o desenho é de risco mínimo: a assistente só responde dentro do plano e das substituições que você aprovou. O que sai disso (sintoma, medicamento, pedido de mudança) vira triagem para você. Toda conversa fica registrada e auditável, e uma resposta que você marcar como incorreta vira correção das regras.</p>
-        <p>Na comparação honesta: hoje, a orientação de improviso acontece no seu WhatsApp pessoal, às 23h, sem registro nenhum.</p>
-      </details>
-      <details>
-        <summary>Meu paciente não vai querer falar com robô.</summary>
-        <p>O paciente sabe desde a primeira mensagem que está falando com a assistente <strong>da sua equipe</strong>, com o seu nome junto, não um chatbot anônimo. E tem um detalhe prático: às 21h de um sábado, no rodízio, nenhum humano responde em segundos. É nessa hora que o plano quebra. E é nessa hora que a assistente está lá.</p>
-      </details>
-      <details>
-        <summary>Quanto custa?</summary>
-        <p>O valor depende do número de pacientes acompanhados. Na demonstração você sai com o preço exato para o seu consultório, sem surpresa depois. A régua é simples: se a mensalidade não se pagar com os retornos que voltarem a acontecer, não faz sentido para você.</p>
-      </details>
-      <details>
-        <summary>E a LGPD? E o sigilo dos meus pacientes?</summary>
-        <p>Primeiro, uma absolvição: todo mundo atende no número pessoal, porque nunca existiu alternativa de verdade. A culpa não é sua. O que o Acompanha.ai faz é estruturar o que falta nesse cenário: o paciente consente com o acompanhamento no início, os dados são usados exclusivamente para o tratamento e todas as conversas ficam registradas num ambiente acessível a você.</p>
-      </details>
-      <details>
-        <summary>Isso não vai me substituir?</summary>
-        <p>Não pode, nem legalmente, nem na prática. Prescrição dietética é ato privativo seu (Lei 8.234/91), e a assistente é incapaz de prescrever ou decidir conduta. O incentivo do produto é o oposto de te substituir: ele existe para o paciente chegar ao retorno. Mais consultas na sua agenda, não menos.</p>
-      </details>
-      <details>
-        <summary>Não aguento mais ferramenta nova para gerenciar.</summary>
-        <p>Essa mora no WhatsApp que você e seus pacientes já usam. Não tem app novo para o paciente baixar, nem painel que você precise vigiar o dia inteiro: você recebe resumo e alertas. <strong>Menos</strong> mensagens no seu celular, não mais.</p>
-      </details>
-      <details>
-        <summary>Quanto trabalho dá para colocar meus pacientes?</summary>
-        <p>Você manda o plano do jeito que ele já existe (o PDF do seu software de prescrição ou até uma foto) e a configuração inicial é feita junto com você na implantação. Não é você quem digita plano em sistema novo.</p>
-      </details>
     </div>
   </section>
 
@@ -758,7 +762,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
     <div class="cols">
       <div>
         <a class="logo" href="#top">acompanha<span>.ai</span></a>
-        <p style="margin-top:.8rem">A assistente de IA que acompanha seus pacientes no WhatsApp entre as consultas. A IA tria, você decide.</p>
+        <p style="margin-top:.8rem">A assistente de IA que avisa quando o paciente esfria — no WhatsApp que ele já usa. A IA tria, você decide.</p>
         <p style="margin-top:.8rem">Contato: <a href="mailto:franwwe2k16@hotmail.com">franwwe2k16@hotmail.com</a></p>
         <p class="fine">As conversas e telas exibidas nesta página são ilustrativas. Seus dados de contato são tratados conforme a LGPD e usados apenas para responder à sua solicitação.</p>
       </div>
@@ -784,7 +788,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
 <div class="sticky-cta" id="sticky-cta">
   <div class="sticky-row">
     <a class="btn wa-btn" data-wa hidden>WhatsApp</a>
-    <a class="btn" id="sticky-form-btn" href="#demo">Quero uma demonstração</a>
+    <a class="btn" id="sticky-form-btn" href="#demo">Quero o preço e a demonstração</a>
   </div>
 </div>
 
@@ -810,9 +814,9 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
   });
   if (waLink) {
     var hb = document.getElementById("hero-form-btn");
-    if (hb) { hb.className = "btn-ghost"; hb.textContent = "Deixar meus dados"; }
+    if (hb) { hb.className = "btn-ghost"; hb.textContent = "Ver preço e demonstração"; }
     var sb = document.getElementById("sticky-form-btn");
-    if (sb) sb.textContent = "Deixar dados";
+    if (sb) sb.textContent = "Ver preço e demo";
   }
 
   /* Reveal das mensagens do chat e blocos */
@@ -835,7 +839,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
     toReveal.forEach(function(el){ io.observe(el); });
   }
 
-  /* Calculadora da evasão */
+  /* Calculadora do sumiço sem aviso */
   var vValor = document.getElementById("c-valor"),
       vNovos = document.getElementById("c-novos"),
       vRetornos = document.getElementById("c-retornos"),
@@ -922,7 +926,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
         catch (e2) {
           err.style.display = "block";
           btn.disabled = false;
-          btn.textContent = "Quero uma demonstração";
+          btn.textContent = "Quero o preço e a demonstração";
         }
       }, 300);
     });
