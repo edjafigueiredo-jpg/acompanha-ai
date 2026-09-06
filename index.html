@@ -801,6 +801,11 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
 
   /* WhatsApp: preencha com DDI+DDD+numero, so digitos (ex.: "5511912345678").
      Vazio ou placeholder = botoes de WhatsApp ficam ocultos e nada quebra. */
+  /* Planilha do Google: cole aqui a URL do app da web do Apps Script (termina em /exec).
+     Vazio = nada acontece e nada quebra; o lead continua indo por e-mail normalmente. */
+  var PLANILHA_URL = "";
+  var PLANILHA_TOKEN = "acompanha-2026-7f3d9a";
+
   var WHATSAPP = "5587991070716";
   var waLink = /^[0-9]{12,13}$/.test(WHATSAPP)
     ? "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Oi! Vi o site do Acompanha.ai e quero uma demonstração.")
@@ -889,6 +894,32 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
     if (window.fbq) fbq("track", "Lead", {wv: WV});
     if (history.replaceState) history.replaceState(null, "", location.pathname);
   }
+  /* Cópia de cada lead para a planilha do Google, em paralelo ao e-mail.
+     Usa sendBeacon: dispara na hora, não espera resposta e sobrevive à navegação
+     do envio clássico. Se a planilha estiver fora do ar, o e-mail não é afetado. */
+  function registrarNaPlanilha(){
+    if (!PLANILHA_URL) return;
+    try{
+      var d = new FormData(form);
+      var corpo = JSON.stringify({
+        token: PLANILHA_TOKEN,
+        nome: d.get("nome") || "",
+        whatsapp: d.get("whatsapp") || "",
+        email: d.get("email") || "",
+        pacientes_ativos: d.get("pacientes_ativos") || "",
+        origem: d.get("origem") || "",
+        wv: WV
+      });
+      /* text/plain evita preflight de CORS, que o Apps Script não responde */
+      if (navigator.sendBeacon &&
+          navigator.sendBeacon(PLANILHA_URL, new Blob([corpo], {type:"text/plain;charset=UTF-8"}))) return;
+      fetch(PLANILHA_URL, {
+        method: "POST", mode: "no-cors", keepalive: true,
+        headers: {"Content-Type": "text/plain;charset=UTF-8"}, body: corpo
+      }).catch(function(){});
+    }catch(e){}
+  }
+
   form.addEventListener("submit", function(ev){
     ev.preventDefault();
     err.style.display = "none";
@@ -899,6 +930,7 @@ src="https://www.facebook.com/tr?id=1293122545693280&ev=PageView&noscript=1"
       form._honey.value = "";
     }
     if (window.fbq) fbq("trackCustom", "TentouEnviar", {wv: WV});
+    registrarNaPlanilha();
     btn.disabled = true;
     btn.textContent = "Enviando…";
     var data = new FormData(form);
